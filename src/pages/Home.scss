@@ -1,0 +1,104 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "../style/variables";
+
+
+.service-tab{
+    position: relative;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    background: #fff;
+    margin-top: -50px;
+    box-shadow: 0 5px 10px #00000032;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1000;
+
+    .tabs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $primary-color;
+        padding-top: 30px;
+        padding-bottom: 5px;
+
+        button{
+            width: 100px;
+            height: 70px;
+            outline: none;
+            border: none;
+            background-color: #fff;
+            margin: 0 3px;
+            margin-bottom: -20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 7px #00000032;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: .2s;
+        }
+
+        button:hover{
+            margin-top: -10px;
+            background: #e9f0ff;
+        }
+    }
+
+    .form-area{
+        margin-top: 30px;
+        padding: 20px;
+        @include font-open-sans(300, normal, 100);
+
+        h3 span{
+            color: $primary-color;
+        }
+
+        form{
+            margin-top: 10px;
+            input{
+                width: 260px;
+                height: 40px;
+                outline: none;
+                border-radius: 6px;
+                border: 1px solid #0000007f;
+                padding: 0 10px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+            }
+
+            button{
+                padding: 10px 20px;
+                background: $primary-color;
+                color: #fff;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                font-weight: bold;
+
+            }
+        }
+    }
+}
+
+#company-description{
+    margin-top: 50px;
+    padding: 20px;
+    @include font-open-sans(300, normal, 100);
+
+    .img-bx{
+        display: flex;
+        img{
+            width: 80%;
+            margin: auto;
+            border-radius: 20px;
+        }
+    }
+
+    .text-bx{
+        text-align: center;
+        padding: 50px;
+    }
+
+}
