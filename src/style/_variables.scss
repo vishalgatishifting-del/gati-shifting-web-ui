@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 $primary-color: #2563eb;
 $secondary-color: #15ab4d;
 $background-color: #f8f9fa;
@@ -7,6 +9,15 @@ $text-color: #333;
 
 @mixin font-open-sans($weight: 400, $style: normal, $wdth: 100) {
   font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: $style;
+  font-variation-settings: "wdth" $wdth;
+}
+
+
+@mixin font-noto-sans($weight: 400, $style: normal, $wdth: 100) {
+  font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: $weight;
   font-style: $style;

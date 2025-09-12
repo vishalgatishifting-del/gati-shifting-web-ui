@@ -11,6 +11,10 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import FactoryIcon from '@mui/icons-material/Factory';
 import whyGatiImg from "../assets/why_gati_banner.jpg";
 
+import DescriptionIcon from '@mui/icons-material/Description';
+import HandshakeIcon from '@mui/icons-material/Handshake';
+import BalanceIcon from '@mui/icons-material/Balance';
+
 const Home: React.FC = () => {
 
     const settings = {
@@ -25,7 +29,7 @@ const Home: React.FC = () => {
 
     const images = [
         "src/assets/gatislider1.png",
-        "https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=0&k=20&c=z8_rWaI8x4zApNEEG9DnWlGXyDIXe-OmsAyQ5fGPVV8=",
+        "src/assets/gatislider2.jpg",
         "https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=0&k=20&c=z8_rWaI8x4zApNEEG9DnWlGXyDIXe-OmsAyQ5fGPVV8=",
     ];
 
@@ -51,7 +55,7 @@ const Home: React.FC = () => {
 
             <div className="service-tab">
                 <div className="tabs">
-                    <button><LocalShippingIcon></LocalShippingIcon> <span>Domestic</span></button>
+                    <button className="active"><LocalShippingIcon></LocalShippingIcon> <span>Domestic</span></button>
                     <button><DirectionsCarFilledIcon></DirectionsCarFilledIcon><span>Car</span></button>
                     <button><WarehouseIcon></WarehouseIcon><span>Storage</span></button>
                     <button><ConnectingAirportsIcon></ConnectingAirportsIcon><span>Flight</span></button>
@@ -68,10 +72,9 @@ const Home: React.FC = () => {
                         <input type="text" placeholder="Email ID" />
                         <input type="text" placeholder="From*" />
                         <input type="text" placeholder="To*" />
-                        <input type="text" placeholder="Goods Type (e.g., Household, " />
-                        <br />
-                        <button>Submit</button>
+                        <input type="text" placeholder="Goods Type (e.g., Household, Furniture)" />
                     </form>
+                    <button>Submit</button>
 
                 </div>
             </div>
@@ -89,6 +92,81 @@ const Home: React.FC = () => {
 
                         Gati House Shifting's goal is to make your relocating experience as trouble-free as possible. Let us manage all of the difficult work. Our job is to be sure that your shifting is complete on time, every time.
                     </p>
+                </div>
+            </section>
+
+            <section id="steps-section">
+                <h1>4 Easy Steps to Hire Reliable Movers and Packers</h1>
+                <div className="steps">
+                    <div className="card">
+                        <div>
+                            <span className="icon"><DescriptionIcon></DescriptionIcon></span>
+                            <h3>Fill Your Enquiry Form</h3>
+                        </div>
+                        <p>Tell us about your car or bike shifting needs. Our logistics team will connect you with trusted movers for competitive rates.</p>
+                    </div>
+
+
+                    <div className="card">
+                        <div>
+                            <span className="icon"><HandshakeIcon></HandshakeIcon></span>
+                            <h3>Get Quotes within 30 Minutes</h3>
+                        </div>
+                        <p>Receive fast quotes from verified car carriers with 5-star reviews. We ensure only trusted movers get through.</p>
+                    </div>
+
+
+                    <div className="card">
+                        <div>
+                            <span className="icon"><BalanceIcon></BalanceIcon></span>
+                            <h3>Select the Best Quote</h3>
+                        </div>
+                        <p>Make an informed choice based on business profiles, pricing, and reviews before selecting the best deal.</p>
+                    </div>
+
+
+                    <div className="card">
+                        <div>
+                            <span className="icon"><LocalShippingIcon></LocalShippingIcon></span>
+                            <h3>Get Safe & Secure Shifting</h3>
+                        </div>
+                        <p>Choose your mover and enjoy safe, secure relocation of your car or bike—stress-free and timely.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="customer-review">
+                <h1>What Our Customers Say</h1>
+                <h4>Real experiences from real people. Watch how we made their move stress-free.</h4>
+
+                <div className="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MlgLNz2-wbo?si=CWB7OKc-LM9dVgoa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <section id="get-in-touch">
+                <div className="content">
+                    <div className="img-slider">
+                        <img src={images[0]} />
+                    </div>
+                    <div className="details">
+                        <h1>Get In Touch</h1>
+                        <p>For reliable shifting services across India, choose Gati House Shifting Packers & Movers. We provide door-to-door transport and affordable logistics solutions.</p>
+
+                        <ul>
+                            <li>+91 72900 08200</li>
+                            <li>gatishiftingpackers@gmail.com</li>
+                            <li>Chat Now</li>
+                            <li>India</li>
+                        </ul>
+                        <div className="social-links">
+                            <a href="#">f</a>
+                            <a href="#">i</a>
+                            <a href="#">x</a>
+                            <a href="#">li</a>
+                            <a href="#">y</a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

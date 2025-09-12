@@ -1,44 +1,47 @@
 @import "../style/variables";
 
-header{
+header {
     display: flex;
     flex-direction: column;
+    background: #fff;
 
-    .top-area{
+    .top-area {
         background-color: $primary-color;
         display: flex;
         justify-content: space-around;
         padding: 10px;
 
-        a{
+        a {
             display: flex;
             align-items: center;
             text-decoration: none;
             color: #fff;
             font-size: 15px;
             @include font-open-sans(300, normal, 100);
-            
-            span{
+
+            span {
                 margin-left: 5px;
             }
         }
     }
 
-    nav{
+    nav {
         display: flex;
         align-items: center;
         justify-content: space-around;
         padding: 10px;
 
-        .logo img{
+        .logo img {
             width: 130px;
         }
 
-        ul{
+        ul {
             display: flex;
-            li{
+
+            li {
                 list-style: none;
-                a{
+
+                a {
                     text-decoration: none;
                     @include font-open-sans(600, normal, 100);
                     color: $text-color;
@@ -50,22 +53,23 @@ header{
                     font-size: 17px;
                     transition: .2s;
 
-                    .icon{
+                    .icon {
                         font-size: 20px;
                     }
                 }
-                
-                a:hover{
+
+                a:hover {
                     background-color: $primary-color;
                     color: #fff;
                 }
             }
         }
 
-        .get-in-touch-btns{
+        .get-in-touch-btns {
             display: flex;
             align-items: center;
-            button{
+
+            button {
                 margin-left: 10px;
                 background-color: $primary-color;
                 padding: 10px;
@@ -77,6 +81,6 @@ header{
         }
 
     }
-    
-   
+
+
 }
