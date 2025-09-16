@@ -11,6 +11,8 @@ import "./Navbar.scss"
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo2.png"
 
+
+
 const Navbar = () => {
     return (
         <header>
@@ -39,6 +41,13 @@ const Navbar = () => {
                     <li><Link to="/faqs"><HelpOutlineIcon className='icon'></HelpOutlineIcon> FAQs</Link></li>
                     <li><Link to="/services"><MiscellaneousServicesIcon className='icon'></MiscellaneousServicesIcon> Services</Link></li>
                     <li><Link to="/contact"><ContactsIcon className='icon'></ContactsIcon> Contact Us</Link></li>
+                    
+                    {/* <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About Us</Link></li>
+                    <li><Link to="/review">Review</Link></li>
+                    <li><Link to="/faqs">FAQs</Link></li>
+                    <li><Link to="/services">Services</Link></li>
+                    <li><Link to="/contact">Contact Us</Link></li> */}
                 </ul>
 
                 <div className='get-in-touch-btns'>
