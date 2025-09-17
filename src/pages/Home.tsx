@@ -9,7 +9,7 @@ import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
 import LanguageIcon from '@mui/icons-material/Language';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import FactoryIcon from '@mui/icons-material/Factory';
-import whyGatiImg from "../assets/why_gati_banner.jpg";
+// import whyGatiImg from "../assets/why_gati_banner.jpg";
 import stepsImg from "../assets/5-steps-banner.png";
 
 import { Helmet } from "react-helmet-async";
@@ -42,7 +42,7 @@ import CollectionsIcon from '@mui/icons-material/Collections';
 import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 import Avatar from '@mui/material/Avatar';
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
     const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: false, threshold: 0.2 });
     const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: false, threshold: 0.2 });
 
-    const slideLeft = {
+    const slideLeft: Variants = {
         hidden: { opacity: 0, x: -100 },
         visible: (delay = 0) => ({
             opacity: 1,
@@ -68,7 +68,7 @@ const Home: React.FC = () => {
         }),
     };
 
-    const slideRight = {
+    const slideRight: Variants = {
         hidden: { opacity: 0, x: 100 },
         visible: (delay = 0) => ({
             opacity: 1,
@@ -77,15 +77,15 @@ const Home: React.FC = () => {
         }),
     };
 
-    const slideUp = {
-        hidden: { opacity: 0, y: 50 },
-        visible: {
-            opacity: 1, y: 0,
-            transition: { duration: 0.4 }
-        },
-    };
+    // const slideUp = {
+    //     hidden: { opacity: 0, y: 50 },
+    //     visible: {
+    //         opacity: 1, y: 0,
+    //         transition: { duration: 0.4 }
+    //     },
+    // };
 
-    const zoomIn = {
+    const zoomIn: Variants = {
         hidden: { opacity: 0, scale: 0.5 },
         visible: (delay = 0) => ({
             opacity: 1,
@@ -125,6 +125,7 @@ const Home: React.FC = () => {
     const images = [
         "src/assets/gatislider2.png",
         "src/assets/gatislider3.jpg",
+        "src/assets/gatislider4.png",
     ];
 
 
@@ -359,7 +360,7 @@ const Home: React.FC = () => {
                 <h4>Real experiences from real people. Watch how we made their move stress-free.</h4>
 
                 <div className="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MlgLNz2-wbo?si=CWB7OKc-LM9dVgoa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MlgLNz2-wbo?si=CWB7OKc-LM9dVgoa" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </div>
             </section>
 
