@@ -1,13 +1,14 @@
 @import "../style/variables";
 
 header {
-    position: sticky;
+    position: fixed;
     width: 100%;
     top: 0;
     display: flex;
     flex-direction: column;
     background: #fff;
     z-index: 1000;
+    margin-bottom: 100%;
 
     .top-area {
         background-color: $primary-color;

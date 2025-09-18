@@ -49,6 +49,7 @@ import Avatar from '@mui/material/Avatar';
 
 
 import { Link } from "react-router-dom";
+import PinterestIcon from '@mui/icons-material/Pinterest';
 
 import gatiSlider1 from "../assets/gatislider1.png"
 import gatiSlider2 from "../assets/gatislider2.png"
@@ -162,7 +163,7 @@ const Home: React.FC = () => {
                 <meta name="twitter:image" content="https://yourwebsite.com/twitter-image.jpg" />
             </Helmet>
 
-            <Box sx={{ width: "100%", overflow: "hidden" }}>
+            <Box className="sliderBox" sx={{ marginTop:"107.01px", width: "100%", overflow: "hidden" }}>
                 <Slider {...settings}>
                     {images.map((img, index) => (
                         <Box key={index} sx={{ position: "relative", outline: "none" }}>
@@ -388,6 +389,7 @@ const Home: React.FC = () => {
                             <a href="#"><XIcon></XIcon></a>
                             <a href="#"><LinkedInIcon></LinkedInIcon></a>
                             <a href="#"><YouTubeIcon></YouTubeIcon></a>
+                            <a href="#"><PinterestIcon></PinterestIcon></a>
                         </div>
                     </div>
                 </div>

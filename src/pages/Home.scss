@@ -566,6 +566,13 @@
     }
 }
 
+
+@media screen and (max-width: 1101px) {
+    .sliderBox{
+        margin-top: 63.01px!important;
+    }
+}
+
 @media screen and (max-width: 1086px) {
 
     #award-certifications {
@@ -767,6 +774,22 @@
         .text-bx {
             padding: 0;
             padding-bottom: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 714px) {
+    #customer-review-list{ 
+        h1{
+            font-size: 25px;
+        }
+
+        .para{
+            font-size: 15px;
+            margin-bottom: 25px;
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
         }
     }
 }

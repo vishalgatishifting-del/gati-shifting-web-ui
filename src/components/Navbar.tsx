@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/logo2.png"
 import { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 
 const Navbar = () => {
@@ -55,7 +56,10 @@ const Navbar = () => {
                 <div className='get-in-touch-btns'>
                     <a href="tel:+917290008200"><LocalPhoneIcon></LocalPhoneIcon></a>
                     <button aria-label="Get in touch with Gati Shifting Packers">Get In Touch</button>
-                <button onClick={()=> setOpenNav(!openNav)}><MenuIcon></MenuIcon></button>  
+                    <button onClick={()=> setOpenNav(!openNav)}>
+                        {(openNav ? <CloseIcon></CloseIcon> : <MenuIcon></MenuIcon>)}
+                        
+                    </button>  
                 </div>
             </nav>
         </header>
