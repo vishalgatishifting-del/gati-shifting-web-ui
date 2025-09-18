@@ -10,10 +10,12 @@ import ContactsIcon from '@mui/icons-material/Contacts';
 import "./Navbar.scss"
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo2.png"
-
+import { useState } from "react";
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 const Navbar = () => {
+    const [openNav, setOpenNav] = useState(false);
     return (
         <header>
             <div className="top-area">
@@ -34,7 +36,7 @@ const Navbar = () => {
                 <div className='logo'>
                     <img src={Logo} alt="Gati Shifting Packers Logo" title='Gati Shifting Logo' loading='lazy' />
                 </div>
-                <ul>
+                <ul className={(openNav) ? "active" : "inactive"}>
                     <li><Link to="/"><HomeIcon className='icon'></HomeIcon> Home</Link></li>
                     <li><Link to="/about"><InfoIcon className='icon'></InfoIcon> About Us</Link></li>
                     <li><Link to="/review"><StarRateIcon className='icon'></StarRateIcon> Review</Link></li>
@@ -53,6 +55,7 @@ const Navbar = () => {
                 <div className='get-in-touch-btns'>
                     <a href="tel:+917290008200"><LocalPhoneIcon></LocalPhoneIcon></a>
                     <button aria-label="Get in touch with Gati Shifting Packers">Get In Touch</button>
+                <button onClick={()=> setOpenNav(!openNav)}><MenuIcon></MenuIcon></button>  
                 </div>
             </nav>
         </header>

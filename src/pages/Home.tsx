@@ -50,11 +50,19 @@ import Avatar from '@mui/material/Avatar';
 
 import { Link } from "react-router-dom";
 
+import gatiSlider1 from "../assets/gatislider1.png"
+import gatiSlider2 from "../assets/gatislider2.png"
+import gatiSlider3 from "../assets/gatislider3.jpg"
+import gatiSlider4 from "../assets/gatislider4.png"
+
 const Home: React.FC = () => {
+
+    
+    const images = [gatiSlider2, gatiSlider3, gatiSlider4, ];
 
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
-    const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: false, threshold: 0.2 });
+    const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: false, threshold: 0.1 });
     const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: false, threshold: 0.2 });
     const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: false, threshold: 0.2 });
     const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: false, threshold: 0.2 });
@@ -122,11 +130,6 @@ const Home: React.FC = () => {
         swipeToSlide: true
     };
 
-    const images = [
-        "src/assets/gatislider2.png",
-        "src/assets/gatislider3.jpg",
-        "src/assets/gatislider4.png",
-    ];
 
 
     const [text, setText] = useState("Domestic Moving");
@@ -367,7 +370,7 @@ const Home: React.FC = () => {
             <section id="get-in-touch">
                 <div className="content">
                     <div className="img-slider">
-                        <img src="src/assets/gatislider1.png" />
+                        <img src={gatiSlider1} />
                     </div>
                     <div className="details">
                         <h1>Get In Touch</h1>
