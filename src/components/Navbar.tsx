@@ -56,7 +56,7 @@ const Navbar = () => {
                 <div className='get-in-touch-btns'>
                     <a href="tel:+917290008200"><LocalPhoneIcon></LocalPhoneIcon></a>
                     <button aria-label="Get in touch with Gati Shifting Packers">Get In Touch</button>
-                    <button onClick={()=> setOpenNav(!openNav)}>
+                    <button className='nav-Toggle-Btn' onClick={()=> setOpenNav(!openNav)}>
                         {(openNav ? <CloseIcon></CloseIcon> : <MenuIcon></MenuIcon>)}
                         
                     </button>  

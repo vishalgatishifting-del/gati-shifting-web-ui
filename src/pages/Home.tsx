@@ -429,7 +429,7 @@ const Home: React.FC = () => {
 
                             <ul>
 
-                                <li><LocationOnIcon></LocationOnIcon><span>Office No. 001, Shree Ganesh Tower CHS, Plot No. 98, Sector 21, Ghansoli, Navi Mumbai, Maharashtra 400701, India</span></li>
+                                <li><LocationOnIcon></LocationOnIcon><span>Office No. 04 Shree Sadguru Niwas Opp MSEB OFFICE Sector 21 Ghansoli Navi Mumbai 400701, India</span></li>
                                 <li><CallIcon></CallIcon> <span>+91 72900 08200</span></li>
                                 <li><EmailIcon></EmailIcon> <span>gatishiftingpackers@gmail.com</span></li>
                                 <li><WatchLaterIcon></WatchLaterIcon><span>Mon - Sun: 8:00 AM - 8:00 PM</span></li>

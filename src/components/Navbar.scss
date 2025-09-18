@@ -88,6 +88,10 @@ header {
                 border-radius:50px;
                 cursor: pointer;
             }
+
+            .nav-Toggle-Btn{
+                display: none;
+            }
         }
 
     }
@@ -124,6 +128,12 @@ header {
             ul.active{
                 max-height: 364.8px;
                 // overflow: visible;
+            }
+
+            .get-in-touch-btns{
+                .nav-Toggle-Btn{
+                display: block;
+            }
             }
         } 
     } 
