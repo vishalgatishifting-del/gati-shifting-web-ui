@@ -407,7 +407,7 @@ const Home: React.FC = () => {
                     >
                         <iframe
                             title="Google Map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.363084739938!2d85.31223751506033!3d27.707863732791577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1918c9a726cf%3A0x1b6e9ec9a3b9236b!2sThamel%2C%20Kathmandu!5e0!3m2!1sen!2snp!4v1689342477882!5m2!1sen!2snp"
+                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3769.5225867720897!2d72.99421947520662!3d19.128588882086827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDA3JzQyLjkiTiA3MsKwNTknNDguNSJF!5e0!3m2!1sen!2sin!4v1758188918732!5m2!1sen!2sin"
                             width="600"
                             height="450"
                             loading="lazy"
