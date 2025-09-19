@@ -334,7 +334,7 @@ const Home: React.FC = () => {
                     {/* <img src={whyGatiImg} /> */}
                 </div>
                 <div className="text-bx">
-                    <h1>Moving Services by Gati Shifting Packers Movers</h1>
+                    <h1>Moving Services by Gati Shifting Packers</h1>
                     <p>
                         Gati House Shifting Packers Movers are always ready to help make the moving and packing experience excellent, more efficient and easier for you and your family. Just sit back, chill out and know that you are in safe hands!
 

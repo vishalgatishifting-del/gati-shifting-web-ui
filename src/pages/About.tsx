@@ -69,28 +69,6 @@ import {
 
 const About = () => {
 
-    const sliderRef = useRef<HTMLDivElement>(null);
-    const [isPaused, setIsPaused] = useState(false);
-    setIsPaused(false)
-    const speed = 0.5; // adjust speed
-
-    useEffect(() => {
-        let animationFrameId: number;
-
-        const scrollStep = () => {
-            const slider = sliderRef.current;
-            if (slider && !isPaused) {
-                slider.scrollLeft += speed;
-                if (slider.scrollLeft >= slider.scrollWidth / 2) {
-                    slider.scrollLeft = 0; // seamless loop
-                }
-            }
-            animationFrameId = requestAnimationFrame(scrollStep);
-        };
-
-        animationFrameId = requestAnimationFrame(scrollStep);
-        return () => cancelAnimationFrame(animationFrameId);
-    }, [isPaused]);
 
 
     const rows = [
