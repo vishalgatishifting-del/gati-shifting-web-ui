@@ -56,6 +56,8 @@ import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
 import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
 import getInTouchImg from "../assets/get-in-touch.png"
 
+import ZohoForm from "../components/ZohoForm"
+
 const Home: React.FC = () => {
 
 
@@ -242,6 +244,8 @@ const Home: React.FC = () => {
                     ))}
                 </Slider>
             </Box>
+
+            <ZohoForm />
 
             <motion.div
                 ref={ref1}
