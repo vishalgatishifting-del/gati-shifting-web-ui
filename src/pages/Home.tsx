@@ -59,7 +59,7 @@ import getInTouchImg from "../assets/get-in-touch.png"
 const Home: React.FC = () => {
 
 
-    const images = [gatiSlider1, gatiSlider2, gatiSlider3];
+    const images = [gatiSlider2, gatiSlider1, gatiSlider3];
 
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
