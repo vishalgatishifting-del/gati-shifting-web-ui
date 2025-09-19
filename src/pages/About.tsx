@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useRef, useEffect, useState } from "react";
+// import { useRef, useEffect, useState } from "react";
 import "./About.scss";
 import about_company_photo from "../assets/about_company_photo.png"
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
