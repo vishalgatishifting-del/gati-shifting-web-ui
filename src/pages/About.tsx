@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useRef, useEffect, useState } from "react";
+// import { useRef, useEffect, useState } from "react";
 import "./About.scss";
 import about_company_photo from "../assets/about_company_photo.png"
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
@@ -22,13 +22,13 @@ import xpressbees from "../assets/xpressbee.png";
 import delhivery from "../assets/delhivery.png";
 
 
-import andhra_pradesh from "../assets/andhra-pradesh.jpeg"
-import arunachal_pradesh from "../assets/arunachal-pradesh.jpeg"
-import assam from "../assets/assam.jpeg"
-import bihar from "../assets/bihar.jpeg"
-import chhattisgarh from "../assets/chhattisgarh.jpeg"
-import goa from "../assets/goa.jpeg"
-import gujarat from "../assets/gujarat.jpeg"
+// import andhra_pradesh from "../assets/andhra-pradesh.jpeg"
+// import arunachal_pradesh from "../assets/arunachal-pradesh.jpeg"
+// import assam from "../assets/assam.jpeg"
+// import bihar from "../assets/bihar.jpeg"
+// import chhattisgarh from "../assets/chhattisgarh.jpeg"
+// import goa from "../assets/goa.jpeg"
+// import gujarat from "../assets/gujarat.jpeg"
 // import haryana from "../assets/haryana.jpeg"
 // import himachal_pradesh from "../assets/himachal-pradesh.jpeg"
 // import jharkhand from "../assets/jharkhand.jpeg"
@@ -69,27 +69,27 @@ import {
 
 const About = () => {
 
-    const sliderRef = useRef<HTMLDivElement>(null);
-  const [isPaused, setIsPaused] = useState(false);
-  const speed = 0.5; // adjust speed
+//     const sliderRef = useRef<HTMLDivElement>(null);
+//   const [isPaused, setIsPaused] = useState(false);
+//   const speed = 0.5; // adjust speed
 
-  useEffect(() => {
-    let animationFrameId: number;
+//   useEffect(() => {
+//     let animationFrameId: number;
 
-    const scrollStep = () => {
-      const slider = sliderRef.current;
-      if (slider && !isPaused) {
-        slider.scrollLeft += speed;
-        if (slider.scrollLeft >= slider.scrollWidth / 2) {
-          slider.scrollLeft = 0; // seamless loop
-        }
-      }
-      animationFrameId = requestAnimationFrame(scrollStep);
-    };
+//     const scrollStep = () => {
+//       const slider = sliderRef.current;
+//       if (slider && !isPaused) {
+//         slider.scrollLeft += speed;
+//         if (slider.scrollLeft >= slider.scrollWidth / 2) {
+//           slider.scrollLeft = 0; // seamless loop
+//         }
+//       }
+//       animationFrameId = requestAnimationFrame(scrollStep);
+//     };
 
-    animationFrameId = requestAnimationFrame(scrollStep);
-    return () => cancelAnimationFrame(animationFrameId);
-  }, [isPaused]);
+//     animationFrameId = requestAnimationFrame(scrollStep);
+//     return () => cancelAnimationFrame(animationFrameId);
+//   }, [isPaused]);
 
 
     const rows = [
