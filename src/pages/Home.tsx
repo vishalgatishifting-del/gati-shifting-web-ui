@@ -51,9 +51,9 @@ import Avatar from '@mui/material/Avatar';
 import { Link } from "react-router-dom";
 import PinterestIcon from '@mui/icons-material/Pinterest';
 
-import gatiSlider1 from "../assets/sliderImg/gatislider1.png"
-import gatiSlider2 from "../assets/sliderImg/gatislider2.png"
-import gatiSlider3 from "../assets/sliderImg/gatislider3.png"
+import gatiSlider1 from "../assets/sliderImg/gatislider1.webp"
+import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
+import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
 import getInTouchImg from "../assets/get-in-touch.png"
 
 const Home: React.FC = () => {
