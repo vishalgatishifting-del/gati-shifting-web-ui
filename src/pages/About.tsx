@@ -197,7 +197,7 @@ const About = () => {
                                 <TableRow sx={{ backgroundColor: '#2563eb' }}>
                                     <TableCell align="center" sx={{ color: '#fff' }}><b>Service Features</b></TableCell>
                                     <TableCell align="center" sx={{ color: '#fff' }}><b>Typical Local Movers</b></TableCell>
-                                    <TableCell align="center" sx={{ color: '#fff' }}><b>Rehousing Packers Movers</b></TableCell>
+                                    <TableCell align="center" sx={{ color: '#fff' }}><b>Gati Shifting Packers</b></TableCell>
                                 </TableRow>
                             </TableHead>
                             <TableBody>
@@ -242,7 +242,7 @@ const About = () => {
                 </div>
             </section>
 
-            <section id="presence">
+            {/* <section id="presence">
                 <h1>National Presence</h1>
 
                 <div
@@ -256,7 +256,6 @@ const About = () => {
                         ref={sliderRef}
                         style={{ display: "flex", width: "max-content" }}
                     >
-                        {/* Original List */}
                         <div className="card"><div className="img-bx"><img src={andhra_pradesh} alt="Andhra Pradesh" /></div><span>Andhra Pradesh</span></div>
                         <div className="card"><div className="img-bx"><img src={arunachal_pradesh} alt="Arunachal Pradesh" /></div><span>Arunachal Pradesh</span></div>
                         <div className="card"><div className="img-bx"><img src={assam} alt="Assam" /></div><span>Assam</span></div>
@@ -265,7 +264,6 @@ const About = () => {
                         <div className="card"><div className="img-bx"><img src={goa} alt="Goa" /></div><span>Goa</span></div>
                         <div className="card"><div className="img-bx"><img src={gujarat} alt="Gujarat" /></div><span>Gujarat</span></div>
 
-                        {/* Duplicate List for seamless loop */}
                         <div className="card"><div className="img-bx"><img src={andhra_pradesh} alt="Andhra Pradesh" /></div><span>Andhra Pradesh</span></div>
                         <div className="card"><div className="img-bx"><img src={arunachal_pradesh} alt="Arunachal Pradesh" /></div><span>Arunachal Pradesh</span></div>
                         <div className="card"><div className="img-bx"><img src={assam} alt="Assam" /></div><span>Assam</span></div>
@@ -275,7 +273,7 @@ const About = () => {
                         <div className="card"><div className="img-bx"><img src={gujarat} alt="Gujarat" /></div><span>Gujarat</span></div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     )
 }

@@ -51,15 +51,15 @@ import Avatar from '@mui/material/Avatar';
 import { Link } from "react-router-dom";
 import PinterestIcon from '@mui/icons-material/Pinterest';
 
-import gatiSlider1 from "../assets/gatislider1.png"
-import gatiSlider2 from "../assets/gatislider2.png"
-import gatiSlider3 from "../assets/gatislider3.jpg"
-import gatiSlider4 from "../assets/gatislider4.png"
+import gatiSlider1 from "../assets/sliderImg/gatislider1.png"
+import gatiSlider2 from "../assets/sliderImg/gatislider2.png"
+import gatiSlider3 from "../assets/sliderImg/gatislider3.png"
+import getInTouchImg from "../assets/get-in-touch.png"
 
 const Home: React.FC = () => {
 
-    
-    const images = [gatiSlider2, gatiSlider3, gatiSlider4, ];
+
+    const images = [gatiSlider1, gatiSlider2, gatiSlider3];
 
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
@@ -140,6 +140,68 @@ const Home: React.FC = () => {
 
     const [activeBtn, setActiveBtn] = useState("Domestic Moving");
 
+    interface FaqItem {
+        question: string;
+        answer: string;
+    }
+
+    const faqData: FaqItem[] = [
+        { question: "What services do you offer?", answer: "We provide a wide range of relocation services including home shifting, office relocation, vehicle transportation, packing & unpacking, loading & unloading, and secure storage facilities." },
+        { question: "How do I book your services?", answer: "You can easily book through our website, call support, or fill the enquiry form for a callback & quotation." },
+        { question: "Do you provide insurance for goods?", answer: "Yes, we offer full-value transit insurance for your belongings. Our team will guide you through available options." },
+        { question: "Are your packing materials safe and secure?", answer: "Absolutely. We use bubble wrap, corrugated boxes, foam sheets, and stretch film to protect your items." },
+        { question: "Can I track my shipment?", answer: "Yes, you can monitor your shipment in real time. Our team also provides 24/7 update support." },
+    ];
+
+
+
+    const faqData2: FaqItem[] = [
+        {
+            question: "How long does relocation take?",
+            answer:
+                "Local moves take 1 day. Intercity moves usually take 2–5 days depending on volume and distance.",
+        },
+        {
+            question: "Do you handle vehicle shifting?",
+            answer: "Yes. We offer enclosed and open carrier vehicle shifting services for both cars and bikes across India.",
+        },
+        {
+            question: "Can I reschedule my move?",
+            answer: "Yes, you can reschedule with advance notice. We recommend informing us at least 24 hours prior.",
+        },
+        {
+            question: "Is unpacking included in the service?",
+            answer: "Unpacking and reassembly services are available on request and can be added during your booking.",
+        },
+        {
+            question: "Do you provide storage facilities?",
+            answer:
+                "Yes, we offer secure, short and long-term storage options with 24x7 surveillance across major cities.",
+        },
+    ];
+
+    let i = -1;
+
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const [openIndex2, setOpenIndex2] = useState<number | null>(null);
+    const [showMoreFAQ, setShowMoreFAQ] = useState<boolean | null>(false);
+
+    const toggleFAQ = (index: number) => {       // <-- yaha 'number' use karein
+        setOpenIndex(openIndex === index ? null : index);
+    };
+    const toggleFAQ2 = (index: number) => {       // <-- yaha 'number' use karein
+        setOpenIndex2(openIndex2 === index ? null : index);
+    };
+
+
+
+    const [moreFaqBtnText, setMoreFaqBtnText] = useState<String | null>("Show More FAQs");
+    const moreFaqFunc = () => {
+        setMoreFaqBtnText("Still have a question? Contact Us")
+        setShowMoreFAQ(true)
+
+    }
+
     return (
         <>
 
@@ -163,7 +225,7 @@ const Home: React.FC = () => {
                 <meta name="twitter:image" content="https://yourwebsite.com/twitter-image.jpg" />
             </Helmet>
 
-            <Box className="sliderBox" sx={{ marginTop:"107.01px", width: "100%", overflow: "hidden" }}>
+            <Box className="sliderBox" sx={{ marginTop: "107.01px", width: "95%", overflow: "hidden" }}>
                 <Slider {...settings}>
                     {images.map((img, index) => (
                         <Box key={index} sx={{ position: "relative", outline: "none" }}>
@@ -172,7 +234,7 @@ const Home: React.FC = () => {
                                 alt={`slide-${index}`}
                                 style={{
                                     width: "100%",
-                                    height: "450px",
+                                    height: "100%",
                                     objectFit: "cover",
                                 }}
                             />
@@ -371,7 +433,7 @@ const Home: React.FC = () => {
             <section id="get-in-touch">
                 <div className="content">
                     <div className="img-slider">
-                        <img src={gatiSlider1} />
+                        <img src={getInTouchImg} />
                     </div>
                     <div className="details">
                         <h1>Get In Touch</h1>
@@ -380,16 +442,16 @@ const Home: React.FC = () => {
                         <ul>
                             <li><CallIcon></CallIcon> <span>+91 72900 08200</span></li>
                             <li><EmailIcon></EmailIcon> <span>gatishiftingpackers@gmail.com</span></li>
-                            <li><a href="#"><ChatBubbleIcon></ChatBubbleIcon><span>Chat Now</span></a></li>
+                            <li><a href="https://wa.me/917290008200"><ChatBubbleIcon></ChatBubbleIcon><span>Chat Now</span></a></li>
                             <li><LocationOnIcon></LocationOnIcon><span>India</span></li>
                         </ul>
                         <div className="social-links">
-                            <a href="#"><InstagramIcon></InstagramIcon></a>
-                            <a href="#"><FacebookIcon></FacebookIcon></a>
-                            <a href="#"><XIcon></XIcon></a>
-                            <a href="#"><LinkedInIcon></LinkedInIcon></a>
-                            <a href="#"><YouTubeIcon></YouTubeIcon></a>
-                            <a href="#"><PinterestIcon></PinterestIcon></a>
+                            <a href="https://www.instagram.com/gati_shifting_packers_pvt_ltd/profilecard/?igsh=eXYzY25mYXkyNG05"><InstagramIcon></InstagramIcon></a>
+                            <a href="https://www.facebook.com/share/1CZTDwNPWw/"><FacebookIcon></FacebookIcon></a>
+                            <a href="https://x.com/gati_shifting"><XIcon></XIcon></a>
+                            <a href="https://www.linkedin.com/in/gati-shifting-6878bb377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><LinkedInIcon></LinkedInIcon></a>
+                            <a href="https://youtube.com/@gatishifting-moves?si=Lz283_yPnXuNCkQW"><YouTubeIcon></YouTubeIcon></a>
+                            <a href="https://in.pinterest.com/infogatishiftingpackers"><PinterestIcon></PinterestIcon></a>
                         </div>
                     </div>
                 </div>
@@ -435,7 +497,7 @@ const Home: React.FC = () => {
                                 <li><WatchLaterIcon></WatchLaterIcon><span>Mon - Sun: 8:00 AM - 8:00 PM</span></li>
                             </ul>
 
-                            <h1 className="hashTag">#GATI</h1>
+                            <h1 className="hashTag">#GatiShiftingPackers</h1>
                         </div>
                     </motion.div>
                 </div>
@@ -784,6 +846,51 @@ const Home: React.FC = () => {
                         </Box>
                     </Slider>
 
+
+                </div>
+            </section>
+            <section id="faq-section">
+                <div className="faq-container">
+                    <h2>Frequently Asked Questions</h2>
+                    {faqData.map((item, index) => {
+                        i++;
+                        console.log(i)
+                        return (<div key={index} className="faq-item">
+                            <button
+                                className="faq-question"
+                                onClick={() => toggleFAQ(index)}
+                            >
+                                {item.question}
+                                <span className="icon">{openIndex === index ? "−" : "+"}</span>
+                            </button>
+                            {openIndex === index && (
+                                <div className="faq-answer">
+                                    {item.answer}
+                                </div>
+                            )}
+                        </div>)
+
+                    })}
+                    {
+                        (showMoreFAQ) ? faqData2.map((item, index) => {
+                            return (<div key={index} className="faq-item">
+                                <button
+                                    className="faq-question"
+                                    onClick={() => toggleFAQ2(index)}
+                                >
+                                    {item.question}
+                                    <span className="icon">{openIndex2 === index ? "−" : "+"}</span>
+                                </button>
+                                {openIndex2 === index && (
+                                    <div className="faq-answer">
+                                        {item.answer}
+                                    </div>
+                                )}
+                            </div>
+                            )
+                        }) : ""
+                    }
+                    <button onClick={moreFaqFunc} className="show-more">{moreFaqBtnText}</button>
                 </div>
             </section>
         </>
