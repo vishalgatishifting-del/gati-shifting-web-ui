@@ -1,0 +1,47 @@
+@import "../style/variables";
+
+#services-area{
+    @include font-poppins-sans(400);
+    margin-top: 30px;
+    h1{
+      text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 797px) {
+  .css-wua2ic{
+    // grid-template-columns: repeat(4, 1fr)!important;
+  }
+  .css-1fvdevm{
+    padding: 20px!important;
+  }
+  .css-aw63vw-MuiPaper-root{
+    // width: 70px!important;
+    // height: 70px!important;
+  }
+}
+@media screen and (max-width: 616px) {
+  .css-wua2ic{
+    grid-template-columns: repeat(4, 1fr)!important;
+  }
+  .css-1fvdevm{
+    padding: 20px!important;
+  }
+  .css-aw63vw-MuiPaper-root{
+    // width: 70px!important;
+    // height: 70px!important;
+  }
+}
+@media screen and (max-width: 507px) {
+  .css-wua2ic{
+    grid-template-columns: repeat(3, 1fr)!important;
+  }
+  .css-1fvdevm{
+    padding: 20px!important;
+  }
+  .css-aw63vw-MuiPaper-root{
+    // width: 70px!important;
+    // height: 70px!important;
+  }
+}

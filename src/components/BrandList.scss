@@ -1,0 +1,64 @@
+@import "../style/variables";
+#brands-list {
+    @include font-poppins-sans(400);
+
+    margin: 50px 0;
+
+    h1 {
+        text-align: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 15px;
+        width: 60%;
+        margin: auto;
+        align-items: center;
+
+
+        .brand img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1180px) {
+    #brands-list{
+        padding: 10px;
+        .container{
+            width: 80%;
+        }
+    } 
+}
+
+@media screen and (max-width: 957px) {
+    #brands-list{
+        .container{
+            width: 90%;
+        }
+    } 
+}
+@media screen and (max-width: 784px) {
+    #brands-list{
+        .container{
+            width: 100%;
+        }
+    } 
+}
+@media screen and (max-width: 650px) {
+    #brands-list{
+        .container{
+            grid-template-columns: repeat(5, 1fr);
+        }
+    } 
+}
+@media screen and (max-width: 426px) {
+    #brands-list{
+        .container{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    } 
+}

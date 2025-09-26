@@ -1,0 +1,149 @@
+@import "../style/variables";
+
+#office-location-section {
+    margin-top: 60px;
+    background: linear-gradient(-30deg, #0a1017, #1e3045);
+    color: #fff;
+    @include font-poppins-sans(400);
+    padding: 60px 0;
+
+    .container {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        border-radius: 20px;
+        // overflow: hidden;
+
+
+        iframe {
+            border-radius: 20px;
+        }
+
+        .details {
+            margin-left: 60px;
+
+            ul li {
+                list-style: none;
+                margin: 10px 0;
+                display: flex;
+
+                span {
+                    margin-left: 10px;
+                }
+            }
+
+            .hashTag {
+                font-size: 50px;
+                color: #19283a;
+                font-style: italic;
+                margin: 0;
+                padding: 0;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1350px) {
+    #office-location-section {
+        padding: 60px 10px;
+
+        .container {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    #office-location-section {
+        .container {
+            .details {
+                margin-left: 20px;
+
+                .hashTag {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #office-location-section {
+        .container {
+            .details {
+
+                .hashTag {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1044px) {
+    #office-location-section {
+        .container {
+            iframe {
+                width: 500px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 892px) {
+    #office-location-section {
+        .container {
+            iframe {
+                width: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 892px) {
+    #office-location-section {
+        .container {
+            flex-direction: column;
+
+            iframe {
+                width: 100%;
+            }
+
+            .details {
+                margin-left: 0;
+
+                .hashTag {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 892px) {
+    #office-location-section {
+        .container {
+            .details {
+
+                .hashTag {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 468px) {
+    #office-location-section {
+        .container {
+            .details {
+
+                .hashTag {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}

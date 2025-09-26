@@ -1,33 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 $primary-color: #2563eb;
 $secondary-color: #15ab4d;
 $background-color: #f8f9fa;
 $text-color: #333;
 
-@mixin font-open-sans($weight: 400, $style: normal, $wdth: 100) {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: $weight;
-  font-style: $style;
-  font-variation-settings: "wdth"$wdth;
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.woff2") format("woff2"),
+    url("/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-
-@mixin font-noto-sans($weight: 400, $style: normal, $wdth: 100) {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: $weight;
-  font-style: $style;
-  font-variation-settings: "wdth"$wdth;
+/* Example for bold weight */
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Bold.woff2") format("woff2"),
+    url("/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
+
 
 @mixin font-poppins-sans($weight: 400) {
   font-family: "Poppins", sans-serif;
   font-weight: $weight;
   font-style: normal;
+  ascent-override: 92%;
+  descent-override: 24%;
+  line-gap-override: 0%;
 }

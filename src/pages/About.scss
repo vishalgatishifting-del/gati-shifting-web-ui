@@ -1,4 +1,6 @@
 @import "../style/variables";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 
 #company-info {
     @include font-poppins-sans(400);
@@ -51,6 +53,40 @@
         }
     }
 }
+
+.image-box {
+  display: flex;
+  width: 80%;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+
+  .image-item {
+    flex: 1;
+    transition: flex 0.4s ease;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    &:hover img {
+      transform: scale(1.05);
+    }
+  }
+
+  .image-item.active {
+    flex: 3; // hovered image badi hogi
+  }
+
+  .image-item:not(.active) {
+    flex: 0.5; // baaki images choti ho jayengi
+  }
+}
+
 
 
 #our-services {
@@ -134,49 +170,387 @@
                 border-radius: 30px;
                 box-shadow: 10px 10px 40px #00000017,
                     inset 0px 10px 40px #00000003;
-                background: #fff;
+                background: #ffffff;
                 z-index: 100;
-                padding: 10px;
+                padding: 20px;
 
                 img {
                     width: 100%;
+                }
+            }
+
+            .bg-dark {
+                background: #000;
+            }
+
+        }
+
+    }
+}
+
+#presence {
+    @include font-poppins-sans(400);
+    padding: 50px 0;
+
+    h1 {
+        text-align: center;
+    }
+
+    .slider-container,
+    .slider-container2 {
+        width: 1496px;
+        overflow: hidden;
+
+        .card-container {
+            width: 150px;
+            min-width: 150px;
+            text-align: center;
+            box-shadow: 0 5px 10px #b8b8b8;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 50px 0;
+
+            .state-img {
+                width: 100%;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+#why-choose-sec {
+    @include font-poppins-sans(400);
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+        width: 85%;
+        margin: auto;
+
+
+        .card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 5px 10px #dddddd99;
+            border-radius: 20px;
+            padding: 20px 15px;
+            text-align: center;
+            overflow: hidden;
+            cursor: pointer;
+
+            .icon {
+                z-index: 1;
+            }
+
+            .icon .i {
+                font-size: 50px;
+            }
+
+            h4 {
+                margin: 10px;
+                z-index: 1;
+            }
+
+            .desc {
+                font-size: 14px;
+                color: rgb(90, 90, 90);
+                z-index: 1;
+            }
+        }
+
+        .card:hover {
+            color: #fff;
+
+            .desc {
+                color: #fff;
+            }
+        }
+
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgb(118, 0, 197), blue);
+            transition: .3s;
+            border-radius: 20px;
+        }
+
+        .card:hover::before {
+            top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1181px) {
+    #why-choose-sec {
+        padding: 10px;
+
+        .container {
+            width: 100%;
+            gap: 10px;
+
+            .card {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1101px) {
+    #company-info {
+        margin-top: 63.01px !important;
+    }
+}
+
+@media screen and (max-width: 1101px) {
+    #company-info {
+        padding: 10px;
+
+        .container {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #our-services {
+        h1 {
+            margin-bottom: 0;
+        }
+
+        .container {
+            padding: 10px;
+            gap: 10px;
+        }
+    }
+
+    #table-section {
+        .container {
+            padding: 0 10px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 896px) {
+    #table-section {
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    #partners {
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    #presence {
+        h1 {
+            font-size: 24px;
+        }
+
+        .slider-container,
+        .slider-container2 {
+            .card-container {
+                margin: 20px 0;
+            }
+        }
+    }
+
+    #why-choose-sec {
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    #brands-list {
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    #get-in-touch-form {
+        h1 {
+            font-size: 24px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 885px) {
+    #why-choose-sec {
+        padding: 10px;
+
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+
+            .card {
+                box-shadow: 0 3px 10px rgba(221, 221, 221, 0.6);
+
+                .desc {
+                    font-size: 12px;
+                }
+            }
+
+            .card:last-child {
+                grid-column: 1 / -1; // start from first line, end at last line
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 869px) {
+    #company-info {
+
+        .container {
+            .img-bx img {
+                width: 400px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 817px) {
+    #partners {
+
+        .container {
+
+            .row {
+
+                .card {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 20px;
                 }
             }
         }
     }
 }
 
-#presence {
-    .presence-container {
-        // overflow: hidden;
-        // width: 100%;
+
+
+@media screen and (max-width: 806px) {
+    #our-services {
+        .container {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
+}
 
-    .scroll-track {
-        // display: flex;
-        // width: max-content;   
-        // animation: scroll-left 20s linear infinite;
-    }
+@media screen and (max-width: 728px) {
+    #company-info {
 
-    .card {
-        // flex: 0 0 auto;
-        // width: 150px;
-        // text-align: center;
+        .container {
+            flex-direction: column;
 
-        .img-bx{
-            img{
-                width: 50px;
+            .img-bx {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+            }
+
+            .details {
+                margin-left: 0;
             }
         }
     }
+}
 
-    // @keyframes scroll-left {
-    //     from {
-    //         transform: translateX(0);
-    //     }
 
-    //     to {
-    //         transform: translateX(-50%);
-    //     }
-    // }
+
+@media screen and (max-width: 575px) {
+
+    #partners {
+
+        .container {
+
+            .row {
+
+                .card {
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 15px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 510px) {
+    #company-info {
+
+        .container {
+
+            .details {
+                h1 {
+                    font-size: 25px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+
+                ul {
+                    margin-bottom: 20px;
+
+                    li {
+                        font-size: 13px;
+                        margin: 5px 0;
+                    }
+                }
+
+                .contact-btn {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 481px) {
+    #our-services {
+        .container {
+            grid-gap: 7px;
+
+            .card {
+                border-radius: 15px;
+
+                .img-bx {
+                    img {
+                        border-radius: 15px;
+                    }
+                }
+
+                h4 {
+                    margin: 5px 0;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
 }

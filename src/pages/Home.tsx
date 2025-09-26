@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import { Box } from "@mui/material";
+import Avatar from '@mui/material/Avatar';
 import "./Home.scss"
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import DirectionsCarFilledIcon from '@mui/icons-material/DirectionsCarFilled';
@@ -45,7 +46,6 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { motion, type Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import Avatar from '@mui/material/Avatar';
 
 
 import { Link } from "react-router-dom";
@@ -55,8 +55,14 @@ import gatiSlider1 from "../assets/sliderImg/gatislider1.webp"
 import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
 import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
 import getInTouchImg from "../assets/get-in-touch.png"
+import FAQList from "../components/FAQList";
+import OfficeLocation from "../components/OfficeLocation";
 
-import ZohoForm from "../components/ZohoForm"
+
+// import { IFaqItem } from "../models/App.model";
+// import { AppConstant } from "../constants/app.constant";
+
+
 
 const Home: React.FC = () => {
 
@@ -66,35 +72,8 @@ const Home: React.FC = () => {
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
     const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: false, threshold: 0.1 });
-    const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: false, threshold: 0.2 });
-    const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: false, threshold: 0.2 });
     const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: false, threshold: 0.2 });
 
-    const slideLeft: Variants = {
-        hidden: { opacity: 0, x: -100 },
-        visible: (delay = 0) => ({
-            opacity: 1,
-            x: 0,
-            transition: { duration: 0.3, ease: "easeOut", delay },
-        }),
-    };
-
-    const slideRight: Variants = {
-        hidden: { opacity: 0, x: 100 },
-        visible: (delay = 0) => ({
-            opacity: 1,
-            x: 0,
-            transition: { duration: 0.3, ease: "easeOut", delay },
-        }),
-    };
-
-    // const slideUp = {
-    //     hidden: { opacity: 0, y: 50 },
-    //     visible: {
-    //         opacity: 1, y: 0,
-    //         transition: { duration: 0.4 }
-    //     },
-    // };
 
     const zoomIn: Variants = {
         hidden: { opacity: 0, scale: 0.5 },
@@ -142,89 +121,38 @@ const Home: React.FC = () => {
 
     const [activeBtn, setActiveBtn] = useState("Domestic Moving");
 
-    interface FaqItem {
-        question: string;
-        answer: string;
-    }
-
-    const faqData: FaqItem[] = [
-        { question: "What services do you offer?", answer: "We provide a wide range of relocation services including home shifting, office relocation, vehicle transportation, packing & unpacking, loading & unloading, and secure storage facilities." },
-        { question: "How do I book your services?", answer: "You can easily book through our website, call support, or fill the enquiry form for a callback & quotation." },
-        { question: "Do you provide insurance for goods?", answer: "Yes, we offer full-value transit insurance for your belongings. Our team will guide you through available options." },
-        { question: "Are your packing materials safe and secure?", answer: "Absolutely. We use bubble wrap, corrugated boxes, foam sheets, and stretch film to protect your items." },
-        { question: "Can I track my shipment?", answer: "Yes, you can monitor your shipment in real time. Our team also provides 24/7 update support." },
-    ];
-
-
-
-    const faqData2: FaqItem[] = [
-        {
-            question: "How long does relocation take?",
-            answer:
-                "Local moves take 1 day. Intercity moves usually take 2–5 days depending on volume and distance.",
-        },
-        {
-            question: "Do you handle vehicle shifting?",
-            answer: "Yes. We offer enclosed and open carrier vehicle shifting services for both cars and bikes across India.",
-        },
-        {
-            question: "Can I reschedule my move?",
-            answer: "Yes, you can reschedule with advance notice. We recommend informing us at least 24 hours prior.",
-        },
-        {
-            question: "Is unpacking included in the service?",
-            answer: "Unpacking and reassembly services are available on request and can be added during your booking.",
-        },
-        {
-            question: "Do you provide storage facilities?",
-            answer:
-                "Yes, we offer secure, short and long-term storage options with 24x7 surveillance across major cities.",
-        },
-    ];
-
-    let i = -1;
-
-    const [openIndex, setOpenIndex] = useState<number | null>(null);
-    const [openIndex2, setOpenIndex2] = useState<number | null>(null);
-    const [showMoreFAQ, setShowMoreFAQ] = useState<boolean | null>(false);
-
-    const toggleFAQ = (index: number) => {       // <-- yaha 'number' use karein
-        setOpenIndex(openIndex === index ? null : index);
-    };
-    const toggleFAQ2 = (index: number) => {       // <-- yaha 'number' use karein
-        setOpenIndex2(openIndex2 === index ? null : index);
-    };
-
-
-
-    const [moreFaqBtnText, setMoreFaqBtnText] = useState<String | null>("Show More FAQs");
-    const moreFaqFunc = () => {
-        setMoreFaqBtnText("Still have a question? Contact Us")
-        setShowMoreFAQ(true)
-
-    }
 
     return (
         <>
 
             <Helmet>
-                <title>Gati Packers & Movers | Reliable Shifting Services in India</title>
-                <meta name="description" content="Gati Packers & Movers provide seamless house, office, car, and bike shifting across India. Get a free quote today!" />
-                <meta name="keywords" content="packers movers, house shifting, office relocation, car transport, bike transport, Gati movers India" />
-                <meta name="author" content="Gati Packers & Movers" />
+                <title>Gati Shifting Packers | Trusted Packers and Movers in India</title>
+                <meta name="description" content="Gati Shifting Packers offers safe and affordable relocation services across India. Expert in home shifting, office relocation, car & bike transport, packing, unpacking, and warehousing with professional movers you can trust." />
+                <meta name="keywords" content="gati house shifting service, Packers and Movers India, Home Shifting, Office Relocation, Car Transport, Bike Transport, Household Shifting, Packing and Moving Services, Affordable Packers, Trusted Movers" />
+                <meta name="author" content="Rohan" />
 
                 {/* Open Graph for Social Sharing */}
-                <meta property="og:title" content="Gati Packers & Movers | Reliable Shifting Services" />
-                <meta property="og:description" content="Get safe, timely, and hassle-free shifting services for home, office, cars, and bikes across India." />
-                <meta property="og:image" content="https://yourwebsite.com/og-image.jpg" />
-                <meta property="og:url" content="https://yourwebsite.com" />
+                <meta property="og:title" content="Gati Shifting Packers | Reliable Shifting Services" />
+                <meta property="og:description" content="Gati Shifting Packers offers safe and affordable relocation services across India. Expert in home shifting, office relocation, car & bike transport, packing, unpacking, and warehousing with professional movers you can trust." />
+                <meta property="og:image" content={gatiSlider2} />
+                <meta property="og:url" content="https://gatishiftingpackers.com/" />
                 <meta property="og:type" content="website" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Gati Packers & Movers" />
-                <meta name="twitter:description" content="Reliable shifting services across India. House, office, car, bike relocation made easy!" />
-                <meta name="twitter:image" content="https://yourwebsite.com/twitter-image.jpg" />
+                <meta name="twitter:title" content="Gati Shifting Packers" />
+                <meta name="twitter:description" content="Gati Shifting Packers offers safe and affordable relocation services across India. Expert in home shifting, office relocation, car & bike transport, packing, unpacking, and warehousing with professional movers you can trust." />
+                <meta name="twitter:image" content={gatiSlider2} />
+
+
+                <meta name="robots" content="index, follow" />
+
+                {/* language used in site */}
+                <meta httpEquiv="content-language" content="en" /> 
+
+                <link rel="canonical" href="https://gatishiftingpackers.com/" />
+
+
             </Helmet>
 
             <Box className="sliderBox" sx={{ marginTop: "107.01px", width: "95%", overflow: "hidden" }}>
@@ -234,6 +162,8 @@ const Home: React.FC = () => {
                             <img
                                 src={img}
                                 alt={`slide-${index}`}
+                                title="Slider"
+                                loading="lazy"
                                 style={{
                                     width: "100%",
                                     height: "100%",
@@ -244,8 +174,6 @@ const Home: React.FC = () => {
                     ))}
                 </Slider>
             </Box>
-
-            <ZohoForm />
 
             <motion.div
                 ref={ref1}
@@ -437,7 +365,7 @@ const Home: React.FC = () => {
             <section id="get-in-touch">
                 <div className="content">
                     <div className="img-slider">
-                        <img src={getInTouchImg} />
+                        <img src={getInTouchImg} alt="Get In Touch Image" title="Get In Touch" loading="lazy" />
                     </div>
                     <div className="details">
                         <h1>Get In Touch</h1>
@@ -461,51 +389,7 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
-            <section id="office-location-section">
-                <div className="container">
-                    <motion.div
-                        ref={ref3}
-                        variants={slideLeft}
-                        initial="hidden"
-                        animate={inView3 ? "visible" : "hidden"}
-                        custom={0.3} // delay
-                        className="p-6 bg-yellow-200 rounded-xl shadow-lg text-center w-fit mx-auto"
-                    >
-                        <iframe
-                            title="Google Map"
-                            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3769.5225867720897!2d72.99421947520662!3d19.128588882086827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDA3JzQyLjkiTiA3MsKwNTknNDguNSJF!5e0!3m2!1sen!2sin!4v1758188918732!5m2!1sen!2sin"
-                            width="600"
-                            height="450"
-                            loading="lazy"
-                            allowFullScreen
-                            referrerPolicy="no-referrer-when-downgrade"
-                            className="rounded-lg"
-                        />
-                    </motion.div>
-                    <motion.div
-                        ref={ref4}
-                        variants={slideRight}
-                        initial="hidden"
-                        animate={inView4 ? "visible" : "hidden"}
-                        custom={0.3} // delay
-                        className="p-6 bg-blue-200 rounded-xl shadow-lg text-center w-fit mx-auto"
-                    >
-                        <div className="details">
-                            <h1>Our Office Location</h1>
-
-                            <ul>
-
-                                <li><LocationOnIcon></LocationOnIcon><span>Office No. 04 Shree Sadguru Niwas Opp MSEB OFFICE Sector 21 Ghansoli Navi Mumbai 400701, India</span></li>
-                                <li><CallIcon></CallIcon> <span>+91 72900 08200</span></li>
-                                <li><EmailIcon></EmailIcon> <span>gatishiftingpackers@gmail.com</span></li>
-                                <li><WatchLaterIcon></WatchLaterIcon><span>Mon - Sun: 8:00 AM - 8:00 PM</span></li>
-                            </ul>
-
-                            <h1 className="hashTag">#GatiShiftingPackers</h1>
-                        </div>
-                    </motion.div>
-                </div>
-            </section>
+            <OfficeLocation />
 
             <section id="award-certifications">
                 <h1>Awards & Certifications</h1>
@@ -521,7 +405,7 @@ const Home: React.FC = () => {
                     >
                         <div className="card">
                             <div className="img-bx">
-                                <img src={moves} />
+                                <img src={moves} alt="Gati has completed over 10,000 successful relocations across India" title="moves" loading="lazy" />
 
                             </div>
                             <div className="details">
@@ -542,7 +426,7 @@ const Home: React.FC = () => {
                     >
                         <div className="card">
                             <div className="img-bx">
-                                <img src={satisfaction} />
+                                <img src={satisfaction} alt="Customer Satisfaction" title="Customer Satisfaction" loading="lazy" />
                             </div>
                             <div className="details">
                                 <h3><CountUp start={0} end={99} duration={2} suffix="%" /> Satisfaction</h3>
@@ -562,7 +446,7 @@ const Home: React.FC = () => {
                     >
                         <div className="card">
                             <div className="img-bx">
-                                <img src={city} />
+                                <img src={city} alt="Moving Services in 180+ cities" title="Cities" loading="lazy"/>
                             </div>
                             <div className="details">
                                 <h3><CountUp start={0} end={180} duration={2} suffix="+" /> Cities</h3>
@@ -582,7 +466,7 @@ const Home: React.FC = () => {
                         <div className="card">
                             <div className="img-bx">
 
-                                <img src={awards} />
+                                <img src={awards} alt="Company Receiving best packers and movers award" title="Company's awards" loading="lazy" />
                             </div>
                             <div className="details">
                                 <h3>
@@ -628,7 +512,7 @@ const Home: React.FC = () => {
             <section id="about-company">
                 <div className="container">
                     <div className="img-bx">
-                        <img src={stepsImg} />
+                        <img src={stepsImg} alt="Gati relocation services including packing and unpacking, loading and unloading, secure transportation with GPS vehicles, car and bike relocation, transit insurance, storage, warehousing, and all-in-one transport solutions" title="Steps" loading="lazy"/>
                     </div>
                     <div className="detail">
                         <h2>About Us | Comprehensive Moving Solutions by Gati Packers and Movers in India</h2>
@@ -853,50 +737,8 @@ const Home: React.FC = () => {
 
                 </div>
             </section>
-            <section id="faq-section">
-                <div className="faq-container">
-                    <h2>Frequently Asked Questions</h2>
-                    {faqData.map((item, index) => {
-                        i++;
-                        console.log(i)
-                        return (<div key={index} className="faq-item">
-                            <button
-                                className="faq-question"
-                                onClick={() => toggleFAQ(index)}
-                            >
-                                {item.question}
-                                <span className="icon">{openIndex === index ? "−" : "+"}</span>
-                            </button>
-                            {openIndex === index && (
-                                <div className="faq-answer">
-                                    {item.answer}
-                                </div>
-                            )}
-                        </div>)
-
-                    })}
-                    {
-                        (showMoreFAQ) ? faqData2.map((item, index) => {
-                            return (<div key={index} className="faq-item">
-                                <button
-                                    className="faq-question"
-                                    onClick={() => toggleFAQ2(index)}
-                                >
-                                    {item.question}
-                                    <span className="icon">{openIndex2 === index ? "−" : "+"}</span>
-                                </button>
-                                {openIndex2 === index && (
-                                    <div className="faq-answer">
-                                        {item.answer}
-                                    </div>
-                                )}
-                            </div>
-                            )
-                        }) : ""
-                    }
-                    <button onClick={moreFaqFunc} className="show-more">{moreFaqBtnText}</button>
-                </div>
-            </section>
+            
+            <FAQList></FAQList>
         </>
     )
 }

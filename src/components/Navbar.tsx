@@ -38,12 +38,12 @@ const Navbar = () => {
                     <img src={Logo} alt="Gati Shifting Packers Logo" title='Gati Shifting Logo' loading='lazy' />
                 </div>
                 <ul className={(openNav) ? "active" : "inactive"}>
-                    <li><Link to="/"><HomeIcon className='icon'></HomeIcon> Home</Link></li>
-                    <li><Link to="/about"><InfoIcon className='icon'></InfoIcon> About Us</Link></li>
-                    <li><Link to="/review"><StarRateIcon className='icon'></StarRateIcon> Review</Link></li>
-                    <li><Link to="/faqs"><HelpOutlineIcon className='icon'></HelpOutlineIcon> FAQs</Link></li>
-                    <li><Link to="/services"><MiscellaneousServicesIcon className='icon'></MiscellaneousServicesIcon> Services</Link></li>
-                    <li><Link to="/contact"><ContactsIcon className='icon'></ContactsIcon> Contact Us</Link></li>
+                    <li><Link to="/" onClick={() => {setOpenNav(false)}}><HomeIcon className='icon'></HomeIcon> Home</Link></li>
+                    <li><Link to="/about" onClick={() => {setOpenNav(false)}}><InfoIcon className='icon'></InfoIcon> About Us</Link></li>
+                    <li><Link to="/review" onClick={() => {setOpenNav(false)}}><StarRateIcon className='icon'></StarRateIcon> Review</Link></li>
+                    <li><Link to="/faqs" onClick={() => {setOpenNav(false)}}><HelpOutlineIcon className='icon'></HelpOutlineIcon> FAQs</Link></li>
+                    <li><Link to="/services" onClick={() => {setOpenNav(false)}}><MiscellaneousServicesIcon className='icon'></MiscellaneousServicesIcon> Services</Link></li>
+                    <li><Link to="/contact-us" onClick={() => {setOpenNav(false)}}><ContactsIcon className='icon'></ContactsIcon> Contact Us</Link></li>
                     
                     {/* <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About Us</Link></li>

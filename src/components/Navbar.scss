@@ -8,7 +8,7 @@ header {
     flex-direction: column;
     background: #fff;
     z-index: 1000;
-    margin-bottom: 100%;
+    // margin-bottom: 100%;
 
     .top-area {
         background-color: $primary-color;
@@ -22,7 +22,7 @@ header {
             text-decoration: none;
             color: #fff;
             font-size: 15px;
-            @include font-open-sans(300, normal, 100);
+            @include font-poppins-sans(300);
 
             span {
                 margin-left: 5px;
