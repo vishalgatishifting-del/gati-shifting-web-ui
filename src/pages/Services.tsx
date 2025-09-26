@@ -31,7 +31,7 @@ const Services = () => {
             <ServicesSection ></ServicesSection>
              <section id="table-section-services">
                 <h1>Estimated Charges of Packing and Moving Services in India</h1>
-                <p>Rehousing offers reliable packing and moving services in India for your relocation. Our team handles and transports your items safely. Get a clear price estimate for your unique needs.</p>
+                <p>Gati Shifting Packers offers reliable packing and moving services across India. Our team ensures the safe handling and transportation of your belongings. Get a clear price estimate tailored to your needs.</p>
                 <div className="container">
                     <TableContainer component={Paper}>
                         <Table>
