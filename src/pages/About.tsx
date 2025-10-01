@@ -270,7 +270,7 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                 </div>
             </section>
 
-            <div className="image-box">
+            {/* <div className="image-box">
                 {imagesForC.map((src, index) => (
                     <div
                         key={index}
@@ -283,7 +283,7 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                         <img src={src} alt={`img-${index}`} />
                     </div>
                 ))}
-            </div>
+            </div> */}
 
             <section id="our-services">
                 <h1>Our Services</h1>

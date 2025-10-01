@@ -17,7 +17,10 @@ import "./Services.scss"
 import gatiSlider2 from "../assets/sliderImg/gatislider2.webp";
 
 import { useState } from "react";
-
+import petSlider from "../assets/expandable_slider/pet.webp";
+import bike from "../assets/expandable_slider/bike.webp";
+import house from "../assets/expandable_slider/house.webp";
+import car from "../assets/expandable_slider/car.webp";
 
 
 const Services = () => {
@@ -36,12 +39,19 @@ const Services = () => {
     ];
 
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
-        const imagesForC: string[] = [
-            "https://picsum.photos/id/1015/600/400",
-            "https://picsum.photos/id/1016/600/400",
-            "https://picsum.photos/id/1018/600/400",
-            "https://picsum.photos/id/1020/600/400",
-        ];
+
+    interface ImageItem{
+        img: string;
+        heading: string;
+        text: string;
+    }
+
+    const imagesForC: ImageItem[] = [
+        {img: petSlider, heading: "Pet Relocation", text: "Stress-free pet transportation with temperature-controlled spaces and necessary travel documentation."},
+        {img: bike, heading: "Bike Transport", text: "Bike relocation with protective wrapping, proper anchoring, and doorstep pickup and delivery."},
+        {img: house, heading: "House Shifting", text: "Smooth and reliable house shifting with professional packing, loading, transport, and setup at your new home."},
+        {img: car, heading: "Car Transport", text: "Car shifting through open or enclosed carriers with tracking, insurance, and timely delivery."},
+    ];
     return (
         <>
 
@@ -67,18 +77,18 @@ const Services = () => {
             </Helmet>
 
             <ServicesSection ></ServicesSection>
-            
+
             <div className="image-box">
-                {imagesForC.map((src, index) => (
+                {imagesForC.map((data, index) => (
                     <div
                         key={index}
                         className={`image-item ${activeIndex === index ? "active" : ""}`}
                         onMouseEnter={() => setActiveIndex(index)}
                         onMouseLeave={() => setActiveIndex(null)}
                     >
-                        <h2>Home Shifting</h2>
-                        <p>Seamless Home Shifting:<br></br> Moving You with Care and Precision!</p>
-                        <img src={src} alt={`img-${index}`} />
+                        <h2>{data.heading}</h2>
+                        <p>{data.text}</p>
+                        <img src={data.img} alt={`img-${index}`} />
                     </div>
                 ))}
             </div>
@@ -108,7 +118,7 @@ const Services = () => {
                     </TableContainer>
                 </div>
 
-                
+
             </section>
             <ContactForm></ContactForm>
             <BrandList />
