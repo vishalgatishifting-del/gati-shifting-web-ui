@@ -116,7 +116,7 @@ import {
     Paper
 } from "@mui/material";
 import BrandList from "../components/BrandsList";
-import { useState } from "react";
+// import { useState } from "react";
 
 
 const About = () => {
@@ -210,13 +210,13 @@ const About = () => {
     ];
 
 
-    const [activeIndex, setActiveIndex] = useState<number | null>(null);
-    const imagesForC: string[] = [
-        "https://picsum.photos/id/1015/600/400",
-        "https://picsum.photos/id/1016/600/400",
-        "https://picsum.photos/id/1018/600/400",
-        "https://picsum.photos/id/1020/600/400",
-    ];
+    // const [activeIndex, setActiveIndex] = useState<number | null>(null);
+    // const imagesForC: string[] = [
+    //     "https://picsum.photos/id/1015/600/400",
+    //     "https://picsum.photos/id/1016/600/400",
+    //     "https://picsum.photos/id/1018/600/400",
+    //     "https://picsum.photos/id/1020/600/400",
+    // ];
 
     return (
         <>
