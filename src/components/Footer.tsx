@@ -132,7 +132,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p>© 2025 Gati Shifting Packers & Movers. All Rights Reserved.</p>
+                    <p>© 2025 Gati Shifting Packers. All Rights Reserved.</p>
                     <div className="footer-links">
                         <a href="#">Terms</a> | <a href="#">Privacy</a>
                     </div>

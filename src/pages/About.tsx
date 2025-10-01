@@ -254,7 +254,7 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                     <div className="details">
                         <h1>About Us</h1>
                         <p>
-                            At Gati, we redefine the moving experience by offering end-to-end packers and movers solutions across India. Whether you're relocating locally or to another state, we make every transition seamless, stress-free, and efficient.
+                            At Gati Shifting Packers, we redefine the moving experience by offering end-to-end packers and movers solutions across India. Whether you're relocating locally or to another state, we make every transition seamless, stress-free, and efficient.
 
                             Our expert team handles everything—from careful packing with premium materials to timely transportation and safe delivery. With clear, upfront pricing and personalized moving plans, we’ve become the go-to choice for individuals, families, and professionals.
                         </p>
