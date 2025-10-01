@@ -50,7 +50,7 @@ const ContactForm = () => {
         body.append("jsonParam", jsonParam);
 
         try {
-            
+
             const apiUrl = "https://icrmondemand.com/wellnect/index.php?entryPoint=CreateEnquiryAPI";
 
             const response = await axios.post(apiUrl, body);
@@ -80,16 +80,16 @@ const ContactForm = () => {
                 </div>
                 <div className="form">
                     <form onSubmit={handleSubmit}>
-                        <input type="text" placeholder="Your Name" name="name" onChange={handleChange} value={formData.name} />
-                        <input type="text" placeholder="Your Email" name="email1" onChange={handleChange} value={formData.email1} />
-                        <input type="text" placeholder="Contact Number" name="phone_office" onChange={handleChange} value={formData.phone_office} />
-                        <input type="text" placeholder="Pickup From" name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} />
-                        <input type="text" placeholder="Drop Point" name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} />
-                        <input type="text" placeholder="Goods Type (e.g. Furniture, Boxes)" name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} />
+                        <input type="text" placeholder="Your Name" name="name" onChange={handleChange} value={formData.name} required/>
+                        <input type="text" placeholder="Your Email" name="email1" onChange={handleChange} value={formData.email1} required/>
+                        <input type="text" placeholder="Contact Number" name="phone_office" onChange={handleChange} value={formData.phone_office} required/>
+                        <input type="text" placeholder="Pickup From" name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} required/>
+                        <input type="text" placeholder="Drop Point" name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required/>
+                        <input type="text" placeholder="Goods Type (e.g. Furniture, Boxes)" name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required/>
                         <button type="submit" disabled={loading}>
                             {loading ? "Submitting..." : "Submit"}
                         </button>
-                        {success && <p>{success}</p>}
+                        <span className="success-msg">{success && <p>{success}</p>}</span>
                     </form>
                 </div>
             </div>

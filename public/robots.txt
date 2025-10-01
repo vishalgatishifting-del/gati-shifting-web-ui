@@ -1,0 +1,7 @@
+# robots.txt for Gati Shifting Packers
+
+User-agent: *
+Allow: /
+
+# Sitemap for better crawling
+Sitemap: https://gatishiftingpackers.com/sitemap.xml

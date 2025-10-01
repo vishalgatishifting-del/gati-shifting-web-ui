@@ -328,18 +328,18 @@ const Home: React.FC = () => {
                         <h3>Get a free <span>{text}</span> Quote</h3>
 
                         <form onSubmit={handleSubmit}>
-                            <input type="text" placeholder="Full Name*" name="name" onChange={handleChange} value={formData.name} />
-                            <input type="text" placeholder="Mobile No*" name="phone_office" onChange={handleChange} value={formData.phone_office} />
-                            <input type="text" placeholder="Email ID" name="email1" onChange={handleChange} value={formData.email1} />
-                            <input type="text" placeholder={from} name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} />
-                            <input type="text" placeholder={to} name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} />
-                            <input type="text" placeholder={type} name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} />
+                            <input type="text" placeholder="Full Name*" name="name" onChange={handleChange} value={formData.name} required/>
+                            <input type="text" placeholder="Mobile No*" name="phone_office" onChange={handleChange} value={formData.phone_office} required/>
+                            <input type="text" placeholder="Email ID" name="email1" onChange={handleChange} value={formData.email1} required/>
+                            <input type="text" placeholder={from} name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} required/>
+                            <input type="text" placeholder={to} name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required/>
+                            <input type="text" placeholder={type} name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required/>
 
-                            <button type="submit" disabled={loading}>
+                            <button className="form-submit-btn" type="submit" disabled={loading}>
                                 {loading ? "Submitting..." : "Submit"}
                             </button>
                         </form>
-                            {success && <p>{success}</p>}
+                            <span className="success-msg">{success && <p>{success}</p>}</span>
                     </div>
                 </div>
             </motion.div>

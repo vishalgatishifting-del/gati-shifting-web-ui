@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Footer.scss"
 import logoImg from "../assets/logo/roundedLogo.png"
 
+
 const Footer = () => {
     return (
         <>
@@ -93,7 +94,7 @@ const Footer = () => {
                     <div className="footer-col">
                         <h4>Need Help?</h4>
                         <ul>
-                            <li><a href="#">FAQs</a></li>
+                            <li><Link to="/faqs">FAQs</Link></li>
                             <li><a href="#">Get a Quote</a></li>
                             <li><a href="#">Customer Support</a></li>
                             <li><a href="#">Contact Us</a></li>

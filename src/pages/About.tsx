@@ -216,7 +216,6 @@ const About = () => {
         "https://picsum.photos/id/1016/600/400",
         "https://picsum.photos/id/1018/600/400",
         "https://picsum.photos/id/1020/600/400",
-        "https://picsum.photos/id/1024/600/400",
     ];
 
     return (
@@ -279,6 +278,8 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                         onMouseEnter={() => setActiveIndex(index)}
                         onMouseLeave={() => setActiveIndex(null)}
                     >
+                        <h2>Home Shifting</h2>
+                        <p>Seamless Home Shifting:<br></br> Moving You with Care and Precision!</p>
                         <img src={src} alt={`img-${index}`} />
                     </div>
                 ))}

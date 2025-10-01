@@ -16,6 +16,8 @@ import { Helmet } from "react-helmet-async";
 import "./Services.scss"
 import gatiSlider2 from "../assets/sliderImg/gatislider2.webp";
 
+import { useState } from "react";
+
 
 
 const Services = () => {
@@ -32,6 +34,14 @@ const Services = () => {
         { shiftingType: "3/4 BHK Moving", packingMaterial: "Rs. 1200 - 1500", movingCharges: "Rs. 3500 - 3800" },
         { shiftingType: "Few Items Only", packingMaterial: "Rs. 600 - 1000", movingCharges: "Rs. 2000 - 2800" },
     ];
+
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+        const imagesForC: string[] = [
+            "https://picsum.photos/id/1015/600/400",
+            "https://picsum.photos/id/1016/600/400",
+            "https://picsum.photos/id/1018/600/400",
+            "https://picsum.photos/id/1020/600/400",
+        ];
     return (
         <>
 
@@ -57,6 +67,21 @@ const Services = () => {
             </Helmet>
 
             <ServicesSection ></ServicesSection>
+            
+            <div className="image-box">
+                {imagesForC.map((src, index) => (
+                    <div
+                        key={index}
+                        className={`image-item ${activeIndex === index ? "active" : ""}`}
+                        onMouseEnter={() => setActiveIndex(index)}
+                        onMouseLeave={() => setActiveIndex(null)}
+                    >
+                        <h2>Home Shifting</h2>
+                        <p>Seamless Home Shifting:<br></br> Moving You with Care and Precision!</p>
+                        <img src={src} alt={`img-${index}`} />
+                    </div>
+                ))}
+            </div>
             <section id="table-section-services">
                 <h1>Estimated Charges of Packing and Moving Services in India</h1>
                 <p>Gati Shifting Packers offers reliable packing and moving services across India. Our team ensures the safe handling and transportation of your belongings. Get a clear price estimate tailored to your needs.</p>
@@ -82,6 +107,8 @@ const Services = () => {
                         </Table>
                     </TableContainer>
                 </div>
+
+                
             </section>
             <ContactForm></ContactForm>
             <BrandList />

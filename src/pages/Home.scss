@@ -114,6 +114,7 @@
 
         button {
             padding: 10px 20px;
+            width: 100px;
             background: $primary-color;
             color: #fff;
             border-radius: 5px;
@@ -123,6 +124,11 @@
             margin-top: 20px;
             cursor: pointer;
 
+        }
+
+        .success-msg{
+            color: rgb(0, 190, 0);
+            text-align: center;
         }
     }
 }
