@@ -47,10 +47,10 @@ const Services = () => {
     }
 
     const imagesForC: ImageItem[] = [
-        {img: petSlider, heading: "Pet Relocation", text: "Stress-free pet transportation with temperature-controlled spaces and necessary travel documentation."},
-        {img: bike, heading: "Bike Transport", text: "Bike relocation with protective wrapping, proper anchoring, and doorstep pickup and delivery."},
         {img: house, heading: "House Shifting", text: "Smooth and reliable house shifting with professional packing, loading, transport, and setup at your new home."},
         {img: car, heading: "Car Transport", text: "Car shifting through open or enclosed carriers with tracking, insurance, and timely delivery."},
+        {img: bike, heading: "Bike Transport", text: "Bike relocation with protective wrapping, proper anchoring, and doorstep pickup and delivery."},
+        {img: petSlider, heading: "Pet Relocation", text: "Stress-free pet transportation with temperature-controlled spaces and necessary travel documentation."},
     ];
     return (
         <>
