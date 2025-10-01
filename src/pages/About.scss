@@ -92,6 +92,7 @@
 #our-services {
     @include font-poppins-sans(400);
     margin-top: 50px;
+    margin-bottom: 20px;
 
     h1 {
         text-align: center;
@@ -129,6 +130,7 @@
 
     h1 {
         text-align: center;
+        margin-bottom: 30px;
     }
 
     .container {
@@ -332,6 +334,7 @@
 
 @media screen and (max-width: 1050px) {
     #our-services {
+        margin-bottom: 50px;
         h1 {
             margin-bottom: 0;
         }
@@ -354,6 +357,7 @@
     #table-section {
         h1 {
             font-size: 24px;
+            margin-bottom: 7px;
         }
     }
 

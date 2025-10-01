@@ -1,10 +1,33 @@
 import FAQList from "../components/FAQList";
 import "./FAQ.scss";
 import car5 from "../assets/car5.jpg"
+import { Helmet } from "react-helmet-async";
+
+import gatiSlider2 from "../assets/sliderImg/gatislider2.webp";
 
 const FAQ = () => {
     return (
         <>
+            <Helmet>
+                <title>FAQ | Gati Shifting Packers</title>
+                <meta name="description" content="Frequently Asked Questions about Gati Shifting Packers. Learn about our relocation services, packing solutions, cost estimates, and how we ensure a smooth move across India." />
+                <meta name="keywords" content="Gati FAQ, Packers and Movers FAQ, relocation questions, moving tips, Gati Shifting Packers customer support" />
+                <meta name="robots" content="index, follow" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="FAQ | Gati Shifting Packers & Movers" />
+                <meta property="og:description" content="Get answers to common questions about Gati Shifting Packers. From local to pan-India moves, understand our services, packing quality, and cost transparency." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://gatishiftingpackers.com/" />
+                <meta property="og:image" content={gatiSlider2} />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="FAQ | Gati Shifting Packers" />
+                <meta name="twitter:description" content="Find answers to FAQs about Gati Shifting Packers, including services, pricing, and relocation tips." />
+
+                <meta property="og:image" content={gatiSlider2} />
+            </Helmet>
             <section className="info-section">
                 <div className="info-left">
                     <h2>Reliable Moving & Packing Solutions Across India</h2>

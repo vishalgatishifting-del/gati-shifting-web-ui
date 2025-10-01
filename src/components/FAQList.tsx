@@ -70,7 +70,6 @@ const FAQList = () => {
                 <h2>Frequently Asked Questions</h2>
                 {faqData.map((item, index) => {
                     i++;
-                    console.log(i)
                     return (<div key={index} className="faq-item">
                         <button
                             className="faq-question"

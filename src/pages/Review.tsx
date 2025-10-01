@@ -4,27 +4,49 @@ import Avatar from '@mui/material/Avatar';
 import "./Review.scss";
 import ContactForm from "../components/ContactForm";
 import ReviewForm from "../components/ReviewForm";
+import { Helmet } from "react-helmet-async";
+import gatiSlider2 from "../assets/sliderImg/gatislider2.webp";
+
 
 
 const settings2 = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: true,
-        centerMode: true,
-        centerPadding: "0px",
-        autoplay: true,
-        autoplaySpeed: 2000,
-        pauseOnHover: false,
-        pauseOnFocus: false,
-        swipeToSlide: true
-    };
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    centerMode: true,
+    centerPadding: "0px",
+    autoplay: true,
+    autoplaySpeed: 2000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+    swipeToSlide: true
+};
 
 const Review = () => {
     return (
         <>
+            <Helmet>
+                <title>Customer Reviews | Gati Shifting Packers</title>
+                <meta name="description" content="Read genuine customer reviews about Gati Shifting Packers. From domestic moves to international relocation, office shifting, bike transport, and pet relocation – see what our customers say." />
+                <meta name="keywords" content="Gati Shifting Packers reviews, customer feedback, relocation testimonials, packers and movers reviews, domestic shifting, international relocation" />
+                <meta name="robots" content="index, follow" />
+                {/* Open Graph for social sharing */}
+                <meta property="og:title" content="Customer Reviews | Gati Shifting Packers" />
+                <meta property="og:description" content="See what customers say about Gati Relocation – genuine reviews for home shifting, office relocation, bike transport, international moves & pet relocation." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://gatishiftingpackers.com" />
+                <meta property="og:image" content={gatiSlider2} />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Customer Reviews | Gati Shifting Packers" />
+                <meta name="twitter:description" content="Genuine customer feedback on Gati Shifting Packers services including domestic, international, office, bike and pet moves." />
+                <meta property="og:image" content={gatiSlider2} />
+                <meta httpEquiv="content-language" content="en" />
+            </Helmet>
             <section id="customer-review-list">
                 <h1>What Our Customers Say</h1>
                 <p className="para">Genuine feedback from people who’ve moved homes, offices & even countries with us.</p>
@@ -214,7 +236,7 @@ const Review = () => {
 
 
                 </div>
-                
+
                 <div className="container">
 
                     <Slider {...settings2}>
@@ -403,7 +425,7 @@ const Review = () => {
             </section>
             <ContactForm></ContactForm>
             <ReviewForm></ReviewForm>
-            </>
+        </>
     )
 }
 
