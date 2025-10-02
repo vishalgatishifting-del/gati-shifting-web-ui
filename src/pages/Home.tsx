@@ -580,14 +580,14 @@ const Home: React.FC = () => {
                         <PlayCircleIcon className="icon"></PlayCircleIcon>
                         <span>Video Gallery</span>
                     </Link>
-                    <Link className="card" to="/review">
+                    <a className="card" href="https://wa.me/917290008200">
                         <WhatsAppIcon className="icon"></WhatsAppIcon>
                         <span>Chat With Us</span>
-                    </Link>
-                    <Link className="card" to="/review">
+                    </a>
+                    <a className="card" href="tel:+917290008200">
                         <CallIcon className="icon"></CallIcon>
                         <span>Call Now</span>
-                    </Link>
+                    </a>
                 </div>
             </section>
 
