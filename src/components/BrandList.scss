@@ -1,4 +1,5 @@
 @import "../style/variables";
+
 #brands-list {
     @include font-poppins-sans(400);
 
@@ -15,6 +16,7 @@
         width: 60%;
         margin: auto;
         align-items: center;
+        justify-items: center;
 
 
         .brand img {
@@ -26,39 +28,43 @@
 
 
 @media screen and (max-width: 1180px) {
-    #brands-list{
+    #brands-list {
         padding: 10px;
-        .container{
+
+        .container {
             width: 80%;
         }
-    } 
+    }
 }
 
 @media screen and (max-width: 957px) {
-    #brands-list{
-        .container{
+    #brands-list {
+        .container {
             width: 90%;
         }
-    } 
+    }
 }
+
 @media screen and (max-width: 784px) {
-    #brands-list{
-        .container{
+    #brands-list {
+        .container {
             width: 100%;
         }
-    } 
+    }
 }
+
 @media screen and (max-width: 650px) {
-    #brands-list{
-        .container{
+    #brands-list {
+        .container {
             grid-template-columns: repeat(5, 1fr);
         }
-    } 
+    }
 }
+
 @media screen and (max-width: 426px) {
-    #brands-list{
-        .container{
+    #brands-list {
+        .container {
             grid-template-columns: repeat(3, 1fr);
         }
-    } 
+    }
 }

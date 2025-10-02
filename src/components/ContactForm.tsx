@@ -2,7 +2,12 @@ import "./ContactForm.scss";
 import React, { useState } from "react";
 import axios from "axios";
 
-const ContactForm = () => {
+interface ContactFormProps{
+    showDetail? : "true";
+    closeControl?: () => void;
+}
+
+const ContactForm: React.FC<ContactFormProps> = ({showDetail = "true", closeControl}) => {
 
 
     interface FormData {
@@ -59,6 +64,7 @@ const ContactForm = () => {
             setSuccess("Form successfully submitted!");
             
             setFormData({ name: "", email1: "", phone_office: "", pickup_location_c: "", drop_location_c: "",service_detail_c: ""  });
+            closeControl()
         } catch (error) {
             console.error("Error submitting form:", error);
             setSuccess("Error submitting form. Try again!");
@@ -71,14 +77,17 @@ const ContactForm = () => {
         <section id="get-in-touch-form">
             <h1>Get In Touch</h1>
             <p>We make shifting fast, safe & affordable. Connect now!</p>
-            <div className="container">
+            <div className="container"  style={ (showDetail == "false") ? { width: "100%" } : {} }>
+                {(showDetail == "true" ? (
+
                 <div className="detail">
                     <h4>Gati Shifting Packers and Movers</h4>
                     <span>+91 72900 08200</span>
                     <span>gatishiftingpackers@gmail.com</span>
                     <p>Office No. 001, Shree Ganesh Tower CHS, Plot No. 98, Sector 21, Ghansoli, Navi Mumbai, Maharashtra 400701, India</p>
                 </div>
-                <div className="form">
+                ) : "")}
+                <div className="form" style={ (showDetail == "false") ? { width: "100%" } : {} }>
                     <form onSubmit={handleSubmit}>
                         <input type="text" placeholder="Your Name" name="name" onChange={handleChange} value={formData.name} required/>
                         <input type="text" placeholder="Your Email" name="email1" onChange={handleChange} value={formData.email1} required/>

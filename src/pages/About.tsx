@@ -129,18 +129,18 @@ const About = () => {
 
 
     const rows = [
-        { Service_Features: "Certified Vehicle", Typical_Local_Movers: <CheckIcon />, Rehousing_Packers_Movers: <><CheckIcon /> + Insurance Cover</> },
-        { Service_Features: "Vetted Drivers", Typical_Local_Movers: <CloseIcon />, Rehousing_Packers_Movers: <><CheckIcon /> + Police Verified</> },
-        { Service_Features: "Tracking System", Typical_Local_Movers: <CloseIcon />, Rehousing_Packers_Movers: <><CheckIcon /> + App Updates</> },
-        { Service_Features: "Packing Quality", Typical_Local_Movers: <CheckIcon />, Rehousing_Packers_Movers: <><CheckIcon /> + Recyclable Wraps</> },
-        { Service_Features: "Furniture Handling", Typical_Local_Movers: <CheckIcon />, Rehousing_Packers_Movers: <><CloseIcon /> + Tools Included</> },
-        { Service_Features: "Staff Support", Typical_Local_Movers: <CloseIcon />, Rehousing_Packers_Movers: <><CheckIcon /> + Coordinator</> },
-        { Service_Features: "Cushioning", Typical_Local_Movers: <CloseIcon />, Rehousing_Packers_Movers: <><CheckIcon /> + Dust-Free</> },
-        { Service_Features: "Storage", Typical_Local_Movers: <CloseIcon />, Rehousing_Packers_Movers: <><CheckIcon /> + Temp Regulated</> },
-        { Service_Features: "Item Protection", Typical_Local_Movers: <CloseIcon />, Rehousing_Packers_Movers: <><CheckIcon /> + Full Coverage</> },
-        { Service_Features: "Helpline", Typical_Local_Movers: <CloseIcon />, Rehousing_Packers_Movers: <><CheckIcon /> + Move Advisor</> },
-        { Service_Features: "Pricing", Typical_Local_Movers: <CloseIcon />, Rehousing_Packers_Movers: <><CheckIcon /> + Transparent</> },
-        { Service_Features: "Eco-Friendly", Typical_Local_Movers: <CloseIcon />, Rehousing_Packers_Movers: <><CheckIcon /> + Green Materials</> },
+        { Service_Features: "Certified Vehicle", Typical_Local_Movers: <CheckIcon className="green-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon  className="green-sign" /> + Insurance Cover</span> },
+        { Service_Features: "Vetted Drivers", Typical_Local_Movers: <CloseIcon className="red-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Police Verified</span> },
+        { Service_Features: "Tracking System", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + App Updates</span> },
+        { Service_Features: "Packing Quality", Typical_Local_Movers: <CheckIcon className="green-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Recyclable Wraps</span> },
+        { Service_Features: "Furniture Handling", Typical_Local_Movers: <CheckIcon className="green-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Tools Included</span> },
+        { Service_Features: "Staff Support", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Coordinator</span> },
+        { Service_Features: "Cushioning", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Dust-Free</span> },
+        { Service_Features: "Storage", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Temp Regulated</span> },
+        { Service_Features: "Item Protection", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Full Coverage</span> },
+        { Service_Features: "Helpline", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Move Advisor</span> },
+        { Service_Features: "Pricing", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Transparent</span> },
+        { Service_Features: "Eco-Friendly", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Green Materials</span> },
     ];
 
 
@@ -347,7 +347,7 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                             <TableHead>
                                 <TableRow sx={{ backgroundColor: '#2563eb' }}>
                                     <TableCell align="center" sx={{ color: '#fff' }}><b>Service Features</b></TableCell>
-                                    <TableCell align="center" sx={{ color: '#fff' }}><b>Typical Local Movers</b></TableCell>
+                                    <TableCell className="dynamic-column" align="center" sx={{ color: '#fff', width: "150px" }}><b>Typical Local Movers</b></TableCell>
                                     <TableCell align="center" sx={{ color: '#fff' }}><b>Gati Shifting Packers</b></TableCell>
                                 </TableRow>
                             </TableHead>

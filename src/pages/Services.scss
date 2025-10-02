@@ -80,6 +80,12 @@
   }
 }
 
+@media screen and (max-width: 680px) {
+  .image-box{
+    width: 95%;
+  }
+}
+
 @media screen and (max-width: 686px) {
 
   #table-section-services{
@@ -91,6 +97,23 @@
     p{
       font-size: 12px;
       margin: 10px 0;
+    }
+  }
+}
+
+
+@media screen and (max-width: 573px) {
+  .image-box{
+    flex-direction: column;
+
+    .image-item{
+      h2{
+        transform: translate(-50%, -50%) rotate(0);
+      }
+      p{
+        width: 90%;
+        text-align: center;
+      }
     }
   }
 }

@@ -10,59 +10,100 @@ import ContactsIcon from '@mui/icons-material/Contacts';
 import "./Navbar.scss"
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo2.webp"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import Button from "@mui/material/Button";
+import ContactForm from './ContactForm';
+
+
+
+
 
 const Navbar = () => {
+
+    useEffect(() => {
+        // 2 second baad dialog khulega
+        const timer = setTimeout(() => {
+            setOpen(true);
+        }, 2000);
+
+        // cleanup (agar component unmount ho jaye)
+        return () => clearTimeout(timer);
+    }, []);
+
+    const [open, setOpen] = useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
     const [openNav, setOpenNav] = useState(false);
     return (
-        <header>
-            <div className="top-area">
-                <a href="tel:+917290008200">
-                    <LocalPhoneIcon></LocalPhoneIcon>
-                    <span>Contact No - +91 7290008200</span>
-                </a>
-                <a href="mailto:gatishiftingpackers@gmail.com">
-                    <EmailIcon></EmailIcon>
-                    <span>gatishiftingpackers@gmail.com</span>
-                </a>
-                <a href="https://wa.me/917290008200" target="_blank" rel="noopener noreferrer">'
-                    <WhatsAppIcon></WhatsAppIcon>
-                    <span>Chat Now</span>
-                </a>
-            </div>
-            <nav>
-                <div className='logo'>
-                    <img src={Logo} alt="Gati Shifting Packers Logo" title='Gati Shifting Logo' loading='lazy' />
+        <>
+            <header>
+                <div className="top-area">
+                    <a href="tel:+917290008200">
+                        <LocalPhoneIcon></LocalPhoneIcon>
+                        <span>Contact No - +91 7290008200</span>
+                    </a>
+                    <a href="mailto:gatishiftingpackers@gmail.com">
+                        <EmailIcon></EmailIcon>
+                        <span>gatishiftingpackers@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/917290008200" target="_blank" rel="noopener noreferrer">'
+                        <WhatsAppIcon></WhatsAppIcon>
+                        <span>Chat Now</span>
+                    </a>
                 </div>
-                <ul className={(openNav) ? "active" : "inactive"}>
-                    <li><Link to="/" onClick={() => {setOpenNav(false)}}><HomeIcon className='icon'></HomeIcon> Home</Link></li>
-                    <li><Link to="/about" onClick={() => {setOpenNav(false)}}><InfoIcon className='icon'></InfoIcon> About Us</Link></li>
-                    <li><Link to="/review" onClick={() => {setOpenNav(false)}}><StarRateIcon className='icon'></StarRateIcon> Review</Link></li>
-                    <li><Link to="/faqs" onClick={() => {setOpenNav(false)}}><HelpOutlineIcon className='icon'></HelpOutlineIcon> FAQs</Link></li>
-                    <li><Link to="/services" onClick={() => {setOpenNav(false)}}><MiscellaneousServicesIcon className='icon'></MiscellaneousServicesIcon> Services</Link></li>
-                    <li><Link to="/contact-us" onClick={() => {setOpenNav(false)}}><ContactsIcon className='icon'></ContactsIcon> Contact Us</Link></li>
-                    
-                    {/* <li><Link to="/">Home</Link></li>
+                <nav>
+                    <div className='logo'>
+                        <img src={Logo} alt="Gati Shifting Packers Logo" title='Gati Shifting Logo' loading='lazy' />
+                    </div>
+                    <ul className={(openNav) ? "active" : "inactive"}>
+                        <li><Link to="/" onClick={() => { setOpenNav(false) }}><HomeIcon className='icon'></HomeIcon> Home</Link></li>
+                        <li><Link to="/about" onClick={() => { setOpenNav(false) }}><InfoIcon className='icon'></InfoIcon> About Us</Link></li>
+                        <li><Link to="/review" onClick={() => { setOpenNav(false) }}><StarRateIcon className='icon'></StarRateIcon> Review</Link></li>
+                        <li><Link to="/faqs" onClick={() => { setOpenNav(false) }}><HelpOutlineIcon className='icon'></HelpOutlineIcon> FAQs</Link></li>
+                        <li><Link to="/services" onClick={() => { setOpenNav(false) }}><MiscellaneousServicesIcon className='icon'></MiscellaneousServicesIcon> Services</Link></li>
+                        <li><Link to="/contact-us" onClick={() => { setOpenNav(false) }}><ContactsIcon className='icon'></ContactsIcon> Contact Us</Link></li>
+
+                        {/* <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About Us</Link></li>
                     <li><Link to="/review">Review</Link></li>
                     <li><Link to="/faqs">FAQs</Link></li>
                     <li><Link to="/services">Services</Link></li>
                     <li><Link to="/contact">Contact Us</Link></li> */}
-                </ul>
+                    </ul>
 
-                <div className='get-in-touch-btns'>
-                    <a href="tel:+917290008200"><LocalPhoneIcon></LocalPhoneIcon></a>
-                    <button aria-label="Get in touch with Gati Shifting Packers">Get In Touch</button>
-                    <button className='nav-Toggle-Btn' onClick={()=> setOpenNav(!openNav)}>
-                        {(openNav ? <CloseIcon></CloseIcon> : <MenuIcon></MenuIcon>)}
-                        
-                    </button>  
-                </div>
-            </nav>
-        </header>
+                    <div className='get-in-touch-btns'>
+                        <a href="tel:+917290008200"><LocalPhoneIcon></LocalPhoneIcon></a>
+                        <button aria-label="Get in touch with Gati Shifting Packers" onClick={handleClickOpen}>Get In Touch</button>
+                        <button className='nav-Toggle-Btn' onClick={() => setOpenNav(!openNav)}>
+                            {(openNav ? <CloseIcon></CloseIcon> : <MenuIcon></MenuIcon>)}
+
+                        </button>
+                    </div>
+                </nav>
+            </header>
+
+            <Dialog open={open} onClose={handleClose}>
+                <DialogActions>
+                    <Button onClick={handleClose}><CloseIcon></CloseIcon></Button>
+                </DialogActions>
+                <DialogContent>
+                    <ContactForm closeControl={handleClose} showDetail="false"></ContactForm>
+                </DialogContent>
+            </Dialog>
+        </>
     )
 }
 
