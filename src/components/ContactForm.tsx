@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 interface ContactFormProps{
-    showDetail? : "true";
+    showDetail? : "true" | "false";
     closeControl?: () => void;
 }
 
@@ -64,7 +64,7 @@ const ContactForm: React.FC<ContactFormProps> = ({showDetail = "true", closeCont
             setSuccess("Form successfully submitted!");
             
             setFormData({ name: "", email1: "", phone_office: "", pickup_location_c: "", drop_location_c: "",service_detail_c: ""  });
-            closeControl()
+            closeControl?.();
         } catch (error) {
             console.error("Error submitting form:", error);
             setSuccess("Error submitting form. Try again!");
