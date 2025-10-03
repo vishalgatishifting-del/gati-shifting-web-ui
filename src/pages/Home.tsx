@@ -10,32 +10,15 @@ import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
 import LanguageIcon from '@mui/icons-material/Language';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import FactoryIcon from '@mui/icons-material/Factory';
-// import whyGatiImg from "../assets/why_gati_banner.jpg";
 import stepsImg from "../assets/5-steps-banner.png";
 
 import { Helmet } from "react-helmet-async";
-
-import CountUp from "react-countup";
-
-import moves from "../assets/transport.png";
-import satisfaction from "../assets/satisfaction.png";
-import city from "../assets/city.png";
-import awards from "../assets/awards.png";
 
 import DescriptionIcon from '@mui/icons-material/Description';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import BalanceIcon from '@mui/icons-material/Balance';
 
 import CallIcon from '@mui/icons-material/Call';
-import EmailIcon from '@mui/icons-material/Email';
-import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import XIcon from '@mui/icons-material/X';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import YouTubeIcon from '@mui/icons-material/YouTube';
 // import WatchLaterIcon from '@mui/icons-material/WatchLater';
 
 import StarRateIcon from '@mui/icons-material/StarRate';
@@ -49,16 +32,15 @@ import { useInView } from "react-intersection-observer";
 
 
 import { Link } from "react-router-dom";
-import PinterestIcon from '@mui/icons-material/Pinterest';
 
 import gatiSlider1 from "../assets/sliderImg/gatislider1.webp"
 import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
 import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
-import getInTouchImg from "../assets/get-in-touch.webp"
 import FAQList from "../components/FAQList";
 import OfficeLocation from "../components/OfficeLocation";
-
 import axios from "axios";
+import GetInTouch from "../components/GetInTouch";
+import AwardCertification from "../components/AwardCertification";
 
 
 // import { IFaqItem } from "../models/App.model";
@@ -74,7 +56,6 @@ const Home: React.FC = () => {
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
     const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: false, threshold: 0.1 });
-    const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: false, threshold: 0.2 });
 
 
     const zoomIn: Variants = {
@@ -445,123 +426,10 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
-            <section id="get-in-touch">
-                <div className="content">
-                    <div className="img-slider">
-                        <img src={getInTouchImg} alt="Get In Touch Image" title="Get In Touch" loading="lazy" />
-                    </div>
-                    <div className="details">
-                        <h1>Get In Touch</h1>
-                        <p>For reliable shifting services across India, choose Gati House Shifting Packers & Movers. We provide door-to-door transport and affordable logistics solutions.</p>
 
-                        <ul>
-                            <li><CallIcon></CallIcon> <span>+91 72900 08200</span></li>
-                            <li><EmailIcon></EmailIcon> <span>gatishiftingpackers@gmail.com</span></li>
-                            <li><a href="https://wa.me/917290008200"><ChatBubbleIcon></ChatBubbleIcon><span>Chat Now</span></a></li>
-                            <li><LocationOnIcon></LocationOnIcon><span>India</span></li>
-                        </ul>
-                        <div className="social-links">
-                            <a href="https://www.instagram.com/gati_shifting_packers_pvt_ltd/profilecard/?igsh=eXYzY25mYXkyNG05"><InstagramIcon></InstagramIcon></a>
-                            <a href="https://www.facebook.com/share/1CZTDwNPWw/"><FacebookIcon></FacebookIcon></a>
-                            <a href="https://x.com/gati_shifting"><XIcon></XIcon></a>
-                            <a href="https://www.linkedin.com/in/gati-shifting-6878bb377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><LinkedInIcon></LinkedInIcon></a>
-                            <a href="https://youtube.com/@gatishifting-moves?si=Lz283_yPnXuNCkQW"><YouTubeIcon></YouTubeIcon></a>
-                            <a href="https://in.pinterest.com/infogatishiftingpackers"><PinterestIcon></PinterestIcon></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            <GetInTouch></GetInTouch>
             <OfficeLocation />
-
-            <section id="award-certifications">
-                <h1>Awards & Certifications</h1>
-                <div className="container">
-
-                    <motion.div
-                        ref={ref5}
-                        variants={zoomIn}
-                        initial="hidden"
-                        animate={inView5 ? "visible" : "hidden"}
-                        custom={0.4}
-                        className="p-10 bg-blue-200 rounded-xl shadow-lg w-80 mx-auto mt-20 text-center"
-                    >
-                        <div className="card">
-                            <div className="img-bx">
-                                <img src={moves} alt="Gati has completed over 10,000 successful relocations across India" title="moves" loading="lazy" />
-
-                            </div>
-                            <div className="details">
-                                <h3><CountUp start={0} end={10000} duration={2} suffix="+" /> Moves</h3>
-                                <p>We’ve completed over 10,000 successful relocations nationwide.</p>
-                            </div>
-                        </div>
-                    </motion.div>
-
-
-                    <motion.div
-                        ref={ref5}
-                        variants={zoomIn}
-                        initial="hidden"
-                        animate={inView5 ? "visible" : "hidden"}
-                        custom={0.5}
-                        className="p-10 bg-blue-200 rounded-xl shadow-lg w-80 mx-auto mt-20 text-center"
-                    >
-                        <div className="card">
-                            <div className="img-bx">
-                                <img src={satisfaction} alt="Customer Satisfaction" title="Customer Satisfaction" loading="lazy" />
-                            </div>
-                            <div className="details">
-                                <h3><CountUp start={0} end={99} duration={2} suffix="%" /> Satisfaction</h3>
-                                <p>Our customers rate us 4.9/5 for reliable, friendly service.</p>
-                            </div>
-                        </div>
-                    </motion.div>
-
-
-                    <motion.div
-                        ref={ref5}
-                        variants={zoomIn}
-                        initial="hidden"
-                        animate={inView5 ? "visible" : "hidden"}
-                        custom={0.6}
-                        className="p-10 bg-blue-200 rounded-xl shadow-lg w-80 mx-auto mt-20 text-center"
-                    >
-                        <div className="card">
-                            <div className="img-bx">
-                                <img src={city} alt="Moving Services in 180+ cities" title="Cities" loading="lazy" />
-                            </div>
-                            <div className="details">
-                                <h3><CountUp start={0} end={180} duration={2} suffix="+" /> Cities</h3>
-                                <p>We offer moving services in over 180 cities across India.</p>
-                            </div>
-                        </div>
-                    </motion.div>
-
-                    <motion.div
-                        ref={ref5}
-                        variants={zoomIn}
-                        initial="hidden"
-                        animate={inView5 ? "visible" : "hidden"}
-                        custom={0.7}
-                        className="p-10 bg-blue-200 rounded-xl shadow-lg w-80 mx-auto mt-20 text-center"
-                    >
-                        <div className="card">
-                            <div className="img-bx">
-
-                                <img src={awards} alt="Company Receiving best packers and movers award" title="Company's awards" loading="lazy" />
-                            </div>
-                            <div className="details">
-                                <h3>
-                                    <CountUp start={0} end={25} duration={2} suffix="+" />Awards
-
-                                </h3>
-                                <p>Recognized by leading industry bodies for excellence in service.</p>
-                            </div>
-                        </div>
-                    </motion.div>
-                </div>
-            </section>
+            <AwardCertification></AwardCertification>
 
 
             <section id="trust-us-section">

@@ -82,7 +82,7 @@ const Footer = () => {
                     <div className="footer-col">
                         <h4>About Gati</h4>
                         <ul>
-                            <li><a href="#">Who We Are</a></li>
+                            <li><Link to="/who-we-are">Who We Are</Link></li>
                             <li><a href="#">Why Gati</a></li>
                             <li><a href="#">Our Team</a></li>
                             <li><a href="#">Vision & Mission</a></li>

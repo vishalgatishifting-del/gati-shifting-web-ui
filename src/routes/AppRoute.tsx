@@ -7,6 +7,7 @@ import Services from "../pages/Services"
 import Contact from "../pages/Contact"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import Who_we_are from "../pages/Who_we_are"
 import ScrollToTop from "../components/ScrollToTop";
 
 const AppRoutes = () => {
@@ -22,6 +23,7 @@ const AppRoutes = () => {
                     <Route path="/faqs" element={<FAQ></FAQ>}></Route>
                     <Route path="/services" element={<Services></Services>}></Route>
                     <Route path="/contact-us" element={<Contact></Contact>}></Route>
+                    <Route path="/who-we-are" element={<Who_we_are></Who_we_are>}></Route>
                 </Routes>
             </ScrollToTop>
             <Footer />

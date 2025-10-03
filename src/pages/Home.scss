@@ -252,111 +252,8 @@
     }
 }
 
-#get-in-touch {
-    @include font-poppins-sans(400);
-    padding: 10px;
-
-    .content {
-        width: 80%;
-        background: #f1f1f1;
-        margin: auto;
-        padding: 30px;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: row-reverse;
-
-        .img-slider img {
-            width: 500px;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 20px;
-            margin-left: 20px;
-        }
-
-        .details {
-            color: #4b5563;
-
-            h1 {
-                color: #000;
-                margin: 20px 0 20px 0;
-            }
-
-            ul li {
-
-                list-style: none;
-                margin: 10px 0;
-                display: flex;
-                align-items: center;
-
-                a {
-                    text-decoration: none;
-                    display: flex;
-                }
-
-                span {
-                    margin-left: 10px;
-                }
-            }
-
-            .social-links {
-                margin-top: 20px;
-
-                a {
-                    margin: 0 10px;
-                    color: $primary-color;
-                }
-            }
-
-        }
-    }
-}
 
 
-#award-certifications {
-
-    @include font-poppins-sans(400);
-
-
-    h1 {
-        text-align: center;
-        margin: 50px 0 20px 0;
-    }
-
-    .container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        width: 100%;
-        gap: 10px;
-        padding: 10px;
-        align-items: stretch;
-
-        .card {
-            background: #f1f1f1;
-            padding: 20px;
-            border-radius: 20px;
-            height: 100%;
-
-            .details {
-                h3 {
-                    font-size: 29px;
-                    font-weight: normal;
-                    margin: 20px 0;
-                }
-
-                p {
-                    color: #4b5563;
-                }
-            }
-
-            img {
-                width: 100%;
-                height: 300px;
-                object-fit: cover;
-                border-radius: 20px;
-            }
-        }
-    }
-}
 
 #trust-us-section {
     @include font-poppins-sans(400);
@@ -578,18 +475,6 @@
 
 
 
-@media screen and (max-width: 1269px) {
-    #get-in-touch {
-        .content {
-            padding: 20px;
-
-            .img-slider img {
-                width: 400px;
-            }
-        }
-    }
-}
-
 
 
 @media screen and (max-width: 1101px) {
@@ -598,32 +483,7 @@
     }
 }
 
-@media screen and (max-width: 1086px) {
 
-    #award-certifications {
-        .container {
-            grid-template-columns: repeat(2, 1fr);
-
-            .card {
-                .details {
-                    h3 {
-                        margin: 10px 0;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width: 1072px) {
-    #get-in-touch {
-        .content {
-            width: 90%;
-            padding: 20px;
-        }
-    }
-}
 
 
 
@@ -653,14 +513,6 @@
     }
 }
 
-@media screen and (max-width: 910px) {
-    #get-in-touch {
-        .content {
-            width: 100%;
-            padding: 20px;
-        }
-    }
-}
 
 
 @media screen and (max-width: 900px) {
@@ -694,37 +546,6 @@
     }
 }
 
-@media screen and (max-width: 803px) {
-    #get-in-touch {
-        .details {
-            h1 {
-                font-size: 25px;
-                margin: 5px 0 !important;
-                padding: 0;
-            }
-
-            p {
-                font-size: 14px;
-            }
-
-            ul li {
-                font-size: 14px;
-                margin: 7px 0 !important;
-
-
-                span {
-                    margin-left: 5px;
-                }
-            }
-        }
-
-        .content {
-            .img-slider img {
-                width: 350px;
-            }
-        }
-    }
-}
 
 
 @media screen and (max-width: 794px) {
@@ -752,24 +573,6 @@
 
 
 
-@media screen and (max-width: 751px) {
-
-    #award-certifications {
-        .container {
-            grid-template-columns: repeat(2, 1fr);
-
-            .card {
-                padding: 15px;
-
-                .details {
-                    p {
-                        font-size: 15px;
-                    }
-                }
-            }
-        }
-    }
-}
 
 
 @media screen and (max-width: 726px) {
@@ -797,34 +600,12 @@
     }
 }
 
-@media screen and (max-width: 693px) {
-    #get-in-touch {
-        .content {
-            padding: 15px;
-
-            .img-slider img {
-                width: 300px;
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 693px) {
     .service-tab {
         .form-area {
             form {
                 grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    }
-
-    #get-in-touch {
-        .content {
-            flex-direction: column;
-
-            .img-slider img {
-                width: 100%;
-                margin: 0;
             }
         }
     }
@@ -857,39 +638,6 @@
 }
 
 
-@media screen and (max-width: 636px) {
-
-    #award-certifications {
-        .container {
-            grid-template-columns: repeat(2, 1fr);
-
-            .card {
-                padding: 15px;
-
-                .details {
-                    h3 {
-                        margin: 3px 0;
-                        font-size: 25px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width: 613px) {
-
-    #award-certifications {
-        .container {
-            .card {
-                img {
-                    height: 200px;
-                }
-            }
-        }
-    }
-}
 
 
 @media screen and (max-width: 596px) {
@@ -916,30 +664,6 @@
                 min-width: 80px;
                 min-height: 60px;
                 font-size: 11px;
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width: 636px) {
-
-    #award-certifications {
-        .container {
-
-            .card {
-                padding: 10px;
-
-                .details {
-                    h3 {
-                        // margin: 3px 0;
-                        font-size: 20px;
-                    }
-
-                    p {
-                        font-size: 13px;
-                    }
-                }
             }
         }
     }
@@ -1006,14 +730,6 @@
     }
 }
 
-
-@media screen and (max-width: 439px) {
-    #award-certifications{
-         h1{
-            font-size: 23px;
-         }
-    }
-}
 
 
 @media screen and (max-width: 411px) {
