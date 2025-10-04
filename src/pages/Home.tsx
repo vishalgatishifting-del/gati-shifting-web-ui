@@ -171,7 +171,7 @@ const Home: React.FC = () => {
         <>
 
             <Helmet>
-                <title>Gati Shifting Packers | Trusted Packers and Movers in India</title>
+                <title>Gati Shifting Packers | Trusted Packers and Movers- 15% off</title>
                 <meta name="description" content="Gati Shifting Packers offers safe and affordable relocation services across India. Expert in home shifting, office relocation, car & bike transport, packing, unpacking, and warehousing with professional movers you can trust." />
                 <meta name="keywords" content="gati house shifting service, Packers and Movers India, Home Shifting, Office Relocation, Car Transport, Bike Transport, Household Shifting, Packing and Moving Services, Affordable Packers, Trusted Movers" />
                 <meta name="author" content="Rohan" />

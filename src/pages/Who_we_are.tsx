@@ -33,7 +33,7 @@ const Who_we_are = () => {
                 <div className="container">
                     <div className="content">
                         <h1>Who We Are</h1>
-                        <p>Founded in <b>2006, Gati Shifting Packers and Movers</b> has emerged as one of the most reliable and respected names in the Indian relocation and logistics industry. With our headquarters based in Mumbai and a wide network of branches across the country, we are committed to delivering top-notch shifting experiences with unmatched professionalism and care.
+                        <p>Founded in <b>2006, Gati Shifting Packers</b> has emerged as one of the most reliable and respected names in the Indian relocation and logistics industry. With our headquarters based in Mumbai and a wide network of branches across the country, we are committed to delivering top-notch shifting experiences with unmatched professionalism and care.
 
                             Over the years, we have helped thousands of families, individuals, and businesses move safely and efficiently — whether it’s local, intercity, or interstate shifting. Our services include comprehensive packing, secure transportation, careful loading and unloading, organized unpacking, and even warehouse storage and vehicle transportation. Every move is handled with personal attention, precision, and a promise of on-time delivery.
 
