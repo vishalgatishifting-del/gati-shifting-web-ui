@@ -11,28 +11,12 @@ import LanguageIcon from '@mui/icons-material/Language';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import FactoryIcon from '@mui/icons-material/Factory';
 import stepsImg from "../assets/5-steps-banner.png";
-
 import { Helmet } from "react-helmet-async";
-
 import DescriptionIcon from '@mui/icons-material/Description';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import BalanceIcon from '@mui/icons-material/Balance';
-
-import CallIcon from '@mui/icons-material/Call';
-// import WatchLaterIcon from '@mui/icons-material/WatchLater';
-
-import StarRateIcon from '@mui/icons-material/StarRate';
-import CollectionsIcon from '@mui/icons-material/Collections';
-import PlayCircleIcon from '@mui/icons-material/PlayCircle';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-
 import { motion, type Variants } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
-
-
-import { Link } from "react-router-dom";
-
 import gatiSlider1 from "../assets/sliderImg/gatislider1.webp"
 import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
 import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
@@ -41,6 +25,7 @@ import OfficeLocation from "../components/OfficeLocation";
 import axios from "axios";
 import GetInTouch from "../components/GetInTouch";
 import AwardCertification from "../components/AwardCertification";
+import TrustUsSection from "../components/TrustUsSection";
 
 
 // import { IFaqItem } from "../models/App.model";
@@ -430,34 +415,7 @@ const Home: React.FC = () => {
             <GetInTouch></GetInTouch>
             <OfficeLocation />
             <AwardCertification></AwardCertification>
-
-
-            <section id="trust-us-section">
-                <h1>Trust Us With Confidence</h1>
-                <p>Verify our reliability through real reviews, videos, images, or even a direct call:</p>
-                <div className="cards">
-                    <Link className="card" to="/review">
-                        <StarRateIcon className="icon"></StarRateIcon>
-                        <span>Customer Review</span>
-                    </Link>
-                    <Link className="card" to="/review">
-                        <CollectionsIcon className="icon"></CollectionsIcon>
-                        <span>Photo Gallery</span>
-                    </Link>
-                    <Link className="card" to="/review">
-                        <PlayCircleIcon className="icon"></PlayCircleIcon>
-                        <span>Video Gallery</span>
-                    </Link>
-                    <a className="card" href="https://wa.me/917290008200">
-                        <WhatsAppIcon className="icon"></WhatsAppIcon>
-                        <span>Chat With Us</span>
-                    </a>
-                    <a className="card" href="tel:+917290008200">
-                        <CallIcon className="icon"></CallIcon>
-                        <span>Call Now</span>
-                    </a>
-                </div>
-            </section>
+            <TrustUsSection />
 
 
             <section id="about-company">

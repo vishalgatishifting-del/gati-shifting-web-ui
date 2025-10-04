@@ -2,19 +2,11 @@ import AwardCertification from "../components/AwardCertification";
 import BrandList from "../components/BrandsList";
 import FAQList from "../components/FAQList";
 import GetInTouch from "../components/GetInTouch";
-
-
-import StarRateIcon from '@mui/icons-material/StarRate';
-import CollectionsIcon from '@mui/icons-material/Collections';
-import PlayCircleIcon from '@mui/icons-material/PlayCircle';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import CallIcon from '@mui/icons-material/Call';
-
-import { Link } from "react-router-dom";
 import "./WhoWeAre.scss"
 import Slider from "react-slick";
 import { Box } from "@mui/material";
 import Avatar from '@mui/material/Avatar';
+import TrustUsSection from "../components/TrustUsSection";
 
 
 
@@ -57,6 +49,7 @@ const Who_we_are = () => {
                     </div>
                 </div>
             </section>
+
             <section id="customer-review">
                 <h1>What Our Customers Say</h1>
                 <h4>Real experiences from real people. Watch how we made their move stress-free.</h4>
@@ -65,35 +58,13 @@ const Who_we_are = () => {
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/MlgLNz2-wbo?si=CWB7OKc-LM9dVgoa" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </div>
             </section>
+
+            
             <GetInTouch></GetInTouch>
             <AwardCertification></AwardCertification>
             
-            <section id="trust-us-section">
-                <h1>Trust Us With Confidence</h1>
-                <p>Verify our reliability through real reviews, videos, images, or even a direct call:</p>
-                <div className="cards">
-                    <Link className="card" to="/review">
-                        <StarRateIcon className="icon"></StarRateIcon>
-                        <span>Customer Review</span>
-                    </Link>
-                    <Link className="card" to="/review">
-                        <CollectionsIcon className="icon"></CollectionsIcon>
-                        <span>Photo Gallery</span>
-                    </Link>
-                    <Link className="card" to="/review">
-                        <PlayCircleIcon className="icon"></PlayCircleIcon>
-                        <span>Video Gallery</span>
-                    </Link>
-                    <a className="card" href="https://wa.me/917290008200">
-                        <WhatsAppIcon className="icon"></WhatsAppIcon>
-                        <span>Chat With Us</span>
-                    </a>
-                    <a className="card" href="tel:+917290008200">
-                        <CallIcon className="icon"></CallIcon>
-                        <span>Call Now</span>
-                    </a>
-                </div>
-            </section>
+            <TrustUsSection></TrustUsSection>
+
             <BrandList></BrandList>
             <section id="customer-review-list">
                 <h1>What Our Customers Say</h1>

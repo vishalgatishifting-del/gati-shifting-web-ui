@@ -1,0 +1,91 @@
+@import "../style/variables";
+
+#trust-us-section {
+    @include font-poppins-sans(400);
+    padding: 20px;
+    margin-top: 50px;
+
+    h1,
+    p {
+        text-align: center;
+    }
+
+    p {
+        color: #4b5563;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // margin: 0 20px;
+            // width: 180px;
+            border-radius: 60px;
+            padding: 40px;
+            text-align: center;
+            background: rgb(255, 255, 255);
+            background: linear-gradient(-30deg, #0a1017, #1e3045);
+            /* gradient colors */
+
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* Safari ke liye */
+
+            background-clip: text;
+            color: transparent;
+            /* fallback */
+
+            .icon {
+                font-size: 90px;
+                background: linear-gradient(-30deg, #0a1017, #1e3045);
+                color: #fff;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+            span {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 817px) {
+    #trust-us-section {
+        .cards {
+            .card {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 686px) {
+    #trust-us-section {
+        h1 {
+            font-size: 20px;
+        }
+
+        .cards {
+
+            // display: grid;
+            // grid-template-columns: repeat(2, 1fr);
+            .card {
+                .icon {
+                    font-size: 50px;
+                }
+            }
+
+            span {
+                font-size: 15px;
+                display: none;
+            }
+        }
+    }
+}
