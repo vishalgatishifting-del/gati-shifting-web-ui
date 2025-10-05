@@ -75,7 +75,7 @@ header {
             display: flex;
             align-items: center;
 
-            
+
 
             button {
                 margin-left: 10px;
@@ -85,11 +85,11 @@ header {
                 border: none;
                 color: #fff;
                 font-size: 15px;
-                border-radius:50px;
+                border-radius: 50px;
                 cursor: pointer;
             }
 
-            .nav-Toggle-Btn{
+            .nav-Toggle-Btn {
                 display: none;
             }
         }
@@ -100,13 +100,15 @@ header {
 }
 
 @media screen and (max-width: 1101px) {
-    header{
-        .top-area{
+    header {
+        .top-area {
             display: none;
         }
-        nav{
+
+        nav {
             justify-content: space-between;
-            ul{
+
+            ul {
                 top: 100%;
                 left: 0;
                 flex-direction: column;
@@ -117,24 +119,49 @@ header {
                 max-height: 0;
                 overflow: hidden;
                 transition: .5s;
-                
-                li{
-                    a{
+
+                li {
+                    a {
                         padding: 20px;
                     }
                 }
             }
 
-            ul.active{
+            ul.active {
                 max-height: 364.8px;
                 // overflow: visible;
             }
 
-            .get-in-touch-btns{
-                .nav-Toggle-Btn{
-                display: block;
+            .get-in-touch-btns {
+                .nav-Toggle-Btn {
+                    display: block;
+                }
             }
-            }
-        } 
-    } 
+        }
+    }
+}
+
+.action-button {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+
+    a {
+        padding: 13px;
+        background: $primary-color;
+        margin: 7px 0;
+        font-size: 30px;
+        color: #fff;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0 5px 10px #00000070;
+
+        .icon{
+            transform: scale(1.2);
+        }
+    }
 }

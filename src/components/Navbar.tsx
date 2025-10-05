@@ -59,14 +59,14 @@ const Navbar = () => {
                         <EmailIcon></EmailIcon>
                         <span>gatishiftingpackers@gmail.com</span>
                     </a>
-                    <a href="https://wa.me/917290008200" target="_blank" rel="noopener noreferrer">'
+                    <a href="https://wa.me/917290008200" target="_blank" rel="noopener noreferrer">
                         <WhatsAppIcon></WhatsAppIcon>
                         <span>Chat Now</span>
                     </a>
                 </div>
                 <nav>
                     <div className='logo'>
-                        <img src={Logo} alt="Gati Shifting Packers Logo" title='Gati Shifting Logo' loading='lazy' />
+                        <Link to="/"><img src={Logo} alt="Gati Shifting Packers Logo" title='Gati Shifting Logo' loading='lazy' /></Link>
                     </div>
                     <ul className={(openNav) ? "active" : "inactive"}>
                         <li><Link to="/" onClick={() => { setOpenNav(false) }}><HomeIcon className='icon'></HomeIcon> Home</Link></li>
@@ -103,6 +103,13 @@ const Navbar = () => {
                     <ContactForm closeControl={handleClose} showDetail="false"></ContactForm>
                 </DialogContent>
             </Dialog>
+
+            <div className='action-button'>
+                <a href="https://wa.me/917290008200" target="_blank" rel="noopener noreferrer"><WhatsAppIcon className='icon'></WhatsAppIcon></a>
+                <a href="tel:+917290008200"><LocalPhoneIcon className='icon'></LocalPhoneIcon></a>
+                <a href="mailto:gatishiftingpackers@gmail.com"> <EmailIcon className='icon'></EmailIcon></a>
+                
+            </div>
         </>
     )
 }
