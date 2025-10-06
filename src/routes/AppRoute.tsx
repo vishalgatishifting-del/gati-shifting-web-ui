@@ -12,6 +12,8 @@ import Who_we_are from "../pages/Who_we_are"
 import ScrollToTop from "../components/ScrollToTop";
 import WhyGati from "../pages/WhyGati"
 import OurTeam from "../pages/OurTeam"
+import VisionandMision from "../pages/VisionandMission"
+
 
 
 const AppRoutes = () => {
@@ -30,6 +32,7 @@ const AppRoutes = () => {
                     <Route path="/who-we-are" element={<Who_we_are></Who_we_are>}></Route>
                     <Route path="/why-gati" element={<WhyGati></WhyGati>}></Route>
                     <Route path="/our-team" element={<OurTeam></OurTeam>}></Route>
+                    <Route path="/vission-mission" element={<VisionandMision></VisionandMision>}></Route>
                 </Routes>
             </ScrollToTop>
             <Footer />

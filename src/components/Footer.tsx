@@ -85,7 +85,7 @@ const Footer = () => {
                             <li><Link to="/who-we-are">Who We Are</Link></li>
                             <li><Link to="/why-gati">Why Gati</Link></li>
                             <li><Link to="/our-team">Our Team</Link></li>
-                            <li><a href="#">Vision & Mission</a></li>
+                            <li><Link to="/vission-mission">Vision & Mission</Link></li>
                             <li><a href="#">Our Videos</a></li>
                             <li><a href="#">Photo Gallery</a></li>
                         </ul>
