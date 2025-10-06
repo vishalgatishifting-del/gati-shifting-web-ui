@@ -32,6 +32,11 @@ import TrustUsSection from "../components/TrustUsSection";
 // import { AppConstant } from "../constants/app.constant";
 
 
+declare global {
+    interface Window {
+        gtag: (...args: any[]) => void;
+    }
+}
 
 const Home: React.FC = () => {
 
@@ -121,6 +126,8 @@ const Home: React.FC = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
+
+
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setLoading(true);
@@ -157,6 +164,11 @@ const Home: React.FC = () => {
                 service_detail_c: "",
                 goods_type_c: text, // reset with current tab
             });
+            if (window.gtag) {
+                window.gtag('event', 'conversion', {
+                    'send_to': 'AW-17573064597/u1hXCLuunqgbEJXfvrtB'
+                });
+            }
         } catch (error) {
             console.error("Error submitting form:", error);
             setSuccess("Error submitting form. Try again!");
@@ -294,18 +306,18 @@ const Home: React.FC = () => {
                         <h3>Get a free <span>{text}</span> Quote</h3>
 
                         <form onSubmit={handleSubmit}>
-                            <input type="text" placeholder="Full Name*" name="name" onChange={handleChange} value={formData.name} required/>
-                            <input type="text" placeholder="Mobile No*" name="phone_office" onChange={handleChange} value={formData.phone_office} required/>
-                            <input type="text" placeholder="Email ID" name="email1" onChange={handleChange} value={formData.email1} required/>
-                            <input type="text" placeholder={from} name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} required/>
-                            <input type="text" placeholder={to} name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required/>
-                            <input type="text" placeholder={type} name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required/>
+                            <input type="text" placeholder="Full Name*" name="name" onChange={handleChange} value={formData.name} required />
+                            <input type="text" placeholder="Mobile No*" name="phone_office" onChange={handleChange} value={formData.phone_office} required />
+                            <input type="text" placeholder="Email ID" name="email1" onChange={handleChange} value={formData.email1} required />
+                            <input type="text" placeholder={from} name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} required />
+                            <input type="text" placeholder={to} name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required />
+                            <input type="text" placeholder={type} name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required />
 
                             <button className="form-submit-btn" type="submit" disabled={loading}>
                                 {loading ? "Submitting..." : "Submit"}
                             </button>
                         </form>
-                            <span className="success-msg">{success && <p>{success}</p>}</span>
+                        <span className="success-msg">{success && <p>{success}</p>}</span>
                     </div>
                 </div>
             </motion.div>
@@ -408,9 +420,9 @@ const Home: React.FC = () => {
 
                 <div className="video">
                     <iframe width="400" height="255" src="https://www.youtube.com/embed/MlgLNz2-wbo?si=CWB7OKc-LM9dVgoa" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                    
+
                     <iframe width="400" height="255" src="https://youtube.com/embed/OMZEgiWrRfk?si=ImcWBYp5ve7AU-eJ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-                    
+
                     <iframe width="400" height="255" src="https://youtube.com/embed/1OkHdHUVhyY?si=F_-9Rte1auEfRJKA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 </div>
             </section>
