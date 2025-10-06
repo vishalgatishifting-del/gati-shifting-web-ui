@@ -171,14 +171,14 @@ const Home: React.FC = () => {
         <>
 
             <Helmet>
-                <title>Gati Shifting Packers | Trusted Packers and Movers- 15% off</title>
-                <meta name="description" content="Gati Shifting Packers offers safe and affordable relocation services across India. Expert in home shifting, office relocation, car & bike transport, packing, unpacking, and warehousing with professional movers you can trust." />
+                <title>Gati Shifting Packers | Trusted Packers and Movers - 15% off</title>
+                <meta name="description" content="Gati Shifting Packers offers safe and affordable relocation services India & International moving services. Expert in Home shifting, Office, Car & Bike, & Warehouse Storage. Reliable service, trusted by thousands nationwide." />
                 <meta name="keywords" content="gati house shifting service, Packers and Movers India, Home Shifting, Office Relocation, Car Transport, Bike Transport, Household Shifting, Packing and Moving Services, Affordable Packers, Trusted Movers" />
                 <meta name="author" content="Rohan" />
 
                 {/* Open Graph for Social Sharing */}
                 <meta property="og:title" content="Gati Shifting Packers | Reliable Shifting Services" />
-                <meta property="og:description" content="Gati Shifting Packers offers safe and affordable relocation services across India. Expert in home shifting, office relocation, car & bike transport, packing, unpacking, and warehousing with professional movers you can trust." />
+                <meta property="og:description" content="Gati Shifting Packers offers safe and affordable relocation services India & International moving services. Expert in Home shifting, Office, Car & Bike, & Warehouse Storage. Reliable service, trusted by thousands nationwide." />
                 <meta property="og:image" content={gatiSlider2} />
                 <meta property="og:url" content="https://gatishiftingpackers.com/" />
                 <meta property="og:type" content="website" />
@@ -186,7 +186,7 @@ const Home: React.FC = () => {
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Gati Shifting Packers" />
-                <meta name="twitter:description" content="Gati Shifting Packers offers safe and affordable relocation services across India. Expert in home shifting, office relocation, car & bike transport, packing, unpacking, and warehousing with professional movers you can trust." />
+                <meta name="twitter:description" content="Gati Shifting Packers offers safe and affordable relocation services India & International moving services. Expert in Home shifting, Office, Car & Bike, & Warehouse Storage. Reliable service, trusted by thousands nationwide." />
                 <meta name="twitter:image" content={gatiSlider2} />
 
 

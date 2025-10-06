@@ -20,6 +20,10 @@ import DialogContent from "@mui/material/DialogContent";
 import Button from "@mui/material/Button";
 import ContactForm from './ContactForm';
 
+import whatsappIcon from "../assets/whatsappIcon.jpg"
+import callIcon from "../assets/call.webp"
+import gmailIcon from "../assets/gmailIcon.webp"
+
 
 
 
@@ -105,9 +109,9 @@ const Navbar = () => {
             </Dialog>
 
             <div className='action-button'>
-                <a href="https://wa.me/917290008200" target="_blank" rel="noopener noreferrer"><WhatsAppIcon className='icon'></WhatsAppIcon></a>
-                <a href="tel:+917290008200"><LocalPhoneIcon className='icon'></LocalPhoneIcon></a>
-                <a href="mailto:gatishiftingpackers@gmail.com"> <EmailIcon className='icon'></EmailIcon></a>
+                <a href="https://wa.me/917290008200" target="_blank" rel="noopener noreferrer"><img src={whatsappIcon} /></a>
+                <a href="tel:+917290008200"><img src={callIcon} /></a>
+                <a href="mailto:gatishiftingpackers@gmail.com"> <img src={gmailIcon} /></a>
                 
             </div>
         </>
