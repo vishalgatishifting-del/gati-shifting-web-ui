@@ -173,7 +173,7 @@ header {
     z-index: 100;
 
     a {
-        padding: 13px;
+        padding: 10px;
         background: $primary-color;
         margin: 7px 0;
         font-size: 30px;
@@ -184,8 +184,8 @@ header {
         display: flex;
 
         img{
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             border-radius: 50%;
             transition: .3s;
         }
