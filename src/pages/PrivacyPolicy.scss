@@ -1,0 +1,128 @@
+@import "../style/variables";
+
+#privacypolicysec {
+    @include font-poppins-sans(400);
+    margin-top: 150px;
+    padding: 0 20px;
+
+    .container {
+        width: 900px;
+        margin: 0 auto;
+
+        .content {
+            h1 {
+                text-align: center;
+                color: #3d4044;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: #4b5563;
+            }
+
+            .card {
+                position: relative;
+                margin: 30px 0;
+                box-shadow: 0 5px 9px rgb(0 0 0 / 13%);
+                padding: 20px;
+                padding-left: 30px;
+                border-radius: 10px;
+                overflow: hidden;
+
+                h2 {
+                    border-bottom: 1px solid #000;
+                    margin-bottom: 10px;
+                    padding-bottom: 5px;
+                    color: #4b5563;
+                }
+
+                ul {
+                    margin-bottom: 20px;
+                    margin-top: 5px;
+                    margin-left: 20px;
+                }
+
+                p,
+                li {
+                    font-size: 14px;
+                    color: #4b5563;
+                }
+            }
+
+            .card::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 7px;
+                background: $primary-color;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1101px) {
+    #privacypolicysec {
+        margin-top: 80px;
+    }
+}
+@media screen and (max-width: 933px) {
+    #privacypolicysec {
+        @include font-poppins-sans(400);
+
+        .container {
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 665px) {
+    #privacypolicysec {
+        @include font-poppins-sans(400);
+
+        .container {
+            
+            .content{
+                h1{
+                    font-size: 25px;
+                }
+
+                .card{
+                    padding-left: 20px;
+                    h2{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 433px) {
+    #privacypolicysec {
+        padding: 0 10px;
+        .container {
+            
+            .content{
+                h1{
+                    font-size: 20px;
+                }
+                p{
+                    
+                    font-size: 14px;
+                }
+
+                .card{
+                    margin: 20px 0;
+                    h2{
+                        font-size: 17px;
+                    }
+
+                    p,li{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}

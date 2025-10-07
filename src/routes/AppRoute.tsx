@@ -13,8 +13,8 @@ import ScrollToTop from "../components/ScrollToTop";
 import WhyGati from "../pages/WhyGati"
 import OurTeam from "../pages/OurTeam"
 import VisionandMision from "../pages/VisionandMission"
-
-
+import TermsCondition from "../pages/TermsCondition"
+import PrivacyPolicy from "../pages/PrivacyPolicy"
 
 const AppRoutes = () => {
     return (
@@ -33,6 +33,8 @@ const AppRoutes = () => {
                     <Route path="/why-gati" element={<WhyGati></WhyGati>}></Route>
                     <Route path="/our-team" element={<OurTeam></OurTeam>}></Route>
                     <Route path="/vission-mission" element={<VisionandMision></VisionandMision>}></Route>
+                    <Route path="/terms-and-conditions" element={<TermsCondition></TermsCondition>}></Route>
+                    <Route path="/privacy-and-policy" element={<PrivacyPolicy></PrivacyPolicy>}></Route>
                 </Routes>
             </ScrollToTop>
             <Footer />

@@ -1,0 +1,59 @@
+
+@import "../style/variables";
+
+#customer-review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+
+    h1 {
+        @include font-poppins-sans(800);
+    }
+
+    h4 {
+        @include font-poppins-sans(400);
+        margin: 10px 0 30px 0;
+        color: #8c8c8c;
+        text-align: center;
+    }
+
+    .video {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        iframe {
+            border-radius: 20px;
+            margin: 5px;
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 596px) {
+    #customer-review {
+        .video {
+            width: 100%;
+
+            iframe {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 444px) {
+    #customer-review {
+        h1 {
+            font-size: 25px;
+        }
+
+        h4 {
+            font-size: 15px;
+        }
+    }
+}
