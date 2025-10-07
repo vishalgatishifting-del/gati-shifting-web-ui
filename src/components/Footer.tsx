@@ -99,7 +99,7 @@ const Footer = () => {
                             <li><a href="#">Customer Support</a></li>
                             <li><Link to="/contact-us">Contact Us</Link></li>
                             <li><a href="#">Moving Guide</a></li>
-                            <li><a href="#">Bill Claim</a></li>
+                            <li><Link to="bill-claim">Bill Claim</Link></li>
                         </ul>
                     </div>
 
@@ -126,8 +126,8 @@ const Footer = () => {
                         <ul>
                             <li><a href="#">Customer Testimonials</a></li>
                             <li><a href="#">Safety Standards</a></li>
-                            <li><a href="#">Terms & Conditions</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
+                            <li><Link to="/privacy-and-policy">Privacy Policy</Link></li>
                         </ul>
                     </div>
                 </div>

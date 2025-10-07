@@ -15,6 +15,8 @@ import OurTeam from "../pages/OurTeam"
 import VisionandMision from "../pages/VisionandMission"
 import TermsCondition from "../pages/TermsCondition"
 import PrivacyPolicy from "../pages/PrivacyPolicy"
+import BillClaim from "../pages/BillClaim"
+
 
 const AppRoutes = () => {
     return (
@@ -35,6 +37,7 @@ const AppRoutes = () => {
                     <Route path="/vission-mission" element={<VisionandMision></VisionandMision>}></Route>
                     <Route path="/terms-and-conditions" element={<TermsCondition></TermsCondition>}></Route>
                     <Route path="/privacy-and-policy" element={<PrivacyPolicy></PrivacyPolicy>}></Route>
+                    <Route path="/bill-claim" element={<BillClaim></BillClaim>}></Route>
                 </Routes>
             </ScrollToTop>
             <Footer />
