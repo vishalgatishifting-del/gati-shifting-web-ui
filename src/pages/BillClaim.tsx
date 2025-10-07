@@ -19,7 +19,6 @@ import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import ArticleIcon from '@mui/icons-material/Article';
 import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
 import ReceiptIcon from '@mui/icons-material/Receipt';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const BillClaim = () => {
     return (
