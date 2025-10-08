@@ -20,7 +20,7 @@ import MovingGuide from "../pages/MovingGuide"
 
 const AppRoutes = () => {
     return (
-        <section>
+        <section style={{ overflowX: "hidden" }}>
             <Navbar />
             <ScrollToTop>
                 <Routes>
