@@ -1,0 +1,132 @@
+@import "../style/variables";
+
+* {
+
+    scroll-behavior: smooth;
+}
+
+#movingguidesec {
+    @include font-poppins-sans(400);
+    margin-top: 140px;
+    overflow: visible;
+    padding: 10px;
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+        overflow: visible;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .left-area {
+        position: -webkit-sticky;
+        /* for Safari */
+        position: sticky;
+        top: 140px;
+        width: 250px;
+        background: #f2f2f2;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        z-index: 10;
+        border-radius: 10px;
+
+        a {
+            text-decoration: none;
+            margin: 6px 0;
+            color: #000;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: #007bff;
+            }
+        }
+    }
+
+    .right-area {
+        background: #f2f2f2;
+        border: 1px solid #ccc;
+        flex: 1;
+        padding: 10px;
+        border-radius: 10px;
+        width: 900px;
+
+        .card {
+            scroll-margin-top: 160px;
+            margin-bottom: 50px;
+
+            h1 {
+                margin-bottom: 10px;
+                font-size: 27px;
+            }
+
+            ul {
+                margin-left: 40px;
+            }
+
+            button {
+                display: flex;
+                justify-self: center;
+                padding: 10px 20px;
+                background: $primary-color;
+                border-radius: 6px;
+                border: none;
+                color: #fff;
+                font-size: 17px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1101px) {
+    #movingguidesec {
+        margin-top: 80px;
+
+        .container {
+            .left-area {
+                top: 80px;
+
+            }
+            
+                .right-area {
+                    .card {
+                        h1 {
+                            font-size: 20px;
+                        }
+                        ul li{
+                            font-size: 14px;
+                        }
+                    }
+                }
+        }
+    }
+}
+
+@media screen and (max-width: 983px) {
+    #movingguidesec {
+
+        .container {
+            width: 100%;
+            .left-area {display: none;
+            }
+            
+                .right-area {
+                    .card {
+                        h1 {
+                            font-size: 20px;
+                        }
+                        ul li{
+                            font-size: 14px;
+                        }
+                    }
+                }
+        }
+    }
+}

@@ -98,7 +98,7 @@ const Footer = () => {
                             <li><a href="#">Get a Quote</a></li>
                             <li><a href="#">Customer Support</a></li>
                             <li><Link to="/contact-us">Contact Us</Link></li>
-                            <li><a href="#">Moving Guide</a></li>
+                            <li><Link to="/moving-guide">Moving Guide</Link></li>
                             <li><Link to="bill-claim">Bill Claim</Link></li>
                         </ul>
                     </div>

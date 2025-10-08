@@ -16,12 +16,11 @@ import VisionandMision from "../pages/VisionandMission"
 import TermsCondition from "../pages/TermsCondition"
 import PrivacyPolicy from "../pages/PrivacyPolicy"
 import BillClaim from "../pages/BillClaim"
-
+import MovingGuide from "../pages/MovingGuide"
 
 const AppRoutes = () => {
     return (
-
-        <section style={{ overflowX: "hidden" }}>
+        <section>
             <Navbar />
             <ScrollToTop>
                 <Routes>
@@ -38,6 +37,7 @@ const AppRoutes = () => {
                     <Route path="/terms-and-conditions" element={<TermsCondition></TermsCondition>}></Route>
                     <Route path="/privacy-and-policy" element={<PrivacyPolicy></PrivacyPolicy>}></Route>
                     <Route path="/bill-claim" element={<BillClaim></BillClaim>}></Route>
+                    <Route path="/moving-guide" element={<MovingGuide></MovingGuide>}></Route>
                 </Routes>
             </ScrollToTop>
             <Footer />
