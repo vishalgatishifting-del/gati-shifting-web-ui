@@ -13,11 +13,42 @@ import {
     TableRow,
     Paper
 } from "@mui/material";
+
+import { Helmet } from "react-helmet-async";
 import "./MovingGuide.scss"
 
 const MovingGuide = () => {
     return (
         <>
+
+<Helmet>
+      
+<title>Moving Guide | Gati Shifting Packers</title>
+
+<meta name="description" content="Read the complete Moving Guide by Gati Shifting Packers — expert tips, packing checklist, and step-by-step advice to make your relocation easy and hassle-free." />
+<meta name="keywords" content="moving guide, packing tips, relocation checklist, shifting tips, home shifting, office moving, gati shifting packers" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="rohan" />
+
+{/* Open Graph / Facebook */}
+<meta property="og:title" content="Moving Guide | Gati Shifting Packers" />
+<meta property="og:description" content="Expert moving tips and a complete relocation checklist from Gati Shifting Packers. Make your move smooth, organized, and stress-free." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://gatishiftingpackers.com/moving-guide" />
+<meta property="og:site_name" content="Gati Shifting Packers" />
+<meta property="og:image" content="" />
+<meta property="og:image:alt" content="Moving Guide by Gati Shifting Packers" />
+
+{/* Twitter Card */}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Moving Guide | Gati Shifting Packers" />
+<meta name="twitter:description" content="Expert moving tips and a complete relocation checklist from Gati Shifting Packers. Make your move smooth, organized, and stress-free." />
+<meta name="twitter:image" content="" />
+
+<meta httpEquiv="content-language" content="en" />
+
+</Helmet>
+
             <section id="movingguidesec">
                 <div className="container">
                     <aside className="left-area">

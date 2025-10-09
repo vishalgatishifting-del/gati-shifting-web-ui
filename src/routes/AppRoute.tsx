@@ -16,6 +16,8 @@ import TermsCondition from "../pages/TermsCondition"
 import PrivacyPolicy from "../pages/PrivacyPolicy"
 import BillClaim from "../pages/BillClaim"
 import MovingGuide from "../pages/MovingGuide"
+import PhotoGallery from "../pages/PhotoGallery"
+
 
 const AppRoutes = () => {
     return (
@@ -37,6 +39,7 @@ const AppRoutes = () => {
                     <Route path="/privacy-and-policy" element={<PrivacyPolicy></PrivacyPolicy>}></Route>
                     <Route path="/bill-claim" element={<BillClaim></BillClaim>}></Route>
                     <Route path="/moving-guide" element={<MovingGuide></MovingGuide>}></Route>
+                    <Route path="/photo-gallery" element={<PhotoGallery></PhotoGallery>}></Route>
                 </Routes>
             </ScrollToTop>
             <Footer />

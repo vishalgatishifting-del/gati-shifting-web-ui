@@ -5,12 +5,41 @@ import GetInTouch from "../components/GetInTouch";
 import ReviewVideo from "../components/ReviewVideos";
 import TrustUsSection from "../components/TrustUsSection";
 import "./VissionMission.scss"
+import { Helmet } from "react-helmet-async";
 
 
 
 const VisionandMision = () => {
     return (
         <>
+
+        <Helmet>
+
+        <title>Vision & Mission | Gati Shifting Packers</title>
+        <meta name="description" content="Discover the vision and mission of Gati Shifting Packers — our commitment to quality relocation services and customer satisfaction." />
+        <meta name="keywords" content="vision, mission, Gati Shifting Packers, relocation services, customer satisfaction, company values"/>
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="rohan" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Vision & Mission | Gati Shifting Packers" />
+        <meta property="og:description" content="Discover the vision and mission of Gati Shifting Packers — our commitment to quality relocation services and customer satisfaction." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://gatishiftingpackers.com/vission-mission" />
+        <meta property="og:site_name" content="Gati Shifting Packers" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:alt" content="Vision & Mission - Gati Shifting Packers" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Vision & Mission | Gati Shifting Packers" />
+        <meta name="twitter:description" content="Discover the vision and mission of Gati Shifting Packers — our commitment to quality relocation services and customer satisfaction." />
+        <meta name="twitter:image" content="" />
+
+        <meta httpEquiv="content-language" content="en"/>     
+
+     
+        </Helmet>
             <section id="vissionandmissionsec">
                 <div className="container">
                     <div className="content">
