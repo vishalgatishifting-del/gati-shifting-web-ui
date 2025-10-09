@@ -8,7 +8,6 @@ import Contact from "../pages/Contact"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Who_we_are from "../pages/Who_we_are"
-
 import ScrollToTop from "../components/ScrollToTop";
 import WhyGati from "../pages/WhyGati"
 import OurTeam from "../pages/OurTeam"
