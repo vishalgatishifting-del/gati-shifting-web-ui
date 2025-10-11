@@ -10,7 +10,7 @@ import ContactsIcon from '@mui/icons-material/Contacts';
 import "./Navbar.scss"
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo2.webp"
-import { useState, useEffect } from "react";
+import { useState, useEffect, act } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -51,6 +51,7 @@ const Navbar = () => {
     };
 
     const [openNav, setOpenNav] = useState(false);
+    const [active, isActive] = useState("home");
     return (
         <>
             <header>
@@ -73,12 +74,12 @@ const Navbar = () => {
                         <Link to="/"><img src={Logo} alt="Gati Shifting Packers Logo" title='Gati Shifting Logo' loading='lazy' /></Link>
                     </div>
                     <ul className={(openNav) ? "active" : "inactive"}>
-                        <li><Link to="/" onClick={() => { setOpenNav(false) }}><HomeIcon className='icon'></HomeIcon> Home</Link></li>
-                        <li><Link to="/about" onClick={() => { setOpenNav(false) }}><InfoIcon className='icon'></InfoIcon> About Us</Link></li>
-                        <li><Link to="/review" onClick={() => { setOpenNav(false) }}><StarRateIcon className='icon'></StarRateIcon> Review</Link></li>
-                        <li><Link to="/faqs" onClick={() => { setOpenNav(false) }}><HelpOutlineIcon className='icon'></HelpOutlineIcon> FAQs</Link></li>
-                        <li><Link to="/services" onClick={() => { setOpenNav(false) }}><MiscellaneousServicesIcon className='icon'></MiscellaneousServicesIcon> Services</Link></li>
-                        <li><Link to="/contact-us" onClick={() => { setOpenNav(false) }}><ContactsIcon className='icon'></ContactsIcon> Contact Us</Link></li>
+                        <li><Link className={(active == "home" ? "active" : "")} to="/" onClick={() => { setOpenNav(false); isActive("home") }}><HomeIcon className='icon'></HomeIcon> Home</Link></li>
+                        <li><Link className={(active == "about" ? "active" : "")} to="/about" onClick={() => { setOpenNav(false); isActive("about") }}><InfoIcon className='icon'></InfoIcon> About Us</Link></li>
+                        <li><Link className={(active == "review" ? "active" : "")} to="/review" onClick={() => { setOpenNav(false); isActive("review") }}><StarRateIcon className='icon'></StarRateIcon> Review</Link></li>
+                        <li><Link className={(active == "faqs" ? "active" : "")} to="/faqs" onClick={() => { setOpenNav(false); isActive("faqs") }}><HelpOutlineIcon className='icon'></HelpOutlineIcon> FAQs</Link></li>
+                        <li><Link className={(active == "services" ? "active" : "")} to="/services" onClick={() => { setOpenNav(false); isActive("services") }}><MiscellaneousServicesIcon className='icon'></MiscellaneousServicesIcon> Services</Link></li>
+                        <li><Link className={(active == "contact-us" ? "active" : "")} to="/contact-us" onClick={() => { setOpenNav(false); isActive("contact-us") }}><ContactsIcon className='icon'></ContactsIcon> Contact Us</Link></li>
 
                         {/* <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About Us</Link></li>
@@ -112,7 +113,7 @@ const Navbar = () => {
                 <a href="https://wa.me/917290008200" target="_blank" rel="noopener noreferrer"><img src={whatsappIcon} /></a>
                 <a href="tel:+917290008200"><img src={callIcon} /></a>
                 <a href="mailto:gatishiftingpackers@gmail.com"> <img src={gmailIcon} /></a>
-                
+
             </div>
         </>
     )

@@ -16,6 +16,7 @@ import {
 
 import { Helmet } from "react-helmet-async";
 import "./MovingGuide.scss"
+import pdf from "../assets/Gati_Shifting_Moving_Checklist.pdf"
 
 const MovingGuide = () => {
     return (
@@ -151,7 +152,7 @@ const MovingGuide = () => {
                         </div>
                         <div id="downloadpdf" className="card">
                             <h1>⬇️ Download Our Free Moving Checklist PDF</h1>
-                            <button>Download Now</button>
+                            <a target="_blank" href={pdf}>Download Now</a>
                         </div>
                     </div>
                 </div>
