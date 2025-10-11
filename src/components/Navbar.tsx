@@ -10,7 +10,7 @@ import ContactsIcon from '@mui/icons-material/Contacts';
 import "./Navbar.scss"
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo2.webp"
-import { useState, useEffect, act } from "react";
+import { useState, useEffect } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
