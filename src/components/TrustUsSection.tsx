@@ -16,11 +16,11 @@ const TrustUsSection = () => {
                     <StarRateIcon className="icon"></StarRateIcon>
                     <span>Customer Review</span>
                 </Link>
-                <Link className="card" to="/review">
+                <Link className="card" to="/photo-gallery">
                     <CollectionsIcon className="icon"></CollectionsIcon>
                     <span>Photo Gallery</span>
                 </Link>
-                <Link className="card" to="/review">
+                <Link className="card" to="/video-gallery">
                     <PlayCircleIcon className="icon"></PlayCircleIcon>
                     <span>Video Gallery</span>
                 </Link>

@@ -86,7 +86,7 @@ const Footer = () => {
                             <li><Link to="/why-gati">Why Gati</Link></li>
                             <li><Link to="/our-team">Our Team</Link></li>
                             <li><Link to="/vission-mission">Vision & Mission</Link></li>
-                            <li><a href="#">Our Videos</a></li>
+                            <li><Link to="/video-gallery">Our Videos</Link></li>
                             <li><Link to="/photo-gallery">Photo Gallery</Link></li>
                         </ul>
                     </div>
@@ -95,8 +95,8 @@ const Footer = () => {
                         <h4>Need Help?</h4>
                         <ul>
                             <li><Link to="/faqs">FAQs</Link></li>
-                            <li><a href="#">Get a Quote</a></li>
-                            <li><a href="#">Customer Support</a></li>
+                            <li><Link to="/contact-us">Get a Quote</Link></li>
+                            <li><Link to="/customer-support">Customer Support</Link></li>
                             <li><Link to="/contact-us">Contact Us</Link></li>
                             <li><Link to="/moving-guide">Moving Guide</Link></li>
                             <li><Link to="/bill-claim">Bill Claim</Link></li>
