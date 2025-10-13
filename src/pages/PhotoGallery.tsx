@@ -94,11 +94,6 @@ const PhotoGallery = () => {
                                     <LazyImage
                                         src={new URL(`../assets/photoGallery/${img}`, import.meta.url).href}
                                         alt={img}
-                                        style={{
-                                            height: '300px',
-                                            width: 'auto',
-                                            objectFit: 'cover',
-                                        }}
                                     />
                                 </div>
                             ))}
