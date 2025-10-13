@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <!-- <link rel="icon" type="image/png" href="/ico.png" /> -->
@@ -22,12 +23,14 @@
   <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <meta name="business:contact_data:street_address" content="Office No. 04 Shree Sadguru Niwas Opp MSEB OFFICE Sector 21 Ghansoli">
+  <meta name="business:contact_data:street_address"
+    content="Office No. 04 Shree Sadguru Niwas Opp MSEB OFFICE Sector 21 Ghansoli">
   <meta name="business:contact_data:locality" content="Navi Mumbai">
   <meta name="business:contact_data:country_name" content="India">
   <meta name="business:contact_data:email" content="gatishiftingpackers@gmail.com">
   <meta name="business:contact_data:phone_number" content="+91-72900  08200">
   <meta name="business:contact_data:website" content="https://www.gatishiftingpackers.com">
+  <link rel="preload" href="/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
   <title></title>
   <!-- Preconnect (fast handshake) -->
@@ -49,13 +52,15 @@
   ]
 }
 </script>
-<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSHZ41C6TS"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-LSHZ41C6TS'); </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSHZ41C6TS"></script>
+  <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-LSHZ41C6TS'); </script>
 
 </head>
 
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.tsx"></script>
+  <script type="module" src="/src/main.tsx" defer crossorigin></script>
 </body>
 
 </html>

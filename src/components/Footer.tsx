@@ -110,7 +110,7 @@ const Footer = () => {
                             <li><a href="#">Office Relocation</a></li>
                             <li><a href="#">Car/Bike Transport</a></li>
                             <li><a href="#">Pet Relocation</a></li>
-                            <li><a href="#">AC Shifting</a></li>
+                            <li><a href="#">Commercial Shifting</a></li>
                             <li><a href="#">International Moves</a></li>
                         </ul>
                     </div>
