@@ -61,6 +61,7 @@ const HomeShifting = () => {
                         <h3>Step 6: Hassle-Free Delivery & Feedback</h3>
                         <ul>
                             <li>🏠 After delivery and reinstallation, share your valuable feedback to help us serve you better.
+                                <br />
                                 Insert Feedback form button
                             </li>
                         </ul>
@@ -98,27 +99,27 @@ const HomeShifting = () => {
                         <h2>Factors Affecting the Cost of House Shifting in India</h2>
                         <p>The cost of house shifting depends on several things. Here are the main factors that affect the price:</p>
 
-                        <ul>
-                            <li>1. Distance
+                        <ol>
+                            <li>Distance
                                 The farther the move, the higher the cost. Longer distances require more fuel, time, and resources, whether you’re shifting a home, office, or other goods.
                             </li>
-                            <li>2. Number of Items
+                            <li>Number of Items
                                 If you have more or heavier items to move, you’ll need a bigger vehicle and more labor, which increases the cost.
                             </li>
                             <li>
-                                3. Packing Quality
+                                Packing Quality
                                 Using good packing materials like bubble wrap and boxes keeps your items safe but adds a little extra to the cost, especially for fragile items.
                             </li>
                             <li>
-                                4. Type of Vehicle
+                                Type of Vehicle
                                 The type of truck or container used depends on how many goods you have. Bigger or special vehicles cost more than small ones.
                             </li>
                             <li>
-                                5. Time of Moving
+                                Time of Moving
                                 Moving on weekends, month-end, or during busy seasons usually costs more. Choosing a weekday or off-season date can help you save money.
 
                             </li>
-                        </ul>
+                        </ol>
                     </div>
                 </div>
             </section>
