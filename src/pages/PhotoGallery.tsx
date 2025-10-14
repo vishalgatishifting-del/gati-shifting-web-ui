@@ -1,5 +1,6 @@
 import { useState, Suspense, lazy } from "react";
 import "./PhotoGallery.scss";
+import { Helmet } from "react-helmet-async";
 
 // Components Lazy Load (for coverage optimization)
 const GetInTouch = lazy(() => import("../components/GetInTouch"));
@@ -63,6 +64,33 @@ const PhotoGallery = () => {
 
     return (
         <>
+            <Helmet>
+
+                <title>Photo Gallery | Gati Shifting Packers</title>
+
+                <meta name="description" content="Explore the Photo Gallery of Gati Shifting Packers showcasing our professional packing, moving, and relocation services. See our team in action and client success stories." />
+                <meta name="keywords" content="Gati Shifting Packers photo gallery, packing and moving photos, relocation services images, professional movers photos, client success stories" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="rohan" />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Photo Gallery | Gati Shifting Packers" />
+                <meta property="og:description" content="Browse the Photo Gallery of Gati Shifting Packers to see our expert packing and moving services in action." />
+                <meta property="og:url" content="https://gatishiftingpackers.com/photo-gallery" />
+                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Photo Gallery | Gati Shifting Packers" />
+                <meta name="twitter:description" content="Check out our Photo Gallery showcasing professional packing, moving, and relocation services." />
+                <meta name="twitter:image" content="https://gatishiftingpackers.com/metaImg.png" />
+                <meta name="twitter:site" content="@gati_shifting" />
+
+
+                <meta http-equiv="Content-Language" content="en" />
+
+                <link rel="canonical" href="https://gatishiftingpackers.com/photo-gallery"></link>
+            </Helmet>
             <section id="photogallerysec">
                 <div className="container">
                     <div className="btns">

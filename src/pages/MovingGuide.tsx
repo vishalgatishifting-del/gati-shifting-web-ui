@@ -37,14 +37,14 @@ const MovingGuide = () => {
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://gatishiftingpackers.com/moving-guide" />
 <meta property="og:site_name" content="Gati Shifting Packers" />
-<meta property="og:image" content="" />
+<meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
 <meta property="og:image:alt" content="Moving Guide by Gati Shifting Packers" />
 
 {/* Twitter Card */}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Moving Guide | Gati Shifting Packers" />
 <meta name="twitter:description" content="Expert moving tips and a complete relocation checklist from Gati Shifting Packers. Make your move smooth, organized, and stress-free." />
-<meta name="twitter:image" content="" />
+<meta name="twitter:image" content="https://gatishiftingpackers.com/metaImg.png" />
 
 <meta httpEquiv="content-language" content="en" />
 

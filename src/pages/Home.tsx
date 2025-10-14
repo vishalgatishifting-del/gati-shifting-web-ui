@@ -193,7 +193,7 @@ const Home: React.FC = () => {
                 {/* Open Graph for Social Sharing */}
                 <meta property="og:title" content="Gati Shifting Packers | Reliable Shifting Services" />
                 <meta property="og:description" content="Gati Shifting Packers offers safe and affordable relocation services India & International moving services. Expert in Home shifting, Office, Car & Bike, & Warehouse Storage. Reliable service, trusted by thousands nationwide." />
-                <meta property="og:image" content={gatiSlider2} />
+                <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
                 <meta property="og:url" content="https://gatishiftingpackers.com/" />
                 <meta property="og:type" content="website" />
 
@@ -201,7 +201,7 @@ const Home: React.FC = () => {
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Gati Shifting Packers" />
                 <meta name="twitter:description" content="Gati Shifting Packers offers safe and affordable relocation services India & International moving services. Expert in Home shifting, Office, Car & Bike, & Warehouse Storage. Reliable service, trusted by thousands nationwide." />
-                <meta name="twitter:image" content={gatiSlider2} />
+                <meta name="twitter:image" content="https://gatishiftingpackers.com/metaImg.png" />
 
 
                 <meta name="robots" content="index, follow" />

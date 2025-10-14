@@ -14,7 +14,6 @@ import "./Services.scss"
 
 import { Helmet } from "react-helmet-async";
 import "./Services.scss"
-import gatiSlider2 from "../assets/sliderImg/gatislider2.webp";
 
 import { useState } from "react";
 import petSlider from "../assets/expandable_slider/pet.webp";
@@ -67,13 +66,13 @@ const Services = () => {
                 <meta property="og:description" content="Check estimated packing and moving charges in India. From 1 BHK to 4 BHK, office relocation, and vehicle shifting – Gati Shifting Packers provides reliable services nationwide." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://gatishiftingpackers.com" />
-                <meta property="og:image" content={gatiSlider2} />
+                <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Our Services | Gati Shifting Packers " />
                 <meta name="twitter:description" content="Reliable relocation services by Gati Shifting Packers . Get clear pricing for household, office, and vehicle shifting across India." />
-                <meta property="og:image" content={gatiSlider2} />
+                <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
             </Helmet>
 
             <ServicesSection ></ServicesSection>

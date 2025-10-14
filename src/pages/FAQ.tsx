@@ -3,7 +3,6 @@ import "./FAQ.scss";
 import car5 from "../assets/car5.jpg"
 import { Helmet } from "react-helmet-async";
 
-import gatiSlider2 from "../assets/sliderImg/gatislider2.webp";
 
 const FAQ = () => {
     return (
@@ -19,14 +18,14 @@ const FAQ = () => {
                 <meta property="og:description" content="Get answers to common questions about Gati Shifting Packers. From local to pan-India moves, understand our services, packing quality, and cost transparency." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://gatishiftingpackers.com/" />
-                <meta property="og:image" content={gatiSlider2} />
+                <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="FAQ | Gati Shifting Packers" />
                 <meta name="twitter:description" content="Find answers to FAQs about Gati Shifting Packers, including services, pricing, and relocation tips." />
 
-                <meta property="og:image" content={gatiSlider2} />
+                <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
             </Helmet>
             <section className="info-section">
                 <div className="info-left">

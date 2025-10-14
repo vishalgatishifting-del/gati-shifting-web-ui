@@ -27,14 +27,14 @@ const VisionandMision = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://gatishiftingpackers.com/vission-mission" />
         <meta property="og:site_name" content="Gati Shifting Packers" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
         <meta property="og:image:alt" content="Vision & Mission - Gati Shifting Packers" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Vision & Mission | Gati Shifting Packers" />
         <meta name="twitter:description" content="Discover the vision and mission of Gati Shifting Packers — our commitment to quality relocation services and customer satisfaction." />
-        <meta name="twitter:image" content="" />
+        <meta name="twitter:image" content="https://gatishiftingpackers.com/metaImg.png" />
 
         <meta httpEquiv="content-language" content="en"/>     
 

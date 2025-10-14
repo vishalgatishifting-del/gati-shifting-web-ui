@@ -5,8 +5,6 @@ import "./Review.scss";
 import ContactForm from "../components/ContactForm";
 import ReviewForm from "../components/ReviewForm";
 import { Helmet } from "react-helmet-async";
-import gatiSlider2 from "../assets/sliderImg/gatislider2.webp";
-
 
 
 const settings2 = {
@@ -38,13 +36,13 @@ const Review = () => {
                 <meta property="og:description" content="See what customers say about Gati Relocation – genuine reviews for home shifting, office relocation, bike transport, international moves & pet relocation." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://gatishiftingpackers.com" />
-                <meta property="og:image" content={gatiSlider2} />
+                <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Customer Reviews | Gati Shifting Packers" />
                 <meta name="twitter:description" content="Genuine customer feedback on Gati Shifting Packers services including domestic, international, office, bike and pet moves." />
-                <meta property="og:image" content={gatiSlider2} />
+                <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
                 <meta httpEquiv="content-language" content="en" />
             </Helmet>
             <section id="customer-review-list">

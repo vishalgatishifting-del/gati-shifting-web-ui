@@ -4,8 +4,6 @@ import FAQList from "../components/FAQList";
 import OfficeLocation from "../components/OfficeLocation";
 import "./Contact.scss"
 import { Helmet } from "react-helmet-async";
-import gatiSlider2 from "../assets/sliderImg/gatislider2.webp";
-
 
 
 
@@ -25,14 +23,14 @@ const Contact = ()=>{
         <meta  property="og:description" content="Reach out to Gati Shifting Packers for quotes, bookings, and relocation support. Available for home, office, and pan-India moves." /> 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://gatishiftingpackers.com" /> 
-        <meta property="og:image" content={gatiSlider2} /> 
+        <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" /> 
       
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Us | Gati Shifting Packers" /> 
         <meta  name="twitter:description" content="Contact Gati Shifting Packers for relocation support, free cost estimates, and customer service across India." /> 
-        <meta name="twitter:image" content={gatiSlider2} /> 
+        <meta name="twitter:image" content="https://gatishiftingpackers.com/metaImg.png" /> 
       </Helmet>
 
         <section id="contact-page-sec">
