@@ -106,7 +106,7 @@ const Footer = () => {
                     <div className="footer-col">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><a href="#">Home Shifting</a></li>
+                            <li><Link to="/home-shifting">Home Shifting</Link></li>
                             <li><a href="#">Office Relocation</a></li>
                             <li><a href="#">Car/Bike Transport</a></li>
                             <li><a href="#">Pet Relocation</a></li>

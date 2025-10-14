@@ -18,6 +18,8 @@ import BillClaim from "../pages/BillClaim"
 import MovingGuide from "../pages/MovingGuide"
 import PhotoGallery from "../pages/PhotoGallery"
 import CustomerSupport from "../pages/CustomerSupport"
+import HomeShifting from "../pages/HomeShifting"
+
 
 const AppRoutes = () => {
     return (
@@ -41,6 +43,7 @@ const AppRoutes = () => {
                     <Route path="/moving-guide" element={<MovingGuide></MovingGuide>}></Route>
                     <Route path="/photo-gallery" element={<PhotoGallery></PhotoGallery>}></Route>
                     <Route path="/customer-support" element={<CustomerSupport></CustomerSupport>}></Route>
+                    <Route path="/home-shifting" element={<HomeShifting></HomeShifting>}></Route>
                 </Routes>
             </ScrollToTop>
             <Footer />
