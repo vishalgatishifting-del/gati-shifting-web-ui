@@ -86,7 +86,7 @@ const ContactForm: React.FC<ContactFormProps> = ({showDetail = "true", closeCont
                     <span>gatishiftingpackers@gmail.com</span>
                     <p>Office No. 001, Shree Ganesh Tower CHS, Plot No. 98, Sector 21, Ghansoli, Navi Mumbai, Maharashtra 400701, India</p>
                 </div>
-                ) : "")}
+                ) : "")}  
                 <div className="form" style={ (showDetail == "false") ? { width: "100%" } : {} } >
                     <form onSubmit={handleSubmit} className={(showDetail == "false") ? "dialogeForm": " "}>
                         <input type="text" placeholder="Your Name" name="name" onChange={handleChange} value={formData.name} required/>
