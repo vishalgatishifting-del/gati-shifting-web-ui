@@ -75,7 +75,7 @@ const ContactForm: React.FC<ContactFormProps> = ({showDetail = "true", closeCont
 
     return (
         <section id="get-in-touch-form" style={(showDetail == "false") ? { boxShadow: "0 5px 20px #00000029", marginTop: "0px", width:"100%", padding:"14px" } : {}}>
-            <h1>Get In Touch</h1>
+            <h1>Get In Touchs</h1>
             <p>We make shifting fast, safe & affordable. Connect now!</p>
             <div className="container"  style={ (showDetail == "false") ? { width: "100%", boxShadow: "none" } : {} }>
                 {(showDetail == "true" ? (
