@@ -103,6 +103,9 @@ header {
 
 
 }
+.css-kw13he-MuiDialogContent-root{
+    padding: 0!important;
+}
 
 @media screen and (max-width: 1101px) {
     header {
@@ -146,6 +149,13 @@ header {
     }
 }
 
+
+@media screen and (max-width:500px) {
+    .css-10d30g3-MuiPaper-root-MuiDialog-paper{
+        width: 100%!important;
+        margin: 10px!important;
+    }
+}
 
 
 @media screen and (max-width: 382px) {

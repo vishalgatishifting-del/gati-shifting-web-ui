@@ -166,11 +166,7 @@ const Home: React.FC = () => {
                 service_detail_c: "",
                 goods_type_c: text, // reset with current tab
             });
-            // if (window.gtag) {
-            //     window.gtag('event', 'conversion', {
-            //         'send_to': 'AW-17573064597/u1hXCLuunqgbEJXfvrtB'
-            //     });
-            // }
+
         } catch (error) {
             console.error("Error submitting form:", error);
             setSuccess("Error submitting form. Try again!");
