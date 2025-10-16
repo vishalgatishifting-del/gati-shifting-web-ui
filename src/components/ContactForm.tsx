@@ -3,11 +3,11 @@ import React, { useState } from "react";
 import axios from "axios";
 
 interface ContactFormProps{
-    showDetail? : "true" | "false";
+    showDetail? : true | false;
     closeControl?: () => void;
 }
 
-const ContactForm: React.FC<ContactFormProps> = ({showDetail = "true", closeControl}) => {
+const ContactForm: React.FC<ContactFormProps> = ({showDetail = true, closeControl}) => {
 
 
     interface FormData {
@@ -74,11 +74,11 @@ const ContactForm: React.FC<ContactFormProps> = ({showDetail = "true", closeCont
     };
 
     return (
-        <section id="get-in-touch-form" style={(showDetail == "false") ? { boxShadow: "0 5px 20px #00000029", marginTop: "0px", width:"100%", padding:"14px" } : {}}>
-            <h1>Get In Touchs</h1>
+        <section id="get-in-touch-form" style={(showDetail == false) ? { boxShadow: "0 5px 20px #00000029", marginTop: "0px", width:"100%", padding:"14px" } : {}}>
+            <h1>Get In Touch</h1>
             <p>We make shifting fast, safe & affordable. Connect now!</p>
-            <div className="container"  style={ (showDetail == "false") ? { width: "100%", boxShadow: "none" } : {} }>
-                {(showDetail == "true" ? (
+            <div className="container"  style={ (showDetail == false) ? { width: "100%", boxShadow: "none" } : {} }>
+                {(showDetail == true ? (
 
                 <div className="detail">
                     <h4>Gati Shifting Packers and Movers</h4>
@@ -87,8 +87,8 @@ const ContactForm: React.FC<ContactFormProps> = ({showDetail = "true", closeCont
                     <p>Office No. 001, Shree Ganesh Tower CHS, Plot No. 98, Sector 21, Ghansoli, Navi Mumbai, Maharashtra 400701, India</p>
                 </div>
                 ) : "")}  
-                <div className="form" style={ (showDetail == "false") ? { width: "100%" } : {} } >
-                    <form onSubmit={handleSubmit} className={(showDetail == "false") ? "dialogeForm": " "}>
+                <div className="form" style={ (showDetail == false) ? { width: "100%" } : {} } >
+                    <form onSubmit={handleSubmit} className={(showDetail == false) ? "dialogeForm": " "}>
                         <input type="text" placeholder="Your Name" name="name" onChange={handleChange} value={formData.name} required/>
                         <input type="text" placeholder="Your Email" name="email1" onChange={handleChange} value={formData.email1} required/>
                         <input type="text" placeholder="Contact Number" name="phone_office" onChange={handleChange} value={formData.phone_office} required/>

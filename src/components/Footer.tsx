@@ -107,7 +107,7 @@ const Footer = () => {
                         <h4>Our Services</h4>
                         <ul>
                             <li><Link to="/home-shifting">Home Shifting</Link></li>
-                            <li><Link to="/pet-relocation">Office Relocation</Link></li>
+                            <li><Link to="/office-relocation">Office Relocation</Link></li>
                             <li><a href="#">Car/Bike Transport</a></li>
                             <li><Link to="/pet-relocation">Pet Relocation</Link></li>
                             <li><a href="#">Commercial Shifting</a></li>

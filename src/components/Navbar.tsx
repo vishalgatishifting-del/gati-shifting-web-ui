@@ -30,6 +30,7 @@ import gmailIcon from "../assets/gmailIcon.webp"
 
 const Navbar = () => {
 
+
     useEffect(() => {
         // 2 second baad dialog khulega
         const timer = setTimeout(() => {
@@ -104,8 +105,8 @@ const Navbar = () => {
                 <DialogActions>
                     <Button onClick={handleClose}><CloseIcon></CloseIcon></Button>
                 </DialogActions>
-                <DialogContent>
-                    <ContactForm closeControl={handleClose} showDetail="false"></ContactForm>
+                <DialogContent sx={{ padding: '0 !important' }}>
+                    <ContactForm closeControl={handleClose} showDetail={false}></ContactForm>
                 </DialogContent>
             </Dialog>
 

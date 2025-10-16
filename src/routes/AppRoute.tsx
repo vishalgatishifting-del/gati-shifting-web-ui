@@ -20,6 +20,8 @@ import PhotoGallery from "../pages/PhotoGallery"
 import CustomerSupport from "../pages/CustomerSupport"
 import HomeShifting from "../pages/HomeShifting"
 import PetRelocation from "../pages/PetRelocation"
+import OfficeRelocation from "../pages/OfficeRelocation"
+
 
 const AppRoutes = () => {
     return (
@@ -45,6 +47,7 @@ const AppRoutes = () => {
                     <Route path="/customer-support" element={<CustomerSupport></CustomerSupport>}></Route>
                     <Route path="/home-shifting" element={<HomeShifting></HomeShifting>}></Route>
                     <Route path="/pet-relocation" element={<PetRelocation></PetRelocation>}></Route>
+                    <Route path="/office-relocation" element={<OfficeRelocation></OfficeRelocation>}></Route>
                 </Routes>
             </ScrollToTop>
             <Footer />
