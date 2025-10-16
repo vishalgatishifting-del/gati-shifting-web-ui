@@ -98,26 +98,26 @@ const PetRelocation = () => {
                         <p>The cost of house shifting depends on several things. Here are the main factors that affect the price:</p>
 
                         <ol>
-                            <li>Distance
+                            <li>Distance - 
                                 Longer distances increase cost due to more travel time and logistics.
 
                             </li>
-                            <li>Pet Type & Size
+                            <li>Pet Type & Size - 
                                 Larger pets or multiple animals require bigger carriers and extra care, raising the cost.
 
                             </li>
                             <li>
-                                Travel Method
+                                Travel Method - 
                                 Air transport, ground transport, or a combination affects pricing. Enclosed or specialized carriers add to the cost.
 
                             </li>
                             <li>
-                                Health & Documentation Needs
+                                Health & Documentation Needs - 
                                 Vaccination certificates, permits, and veterinary checks may increase charges slightly.
 
                             </li>
                             <li>
-                                Timing & Urgency
+                                Timing & Urgency - 
                                 Peak seasons or urgent relocations can cost more than planned, scheduled moves.
 
                             </li>
