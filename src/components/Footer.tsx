@@ -108,10 +108,10 @@ const Footer = () => {
                         <ul>
                             <li><Link to="/home-shifting">Home Shifting</Link></li>
                             <li><Link to="/office-relocation">Office Relocation</Link></li>
-                            <li><a href="#">Car/Bike Transport</a></li>
+                            <li><Link to="/car-bike-transport">Car/Bike Transport</Link></li>
                             <li><Link to="/pet-relocation">Pet Relocation</Link></li>
-                            <li><a href="#">Commercial Shifting</a></li>
-                            <li><a href="#">International Moves</a></li>
+                            <li><Link to="/commercial-shifting">Commercial Shifting</Link></li>
+                            <li><Link to="/international-moves">International Moves</Link></li>
                         </ul>
                     </div>
                     <div className="footer-col">

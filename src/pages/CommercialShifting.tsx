@@ -1,0 +1,142 @@
+import AwardCertification from "../components/AwardCertification";
+import BrandList from "../components/BrandsList";
+import FAQList from "../components/FAQList";
+import GetInTouch from "../components/GetInTouch";
+import ReviewVideo from "../components/ReviewVideos";
+import TrustUsSection from "../components/TrustUsSection";
+import commercialShiftingImg from "../assets/CommercialShifting/commercialShiftingPriceImg.jpg"
+import { Helmet } from "react-helmet-async";
+
+const CommercialShifting = () => {
+    return (
+        <>
+            <Helmet>
+
+
+            </Helmet>
+
+            <section id="pet-relocation-sec">
+                <div className="container">
+                    <h1>Gati Shifting Packers – Trusted Commercial Shifting Services in India</h1>
+                    <p>Gati Shifting Packers is one of the leading and most reliable names in commercial shifting services across India. We specialize in relocating large-scale commercial spaces, including warehouses, showrooms, retail outlets, manufacturing units, and corporate establishments. Our professional team ensures a seamless, secure, and timely relocation that minimizes downtime and business disruption.
+                        <br />
+                        With a strong nationwide network, Gati Shifting Packers is known for its strategic planning, efficient packing, and end-to-end coordination. Whether it’s machinery, furniture, or sensitive equipment, we handle everything with the utmost care and precision. Our commercial moving solutions include insurance coverage, vehicle tracking, and trained professionals to ensure your valuable assets reach safely and on time.
+
+                    </p>
+                    <div className="content 6-steps">
+                        <h2>🏡 Simple 6-Step Booking Process with Gati Shifting Packers</h2>
+
+                        <h3>Step 1: Share Your Moving Details & Get a Quote</h3>
+                        <ul>
+                            <li>📋 Provide your moving requirements — items, location, and distance.</li>
+                            <li>💬 Get a fair, customized quote from our verified professionals.</li>
+                        </ul>
+
+                        <h3>Step 2: Confirm Booking with Advance Payment</h3>
+                        <ul>
+                            <li>📅 Choose your preferred pickup date and time.</li>
+                            <li>💳 Secure your booking by paying a small advance (adjusted later).</li>
+                        </ul>
+
+                        <h3>Step 3: Safe Packing & Doorstep Pickup</h3>
+                        <ul>
+                            <li>🔧 Our trained team arrives with top-quality packing materials to pack your belongings carefully.</li>
+                            <li>✔ Dismantling, labeling, and secure loading are done under expert supervision.</li>
+                        </ul>
+
+                        <h3>Step 4: Transparent Invoice & Payment Settlement</h3>
+                        <ul>
+                            <li>📄 Receive a detailed invoice based on your provided list.</li>
+                            <li>💸 Pay the remaining amount after deducting your advance payment.</li>
+                        </ul>
+
+                        <h3>Step 5: Secure Transportation & Real-Time Updates</h3>
+                        <ul>
+                            <li>🚛 Your goods are dispatched safely to the destination.</li>
+                            <li>📱 Track your shipment with live updates until delivery.</li>
+                        </ul>
+
+
+                        <h3>Step 6: Hassle-Free Delivery & Feedback</h3>
+                        <ul>
+                            <li>🏠 After delivery and reinstallation, share your valuable feedback to help us serve you better.
+                                <br />
+                                Insert Feedback form button
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="content types">
+                        <h2>Commercial Items We Shift</h2>
+                        <p style={{ marginBottom: "10px" }}>At Gati Shifting Packers, we provide comprehensive commercial moving services covering all essential items and equipment:</p>
+                        <ul>
+                            <li>Machinery & Equipment: Heavy machinery, production units, and industrial tools.</li>
+                            <li>Furniture & Fixtures: Display racks, shelves, counters, tables, and chairs.</li>
+                            <li>Electronics & Appliances: Computers, POS systems, AC units, lighting, and other devices.</li>
+                            <li>Inventory & Stock: Products, materials, and goods packed securely for transport.</li>
+                            <li>Files & Documents: Important records and paperwork handled with confidentiality.</li>
+                        </ul>
+
+                        <h2>Affordable Commercial Shifting Charges in India</h2>
+                        <p>
+                            We offer cost-effective and transparent commercial shifting services designed for all types of businesses — from small enterprises to large corporations. Our pricing depends on your specific requirements and ensures no hidden charges. Whether you’re relocating locally or across cities, Gati Shifting Packers guarantees a smooth, hassle-free, and budget-friendly experience.
+                        </p>
+
+
+                        <img src={commercialShiftingImg} />
+                    </div>
+                    <div className="content why-choose">
+                        <h2>Why Choose Professional Commercial Shifting Services in India?</h2>
+                        <ul>
+                            <li>Safe Handling: Specialized team for heavy and delicate commercial goods.</li>
+                            <li>Minimal Downtime: Quick relocation with minimal impact on business operations.</li>
+                            <li>End-to-End Management: From dismantling to reinstallation, we handle it all.</li>
+                            <li>Trained Staff: Experienced professionals using modern tools and equipment.</li>
+                            <li>Insurance Protection: Comprehensive coverage for goods in transit.</li>
+                        </ul>
+                    </div>
+                    <div className="content factors">
+                        <h2>Factors Affecting the Cost of Commercial Shifting in India</h2>
+
+                        <ol>
+                            <li>Distance -
+                                 Longer distances increase fuel, labor, and time requirements.
+
+                            </li>
+                            <li>Quantity & Weight of Goods -
+                                More items or heavy machinery require larger vehicles and more manpower.
+
+
+                            </li>
+                            <li>
+                                Type of Goods -
+                                Fragile or high-value items need special packing and careful handling, adding to cost.
+
+                            </li>
+                            <li>
+                                Vehicle Type -
+                                Depending on load capacity, open trucks or closed containers are used — larger ones cost more.
+
+
+                            </li>
+                            <li>
+                                Timing & Season -
+                                Shifting during weekends, month-ends, or peak seasons may cost more than off-peak days.
+
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+
+
+            <ReviewVideo></ReviewVideo>
+            <GetInTouch></GetInTouch>
+            <AwardCertification></AwardCertification>
+            <TrustUsSection></TrustUsSection>
+            <BrandList></BrandList>
+            <FAQList></FAQList>
+        </>
+    )
+}
+
+export default CommercialShifting;

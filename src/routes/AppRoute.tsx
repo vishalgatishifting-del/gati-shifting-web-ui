@@ -21,6 +21,9 @@ import CustomerSupport from "../pages/CustomerSupport"
 import HomeShifting from "../pages/HomeShifting"
 import PetRelocation from "../pages/PetRelocation"
 import OfficeRelocation from "../pages/OfficeRelocation"
+import CarBikeTransport from "../pages/CarBikeTransport"
+import CommercialShifting from "../pages/CommercialShifting"
+import InternationalMovers from "../pages/InternationalMovers"
 
 
 const AppRoutes = () => {
@@ -48,6 +51,9 @@ const AppRoutes = () => {
                     <Route path="/home-shifting" element={<HomeShifting></HomeShifting>}></Route>
                     <Route path="/pet-relocation" element={<PetRelocation></PetRelocation>}></Route>
                     <Route path="/office-relocation" element={<OfficeRelocation></OfficeRelocation>}></Route>
+                    <Route path="/car-bike-transport" element={<CarBikeTransport></CarBikeTransport>}></Route>
+                    <Route path="/commercial-shifting" element={<CommercialShifting></CommercialShifting>}></Route>
+                    <Route path="/international-moves" element={<InternationalMovers></InternationalMovers>}></Route>
                 </Routes>
             </ScrollToTop>
             <Footer />
