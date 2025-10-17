@@ -65,7 +65,7 @@ const Navbar = () => {
                         <EmailIcon></EmailIcon>
                         <span>gatishiftingpackers@gmail.com</span>
                     </a>
-                    <a href="https://wa.me/917290008200" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer">
                         <WhatsAppIcon></WhatsAppIcon>
                         <span>Chat Now</span>
                     </a>
@@ -111,7 +111,7 @@ const Navbar = () => {
             </Dialog>
 
             <div className='action-button'>
-                <a href="https://wa.me/917290008200" target="_blank" rel="noopener noreferrer"><img src={whatsappIcon} /></a>
+                <a href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer"><img src={whatsappIcon} /></a>
                 <a href="tel:+917290008200"><img src={callIcon} /></a>
                 <a href="mailto:gatishiftingpackers@gmail.com"> <img src={gmailIcon} /></a>
 

@@ -24,7 +24,7 @@ const TrustUsSection = () => {
                     <PlayCircleIcon className="icon"></PlayCircleIcon>
                     <span>Video Gallery</span>
                 </Link>
-                <a className="card" href="https://wa.me/917290008200">
+                <a className="card" href="https://wa.me/917065994000">
                     <WhatsAppIcon className="icon"></WhatsAppIcon>
                     <span>Chat With Us</span>
                 </a>
