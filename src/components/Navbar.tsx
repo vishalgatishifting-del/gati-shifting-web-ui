@@ -9,7 +9,8 @@ import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices
 import ContactsIcon from '@mui/icons-material/Contacts';
 import "./Navbar.scss"
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo2.webp"
+// import Logo from "../assets/logo2.webp"
+import Logo from "../assets/logo/roundedLogo.png"
 import { useState, useEffect } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -55,7 +56,7 @@ const Navbar = () => {
     const [active, isActive] = useState("home");
     return (
         <>
-            <header>
+            <header className='diwali'>
                 <div className="top-area">
                     <a href="tel:+917290008200">
                         <LocalPhoneIcon></LocalPhoneIcon>

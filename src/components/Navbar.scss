@@ -7,8 +7,13 @@ header {
     display: flex;
     flex-direction: column;
     background: #fff;
+
+
     z-index: 1000;
     // margin-bottom: 100%;
+
+
+    // diwali theme
 
     .top-area {
         background-color: $primary-color;
@@ -63,8 +68,9 @@ header {
                         margin-right: 1px;
                     }
                 }
-                a.active{
-                    
+
+                a.active {
+
                     background-color: $primary-color;
                     color: #fff;
                 }
@@ -102,6 +108,50 @@ header {
     }
 
 
+}
+
+
+header.diwali {
+    // background: linear-gradient(360deg, #ff271e, #ff8901);
+    background: url("../assets/diwaliTheme/headerBG.png");
+    background-size: cover;
+    background-position: bottom;
+
+    .top-area {
+        background: transparent;
+    }
+
+    nav {
+        .logo{
+            img{
+                width: 100px;
+            }
+        }
+        ul {
+            li {
+                a {}
+
+                a.active {
+                    background-color: #ff951d;
+                }
+
+                a:hover {
+
+                    background-color: #ff951d;
+                }
+            }
+        }
+
+        .get-in-touch-btns {
+            a {
+                    color: $text-color;
+            }
+
+            button {
+                background-color: #ff951d;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1101px) {
@@ -156,18 +206,21 @@ header {
 
 
 @media screen and (max-width: 382px) {
-    header{
-        nav{
+    header {
+        nav {
             padding: 7px;
         }
     }
-    header nav .logo img{
+
+    header nav .logo img {
         width: 80px;
     }
-    header nav .get-in-touch-btns a{
+
+    header nav .get-in-touch-btns a {
         display: flex;
     }
-    header nav .get-in-touch-btns button{
+
+    header nav .get-in-touch-btns button {
         font-size: 12px;
         padding: 0 15px;
         height: 35px;
@@ -195,14 +248,15 @@ header {
         box-shadow: 0 5px 10px #00000070;
         display: flex;
 
-        img{
+        img {
             width: 35px;
             height: 35px;
             border-radius: 50%;
             transition: .3s;
         }
     }
-    a:hover img{
+
+    a:hover img {
         transform: scale(1.2);
     }
 }

@@ -28,6 +28,8 @@ import AwardCertification from "../components/AwardCertification";
 import TrustUsSection from "../components/TrustUsSection";
 import ReviewVideo from "../components/ReviewVideos";
 
+import diwaliSlider from "../assets/diwaliTheme/diwalislider.png"
+
 
 
 // import { IFaqItem } from "../models/App.model";
@@ -43,7 +45,7 @@ import ReviewVideo from "../components/ReviewVideos";
 const Home: React.FC = () => {
 
 
-    const images = [gatiSlider2, gatiSlider1, gatiSlider3];
+    const images = [diwaliSlider, gatiSlider2, gatiSlider1, gatiSlider3];
 
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
@@ -210,7 +212,8 @@ const Home: React.FC = () => {
 
             </Helmet>
 
-            <Box className="sliderBox" sx={{ marginTop: "107.01px", width: "95%", overflow: "hidden" }}>
+{/* marginTop: "107.01px" */}
+            <Box className="sliderBox" sx={{ marginTop: "150px", width: "95%", overflow: "hidden" }}>
                 <Slider {...settings}>
                     {images.map((img, index) => (
                         <Box key={index} sx={{ position: "relative", outline: "none" }}>
