@@ -24,6 +24,9 @@ import OfficeRelocation from "../pages/OfficeRelocation"
 import CarBikeTransport from "../pages/CarBikeTransport"
 import CommercialShifting from "../pages/CommercialShifting"
 import InternationalMovers from "../pages/InternationalMovers"
+import Warehouse from "../pages/Warehouse"
+import HomeStorage from "../pages/HomeStorage"
+
 
 
 const AppRoutes = () => {
@@ -54,6 +57,8 @@ const AppRoutes = () => {
                     <Route path="/car-bike-transport" element={<CarBikeTransport></CarBikeTransport>}></Route>
                     <Route path="/commercial-shifting" element={<CommercialShifting></CommercialShifting>}></Route>
                     <Route path="/international-moves" element={<InternationalMovers></InternationalMovers>}></Route>
+                    <Route path="/warehouse" element={<Warehouse></Warehouse>}></Route>
+                    <Route path="/home-storage" element={<HomeStorage></HomeStorage>}></Route>
                 </Routes>
             </ScrollToTop>
             <Footer />
