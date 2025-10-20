@@ -152,11 +152,28 @@ const Home: React.FC = () => {
         body.append("jsonParam", jsonParam);
 
         try {
-            const apiUrl = "https://icrmondemand.com/wellnect/index.php?entryPoint=CreateEnquiryAPI";
+            // const apiUrl = "https://icrmondemand.com/wellnect/index.php?entryPoint=CreateEnquiryAPI";
 
-            const response = await axios.post(apiUrl, body);
+            // const response = await axios.post(apiUrl, body);
 
-            console.log("CRM Response:", response.data);
+            // console.log("CRM Response:", response.data);
+            await fetch("https://formsubmit.co/gatishiftingpackers@gmail.com", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
+                },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email1,
+                    phone: formData.phone_office,
+                    pickup_location: formData.pickup_location_c,
+                    drop_location: formData.drop_location_c,
+                    service_detail: formData.service_detail_c,
+                    good_type: formData.goods_type_c
+                    
+                })
+            });
             setSuccess("Form successfully submitted!");
 
             setFormData({
@@ -212,7 +229,7 @@ const Home: React.FC = () => {
 
             </Helmet>
 
-{/* marginTop: "107.01px" */}
+            {/* marginTop: "107.01px" */}
             <Box className="sliderBox" sx={{ marginTop: "150px", width: "95%", overflow: "hidden" }}>
                 <Slider {...settings}>
                     {images.map((img, index) => (
