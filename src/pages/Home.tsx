@@ -22,7 +22,7 @@ import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
 import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
 import FAQList from "../components/FAQList";
 import OfficeLocation from "../components/OfficeLocation";
-// import axios from "axios";
+import axios from "axios";
 import GetInTouch from "../components/GetInTouch";
 import AwardCertification from "../components/AwardCertification";
 import TrustUsSection from "../components/TrustUsSection";
@@ -152,9 +152,9 @@ const Home: React.FC = () => {
         body.append("jsonParam", jsonParam);
 
         try {
-            // const apiUrl = "https://icrmondemand.com/wellnect/index.php?entryPoint=CreateEnquiryAPI";
+            const apiUrl = "https://icrmondemand.com/wellnect/index.php?entryPoint=CreateEnquiryAPI";
 
-            // const response = await axios.post(apiUrl, body);
+            await axios.post(apiUrl, body);
 
             // console.log("CRM Response:", response.data);
             await fetch("https://formsubmit.co/gatishiftingpackers@gmail.com", {
