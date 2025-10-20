@@ -22,7 +22,7 @@ import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
 import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
 import FAQList from "../components/FAQList";
 import OfficeLocation from "../components/OfficeLocation";
-import axios from "axios";
+// import axios from "axios";
 import GetInTouch from "../components/GetInTouch";
 import AwardCertification from "../components/AwardCertification";
 import TrustUsSection from "../components/TrustUsSection";
