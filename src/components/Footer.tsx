@@ -124,8 +124,8 @@ const Footer = () => {
                     <div className="footer-col">
                         <h4>Other Links</h4>
                         <ul>
-                            <li><a href="#">Customer Testimonials</a></li>
-                            <li><a href="#">Safety Standards</a></li>
+                            <li><Link to="/review">Customer Testimonials</Link></li>
+                            <li><Link to="/safety-standard">Safety Standards</Link></li>
                             <li><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
                             <li><Link to="/privacy-and-policy">Privacy Policy</Link></li>
                         </ul>

@@ -26,7 +26,8 @@ import CommercialShifting from "../pages/CommercialShifting"
 import InternationalMovers from "../pages/InternationalMovers"
 import Warehouse from "../pages/Warehouse"
 import HomeStorage from "../pages/HomeStorage"
-
+import SafetyStandard from "../pages/SafetyStandard"
+import VideoGallery from "../pages/VideoGallery"
 
 
 const AppRoutes = () => {
@@ -59,6 +60,8 @@ const AppRoutes = () => {
                     <Route path="/international-moves" element={<InternationalMovers></InternationalMovers>}></Route>
                     <Route path="/warehouse" element={<Warehouse></Warehouse>}></Route>
                     <Route path="/home-storage" element={<HomeStorage></HomeStorage>}></Route>
+                    <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
+                    <Route path="/video-gallery" element={<VideoGallery></VideoGallery>}></Route>
                 </Routes>
             </ScrollToTop>
             <Footer />
