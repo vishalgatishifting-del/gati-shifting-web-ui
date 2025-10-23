@@ -11,18 +11,18 @@ const Footer = () => {
                 <h1>Search By Location</h1>
                 <div className="container">
                     <ul>
-                        <li><Link to="/">Packers & Movers Agra</Link></li>
-                        <li><Link to="/">Packers & Movers Ankleshwar</Link></li>
-                        <li><Link to="/">Packers & Movers Bhiwandi</Link></li>
-                        <li><Link to="/">Packers & Movers Calicut</Link></li>
-                        <li><Link to="/">Packers & Movers Cuttack</Link></li>
-                        <li><Link to="/">Packers & Movers Gandhidham</Link></li>
-                        <li><Link to="/">Packers & Movers Guwahati</Link></li>
-                        <li><Link to="/">Packers & Movers Hyderabad</Link></li>
-                        <li><Link to="/">Packers & Movers Jamshedpur</Link></li>
-                        <li><Link to="/">Packers & Movers Kolhapur</Link></li>
-                        <li><Link to="/">Packers & Movers Lucknow</Link></li>
-                        <li><Link to="/">Packers & Movers Meerut</Link></li>
+                        <li><Link to="/city/Agra">Packers & Movers Agra</Link></li>
+                        <li><Link to="/city/ankleshwar">Packers & Movers Ankleshwar</Link></li>
+                        <li><Link to="/city/Bhiwandi">Packers & Movers Bhiwandi</Link></li>
+                        <li><Link to="/city/Calicut">Packers & Movers Calicut</Link></li>
+                        <li><Link to="/city/Cuttack">Packers & Movers Cuttack</Link></li>
+                        <li><Link to="/city/Gandhidham">Packers & Movers Gandhidham</Link></li>
+                        <li><Link to="/city/Guwahati">Packers & Movers Guwahati</Link></li>
+                        <li><Link to="/city/Hyderabad">Packers & Movers Hyderabad</Link></li>
+                        <li><Link to="">Packers & Movers Jamshedpur</Link></li>
+                        <li><Link to="">Packers & Movers Kolhapur</Link></li>
+                        <li><Link to="">Packers & Movers Lucknow</Link></li>
+                        <li><Link to="">Packers & Movers Meerut</Link></li>
                     </ul>
                     <ul>
                         <li><Link to="/">Packers & Movers Ahmedabad</Link></li>

@@ -28,7 +28,8 @@ import Warehouse from "../pages/Warehouse"
 import HomeStorage from "../pages/HomeStorage"
 import SafetyStandard from "../pages/SafetyStandard"
 import VideoGallery from "../pages/VideoGallery"
-
+import CityPage from "../pages/CityPage"
+import { pagesData } from "../pages/city-wise-pages-data"
 
 const AppRoutes = () => {
     return (
@@ -62,6 +63,15 @@ const AppRoutes = () => {
                     <Route path="/home-storage" element={<HomeStorage></HomeStorage>}></Route>
                     <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
                     <Route path="/video-gallery" element={<VideoGallery></VideoGallery>}></Route>
+                    {
+                        pagesData.map((page, index) => (
+                            <Route path={`/city/${page.slug}`} element={
+                                <CityPage city={page.city}></CityPage>
+                            }>
+
+                            </Route>
+                        ))
+                    }
                 </Routes>
             </ScrollToTop>
             <Footer />
