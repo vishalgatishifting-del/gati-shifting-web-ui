@@ -64,7 +64,7 @@ const AppRoutes = () => {
                     <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
                     <Route path="/video-gallery" element={<VideoGallery></VideoGallery>}></Route>
                     {
-                        pagesData.map((page, index) => (
+                        pagesData.map((page) => (
                             <Route path={`/city/${page.slug}`} element={
                                 <CityPage city={page.city}></CityPage>
                             }>
