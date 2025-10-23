@@ -6,6 +6,8 @@ import ReviewVideo from "../components/ReviewVideos";
 import TrustUsSection from "../components/TrustUsSection";
 import InternationalMovesImg from "../assets/InternationalMoves/internationalMovesImg.jpg"
 import { Helmet } from "react-helmet-async";
+import ReviewDialog from "../components/ReviewDialog";
+
 
 const InternationalMovers = () => {
     return (
@@ -60,11 +62,11 @@ const InternationalMovers = () => {
                         <ul>
                             <li>🏠 Upon arrival, items are carefully delivered and unpacked.
                                 <br />
-                                Insert Feedback form button
                             </li>
                             <li>
                                 ✍ Share your feedback to help us improve our services.
                             </li>
+                            <ReviewDialog></ReviewDialog>
                         </ul>
                     </div>
                     <div className="content types">

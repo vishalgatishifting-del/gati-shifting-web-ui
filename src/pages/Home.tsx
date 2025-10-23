@@ -15,7 +15,7 @@ import { Helmet } from "react-helmet-async";
 import DescriptionIcon from '@mui/icons-material/Description';
 import HandshakeIcon from '@mui/icons-material/Handshake';
 import BalanceIcon from '@mui/icons-material/Balance';
-import { motion, type Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import gatiSlider1 from "../assets/sliderImg/gatislider1.webp"
 import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
@@ -49,17 +49,8 @@ const Home: React.FC = () => {
 
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
-    const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: false, threshold: 0.1 });
 
 
-    const zoomIn: Variants = {
-        hidden: { opacity: 0, scale: 0.5 },
-        visible: (delay = 0) => ({
-            opacity: 1,
-            scale: 1,
-            transition: { duration: 0.3, ease: "easeOut", delay },
-        }),
-    };
 
 
     const settings = {
@@ -171,7 +162,7 @@ const Home: React.FC = () => {
                     drop_location: formData.drop_location_c,
                     service_detail: formData.service_detail_c,
                     good_type: formData.goods_type_c
-                    
+
                 })
             });
             setSuccess("Form successfully submitted!");
@@ -360,75 +351,36 @@ const Home: React.FC = () => {
             <section id="steps-section">
                 <h1>4 Easy Steps to Hire Reliable Movers and Packers</h1>
                 <div className="steps">
-                    <motion.div
-                        ref={ref2}
-                        variants={zoomIn}
-                        initial="hidden"
-                        animate={inView2 ? "visible" : "hidden"}
-                        custom={0.1}
-                        className="p-10 bg-blue-200 rounded-xl shadow-lg w-80 mx-auto mt-20 text-center"
-                    >
-                        <div className="card">
-                            <div>
-                                <span className="icon"><DescriptionIcon></DescriptionIcon></span>
-                                <h3>Fill Your Enquiry Form</h3>
-                            </div>
-                            <p>Tell us about your car or bike shifting needs. Our logistics team will connect you with trusted movers for competitive rates.</p>
+                    <div className="card">
+                        <div>
+                            <span className="icon"><DescriptionIcon></DescriptionIcon></span>
+                            <h3>Fill Your Enquiry Form</h3>
                         </div>
-                    </motion.div>
+                        <p>Tell us about your car or bike shifting needs. Our logistics team will connect you with trusted movers for competitive rates.</p>
+                    </div>
 
 
-
-                    <motion.div
-                        ref={ref2}
-                        variants={zoomIn}
-                        initial="hidden"
-                        animate={inView2 ? "visible" : "hidden"}
-                        custom={0.2}
-                        className="p-10 bg-blue-200 rounded-xl shadow-lg w-80 mx-auto mt-20 text-center"
-                    >
-                        <div className="card">
-                            <div>
-                                <span className="icon"><HandshakeIcon></HandshakeIcon></span>
-                                <h3>Get Quotes within 30 Minutes</h3>
-                            </div>
-                            <p>Receive fast quotes from verified car carriers with 5-star reviews. We ensure only trusted movers get through.</p>
+                    <div className="card">
+                        <div>
+                            <span className="icon"><HandshakeIcon></HandshakeIcon></span>
+                            <h3>Get Quotes within 30 Minutes</h3>
                         </div>
-                    </motion.div>
-
-                    <motion.div
-                        ref={ref2}
-                        variants={zoomIn}
-                        initial="hidden"
-                        animate={inView2 ? "visible" : "hidden"}
-                        custom={0.3}
-                        className="p-10 bg-blue-200 rounded-xl shadow-lg w-80 mx-auto mt-20 text-center"
-                    >
-                        <div className="card">
-                            <div>
-                                <span className="icon"><BalanceIcon></BalanceIcon></span>
-                                <h3>Select the Best Quote</h3>
-                            </div>
-                            <p>Make an informed choice based on business profiles, pricing, and reviews before selecting the best deal.</p>
+                        <p>Receive fast quotes from verified car carriers with 5-star reviews. We ensure only trusted movers get through.</p>
+                    </div>
+                    <div className="card">
+                        <div>
+                            <span className="icon"><BalanceIcon></BalanceIcon></span>
+                            <h3>Select the Best Quote</h3>
                         </div>
-                    </motion.div>
-
-                    <motion.div
-                        ref={ref2}
-                        variants={zoomIn}
-                        initial="hidden"
-                        animate={inView2 ? "visible" : "hidden"}
-                        custom={0.4}
-                        className="p-10 bg-blue-200 rounded-xl shadow-lg w-80 mx-auto mt-20 text-center"
-                    >
-                        <div className="card">
-                            <div>
-                                <span className="icon"><LocalShippingIcon></LocalShippingIcon></span>
-                                <h3>Get Safe & Secure Shifting</h3>
-                            </div>
-                            <p>Choose your mover and enjoy safe, secure relocation of your car or bike—stress-free and timely.</p>
+                        <p>Make an informed choice based on business profiles, pricing, and reviews before selecting the best deal.</p>
+                    </div>
+                    <div className="card">
+                        <div>
+                            <span className="icon"><LocalShippingIcon></LocalShippingIcon></span>
+                            <h3>Get Safe & Secure Shifting</h3>
                         </div>
-                    </motion.div>
+                        <p>Choose your mover and enjoy safe, secure relocation of your car or bike—stress-free and timely.</p>
+                    </div>
                 </div>
             </section>
 

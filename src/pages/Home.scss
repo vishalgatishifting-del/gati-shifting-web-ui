@@ -219,22 +219,8 @@
         }
 
 
-        .card:hover {
-            transform: scale(1.05);
-            background: #ffffff22;
-
-            .icon {
-                transform: scale(1.2);
-            }
-        }
     }
 }
-
-
-
-
-
-
 
 #about-company {
     @include font-poppins-sans(400);

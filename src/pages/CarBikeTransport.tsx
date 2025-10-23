@@ -7,6 +7,8 @@ import TrustUsSection from "../components/TrustUsSection";
 import carPricingImg from "../assets/CarBikeTransport/carPricingImg.jpg"
 import bikePricingImg from "../assets/CarBikeTransport/bikePricingImg.jpg"
 import { Helmet } from "react-helmet-async";
+import ReviewDialog from "../components/ReviewDialog";
+
 
 const CarBikeTransport = () => {
     return (
@@ -61,8 +63,8 @@ const CarBikeTransport = () => {
                         <ul>
                             <li>🏠 After delivery and reinstallation, share your valuable feedback to help us serve you better.
                                 <br />
-                                Insert Feedback form button
                             </li>
+                            <ReviewDialog></ReviewDialog>
                         </ul>
                     </div>
                     <div className="content types">

@@ -12,7 +12,7 @@ import ReviewVideo from "../components/ReviewVideos";
 
 
 
-const Who_we_are = () => {
+const WhoWeAre = () => {
     
     const settings2 = {
         dots: false,
@@ -256,4 +256,4 @@ const Who_we_are = () => {
     )
 }
 
-export default Who_we_are;
+export default WhoWeAre;

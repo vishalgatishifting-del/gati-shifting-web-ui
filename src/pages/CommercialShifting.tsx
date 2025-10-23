@@ -6,6 +6,7 @@ import ReviewVideo from "../components/ReviewVideos";
 import TrustUsSection from "../components/TrustUsSection";
 import commercialShiftingImg from "../assets/CommercialShifting/commercialShiftingPriceImg.jpg"
 import { Helmet } from "react-helmet-async";
+import ReviewDialog from "../components/ReviewDialog";
 
 const CommercialShifting = () => {
     return (
@@ -61,8 +62,8 @@ const CommercialShifting = () => {
                         <ul>
                             <li>🏠 After delivery and reinstallation, share your valuable feedback to help us serve you better.
                                 <br />
-                                Insert Feedback form button
                             </li>
+                            <ReviewDialog></ReviewDialog>
                         </ul>
                     </div>
                     <div className="content types">

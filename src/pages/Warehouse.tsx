@@ -5,6 +5,7 @@ import GetInTouch from "../components/GetInTouch";
 import ReviewVideo from "../components/ReviewVideos";
 import TrustUsSection from "../components/TrustUsSection";
 import { Helmet } from "react-helmet-async";
+import ReviewDialog from "../components/ReviewDialog";
 
 const Warehouse = () => {
     return (
@@ -63,8 +64,8 @@ const Warehouse = () => {
                             <li>
                                 📝 Share your feedback to help us improve our services.
                                 <br />
-                                Insert Feedback form button
                             </li>
+                            <ReviewDialog></ReviewDialog>
                         </ul>
                     </div>
                     <div className="content types">

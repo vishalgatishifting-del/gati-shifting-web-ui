@@ -6,7 +6,10 @@ import ReviewVideo from "../components/ReviewVideos";
 import TrustUsSection from "../components/TrustUsSection";
 import HouseShiftingPriceImg from "../assets/HomeShifting/houseShiftingPrices.jpg"
 import { Helmet } from "react-helmet-async";
+
 import "./HomeShifting.scss"
+import ReviewDialog from "../components/ReviewDialog";
+
 
 const HomeShifting = () => {
     return (
@@ -62,8 +65,8 @@ const HomeShifting = () => {
                         <ul>
                             <li>🏠 After delivery and reinstallation, share your valuable feedback to help us serve you better.
                                 <br />
-                                Insert Feedback form button
                             </li>
+                                <ReviewDialog></ReviewDialog>
                         </ul>
                     </div>
                     <div className="content household-items">

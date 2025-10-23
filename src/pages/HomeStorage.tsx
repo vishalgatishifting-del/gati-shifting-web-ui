@@ -5,6 +5,7 @@ import GetInTouch from "../components/GetInTouch";
 import ReviewVideo from "../components/ReviewVideos";
 import TrustUsSection from "../components/TrustUsSection";
 import { Helmet } from "react-helmet-async";
+import ReviewDialog from "../components/ReviewDialog";
 
 const HomeStorage = () => {
     return (
@@ -63,8 +64,8 @@ Our strategically located storage facilities ensure that your household items ar
                             <li>
                                 📝 Share your feedback to help us serve you better.
                                 <br />
-                                Insert Feedback form button
                             </li>
+                            <ReviewDialog></ReviewDialog>
                         </ul>
                     </div>
                     <div className="content types">

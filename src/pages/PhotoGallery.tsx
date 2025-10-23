@@ -72,7 +72,6 @@ const PhotoGallery = () => {
                 <meta name="keywords" content="Gati Shifting Packers photo gallery, packing and moving photos, relocation services images, professional movers photos, client success stories" />
                 <meta name="robots" content="index, follow" />
                 <meta name="author" content="rohan" />
-
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Photo Gallery | Gati Shifting Packers" />
                 <meta property="og:description" content="Browse the Photo Gallery of Gati Shifting Packers to see our expert packing and moving services in action." />
