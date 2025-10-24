@@ -29,7 +29,10 @@ import TrustUsSection from "../components/TrustUsSection";
 import ReviewVideo from "../components/ReviewVideos";
 
 import diwaliSlider from "../assets/diwaliTheme/diwalislider.png"
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
+import { sendEmail } from "../utils/emailHelper";
+
+
 
 
 // import { IFaqItem } from "../models/App.model";
@@ -157,21 +160,23 @@ const Home: React.FC = () => {
                 good_type: formData.goods_type_c,
             };
 
-            emailjs.send(
-                'service_u9m30x2',     
-                'template_17q8vva',    
-                templateParams,
-                'eeX-Q_EutbxH4dyNF'     
-            ).then(
-                (result) => {
-                    alert("Message Sent Successfully!");
-                    console.log(result.text);
-                },
-                (error) => {
-                    alert("Failed to send message.");
-                    console.log(error.text);
-                }
-            );
+            // emailjs.send(
+            //     'service_u9m30x2',     
+            //     'template_17q8vva',    
+            //     templateParams,
+            //     'eeX-Q_EutbxH4dyNF'     
+            // ).then(
+            //     (result) => {
+            //         alert("Message Sent Successfully!");
+            //         console.log(result.text);
+            //     },
+            //     (error) => {
+            //         alert("Failed to send message.");
+            //         console.log(error.text);
+            //     }
+            // );
+
+            sendEmail(templateParams)
             // console.log("CRM Response:", response.data);
             // await fetch("https://formsubmit.co/ajax/vishalgatishifting@gmail.com", {
             //     method: "POST",

@@ -16,7 +16,33 @@ const PetRelocation = () => {
 
             <Helmet>
 
+{/* Meta Tags for Pet Relocation Page */}
+  <title>Pet Relocation Services | Gati Shifting Packers</title>
 
+  <meta name="description" content="Safe and reliable Pet Relocation Services by Gati Shifting Packers. Expert care for transporting your pets across India with comfort and security." />
+  <meta name="keywords" content="Gati Shifting Packers pet relocation, pet movers, pet transportation services, pet moving India, safe pet relocation, pet relocation, pet shifting, animal transportation, pet movers, pet travel services, pet relocation company, pet transport in India, international pet relocation, domestic pet transport, safe pet relocation, pet relocation by Gati Shifting Packers, dog and cat relocation services, affordable pet moving services, pet relocation experts near me, reliable pet shifting company, pet transport service providers, best pet movers in India, pet travel assistance, Gati Shifting Packers pet relocation reviews, door-to-door pet transport services, stress-free pet relocation solutions, professional pet transport company, animal relocation specialists, pet relocation packages India, pan-India pet shifting services" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Abhishek" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pet Relocation Services | Gati Shifting Packers" />
+  <meta property="og:description" content="Trust Gati Shifting Packers for safe and stress-free pet relocation across India. Expert handling for all types of pets." />
+  <meta property="og:url" content="https://gatishiftingpackers.com/pet-relocation" />
+  <meta property="og:site_name" content="Gati Shifting Packers" />
+  <meta property="og:image" content="" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pet Relocation Services | Gati Shifting Packers" />
+  <meta name="twitter:description" content="Reliable pet relocation services by Gati Shifting Packers. Ensure the safe and comfortable transport of your pets anywhere in India." />
+  <meta name="twitter:image" content="" />
+
+  <meta http-equiv="Content-Language" content="en" />
+
+  {/* Canonical URL */}
+  <link rel="canonical" href="https://gatishiftingpackers.com/pet-relocation" />
+  
             </Helmet>
 
             <section id="pet-relocation-sec">

@@ -12,6 +12,32 @@ const Warehouse = () => {
         <>
             <Helmet>
 
+{/* Meta Tags for Warehouse Page */}
+<title>Warehouse & Storage Services | Gati Shifting Packers</title>
+
+<meta name="description" content="Secure and flexible Warehouse & Storage Services by Gati Shifting Packers. Safe storage solutions for household, office, and commercial goods." />
+<meta name="keywords" content="Gati Shifting Packers warehouse, storage services, secure storage solutions, commercial storage, household storage, office storage, inventory management, warehouse and logistics services, safe goods storage, professional warehousing, flexible storage plans, storage facilities near me, Gati Shifting Packers storage services, reliable warehouse company, affordable storage services, warehouse solutions for business, storage for furniture and appliances, warehouse for commercial goods, storage management, warehousing and distribution, logistics and storage, trusted storage providers" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Abhishek" />
+
+{/* Open Graph */}
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Warehouse & Storage Services | Gati Shifting Packers" />
+<meta property="og:description" content="Reliable Warehouse & Storage Services by Gati Shifting Packers. Safe and secure storage solutions for your household, office, or commercial goods." />
+<meta property="og:url" content="https://gatishiftingpackers.com/warehouse" />
+<meta property="og:site_name" content="Gati Shifting Packers" />
+<meta property="og:image" content="" />
+
+{/* Twitter Card */}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Warehouse & Storage Services | Gati Shifting Packers" />
+<meta name="twitter:description" content="Professional Warehouse & Storage Services by Gati Shifting Packers. Flexible and secure storage solutions for all types of goods." />
+<meta name="twitter:image" content="" />
+
+<meta http-equiv="Content-Language" content="en" />
+
+{/* Canonical URL */}
+<link rel="canonical" href="https://gatishiftingpackers.com/warehouse" />
 
             </Helmet>
 

@@ -13,7 +13,32 @@ const InternationalMovers = () => {
     return (
         <>
             <Helmet>
+{/* Meta Tags for international moves Page */}
+<title>International Moving Services | Gati Shifting Packers</title>
 
+<meta name="description" content="Hassle-free International Moving Services by Gati Shifting Packers. We ensure safe, timely, and affordable overseas relocation for your home, office, or vehicle." />
+<meta name="keywords" content="Gati Shifting Packers international moving, overseas relocation, international packers and movers, global shifting services, international transport, abroad relocation,international moving services, overseas relocation, international packers and movers, global relocation company, international shipping services, international household moving, cross-border relocation, international moving company in India, Gati Shifting Packers international relocation, affordable overseas movers, professional international movers near me, reliable international moving experts, international home relocation, office relocation abroad, international cargo services, door-to-door international moving, worldwide relocation services, safe and secure international shipping, international logistics solutions, best international movers in India, global household goods transport, trusted overseas relocation company, end-to-end international moving solutions, international relocation packages, hassle-free overseas shifting" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Abhishek" />
+
+{/* Open Graph */}
+<meta property="og:type" content="website" />
+<meta property="og:title" content="International Moving Services | Gati Shifting Packers" />
+<meta property="og:description" content="Trusted International Moving Services by Gati Shifting Packers. Move your household or office items abroad safely and efficiently." />
+<meta property="og:url" content="https://gatishiftingpackers.com/international-moves" />
+<meta property="og:site_name" content="Gati Shifting Packers" />
+<meta property="og:image" content="" />
+
+{/* Twitter Card */}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="International Moving Services | Gati Shifting Packers" />
+<meta name="twitter:description" content="Secure and professional International Moving Services by Gati Shifting Packers. Reliable relocation solutions for global moves." />
+<meta name="twitter:image" content="" />
+
+<meta http-equiv="Content-Language" content="en" />
+
+{/* Canonical URL */}
+<link rel="canonical" href="https://gatishiftingpackers.com/international-moves" />
 
             </Helmet>
 

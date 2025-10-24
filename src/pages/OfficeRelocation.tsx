@@ -12,7 +12,32 @@ const OfficeRelocation = () => {
     return (
         <>
             <Helmet>
+{/* Meta Tags for Office Relocation Page */}
+ <title>Office Relocation Services | Gati Shifting Packers</title>
 
+  <meta name="description" content="Professional Office Relocation Services by Gati Shifting Packers. Efficient, safe, and timely shifting of your office equipment and furniture across India." />
+  <meta name="keywords" content="Gati Shifting Packers office relocation, commercial movers, office shifting services, corporate relocation, office moving India, office movers,affordable office movers in delhi, affordable office movers in noida, gati office relocation services,office relocation, office shifting, corporate relocation, business moving services, commercial movers, office packers and movers, relocation services, office shifting company, office moving, office shifting services, best office relocation services in India, professional office shifting company near me, affordable office movers and packers, office relocation services by Gati Shifting Packers, corporate office shifting solutions, trusted business relocation company in India, top-rated office shifting services near me, IT office relocation experts, end-to-end office relocation and setup services, safe and reliable office relocation with Gati Shifting Packers, how to relocate an office without downtime, office furniture and equipment moving services, Gati Shifting Packers office relocation reviews, customized corporate relocation packages, pan-India office relocation solutions" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Abhishek" />
+
+  {/* Open Graph */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Office Relocation Services | Gati Shifting Packers" />
+  <meta property="og:description" content="Trust Gati Shifting Packers for hassle-free office relocation. Safe packing and moving services for your commercial space anywhere in India." />
+  <meta property="og:url" content="https://gatishiftingpackers.com/office-relocation" />
+  <meta property="og:site_name" content="Gati Shifting Packers" />
+  <meta property="og:image" content="" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Office Relocation Services | Gati Shifting Packers" />
+  <meta name="twitter:description" content="Efficient office relocation services by Gati Shifting Packers. Securely move your office furniture and equipment anywhere in India." />
+  <meta name="twitter:image" content="" />
+
+  <meta http-equiv="Content-Language" content="en" />
+
+  {/* Canonical URL */}
+  <link rel="canonical" href="https://gatishiftingpackers.com/office-relocation" />
 
             </Helmet>
 

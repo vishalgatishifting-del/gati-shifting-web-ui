@@ -17,6 +17,37 @@ const HomeShifting = () => {
 
             <Helmet>
 
+           {/* Meta Tags for Home Shifting Service Page */}
+<title>Home Shifting Services | Gati Shifting Packers</title>
+
+<meta name="description" content="Professional Home Shifting Services by Gati Shifting Packers. Safe and reliable packing, moving, and delivery of your household items across India." />
+<meta name="keywords" content="Gati Shifting Packers home shifting, Gati House Shifting Packers & Movers,household movers, residential relocation, packing and moving services, home shifting India, home shifting services in delhi,home shifting services in noida, home shifting services in ghaziabad,home shifting services in gurgaon, home shifting services, packers and movers, house relocation, home movers India, domestic shifting, local shifting services, household shifting, best home shifting services in India, affordable packers and movers for home relocation, trusted home shifting company near me, door to door house shifting services, reliable household goods shifting service, professional home packers and movers India, safe and secure house relocation services, top-rated home shifting service providers, budget-friendly home relocation company, expert movers for residential shifting, complete home packing and moving solutions, interstate home relocation with insurance, local home shifting within city, packers and movers for apartment relocation" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Abhishek" />
+
+
+{/* Open Graph  */}
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Home Shifting Services | Gati Shifting Packers" />
+<meta property="og:description" content="Experience safe and hassle-free home shifting with Gati Shifting Packers. Expert packing and moving services for all your residential needs." />
+<meta property="og:url" content="https://gatishiftingpackers.com/home-shifting" />
+<meta property="og:site_name" content="Gati Shifting Packers" />
+<meta property="og:image" content="" />
+
+
+
+{/* Twitter Card */} 
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Home Shifting Services | Gati Shifting Packers" />
+<meta name="twitter:description" content="Reliable home shifting solutions by Gati Shifting Packers. Ensure safe and timely relocation of your household goods across India." />
+<meta name="twitter:image" content="" />
+
+
+<meta http-equiv="Content-Language" content="en" />
+
+
+{/* Canonical URL */} 
+<link rel="canonical" href="https://gatishiftingpackers.com/home-shifting" />
 
             </Helmet>
 

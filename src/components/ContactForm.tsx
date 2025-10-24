@@ -1,6 +1,7 @@
 import "./ContactForm.scss";
 import React, { useState } from "react";
 import axios from "axios";
+import { sendEmail } from "../utils/emailHelper";
 
 interface ContactFormProps{
     showDetail? : true | false;
@@ -58,15 +59,25 @@ const ContactForm: React.FC<ContactFormProps> = ({showDetail = true, closeContro
 
             const apiUrl = "https://icrmondemand.com/wellnect/index.php?entryPoint=CreateEnquiryAPI";
 
-            const response = await axios.post(apiUrl, body);
+            await axios.post(apiUrl, body);
 
-            console.log("CRM Response:", response.data);
+            const templateParams = {
+                name: formData.name,
+                email: formData.email1,
+                phone: formData.phone_office,
+                pickup_location: formData.pickup_location_c,
+                drop_location: formData.drop_location_c,
+                service_detail: "NAN. Contact Form Query",
+                good_type: "NAN. Contact Form Query",
+            };
+
+            sendEmail(templateParams)
+
             setSuccess("Form successfully submitted!");
             
             setFormData({ name: "", email1: "", phone_office: "", pickup_location_c: "", drop_location_c: "",service_detail_c: ""  });
             closeControl?.();
         } catch (error) {
-            console.error("Error submitting form:", error);
             setSuccess("Error submitting form. Try again!");
         } finally {
             setLoading(false);
