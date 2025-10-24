@@ -29,6 +29,7 @@ import TrustUsSection from "../components/TrustUsSection";
 import ReviewVideo from "../components/ReviewVideos";
 
 import diwaliSlider from "../assets/diwaliTheme/diwalislider.png"
+import emailjs from 'emailjs-com';
 
 
 // import { IFaqItem } from "../models/App.model";
@@ -146,25 +147,50 @@ const Home: React.FC = () => {
 
             await axios.post(apiUrl, body);
 
-            // console.log("CRM Response:", response.data);
-            await fetch("https://formsubmit.co/ajax/vishalgatishifting@gmail.com", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json"
+            const templateParams = {
+                name: formData.name,
+                email: formData.email1,
+                phone: formData.phone_office,
+                pickup_location: formData.pickup_location_c,
+                drop_location: formData.drop_location_c,
+                service_detail: formData.service_detail_c,
+                good_type: formData.goods_type_c,
+            };
+
+            emailjs.send(
+                'service_u9m30x2',     
+                'template_17q8vva',    
+                templateParams,
+                'eeX-Q_EutbxH4dyNF'     
+            ).then(
+                (result) => {
+                    alert("Message Sent Successfully!");
+                    console.log(result.text);
                 },
-                body: JSON.stringify({
-                    name: formData.name,
-                    email: formData.email1,
-                    phone: formData.phone_office,
-                    pickup_location: formData.pickup_location_c,
-                    drop_location: formData.drop_location_c,
-                    service_detail: formData.service_detail_c,
-                    good_type: formData.goods_type_c,
-                    _subject: "New Lead Received",
-                    _captcha: "false"
-                })
-            });
+                (error) => {
+                    alert("Failed to send message.");
+                    console.log(error.text);
+                }
+            );
+            // console.log("CRM Response:", response.data);
+            // await fetch("https://formsubmit.co/ajax/vishalgatishifting@gmail.com", {
+            //     method: "POST",
+            //     headers: {
+            //         "Content-Type": "application/json",
+            //         Accept: "application/json"
+            //     },
+            //     body: JSON.stringify({
+            //         name: formData.name,
+            //         email: formData.email1,
+            //         phone: formData.phone_office,
+            //         pickup_location: formData.pickup_location_c,
+            //         drop_location: formData.drop_location_c,
+            //         service_detail: formData.service_detail_c,
+            //         good_type: formData.goods_type_c,
+            //         _subject: "New Lead Received",
+            //         _captcha: "false"
+            //     })
+            // });
             setSuccess("Form successfully submitted!");
 
             setFormData({
