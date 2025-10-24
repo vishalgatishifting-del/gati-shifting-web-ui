@@ -147,7 +147,7 @@ const Home: React.FC = () => {
             await axios.post(apiUrl, body);
 
             // console.log("CRM Response:", response.data);
-            await fetch("https://formsubmit.co/ajax/rohangatishifting@gmail.com", {
+            await fetch("https://formsubmit.co/ajax/vishalgatishifting@gmail.com", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

@@ -27,7 +27,7 @@ const ReviewDialog = () => {
                 </DialogActions>
                 <DialogContent sx={{ padding: '0 !important' }}>
 
-                    <ReviewForm></ReviewForm>
+                    <ReviewForm dialog={true}></ReviewForm>
                 </DialogContent>
             </Dialog>
         </>

@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import type { ChangeEvent } from "react";
 import "./ReviewForm.scss";
 import axios from "axios";
-
+type ReviewForm = {
+  dialog: boolean;
+};
 interface ReviewFormData {
   name: string;
   review_title_c: string;
@@ -10,7 +12,7 @@ interface ReviewFormData {
   description: string;
 }
 
-const ReviewForm: React.FC = () => {
+const ReviewForm: React.FC<ReviewForm> = ({dialog}) => {
   const [formData, setFormData] = useState<ReviewFormData>({
     name: "",
     review_title_c: "",
@@ -69,13 +71,13 @@ const ReviewForm: React.FC = () => {
   // setFormData({ name: "", title: "", rating: 0, experience: "" });
 
   return (
-    <div className="review-page">
+    <div className="review-page" style={dialog ? {margin: "0px", padding: "0px"} : {}}>
       <h2>Write Your Review</h2>
-      <p>
+      <p  style={dialog ? {margin: "0px 5px"} : {}}>
         We value your experience. Share your honest feedback and help others
         make the right choice with Gati Packers and Movers.
       </p>
-      <form className="review-form" onSubmit={handleSubmit}>
+      <form className="review-form" onSubmit={handleSubmit} style={dialog ? {padding: "10px"} : {}}>
         <input
           type="text"
           name="name"
