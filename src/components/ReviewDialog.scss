@@ -1,0 +1,13 @@
+@import "../style/variables";
+
+.btn{
+    background: $primary-color;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 5px 5px 10px #00000045;
+}

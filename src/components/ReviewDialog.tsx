@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from "react";
 import ReviewForm from "../components/ReviewForm";
+import "./ReviewDialog.scss"
 
 const ReviewDialog = () => {
     const [open, setOpen] = useState(false);
@@ -19,7 +20,7 @@ const ReviewDialog = () => {
     return (
 
         <>
-            <button onClick={handleClickOpen}>Send Feedback</button>
+            <button className="btn" onClick={handleClickOpen}>Send Feedback</button>
             <Dialog open={open} onClose={handleClose}>
                 <DialogActions>
                     <Button onClick={handleClose}><CloseIcon></CloseIcon></Button>

@@ -19,15 +19,46 @@ import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import ArticleIcon from '@mui/icons-material/Article';
 import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
 import ReceiptIcon from '@mui/icons-material/Receipt';
+import { Helmet } from "react-helmet-async";
 
 const BillClaim = () => {
     return (
         <>
+            <Helmet>
+                {/* Meta Tags for Bill Claim Page */}
+
+                <title>Bill Claim | Gati Shifting Packers</title>
+
+                <meta name="description" content="Easily claim your shifting bill online with Gati Shifting Packers. Submit your details and get your verified relocation bill for reimbursement quickly and securely." />
+                <meta name="keywords" content="Gati Shifting Packers bill claim, shifting bill claim, relocation bill for reimbursement, packers movers bill claim, transport bill claim, claim shifting invoice" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Abhishek" />
+
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Bill Claim | Gati Shifting Packers" />
+                <meta property="og:description" content="Submit your bill claim with Gati Shifting Packers and receive your verified relocation invoice for reimbursement in a few easy steps." />
+                <meta property="og:url" content="https://gatishiftingpackers.com/bill-claim" />
+                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:image" content="" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Bill Claim | Gati Shifting Packers" />
+                <meta name="twitter:description" content="Get your verified relocation bill for reimbursement with Gati Shifting Packers. Quick, transparent, and reliable bill claim process online." />
+                <meta name="twitter:image" content="" />
+
+                <meta http-equiv="Content-Language" content="en" />
+
+                {/* Canonical URL */}
+                <link rel="canonical" href="https://gatishiftingpackers.com/bill-claim" />
+
+            </Helmet>
             <section id="billclaimsec">
                 <div className="container">
                     <div className="card c1">
                         <div className="img-bx">
-                            <img src="https://magenta-wildcat-322052.hostingersite.com/images/serviceboy2.png" />
+                            <img src="https://magenta-wildcat-322052.hostingersite.com/images/serviceboy2.png" alt="Movers loading furniture into a van" title="Furniture loading" loading="lazy" />
                         </div>
                         <div className="details">
                             <h2>About Our Services</h2>
@@ -77,7 +108,7 @@ const BillClaim = () => {
                             </Table>
                         </TableContainer>
                     </div>
-                    
+
                     <div className="card">
                         <h3><DocumentScannerIcon></DocumentScannerIcon><span>Required Documents</span></h3>
                         <ul>

@@ -64,7 +64,7 @@ header {
                     transition: .2s;
 
                     .icon {
-                        font-size: 20px;
+                        font-size: 24px;
                         margin-right: 1px;
                     }
                 }
@@ -183,7 +183,9 @@ header.diwali {
             }
 
             ul.active {
-                max-height: 364.8px;
+                max-height: 468px;
+                padding: 5px 0;
+                box-shadow: 0 5px 20px #00000063;
                 // overflow: visible;
             }
 

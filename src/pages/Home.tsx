@@ -31,7 +31,6 @@ import ReviewVideo from "../components/ReviewVideos";
 import diwaliSlider from "../assets/diwaliTheme/diwalislider.png"
 
 
-
 // import { IFaqItem } from "../models/App.model";
 // import { AppConstant } from "../constants/app.constant";
 

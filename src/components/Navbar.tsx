@@ -24,6 +24,7 @@ import ContactForm from './ContactForm';
 import whatsappIcon from "../assets/whatsappIcon.jpg"
 import callIcon from "../assets/call.webp"
 import gmailIcon from "../assets/gmailIcon.webp"
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 
 
@@ -80,8 +81,8 @@ const Navbar = () => {
                         <li><Link className={(active == "about" ? "active" : "")} to="/about" onClick={() => { setOpenNav(false); isActive("about") }}><InfoIcon className='icon'></InfoIcon> About Us</Link></li>
                         <li><Link className={(active == "review" ? "active" : "")} to="/review" onClick={() => { setOpenNav(false); isActive("review") }}><StarRateIcon className='icon'></StarRateIcon> Review</Link></li>
                         <li><Link className={(active == "faqs" ? "active" : "")} to="/faqs" onClick={() => { setOpenNav(false); isActive("faqs") }}><HelpOutlineIcon className='icon'></HelpOutlineIcon> FAQs</Link></li>
-                        <li><Link className={(active == "services" ? "active" : "")} to="/services" onClick={() => { setOpenNav(false); isActive("services") }}><MiscellaneousServicesIcon className='icon'></MiscellaneousServicesIcon> Services</Link></li>
                         <li><Link className={(active == "contact-us" ? "active" : "")} to="/contact-us" onClick={() => { setOpenNav(false); isActive("contact-us") }}><ContactsIcon className='icon'></ContactsIcon> Contact Us</Link></li>
+                        <li><Link className={(active == "services" ? "active" : "")} to="/services" onClick={() => { setOpenNav(false); isActive("services") }}><MiscellaneousServicesIcon className='icon'></MiscellaneousServicesIcon> Services <ArrowDropDownIcon></ArrowDropDownIcon></Link></li>
 
                         {/* <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About Us</Link></li>
