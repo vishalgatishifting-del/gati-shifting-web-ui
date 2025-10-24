@@ -422,7 +422,7 @@ const Review = () => {
                 </div>
             </section>
             <ContactForm></ContactForm>
-            <ReviewForm></ReviewForm>
+            <ReviewForm dialog={false}></ReviewForm>
         </>
     )
 }
