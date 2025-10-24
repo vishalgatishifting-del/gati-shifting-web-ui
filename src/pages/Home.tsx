@@ -147,7 +147,7 @@ const Home: React.FC = () => {
             await axios.post(apiUrl, body);
 
             // console.log("CRM Response:", response.data);
-            await fetch("https://formsubmit.co/rohangatishifting@gmail.com", {
+            await fetch("https://formsubmit.co/ajax/rohangatishifting@gmail.com", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -160,8 +160,9 @@ const Home: React.FC = () => {
                     pickup_location: formData.pickup_location_c,
                     drop_location: formData.drop_location_c,
                     service_detail: formData.service_detail_c,
-                    good_type: formData.goods_type_c
-
+                    good_type: formData.goods_type_c,
+                    _subject: "New Lead Received",
+                    _captcha: "false"
                 })
             });
             setSuccess("Form successfully submitted!");
