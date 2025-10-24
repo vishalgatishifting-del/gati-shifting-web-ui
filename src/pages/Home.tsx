@@ -28,7 +28,7 @@ import AwardCertification from "../components/AwardCertification";
 import TrustUsSection from "../components/TrustUsSection";
 import ReviewVideo from "../components/ReviewVideos";
 
-import diwaliSlider from "../assets/diwaliTheme/diwalislider.png"
+import diwaliSlider from "../assets/diwaliTheme/diwalislider.webp"
 // import emailjs from 'emailjs-com';
 import { sendEmail } from "../utils/emailHelper";
 
