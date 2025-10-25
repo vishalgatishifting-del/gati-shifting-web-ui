@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { Box } from "@mui/material";
 import Slider from "react-slick";
 
@@ -117,8 +117,10 @@ import {
 import BrandList from "../components/BrandsList";
 // import { useState } from "react";
 
-
-const About = () => {
+interface AboutUsProps {
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const About: React.FC<AboutUsProps> = ({setOpen}) => {
 
 
 
@@ -264,7 +266,7 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                             <li><CheckCircleIcon className="icon"></CheckCircleIcon> On-Time Pickup & Delivery</li>
                             <li><CheckCircleIcon className="icon"></CheckCircleIcon> Premium Packing Supplies</li>
                         </ul>
-                        <Link className="contact-btn" to="/contact">Enquiry Now</Link>
+                        <button className="contact-btn" onClick={ ()=> setOpen(true)}>Enquiry Now</button>
                     </div>
                 </div>
             </section>

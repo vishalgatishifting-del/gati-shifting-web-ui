@@ -1,6 +1,6 @@
 @import "../style/variables";
 
-#city-page-sec{
+#city-page-sec {
     @include font-poppins-sans(400);
     margin-top: 140px;
     padding: 10px;
@@ -21,9 +21,29 @@
 
         h1 {
             margin: 20px 0;
+            text-align: center;
         }
 
         .content {
+            .box {
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+
+                .city-name {
+                    font-size: 70px;
+                    text-align: center;
+                    color: $primary-color;
+                }
+
+                img {
+                    width: 40%;
+                    border-radius: 20px;
+                    margin-left: 20px;
+                    object-fit: cover;
+                }
+            }
+
             h2 {
                 margin-top: 40px;
                 margin-bottom: 15px;
@@ -43,6 +63,18 @@
                 margin-left: 20px;
                 margin-bottom: 40px;
                 color: #303030;
+            }
+
+            .img-bx {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+
+                img {
+                    width: 700px;
+                    border-radius: 20px;
+                }
             }
 
         }
@@ -67,7 +99,20 @@
         }
     }
 }
+@media screen and (max-width: 1013px) {
+    #city-page-sec {
 
+        .container {
+            .content{
+                .box{
+                    .city-name{
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 983px) {
     #city-page-sec {
 
@@ -116,6 +161,23 @@
 
 
 
+@media screen and (max-width: 720px) {
+    #city-page-sec {
+
+        .container {
+            .content{
+                .box{
+                    flex-direction: column;
+
+                    img{
+                        margin: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 565px) {
     #city-page-sec {
 

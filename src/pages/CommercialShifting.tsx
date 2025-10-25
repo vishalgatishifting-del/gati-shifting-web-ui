@@ -7,41 +7,46 @@ import TrustUsSection from "../components/TrustUsSection";
 import commercialShiftingImg from "../assets/CommercialShifting/commercialShiftingPriceImg.jpg"
 import { Helmet } from "react-helmet-async";
 import ReviewDialog from "../components/ReviewDialog";
+import "./CommercialShifting.scss"
 
 const CommercialShifting = () => {
     return (
         <>
             <Helmet>
 
-{/* Meta Tags for commercial shifting Page */}
+                {/* Meta Tags for commercial shifting Page */}
 
-<title>Commercial Shifting Services | Gati Shifting Packers</title>
+                <title>Commercial Shifting Services | Gati Shifting Packers</title>
 
-<meta name="description" content="Professional Commercial Shifting Services by Gati Shifting Packers. We offer secure and efficient office and business relocation solutions across India." />
-<meta name="keywords" content="Gati Shifting Packers commercial shifting, office relocation, business moving services, corporate shifting India, warehouse relocation, commercial movers,commercial shifting, commercial relocation, business shifting services, office and commercial movers, corporate relocation company, industrial shifting services, commercial packers and movers, warehouse relocation, shop shifting services, commercial goods transport, factory relocation experts, commercial shifting company in India, Gati Shifting Packers commercial relocation, affordable commercial moving services, professional commercial movers near me, reliable business shifting company, retail store relocation, end-to-end commercial relocation solutions, heavy equipment shifting services, trusted commercial movers, safe and secure commercial transport, top-rated commercial relocation company, pan-India commercial shifting services, customized business relocation packages, commercial relocation experts India" />
-<meta name="robots" content="index, follow" />
-<meta name="author" content="Abhishek" />
+                <meta name="description" content="Professional Commercial Shifting Services by Gati Shifting Packers. We offer secure and efficient office and business relocation solutions across India." />
+                <meta name="keywords" content="Gati Shifting Packers commercial shifting, office relocation, business moving services, corporate shifting India, warehouse relocation, commercial movers,commercial shifting, commercial relocation, business shifting services, office and commercial movers, corporate relocation company, industrial shifting services, commercial packers and movers, warehouse relocation, shop shifting services, commercial goods transport, factory relocation experts, commercial shifting company in India, Gati Shifting Packers commercial relocation, affordable commercial moving services, professional commercial movers near me, reliable business shifting company, retail store relocation, end-to-end commercial relocation solutions, heavy equipment shifting services, trusted commercial movers, safe and secure commercial transport, top-rated commercial relocation company, pan-India commercial shifting services, customized business relocation packages, commercial relocation experts India" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Abhishek" />
 
-{/* Open Graph */}
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Commercial Shifting Services | Gati Shifting Packers" />
-<meta property="og:description" content="Reliable and affordable Commercial Shifting Services by Gati Shifting Packers. Move your office or business setup safely anywhere in India." />
-<meta property="og:url" content="https://gatishiftingpackers.com/commercial-shifting" />
-<meta property="og:site_name" content="Gati Shifting Packers" />
-<meta property="og:image" content="" />
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Commercial Shifting Services | Gati Shifting Packers" />
+                <meta property="og:description" content="Reliable and affordable Commercial Shifting Services by Gati Shifting Packers. Move your office or business setup safely anywhere in India." />
+                <meta property="og:url" content="https://gatishiftingpackers.com/commercial-shifting" />
+                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:image" content="" />
 
-{/* Twitter Card */}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Commercial Shifting Services | Gati Shifting Packers" />
-<meta name="twitter:description" content="Expert Commercial Shifting Services by Gati Shifting Packers. Safe, organized, and timely relocation of offices, shops, and warehouses across India." />
-<meta name="twitter:image" content="" />
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Commercial Shifting Services | Gati Shifting Packers" />
+                <meta name="twitter:description" content="Expert Commercial Shifting Services by Gati Shifting Packers. Safe, organized, and timely relocation of offices, shops, and warehouses across India." />
+                <meta name="twitter:image" content="" />
 
-<meta http-equiv="Content-Language" content="en" />
+                <meta http-equiv="Content-Language" content="en" />
 
-{/* Canonical URL */}
-<link rel="canonical" href="https://gatishiftingpackers.com/commercial-shifting" />
+                {/* Canonical URL */}
+                <link rel="canonical" href="https://gatishiftingpackers.com/commercial-shifting" />
 
             </Helmet>
+
+            <div className="bg-attached-sec">
+                <h1>Commercial Shifting</h1>
+            </div>
 
             <section id="pet-relocation-sec">
                 <div className="container">
@@ -127,7 +132,7 @@ const CommercialShifting = () => {
 
                         <ol>
                             <li>Distance -
-                                 Longer distances increase fuel, labor, and time requirements.
+                                Longer distances increase fuel, labor, and time requirements.
 
                             </li>
                             <li>Quantity & Weight of Goods -

@@ -30,15 +30,17 @@ import SafetyStandard from "../pages/SafetyStandard"
 import VideoGallery from "../pages/VideoGallery"
 import CityPage from "../pages/CityPage"
 import { pagesData } from "../pages/city-wise-pages-data"
+import { useState } from 'react';
 
 const AppRoutes = () => {
+    const [open, setOpen] = useState(false);
     return (
         <section style={{ overflowX: "hidden" }}>
-            <Navbar />
+            <Navbar setOpen={setOpen} open={open} />
             <ScrollToTop>
                 <Routes>
                     <Route path="/" element={<Home></Home>}></Route>
-                    <Route path="/about" element={<About></About>}></Route>
+                    <Route path="/about" element={<About setOpen={setOpen}></About>}></Route>
                     <Route path="/review" element={<Review></Review>}></Route>
                     <Route path="/faqs" element={<FAQ></FAQ>}></Route>
                     <Route path="/services" element={<Services></Services>}></Route>
@@ -66,7 +68,7 @@ const AppRoutes = () => {
                     {
                         pagesData.map((page) => (
                             <Route path={`/city/${page.slug}`} element={
-                                <CityPage city={page.city}></CityPage>
+                                <CityPage city={page.city} img={page.img}></CityPage>
                             }>
 
                             </Route>

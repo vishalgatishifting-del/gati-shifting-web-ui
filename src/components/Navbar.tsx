@@ -26,11 +26,14 @@ import callIcon from "../assets/call.webp"
 import gmailIcon from "../assets/gmailIcon.webp"
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
+interface NavbarProps {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
 
 
-
-const Navbar = () => {
+const Navbar: React.FC<NavbarProps> = ({open, setOpen}) => {
 
 
     useEffect(() => {
@@ -43,7 +46,6 @@ const Navbar = () => {
         return () => clearTimeout(timer);
     }, []);
 
-    const [open, setOpen] = useState(false);
 
     const handleClickOpen = () => {
         setOpen(true);

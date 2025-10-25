@@ -1,0 +1,59 @@
+@import "../style/variables";
+
+.bg-attached-sec {
+    position: relative;
+    margin-top: 111px;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../assets/CommercialShifting/bg.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px;
+    @include font-poppins-sans(400);
+
+    h1 {
+        color: #fff;
+        z-index: 10;
+        font-size: 100px;
+        text-align: center;
+    }
+}
+
+.bg-attached-sec::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000044;
+}
+
+
+@media screen and (max-width: 1101px) {
+    .bg-attached-sec {
+        margin-top: 67px;
+    }
+}
+@media screen and (max-width: 695px) {
+    .bg-attached-sec {
+        h1{
+            font-size: 70px;
+        }
+    }
+}
+@media screen and (max-width: 471px) {
+    .bg-attached-sec {
+        h1{
+            font-size: 50px;
+        }
+    }
+}
+@media screen and (max-width: 382px) {
+    .bg-attached-sec {
+        margin-top:61px;
+        
+    }
+}

@@ -49,6 +49,10 @@
                 text-decoration: none;
                 border-radius: 20px;
                 color: #fff;
+                border: none;
+                font-size: 14px;
+                @include font-poppins-sans(400);
+                cursor: pointer;
             }
         }
     }
