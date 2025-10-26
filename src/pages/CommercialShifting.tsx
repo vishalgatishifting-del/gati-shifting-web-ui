@@ -45,13 +45,13 @@ const CommercialShifting = () => {
             </Helmet>
 
             <div className="bg-attached-sec">
-                <h1>Commercial Shifting</h1>
+                <h1>Commercial Vehicle Transport Services in India</h1>
             </div>
 
             <section id="pet-relocation-sec">
                 <div className="container">
-                    <h1>Gati Shifting Packers – Trusted Commercial Shifting Services in India</h1>
-                    <p>Gati Shifting Packers is one of the leading and most reliable names in commercial shifting services across India. We specialize in relocating large-scale commercial spaces, including warehouses, showrooms, retail outlets, manufacturing units, and corporate establishments. Our professional team ensures a seamless, secure, and timely relocation that minimizes downtime and business disruption.
+                    <h1>Gati Shifting Packers – Trusted commercial vehicle transport services in India</h1>
+                    <p>Gati Shifting Packers is one of the leading and most reliable names in commercial vehicle transport services across India. We specialize in relocating large-scale commercial spaces, including warehouses, showrooms, retail outlets, manufacturing units, and corporate establishments. Our professional team ensures a seamless, secure, and timely relocation that minimizes downtime and business disruption.
                         <br />
                         With a strong nationwide network, Gati Shifting Packers is known for its strategic planning, efficient packing, and end-to-end coordination. Whether it’s machinery, furniture, or sensitive equipment, we handle everything with the utmost care and precision. Our commercial moving solutions include insurance coverage, vehicle tracking, and trained professionals to ensure your valuable assets reach safely and on time.
 
@@ -111,14 +111,14 @@ const CommercialShifting = () => {
 
                         <h2>Affordable Commercial Shifting Charges in India</h2>
                         <p>
-                            We offer cost-effective and transparent commercial shifting services designed for all types of businesses — from small enterprises to large corporations. Our pricing depends on your specific requirements and ensures no hidden charges. Whether you’re relocating locally or across cities, Gati Shifting Packers guarantees a smooth, hassle-free, and budget-friendly experience.
+                            We offer cost-effective and transparent commercial vehicle transport services designed for all types of businesses — from small enterprises to large corporations. Our pricing depends on your specific requirements and ensures no hidden charges. Whether you’re relocating locally or across cities, Gati Shifting Packers guarantees a smooth, hassle-free, and budget-friendly experience.
                         </p>
 
 
                         <img src={commercialShiftingImg} />
                     </div>
                     <div className="content why-choose">
-                        <h2>Why Choose Professional Commercial Shifting Services in India?</h2>
+                        <h2>Why Choose Professional commercial vehicle transport services in India?</h2>
                         <ul>
                             <li>Safe Handling: Specialized team for heavy and delicate commercial goods.</li>
                             <li>Minimal Downtime: Quick relocation with minimal impact on business operations.</li>

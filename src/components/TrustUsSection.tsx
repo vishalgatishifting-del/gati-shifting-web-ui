@@ -28,7 +28,7 @@ const TrustUsSection = () => {
                     <WhatsAppIcon className="icon"></WhatsAppIcon>
                     <span>Chat With Us</span>
                 </a>
-                <a className="card" href="tel:+917290008200">
+                <a className="card" href="tel:+919422799477">
                     <CallIcon className="icon"></CallIcon>
                     <span>Call Now</span>
                 </a>

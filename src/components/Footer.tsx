@@ -76,7 +76,7 @@ const Footer = () => {
                         <p>Gati Shifting Packers & Movers<br />
                             Ghansoli, Navi Mumbai, Maharashtra – 400701
                         </p>
-                        <p>📞 +91 72900 08200</p>
+                        <p>📞 +91 9422799477</p>
                     </div>
 
                     <div className="footer-col">

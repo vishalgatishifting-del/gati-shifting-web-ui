@@ -93,7 +93,7 @@ const ContactForm: React.FC<ContactFormProps> = ({showDetail = true, closeContro
 
                 <div className="detail">
                     <h4>Gati Shifting Packers and Movers</h4>
-                    <span>+91 72900 08200</span>
+                    <span>+91 9422799477</span>
                     <span>gatishiftingpackers@gmail.com</span>
                     <p>Office No. 001, Shree Ganesh Tower CHS, Plot No. 98, Sector 21, Ghansoli, Navi Mumbai, Maharashtra 400701, India</p>
                 </div>

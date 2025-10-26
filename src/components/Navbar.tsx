@@ -27,13 +27,13 @@ import gmailIcon from "../assets/gmailIcon.webp"
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 interface NavbarProps {
-  open: boolean;
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+    open: boolean;
+    setOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 
 
-const Navbar: React.FC<NavbarProps> = ({open, setOpen}) => {
+const Navbar: React.FC<NavbarProps> = ({ open, setOpen }) => {
 
 
     useEffect(() => {
@@ -61,9 +61,9 @@ const Navbar: React.FC<NavbarProps> = ({open, setOpen}) => {
         <>
             <header className='diwali'>
                 <div className="top-area">
-                    <a href="tel:+917290008200">
+                    <a href="tel:+919422799477">
                         <LocalPhoneIcon></LocalPhoneIcon>
-                        <span>Contact No - +91 7290008200</span>
+                        <span>Contact No - +91 9422799477</span>
                     </a>
                     <a href="mailto:gatishiftingpackers@gmail.com">
                         <EmailIcon></EmailIcon>
@@ -95,7 +95,7 @@ const Navbar: React.FC<NavbarProps> = ({open, setOpen}) => {
                     </ul>
 
                     <div className='get-in-touch-btns'>
-                        <a href="tel:+917290008200"><LocalPhoneIcon></LocalPhoneIcon></a>
+                        <a href="tel:+919422799477"><LocalPhoneIcon></LocalPhoneIcon></a>
                         <button aria-label="Get in touch with Gati Shifting Packers" onClick={handleClickOpen}>Get In Touch</button>
                         <button className='nav-Toggle-Btn' onClick={() => setOpenNav(!openNav)}>
                             {(openNav ? <CloseIcon></CloseIcon> : <MenuIcon></MenuIcon>)}
@@ -116,7 +116,7 @@ const Navbar: React.FC<NavbarProps> = ({open, setOpen}) => {
 
             <div className='action-button'>
                 <a href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer"><img src={whatsappIcon} /></a>
-                <a href="tel:+917290008200"><img src={callIcon} /></a>
+                <a href="tel:+919422799477"><img src={callIcon} /></a>
                 <a href="mailto:gatishiftingpackers@gmail.com"> <img src={gmailIcon} /></a>
 
             </div>
