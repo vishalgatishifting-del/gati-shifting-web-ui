@@ -2,6 +2,7 @@ import FAQList from "../components/FAQList";
 import "./FAQ.scss";
 import car5 from "../assets/car5.jpg"
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 
 const FAQ = () => {
@@ -55,9 +56,9 @@ const FAQ = () => {
                         partner in moving. Let us handle the logistics while you focus on
                         starting fresh in your new place.
                     </p>
-                    <a href="#services" className="explore-link">
+                    <Link to="/services" className="explore-link">
                         Explore Services
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="info-right">

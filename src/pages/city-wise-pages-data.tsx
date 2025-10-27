@@ -10,6 +10,11 @@ import JamshedpurImg from "../assets/CityPages/jamshedpur.webp"
 import KolhapurImg from "../assets/CityPages/kolhapur.webp"
 import LucknowImg from "../assets/CityPages/lucknow.webp"
 import MeerutImg from "../assets/CityPages/meerut.webp"
+import AhmedabadImg from "../assets/CityPages/Ahmedabad.webp";
+import AurangabadImg from "../assets/CityPages/Aurangabad.webp"
+import BhopalImg from "../assets/CityPages/bhopal.webp"
+import ChandigarhImg from "../assets/CityPages/Chandigarh.webp"
+import DehradunImg from "../assets/CityPages/dehradun.webp"
 
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg  },
@@ -24,11 +29,11 @@ export const pagesData = [
   { slug: "kolhapur", city: "Kolhapur", img: KolhapurImg },
   { slug: "lucknow", city: "Lucknow", img: LucknowImg },
   { slug: "meerut", city: "Meerut", img: MeerutImg },
-  { slug: "ahmedabad", city: "Ahmedabad" },
-  { slug: "aurangabad", city: "Aurangabad" },
-  { slug: "bhopal", city: "Bhopal" },
-  { slug: "chandigarh", city: "Chandigarh" },
-  { slug: "dehradun", city: "Dehradun" },
+  { slug: "ahmedabad", city: "Ahmedabad", img: AhmedabadImg },
+  { slug: "aurangabad", city: "Aurangabad", img: AurangabadImg },
+  { slug: "bhopal", city: "Bhopal", img: BhopalImg },
+  { slug: "chandigarh", city: "Chandigarh", img: ChandigarhImg },
+  { slug: "dehradun", city: "Dehradun", img: DehradunImg },
   { slug: "ghaziabad", city: "Ghaziabad" },
   { slug: "gwalior", city: "Gwalior" },
   { slug: "indore", city: "Indore" },

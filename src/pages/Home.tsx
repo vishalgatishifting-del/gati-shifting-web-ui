@@ -31,6 +31,7 @@ import ReviewVideo from "../components/ReviewVideos";
 import diwaliSlider from "../assets/diwaliTheme/diwalislider.webp"
 // import emailjs from 'emailjs-com';
 import { sendEmail } from "../utils/emailHelper";
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 
@@ -159,43 +160,7 @@ const Home: React.FC = () => {
                 service_detail: formData.service_detail_c,
                 good_type: formData.goods_type_c,
             };
-
-            // emailjs.send(
-            //     'service_u9m30x2',     
-            //     'template_17q8vva',    
-            //     templateParams,
-            //     'eeX-Q_EutbxH4dyNF'     
-            // ).then(
-            //     (result) => {
-            //         alert("Message Sent Successfully!");
-            //         console.log(result.text);
-            //     },
-            //     (error) => {
-            //         alert("Failed to send message.");
-            //         console.log(error.text);
-            //     }
-            // );
-
             sendEmail(templateParams)
-            // console.log("CRM Response:", response.data);
-            // await fetch("https://formsubmit.co/ajax/vishalgatishifting@gmail.com", {
-            //     method: "POST",
-            //     headers: {
-            //         "Content-Type": "application/json",
-            //         Accept: "application/json"
-            //     },
-            //     body: JSON.stringify({
-            //         name: formData.name,
-            //         email: formData.email1,
-            //         phone: formData.phone_office,
-            //         pickup_location: formData.pickup_location_c,
-            //         drop_location: formData.drop_location_c,
-            //         service_detail: formData.service_detail_c,
-            //         good_type: formData.goods_type_c,
-            //         _subject: "New Lead Received",
-            //         _captcha: "false"
-            //     })
-            // });
             setSuccess("Form successfully submitted!");
 
             setFormData({
@@ -344,6 +309,7 @@ const Home: React.FC = () => {
                     <div className="form-area">
 
                         <h3>Get a free <span>{text}</span> Quote</h3>
+                        <i>We’ll call you within 15 minutes</i>
 
                         <form onSubmit={handleSubmit}>
                             <input type="text" placeholder="Full Name*" name="name" onChange={handleChange} value={formData.name} required />
@@ -354,7 +320,7 @@ const Home: React.FC = () => {
                             <input type="text" placeholder={type} name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required />
 
                             <button className="form-submit-btn" type="submit" disabled={loading}>
-                                {loading ? "Submitting..." : "Submit"}
+                                {loading ? <CircularProgress size="30px" /> : "Submit"}
                             </button>
                         </form>
                         <span className="success-msg">{success && <p>{success}</p>}</span>
