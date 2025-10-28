@@ -17,10 +17,13 @@ const CityPage: React.FC<PageProps> = ({ city, img }) => {
     return (
         <>
             <section id="city-page-sec">
+                <div className="offer-headling">
+                </div>
                 <div className="container">
                     <div className="content">
                         <div className="box">
-                            <h1>Gati Shifting Packers – Best Packers and Movers in <div className="city-name">{city}</div></h1>
+                            <h1>Gati Shifting Packers – Best Packers and Movers in <div className="city-name">{city}</div>
+                            <h3>🎉 Get 15% OFF on Your Next Move 🎉</h3></h1>
 
                             <img src={img} />
                         </div>

@@ -13,6 +13,32 @@ const SafetyStandard = () => {
         <>
             <Helmet>
 
+{/* Meta Tags for Safety Standard Page */}
+<title>Safety Standards | Gati Shifting Packers</title>
+
+<meta name="description" content="Experience top-tier Safety Standards with Gati Shifting Packers. We ensure secure packing, handling, and transportation with trusted safety protocols and professional care." />
+<meta name="keywords" content="Gati Shifting Packers safety standards, safe relocation services, packing and moving safety, professional movers, goods protection, secure transportation, moving safety guidelines, safety measures for shifting, reliable packers and movers, trusted moving company, damage-free moving, quality packing materials, safety-focused relocation, professional handling, household goods safety, cargo safety standards, moving company with safety assurance" />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Abhishek" />
+
+{/* Open Graph */}
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Safety Standards | Gati Shifting Packers" />
+<meta property="og:description" content="Gati Shifting Packers follows strict Safety Standards to ensure secure packing, loading, and delivery of your belongings with utmost care." />
+<meta property="og:url" content="https://gatishiftingpackers.com/safety-standard" />
+<meta property="og:site_name" content="Gati Shifting Packers" />
+<meta property="og:image" content="" />
+
+{/* Twitter Card */}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Safety Standards | Gati Shifting Packers" />
+<meta name="twitter:description" content="Ensure safe and damage-free relocation with Gati Shifting Packers’ professional Safety Standards and trusted moving practices." />
+<meta name="twitter:image" content="" />
+
+<meta http-equiv="Content-Language" content="en" />
+
+{/* Canonical URL */}
+<link rel="canonical" href="https://gatishiftingpackers.com/safety-standard" />
 
             </Helmet>
 
@@ -52,7 +78,7 @@ const SafetyStandard = () => {
                     </div>
                     <div className="content types">
 
-                        <img src={safetystandardImg} />
+                        <img src={safetystandardImg} alt="our commitment to safety" title="standardsafetyimage" loading="lazy" />
                     </div>
                 </div>
             </section>
