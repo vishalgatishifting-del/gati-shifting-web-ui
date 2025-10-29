@@ -6,16 +6,53 @@ import ReviewVideo from "../components/ReviewVideos";
 import TrustUsSection from "../components/TrustUsSection";
 import chargesImg from "../assets/CityPages/packers & movers charges.webp"
 import "./CityPage.scss"
+import { Helmet } from "react-helmet-async";
 
+interface MetaDataProps {
+  title?: string;
+  description?: string;
+  keywords?: string;
+  ogDescription?: string;
+  twitterDescription?: string;
+}
 interface PageProps {
     city: string;
     img?: string;
+    metaData?: MetaDataProps;
 }
-const CityPage: React.FC<PageProps> = ({ city, img }) => {
+const CityPage: React.FC<PageProps> = ({ city, img, metaData }) => {
 
     console.log(img)
     return (
         <>
+            <Helmet>
+                {/* Meta Tags for Bhiwandi City Page */}
+                <title>{metaData?.title}</title>
+
+                <meta name="description" content={metaData?.description} />
+                <meta name="keywords" content={metaData?.keywords} />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Abhishek" />
+
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Packers and Movers in Bhiwandi | Gati Shifting Packers" />
+                <meta property="og:description" content={metaData?.ogDescription} />
+                <meta property="og:url" content="https://gatishiftingpackers.com/city/bhiwandi" />
+                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:image" content="" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Packers and Movers in Bhiwandi | Gati Shifting Packers" />
+                <meta name="twitter:description" content={metaData?.twitterDescription} />
+                <meta name="twitter:image" content="" />
+
+                <meta http-equiv="Content-Language" content="en" />
+
+                {/* Canonical URL */}
+                <link rel="canonical" href={`https://gatishiftingpackers.com/city/${city}`} />
+            </Helmet>
             <section id="city-page-sec">
                 <div className="offer-headling">
                 </div>
@@ -23,7 +60,7 @@ const CityPage: React.FC<PageProps> = ({ city, img }) => {
                     <div className="content">
                         <div className="box">
                             <h1>Gati Shifting Packers – Best Packers and Movers in <div className="city-name">{city}</div>
-                            <h3>🎉 Get 15% OFF on Your Next Move 🎉</h3></h1>
+                                <h3>🎉 Get 15% OFF on Your Next Move 🎉</h3></h1>
 
                             <img src={img} />
                         </div>

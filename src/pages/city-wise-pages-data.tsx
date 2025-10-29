@@ -20,11 +20,22 @@ import GwaliorImg from "../assets/CityPages/gwalior.webp"
 import Indore from "../assets/CityPages/indore.webp"
 import Jamnagar from "../assets/CityPages/jamnagar.webp"
 import Kolkata from "../assets/CityPages/kolkata.webp"
+import Ludhiana from "../assets/CityPages/ludhiana.webp"
+import Mumbai from "../assets/CityPages/mumbai.webp"
+import Allahabad from "../assets/CityPages/prayagraj.webp"
+import Alwar from "../assets/CityPages/rajasthan.webp"
+import Ambala from "../assets/CityPages/ambala.webp"
 
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg  },
-  { slug: "ankleshwar", city: "Ankleshwar", img: ankleshwarImg },
-  { slug: "bhiwandi", city: "Bhiwandi", img: BhiwandiImg },
+  { slug: "ankleshwar", city: "Ankleshwar", img: ankleshwarImg},
+  { slug: "bhiwandi", city: "Bhiwandi", img: BhiwandiImg, metaDetails: {
+    title: "Packers and Movers in Bhiwandi | Gati Shifting Packers",
+    description: "Hire trusted Packers and Movers in Bhiwandi with Gati Shifting Packers. We offer safe, affordable, and professional relocation services for homes, offices, and vehicles in Bhiwandi.",
+    keywords: "Packers and Movers in Bhiwandi, Gati Shifting Packers Bhiwandi, local movers Bhiwandi, home shifting services Bhiwandi, office relocation Bhiwandi, trusted packers movers Bhiwandi, affordable relocation services Bhiwandi, professional movers Bhiwandi, household shifting Bhiwandi, door-to-door moving services Bhiwandi, packing and unpacking Bhiwandi, vehicle transport Bhiwandi, safe goods transportation Bhiwandi, best moving company Bhiwandi, packers and movers in Bhiwandi, movers and packers in Bhiwandi, best packers and movers in Bhiwandi, top packers and movers Bhiwandi, affordable packers and movers Bhiwandi, cheap packers and movers Bhiwandi, local packers and movers in Bhiwandi, trusted packers and movers Bhiwandi, home shifting services in Bhiwandi, house relocation Bhiwandi, office shifting services in Bhiwandi, industrial packers and movers Bhiwandi, factory relocation services Bhiwandi, car transport in Bhiwandi, bike transport Bhiwandi, vehicle shifting Bhiwandi, household goods shifting Bhiwandi, furniture movers Bhiwandi, packing and moving services in Bhiwandi, movers and packers near me Bhiwandi, relocation company in Bhiwandi, moving company Bhiwandi, verified packers and movers Bhiwandi, IBA approved packers and movers Bhiwandi, packers and movers Bhiwandi price, packers and movers Bhiwandi charges, packers and movers Bhiwandi cost, packers and movers Bhiwandi to Mumbai, packers and movers Bhiwandi to Pune, packers and movers Bhiwandi to Nashik, packers and movers Bhiwandi to Thane, reliable packers and movers Bhiwandi, professional packers and movers Bhiwandi, door to door packers and movers Bhiwandi, packers and movers for local shifting in Bhiwandi, packers and movers for long distance in Bhiwandi, best relocation services Bhiwandi, loading and unloading services Bhiwandi, packing and unpacking services Bhiwandi, movers packers Bhiwandi MIDC, industrial shifting services Bhiwandi, warehouse shifting Bhiwandi, logistics services Bhiwandi, transport services Bhiwandi, relocation company Bhiwandi Maharashtra, best moving company Bhiwandi, quick packers and movers Bhiwandi, 24x7 packers and movers Bhiwandi, mini truck for shifting Bhiwandi, tempo service Bhiwandi, household relocation services Bhiwandi, home packers Bhiwandi, moving experts Bhiwandi, cost-effective packers and movers Bhiwandi, professional relocation company Bhiwandi, budget-friendly movers Bhiwandi, intercity movers Bhiwandi, long-distance packers and movers Bhiwandi, shifting services Bhiwandi, goods transport Bhiwandi, safe relocation services Bhiwandi, packers movers with insurance Bhiwandi, local household movers Bhiwandi, best shifting company Bhiwandi, trusted relocation services Bhiwandi.",
+    ogDescription: "Looking for reliable Packers and Movers in Bhiwandi? Gati Shifting Packers provides secure and timely relocation with professional handling and top-quality packing.",
+    twitterDescription: "Safe, professional, and affordable Packers and Movers in Bhiwandi by Gati Shifting Packers. Experience smooth, stress-free relocation services today!"
+  }  },
   { slug: "calicut", city: "Calicut", img: CalicutImg },
   { slug: "cuttack", city: "Cuttack", img: CuttackImg },
   { slug: "gandhidham", city: "Gandhidham", img: GandhidhamImg },
@@ -44,11 +55,11 @@ export const pagesData = [
   { slug: "indore", city: "Indore", img: Indore },
   { slug: "jamnagar", city: "Jamnagar", img: Jamnagar },
   { slug: "kolkata", city: "Kolkata", img: Kolkata },
-  { slug: "ludhiana", city: "Ludhiana" },
-  { slug: "mumbai", city: "Mumbai" },
-  { slug: "allahabad", city: "Allahabad" },
-  { slug: "alwar", city: "Alwar" },
-  { slug: "ambala", city: "Ambala" },
+  { slug: "ludhiana", city: "Ludhiana", img: Ludhiana  },
+  { slug: "mumbai", city: "Mumbai", img: Mumbai  },
+  { slug: "allahabad", city: "Allahabad", img: Allahabad  },
+  { slug: "alwar", city: "Alwar", img: Alwar  },
+  { slug: "ambala", city: "Ambala", img: Ambala  },
   { slug: "vadodara", city: "Vadodara" },
   { slug: "bikaner", city: "Bikaner" },
   { slug: "bhubaneswar", city: "Bhubaneswar" },
