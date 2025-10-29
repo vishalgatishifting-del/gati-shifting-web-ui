@@ -28,7 +28,6 @@ import AwardCertification from "../components/AwardCertification";
 import TrustUsSection from "../components/TrustUsSection";
 import ReviewVideo from "../components/ReviewVideos";
 
-import diwaliSlider from "../assets/diwaliTheme/diwalislider.webp"
 // import emailjs from 'emailjs-com';
 import { sendEmail } from "../utils/emailHelper";
 import CircularProgress from '@mui/material/CircularProgress';
@@ -49,7 +48,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 const Home: React.FC = () => {
 
 
-    const images = [diwaliSlider, gatiSlider2, gatiSlider1, gatiSlider3];
+    const images = [gatiSlider2, gatiSlider1, gatiSlider3];
 
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
@@ -217,7 +216,7 @@ const Home: React.FC = () => {
             </Helmet>
 
             {/* marginTop: "107.01px" */}
-            <Box className="sliderBox" sx={{ marginTop: "150px", width: "95%", overflow: "hidden" }}>
+            <Box className="sliderBox" sx={{ marginTop: "107.01px", width: "95%", overflow: "hidden" }}>
                 <Slider {...settings}>
                     {images.map((img, index) => (
                         <Box key={index} sx={{ position: "relative", outline: "none" }}>

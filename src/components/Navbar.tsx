@@ -20,7 +20,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ContactForm from './ContactForm';
 
-import Logo from "../assets/logo/roundedLogo.png";
+import Logo from "../assets/logo2.webp";
 import whatsappIcon from "../assets/whatsappIcon.jpg";
 import callIcon from "../assets/call.webp";
 import gmailIcon from "../assets/gmailIcon.webp";
@@ -49,7 +49,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen }) => {
 
   return (
     <>
-      <header className="diwali">
+      <header>
         <div className="top-area">
           <a href="tel:+919422799477">
             <LocalPhoneIcon />
