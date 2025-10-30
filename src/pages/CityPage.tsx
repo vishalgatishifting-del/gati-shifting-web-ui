@@ -19,8 +19,9 @@ interface PageProps {
     city: string;
     img?: string;
     metaData?: MetaDataProps;
+    offer?: string;
 }
-const CityPage: React.FC<PageProps> = ({ city, img, metaData }) => {
+const CityPage: React.FC<PageProps> = ({ city, img, metaData, offer }) => {
 
     console.log(img)
     return (
@@ -60,7 +61,7 @@ const CityPage: React.FC<PageProps> = ({ city, img, metaData }) => {
                     <div className="content">
                         <div className="box">
                             <h1>Gati Shifting Packers – Best Packers and Movers in <div className="city-name">{city}</div>
-                                <h3>🎉 Get 15% OFF on Your Next Move 🎉</h3></h1>
+                                <h3>🎉 Get {offer} OFF on Your Next Move 🎉</h3></h1>
 
                             <img src={img} />
                         </div>

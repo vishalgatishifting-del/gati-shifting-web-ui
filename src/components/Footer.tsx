@@ -42,11 +42,11 @@ const Footer = () => {
                         <li><Link to="/city/allahabad">Packers & Movers Allahabad</Link></li>
                         <li><Link to="/city/alwar">Packers & Movers Alwar</Link></li>
                         <li><Link to="/city/ambala">Packers & Movers Ambala</Link></li>
-                        <li><Link to="/">Packers & Movers Vadodara</Link></li>
-                        <li><Link to="/">Packers & Movers Bikaner</Link></li>
-                        <li><Link to="/">Packers & Movers Bhubaneswar</Link></li>
-                        <li><Link to="/">Packers & Movers Chennai</Link></li>
-                        <li><Link to="/">Packers & Movers Kochi</Link></li>
+                        <li><Link to="/city/vadodara">Packers & Movers Vadodara</Link></li>
+                        <li><Link to="/city/bikaner">Packers & Movers Bikaner</Link></li>
+                        <li><Link to="/city/bhubaneswar">Packers & Movers Bhubaneswar</Link></li>
+                        <li><Link to="/city/chennai">Packers & Movers Chennai</Link></li>
+                        <li><Link to="/city/kochi">Packers & Movers Kochi</Link></li>
                         <li><Link to="/">Packers & Movers Delhi</Link></li>
                         <li><Link to="/">Packers & Movers Dwarka</Link></li>
                         <li><Link to="/">Packers & Movers Faridabad</Link></li>
