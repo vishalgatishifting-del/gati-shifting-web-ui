@@ -107,7 +107,7 @@ const ContactForm: React.FC<ContactFormProps> = ({showDetail = true, closeContro
                         <input type="text" placeholder="Drop Point" name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required/>
                         <input type="text" placeholder="Goods Type (e.g. Furniture, Boxes)" name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required/>
                         <button type="submit" disabled={loading}>
-                            {loading ? "Submitting..." : "Submit"}
+                            {loading ? "Submitting..." : "Get Free Quote Now!"}
                         </button>
                         <span className="success-msg">{success && <p>{success}</p>}</span>
                     </form>

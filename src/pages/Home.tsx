@@ -20,6 +20,7 @@ import { useInView } from "react-intersection-observer";
 import gatiSlider1 from "../assets/sliderImg/gatislider1.webp"
 import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
 import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
+import gatiSlider4 from "../assets/sliderImg/gatislider4.webp"
 import FAQList from "../components/FAQList";
 import OfficeLocation from "../components/OfficeLocation";
 import axios from "axios";
@@ -48,7 +49,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 const Home: React.FC = () => {
 
 
-    const images = [gatiSlider2, gatiSlider1, gatiSlider3];
+    const images = [gatiSlider2, gatiSlider1, gatiSlider3, gatiSlider4];
 
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });

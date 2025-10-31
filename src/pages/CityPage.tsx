@@ -15,11 +15,23 @@ interface MetaDataProps {
   ogDescription?: string;
   twitterDescription?: string;
 }
+
+interface PageDataProps{
+    mainHeading?: string;
+    h11?: string;
+    paragraph1?: string;
+    h12?: string;
+    h21?: string;
+    paragraph2?: string;
+    h22?: string;
+    paragraph3?: string;
+}
 interface PageProps {
     city: string;
     img?: string;
     metaData?: MetaDataProps;
     offer?: string;
+    pageData?: PageDataProps;
 }
 const CityPage: React.FC<PageProps> = ({ city, img, metaData, offer }) => {
 
