@@ -30,6 +30,11 @@ import Bikaner from "../assets/CityPages/bikaner.webp"
 import Bhubaneswar from "../assets/CityPages/bhubaneswr.webp"
 import Chennai from "../assets/CityPages/chennai.webp"
 import Kochi from "../assets/CityPages/kochi.webp"
+import Delhi from "../assets/CityPages/delhi.webp"
+import Dwarka from "../assets/CityPages/dwarka.webp"
+import Faridabad from "../assets/CityPages/faridabad.webp"
+import Goa from "../assets/CityPages/goa.webp"
+import GreaterNoida from "../assets/CityPages/greater noida.webp"
 
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg, offer: "15%"  },
@@ -99,11 +104,11 @@ export const pagesData = [
     paragraph9: "Make your next move simple, safe, and stress-free with the best Packers and Movers in Vadodara." 
     
   } },
-  { slug: "delhi", city: "Delhi" },
-  { slug: "dwarka", city: "Dwarka" },
-  { slug: "faridabad", city: "Faridabad" },
-  { slug: "goa", city: "Goa" },
-  { slug: "greaternoida", city: "Greater Noida" },
+  { slug: "delhi", city: "Delhi", img: Delhi, offer: "10%"  },
+  { slug: "dwarka", city: "Dwarka", img: Dwarka, offer: "10%"  },
+  { slug: "faridabad", city: "Faridabad", img: Faridabad, offer: "10%"  },
+  { slug: "goa", city: "Goa", img: Goa, offer: "10%"  },
+  { slug: "greaternoida", city: "Greater Noida", img: GreaterNoida, offer: "10%"  },
   { slug: "gurgaon", city: "Gurgaon" },
   { slug: "hubli", city: "Hubli" },
   { slug: "jammu", city: "Jammu" },
