@@ -101,7 +101,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
 
     return (
         <section id="get-in-touch-form" style={(showDetail == false) ? { boxShadow: "0 5px 20px #00000029", marginTop: "0px", width: "100%", padding: "14px" } : {}}>
-            <h2>Get Free Quote in 30 Seconds!</h2>
+            <h2>Get Free Quote in 1 min!</h2>
             <p>Fast, Safe & Affordable Shifting - Book Now & Save Upto 20%!</p>
             <div className="container" style={(showDetail == false) ? { width: "100%", boxShadow: "none" } : {}}>
                 {(showDetail == true ? (
@@ -138,7 +138,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
                             {loading ? "Submitting..." : "Get My Free Quote"}
                         </button>
                         <i>Instant Response | No Hidden Charges | 24x7 Support</i>
-                        <a href="">Chat Instantly on<WhatsAppIcon className="icon"></WhatsAppIcon></a>
+                        <a href="https://wa.me/917065994000">Chat Instantly on<WhatsAppIcon className="icon"></WhatsAppIcon></a>
                         <span className="success-msg">{success && <p>{success}</p>}</span>
                     </form>
                 </div>

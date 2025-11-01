@@ -35,6 +35,17 @@ import Dwarka from "../assets/CityPages/dwarka.webp"
 import Faridabad from "../assets/CityPages/faridabad.webp"
 import Goa from "../assets/CityPages/goa.webp"
 import GreaterNoida from "../assets/CityPages/greater noida.webp"
+import Gurgaon from "../assets/CityPages/gurgaon.webp"
+import Hubli from "../assets/CityPages/hubli.webp"
+import Jammu from "../assets/CityPages/jammu.webp"
+import Kanpur from "../assets/CityPages/kanpur.webp"
+import Kottayam from "../assets/CityPages/kottayam.webp"
+import Mangalore from "../assets/CityPages/manglore.webp"
+import Nashik from "../assets/CityPages/nashik.webp"
+import Noida from "../assets/CityPages/noida.webp"
+import Patna from "../assets/CityPages/patna.webp"
+import Pune from "../assets/CityPages/pune.webp"
+import Surat from "../assets/CityPages/surat.webp"
 
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg, offer: "15%"  },
@@ -109,15 +120,15 @@ export const pagesData = [
   { slug: "faridabad", city: "Faridabad", img: Faridabad, offer: "10%"  },
   { slug: "goa", city: "Goa", img: Goa, offer: "10%"  },
   { slug: "greaternoida", city: "Greater Noida", img: GreaterNoida, offer: "10%"  },
-  { slug: "gurgaon", city: "Gurgaon" },
-  { slug: "hubli", city: "Hubli" },
-  { slug: "jammu", city: "Jammu" },
-  { slug: "kanpur", city: "Kanpur" },
-  { slug: "kottayam", city: "Kottayam" },
-  { slug: "mangalore", city: "Mangalore" },
-  { slug: "nashik", city: "Nashik" },
-  { slug: "noida", city: "Noida" },
-  { slug: "patna", city: "Patna" },
-  { slug: "pune", city: "Pune" },
-  { slug: "surat", city: "Surat" },
+  { slug: "gurgaon", city: "Gurgaon", img: Gurgaon, offer: "25%"  },
+  { slug: "hubli", city: "Hubli", img: Hubli, offer: "25%"  },
+  { slug: "jammu", city: "Jammu", img: Jammu, offer: "25%"  },
+  { slug: "kanpur", city: "Kanpur", img: Kanpur, offer: "15%"  },
+  { slug: "kottayam", city: "Kottayam" , img: Kottayam, offer: "25%" },
+  { slug: "mangalore", city: "Mangalore", img: Mangalore, offer: "25%"  },
+  { slug: "nashik", city: "Nashik", img: Nashik, offer: "25%"  },
+  { slug: "noida", city: "Noida", img: Noida, offer: "25%"  },
+  { slug: "patna", city: "Patna", img: Patna, offer: "25%"  },
+  { slug: "pune", city: "Pune", img: Pune, offer: "25%"  },
+  { slug: "surat", city: "Surat", img: Surat, offer: "25%"  },
 ];

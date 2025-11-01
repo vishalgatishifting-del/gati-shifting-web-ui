@@ -5,13 +5,13 @@
     margin-top: 140px;
     padding: 10px;
 
-    .offer-headling{
+    .offer-headling {
         justify-content: center;
         display: flex;
         width: 100%;
         position: fixed;
 
-        h2{
+        h2 {
             padding: 5px 10px;
             background: #cbc5c562;
             border-radius: 30px;
@@ -47,9 +47,18 @@
             color: #303030;
         }
 
-        h1 {
+        .text-area {
+            h1 {
+                font-weight: 550;
+            }
+
             margin: 20px 0;
+              display: flex;
             text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* vertically center text */
         }
 
         .content {
@@ -57,16 +66,23 @@
                 margin-bottom: 20px;
                 display: flex;
                 align-items: center;
+                border-radius: 20px;
 
-                h1{
-                    h3{
-                        font-size: 25px;
-                    }
+                h1 {
+                    color: #333333;
+                }
+
+                h3 {
+                    font-size: 25px;
+                    color: #333333;
+                    margin-bottom: 30px;
+                    display: block;
                 }
 
                 .city-name {
                     font-size: 70px;
                     text-align: center;
+                    font-weight: bold;
                     color: $primary-color;
                 }
 
@@ -75,6 +91,16 @@
                     border-radius: 20px;
                     margin-left: 20px;
                     object-fit: cover;
+                }
+
+                .redirect-link {
+                    background: $primary-color;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    text-decoration: none;
+                    color: #fff;
+                    margin-top: 20px;
+                    width: 300px;
                 }
             }
 
@@ -133,13 +159,14 @@
         }
     }
 }
+
 @media screen and (max-width: 1013px) {
     #city-page-sec {
 
         .container {
-            .content{
-                .box{
-                    .city-name{
+            .content {
+                .box {
+                    .city-name {
                         font-size: 50px;
                     }
                 }
@@ -147,6 +174,7 @@
         }
     }
 }
+
 @media screen and (max-width: 983px) {
     #city-page-sec {
 
@@ -188,8 +216,9 @@
                 p {
                     font-size: 13px;
                 }
-                .img-bx{
-                    img{
+
+                .img-bx {
+                    img {
                         width: 100%;
                     }
                 }
@@ -204,11 +233,11 @@
     #city-page-sec {
 
         .container {
-            .content{
-                .box{
+            .content {
+                .box {
                     flex-direction: column;
 
-                    img{
+                    img {
                         margin: 0;
                         width: 100%;
                     }
@@ -217,6 +246,7 @@
         }
     }
 }
+
 @media screen and (max-width: 565px) {
     #city-page-sec {
 

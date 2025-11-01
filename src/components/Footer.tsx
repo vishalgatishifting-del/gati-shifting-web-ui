@@ -54,17 +54,17 @@ const Footer = () => {
                     </ul>
                     <ul>
                         <li><Link to="/city/greaternoida">Packers & Movers Greaternoida</Link></li>
-                        <li><Link to="/">Packers & Movers Gurgaon</Link></li>
-                        <li><Link to="/">Packers & Movers Hubli</Link></li>
-                        <li><Link to="/">Packers & Movers Jammu</Link></li>
-                        <li><Link to="/">Packers & Movers Kanpur</Link></li>
-                        <li><Link to="/">Packers & Movers Kottayam</Link></li>
-                        <li><Link to="/">Packers & Movers Mangalore</Link></li>
-                        <li><Link to="/">Packers & Movers Nashik</Link></li>
-                        <li><Link to="/">Packers & Movers Noida</Link></li>
-                        <li><Link to="/">Packers & Movers Patna</Link></li>
-                        <li><Link to="/">Packers & Movers Pune</Link></li>
-                        <li><Link to="/">Packers & Movers Surat</Link></li>
+                        <li><Link to="/city/gurgaon">Packers & Movers Gurgaon</Link></li>
+                        <li><Link to="/city/hubli">Packers & Movers Hubli</Link></li>
+                        <li><Link to="/city/jammu">Packers & Movers Jammu</Link></li>
+                        <li><Link to="/city/kanpur">Packers & Movers Kanpur</Link></li>
+                        <li><Link to="/city/kottayam">Packers & Movers Kottayam</Link></li>
+                        <li><Link to="/city/mangalore">Packers & Movers Mangalore</Link></li>
+                        <li><Link to="/city/nashik">Packers & Movers Nashik</Link></li>
+                        <li><Link to="/city/noida">Packers & Movers Noida</Link></li>
+                        <li><Link to="/city/patna">Packers & Movers Patna</Link></li>
+                        <li><Link to="/city/pune">Packers & Movers Pune</Link></li>
+                        <li><Link to="/city/surat">Packers & Movers Surat</Link></li>
                     </ul>
                 </div>
             </section>

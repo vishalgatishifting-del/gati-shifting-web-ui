@@ -7,16 +7,17 @@ import TrustUsSection from "../components/TrustUsSection";
 import chargesImg from "../assets/CityPages/packers & movers charges.webp"
 import "./CityPage.scss"
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 interface MetaDataProps {
-  title?: string;
-  description?: string;
-  keywords?: string;
-  ogDescription?: string;
-  twitterDescription?: string;
+    title?: string;
+    description?: string;
+    keywords?: string;
+    ogDescription?: string;
+    twitterDescription?: string;
 }
 
-interface PageDataProps{
+interface PageDataProps {
     mainHeading?: string;
     h11?: string;
     paragraph1?: string;
@@ -72,9 +73,12 @@ const CityPage: React.FC<PageProps> = ({ city, img, metaData, offer }) => {
                 <div className="container">
                     <div className="content">
                         <div className="box">
-                            <h1>Gati Shifting Packers – Best Packers and Movers in <div className="city-name">{city}</div>
-                                <h3>🎉 Get {offer} OFF on Your Next Move 🎉</h3></h1>
-
+                            <div className="text-area">
+                                <h1>Gati Shifting Packers – Best Packers and Movers in</h1>
+                                <div className="city-name">{city}</div>
+                                <h3>🎉 Get {offer} OFF on Your Next Move 🎉</h3>
+                                <Link className="redirect-link" to="/contact-us">Get My Free Quote</Link>
+                            </div>
                             <img src={img} />
                         </div>
                         <p>
