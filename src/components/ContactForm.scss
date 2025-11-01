@@ -3,7 +3,7 @@
 #get-in-touch-form {
     @include font-poppins-sans(400);
 
-    h1,
+    h2,
     p {
         text-align: center;
         margin-bottom: 10px;
@@ -46,12 +46,13 @@
                 flex-direction: column;
 
                 input {
-                    height: 43px;
+                    height: 40px;
                     padding: 0 10px;
                     border-radius: 5px;
                     outline: none;
                     border: 1px solid #636363;
                     margin: 5px 0;
+                    width: 100%;
                 }
 
                 button {
@@ -66,6 +67,29 @@
                     font-weight: bold;
                     cursor: pointer;
                     font-size: 15px;
+                }
+
+                i{
+                    margin: 10px 0;
+                    font-size: 14px;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+
+                a{
+                    width: 100%;
+                    background: #25D366;
+                    border-radius: 5px;
+                    padding: 8px 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    color: #fff;
+
+                    .icon{
+                        margin-left: 5px;
+                    }
                 }
             }
         }
@@ -127,4 +151,23 @@
         }
     }
 
+}
+
+
+@media screen and (max-width: 483px) {
+    
+#get-in-touch-form {
+    h2{
+        font-size: 20px;
+    }
+    .container{
+        .form{
+            form{
+                i{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
 }

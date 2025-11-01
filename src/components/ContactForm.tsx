@@ -4,6 +4,7 @@ import axios from "axios";
 import { sendEmail } from "../utils/emailHelper";
 
 import ReCAPTCHA from "react-google-recaptcha"
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 interface ContactFormProps {
     showDetail?: true | false;
@@ -87,7 +88,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
             setSuccess("Form successfully submitted!");
 
             setFormData({ name: "", email1: "", phone_office: "", pickup_location_c: "", drop_location_c: "", service_detail_c: "" });
-            
+
             recaptchaRef.current?.reset();
             setCaptchaValue(null);
             closeControl?.();
@@ -100,8 +101,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
 
     return (
         <section id="get-in-touch-form" style={(showDetail == false) ? { boxShadow: "0 5px 20px #00000029", marginTop: "0px", width: "100%", padding: "14px" } : {}}>
-            <h1>Get In Touch</h1>
-            <p>We make shifting fast, safe & affordable. Connect now!</p>
+            <h2>Get Free Quote in 30 Seconds!</h2>
+            <p>Fast, Safe & Affordable Shifting - Book Now & Save Upto 20%!</p>
             <div className="container" style={(showDetail == false) ? { width: "100%", boxShadow: "none" } : {}}>
                 {(showDetail == true ? (
 
@@ -115,11 +116,18 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
                 <div className="form" style={(showDetail == false) ? { width: "100%" } : {}} >
                     <form onSubmit={handleSubmit} className={(showDetail == false) ? "dialogeForm" : " "}>
                         <input type="text" placeholder="Your Name" name="name" onChange={handleChange} value={formData.name} required />
-                        <input type="text" placeholder="Your Email" name="email1" onChange={handleChange} value={formData.email1} required />
+
+                        {showDetail == true ? (
+
+                            <input type="text" placeholder="Your Email" name="email1" onChange={handleChange} value={formData.email1} required />
+                        ) : ""}
+
                         <input type="text" placeholder="Contact Number" name="phone_office" onChange={handleChange} value={formData.phone_office} required />
                         <input type="text" placeholder="Pickup From" name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} required />
                         <input type="text" placeholder="Drop Point" name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required />
-                        <input type="text" placeholder="Goods Type (e.g. Furniture, Boxes)" name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required />
+
+                        {showDetail == true ? (<input type="text" placeholder="Goods Type (e.g. Furniture, Boxes)" name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required />) : ""}
+
 
                         <ReCAPTCHA
                             ref={recaptchaRef}
@@ -127,8 +135,10 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
                             onChange={(value: string | null) => setCaptchaValue(value)}
                         />
                         <button type="submit" disabled={loading}>
-                            {loading ? "Submitting..." : "Get Free Quote Now!"}
+                            {loading ? "Submitting..." : "Get My Free Quote"}
                         </button>
+                        <i>Instant Response | No Hidden Charges | 24x7 Support</i>
+                        <a href="">Or Chat Instantly on WhatsApp<WhatsAppIcon className="icon"></WhatsAppIcon></a>
                         <span className="success-msg">{success && <p>{success}</p>}</span>
                     </form>
                 </div>
