@@ -329,7 +329,7 @@ const Home: React.FC = () => {
                             <input type="text" placeholder={to} name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required />
                             <input type="text" placeholder={type} name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required />
                             <button className="form-submit-btn" type="submit" disabled={loading}>
-                                {loading ? <CircularProgress size="30px" /> : "Submit"}
+                                {loading ? <CircularProgress size="30px" /> : "Get Free Quote"}
                             </button>
                             <ReCAPTCHA
                                 ref={recaptchaRef}
