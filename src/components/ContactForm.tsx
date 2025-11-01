@@ -138,7 +138,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
                             {loading ? "Submitting..." : "Get My Free Quote"}
                         </button>
                         <i>Instant Response | No Hidden Charges | 24x7 Support</i>
-                        <a href="">Or Chat Instantly on WhatsApp<WhatsAppIcon className="icon"></WhatsAppIcon></a>
+                        <a href="">Chat Instantly on<WhatsAppIcon className="icon"></WhatsAppIcon></a>
                         <span className="success-msg">{success && <p>{success}</p>}</span>
                     </form>
                 </div>
