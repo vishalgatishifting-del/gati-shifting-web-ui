@@ -8,7 +8,12 @@
     margin: auto;
     box-sizing: border-box !important;
 }
-
+.trustLine{
+    text-align: center;
+    @include font-poppins-sans(400);
+    margin: 20px 5px;
+    font-weight: bold;
+}
 
 .service-tab {
     position: relative;
@@ -455,6 +460,14 @@
 }
 
 
+@media screen and (max-width: 811px) {
+    .trustLine {
+        font-size: 22px;
+    }
+}
+
+
+
 
 @media screen and (max-width: 794px) {
     .service-tab {
@@ -550,6 +563,12 @@
 }
 
 
+@media screen and (max-width: 573px) {
+    .trustLine {
+        font-size: 17px;
+    }
+}
+
 @media screen and (max-width: 563px) {
     .sliderBox {
         border-radius: 20px;
@@ -599,6 +618,13 @@
 }
 
 
+
+
+@media screen and (max-width: 442px) {
+    .trustLine {
+        font-size: 14px;
+    }
+}
 
 
 @media screen and (max-width: 411px) {

@@ -246,7 +246,7 @@ const Home: React.FC = () => {
                     ))}
                 </Slider>
             </Box>
-
+                    <h1 className="trustLine">India’s Trusted Packers & Movers – 24/7 Support</h1>
             <motion.div
                 ref={ref1}
                 initial="hidden"
