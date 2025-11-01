@@ -1,14 +1,16 @@
 import "./ContactForm.scss";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import axios from "axios";
 import { sendEmail } from "../utils/emailHelper";
 
-interface ContactFormProps{
-    showDetail? : true | false;
+import ReCAPTCHA from "react-google-recaptcha"
+
+interface ContactFormProps {
+    showDetail?: true | false;
     closeControl?: () => void;
 }
 
-const ContactForm: React.FC<ContactFormProps> = ({showDetail = true, closeControl}) => {
+const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeControl }) => {
 
 
     interface FormData {
@@ -35,6 +37,10 @@ const ContactForm: React.FC<ContactFormProps> = ({showDetail = true, closeContro
     const [success, setSuccess] = useState("");
 
 
+    const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+    const recaptchaRef = useRef<any>(null); // 👈 Ref banaya
+
+
     const handleChange = (
         e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
     ) => {
@@ -43,6 +49,11 @@ const ContactForm: React.FC<ContactFormProps> = ({showDetail = true, closeContro
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        if (!captchaValue) {
+            alert("Please verify that you're not a robot!");
+            return;
+        }
         setLoading(true);
         setSuccess("");
 
@@ -74,8 +85,11 @@ const ContactForm: React.FC<ContactFormProps> = ({showDetail = true, closeContro
             sendEmail(templateParams)
 
             setSuccess("Form successfully submitted!");
+
+            setFormData({ name: "", email1: "", phone_office: "", pickup_location_c: "", drop_location_c: "", service_detail_c: "" });
             
-            setFormData({ name: "", email1: "", phone_office: "", pickup_location_c: "", drop_location_c: "",service_detail_c: ""  });
+            recaptchaRef.current?.reset();
+            setCaptchaValue(null);
             closeControl?.();
         } catch (error) {
             setSuccess("Error submitting form. Try again!");
@@ -85,27 +99,33 @@ const ContactForm: React.FC<ContactFormProps> = ({showDetail = true, closeContro
     };
 
     return (
-        <section id="get-in-touch-form" style={(showDetail == false) ? { boxShadow: "0 5px 20px #00000029", marginTop: "0px", width:"100%", padding:"14px" } : {}}>
+        <section id="get-in-touch-form" style={(showDetail == false) ? { boxShadow: "0 5px 20px #00000029", marginTop: "0px", width: "100%", padding: "14px" } : {}}>
             <h1>Get In Touch</h1>
             <p>We make shifting fast, safe & affordable. Connect now!</p>
-            <div className="container"  style={ (showDetail == false) ? { width: "100%", boxShadow: "none" } : {} }>
+            <div className="container" style={(showDetail == false) ? { width: "100%", boxShadow: "none" } : {}}>
                 {(showDetail == true ? (
 
-                <div className="detail">
-                    <h4>Gati Shifting Packers and Movers</h4>
-                    <span>+91 9422799477</span>
-                    <span>gatishiftingpackers@gmail.com</span>
-                    <p>Office No. 001, Shree Ganesh Tower CHS, Plot No. 98, Sector 21, Ghansoli, Navi Mumbai, Maharashtra 400701, India</p>
-                </div>
-                ) : "")}  
-                <div className="form" style={ (showDetail == false) ? { width: "100%" } : {} } >
-                    <form onSubmit={handleSubmit} className={(showDetail == false) ? "dialogeForm": " "}>
-                        <input type="text" placeholder="Your Name" name="name" onChange={handleChange} value={formData.name} required/>
-                        <input type="text" placeholder="Your Email" name="email1" onChange={handleChange} value={formData.email1} required/>
-                        <input type="text" placeholder="Contact Number" name="phone_office" onChange={handleChange} value={formData.phone_office} required/>
-                        <input type="text" placeholder="Pickup From" name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} required/>
-                        <input type="text" placeholder="Drop Point" name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required/>
-                        <input type="text" placeholder="Goods Type (e.g. Furniture, Boxes)" name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required/>
+                    <div className="detail">
+                        <h4>Gati Shifting Packers and Movers</h4>
+                        <span>+91 9422799477</span>
+                        <span>gatishiftingpackers@gmail.com</span>
+                        <p>Office No. 001, Shree Ganesh Tower CHS, Plot No. 98, Sector 21, Ghansoli, Navi Mumbai, Maharashtra 400701, India</p>
+                    </div>
+                ) : "")}
+                <div className="form" style={(showDetail == false) ? { width: "100%" } : {}} >
+                    <form onSubmit={handleSubmit} className={(showDetail == false) ? "dialogeForm" : " "}>
+                        <input type="text" placeholder="Your Name" name="name" onChange={handleChange} value={formData.name} required />
+                        <input type="text" placeholder="Your Email" name="email1" onChange={handleChange} value={formData.email1} required />
+                        <input type="text" placeholder="Contact Number" name="phone_office" onChange={handleChange} value={formData.phone_office} required />
+                        <input type="text" placeholder="Pickup From" name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} required />
+                        <input type="text" placeholder="Drop Point" name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required />
+                        <input type="text" placeholder="Goods Type (e.g. Furniture, Boxes)" name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required />
+
+                        <ReCAPTCHA
+                            ref={recaptchaRef}
+                            sitekey="6LfaOf4rAAAAAGZBXvb01FTAtYQoh0UXm4ChBDHV"
+                            onChange={(value: string | null) => setCaptchaValue(value)}
+                        />
                         <button type="submit" disabled={loading}>
                             {loading ? "Submitting..." : "Get Free Quote Now!"}
                         </button>

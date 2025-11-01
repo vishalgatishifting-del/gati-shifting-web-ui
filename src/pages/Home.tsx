@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import { Box } from "@mui/material";
 import Avatar from '@mui/material/Avatar';
@@ -119,6 +119,7 @@ const Home: React.FC = () => {
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState("");
     const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+    const recaptchaRef = useRef<any>(null); // 👈 Ref banaya
 
 
     const handleChange = (
@@ -179,6 +180,8 @@ const Home: React.FC = () => {
                 service_detail_c: "",
                 goods_type_c: text, // reset with current tab
             });
+            recaptchaRef.current?.reset();
+            setCaptchaValue(null);
 
         } catch (error) {
             console.error("Error submitting form:", error);
@@ -325,13 +328,14 @@ const Home: React.FC = () => {
                             <input type="text" placeholder={from} name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} required />
                             <input type="text" placeholder={to} name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required />
                             <input type="text" placeholder={type} name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required />
-                            <ReCAPTCHA
-                                sitekey="6LfaOf4rAAAAAGZBXvb01FTAtYQoh0UXm4ChBDHV"
-                                onChange={(value: string | null) => setCaptchaValue(value)}
-                            />
                             <button className="form-submit-btn" type="submit" disabled={loading}>
                                 {loading ? <CircularProgress size="30px" /> : "Submit"}
                             </button>
+                            <ReCAPTCHA
+                                ref={recaptchaRef}
+                                sitekey="6LfaOf4rAAAAAGZBXvb01FTAtYQoh0UXm4ChBDHV"
+                                onChange={(value: string | null) => setCaptchaValue(value)}
+                            />
                         </form>
                         <span className="success-msg">{success && <p>{success}</p>}</span>
                     </div>

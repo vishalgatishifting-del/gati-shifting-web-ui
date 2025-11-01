@@ -117,8 +117,10 @@
         }
 
         button {
+            // position: absolute;
             padding: 10px 20px;
             width: 100px;
+            height: 40px;
             background: $primary-color;
             color: #fff;
             border-radius: 5px;
