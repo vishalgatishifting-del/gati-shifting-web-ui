@@ -32,6 +32,7 @@ import ReviewVideo from "../components/ReviewVideos";
 // import emailjs from 'emailjs-com';
 import { sendEmail } from "../utils/emailHelper";
 import CircularProgress from '@mui/material/CircularProgress';
+import ReCAPTCHA from "react-google-recaptcha"
 
 
 
@@ -117,6 +118,7 @@ const Home: React.FC = () => {
 
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState("");
+    const [captchaValue, setCaptchaValue] = useState<string | null>(null);
 
 
     const handleChange = (
@@ -129,6 +131,11 @@ const Home: React.FC = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
+        if (!captchaValue) {
+            alert("Please verify that you're not a robot!");
+            return;
+        }
         setLoading(true);
         setSuccess("");
 
@@ -318,7 +325,10 @@ const Home: React.FC = () => {
                             <input type="text" placeholder={from} name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} required />
                             <input type="text" placeholder={to} name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required />
                             <input type="text" placeholder={type} name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required />
-
+                            <ReCAPTCHA
+                                sitekey="6LfaOf4rAAAAAGZBXvb01FTAtYQoh0UXm4ChBDHV"
+                                onChange={(value: string | null) => setCaptchaValue(value)}
+                            />
                             <button className="form-submit-btn" type="submit" disabled={loading}>
                                 {loading ? <CircularProgress size="30px" /> : "Submit"}
                             </button>
