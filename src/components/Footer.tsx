@@ -105,7 +105,7 @@ const Footer = () => {
                         <li><Link to="/city/surat">Packers & Movers Surat</Link></li>
                     </ul>
                 </div>
-                <div className="container">
+                {/* <div className="container">
                     {columns.map((col, i) => (
                         <ul key={i}>
                             {col.map((city) => (
@@ -117,7 +117,7 @@ const Footer = () => {
                             ))}
                         </ul>
                     ))}
-                </div>
+                </div> */}
             </section>
 
             <footer className="footer">
