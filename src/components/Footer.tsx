@@ -5,6 +5,44 @@ import logoImg from "../assets/logo/roundedLogo.png"
 
 
 const Footer = () => {
+
+    const cities = [
+        "Visakhapatnam", "Vijayawada", "Guntur", "Nellore", "Tirupati", "Kakinada", "Rajahmundry",
+        "Itanagar", "Dibrugarh", "Silchar", "Gaya", "Muzaffarpur", "Darbhanga",
+        "Raipur", "Bhilai", "Durg", "Bilaspur",
+        "Rajkot", "Junagadh", "Bhavnagar", "Nadiad", "Valsad",
+        "Hisar", "Panipat", "Rohtak", "Yamunanagar", "Karnal",
+        "Shimla", "Solan", "Mandi",
+        "Srinagar", "Udhampur",
+        "Dhanbad", "Hazaribagh", "Bokaro Steel City",
+        "Bangalore", "Mysore", "Davangere", "Belgaum",
+        "Thiruvananthapuram", "Thrissur", "Palakkad", "Alappuzha",
+        "Jabalpur", "Ujjain", "Sagar", "Satna",
+        "Nagpur", "Solapur", "Amravati", "Sangli", "Akola",
+        "Imphal", "Shillong", "Aizawl", "Kohima", "Dimapur",
+        "Rourkela", "Balasore", "Sambalpur",
+        "Amritsar", "Jalandhar", "Patiala", "Bathinda",
+        "Jaipur", "Jodhpur", "Kota", "Ajmer", "Udaipur",
+        "Gangtok",
+        "Coimbatore", "Madurai", "Tiruchirappalli", "Salem", "Erode", "Vellore",
+        "Warangal", "Karimnagar", "Nizamabad",
+        "Agartala",
+        "Varanasi", "Bareilly", "Gorakhpur", "Moradabad", "Jhansi", "Mathura",
+        "Haridwar", "Rishikesh", "Haldwani",
+        "Asansol", "Durgapur", "Siliguri"
+    ];
+
+    // Helper function to split array into N columns
+    const splitIntoColumns = (arr: string[], numCols: number) => {
+        const cols: string[][] = Array.from({ length: numCols }, () => []);
+        arr.forEach((city, index) => {
+            cols[index % numCols].push(city);
+        });
+        return cols;
+    };
+
+    const numCols = 4; // 4 columns like your previous example
+    const columns = splitIntoColumns(cities, numCols);
     return (
         <>
             <section id="redirect-links">
@@ -66,6 +104,19 @@ const Footer = () => {
                         <li><Link to="/city/pune">Packers & Movers Pune</Link></li>
                         <li><Link to="/city/surat">Packers & Movers Surat</Link></li>
                     </ul>
+                </div>
+                <div className="container">
+                    {columns.map((col, i) => (
+                        <ul key={i}>
+                            {col.map((city) => (
+                                <li key={city}>
+                                    <Link to={`/city/${city.replace(/\s+/g, "")}`}>
+                                        Packers & Movers {city}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    ))}
                 </div>
             </section>
 

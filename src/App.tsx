@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import './App.css'
 import AppRoutes from './routes/AppRoute'
 import CircularProgress from '@mui/material/CircularProgress';
+import Popup from "./components/Popup";
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
   return (
     <>
         <AppRoutes></AppRoutes>
+        <Popup />
     </>
   )
 }

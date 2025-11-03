@@ -1,0 +1,17 @@
+
+@import "../style/variables";
+
+.container-not-found{
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include font-poppins-sans(400);
+
+    .redirect-btn{
+        background: $primary-color;
+    }
+}

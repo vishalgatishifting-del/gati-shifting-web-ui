@@ -246,7 +246,7 @@ const Home: React.FC = () => {
                     ))}
                 </Slider>
             </Box>
-                    <h1 className="trustLine">India’s Trusted Packers & Movers – 24/7 Support</h1>
+                    <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1>
             <motion.div
                 ref={ref1}
                 initial="hidden"
@@ -358,6 +358,7 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
+            <ReviewVideo></ReviewVideo>
 
             <section id="steps-section">
                 <h1>4 Easy Steps to Hire Reliable Movers and Packers</h1>
@@ -395,7 +396,6 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
-            <ReviewVideo></ReviewVideo>
             <GetInTouch></GetInTouch>
             <OfficeLocation />
             <AwardCertification></AwardCertification>

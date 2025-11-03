@@ -31,6 +31,7 @@ import VideoGallery from "../pages/VideoGallery"
 import CityPage from "../pages/CityPage"
 import { pagesData } from "../pages/city-wise-pages-data"
 import { useState } from 'react';
+import NotFound from "../pages/NotFound";
 
 const AppRoutes = () => {
     const [open, setOpen] = useState(false);
@@ -74,6 +75,8 @@ const AppRoutes = () => {
                             </Route>
                         ))
                     }
+                    {/* 404 Page */}
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
             </ScrollToTop>
             <Footer />
