@@ -28,7 +28,7 @@ import logoImg from "../assets/logo/roundedLogo.png"
 const Footer = () => {
 
     const cities = [
-        "Jaipur", "Nagaon", "Thrissur", "Vishakhapatnam", "Tiruvananthapuram"
+        "Jaipur", "Nagaon", "Thrissur", "Vishakhapatnam", "Thiruvananthapuram"
 
     ];
 

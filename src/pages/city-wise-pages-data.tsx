@@ -271,5 +271,5 @@ export const pagesData = [
    { slug: "nagaon", city: "Nagaon", img: Nagaon, offer: "18%", address: "Shop No - 16, raod nagain, Assam Trunk Rd, Panigaon, Nagaon, Assam 782003" },
    { slug: "thrissur", city: "Thrissur", img: Thrissur, offer: "18%", address: "Grama Panchayat Office, near Vallachira, Chathakkudam, Vallachira, Thrissur, Kerala 680562" },
    { slug: "vishakhapatnam", city: "Vishakhapatnam", img: Vishakhapatnam, offer: "18%", address: "LIG 6, B - BLOCK, opposite Durga Naga Lingeswara Swamy Temple, Auto Nagar, Visakhapatnam, Andhra Pradesh 530012" },
-   { slug: "tiruvananthapuram", city: "Tiruvananthapuram", img: Trivandrumpuram, offer: "18%", address: " TC 92/3047, First floor Near Sastha Temple, Service Road, PO, NH66, Anayara, Thiruvananthapuram, Kerala 695029" },
+   { slug: "thiruvananthapuram", city: "Thiruvananthapuram", img: Trivandrumpuram, offer: "18%", address: " TC 92/3047, First floor Near Sastha Temple, Service Road, PO, NH66, Anayara, Thiruvananthapuram, Kerala 695029" },
 ];
