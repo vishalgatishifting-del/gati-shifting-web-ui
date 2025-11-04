@@ -69,7 +69,7 @@ const AppRoutes = () => {
                     {
                         pagesData.map((page) => (
                             <Route path={`/city/${page.slug}`} element={
-                                <CityPage city={page.city} img={page.img} metaData={page.metaDetails} offer={page.offer} pageData={page.pageData}></CityPage>
+                                <CityPage city={page.city} img={page.img} metaData={page.metaDetails} offer={page.offer} pageData={page.pageData} address={page.address}></CityPage>
                             }>
 
                             </Route>

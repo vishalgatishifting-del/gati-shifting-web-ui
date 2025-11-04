@@ -8,6 +8,7 @@ import chargesImg from "../assets/CityPages/packers & movers charges.webp"
 import "./CityPage.scss"
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 interface MetaDataProps {
     title?: string;
@@ -33,8 +34,9 @@ interface PageProps {
     metaData?: MetaDataProps;
     offer?: string;
     pageData?: PageDataProps;
+    address?: string;
 }
-const CityPage: React.FC<PageProps> = ({ city, img, metaData, offer }) => {
+const CityPage: React.FC<PageProps> = ({ city, img, metaData, offer, address }) => {
 
     console.log(img)
     return (
@@ -76,6 +78,7 @@ const CityPage: React.FC<PageProps> = ({ city, img, metaData, offer }) => {
                             <div className="text-area">
                                 <h1>Gati Shifting Packers – Best Packers and Movers in</h1>
                                 <div className="city-name">{city}</div>
+                                <span className="address"><LocationOnIcon></LocationOnIcon>{address}</span>
                                 <h3>🎉 Get {offer} OFF on Your Next Move 🎉</h3>
                                 <Link className="redirect-link" to="/contact-us">Get My Free Quote</Link>
                             </div>
