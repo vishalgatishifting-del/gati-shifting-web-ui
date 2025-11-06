@@ -51,6 +51,16 @@ import Nagaon from "../assets/CityPages/nagaon.webp"
 import Thrissur from "../assets/CityPages/thrissur.webp"
 import Vishakhapatnam from "../assets/CityPages/Visakhapatnam.webp"
 import Trivandrumpuram from "../assets/CityPages/Thiruvananthapuram.webp"
+import Coimbatore from "../assets/CityPages/Coimbatore.webp"
+import Manipur from "../assets/CityPages/manipur.webp"
+import Dimapur from "../assets/CityPages/Dimapur.webp"
+import Shilong from "../assets/CityPages/Shillong.webp"
+import Rishikesh from "../assets/CityPages/Rishikesh.webp"
+import Haridwar from "../assets/CityPages/Haridwar.webp"
+import Gorakhpur from "../assets/CityPages/Gorakhpur.webp"
+import Ranipet from "../assets/CityPages/Ranipet.webp"
+import Amrawati from "../assets/CityPages/Amravati.webp"
+import Jorhat from "../assets/CityPages/Jorhat.webp"
 
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg, offer: "15%", address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007" },
@@ -272,4 +282,14 @@ export const pagesData = [
    { slug: "thrissur", city: "Thrissur", img: Thrissur, offer: "18%", address: "Grama Panchayat Office, near Vallachira, Chathakkudam, Vallachira, Thrissur, Kerala 680562" },
    { slug: "vishakhapatnam", city: "Vishakhapatnam", img: Vishakhapatnam, offer: "18%", address: "LIG 6, B - BLOCK, opposite Durga Naga Lingeswara Swamy Temple, Auto Nagar, Visakhapatnam, Andhra Pradesh 530012" },
    { slug: "thiruvananthapuram", city: "Thiruvananthapuram", img: Trivandrumpuram, offer: "18%", address: " TC 92/3047, First floor Near Sastha Temple, Service Road, PO, NH66, Anayara, Thiruvananthapuram, Kerala 695029" },
+   { slug: "Coimbatore", city: "Coimbatore", img: Coimbatore, offer: "18%", address: "No.18, SS Garden, Post, Sri Suryalakshmi Gardens, Subramaniapalayam, Gounder Mills, Coimbatore, Tamil Nadu 641029" },
+   { slug: "Manipur", city: "Manipur", img: Manipur, offer: "18%", address: "Kakwa, Imphal West, Imphal, Manipur 795008" },
+   { slug: "Dimapur", city: "Dimapur", img: Dimapur, offer: "18%", address: "NST Rd, N.S.T. Colony, Dimapur, Nagaland 797117" },
+   { slug: "Shilong", city: "Shilong", img: Shilong, offer: "18%", address: "Ïewduh, Bara Bazar, Shillong, Meghalaya 793002" },
+   { slug: "Rishikesh", city: "Rishikesh", img: Rishikesh, offer: "18%", address: "Khairi Khurd, and, near Nepali Farm, between, Shyampur, Raiwala, Rishikesh, Uttarakhand 249204" },
+   { slug: "Haridwar", city: "Haridwar", img: Haridwar, offer: "18%", address: "Plot-42, New Transport Nagar, Sarai Road, near Jurs Country, Jwalapur, Uttarakhand 249407" },
+   { slug: "Gorakhpur", city: "Gorakhpur", img: Gorakhpur, offer: "18%", address: " B.O- Nagar Nigam Complex, Shop no.29, Mahewa chowk, Transport Nagar, Gorakhpur, Uttar Pradesh 273016" },
+   { slug: "Ranipet", city: "Ranipet", img: Ranipet, offer: "18%", address: "3, Swamynaidu St, Ranipet, Tamil Nadu 632401" },
+   { slug: "Amrawati", city: "Amrawati", img: Amrawati, offer: "18%", address: "117, old cotton market complex Choudhary Chowk, Maharashtra 444601" },
+   { slug: "Jorhat", city: "Jorhat", img: Jorhat, offer: "18%", address: "AR Complex, Gar-Ali, Jorhat, Assam 785001" },
 ];
