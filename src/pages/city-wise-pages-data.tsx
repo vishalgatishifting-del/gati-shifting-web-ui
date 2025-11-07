@@ -61,6 +61,11 @@ import Gorakhpur from "../assets/CityPages/Gorakhpur.webp"
 import Ranipet from "../assets/CityPages/Ranipet.webp"
 import Amrawati from "../assets/CityPages/Amravati.webp"
 import Jorhat from "../assets/CityPages/Jorhat.webp"
+import Palakkad from "../assets/CityPages/Palakkad.webp"
+import Sambalpur from "../assets/CityPages/Sambalpur.webp"
+import Berhampur from "../assets/CityPages/Berhampur.webp"
+import Imphal from "../assets/CityPages/Imphal.webp"
+import Rourkela from "../assets/CityPages/Rourkela.webp"
 
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg, offer: "15%", address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007" },
@@ -292,4 +297,9 @@ export const pagesData = [
    { slug: "Ranipet", city: "Ranipet", img: Ranipet, offer: "18%", address: "3, Swamynaidu St, Ranipet, Tamil Nadu 632401" },
    { slug: "Amrawati", city: "Amrawati", img: Amrawati, offer: "18%", address: "117, old cotton market complex Choudhary Chowk, Maharashtra 444601" },
    { slug: "Jorhat", city: "Jorhat", img: Jorhat, offer: "18%", address: "AR Complex, Gar-Ali, Jorhat, Assam 785001" },
+   { slug: "Palakkad", city: "Palakkad", img: Palakkad, offer: "22%", address: "Aseena MANZIL, 19/244, Tippusulthan Nagar, Haritha Nagar, West Yakkara, Palakkad, Kerala 678001" },
+   { slug: "Sambalpur", city: "Sambalpur", img: Sambalpur, offer: "22%", address: "National Hwy-06, Rmc Chowk, Remed, Baraipali, Sambalpur, Odisha 768006" },
+   { slug: "Berhampur", city: "Berhampur", img: Berhampur, offer: "22%", address: "At, Andhapasara Rd, near Lions Club Eye Hospital, Mango Market, Gosani Nuagam, Brahmapur, Odisha 760002" },
+   { slug: "Imphal", city: "Imphal", img: Imphal, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
+   { slug: "Rourkela", city: "Rourkela", img: Rourkela, offer: "22%", address: "L-96 Phase 2, Infront of UCO Bank, Basanti Nagar, Rourkela, Odisha 769012" },
 ];
