@@ -17,7 +17,7 @@ import HandshakeIcon from '@mui/icons-material/Handshake';
 import BalanceIcon from '@mui/icons-material/Balance';
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import gatiSlider1 from "../assets/sliderImg/gatislider1.webp"
+// import gatiSlider1 from "../assets/sliderImg/gatislider1.webp"
 import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
 import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
 import gatiSlider4 from "../assets/sliderImg/gatislider4.webp"
