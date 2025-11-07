@@ -33,7 +33,7 @@ import ReviewVideo from "../components/ReviewVideos";
 import { sendEmail } from "../utils/emailHelper";
 import CircularProgress from '@mui/material/CircularProgress';
 import ReCAPTCHA from "react-google-recaptcha"
-
+import gatislider5 from "../assets/sliderImg/gatislider5.webp";
 
 
 
@@ -50,7 +50,7 @@ import ReCAPTCHA from "react-google-recaptcha"
 const Home: React.FC = () => {
 
 
-    const images = [gatiSlider2, gatiSlider1, gatiSlider3, gatiSlider4];
+    const images = [gatiSlider2,  gatiSlider3, gatiSlider4, gatislider5];
 
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
