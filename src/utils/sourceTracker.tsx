@@ -11,6 +11,10 @@ export const getUserSource = () => {
   if (ref.includes("whatsapp")) return "whatsapp";
   if (ref.includes("facebook")) return "facebook";
   if (ref.includes("instagram")) return "instagram";
+  if (ref.includes("justdial")) return "justdial";
+  if (ref.includes("sulekha")) return "sulekha";
+  if (ref.includes("adsense")) return "adsense";
+  if (ref.includes("metaads")) return "metaads";
   if (ref) return "referral";
 
   return "direct";
