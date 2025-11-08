@@ -14,6 +14,7 @@ export const sendEmail = (templateParams: {
   drop_location: string;
   service_detail: string;
   good_type: string;
+  userSource: string;
 }) => {
   return emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
     .then(() => {

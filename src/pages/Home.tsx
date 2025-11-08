@@ -35,6 +35,7 @@ import ReviewVideo from "../components/ReviewVideos";
 import { sendEmail } from "../utils/emailHelper";
 import CircularProgress from '@mui/material/CircularProgress';
 import ReCAPTCHA from "react-google-recaptcha"
+import { getUserSource } from "../utils/SourceTracker";
 
 
 
@@ -159,7 +160,7 @@ const Home: React.FC = () => {
             const apiUrl = "https://icrmondemand.com/wellnect/index.php?entryPoint=CreateEnquiryAPI";
 
             await axios.post(apiUrl, body);
-
+            const userSource = getUserSource();
             const templateParams = {
                 name: formData.name,
                 email: formData.email1,
@@ -168,6 +169,7 @@ const Home: React.FC = () => {
                 drop_location: formData.drop_location_c,
                 service_detail: formData.service_detail_c,
                 good_type: formData.goods_type_c,
+                userSource: userSource
             };
             sendEmail(templateParams)
             setSuccess("Form successfully submitted!");
