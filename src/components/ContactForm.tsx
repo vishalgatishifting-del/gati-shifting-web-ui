@@ -5,6 +5,7 @@ import { sendEmail } from "../utils/emailHelper";
 
 import ReCAPTCHA from "react-google-recaptcha"
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import { getUserSource } from "../utils/sourceTracker";
 
 interface ContactFormProps {
     showDetail?: true | false;
@@ -73,6 +74,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
 
             await axios.post(apiUrl, body);
 
+            const userSource = getUserSource();
             const templateParams = {
                 name: formData.name,
                 email: formData.email1,
@@ -81,6 +83,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
                 drop_location: formData.drop_location_c,
                 service_detail: "NAN. Contact Form Query",
                 good_type: "NAN. Contact Form Query",
+                userSource: userSource
             };
 
             sendEmail(templateParams)
