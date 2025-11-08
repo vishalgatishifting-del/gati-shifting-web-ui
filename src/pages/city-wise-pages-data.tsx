@@ -66,8 +66,8 @@ import Sambalpur from "../assets/CityPages/Sambalpur.webp"
 import Berhampur from "../assets/CityPages/Berhampur.webp"
 import Imphal from "../assets/CityPages/Imphal.webp"
 import Rourkela from "../assets/CityPages/Rourkela.webp"
-import Balasore from "../assets/CityPages/Balasore.webp"
-import Puri from "../assets/CityPages/Puri.webp"
+import Balasore from "../assets/CityPages/balasore.webp"
+import Puri from "../assets/CityPages/puri.webp"
 import Baripada from "../assets/CityPages/Baripada.webp"
 import Jharsuguda from "../assets/CityPages/Jharsuguda.webp"
 import Angul from "../assets/CityPages/Angul.webp"
@@ -227,7 +227,7 @@ export const pagesData = [
 
 
 
-  
+
   {
     slug: "ludhiana", city: "Ludhiana", img: Ludhiana, offer: "15%", address: "Plot 4531, street no. 4, 1, Street Number 5, opposite transport nagar, near Arora clinic, Ludhiana, Punjab 141003", metaDetails: {
       title: "Packers and Movers in Ludhiana | Gati Shifting Packers",
