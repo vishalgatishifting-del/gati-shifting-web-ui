@@ -66,6 +66,11 @@ import Sambalpur from "../assets/CityPages/Sambalpur.webp"
 import Berhampur from "../assets/CityPages/Berhampur.webp"
 import Imphal from "../assets/CityPages/Imphal.webp"
 import Rourkela from "../assets/CityPages/Rourkela.webp"
+import Balasore from "../assets/CityPages/Balasore.webp"
+import Puri from "../assets/CityPages/Puri.webp"
+import Baripada from "../assets/CityPages/Baripada.webp"
+import Jharsuguda from "../assets/CityPages/Jharsuguda.webp"
+import Angul from "../assets/CityPages/Angul.webp"
 
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg, offer: "15%", address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007" },
@@ -196,6 +201,18 @@ export const pagesData = [
       canonical: "https://gatishiftingpackers.com/city/bhopal"
     }
   },
+
+
+
+
+
+
+
+
+
+
+
+
   { slug: "chandigarh", city: "Chandigarh", img: ChandigarhImg, offer: "15%", address: "plot no.261, Transport Area, Sector 26, Chandigarh, 160019" },
   { slug: "dehradun", city: "Dehradun", img: DehradunImg, offer: "15%", address: "Shop - 131, Chandrabani Rd, Chandrabani, Chandrwani Khalsa, Dehradun, Uttarakhand 248002" },
   { slug: "ghaziabad", city: "Ghaziabad", img: GhaziabadImg, offer: "15%", address: "Plot No. 27, Sher Singh Enclave, Main Khera Rd, opp. HP Petrol Pump, Najafgarh, New Delhi, Delhi 110043" },
@@ -203,6 +220,14 @@ export const pagesData = [
   { slug: "indore", city: "Indore", img: Indore, offer: "15%", address: "4/3, opp. Mangal city, Vijay Nagar, Scheme No 54, Indore, Madhya Pradesh 452010" },
   { slug: "jamnagar", city: "Jamnagar", img: Jamnagar, offer: "15%", address: "Shop - 1465, Akhilam Cornar Mayur Villa Road, near Samrpan Circle, Ajanta Society, Jamnagar, Gujarat 361006" },
   { slug: "kolkata", city: "Kolkata", img: Kolkata, offer: "15%", address: "Shop - 176H,  near Ideal Residency, Kadapara, Phool Bagan, Kankurgachi, Kolkata, West Bengal 700054" },
+
+
+
+
+
+
+
+  
   {
     slug: "ludhiana", city: "Ludhiana", img: Ludhiana, offer: "15%", address: "Plot 4531, street no. 4, 1, Street Number 5, opposite transport nagar, near Arora clinic, Ludhiana, Punjab 141003", metaDetails: {
       title: "Packers and Movers in Ludhiana | Gati Shifting Packers",
@@ -410,11 +435,46 @@ export const pagesData = [
       canonical: "https://gatishiftingpackers.com/city/jammu"
     }
   },
-  { slug: "kanpur", city: "Kanpur", img: Kanpur, offer: "15%", address: "Simran Chauraha, near Pratap hotel, Deoki Nagar, Yashoda Nagar, Kanpur, Uttar Pradesh 208011" },
-  { slug: "kottayam", city: "Kottayam", img: Kottayam, offer: "25%", address: "Shop - 964, Puthenparambill, Malloosserry P.O, Kottayam , Pin Kerala, no. 686041" },
-  { slug: "mangalore", city: "Mangalore", img: Mangalore, offer: "25%", address: "Bharathi Residency, Anegundi Rd, Bejai, Mangaluru, Karnataka 575004" },
-  { slug: "nashik", city: "Nashik", img: Nashik, offer: "25%", address: "Laxmi Row House.2, Murlidhar Vyas Colony, Pathardi Phata, Nashik, Maharashtra 422010" },
-  { slug: "noida", city: "Noida", img: Noida, offer: "25%", address: "Shop No.-3, Sector 5, Richpal Garhi, Biharipur Village, Gaur City 2, Greater Noida, Ghaziabad, Uttar Pradesh 201009" },
+  { slug: "kanpur", city: "Kanpur", img: Kanpur, offer: "15%", address: "Simran Chauraha, near Pratap hotel, Deoki Nagar, Yashoda Nagar, Kanpur, Uttar Pradesh 208011", metaDetails: {
+  title: "Packers and Movers in Kanpur | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Kanpur with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Kanpur and across Uttar Pradesh.",
+  keywords: "Local movers near me Kanpur, Packers and Movers in Kanpur, Gati Shifting Packers Kanpur, Best Packers and Movers Kanpur, Affordable Packers and Movers Kanpur, Trusted Packers and Movers Kanpur Uttar Pradesh, Local Packers and Movers Kanpur, Professional Movers and Packers Kanpur, Home Shifting Services Kanpur, Office Relocation Kanpur, Vehicle Transport Kanpur, Car Transport Service Kanpur, Bike Transport Kanpur, Household Goods Shifting Kanpur, Industrial Packers and Movers Kanpur, Door-to-Door Shifting Services Kanpur, Packing and Unpacking Services Kanpur, Furniture Movers Kanpur, Intercity Packers and Movers Kanpur, Packers and Movers Kanpur to Delhi, Packers and Movers Kanpur to Mumbai, Packers and Movers Kanpur to Bengaluru, Packers and Movers Kanpur to Kolkata, Reliable Relocation Company Kanpur, Cost-Effective Packers and Movers Kanpur, Quick Packers and Movers Kanpur, 24x7 Packers and Movers Kanpur, Mini Truck for Shifting Kanpur, Tempo Service Kanpur, Best Relocation Services Kanpur, Safe and Secure Moving Services Kanpur, Budget-Friendly Movers Kanpur, Professional Relocation Company Kanpur, Long-Distance Packers and Movers Kanpur, Trusted Shifting Company Kanpur, Goods Transport Services Kanpur, Moving Experts Kanpur, Packers Movers with Insurance Kanpur, Verified Packers and Movers Kanpur, Logistics and Transport Services Kanpur, Gati Shifting Movers Kanpur, Local Movers Kanpur, Home Shifting Services in Kanpur, Office Shifting Services in Kanpur, Factory Relocation Services Kanpur, Vehicle Shifting Kanpur, Household Shifting Kanpur, Movers and Packers near me Kanpur, Relocation Company in Kanpur, Moving Company Kanpur, IBA Approved Packers and Movers Kanpur, Packers and Movers Kanpur Price, Packers and Movers Kanpur Charges, Packers and Movers Kanpur Cost, Reliable Packers and Movers Kanpur, Door to Door Packers and Movers Kanpur, Packers and Movers for Local Shifting in Kanpur, Packers and Movers for Long Distance in Kanpur, Loading and Unloading Services Kanpur, Warehouse Shifting Kanpur, Logistics Services Kanpur, Transport Services Kanpur, Relocation Company Kanpur Uttar Pradesh, Household Relocation Services Kanpur, Home Packers Kanpur, Professional Packers and Movers Kanpur, Intercity Movers Kanpur, Shifting Services Kanpur, Goods Transport Kanpur, Safe Relocation Services Kanpur, Local Household Movers Kanpur, Best Shifting Company Kanpur, Trusted Relocation Services Kanpur, Gati Shifting Packers and Movers Uttar Pradesh.",
+  ogDescription: "Looking for reliable Packers and Movers in Kanpur? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles in Kanpur and Uttar Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Kanpur by Gati Shifting Packers. Make your relocation smooth and stress-free today!",
+  canonical: "https://gatishiftingpackers.com/city/kanpur"
+} },
+  { slug: "kottayam", city: "Kottayam", img: Kottayam, offer: "25%", address: "Shop - 964, Puthenparambill, Malloosserry P.O, Kottayam , Pin Kerala, no. 686041", metaDetails: {
+  title: "Packers and Movers in Kottayam | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Kottayam with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Kottayam and across Kerala.",
+  keywords: "Local movers near me Kottayam, Packers and Movers in Kottayam, Gati Shifting Packers Kottayam, Best Packers and Movers Kottayam, Affordable Packers and Movers Kottayam, Trusted Packers and Movers Kottayam Kerala, Local Packers and Movers Kottayam, Professional Movers and Packers Kottayam, Home Shifting Services Kottayam, Office Relocation Kottayam, Vehicle Transport Kottayam, Car Transport Service Kottayam, Bike Transport Kottayam, Household Goods Shifting Kottayam, Industrial Packers and Movers Kottayam, Door-to-Door Shifting Services Kottayam, Packing and Unpacking Services Kottayam, Furniture Movers Kottayam, Intercity Packers and Movers Kottayam, Packers and Movers Kottayam to Delhi, Packers and Movers Kottayam to Mumbai, Packers and Movers Kottayam to Bengaluru, Packers and Movers Kottayam to Kolkata, Reliable Relocation Company Kottayam, Cost-Effective Packers and Movers Kottayam, Quick Packers and Movers Kottayam, 24x7 Packers and Movers Kottayam, Mini Truck for Shifting Kottayam, Tempo Service Kottayam, Best Relocation Services Kottayam, Safe and Secure Moving Services Kottayam, Budget-Friendly Movers Kottayam, Professional Relocation Company Kottayam, Long-Distance Packers and Movers Kottayam, Trusted Shifting Company Kottayam, Goods Transport Services Kottayam, Moving Experts Kottayam, Packers Movers with Insurance Kottayam, Verified Packers and Movers Kottayam, Logistics and Transport Services Kottayam, Gati Shifting Movers Kottayam, Local Movers Kottayam, Home Shifting Services in Kottayam, Office Shifting Services in Kottayam, Factory Relocation Services Kottayam, Vehicle Shifting Kottayam, Household Shifting Kottayam, Movers and Packers near me Kottayam, Relocation Company in Kottayam, Moving Company Kottayam, IBA Approved Packers and Movers Kottayam, Packers and Movers Kottayam Price, Packers and Movers Kottayam Charges, Packers and Movers Kottayam Cost, Reliable Packers and Movers Kottayam, Door to Door Packers and Movers Kottayam, Packers and Movers for Local Shifting in Kottayam, Packers and Movers for Long Distance in Kottayam, Loading and Unloading Services Kottayam, Warehouse Shifting Kottayam, Logistics Services Kottayam, Transport Services Kottayam, Relocation Company Kottayam Kerala, Household Relocation Services Kottayam, Home Packers Kottayam, Professional Packers and Movers Kottayam, Intercity Movers Kottayam, Shifting Services Kottayam, Goods Transport Kottayam, Safe Relocation Services Kottayam, Local Household Movers Kottayam, Best Shifting Company Kottayam, Trusted Relocation Services Kottayam, Gati Shifting Packers and Movers Kerala, Gati Shifting Relocation Services Kottayam, Gati Shifting Logistics Kottayam, Gati Shifting Packers for Home Shifting Kottayam, Gati Shifting Packers Office Movers Kottayam, Gati Shifting Packers Affordable Moving Kottayam.",
+  ogDescription: "Looking for reliable Packers and Movers in Kottayam? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles in Kottayam and Kerala.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Kottayam by Gati Shifting Packers. Make your relocation smooth and stress-free today!",
+  canonical: "https://gatishiftingpackers.com/city/kottayam"
+} },
+  { slug: "mangalore", city: "Mangalore", img: Mangalore, offer: "25%", address: "Bharathi Residency, Anegundi Rd, Bejai, Mangaluru, Karnataka 575004", metaDetails: {
+  title: "Packers and Movers in Mangalore | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Mangalore with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Mangalore and across Karnataka.",
+  keywords: "Local movers near me Mangalore, Packers and Movers in Mangalore, Gati Shifting Packers Mangalore, Best Packers and Movers Mangalore, Affordable Packers and Movers Mangalore, Trusted Packers and Movers Mangalore Karnataka, Local Packers and Movers Mangalore, Professional Movers and Packers Mangalore, Home Shifting Services Mangalore, Office Relocation Mangalore, Vehicle Transport Mangalore, Car Transport Service Mangalore, Bike Transport Mangalore, Household Goods Shifting Mangalore, Industrial Packers and Movers Mangalore, Door-to-Door Shifting Services Mangalore, Packing and Unpacking Services Mangalore, Furniture Movers Mangalore, Intercity Packers and Movers Mangalore, Packers and Movers Mangalore to Delhi, Packers and Movers Mangalore to Mumbai, Packers and Movers Mangalore to Bengaluru, Packers and Movers Mangalore to Kolkata, Reliable Relocation Company Mangalore, Cost-Effective Packers and Movers Mangalore, Quick Packers and Movers Mangalore, 24x7 Packers and Movers Mangalore, Mini Truck for Shifting Mangalore, Tempo Service Mangalore, Best Relocation Services Mangalore, Safe and Secure Moving Services Mangalore, Budget-Friendly Movers Mangalore, Professional Relocation Company Mangalore, Long-Distance Packers and Movers Mangalore, Trusted Shifting Company Mangalore, Goods Transport Services Mangalore, Moving Experts Mangalore, Packers Movers with Insurance Mangalore, Verified Packers and Movers Mangalore.",
+  ogDescription: "Looking for reliable Packers and Movers in Mangalore? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles in Mangalore and Karnataka.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Mangalore by Gati Shifting Packers. Make your relocation smooth and stress-free today!",
+  canonical: "https://gatishiftingpackers.com/city/mangalore"
+} },
+  { slug: "nashik", city: "Nashik", img: Nashik, offer: "25%", address: "Laxmi Row House.2, Murlidhar Vyas Colony, Pathardi Phata, Nashik, Maharashtra 422010", metaDetails: {
+  title: "Packers and Movers in Nashik | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Nashik with Gati Shifting Packers. We provide secure, affordable and professional home, office, and vehicle relocation services in Nashik and across Maharashtra.",
+  keywords: "Local movers near me Nashik, Packers and Movers in Nashik, Gati Shifting Packers Nashik, Best Packers and Movers Nashik, Affordable Packers and Movers Nashik, Trusted Packers and Movers Nashik Maharashtra, Local Packers and Movers Nashik, Professional Movers and Packers Nashik, Home Shifting Services Nashik, Office Relocation Nashik, Vehicle Transport Nashik, Car Transport Service Nashik, Bike Transport Nashik, Household Goods Shifting Nashik, Industrial Packers and Movers Nashik, Door-to-Door Shifting Services Nashik, Packing and Unpacking Services Nashik, Furniture Movers Nashik, Intercity Packers and Movers Nashik, Packers and Movers Nashik to Delhi, Packers and Movers Nashik to Mumbai, Packers and Movers Nashik to Bengaluru, Packers and Movers Nashik to Kolkata, Reliable Relocation Company Nashik, Cost-Effective Packers and Movers Nashik, Quick Packers and Movers Nashik, 24x7 Packers and Movers Nashik, Mini Truck for Shifting Nashik, Tempo Service Nashik, Best Relocation Services Nashik, Safe and Secure Moving Services Nashik, Budget-Friendly Movers Nashik, Professional Relocation Company Nashik, Long-Distance Packers and Movers Nashik, Trusted Shifting Company Nashik, Goods Transport Services Nashik, Moving Experts Nashik, Packers Movers with Insurance Nashik, Verified Packers and Movers Nashik, Logistics and Transport Services Nashik, Gati Shifting Movers Nashik, Local Movers Nashik, Home Shifting Services in Nashik, Office Shifting Services in Nashik, Factory Relocation Services Nashik, Vehicle Shifting Nashik, Household Shifting Nashik, Movers and Packers near me Nashik, Relocation Company in Nashik, Moving Company Nashik, IBA Approved Packers and Movers Nashik, Packers and Movers Nashik Price, Packers and Movers Nashik Charges, Packers and Movers Nashik Cost, Reliable Packers and Movers Nashik, Door to Door Packers and Movers Nashik, Packers and Movers for Local Shifting in Nashik, Packers and Movers for Long Distance in Nashik, Loading and Unloading Services Nashik, Warehouse Shifting Nashik, Logistics Services Nashik, Transport Services Nashik, Relocation Company Nashik Maharashtra, Household Relocation Services Nashik, Home Packers Nashik, Professional Packers and Movers Nashik, Intercity Movers Nashik, Shifting Services Nashik, Goods Transport Nashik, Safe Relocation Services Nashik.",
+  ogDescription: "Looking for reliable Packers and Movers in Nashik? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles in Nashik and Maharashtra.",
+  twitterDescription: "Safe, professional, and affordable Packers and Movers in Nashik by Gati Shifting Packers. Make your relocation smooth and stress-free today!",
+  canonical: "https://gatishiftingpackers.com/city/nashik"
+} },
+  { slug: "noida", city: "Noida", img: Noida, offer: "25%", address: "Shop No.-3, Sector 5, Richpal Garhi, Biharipur Village, Gaur City 2, Greater Noida, Ghaziabad, Uttar Pradesh 201009", metaDetails: {
+  title: "Packers and Movers in Noida | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Noida with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Noida and the Delhi NCR region.",
+  keywords: "Local movers near me Noida, Packers and Movers in Noida, Gati Shifting Packers Noida, Best Packers and Movers Noida, Affordable Packers and Movers Noida, Trusted Packers and Movers Noida Uttar Pradesh, Local Packers and Movers Noida, Professional Movers and Packers Noida, Home Shifting Services Noida, Office Relocation Noida, Vehicle Transport Noida, Car Transport Service Noida, Bike Transport Noida, Household Goods Shifting Noida, Industrial Packers and Movers Noida, Door-to-Door Shifting Services Noida, Packing and Unpacking Services Noida, Furniture Movers Noida, Intercity Packers and Movers Noida, Packers and Movers Noida to Delhi, Packers and Movers Noida to Mumbai, Packers and Movers Noida to Bengaluru, Packers and Movers Noida to Kolkata, Reliable Relocation Company Noida, Cost-Effective Packers and Movers Noida, Quick Packers and Movers Noida, 24x7 Packers and Movers Noida, Mini Truck for Shifting Noida, Tempo Service Noida, Best Relocation Services Noida, Safe and Secure Moving Services Noida, Budget-Friendly Movers Noida, Professional Relocation Company Noida, Long-Distance Packers and Movers Noida, Trusted Shifting Company Noida, Goods Transport Services Noida, Moving Experts Noida.",
+  ogDescription: "Looking for reliable Packers and Movers in Noida? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles in Noida and the Delhi NCR region.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Noida by Gati Shifting Packers. Make your relocation smooth and stress-free today!",
+  canonical: "https://gatishiftingpackers.com/city/noida"
+} },
   { slug: "patna", city: "Patna", img: Patna, offer: "25%", address: "1st Floor, M.Gandhi Setu Path, near Bharat Petrol Pump, Zero Mile, Chhoti Pahari, Patna, Bihar 800007" },
   { slug: "pune", city: "Pune", img: Pune, offer: "25%", address: "Flat No 201, near Fire Station Office, Amanora Park Town, Hadapsar, Pune, Maharashtra 411028" },
   { slug: "surat", city: "Surat", img: Surat, offer: "25%", address: "Shop - 120, Raj Corner Shopping Centre, M-14, Pal Rd, Adajan, Surat, Gujarat 394510" },
@@ -438,4 +498,9 @@ export const pagesData = [
   { slug: "Berhampur", city: "Berhampur", img: Berhampur, offer: "22%", address: "At, Andhapasara Rd, near Lions Club Eye Hospital, Mango Market, Gosani Nuagam, Brahmapur, Odisha 760002" },
   { slug: "Imphal", city: "Imphal", img: Imphal, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
   { slug: "Rourkela", city: "Rourkela", img: Rourkela, offer: "22%", address: "L-96 Phase 2, Infront of UCO Bank, Basanti Nagar, Rourkela, Odisha 769012" },
+  { slug: "Balasore", city: "Balasore", img: Balasore, offer: "22%", address: "Plot No- 986, Padhuan Pada, Bhoisahi, Balasore, Odisha 756001" },
+  { slug: "Puri", city: "Puri", img: Puri, offer: "22%", address: "Balikuda Sahi, Puri, Odisha 752002" },
+  { slug: "Baripada", city: "Baripada", img: Baripada, offer: "22%", address: "Khata No -351, Raghunathpur, Kainfulia, Baripada, Odisha 757107" },
+  { slug: "Jharsuguda", city: "Jharsuguda", img: Jharsuguda, offer: "22%", address: "Block No- 1, Shop No-1, Amrita Complex near, near Bombay Chowk, Jharsuguda, Odisha 768203" },
+  { slug: "Angul", city: "Angul", img: Angul, offer: "22%", address: "Bus Stand, Kaniha - Angul Rd, near Hanuman Temple, Amalapada, Angul, Odisha 759122" },
 ];
