@@ -21,6 +21,8 @@ import { useInView } from "react-intersection-observer";
 import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
 import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
 import gatiSlider4 from "../assets/sliderImg/gatislider4.webp"
+import gatislider5 from "../assets/sliderImg/gatislider5.webp";
+import gatislider6 from "../assets/sliderImg/gatislider6.webp";
 import FAQList from "../components/FAQList";
 import OfficeLocation from "../components/OfficeLocation";
 import axios from "axios";
@@ -33,7 +35,6 @@ import ReviewVideo from "../components/ReviewVideos";
 import { sendEmail } from "../utils/emailHelper";
 import CircularProgress from '@mui/material/CircularProgress';
 import ReCAPTCHA from "react-google-recaptcha"
-import gatislider5 from "../assets/sliderImg/gatislider5.webp";
 
 
 
@@ -50,7 +51,7 @@ import gatislider5 from "../assets/sliderImg/gatislider5.webp";
 const Home: React.FC = () => {
 
 
-    const images = [gatiSlider2,  gatiSlider3, gatiSlider4, gatislider5];
+    const images = [gatiSlider2,  gatiSlider3, gatiSlider4, gatislider5, gatislider6];
 
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
