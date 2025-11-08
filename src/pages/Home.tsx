@@ -172,6 +172,7 @@ const Home: React.FC = () => {
                 userSource: userSource
             };
             sendEmail(templateParams)
+            console.log("source of this is: ", userSource)
             setSuccess("Form successfully submitted!");
 
             setFormData({
