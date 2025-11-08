@@ -17,5 +17,11 @@ export const getUserSource = () => {
   if (ref.includes("metaads")) return "metaads";
   if (ref) return "referral";
 
+  // Whatsapp = http://localhost:5173/?utm_source=whatsapp
+  // Facebook = http://localhost:5173/?utm_source=facebook
+  // Instagram = http://localhost:5173/?utm_source=instagram
+  // Justdial = http://localhost:5173/?utm_source=justdial
+  // Sulekha = http://localhost:5173/?utm_source=sulekha
+
   return "direct";
 };
