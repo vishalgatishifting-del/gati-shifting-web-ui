@@ -594,7 +594,7 @@ export const pagesData = [
 
   
   { slug: "Whitefield", city: "Whitefield", img: Whitefield, offer: "19%", address: "Shop No - 9, Borewell Rd, Palm Meadows, Dodsworth Layout, Whitefield, Bengaluru, Karnataka 560066" },
-  { slug: "Electronic City", city: "Electronic City", img: Electronic_City, offer: "19%", address: "Shop 104, Bettadasanapura Main Rd, Doddathoguru, Electronic City Phase I, Electronic City, Bengaluru, Karnataka 560100" },
+  { slug: "Electronic-City", city: "Electronic City", img: Electronic_City, offer: "19%", address: "Shop 104, Bettadasanapura Main Rd, Doddathoguru, Electronic City Phase I, Electronic City, Bengaluru, Karnataka 560100" },
   { slug: "Koramangala", city: "Koramangala", img: Koramangala, offer: "19%", address: "KHB Block Koramangala, Koramangala 4-B Block, Koramangala, Bengaluru, Karnataka 560022" },
   { slug: "Indiranagar", city: "Indiranagar", img: Indiranagar, offer: "19%", address: "13th Cross Rd, Stage 2, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560008" },
   { slug: "Marathahalli", city: "Marathahalli", img: Marathahalli, offer: "19%", address: "Ganesha Temple Street, 37, 2nd Cross, Marathahalli Village, Marathahalli, Bengaluru, Karnataka 560037" },
