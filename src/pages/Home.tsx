@@ -34,8 +34,10 @@ import ReviewVideo from "../components/ReviewVideos";
 // import emailjs from 'emailjs-com';
 import { sendEmail } from "../utils/emailHelper";
 import CircularProgress from '@mui/material/CircularProgress';
-import ReCAPTCHA from "react-google-recaptcha"
+// import ReCAPTCHA from "react-google-recaptcha"
 import { getUserSource } from "../utils/sourceTracker";
+
+import Captcha from "../components/Captcha";
 
 
 
@@ -51,11 +53,13 @@ import { getUserSource } from "../utils/sourceTracker";
 
 const Home: React.FC = () => {
 
+    const captchaRef = useRef<{ validate: () => boolean }>(null);
 
-    const images = [gatiSlider2,  gatiSlider3, gatiSlider4, gatislider5, gatislider6];
+    const images = [gatiSlider2, gatiSlider3, gatiSlider4, gatislider5, gatislider6];
 
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
+
 
 
 
@@ -120,7 +124,6 @@ const Home: React.FC = () => {
 
     const [loading, setLoading] = useState(false);
     const [success, setSuccess] = useState("");
-    const [captchaValue, setCaptchaValue] = useState<string | null>(null);
     const recaptchaRef = useRef<any>(null); // 👈 Ref banaya
 
 
@@ -134,9 +137,10 @@ const Home: React.FC = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-
-        if (!captchaValue) {
-            alert("Please verify that you're not a robot!");
+        const isCaptchaValid = captchaRef.current?.validate();
+        console.log(isCaptchaValid)
+        if (!isCaptchaValid) {
+            alert("Incorrect Recaptcha");
             return;
         }
         setLoading(true);
@@ -185,7 +189,6 @@ const Home: React.FC = () => {
                 goods_type_c: text, // reset with current tab
             });
             recaptchaRef.current?.reset();
-            setCaptchaValue(null);
 
         } catch (error) {
             console.error("Error submitting form:", error);
@@ -194,7 +197,6 @@ const Home: React.FC = () => {
             setLoading(false);
         }
     };
-
 
 
     return (
@@ -250,7 +252,7 @@ const Home: React.FC = () => {
                     ))}
                 </Slider>
             </Box>
-                    <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1>
+            <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1>
             <motion.div
                 ref={ref1}
                 initial="hidden"
@@ -325,22 +327,23 @@ const Home: React.FC = () => {
                         <h3>Get a free <span>{text}</span> Quote</h3>
                         <i>We’ll call you within 15 minutes</i>
 
-                        <form onSubmit={handleSubmit}>
+                        <form>
                             <input type="text" placeholder="Full Name*" name="name" onChange={handleChange} value={formData.name} required />
                             <input type="text" placeholder="Mobile No*" name="phone_office" onChange={handleChange} value={formData.phone_office} required />
                             <input type="text" placeholder="Email ID" name="email1" onChange={handleChange} value={formData.email1} required />
                             <input type="text" placeholder={from} name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} required />
                             <input type="text" placeholder={to} name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required />
                             <input type="text" placeholder={type} name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required />
-                            <ReCAPTCHA
+                            {/* <ReCAPTCHA
                                 ref={recaptchaRef}
                                 sitekey="6LfaOf4rAAAAAGZBXvb01FTAtYQoh0UXm4ChBDHV"
                                 onChange={(value: string | null) => setCaptchaValue(value)}
-                            />
-                            <button className="form-submit-btn" type="submit" disabled={loading}>
+                            /> */}
+                        </form>
+                            <Captcha  ref={captchaRef}/>
+                            <button onClick={handleSubmit} className="form-submit-btn" type="submit" disabled={loading}>
                                 {loading ? <CircularProgress size="30px" /> : "Get Free Quote"}
                             </button>
-                        </form>
                         <span className="success-msg">{success && <p>{success}</p>}</span>
                     </div>
                 </div>
