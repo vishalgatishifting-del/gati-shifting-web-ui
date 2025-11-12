@@ -176,7 +176,11 @@ const Home: React.FC = () => {
                 userSource: userSource
             };
             sendEmail(templateParams)
-            console.log("source of this is: ", userSource)
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17573064597/5JeFCIznu74bEJXfvrtB',
+                'value': 1.0,
+                'currency': 'INR'
+            });
             setSuccess("Form successfully submitted!");
 
             setFormData({
@@ -340,10 +344,10 @@ const Home: React.FC = () => {
                                 onChange={(value: string | null) => setCaptchaValue(value)}
                             /> */}
                         </form>
-                            <Captcha  ref={captchaRef}/>
-                            <button onClick={handleSubmit} className="form-submit-btn" type="submit" disabled={loading}>
-                                {loading ? <CircularProgress size="30px" /> : "Get Free Quote"}
-                            </button>
+                        <Captcha ref={captchaRef} />
+                        <button onClick={handleSubmit} className="form-submit-btn" type="submit" disabled={loading}>
+                            {loading ? <CircularProgress size="30px" /> : "Get Free Quote"}
+                        </button>
                         <span className="success-msg">{success && <p>{success}</p>}</span>
                     </div>
                 </div>
