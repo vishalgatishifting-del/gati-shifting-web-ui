@@ -90,7 +90,7 @@ const Captcha = forwardRef((props: CaptchaProps, ref) => {
       <div className="captcha-char-container">
         <canvas
           ref={canvasRef}
-          width={150}
+          width={140}
           height={50}
         />
 

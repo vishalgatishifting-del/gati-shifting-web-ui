@@ -83,6 +83,11 @@ import Electronic_City from "../assets/CityPages/Electronic City.webp"
 import Koramangala from "../assets/CityPages/Koramangala.webp"
 import Indiranagar from "../assets/CityPages/Indiranagar.webp"
 import Marathahalli from "../assets/CityPages/Marathahalli.webp"
+import Yelahanka from "../assets/CityPages/Yelahanka.webp"
+import Jayanagar from "../assets/CityPages/Jayanagar.webp"
+import Rajajinagar from "../assets/CityPages/Rajajinagar.webp"
+import HSR_Layout from "../assets/CityPages/HSR Layout.webp"
+import BTM_Layout from "../assets/CityPages/BTM Layout.webp"
 
 
 export const pagesData = [
@@ -598,4 +603,11 @@ export const pagesData = [
   { slug: "Koramangala", city: "Koramangala", img: Koramangala, offer: "19%", address: "KHB Block Koramangala, Koramangala 4-B Block, Koramangala, Bengaluru, Karnataka 560022" },
   { slug: "Indiranagar", city: "Indiranagar", img: Indiranagar, offer: "19%", address: "13th Cross Rd, Stage 2, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560008" },
   { slug: "Marathahalli", city: "Marathahalli", img: Marathahalli, offer: "19%", address: "Ganesha Temple Street, 37, 2nd Cross, Marathahalli Village, Marathahalli, Bengaluru, Karnataka 560037" },
+
+  { slug: "Yelahanka", city: "Yelahanka", img: Yelahanka, offer: "24%", address: "Bellary Rd, Palanahalli, Maruthi Nagar, Yelahanka, Bengaluru, Karnataka 560064" },
+  { slug: "Jayanagar", city: "Jayanagar", img: Jayanagar, offer: "24%", address: "7th Main Rd, 4th Block, Jayanagar, Bengaluru, Karnataka 560011" },
+  { slug: "Rajajinagar", city: "Rajajinagar", img: Rajajinagar, offer: "24%", address: "17th E Main Rd, 5th Block, Rajajinagar, Bengaluru, Karnataka 560010" },
+  { slug: "HSR-Layout", city: "HSR Layout", img: HSR_Layout, offer: "24%", address: "256, 7th St, Sector 2, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102" },
+  { slug: "BTM-Layout", city: "BTM Layout", img: BTM_Layout, offer: "24%", address: "Masjid Omar Farooq Complex, No. 24, Shop 5, 1st Floor, 8th Cross, 20th Main, BTM Layout, Bengaluru, Karnataka 560068" },
+
 ];
