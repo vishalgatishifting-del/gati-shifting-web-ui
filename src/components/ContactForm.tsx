@@ -87,7 +87,11 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
             };
 
             sendEmail(templateParams)
-
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17573064597/5JeFCIznu74bEJXfvrtB',
+                'value': 1.0,
+                'currency': 'INR'
+            });
             setSuccess("Form successfully submitted!");
 
             setFormData({ name: "", email1: "", phone_office: "", pickup_location_c: "", drop_location_c: "", service_detail_c: "" });
