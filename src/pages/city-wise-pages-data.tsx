@@ -89,6 +89,12 @@ import Rajajinagar from "../assets/CityPages/Rajajinagar.webp"
 import HSR_Layout from "../assets/CityPages/HSR Layout.webp"
 import BTM_Layout from "../assets/CityPages/BTM Layout.webp"
 
+import Hebbal from "../assets/CityPages/Hebbal.webp"
+import Malleshwaram from "../assets/CityPages/Malleshwaram.webp"
+import Kalyan_Dombivli from "../assets/CityPages/Kalyan-Dombivli.webp"
+import Banashankari from "../assets/CityPages/Banashankari.webp"
+import Nagpur from "../assets/CityPages/nagpur.webp"
+
 
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg, offer: "15%", address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007" },
@@ -644,5 +650,12 @@ export const pagesData = [
   { slug: "Rajajinagar", city: "Rajajinagar", img: Rajajinagar, offer: "24%", address: "17th E Main Rd, 5th Block, Rajajinagar, Bengaluru, Karnataka 560010" },
   { slug: "HSR-Layout", city: "HSR Layout", img: HSR_Layout, offer: "24%", address: "256, 7th St, Sector 2, 1st Sector, HSR Layout, Bengaluru, Karnataka 560102" },
   { slug: "BTM-Layout", city: "BTM Layout", img: BTM_Layout, offer: "24%", address: "Masjid Omar Farooq Complex, No. 24, Shop 5, 1st Floor, 8th Cross, 20th Main, BTM Layout, Bengaluru, Karnataka 560068" },
+
+  { slug: "Hebbal", city: "Hebbal", img: Hebbal, offer: "27%", address: "Mariya St, opposite Kensari School, Fortune Valley, Mariyan Palya, Hebbal, Bengaluru, Karnataka 560045" },
+  { slug: "Malleshwaram", city: "Malleshwaram", img: Malleshwaram, offer: "27%", address: "V8, Dattathreya Temple Road, 10th Cross Road, Pipeline, Malleshwaram, Bengaluru, Karnataka 56000" },
+  { slug: "Kalyan-Dombivli", city: "Kalyan-Dombivli", img: Kalyan_Dombivli, offer: "27%", address: "Gala No 6, Shree Swami Samarth CHS, Regency Estate Rd, near Church, Prayag Nagar, Dawadi, Dombivli, Maharashtra 421201" },
+  { slug: "Banashankari", city: "Banashankari", img: Banashankari, offer: "27%", address: "11th Main, 50 Feet Main Rd, Nagendra Block, Banashankari 1st Stage, Bengaluru, Karnataka 560050" },
+  { slug: "Nagpur", city: "Nagpur", img: Nagpur, offer: "27%", address: "Plot 56, Rai Vatika , Row House, Khadgaon Rd, Sonba Nagar, Wadi, Nagpur, Davlameti, Maharashtra 440021" },
+
 
 ];
