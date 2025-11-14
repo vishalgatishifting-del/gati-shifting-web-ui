@@ -95,6 +95,13 @@ import Kalyan_Dombivli from "../assets/CityPages/Kalyan-Dombivli.webp"
 import Banashankari from "../assets/CityPages/Banashankari.webp"
 import Nagpur from "../assets/CityPages/nagpur.webp"
 
+import Solapur from "../assets/CityPages/Solapur.webp"
+import Sangli from "../assets/CityPages/Sangli.webp"
+import Jalgaon from "../assets/CityPages/Jalgaon.webp"
+import Akola from "../assets/CityPages/Akola.webp"
+import Latur from "../assets/CityPages/Latur.webp"
+
+
 
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg, offer: "15%", address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007" },
@@ -656,6 +663,13 @@ export const pagesData = [
   { slug: "Kalyan-Dombivli", city: "Kalyan-Dombivli", img: Kalyan_Dombivli, offer: "27%", address: "Gala No 6, Shree Swami Samarth CHS, Regency Estate Rd, near Church, Prayag Nagar, Dawadi, Dombivli, Maharashtra 421201" },
   { slug: "Banashankari", city: "Banashankari", img: Banashankari, offer: "27%", address: "11th Main, 50 Feet Main Rd, Nagendra Block, Banashankari 1st Stage, Bengaluru, Karnataka 560050" },
   { slug: "Nagpur", city: "Nagpur", img: Nagpur, offer: "27%", address: "Plot 56, Rai Vatika , Row House, Khadgaon Rd, Sonba Nagar, Wadi, Nagpur, Davlameti, Maharashtra 440021" },
+
+  { slug: "Solapur", city: "Solapur", img: Solapur, offer: "18%", address: "Shop no 2, Chinmay Apartment, 133, Modi Khana, Navi Peth, Solapur, Maharashtra 413001" },
+  { slug: "Sangli", city: "Sangli", img: Sangli, offer: "18%", address: "Madhavnagar Rd, behind SadaShiv Petrol Pump, Chavan Colony, Sangli, Sangli Miraj Kupwad, Maharashtra 416416" },
+  { slug: "Jalgaon", city: "Jalgaon", img: Jalgaon, offer: "18%", address: " 110, BPCL Rd, MIDC, Jalgaon, Maharashtra 425003" },
+  { slug: "Akola", city: "Akola", img: Akola, offer: "18%", address: "1268, Gali No. 42, Oppsite Sadguru Indian Gas Agency, 2, Old RTO Rd, Giri Nagar, Akola, Maharashtra 444004" },
+  { slug: "Latur", city: "Latur", img: Latur, offer: "18%", address: "Address: Global Knowledge Rd, Avanti Nagar, Walmiki Nagar, Latur, Maharashtra 413531" },
+
 
 
 ];
