@@ -110,6 +110,14 @@ import Parbhani from "../assets/CityPages/Parbhani.webp"
 import Nanded from "../assets/CityPages/Nanded.webp"
 
 
+import Wardha from "../assets/CityPages/Wardha.webp"
+import Satara from "../assets/CityPages/Satara.webp"
+import Ratnagiri from "../assets/CityPages/Ratnagiri.webp"
+import Palghar from "../assets/CityPages/Palghar.webp"
+import Basavanagudi from "../assets/CityPages/Basavanagudi.webp"
+
+
+
 
 
 export const pagesData = [
@@ -752,13 +760,19 @@ export const pagesData = [
 
 
 
-  { slug: "Dhule", city: "Dhule", img: Dhule, offer: "18%", address: " Ansar Nagar, Dhule, Maharashtra 424001" },
-  { slug: "Ahmednagar", city: "Ahmednagar", img: Ahmednagar, offer: "18%", address: "H.No 8, 46/A, Shivnagar, Fakir Wada, Nirmal Nagar, Ahmadnagar, Maharashtra 414001" },
-  { slug: "Chandrapur", city: "Chandrapur", img: Chandrapur, offer: "18%", address: "Ward No 1, Mukti Apartment, Shop No 4/1, Urja Nagar, Chandrapur, Maharashtra 442401" },
-  { slug: "Parbhani", city: "Parbhani", img: Parbhani, offer: "18%", address: "Karegaon Rd, near sidhivinak mandir, near deshmukh hotel, Samzota Colony, Vaibhav Nagar, Parbhani, Maharashtra 431401" },
-  { slug: "Nanded", city: "Nanded", img: Nanded, offer: "18%", address: "ahyog nagar, P. No. 371, Airport Rd, Irrigation Colony, Peer Burhan Nagar, Taroda Kh., Taroda Bk., Maharashtra 431605" },
+  { slug: "Dhule", city: "Dhule", img: Dhule, offer: "15%", address: " Ansar Nagar, Dhule, Maharashtra 424001" },
+  { slug: "Ahmednagar", city: "Ahmednagar", img: Ahmednagar, offer: "15%", address: "H.No 8, 46/A, Shivnagar, Fakir Wada, Nirmal Nagar, Ahmadnagar, Maharashtra 414001" },
+  { slug: "Chandrapur", city: "Chandrapur", img: Chandrapur, offer: "15%", address: "Ward No 1, Mukti Apartment, Shop No 4/1, Urja Nagar, Chandrapur, Maharashtra 442401" },
+  { slug: "Parbhani", city: "Parbhani", img: Parbhani, offer: "15%", address: "Karegaon Rd, near sidhivinak mandir, near deshmukh hotel, Samzota Colony, Vaibhav Nagar, Parbhani, Maharashtra 431401" },
+  { slug: "Nanded", city: "Nanded", img: Nanded, offer: "15%", address: "ahyog nagar, P. No. 371, Airport Rd, Irrigation Colony, Peer Burhan Nagar, Taroda Kh., Taroda Bk., Maharashtra 431605" },
 
 
+
+  { slug: "Wardha", city: "Wardha", img: Wardha, offer: "17%", address: "Paloti-Wardha Rd, Narde Layout, Madni, Wardha, Maharashtra 442201" },
+  { slug: "Satara", city: "Satara", img: Satara, offer: "17%", address: "Ravivar Peth Market Yard Near Prakash Lodge Opp. City Chicken Center,, Satara, Maharashtra 415001" },
+  { slug: "Ratnagiri", city: "Ratnagiri", img: Ratnagiri, offer: "17%", address: "Suyash Apartment-1, Gala No. 5 C/o. Chougule Transport, Salvi Stop, Maharashtra 415639" },
+  { slug: "Palghar", city: "Palghar", img: Palghar, offer: "17%", address: "Old Registration Office, Gala No.29, Gurunanak Apartment, near Bandhan Bank, Palghar West, Palghar, Maharashtra 401404" },
+  { slug: "Basavanagudi", city: "Basavanagudi", img: Basavanagudi, offer: "17%", address: "Shop No 2, Rameshwara Temple Rd, New Patnool Pet, 1st Main, Chamrajpet, Bengaluru, Karnataka 560018" },
 
 
 ];
