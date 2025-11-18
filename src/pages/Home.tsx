@@ -27,7 +27,7 @@ import FAQList from "../components/FAQList";
 import OfficeLocation from "../components/OfficeLocation";
 import axios from "axios";
 import GetInTouch from "../components/GetInTouch";
-import AwardCertification from "../components/AwardCertification";
+// import AwardCertification from "../components/AwardCertification";
 import TrustUsSection from "../components/TrustUsSection";
 import ReviewVideo from "../components/ReviewVideos";
 
@@ -38,6 +38,12 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { getUserSource } from "../utils/sourceTracker";
 
 import Captcha from "../components/Captcha";
+
+
+import truckPng from "../assets/homePagePng/Gemini_Generated_Image_2zntak2zntak2znt.png"
+import cityPng from "../assets/homePagePng/Gemini_Generated_Image_lfceqflfceqflfce.png"
+import verifiedBadgePng from "../assets/homePagePng/Gemini_Generated_Image_seeh1bseeh1bseeh.png"
+import peoplesPng from "../assets/homePagePng/Gemini_Generated_Image_lrzvt4lrzvt4lrzv.png"
 
 
 
@@ -353,6 +359,31 @@ const Home: React.FC = () => {
                 </div>
             </motion.div>
 
+            <section id="counter-section">
+                    <div className="container">
+                        <div className="card">
+                            <img src={truckPng} />
+                            <h1>1,032,858+</h1>
+                            <p>Homes Moved</p>
+                        </div>
+                        <div className="card">
+                            <img src={cityPng} />
+                            <h1>600+</h1>
+                            <p>Cities Covered</p>
+                        </div>
+                        <div className="card">
+                            <img src={verifiedBadgePng} />
+                            <h1>3,548+</h1>
+                            <p>Verified Professionals</p>
+                        </div>
+                        <div className="card">
+                            <img src={peoplesPng} />
+                            <h1>99%</h1>
+                            <p>Satisfied Customers</p>
+                        </div>
+                    </div>
+            </section>
+
             <section id="company-description">
                 <div className="img-bx">
                     {/* <img src={whyGatiImg} /> */}
@@ -409,7 +440,7 @@ const Home: React.FC = () => {
 
             <GetInTouch></GetInTouch>
             <OfficeLocation />
-            <AwardCertification></AwardCertification>
+            {/* <AwardCertification></AwardCertification> */}
             <TrustUsSection />
 
 

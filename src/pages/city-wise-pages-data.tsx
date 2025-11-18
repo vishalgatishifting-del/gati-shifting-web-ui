@@ -118,6 +118,11 @@ import Basavanagudi from "../assets/CityPages/Basavanagudi.webp"
 
 
 
+import Bengaluru from "../assets/CityPages/Bengaluru.webp"
+import Mysuru from "../assets/CityPages/Mysuru.webp"
+import Dharwad from "../assets/CityPages/Dharwad.webp"
+import Belagavi from "../assets/CityPages/Belagavi.webp"
+import Belgaum from "../assets/CityPages/Belgaum.webp"
 
 
 export const pagesData = [
@@ -728,13 +733,48 @@ export const pagesData = [
   twitterDescription: "Safe, professional and affordable Packers and Movers in Bargarh by Gati Shifting Packers. Make your relocation smooth and stress-free today!",
   canonical: "https://gatishiftingpackers.com/city/bargarh"
 } },
-  { slug: "Jeypore", city: "Jeypore", img: Jeypore, offer: "30%", address: "Mill Street, Jeypore, Odisha 764001" },
-  { slug: "Kendrapara", city: "Kendrapara", img: Kendrapara, offer: "30%", address: "Sarthak Palace, Plot No.: 1570/1571, CDA Sector VI, Cuttack, Odisha 753014" },
-  { slug: "Rayagada", city: "Rayagada", img: Rayagada, offer: "30%", address: "SACRED HEART CONVENT ROAD OPP SHANTI BHAVAN RAYAGADA - 765 001, Rayagada, Odisha 765001" },
+  { slug: "Jeypore", city: "Jeypore", img: Jeypore, offer: "30%", address: "Mill Street, Jeypore, Odisha 764001", metaDetails: {
+  title: "Packers and Movers in Jeypore | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Jeypore with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Jeypore and across Odisha.",
+  keywords: "Local movers near me Jeypore, Packers and Movers in Jeypore, Gati Shifting Packers Jeypore, Best Packers and Movers Jeypore, Affordable Packers and Movers Jeypore, Trusted Packers and Movers Jeypore Odisha, Local Packers and Movers Jeypore, Professional Movers and Packers Jeypore, Home Shifting Services Jeypore, Office Relocation Jeypore, Vehicle Transport Jeypore, Car Transport Service Jeypore, Bike Transport Jeypore, Household Goods Shifting Jeypore, Industrial Packers and Movers Jeypore, Door-to-Door Shifting Services Jeypore, Packing and Unpacking Services Jeypore, Furniture Movers Jeypore, Intercity Packers and Movers Jeypore, Packers and Movers Jeypore to Koraput, Packers and Movers Jeypore to Bhubaneswar, Packers and Movers Jeypore to Visakhapatnam, Packers and Movers Jeypore to Rayagada, Reliable Relocation Company Jeypore, Cost-Effective Packers and Movers Jeypore, Quick Packers and Movers Jeypore, 24x7 Packers and Movers Jeypore, Mini Truck for Shifting Jeypore, Tempo Service Jeypore, Best Relocation Services Jeypore, Safe and Secure Moving Services Jeypore, Budget-Friendly Movers Jeypore, Professional Relocation Company Jeypore, Long-Distance Packers and Movers Jeypore, Trusted Shifting Company Jeypore, Goods Transport Services Jeypore.",
+  ogDescription: "Looking for reliable Packers and Movers in Jeypore? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Jeypore and nearby regions.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Jeypore by Gati Shifting Packers. Make your relocation smooth and stress-free today!",
+  canonical: "https://gatishiftingpackers.com/city/jeypore"
+} },
+  { slug: "Kendrapara", city: "Kendrapara", img: Kendrapara, offer: "30%", address: "Sarthak Palace, Plot No.: 1570/1571, CDA Sector VI, Cuttack, Odisha 753014", metaDetails: {
+  title: "Packers and Movers in Kendrapara | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Kendrapara with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Kendrapara and across Odisha.",
+  keywords: "Local movers near me Kendrapara, Packers and Movers in Kendrapara, Gati Shifting Packers Kendrapara, Best Packers and Movers Kendrapara, Affordable Packers and Movers Kendrapara, Trusted Packers and Movers Kendrapara Odisha, Local Packers and Movers Kendrapara, Professional Movers and Packers Kendrapara, Home Shifting Services Kendrapara, Office Relocation Kendrapara, Vehicle Transport Kendrapara, Car Transport Service Kendrapara, Bike Transport Kendrapara, Household Goods Shifting Kendrapara, Industrial Packers and Movers Kendrapara, Door-to-Door Shifting Services Kendrapara, Packing and Unpacking Services Kendrapara, Furniture Movers Kendrapara, Intercity Packers and Movers Kendrapara, Packers and Movers Kendrapara to Cuttack, Packers and Movers Kendrapara to Bhubaneswar, Packers and Movers Kendrapara to Jagatsinghpur, Packers and Movers Kendrapara to Paradeep, Reliable Relocation Company Kendrapara, Cost-Effective Packers and Movers Kendrapara, Quick Packers and Movers Kendrapara, 24x7 Packers and Movers Kendrapara, Mini Truck for Shifting Kendrapara, Tempo Service Kendrapara, Best Relocation Services Kendrapara, Safe and Secure Moving Services Kendrapara, Budget-Friendly Movers Kendrapara, Professional Relocation Company Kendrapara, Long-Distance Packers and Movers Kendrapara, Trusted Shifting Company Kendrapara, Goods Transport Services Kendrapara.",
+  ogDescription: "Looking for reliable Packers and Movers in Kendrapara? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles in Kendrapara and across Odisha.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Kendrapara by Gati Shifting Packers. Make your relocation smooth and stress-free today!",
+  canonical: "https://gatishiftingpackers.com/city/kendrapara"
+} },
+  { slug: "Rayagada", city: "Rayagada", img: Rayagada, offer: "30%", address: "SACRED HEART CONVENT ROAD OPP SHANTI BHAVAN RAYAGADA - 765 001, Rayagada, Odisha 765001", metaDetails: {
+  title: "Packers and Movers in Rayagada | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Rayagada with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Rayagada and across Odisha.",
+  keywords: "Local movers near me Rayagada, Packers and Movers in Rayagada, Gati Shifting Packers Rayagada, Best Packers and Movers Rayagada, Affordable Packers and Movers Rayagada, Trusted Packers and Movers Rayagada Odisha, Local Packers and Movers Rayagada, Professional Movers and Packers Rayagada, Home Shifting Services Rayagada, Office Relocation Rayagada, Vehicle Transport Rayagada, Car Transport Service Rayagada, Bike Transport Rayagada, Household Goods Shifting Rayagada, Industrial Packers and Movers Rayagada, Door-to-Door Shifting Services Rayagada, Packing and Unpacking Services Rayagada, Furniture Movers Rayagada, Intercity Packers and Movers Rayagada, Packers and Movers Rayagada to Koraput, Packers and Movers Rayagada to Jeypore, Packers and Movers Rayagada to Bhubaneswar, Packers and Movers Rayagada to Visakhapatnam, Reliable Relocation Company Rayagada, Cost-Effective Packers and Movers Rayagada, Quick Packers and Movers Rayagada, 24x7 Packers and Movers Rayagada, Mini Truck for Shifting Rayagada, Tempo Service Rayagada, Best Relocation Services Rayagada, Safe and Secure Moving Services Rayagada, Budget-Friendly Movers Rayagada, Professional Relocation Company Rayagada, Long-Distance Packers and Movers Rayagada, Trusted Shifting Company Rayagada, Goods Transport Services Rayagada.",
+  ogDescription: "Looking for reliable Packers and Movers in Rayagada? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles in Rayagada and across Odisha.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Rayagada by Gati Shifting Packers. Make your relocation smooth and stress-free today!",
+  canonical: "https://gatishiftingpackers.com/city/rayagada"
+} },
 
   
-  { slug: "Whitefield", city: "Whitefield", img: Whitefield, offer: "19%", address: "Shop No - 9, Borewell Rd, Palm Meadows, Dodsworth Layout, Whitefield, Bengaluru, Karnataka 560066" },
-  { slug: "Electronic-City", city: "Electronic City", img: Electronic_City, offer: "19%", address: "Shop 104, Bettadasanapura Main Rd, Doddathoguru, Electronic City Phase I, Electronic City, Bengaluru, Karnataka 560100" },
+  { slug: "Whitefield", city: "Whitefield", img: Whitefield, offer: "19%", address: "Shop No - 9, Borewell Rd, Palm Meadows, Dodsworth Layout, Whitefield, Bengaluru, Karnataka 560066", metaDetails: {
+  title: "Packers and Movers in Whitefield | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Whitefield with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Whitefield and across Bangalore.",
+  keywords: "Local movers near me Whitefield, Packers and Movers in Whitefield, Gati Shifting Packers Whitefield, Best Packers and Movers Whitefield, Affordable Packers and Movers Whitefield, Trusted Packers and Movers Whitefield Bangalore, Local Packers and Movers Whitefield, Professional Movers and Packers Whitefield, Home Shifting Services Whitefield, Office Relocation Whitefield, Vehicle Transport Whitefield, Car Transport Service Whitefield, Bike Transport Whitefield, Household Goods Shifting Whitefield, Industrial Packers and Movers Whitefield, Door-to-Door Shifting Services Whitefield, Packing and Unpacking Services Whitefield, Furniture Movers Whitefield, Intercity Packers and Movers Whitefield, Packers and Movers Whitefield to Hebbal, Packers and Movers Whitefield to Koramangala, Packers and Movers Whitefield to Electronic City, Packers and Movers Whitefield to Mysore, Reliable Relocation Company Whitefield, Cost-Effective Packers and Movers Whitefield, Quick Packers and Movers Whitefield, 24x7 Packers and Movers Whitefield, Mini Truck for Shifting Whitefield, Tempo Service Whitefield, Best Relocation Services Whitefield, Safe and Secure Moving Services Whitefield, Budget-Friendly Movers Whitefield, Professional Relocation Company Whitefield, Long-Distance Packers and Movers Whitefield, Trusted Shifting Company Whitefield, Goods Transport Services Whitefield.",
+  ogDescription: "Looking for reliable Packers and Movers in Whitefield? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles in Whitefield, Bangalore.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Whitefield by Gati Shifting Packers. Make your relocation smooth and stress-free today!",
+  canonical: "https://gatishiftingpackers.com/city/whitefield"
+} },
+  { slug: "Electronic-City", city: "Electronic City", img: Electronic_City, offer: "19%", address: "Shop 104, Bettadasanapura Main Rd, Doddathoguru, Electronic City Phase I, Electronic City, Bengaluru, Karnataka 560100", metaDetails: {
+  title: "Packers and Movers in Electronic City | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Electronic City with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Electronic City and across Bangalore.",
+  keywords: "Local movers near me Electronic City, Packers and Movers in Electronic City, Gati Shifting Packers Electronic City, Best Packers and Movers Electronic City, Affordable Packers and Movers Electronic City, Trusted Packers and Movers Electronic City Bangalore, Local Packers and Movers Electronic City, Professional Movers and Packers Electronic City, Home Shifting Services Electronic City, Office Relocation Electronic City, Vehicle Transport Electronic City, Car Transport Service Electronic City, Bike Transport Electronic City, Household Goods Shifting Electronic City, Industrial Packers and Movers Electronic City, Door-to-Door Shifting Services Electronic City, Packing and Unpacking Services Electronic City, Furniture Movers Electronic City, Intercity Packers and Movers Electronic City, Packers and Movers Electronic City to Whitefield, Packers and Movers Electronic City to Koramangala, Packers and Movers Electronic City to HSR Layout, Packers and Movers Electronic City to Bannerghatta, Reliable Relocation Company Electronic City, Cost-Effective Packers and Movers Electronic City, Quick Packers and Movers Electronic City, 24x7 Packers and Movers Electronic City, Mini Truck for Shifting Electronic City, Tempo Service Electronic City, Best Relocation Services Electronic City, Safe and Secure Moving Services Electronic City, Budget-Friendly Movers Electronic City, Professional Relocation Company Electronic City, Long-Distance Packers and Movers Electronic City, Trusted Shifting Company Electronic City, Goods Transport Services Electronic City.",
+  ogDescription: "Looking for reliable Packers and Movers in Electronic City? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles in Electronic City, Bangalore.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Electronic City by Gati Shifting Packers. Move smart, move stress-free!",
+  canonical: "https://gatishiftingpackers.com/city/electronic-city"
+} },
   { slug: "Koramangala", city: "Koramangala", img: Koramangala, offer: "19%", address: "KHB Block Koramangala, Koramangala 4-B Block, Koramangala, Bengaluru, Karnataka 560022" },
   { slug: "Indiranagar", city: "Indiranagar", img: Indiranagar, offer: "19%", address: "13th Cross Rd, Stage 2, Hoysala Nagar, Indiranagar, Bengaluru, Karnataka 560008" },
   { slug: "Marathahalli", city: "Marathahalli", img: Marathahalli, offer: "19%", address: "Ganesha Temple Street, 37, 2nd Cross, Marathahalli Village, Marathahalli, Bengaluru, Karnataka 560037" },
@@ -774,5 +814,10 @@ export const pagesData = [
   { slug: "Palghar", city: "Palghar", img: Palghar, offer: "17%", address: "Old Registration Office, Gala No.29, Gurunanak Apartment, near Bandhan Bank, Palghar West, Palghar, Maharashtra 401404" },
   { slug: "Basavanagudi", city: "Basavanagudi", img: Basavanagudi, offer: "17%", address: "Shop No 2, Rameshwara Temple Rd, New Patnool Pet, 1st Main, Chamrajpet, Bengaluru, Karnataka 560018" },
 
+  { slug: "Bengaluru", city: "Bengaluru", img: Bengaluru, offer: "17%", address: "Block MS residency, behind masjid e aqsa, Rajiv Gandhi Nagar, 7th sector, HSR Layout, Bengaluru, Karnataka 560068" },
+  { slug: "Mysuru", city: "Mysuru", img: Mysuru, offer: "17%", address: "13th A Cross Rd, 3rd A Block, Vani Vilas Mohalla, Mysuru, Karnataka 570002" },
+  { slug: "Dharwad", city: "Dharwad", img: Dharwad, offer: "17%", address: "1st Floor, Nagashanti Building, Hubli Toll Naka, near BRTS Bus Stand, Vidyagiri, Dharwad, Karnataka 580001" },
+  { slug: "Belagavi", city: "Belagavi", img: Belagavi, offer: "17%", address: "Old PB Rd, near Sre Cargo Carrier, Khasbag, Old Belgaum, Belagavi, Karnataka 590003" },
+  { slug: "Belgaum", city: "Belgaum", img: Belgaum, offer: "17%", address: "Old PB Rd, near Sre Cargo Carrier, Khasbag, Old Belgaum, Belagavi, Karnataka 590003" },
 
 ];

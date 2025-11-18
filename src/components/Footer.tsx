@@ -28,7 +28,7 @@ import logoImg from "../assets/logo/roundedLogo.png"
 const Footer = () => {
 
     const cities = [
-        "Jaipur", "Nagaon", "Thrissur", "Vishakhapatnam", "Thiruvananthapuram", "Coimbatore", "Manipur", "Dimapur", "Shilong", "Rishikesh", "Haridwar", "Gorakhpur", "Ranipet", "Amrawati", "Jorhat", "Palakkad", "Sambalpur", "Berhampur", "Imphal", "Rourkela", "Balasore", "Puri", "Baripada","Jharsuguda", "Angul", "Bhadrak", "Bargarh", "Jeypore", "Kendrapara", "Rayagada", "Whitefield", "Electronic-City", "Koramangala", "Indiranagar", "Marathahalli", "Yelahanka", "Jayanagar", "Rajajinagar", "HSR-Layout", "BTM-Layout", "Hebbal", "Malleshwaram", "Kalyan-Dombivli", "Banashankari", "Nagpur", "Solapur", "Sangli", "Jalgaon", "Akola", "Latur", "Dhule", "Ahmednagar", "Chandrapur", "Parbhani", "Nanded", "Wardha", "Satara", "Ratnagiri", "Palghar", "Basavanagudi"
+        "Jaipur", "Nagaon", "Thrissur", "Vishakhapatnam", "Thiruvananthapuram", "Coimbatore", "Manipur", "Dimapur", "Shilong", "Rishikesh", "Haridwar", "Gorakhpur", "Ranipet", "Amrawati", "Jorhat", "Palakkad", "Sambalpur", "Berhampur", "Imphal", "Rourkela", "Balasore", "Puri", "Baripada","Jharsuguda", "Angul", "Bhadrak", "Bargarh", "Jeypore", "Kendrapara", "Rayagada", "Whitefield", "Electronic-City", "Koramangala", "Indiranagar", "Marathahalli", "Yelahanka", "Jayanagar", "Rajajinagar", "HSR-Layout", "BTM-Layout", "Hebbal", "Malleshwaram", "Kalyan-Dombivli", "Banashankari", "Nagpur", "Solapur", "Sangli", "Jalgaon", "Akola", "Latur", "Dhule", "Ahmednagar", "Chandrapur", "Parbhani", "Nanded", "Wardha", "Satara", "Ratnagiri", "Palghar", "Basavanagudi", "Bengaluru", "Mysuru", "Dharwad","Belagavi", "Belgaum"
 
     ];
 
