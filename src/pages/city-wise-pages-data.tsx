@@ -125,6 +125,14 @@ import Belagavi from "../assets/CityPages/Belagavi.webp"
 import Belgaum from "../assets/CityPages/Belgaum.webp"
 
 
+import Kalaburagi from "../assets/CityPages/Kalaburagi.webp"
+import Gulbarga from "../assets/CityPages/Gulbarga.webp"
+import Ballari from "../assets/CityPages/Ballari.webp"
+import Davanagere from "../assets/CityPages/Davanagere.webp"
+import Tumakuru from "../assets/CityPages/Tumakuru.webp"
+
+
+
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg, offer: "15%", address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007" },
   { slug: "ankleshwar", city: "Ankleshwar", img: ankleshwarImg, offer: "15%", address: "Plot No. D-2529, Brahmanpuri, Ankleshwar GIDC, 6th Road, near Asian Paint, Chokdi, Ankleshwar, Gujarat 393002" },
@@ -819,5 +827,13 @@ export const pagesData = [
   { slug: "Dharwad", city: "Dharwad", img: Dharwad, offer: "17%", address: "1st Floor, Nagashanti Building, Hubli Toll Naka, near BRTS Bus Stand, Vidyagiri, Dharwad, Karnataka 580001" },
   { slug: "Belagavi", city: "Belagavi", img: Belagavi, offer: "17%", address: "Old PB Rd, near Sre Cargo Carrier, Khasbag, Old Belgaum, Belagavi, Karnataka 590003" },
   { slug: "Belgaum", city: "Belgaum", img: Belgaum, offer: "17%", address: "Old PB Rd, near Sre Cargo Carrier, Khasbag, Old Belgaum, Belagavi, Karnataka 590003" },
+
+
+  { slug: "Kalaburagi", city: "Kalaburagi", img: Kalaburagi, offer: "17%", address: "Dakshin Builders & Construction, S.NO. 102/B, Old Jewargi Rd, opp. P&T Quarters, Kotnoor, Kalaburagi, Karnataka 585102" },
+  { slug: "Gulbarga", city: "Gulbarga", img: Gulbarga, offer: "17%", address: "Shop No.2, Ahmed nagar, Ring Rd, opp. Taj College M.S.K Mill, Kalaburagi, Karnataka 585105" },
+  { slug: "Ballari", city: "Ballari", img: Ballari, offer: "17%", address: "Pushpavathi Building, Industrial Area, Anantapur Road, opp. Kalyani Bar, Venkateswara Nagar, Bandimot, Ballari, Karnataka 583101" },
+  { slug: "Davanagere", city: "Davanagere", img: Davanagere, offer: "17%", address: "K.R Road, Devraj Nagar, behind Shanthi Talkies, Davanagere, Karnataka 577001" },
+  { slug: "Tumakuru", city: "Tumakuru", img: Tumakuru, offer: "17%", address: " 2nd Main Rd, 2nd Cross Road, New Mandipet, Mandipet, Tumakuru, Karnataka 572101" },
+
 
 ];
