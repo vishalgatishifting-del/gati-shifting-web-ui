@@ -132,6 +132,19 @@ import Davanagere from "../assets/CityPages/Davanagere.webp"
 import Tumakuru from "../assets/CityPages/Tumakuru.webp"
 
 
+import Shivamogga from "../assets/CityPages/Shivamogga.webp"
+import Raichur from "../assets/CityPages/Raichur.webp"
+import Vijayapura from "../assets/CityPages/Vijayapura.webp"
+import Bidar from "../assets/CityPages/Bidar.webp"
+import Hassan from "../assets/CityPages/Hassan.webp"
+import Chitradurga from "../assets/CityPages/Chitradurga.webp"
+import Kolar from "../assets/CityPages/Kolar.webp"
+import Udupi from "../assets/CityPages/Udupi.webp"
+import Karwar from "../assets/CityPages/Karwar.webp"
+import Bagalkot from "../assets/CityPages/Bagalkot.webp"
+
+
+
 
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg, offer: "15%", address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007" },
@@ -801,23 +814,93 @@ export const pagesData = [
 
   { slug: "Solapur", city: "Solapur", img: Solapur, offer: "18%", address: "Shop no 2, Chinmay Apartment, 133, Modi Khana, Navi Peth, Solapur, Maharashtra 413001" },
   { slug: "Sangli", city: "Sangli", img: Sangli, offer: "18%", address: "Madhavnagar Rd, behind SadaShiv Petrol Pump, Chavan Colony, Sangli, Sangli Miraj Kupwad, Maharashtra 416416" },
-  { slug: "Jalgaon", city: "Jalgaon", img: Jalgaon, offer: "18%", address: " 110, BPCL Rd, MIDC, Jalgaon, Maharashtra 425003" },
-  { slug: "Akola", city: "Akola", img: Akola, offer: "18%", address: "1268, Gali No. 42, Oppsite Sadguru Indian Gas Agency, 2, Old RTO Rd, Giri Nagar, Akola, Maharashtra 444004" },
-  { slug: "Latur", city: "Latur", img: Latur, offer: "18%", address: "Address: Global Knowledge Rd, Avanti Nagar, Walmiki Nagar, Latur, Maharashtra 413531" },
+  { slug: "Jalgaon", city: "Jalgaon", img: Jalgaon, offer: "18%", address: " 110, BPCL Rd, MIDC, Jalgaon, Maharashtra 425003", metaDetails: {
+  title: "Packers and Movers in Jalgaon | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Jalgaon with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Jalgaon and across Maharashtra.",
+  keywords: "Local movers near me Jalgaon, Packers and Movers in Jalgaon, Gati Shifting Packers Jalgaon, Best Packers and Movers Jalgaon, Affordable Packers and Movers Jalgaon, Trusted Packers and Movers Jalgaon Maharashtra, Local Packers and Movers Jalgaon, Professional Movers and Packers Jalgaon, Home Shifting Services Jalgaon, Office Relocation Jalgaon, Vehicle Transport Jalgaon, Car Transport Service Jalgaon, Bike Transport Jalgaon, Household Goods Shifting Jalgaon, Industrial Packers and Movers Jalgaon, Door-to-Door Shifting Services Jalgaon, Packing and Unpacking Services Jalgaon, Furniture Movers Jalgaon, Intercity Packers and Movers Jalgaon, Packers and Movers Jalgaon to Pune, Packers and Movers Jalgaon to Mumbai, Packers and Movers Jalgaon to Nashik, Packers and Movers Jalgaon to Ahmedabad, Reliable Relocation Company Jalgaon, Cost-Effective Packers and Movers Jalgaon, Quick Packers and Movers Jalgaon, 24x7 Packers and Movers Jalgaon, Mini Truck for Shifting Jalgaon, Tempo Service Jalgaon, Best Relocation Services Jalgaon, Safe and Secure Moving Services Jalgaon, Budget-Friendly Movers Jalgaon, Professional Relocation Company Jalgaon, Long-Distance Packers and Movers Jalgaon, Trusted Shifting Company Jalgaon, Goods Transport Services Jalgaon.",
+  ogDescription: "Looking for reliable Packers and Movers in Jalgaon? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Jalgaon and Maharashtra.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Jalgaon by Gati Shifting Packers. Move stress-free with expert support!",
+  canonical: "https://gatishiftingpackers.com/city/jalgaon"
+} },
+  { slug: "Akola", city: "Akola", img: Akola, offer: "18%", address: "1268, Gali No. 42, Oppsite Sadguru Indian Gas Agency, 2, Old RTO Rd, Giri Nagar, Akola, Maharashtra 444004", metaDetails: {
+  title: "Packers and Movers in Akola | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Akola with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Akola and across Maharashtra.",
+  keywords: "Local movers near me Akola, Packers and Movers in Akola, Gati Shifting Packers Akola, Best Packers and Movers Akola, Affordable Packers and Movers Akola, Trusted Packers and Movers Akola Maharashtra, Local Packers and Movers Akola, Professional Movers and Packers Akola, Home Shifting Services Akola, Office Relocation Akola, Vehicle Transport Akola, Car Transport Service Akola, Bike Transport Akola, Household Goods Shifting Akola, Industrial Packers and Movers Akola, Door-to-Door Shifting Services Akola, Packing and Unpacking Services Akola, Furniture Movers Akola, Intercity Packers and Movers Akola, Packers and Movers Akola to Pune, Packers and Movers Akola to Mumbai, Packers and Movers Akola to Nagpur, Packers and Movers Akola to Aurangabad, Reliable Relocation Company Akola, Cost-Effective Packers and Movers Akola, Quick Packers and Movers Akola, 24x7 Packers and Movers Akola, Mini Truck for Shifting Akola, Tempo Service Akola, Best Relocation Services Akola, Safe and Secure Moving Services Akola, Budget-Friendly Movers Akola, Professional Relocation Company Akola, Long-Distance Packers and Movers Akola, Trusted Shifting Company Akola, Goods Transport Services Akola.",
+  ogDescription: "Looking for reliable Packers and Movers in Akola? Gati Shifting Packers delivers safe, timely and affordable relocation for homes, offices and vehicles in Akola and Maharashtra.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Akola by Gati Shifting Packers. Move stress-free with expert relocation services!",
+  canonical: "https://gatishiftingpackers.com/city/akola"
+} },
+  { slug: "Latur", city: "Latur", img: Latur, offer: "18%", address: "Address: Global Knowledge Rd, Avanti Nagar, Walmiki Nagar, Latur, Maharashtra 413531", metaDetails: {
+  title: "Packers and Movers in Latur | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Latur with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Latur and across Maharashtra.",
+  keywords: "Local movers near me Latur, Packers and Movers in Latur, Gati Shifting Packers Latur, Best Packers and Movers Latur, Affordable Packers and Movers Latur, Trusted Packers and Movers Latur Maharashtra, Local Packers and Movers Latur, Professional Movers and Packers Latur, Home Shifting Services Latur, Office Relocation Latur, Vehicle Transport Latur, Car Transport Service Latur, Bike Transport Latur, Household Goods Shifting Latur, Industrial Packers and Movers Latur, Door-to-Door Shifting Services Latur, Packing and Unpacking Services Latur, Furniture Movers Latur, Intercity Packers and Movers Latur, Packers and Movers Latur to Pune, Packers and Movers Latur to Mumbai, Packers and Movers Latur to Solapur, Packers and Movers Latur to Hyderabad, Reliable Relocation Company Latur, Cost-Effective Packers and Movers Latur, Quick Packers and Movers Latur, 24x7 Packers and Movers Latur, Mini Truck for Shifting Latur, Tempo Service Latur, Best Relocation Services Latur, Safe and Secure Moving Services Latur, Budget-Friendly Movers Latur, Professional Relocation Company Latur, Long-Distance Packers and Movers Latur, Trusted Shifting Company Latur, Goods Transport Services Latur.",
+  ogDescription: "Looking for reliable Packers and Movers in Latur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Latur and Maharashtra.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Latur by Gati Shifting Packers. Experience stress-free relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/latur"
+} },
 
 
 
 
-  { slug: "Dhule", city: "Dhule", img: Dhule, offer: "15%", address: " Ansar Nagar, Dhule, Maharashtra 424001" },
-  { slug: "Ahmednagar", city: "Ahmednagar", img: Ahmednagar, offer: "15%", address: "H.No 8, 46/A, Shivnagar, Fakir Wada, Nirmal Nagar, Ahmadnagar, Maharashtra 414001" },
-  { slug: "Chandrapur", city: "Chandrapur", img: Chandrapur, offer: "15%", address: "Ward No 1, Mukti Apartment, Shop No 4/1, Urja Nagar, Chandrapur, Maharashtra 442401" },
-  { slug: "Parbhani", city: "Parbhani", img: Parbhani, offer: "15%", address: "Karegaon Rd, near sidhivinak mandir, near deshmukh hotel, Samzota Colony, Vaibhav Nagar, Parbhani, Maharashtra 431401" },
-  { slug: "Nanded", city: "Nanded", img: Nanded, offer: "15%", address: "ahyog nagar, P. No. 371, Airport Rd, Irrigation Colony, Peer Burhan Nagar, Taroda Kh., Taroda Bk., Maharashtra 431605" },
+  { slug: "Dhule", city: "Dhule", img: Dhule, offer: "15%", address: " Ansar Nagar, Dhule, Maharashtra 424001", metaDetails: {
+  title: "Packers and Movers in Dhule | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Dhule with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Dhule and across Maharashtra.",
+  keywords: "Local movers near me Dhule, Packers and Movers in Dhule, Gati Shifting Packers Dhule, Best Packers and Movers Dhule, Affordable Packers and Movers Dhule, Trusted Packers and Movers Dhule Maharashtra, Local Packers and Movers Dhule, Professional Movers and Packers Dhule, Home Shifting Services Dhule, Office Relocation Dhule, Vehicle Transport Dhule, Car Transport Service Dhule, Bike Transport Dhule, Household Goods Shifting Dhule, Industrial Packers and Movers Dhule, Door-to-Door Shifting Services Dhule, Packing and Unpacking Services Dhule, Furniture Movers Dhule, Intercity Packers and Movers Dhule, Packers and Movers Dhule to Nashik, Packers and Movers Dhule to Mumbai, Packers and Movers Dhule to Pune, Packers and Movers Dhule to Indore, Reliable Relocation Company Dhule, Cost-Effective Packers and Movers Dhule, Quick Packers and Movers Dhule, 24x7 Packers and Movers Dhule, Mini Truck for Shifting Dhule, Tempo Service Dhule, Best Relocation Services Dhule, Safe and Secure Moving Services Dhule, Budget-Friendly Movers Dhule, Professional Relocation Company Dhule, Long-Distance Packers and Movers Dhule, Trusted Shifting Company Dhule, Goods Transport Services Dhule.",
+  ogDescription: "Looking for reliable Packers and Movers in Dhule? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Dhule and Maharashtra.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Dhule by Gati Shifting Packers. Make your relocation smooth and stress-free today!",
+  canonical: "https://gatishiftingpackers.com/city/dhule"
+} },
+  { slug: "Ahmednagar", city: "Ahmednagar", img: Ahmednagar, offer: "15%", address: "H.No 8, 46/A, Shivnagar, Fakir Wada, Nirmal Nagar, Ahmadnagar, Maharashtra 414001", metaDetails: {
+  title: "Packers and Movers in Ahmednagar | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Ahmednagar with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Ahmednagar and across Maharashtra.",
+  keywords: "Local movers near me Ahmednagar, Packers and Movers in Ahmednagar, Gati Shifting Packers Ahmednagar, Best Packers and Movers Ahmednagar, Affordable Packers and Movers Ahmednagar, Trusted Packers and Movers Ahmednagar Maharashtra, Local Packers and Movers Ahmednagar, Professional Movers and Packers Ahmednagar, Home Shifting Services Ahmednagar, Office Relocation Ahmednagar, Vehicle Transport Ahmednagar, Car Transport Service Ahmednagar, Bike Transport Ahmednagar, Household Goods Shifting Ahmednagar, Industrial Packers and Movers Ahmednagar, Door-to-Door Shifting Services Ahmednagar, Packing and Unpacking Services Ahmednagar, Furniture Movers Ahmednagar, Intercity Packers and Movers Ahmednagar, Packers and Movers Ahmednagar to Pune, Packers and Movers Ahmednagar to Mumbai, Packers and Movers Ahmednagar to Nashik, Packers and Movers Ahmednagar to Aurangabad, Reliable Relocation Company Ahmednagar, Cost-Effective Packers and Movers Ahmednagar, Quick Packers and Movers Ahmednagar, 24x7 Packers and Movers Ahmednagar, Mini Truck for Shifting Ahmednagar, Tempo Service Ahmednagar, Best Relocation Services Ahmednagar, Safe and Secure Moving Services Ahmednagar, Budget-Friendly Movers Ahmednagar, Professional Relocation Company Ahmednagar, Long-Distance Packers and Movers Ahmednagar, Trusted Shifting Company Ahmednagar, Goods Transport Services Ahmednagar.",
+  ogDescription: "Looking for reliable Packers and Movers in Ahmednagar? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Ahmednagar and Maharashtra.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Ahmednagar by Gati Shifting Packers. Book your stress-free relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/ahmednagar"
+} },
+  { slug: "Chandrapur", city: "Chandrapur", img: Chandrapur, offer: "15%", address: "Ward No 1, Mukti Apartment, Shop No 4/1, Urja Nagar, Chandrapur, Maharashtra 442401", metaDetails: {
+  title: "Packers and Movers in Chandrapur | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Chandrapur with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Chandrapur and across Maharashtra.",
+  keywords: "Local movers near me Chandrapur, Packers and Movers in Chandrapur, Gati Shifting Packers Chandrapur, Best Packers and Movers Chandrapur, Affordable Packers and Movers Chandrapur, Trusted Packers and Movers Chandrapur Maharashtra, Local Packers and Movers Chandrapur, Professional Movers and Packers Chandrapur, Home Shifting Services Chandrapur, Office Relocation Chandrapur, Vehicle Transport Chandrapur, Car Transport Service Chandrapur, Bike Transport Chandrapur, Household Goods Shifting Chandrapur, Industrial Packers and Movers Chandrapur, Door-to-Door Shifting Services Chandrapur, Packing and Unpacking Services Chandrapur, Furniture Movers Chandrapur, Intercity Packers and Movers Chandrapur, Packers and Movers Chandrapur to Nagpur, Packers and Movers Chandrapur to Pune, Packers and Movers Chandrapur to Mumbai, Packers and Movers Chandrapur to Hyderabad, Reliable Relocation Company Chandrapur, Cost-Effective Packers and Movers Chandrapur, Quick Packers and Movers Chandrapur, 24x7 Packers and Movers Chandrapur, Mini Truck for Shifting Chandrapur, Tempo Service Chandrapur, Best Relocation Services Chandrapur, Safe and Secure Moving Services Chandrapur, Budget-Friendly Movers Chandrapur, Professional Relocation Company Chandrapur, Long-Distance Packers and Movers Chandrapur, Trusted Shifting Company Chandrapur, Goods Transport Services Chandrapur.",
+  ogDescription: "Looking for reliable Packers and Movers in Chandrapur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Chandrapur and Maharashtra.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Chandrapur by Gati Shifting Packers. Move stress-free with expert relocation services!",
+  canonical: "https://gatishiftingpackers.com/city/chandrapur"
+} },
+  { slug: "Parbhani", city: "Parbhani", img: Parbhani, offer: "15%", address: "Karegaon Rd, near sidhivinak mandir, near deshmukh hotel, Samzota Colony, Vaibhav Nagar, Parbhani, Maharashtra 431401", metaDetails: {
+  title: "Packers and Movers in Parbhani | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Parbhani with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Parbhani and across Maharashtra.",
+  keywords: "Local movers near me Parbhani, Packers and Movers in Parbhani, Gati Shifting Packers Parbhani, Best Packers and Movers Parbhani, Affordable Packers and Movers Parbhani, Trusted Packers and Movers Parbhani Maharashtra, Local Packers and Movers Parbhani, Professional Movers and Packers Parbhani, Home Shifting Services Parbhani, Office Relocation Parbhani, Vehicle Transport Parbhani, Car Transport Service Parbhani, Bike Transport Parbhani, Household Goods Shifting Parbhani, Industrial Packers and Movers Parbhani, Door-to-Door Shifting Services Parbhani, Packing and Unpacking Services Parbhani, Furniture Movers Parbhani, Intercity Packers and Movers Parbhani, Packers and Movers Parbhani to Pune, Packers and Movers Parbhani to Mumbai, Packers and Movers Parbhani to Aurangabad, Packers and Movers Parbhani to Hyderabad, Reliable Relocation Company Parbhani, Cost-Effective Packers and Movers Parbhani, Quick Packers and Movers Parbhani, 24x7 Packers and Movers Parbhani, Mini Truck for Shifting Parbhani, Tempo Service Parbhani, Best Relocation Services Parbhani, Safe and Secure Moving Services Parbhani, Budget-Friendly Movers Parbhani, Professional Relocation Company Parbhani, Long-Distance Packers and Movers Parbhani, Trusted Shifting Company Parbhani, Goods Transport Services Parbhani.",
+  ogDescription: "Looking for reliable Packers and Movers in Parbhani? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Parbhani and Maharashtra.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Parbhani by Gati Shifting Packers. Book your stress-free moving service today!",
+  canonical: "https://gatishiftingpackers.com/city/parbhani"
+}  },
+  { slug: "Nanded", city: "Nanded", img: Nanded, offer: "15%", address: "ahyog nagar, P. No. 371, Airport Rd, Irrigation Colony, Peer Burhan Nagar, Taroda Kh., Taroda Bk., Maharashtra 431605", metaDetails: {
+  title: "Packers and Movers in Nanded | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Nanded with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Nanded and across Maharashtra.",
+  keywords: "Local movers near me Nanded, Packers and Movers in Nanded, Gati Shifting Packers Nanded, Best Packers and Movers Nanded, Affordable Packers and Movers Nanded, Trusted Packers and Movers Nanded Maharashtra, Local Packers and Movers Nanded, Professional Movers and Packers Nanded, Home Shifting Services Nanded, Office Relocation Nanded, Vehicle Transport Nanded, Car Transport Service Nanded, Bike Transport Nanded, Household Goods Shifting Nanded, Industrial Packers and Movers Nanded, Door-to-Door Shifting Services Nanded, Packing and Unpacking Services Nanded, Furniture Movers Nanded, Intercity Packers and Movers Nanded, Packers and Movers Nanded to Pune, Packers and Movers Nanded to Mumbai, Packers and Movers Nanded to Aurangabad, Packers and Movers Nanded to Hyderabad, Reliable Relocation Company Nanded, Cost-Effective Packers and Movers Nanded, Quick Packers and Movers Nanded, 24x7 Packers and Movers Nanded, Mini Truck for Shifting Nanded, Tempo Service Nanded, Best Relocation Services Nanded, Safe and Secure Moving Services Nanded, Budget-Friendly Movers Nanded, Professional Relocation Company Nanded, Long-Distance Packers and Movers Nanded, Trusted Shifting Company Nanded, Goods Transport Services Nanded.",
+  ogDescription: "Looking for reliable Packers and Movers in Nanded? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Nanded and Maharashtra.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Nanded by Gati Shifting Packers. Book your stress-free moving service today!",
+  canonical: "https://gatishiftingpackers.com/city/nanded"
+}  },
 
 
 
-  { slug: "Wardha", city: "Wardha", img: Wardha, offer: "17%", address: "Paloti-Wardha Rd, Narde Layout, Madni, Wardha, Maharashtra 442201" },
-  { slug: "Satara", city: "Satara", img: Satara, offer: "17%", address: "Ravivar Peth Market Yard Near Prakash Lodge Opp. City Chicken Center,, Satara, Maharashtra 415001" },
+  { slug: "Wardha", city: "Wardha", img: Wardha, offer: "17%", address: "Paloti-Wardha Rd, Narde Layout, Madni, Wardha, Maharashtra 442201", metaDetails: {
+  title: "Packers and Movers in Wardha | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Wardha with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Wardha and across Maharashtra.",
+  keywords: "Local movers near me Wardha, Packers and Movers in Wardha, Gati Shifting Packers Wardha, Best Packers and Movers Wardha, Affordable Packers and Movers Wardha, Trusted Packers and Movers Wardha Maharashtra, Local Packers and Movers Wardha, Professional Movers and Packers Wardha, Home Shifting Services Wardha, Office Relocation Wardha, Vehicle Transport Wardha, Car Transport Service Wardha, Bike Transport Wardha, Household Goods Shifting Wardha, Industrial Packers and Movers Wardha, Door-to-Door Shifting Services Wardha, Packing and Unpacking Services Wardha, Furniture Movers Wardha, Intercity Packers and Movers Wardha, Packers and Movers Wardha to Pune, Packers and Movers Wardha to Mumbai, Packers and Movers Wardha to Nagpur, Packers and Movers Wardha to Aurangabad, Reliable Relocation Company Wardha, Cost-Effective Packers and Movers Wardha, Quick Packers and Movers Wardha, 24x7 Packers and Movers Wardha, Mini Truck for Shifting Wardha, Tempo Service Wardha, Best Relocation Services Wardha, Safe and Secure Moving Services Wardha, Budget-Friendly Movers Wardha, Professional Relocation Company Wardha, Long-Distance Packers and Movers Wardha, Trusted Shifting Company Wardha, Goods Transport Services Wardha.",
+  ogDescription: "Looking for reliable Packers and Movers in Wardha? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Wardha and Maharashtra.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Wardha by Gati Shifting Packers. Book your stress-free moving service today!",
+  canonical: "https://gatishiftingpackers.com/city/wardha"
+} },
+  { slug: "Satara", city: "Satara", img: Satara, offer: "17%", address: "Ravivar Peth Market Yard Near Prakash Lodge Opp. City Chicken Center,, Satara, Maharashtra 415001", metaDetails: {
+  title: "Packers and Movers in Satara | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Satara with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Satara and across Maharashtra.",
+  keywords: "Local movers near me Satara, Packers and Movers in Satara, Gati Shifting Packers Satara, Best Packers and Movers Satara, Affordable Packers and Movers Satara, Trusted Packers and Movers Satara Maharashtra, Local Packers and Movers Satara, Professional Movers and Packers Satara, Home Shifting Services Satara, Office Relocation Satara, Vehicle Transport Satara, Car Transport Service Satara, Bike Transport Satara, Household Goods Shifting Satara, Industrial Packers and Movers Satara, Door-to-Door Shifting Services Satara, Packing and Unpacking Services Satara, Furniture Movers Satara, Intercity Packers and Movers Satara, Packers and Movers Satara to Pune, Packers and Movers Satara to Mumbai, Packers and Movers Satara to Kolhapur, Packers and Movers Satara to Solapur, Reliable Relocation Company Satara, Cost-Effective Packers and Movers Satara, Quick Packers and Movers Satara, 24x7 Packers and Movers Satara, Mini Truck for Shifting Satara, Tempo Service Satara, Best Relocation Services Satara, Safe and Secure Moving Services Satara, Budget-Friendly Movers Satara, Professional Relocation Company Satara, Long-Distance Packers and Movers Satara, Trusted Shifting Company Satara, Goods Transport Services Satara.",
+  ogDescription: "Looking for reliable Packers and Movers in Satara? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Satara and Maharashtra.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Satara by Gati Shifting Packers. Book your stress-free moving service today!",
+  canonical: "https://gatishiftingpackers.com/city/satara"
+} },
   { slug: "Ratnagiri", city: "Ratnagiri", img: Ratnagiri, offer: "17%", address: "Suyash Apartment-1, Gala No. 5 C/o. Chougule Transport, Salvi Stop, Maharashtra 415639" },
   { slug: "Palghar", city: "Palghar", img: Palghar, offer: "17%", address: "Old Registration Office, Gala No.29, Gurunanak Apartment, near Bandhan Bank, Palghar West, Palghar, Maharashtra 401404" },
   { slug: "Basavanagudi", city: "Basavanagudi", img: Basavanagudi, offer: "17%", address: "Shop No 2, Rameshwara Temple Rd, New Patnool Pet, 1st Main, Chamrajpet, Bengaluru, Karnataka 560018" },
@@ -834,6 +917,20 @@ export const pagesData = [
   { slug: "Ballari", city: "Ballari", img: Ballari, offer: "17%", address: "Pushpavathi Building, Industrial Area, Anantapur Road, opp. Kalyani Bar, Venkateswara Nagar, Bandimot, Ballari, Karnataka 583101" },
   { slug: "Davanagere", city: "Davanagere", img: Davanagere, offer: "17%", address: "K.R Road, Devraj Nagar, behind Shanthi Talkies, Davanagere, Karnataka 577001" },
   { slug: "Tumakuru", city: "Tumakuru", img: Tumakuru, offer: "17%", address: " 2nd Main Rd, 2nd Cross Road, New Mandipet, Mandipet, Tumakuru, Karnataka 572101" },
+
+
+
+  { slug: "Shivamogga", city: "Shivamogga", img: Shivamogga, offer: "17%", address: "Kariyanna Building, Vinoba Nagara, Shivamogga, Karnataka 577204" },
+  { slug: "Raichur", city: "Raichur", img: Raichur, offer: "17%", address: "LBS Nagar, Rajendra Gunj, Raichur, Karnataka 584102" },
+  { slug: "Vijayapura", city: "Vijayapura", img: Vijayapura, offer: "17%", address: "1188/B, Station Rd, behind Royal Hotel, Chapparband Galli, Vijayapura, Karnataka 586104" },
+  { slug: "Bidar", city: "Bidar", img: Bidar, offer: "17%", address: " BRIMS College Canteen, Udgir Rd, nearby Address:, Nawadgeri, Bidar, Karnataka 585401" },
+  { slug: "Hassan", city: "Hassan", img: Hassan, offer: "17%", address: "45/1, Ayyappa Swamy Temple Rd, 1st 2nd, Krishnaraja Pura, Hassan, Karnataka 573201" },
+  { slug: "Chitradurga", city: "Chitradurga", img: Chitradurga, offer: "17%", address: "Neelakanteshwara Colony, Chitradurga, Karnataka 577502" },
+  { slug: "Kolar", city: "Kolar", img: Kolar, offer: "17%", address: "No 177, Bus stand, 194/1697, MB Rd, near KSRTC, Kuvempu Nagar, Santhe Gate, Kolar, Karnataka 563101" },
+  { slug: "Udupi", city: "Udupi", img: Udupi, offer: "17%", address: "3rd Cross, Manipal Dairy, Door No. 8-94/K-5(2), Shamshera Baki Complex, Road, Eshwar Nagar, Manipal, Karnataka 576104" },
+  { slug: "Karwar", city: "Karwar", img: Karwar, offer: "17%", address: "1st Floor, Nagashanti Building, Hubli Toll Naka, near BRTS Bus Stand, Vidyagiri, Dharwad, Karnataka 580001" },
+  { slug: "Bagalkot", city: "Bagalkot", img: Bagalkot, offer: "17%", address: "Shabadi building, opp. Sakri High School, ground, Bagalkote, Karnataka 587101" },
+
 
 
 ];
