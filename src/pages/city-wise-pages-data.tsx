@@ -144,6 +144,14 @@ import Karwar from "../assets/CityPages/Karwar.webp"
 import Bagalkot from "../assets/CityPages/Bagalkot.webp"
 
 
+import Varanasi from "../assets/CityPages/Varanasi.webp"
+import Thoubal from "../assets/CityPages/Thoubal.webp"
+import Churachandpur from "../assets/CityPages/Churachandpur.webp"
+import Bishnupur from "../assets/CityPages/Bishnupur.webp"
+import Ukhrul from "../assets/CityPages/Ukhrul.webp"
+
+
+
 
 
 export const pagesData = [
@@ -901,12 +909,47 @@ export const pagesData = [
   twitterDescription: "Safe, professional and affordable Packers and Movers in Satara by Gati Shifting Packers. Book your stress-free moving service today!",
   canonical: "https://gatishiftingpackers.com/city/satara"
 } },
-  { slug: "Ratnagiri", city: "Ratnagiri", img: Ratnagiri, offer: "17%", address: "Suyash Apartment-1, Gala No. 5 C/o. Chougule Transport, Salvi Stop, Maharashtra 415639" },
-  { slug: "Palghar", city: "Palghar", img: Palghar, offer: "17%", address: "Old Registration Office, Gala No.29, Gurunanak Apartment, near Bandhan Bank, Palghar West, Palghar, Maharashtra 401404" },
-  { slug: "Basavanagudi", city: "Basavanagudi", img: Basavanagudi, offer: "17%", address: "Shop No 2, Rameshwara Temple Rd, New Patnool Pet, 1st Main, Chamrajpet, Bengaluru, Karnataka 560018" },
+  { slug: "Ratnagiri", city: "Ratnagiri", img: Ratnagiri, offer: "17%", address: "Suyash Apartment-1, Gala No. 5 C/o. Chougule Transport, Salvi Stop, Maharashtra 415639", metaDetails: {
+  title: "Packers and Movers in Ratnagiri | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Ratnagiri with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Ratnagiri and across Maharashtra.",
+  keywords: "Local movers near me Ratnagiri, Packers and Movers in Ratnagiri, Gati Shifting Packers Ratnagiri, Best Packers and Movers Ratnagiri, Affordable Packers and Movers Ratnagiri, Trusted Packers and Movers Ratnagiri Maharashtra, Local Packers and Movers Ratnagiri, Professional Movers and Packers Ratnagiri, Home Shifting Services Ratnagiri, Office Relocation Ratnagiri, Vehicle Transport Ratnagiri, Car Transport Service Ratnagiri, Bike Transport Ratnagiri, Household Goods Shifting Ratnagiri, Industrial Packers and Movers Ratnagiri, Door-to-Door Shifting Services Ratnagiri, Packing and Unpacking Services Ratnagiri, Furniture Movers Ratnagiri, Intercity Packers and Movers Ratnagiri, Packers and Movers Ratnagiri to Mumbai, Packers and Movers Ratnagiri to Pune, Packers and Movers Ratnagiri to Kolhapur, Packers and Movers Ratnagiri to Goa, Reliable Relocation Company Ratnagiri, Cost-Effective Packers and Movers Ratnagiri, Quick Packers and Movers Ratnagiri, 24x7 Packers and Movers Ratnagiri, Mini Truck for Shifting Ratnagiri, Tempo Service Ratnagiri, Best Relocation Services Ratnagiri, Safe and Secure Moving Services Ratnagiri, Budget-Friendly Movers Ratnagiri, Professional Relocation Company Ratnagiri, Long-Distance Packers and Movers Ratnagiri, Trusted Shifting Company Ratnagiri, Goods Transport Services Ratnagiri.",
+  ogDescription: "Looking for reliable Packers and Movers in Ratnagiri? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles in Ratnagiri and Maharashtra.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Ratnagiri by Gati Shifting Packers. Book your smooth and stress-free relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/ratnagiri"
+} },
+  { slug: "Palghar", city: "Palghar", img: Palghar, offer: "17%", address: "Old Registration Office, Gala No.29, Gurunanak Apartment, near Bandhan Bank, Palghar West, Palghar, Maharashtra 401404", metaDetails: {
+  title: "Packers and Movers in Palghar | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Palghar with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Palghar and across Maharashtra.",
+  keywords: "Local movers near me Palghar, Packers and Movers in Palghar, Gati Shifting Packers Palghar, Best Packers and Movers Palghar, Affordable Packers and Movers Palghar, Trusted Packers and Movers Palghar Maharashtra, Local Packers and Movers Palghar, Professional Movers and Packers Palghar, Home Shifting Services Palghar, Office Relocation Palghar, Vehicle Transport Palghar, Car Transport Service Palghar, Bike Transport Palghar, Household Goods Shifting Palghar, Industrial Packers and Movers Palghar, Door-to-Door Shifting Services Palghar, Packing and Unpacking Services Palghar, Furniture Movers Palghar, Intercity Packers and Movers Palghar, Packers and Movers Palghar to Mumbai, Packers and Movers Palghar to Thane, Packers and Movers Palghar to Pune, Packers and Movers Palghar to Nashik, Reliable Relocation Company Palghar, Cost-Effective Packers and Movers Palghar, Quick Packers and Movers Palghar, 24x7 Packers and Movers Palghar, Mini Truck for Shifting Palghar, Tempo Service Palghar, Best Relocation Services Palghar, Safe and Secure Moving Services Palghar, Budget-Friendly Movers Palghar, Professional Relocation Company Palghar, Long-Distance Packers and Movers Palghar, Trusted Shifting Company Palghar, Goods Transport Services Palghar.",
+  ogDescription: "Looking for reliable Packers and Movers in Palghar? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Palghar and Maharashtra.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Palghar by Gati Shifting Packers. Book your hassle-free relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/palghar"
+} },
+  { slug: "Basavanagudi", city: "Basavanagudi", img: Basavanagudi, offer: "17%", address: "Shop No 2, Rameshwara Temple Rd, New Patnool Pet, 1st Main, Chamrajpet, Bengaluru, Karnataka 560018", metaDetails: {
+  title: "Packers and Movers in Basavanagudi | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Basavanagudi with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Basavanagudi and across Bengaluru.",
+  keywords: "Local movers near me Basavanagudi, Packers and Movers in Basavanagudi, Gati Shifting Packers Basavanagudi, Best Packers and Movers Basavanagudi, Affordable Packers and Movers Basavanagudi, Trusted Packers and Movers Basavanagudi Bengaluru, Local Packers and Movers Basavanagudi, Professional Movers and Packers Basavanagudi, Home Shifting Services Basavanagudi, Office Relocation Basavanagudi, Vehicle Transport Basavanagudi, Car Transport Service Basavanagudi, Bike Transport Basavanagudi, Household Goods Shifting Basavanagudi, Industrial Packers and Movers Basavanagudi, Door-to-Door Shifting Services Basavanagudi, Packing and Unpacking Services Basavanagudi, Furniture Movers Basavanagudi, Intercity Packers and Movers Basavanagudi, Packers and Movers Basavanagudi to Whitefield, Packers and Movers Basavanagudi to Electronic City, Packers and Movers Basavanagudi to Marathahalli, Packers and Movers Basavanagudi to Mumbai, Reliable Relocation Company Basavanagudi, Cost-Effective Packers and Movers Basavanagudi, Quick Packers and Movers Basavanagudi, 24x7 Packers and Movers Basavanagudi, Mini Truck for Shifting Basavanagudi, Tempo Service Basavanagudi, Best Relocation Services Basavanagudi, Safe and Secure Moving Services Basavanagudi, Budget-Friendly Movers Basavanagudi, Professional Relocation Company Basavanagudi, Long-Distance Packers and Movers Basavanagudi, Trusted Shifting Company Basavanagudi, Goods Transport Services Basavanagudi.",
+  ogDescription: "Looking for reliable Packers and Movers in Basavanagudi? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Basavanagudi and Bengaluru.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Basavanagudi by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/basavanagudi"
+} },
 
-  { slug: "Bengaluru", city: "Bengaluru", img: Bengaluru, offer: "17%", address: "Block MS residency, behind masjid e aqsa, Rajiv Gandhi Nagar, 7th sector, HSR Layout, Bengaluru, Karnataka 560068" },
-  { slug: "Mysuru", city: "Mysuru", img: Mysuru, offer: "17%", address: "13th A Cross Rd, 3rd A Block, Vani Vilas Mohalla, Mysuru, Karnataka 570002" },
+  { slug: "Bengaluru", city: "Bengaluru", img: Bengaluru, offer: "17%", address: "Block MS residency, behind masjid e aqsa, Rajiv Gandhi Nagar, 7th sector, HSR Layout, Bengaluru, Karnataka 560068", metaDetails: {
+  title: "Packers and Movers in Bengaluru | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Bengaluru with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services across all locations in Bengaluru.",
+  keywords: "Local movers near me Bengaluru, Packers and Movers in Bengaluru, Gati Shifting Packers Bengaluru, Best Packers and Movers Bengaluru, Affordable Packers and Movers Bengaluru, Trusted Packers and Movers Bengaluru Karnataka, Local Packers and Movers Bengaluru, Professional Movers and Packers Bengaluru, Home Shifting Services Bengaluru, Office Relocation Bengaluru, Vehicle Transport Bengaluru, Car Transport Service Bengaluru, Bike Transport Bengaluru, Household Goods Shifting Bengaluru, Industrial Packers and Movers Bengaluru, Door-to-Door Shifting Services Bengaluru, Packing and Unpacking Services Bengaluru, Furniture Movers Bengaluru, Intercity Packers and Movers Bengaluru, Packers and Movers Bengaluru to Mumbai, Packers and Movers Bengaluru to Delhi, Packers and Movers Bengaluru to Hyderabad, Packers and Movers Bengaluru to Chennai, Reliable Relocation Company Bengaluru, Cost-Effective Packers and Movers Bengaluru, Quick Packers and Movers Bengaluru, 24x7 Packers and Movers Bengaluru, Mini Truck for Shifting Bengaluru, Tempo Service Bengaluru, Best Relocation Services Bengaluru, Safe and Secure Moving Services Bengaluru, Budget-Friendly Movers Bengaluru, Professional Relocation Company Bengaluru, Long-Distance Packers and Movers Bengaluru, Trusted Shifting Company Bengaluru, Goods Transport Services Bengaluru.",
+  ogDescription: "Looking for reliable Packers and Movers in Bengaluru? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles across Bengaluru.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Bengaluru by Gati Shifting Packers. Book your stress-free moving service today!",
+  canonical: "https://gatishiftingpackers.com/city/bengaluru"
+} },
+  { slug: "Mysuru", city: "Mysuru", img: Mysuru, offer: "17%", address: "13th A Cross Rd, 3rd A Block, Vani Vilas Mohalla, Mysuru, Karnataka 570002", metaDetails: {
+  title: "Packers and Movers in Mysuru | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Mysuru with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Mysuru and across Karnataka.",
+  keywords: "Local movers near me Mysuru, Packers and Movers in Mysuru, Gati Shifting Packers Mysuru, Best Packers and Movers Mysuru, Affordable Packers and Movers Mysuru, Trusted Packers and Movers Mysuru Karnataka, Local Packers and Movers Mysuru, Professional Movers and Packers Mysuru, Home Shifting Services Mysuru, Office Relocation Mysuru, Vehicle Transport Mysuru, Car Transport Service Mysuru, Bike Transport Mysuru, Household Goods Shifting Mysuru, Industrial Packers and Movers Mysuru, Door-to-Door Shifting Services Mysuru, Packing and Unpacking Services Mysuru, Furniture Movers Mysuru, Intercity Packers and Movers Mysuru, Packers and Movers Mysuru to Bengaluru, Packers and Movers Mysuru to Mangalore, Packers and Movers Mysuru to Chennai, Packers and Movers Mysuru to Hyderabad, Reliable Relocation Company Mysuru, Cost-Effective Packers and Movers Mysuru, Quick Packers and Movers Mysuru, 24x7 Packers and Movers Mysuru, Mini Truck for Shifting Mysuru, Tempo Service Mysuru, Best Relocation Services Mysuru, Safe and Secure Moving Services Mysuru, Budget-Friendly Movers Mysuru, Professional Relocation Company Mysuru, Long-Distance Packers and Movers Mysuru, Trusted Shifting Company Mysuru, Goods Transport Services Mysuru.",
+  ogDescription: "Looking for reliable Packers and Movers in Mysuru? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Mysuru and Karnataka.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Mysuru by Gati Shifting Packers. Book your stress-free move today!",
+  canonical: "https://gatishiftingpackers.com/city/mysuru"
+} },
   { slug: "Dharwad", city: "Dharwad", img: Dharwad, offer: "17%", address: "1st Floor, Nagashanti Building, Hubli Toll Naka, near BRTS Bus Stand, Vidyagiri, Dharwad, Karnataka 580001" },
   { slug: "Belagavi", city: "Belagavi", img: Belagavi, offer: "17%", address: "Old PB Rd, near Sre Cargo Carrier, Khasbag, Old Belgaum, Belagavi, Karnataka 590003" },
   { slug: "Belgaum", city: "Belgaum", img: Belgaum, offer: "17%", address: "Old PB Rd, near Sre Cargo Carrier, Khasbag, Old Belgaum, Belagavi, Karnataka 590003" },
@@ -930,6 +973,18 @@ export const pagesData = [
   { slug: "Udupi", city: "Udupi", img: Udupi, offer: "17%", address: "3rd Cross, Manipal Dairy, Door No. 8-94/K-5(2), Shamshera Baki Complex, Road, Eshwar Nagar, Manipal, Karnataka 576104" },
   { slug: "Karwar", city: "Karwar", img: Karwar, offer: "17%", address: "1st Floor, Nagashanti Building, Hubli Toll Naka, near BRTS Bus Stand, Vidyagiri, Dharwad, Karnataka 580001" },
   { slug: "Bagalkot", city: "Bagalkot", img: Bagalkot, offer: "17%", address: "Shabadi building, opp. Sakri High School, ground, Bagalkote, Karnataka 587101" },
+
+
+
+
+
+
+  { slug: "Varanasi", city: "Varanasi", img: Varanasi, offer: "22%", address: "Sub Post Office, Road, near Bhulanpur PAC, Bhullanpur, Churamanpur, Varanasi, Uttar Pradesh 221108" },
+  { slug: "Thoubal", city: "Thoubal", img: Thoubal, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
+  { slug: "Churachandpur", city: "Churachandpur", img: Churachandpur, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
+  { slug: "Bishnupur", city: "Bishnupur", img: Bishnupur, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
+  { slug: "Ukhrul", city: "Ukhrul", img: Ukhrul, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
+
 
 
 
