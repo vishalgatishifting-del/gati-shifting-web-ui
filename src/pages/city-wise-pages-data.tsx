@@ -153,6 +153,16 @@ import Ukhrul from "../assets/CityPages/Ukhrul.webp"
 
 
 
+import Senapati from "../assets/CityPages/Senapati.webp"
+import Kakching from "../assets/CityPages/Kakching.webp"
+import Tamenglong from "../assets/CityPages/Tamenglong.webp"
+import Jiribam from "../assets/CityPages/Jiribam.webp"
+import Moreh from "../assets/CityPages/Moreh.webp"
+
+
+
+
+
 
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg, offer: "15%", address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007" },
@@ -950,13 +960,48 @@ export const pagesData = [
   twitterDescription: "Safe, professional and affordable Packers and Movers in Mysuru by Gati Shifting Packers. Book your stress-free move today!",
   canonical: "https://gatishiftingpackers.com/city/mysuru"
 } },
-  { slug: "Dharwad", city: "Dharwad", img: Dharwad, offer: "17%", address: "1st Floor, Nagashanti Building, Hubli Toll Naka, near BRTS Bus Stand, Vidyagiri, Dharwad, Karnataka 580001" },
-  { slug: "Belagavi", city: "Belagavi", img: Belagavi, offer: "17%", address: "Old PB Rd, near Sre Cargo Carrier, Khasbag, Old Belgaum, Belagavi, Karnataka 590003" },
-  { slug: "Belgaum", city: "Belgaum", img: Belgaum, offer: "17%", address: "Old PB Rd, near Sre Cargo Carrier, Khasbag, Old Belgaum, Belagavi, Karnataka 590003" },
+  { slug: "Dharwad", city: "Dharwad", img: Dharwad, offer: "17%", address: "1st Floor, Nagashanti Building, Hubli Toll Naka, near BRTS Bus Stand, Vidyagiri, Dharwad, Karnataka 580001", metaDetails: {
+  title: "Packers and Movers in Dharwad | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Dharwad with Gati Shifting Packers. We offer secure, affordable and professional home, office and vehicle relocation services in Dharwad and across Karnataka.",
+  keywords: "Local movers near me Dharwad, Packers and Movers in Dharwad, Gati Shifting Packers Dharwad, Best Packers and Movers Dharwad, Affordable Packers and Movers Dharwad, Trusted Packers and Movers Dharwad Karnataka, Local Packers and Movers Dharwad, Professional Movers and Packers Dharwad, Home Shifting Services Dharwad, Office Relocation Dharwad, Vehicle Transport Dharwad, Car Transport Service Dharwad, Bike Transport Dharwad, Household Goods Shifting Dharwad, Industrial Packers and Movers Dharwad, Door-to-Door Shifting Services Dharwad, Packing and Unpacking Services Dharwad, Furniture Movers Dharwad, Intercity Packers and Movers Dharwad, Packers and Movers Dharwad to Hubli, Packers and Movers Dharwad to Bengaluru, Packers and Movers Dharwad to Mysuru, Packers and Movers Dharwad to Mumbai, Reliable Relocation Company Dharwad, Cost-Effective Packers and Movers Dharwad, Quick Packers and Movers Dharwad, 24x7 Packers and Movers Dharwad, Mini Truck for Shifting Dharwad, Tempo Service Dharwad, Best Relocation Services Dharwad, Safe and Secure Moving Services Dharwad, Budget-Friendly Movers Dharwad, Professional Relocation Company Dharwad, Long-Distance Packers and Movers Dharwad, Trusted Shifting Company Dharwad, Goods Transport Services Dharwad.",
+  ogDescription: "Looking for reliable Packers and Movers in Dharwad? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Dharwad and Karnataka.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Dharwad by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/dharwad"
+} },
+  { slug: "Belagavi", city: "Belagavi", img: Belagavi, offer: "17%", address: "Old PB Rd, near Sre Cargo Carrier, Khasbag, Old Belgaum, Belagavi, Karnataka 590003", metaDetails: {
+  title: "Packers and Movers in Belagavi | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Belagavi with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Belagavi and across Karnataka.",
+  keywords: "Local movers near me Belagavi, Packers and Movers in Belagavi, Gati Shifting Packers Belagavi, Best Packers and Movers Belagavi, Affordable Packers and Movers Belagavi, Trusted Packers and Movers Belagavi Karnataka, Local Packers and Movers Belagavi, Professional Movers and Packers Belagavi, Home Shifting Services Belagavi, Office Relocation Belagavi, Vehicle Transport Belagavi, Car Transport Service Belagavi, Bike Transport Belagavi, Household Goods Shifting Belagavi, Industrial Packers and Movers Belagavi, Door-to-Door Shifting Services Belagavi, Packing and Unpacking Services Belagavi, Furniture Movers Belagavi, Intercity Packers and Movers Belagavi, Packers and Movers Belagavi to Hubballi, Packers and Movers Belagavi to Dharwad, Packers and Movers Belagavi to Bengaluru, Packers and Movers Belagavi to Pune, Packers and Movers Belagavi to Mumbai, Reliable Relocation Company Belagavi, Cost-Effective Packers and Movers Belagavi, Quick Packers and Movers Belagavi, 24x7 Packers and Movers Belagavi, Mini Truck for Shifting Belagavi, Tempo Service Belagavi, Best Relocation Services Belagavi, Safe and Secure Moving Services Belagavi, Budget-Friendly Movers Belagavi, Professional Relocation Company Belagavi, Long-Distance Packers and Movers Belagavi, Trusted Shifting Company Belagavi, Goods Transport Services Belagavi.",
+  ogDescription: "Looking for reliable Packers and Movers in Belagavi? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Belagavi and Karnataka.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Belagavi by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/belagavi"
+} },
+  { slug: "Belgaum", city: "Belgaum", img: Belgaum, offer: "17%", address: "Old PB Rd, near Sre Cargo Carrier, Khasbag, Old Belgaum, Belagavi, Karnataka 590003", metaDetails: {
+  title: "Packers and Movers in Belgaum | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Belgaum with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Belgaum and across Karnataka.",
+  keywords: "Local movers near me Belgaum, Packers and Movers in Belgaum, Gati Shifting Packers Belgaum, Best Packers and Movers Belgaum, Affordable Packers and Movers Belgaum, Trusted Packers and Movers Belgaum Karnataka, Local Packers and Movers Belgaum, Professional Movers and Packers Belgaum, Home Shifting Services Belgaum, Office Relocation Belgaum, Vehicle Transport Belgaum, Car Transport Service Belgaum, Bike Transport Belgaum, Household Goods Shifting Belgaum, Industrial Packers and Movers Belgaum, Door-to-Door Shifting Services Belgaum, Packing and Unpacking Services Belgaum, Furniture Movers Belgaum, Intercity Packers and Movers Belgaum, Packers and Movers Belgaum to Hubballi, Packers and Movers Belgaum to Dharwad, Packers and Movers Belgaum to Bengaluru, Packers and Movers Belgaum to Pune, Packers and Movers Belgaum to Mumbai, Reliable Relocation Company Belgaum, Cost-Effective Packers and Movers Belgaum, Quick Packers and Movers Belgaum, 24x7 Packers and Movers Belgaum, Mini Truck for Shifting Belgaum, Tempo Service Belgaum, Best Relocation Services Belgaum, Safe and Secure Moving Services Belgaum, Budget-Friendly Movers Belgaum, Professional Relocation Company Belgaum, Long-Distance Packers and Movers Belgaum, Trusted Shifting Company Belgaum, Goods Transport Services Belgaum.",
+  ogDescription: "Looking for reliable Packers and Movers in Belgaum? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Belgaum and Karnataka.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Belgaum by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/belgaum"
+} },
 
 
-  { slug: "Kalaburagi", city: "Kalaburagi", img: Kalaburagi, offer: "17%", address: "Dakshin Builders & Construction, S.NO. 102/B, Old Jewargi Rd, opp. P&T Quarters, Kotnoor, Kalaburagi, Karnataka 585102" },
-  { slug: "Gulbarga", city: "Gulbarga", img: Gulbarga, offer: "17%", address: "Shop No.2, Ahmed nagar, Ring Rd, opp. Taj College M.S.K Mill, Kalaburagi, Karnataka 585105" },
+  { slug: "Kalaburagi", city: "Kalaburagi", img: Kalaburagi, offer: "17%", address: "Dakshin Builders & Construction, S.NO. 102/B, Old Jewargi Rd, opp. P&T Quarters, Kotnoor, Kalaburagi, Karnataka 585102", metaDetails: {
+  title: "Packers and Movers in Kalaburagi | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Kalaburagi with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Kalaburagi and across Karnataka.",
+  keywords: "Local movers near me Kalaburagi, Packers and Movers in Kalaburagi, Gati Shifting Packers Kalaburagi, Best Packers and Movers Kalaburagi, Affordable Packers and Movers Kalaburagi, Trusted Packers and Movers Kalaburagi Karnataka, Local Packers and Movers Kalaburagi, Professional Movers and Packers Kalaburagi, Home Shifting Services Kalaburagi, Office Relocation Kalaburagi, Vehicle Transport Kalaburagi, Car Transport Service Kalaburagi, Bike Transport Kalaburagi, Household Goods Shifting Kalaburagi, Industrial Packers and Movers Kalaburagi, Door-to-Door Shifting Services Kalaburagi, Packing and Unpacking Services Kalaburagi, Furniture Movers Kalaburagi, Intercity Packers and Movers Kalaburagi, Packers and Movers Kalaburagi to Bengaluru, Packers and Movers Kalaburagi to Vijayapura, Packers and Movers Kalaburagi to Ballari, Packers and Movers Kalaburagi to Hyderabad, Packers and Movers Kalaburagi to Mumbai, Reliable Relocation Company Kalaburagi, Cost-Effective Packers and Movers Kalaburagi, Quick Packers and Movers Kalaburagi, 24x7 Packers and Movers Kalaburagi, Mini Truck for Shifting Kalaburagi, Tempo Service Kalaburagi, Best Relocation Services Kalaburagi, Safe and Secure Moving Services Kalaburagi, Budget-Friendly Movers Kalaburagi, Professional Relocation Company Kalaburagi, Long-Distance Packers and Movers Kalaburagi, Trusted Shifting Company Kalaburagi, Goods Transport Services Kalaburagi.",
+  ogDescription: "Looking for reliable Packers and Movers in Kalaburagi? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Kalaburagi and Karnataka.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Kalaburagi by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/kalaburagi"
+} },
+  { slug: "Gulbarga", city: "Gulbarga", img: Gulbarga, offer: "17%", address: "Shop No.2, Ahmed nagar, Ring Rd, opp. Taj College M.S.K Mill, Kalaburagi, Karnataka 585105", metaDetails: {
+  title: "Packers and Movers in Gulbarga | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Gulbarga with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Gulbarga and across Karnataka.",
+  keywords: "Local movers near me Gulbarga, Packers and Movers in Gulbarga, Gati Shifting Packers Gulbarga, Best Packers and Movers Gulbarga, Affordable Packers and Movers Gulbarga, Trusted Packers and Movers Gulbarga Karnataka, Local Packers and Movers Gulbarga, Professional Movers and Packers Gulbarga, Home Shifting Services Gulbarga, Office Relocation Gulbarga, Vehicle Transport Gulbarga, Car Transport Service Gulbarga, Bike Transport Gulbarga, Household Goods Shifting Gulbarga, Industrial Packers and Movers Gulbarga, Door-to-Door Shifting Services Gulbarga, Packing and Unpacking Services Gulbarga, Furniture Movers Gulbarga, Intercity Packers and Movers Gulbarga, Packers and Movers Gulbarga to Kalaburagi, Packers and Movers Gulbarga to Bengaluru, Packers and Movers Gulbarga to Vijayapura, Packers and Movers Gulbarga to Hyderabad, Packers and Movers Gulbarga to Mumbai, Reliable Relocation Company Gulbarga, Cost-Effective Packers and Movers Gulbarga, Quick Packers and Movers Gulbarga, 24x7 Packers and Movers Gulbarga, Mini Truck for Shifting Gulbarga, Tempo Service Gulbarga, Best Relocation Services Gulbarga, Safe and Secure Moving Services Gulbarga, Budget-Friendly Movers Gulbarga, Professional Relocation Company Gulbarga, Long-Distance Packers and Movers Gulbarga, Trusted Shifting Company Gulbarga, Goods Transport Services Gulbarga.",
+  ogDescription: "Looking for reliable Packers and Movers in Gulbarga? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Gulbarga and Karnataka.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Gulbarga by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/gulbarga"
+} },
   { slug: "Ballari", city: "Ballari", img: Ballari, offer: "17%", address: "Pushpavathi Building, Industrial Area, Anantapur Road, opp. Kalyani Bar, Venkateswara Nagar, Bandimot, Ballari, Karnataka 583101" },
   { slug: "Davanagere", city: "Davanagere", img: Davanagere, offer: "17%", address: "K.R Road, Devraj Nagar, behind Shanthi Talkies, Davanagere, Karnataka 577001" },
   { slug: "Tumakuru", city: "Tumakuru", img: Tumakuru, offer: "17%", address: " 2nd Main Rd, 2nd Cross Road, New Mandipet, Mandipet, Tumakuru, Karnataka 572101" },
@@ -984,6 +1029,15 @@ export const pagesData = [
   { slug: "Churachandpur", city: "Churachandpur", img: Churachandpur, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
   { slug: "Bishnupur", city: "Bishnupur", img: Bishnupur, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
   { slug: "Ukhrul", city: "Ukhrul", img: Ukhrul, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
+
+
+
+  { slug: "Senapati", city: "Senapati", img: Senapati, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
+  { slug: "Kakching", city: "Kakching", img: Kakching, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
+  { slug: "Tamenglong", city: "Tamenglong", img: Tamenglong, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
+  { slug: "Jiribam", city: "Jiribam", img: Jiribam, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
+  { slug: "Moreh", city: "Moreh", img: Moreh, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
+
 
 
 
