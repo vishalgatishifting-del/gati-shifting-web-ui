@@ -161,6 +161,15 @@ import Moreh from "../assets/CityPages/Moreh.webp"
 
 
 
+import Shimla from "../assets/CityPages/Shimla.webp"
+import Manali from "../assets/CityPages/Manali.webp"
+import Kullu from "../assets/CityPages/Kullu.webp"
+import Mandi from "../assets/CityPages/Mandi.webp"
+import Solan from "../assets/CityPages/Solan.webp"
+
+
+
+
 
 
 
@@ -1002,14 +1011,49 @@ export const pagesData = [
   twitterDescription: "Safe, professional and affordable Packers and Movers in Gulbarga by Gati Shifting Packers. Book your smooth relocation today!",
   canonical: "https://gatishiftingpackers.com/city/gulbarga"
 } },
-  { slug: "Ballari", city: "Ballari", img: Ballari, offer: "17%", address: "Pushpavathi Building, Industrial Area, Anantapur Road, opp. Kalyani Bar, Venkateswara Nagar, Bandimot, Ballari, Karnataka 583101" },
-  { slug: "Davanagere", city: "Davanagere", img: Davanagere, offer: "17%", address: "K.R Road, Devraj Nagar, behind Shanthi Talkies, Davanagere, Karnataka 577001" },
-  { slug: "Tumakuru", city: "Tumakuru", img: Tumakuru, offer: "17%", address: " 2nd Main Rd, 2nd Cross Road, New Mandipet, Mandipet, Tumakuru, Karnataka 572101" },
+  { slug: "Ballari", city: "Ballari", img: Ballari, offer: "17%", address: "Pushpavathi Building, Industrial Area, Anantapur Road, opp. Kalyani Bar, Venkateswara Nagar, Bandimot, Ballari, Karnataka 583101", metaDetails: {
+  title: "Packers and Movers in Ballari | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Ballari with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Ballari and across Karnataka.",
+  keywords: "Local movers near me Ballari, Packers and Movers in Ballari, Gati Shifting Packers Ballari, Best Packers and Movers Ballari, Affordable Packers and Movers Ballari, Trusted Packers and Movers Ballari Karnataka, Local Packers and Movers Ballari, Professional Movers and Packers Ballari, Home Shifting Services Ballari, Office Relocation Ballari, Vehicle Transport Ballari, Car Transport Service Ballari, Bike Transport Ballari, Household Goods Shifting Ballari, Industrial Packers and Movers Ballari, Door-to-Door Shifting Services Ballari, Packing and Unpacking Services Ballari, Furniture Movers Ballari, Intercity Packers and Movers Ballari, Packers and Movers Ballari to Bengaluru, Packers and Movers Ballari to Kalaburagi, Packers and Movers Ballari to Hospet, Packers and Movers Ballari to Mysuru, Packers and Movers Ballari to Hyderabad, Reliable Relocation Company Ballari, Cost-Effective Packers and Movers Ballari, Quick Packers and Movers Ballari, 24x7 Packers and Movers Ballari, Mini Truck for Shifting Ballari, Tempo Service Ballari, Best Relocation Services Ballari, Safe and Secure Moving Services Ballari, Budget-Friendly Movers Ballari, Professional Relocation Company Ballari, Long-Distance Packers and Movers Ballari, Trusted Shifting Company Ballari, Goods Transport Services Ballari.",
+  ogDescription: "Looking for reliable Packers and Movers in Ballari? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Ballari and Karnataka.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Ballari by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/ballari"
+} },
+  { slug: "Davanagere", city: "Davanagere", img: Davanagere, offer: "17%", address: "K.R Road, Devraj Nagar, behind Shanthi Talkies, Davanagere, Karnataka 577001", metaDetails: {
+  title: "Packers and Movers in Davanagere | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Davanagere with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Davanagere and across Karnataka.",
+  keywords: "Local movers near me Davanagere, Packers and Movers in Davanagere, Gati Shifting Packers Davanagere, Best Packers and Movers Davanagere, Affordable Packers and Movers Davanagere, Trusted Packers and Movers Davanagere Karnataka, Local Packers and Movers Davanagere, Professional Movers and Packers Davanagere, Home Shifting Services Davanagere, Office Relocation Davanagere, Vehicle Transport Davanagere, Car Transport Service Davanagere, Bike Transport Davanagere, Household Goods Shifting Davanagere, Industrial Packers and Movers Davanagere, Door-to-Door Shifting Services Davanagere, Packing and Unpacking Services Davanagere, Furniture Movers Davanagere, Intercity Packers and Movers Davanagere, Packers and Movers Davanagere to Bengaluru, Packers and Movers Davanagere to Shivamogga, Packers and Movers Davanagere to Hubballi, Packers and Movers Davanagere to Mysuru, Packers and Movers Davanagere to Mumbai, Reliable Relocation Company Davanagere, Cost-Effective Packers and Movers Davanagere, Quick Packers and Movers Davanagere, 24x7 Packers and Movers Davanagere, Mini Truck for Shifting Davanagere, Tempo Service Davanagere, Best Relocation Services Davanagere, Safe and Secure Moving Services Davanagere, Budget-Friendly Movers Davanagere, Professional Relocation Company Davanagere, Long-Distance Packers and Movers Davanagere, Trusted Shifting Company Davanagere, Goods Transport Services Davanagere.",
+  ogDescription: "Looking for reliable Packers and Movers in Davanagere? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Davanagere and Karnataka.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Davanagere by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/davanagere"
+} },
+  { slug: "Tumakuru", city: "Tumakuru", img: Tumakuru, offer: "17%", address: " 2nd Main Rd, 2nd Cross Road, New Mandipet, Mandipet, Tumakuru, Karnataka 572101", metaDetails: {
+  title: "Packers and Movers in Tumakuru | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Tumakuru with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Tumakuru and across Karnataka.",
+  keywords: "Local movers near me Tumakuru, Packers and Movers in Tumakuru, Gati Shifting Packers Tumakuru, Best Packers and Movers Tumakuru, Affordable Packers and Movers Tumakuru, Trusted Packers and Movers Tumakuru Karnataka, Local Packers and Movers Tumakuru, Professional Movers and Packers Tumakuru, Home Shifting Services Tumakuru, Office Relocation Tumakuru, Vehicle Transport Tumakuru, Car Transport Service Tumakuru, Bike Transport Tumakuru, Household Goods Shifting Tumakuru, Industrial Packers and Movers Tumakuru, Door-to-Door Shifting Services Tumakuru, Packing and Unpacking Services Tumakuru, Furniture Movers Tumakuru, Intercity Packers and Movers Tumakuru, Packers and Movers Tumakuru to Bengaluru, Packers and Movers Tumakuru to Mysuru, Packers and Movers Tumakuru to Chikkaballapur, Packers and Movers Tumakuru to Shivamogga, Packers and Movers Tumakuru to Hyderabad, Reliable Relocation Company Tumakuru, Cost-Effective Packers and Movers Tumakuru, Quick Packers and Movers Tumakuru, 24x7 Packers and Movers Tumakuru, Mini Truck for Shifting Tumakuru, Tempo Service Tumakuru, Best Relocation Services Tumakuru, Safe and Secure Moving Services Tumakuru, Budget-Friendly Movers Tumakuru, Professional Relocation Company Tumakuru, Long-Distance Packers and Movers Tumakuru, Trusted Shifting Company Tumakuru, Goods Transport Services Tumakuru.",
+  ogDescription: "Looking for reliable Packers and Movers in Tumakuru? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Tumakuru and Karnataka.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Tumakuru by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/tumakuru"
+} },
 
 
 
-  { slug: "Shivamogga", city: "Shivamogga", img: Shivamogga, offer: "17%", address: "Kariyanna Building, Vinoba Nagara, Shivamogga, Karnataka 577204" },
-  { slug: "Raichur", city: "Raichur", img: Raichur, offer: "17%", address: "LBS Nagar, Rajendra Gunj, Raichur, Karnataka 584102" },
+  { slug: "Shivamogga", city: "Shivamogga", img: Shivamogga, offer: "17%", address: "Kariyanna Building, Vinoba Nagara, Shivamogga, Karnataka 577204", metaDetails: {
+  title: "Packers and Movers in Shivamogga | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Shivamogga with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Shivamogga and across Karnataka.",
+  keywords: "Local movers near me Shivamogga, Packers and Movers in Shivamogga, Gati Shifting Packers Shivamogga, Best Packers and Movers Shivamogga, Affordable Packers and Movers Shivamogga, Trusted Packers and Movers Shivamogga Karnataka, Local Packers and Movers Shivamogga, Professional Movers and Packers Shivamogga, Home Shifting Services Shivamogga, Office Relocation Shivamogga, Vehicle Transport Shivamogga, Car Transport Service Shivamogga, Bike Transport Shivamogga, Household Goods Shifting Shivamogga, Industrial Packers and Movers Shivamogga, Door-to-Door Shifting Services Shivamogga, Packing and Unpacking Services Shivamogga, Furniture Movers Shivamogga, Intercity Packers and Movers Shivamogga, Packers and Movers Shivamogga to Bengaluru, Packers and Movers Shivamogga to Davanagere, Packers and Movers Shivamogga to Bhadravati, Packers and Movers Shivamogga to Mangaluru, Packers and Movers Shivamogga to Mumbai, Reliable Relocation Company Shivamogga, Cost-Effective Packers and Movers Shivamogga, Quick Packers and Movers Shivamogga, 24x7 Packers and Movers Shivamogga, Mini Truck for Shifting Shivamogga, Tempo Service Shivamogga, Best Relocation Services Shivamogga, Safe and Secure Moving Services Shivamogga, Budget-Friendly Movers Shivamogga, Professional Relocation Company Shivamogga, Long-Distance Packers and Movers Shivamogga, Trusted Shifting Company Shivamogga, Goods Transport Services Shivamogga.",
+  ogDescription: "Looking for reliable Packers and Movers in Shivamogga? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Shivamogga and Karnataka.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Shivamogga by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/shivamogga"
+} },
+  { slug: "Raichur", city: "Raichur", img: Raichur, offer: "17%", address: "LBS Nagar, Rajendra Gunj, Raichur, Karnataka 584102", metaDetails: {
+  title: "Packers and Movers in Raichur | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Raichur with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Raichur and across Karnataka.",
+  keywords: "Local movers near me Raichur, Packers and Movers in Raichur, Gati Shifting Packers Raichur, Best Packers and Movers Raichur, Affordable Packers and Movers Raichur, Trusted Packers and Movers Raichur Karnataka, Local Packers and Movers Raichur, Professional Movers and Packers Raichur, Home Shifting Services Raichur, Office Relocation Raichur, Vehicle Transport Raichur, Car Transport Service Raichur, Bike Transport Raichur, Household Goods Shifting Raichur, Industrial Packers and Movers Raichur, Door-to-Door Shifting Services Raichur, Packing and Unpacking Services Raichur, Furniture Movers Raichur, Intercity Packers and Movers Raichur, Packers and Movers Raichur to Kalaburagi, Packers and Movers Raichur to Ballari, Packers and Movers Raichur to Koppal, Packers and Movers Raichur to Hyderabad, Packers and Movers Raichur to Bengaluru, Reliable Relocation Company Raichur, Cost-Effective Packers and Movers Raichur, Quick Packers and Movers Raichur, 24x7 Packers and Movers Raichur, Mini Truck for Shifting Raichur, Tempo Service Raichur, Best Relocation Services Raichur, Safe and Secure Moving Services Raichur, Budget-Friendly Movers Raichur, Professional Relocation Company Raichur, Long-Distance Packers and Movers Raichur, Trusted Shifting Company Raichur, Goods Transport Services Raichur.",
+  ogDescription: "Looking for reliable Packers and Movers in Raichur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Raichur and Karnataka.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Raichur by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/raichur"
+} },
   { slug: "Vijayapura", city: "Vijayapura", img: Vijayapura, offer: "17%", address: "1188/B, Station Rd, behind Royal Hotel, Chapparband Galli, Vijayapura, Karnataka 586104" },
   { slug: "Bidar", city: "Bidar", img: Bidar, offer: "17%", address: " BRIMS College Canteen, Udgir Rd, nearby Address:, Nawadgeri, Bidar, Karnataka 585401" },
   { slug: "Hassan", city: "Hassan", img: Hassan, offer: "17%", address: "45/1, Ayyappa Swamy Temple Rd, 1st 2nd, Krishnaraja Pura, Hassan, Karnataka 573201" },
@@ -1037,6 +1081,14 @@ export const pagesData = [
   { slug: "Tamenglong", city: "Tamenglong", img: Tamenglong, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
   { slug: "Jiribam", city: "Jiribam", img: Jiribam, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
   { slug: "Moreh", city: "Moreh", img: Moreh, offer: "22%", address: "Paona Bazar, Imphal, Manipur 795001" },
+
+
+  { slug: "Shimla", city: "Shimla", img: Shimla, offer: "22%", address: "Circular Road, near Victory Tunnel, The Mall, Shimla, Himachal Pradesh 171003" },
+  { slug: "Manali", city: "Manali", img: Manali, offer: "22%", address: "Shop No. 23, Mall Rd, Siyal, Manali, Himachal Pradesh 175131" },
+  { slug: "Kullu", city: "Kullu", img: Kullu, offer: "22%", address: "Central Bank Of India, near Narru Clinic, Dhalpur, Kullu, Himachal Pradesh 175101" },
+  { slug: "Mandi", city: "Mandi", img: Mandi, offer: "22%", address: "Shop No. 23, Mall Rd, Siyal, Mandi , Himachal Pradesh 175131" },
+  { slug: "Solan", city: "Solan", img: Solan, offer: "22%", address: "Central Bank Of India, near Narru Clinic, Dhalpur, Solan, Himachal Pradesh 175101" },
+
 
 
 
