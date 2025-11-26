@@ -46,6 +46,11 @@ import verifiedBadgePng from "../assets/homePagePng/Gemini_Generated_Image_seeh1
 import peoplesPng from "../assets/homePagePng/Gemini_Generated_Image_lrzvt4lrzvt4lrzv.png"
 
 
+import feature1Img from "../assets/homePagePng/feature1.jpg"
+import feature2Img from "../assets/homePagePng/feature2.jpg"
+import feature3Img from "../assets/homePagePng/feature3.jpg"
+
+
 
 // import { IFaqItem } from "../models/App.model";
 // import { AppConstant } from "../constants/app.constant";
@@ -382,6 +387,20 @@ const Home: React.FC = () => {
                             <p>Satisfied Customers</p>
                         </div>
                     </div>
+            </section>
+
+            <section id="feature-section">
+                <div className="container">
+                    <div className="imgBx">
+                        <img src={feature1Img} />
+                    </div>
+                    <div className="imgBx">
+                        <img src={feature2Img} />
+                    </div>
+                    <div className="imgBx">
+                        <img src={feature3Img} />
+                    </div>
+                </div>
             </section>
 
             <section id="company-description">
