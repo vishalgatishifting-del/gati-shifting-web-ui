@@ -176,6 +176,14 @@ import Una from "../assets/CityPages/Una.webp"
 import Chamba from "../assets/CityPages/Chamba.webp"
 
 
+import Palampur from "../assets/CityPages/Palampur.webp"
+import Nahan from "../assets/CityPages/Nahan.webp"
+import Kinnaur from "../assets/CityPages/Kinnaur.webp"
+import Keylong from "../assets/CityPages/Keylong.webp"
+import Srinagar from "../assets/CityPages/Srinagar.webp"
+
+
+
 
 
 
@@ -1225,6 +1233,15 @@ export const pagesData = [
   { slug: "Hamirpur", city: "Hamirpur", img: Hamirpur, offer: "22%", address: "Shop no. 29, WN 6, Ground Floor, near, New Road, Chakmoh, Kohta, Hamirpur, Himachal Pradesh 177001" },
   { slug: "Una", city: "Una", img: Una, offer: "22%", address: "SH 17, Jawahar Nagar, Mant Khas, Una, Himachal Pradesh 174303" },
   { slug: "Chamba", city: "Chamba", img: Chamba, offer: "22%", address: "SH 17, Jawahar Nagar, Mant Khas, Chamba , Himachal Pradesh 176318" },
+
+
+
+  { slug: "Palampur", city: "Palampur", img: Palampur, offer: "26%", address: "Shop No. 23, Mall Rd, Siyal, Palampur, Himachal Pradesh 176062" },
+  { slug: "Nahan", city: "Nahan", img: Nahan, offer: "26%", address: "Shambhu Wala, Himachal Pradesh 173001" },
+  { slug: "Kinnaur", city: "Kinnaur (Reckong Peo)", img: Kinnaur, offer: "26%", address: "SH 17, Jawahar Nagar, Mant Khas, Chamba , Himachal Pradesh 176318" },
+  { slug: "Keylong", city: "Keylong (Lahaul & Spiti)", img: Keylong, offer: "26%", address: "Keylong (Lahaul & Spiti) Himachal Pradesh 175132" },
+  { slug: "Srinagar", city: "Srinagar", img: Srinagar, offer: "26%", address: "Shop No. 65, Chotta Bazar, Karan Nagar, Masjid Rd, near Kani Kadal, Srinagar, Jammu and Kashmir 190010" },
+
 
 
 
