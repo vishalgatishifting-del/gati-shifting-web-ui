@@ -191,6 +191,15 @@ import Sopore from "../assets/CityPages/Sopore.webp"
 
 
 
+import Kupwara from "../assets/CityPages/Kupwara.webp"
+import Pulwama from "../assets/CityPages/Pulwama.webp"
+import Rajouri from "../assets/CityPages/Rajouri.webp"
+import Poonch from "../assets/CityPages/Poonch.webp"
+import Bandipora from "../assets/CityPages/Bandipora.webp"
+
+
+
+
 
 
 
@@ -1364,6 +1373,11 @@ export const pagesData = [
 
 
 
+  { slug: "Kupwara", city: "Kupwara", img: Kupwara, offer: "26%", address: "Iqbal Market, near Distt. Hospital, Kupwara, Jammu and Kashmir 193222" },
+  { slug: "Pulwama", city: "Pulwama", img: Pulwama, offer: "26%", address: "Ahad's Tower, near District Hospital, Pulwama, Jammu and Kashmir 192301" },
+  { slug: "Rajouri", city: "Rajouri", img: Rajouri, offer: "26%", address: "Shop no 22, Gujjar Mandi, Rajouri, Jammu and Kashmir 185133" },
+  { slug: "Poonch", city: "Poonch", img: Poonch, offer: "26%", address: "Shankar nagar, Poonch, Jammu and Kashmir 185101" },
+  { slug: "Bandipora", city: "Bandipora", img: Bandipora, offer: "26%", address: "MAIN MARKET, Bandipora-Srinagar Rd, Plan Bandipora, Jammu and Kashmir 193502" },
 
 
 

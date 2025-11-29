@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import "./Footer.scss"
 import logoImg from "../assets/logo/roundedLogo.png"
+import { useState } from "react";
 
 //     "Itanagar", "Dibrugarh", "Silchar", "Gaya", "Muzaffarpur", "Darbhanga",
 //     "Raipur", "Bhilai", "Durg", "Bilaspur",
@@ -28,7 +29,7 @@ import logoImg from "../assets/logo/roundedLogo.png"
 const Footer = () => {
 
     const cities = [
-        "Jaipur", "Nagaon", "Thrissur", "Vishakhapatnam", "Thiruvananthapuram", "Coimbatore", "Manipur", "Dimapur", "Shilong", "Rishikesh", "Haridwar", "Gorakhpur", "Ranipet", "Amrawati", "Jorhat", "Palakkad", "Sambalpur", "Berhampur", "Imphal", "Rourkela", "Balasore", "Puri", "Baripada","Jharsuguda", "Angul", "Bhadrak", "Bargarh", "Jeypore", "Kendrapara", "Rayagada", "Whitefield", "Electronic-City", "Koramangala", "Indiranagar", "Marathahalli", "Yelahanka", "Jayanagar", "Rajajinagar", "HSR-Layout", "BTM-Layout", "Hebbal", "Malleshwaram", "Kalyan-Dombivli", "Banashankari", "Nagpur", "Solapur", "Sangli", "Jalgaon", "Akola", "Latur", "Dhule", "Ahmednagar", "Chandrapur", "Parbhani", "Nanded", "Wardha", "Satara", "Ratnagiri", "Palghar", "Basavanagudi", "Bengaluru", "Mysuru", "Dharwad","Belagavi", "Belgaum", "Kalaburagi", "Gulbarga", "Ballari", "Davanagere", "Tumakuru", "Shivamogga", "Raichur", "Vijayapura", "Bidar", "Hassan", "Chitradurga", "Kolar", "Udupi", "Karwar", "Bagalkot", "Varanasi", "Thoubal", "Churachandpur", "Bishnupur", "Ukhrul", "Senapati", "Kakching", "Tamenglong", "Jiribam", "Moreh", "Shimla", "Manali", "Kullu", "Mandi", "Solan", "Dharamshala", "Kangra", "Hamirpur", "Una", "Chamba", "Palampur", "Nahan", "Kinnaur", "Keylong", "Srinagar", "Anantnag", "Baramulla", "Udhampur", "Kathua", "Sopore"
+        "Jaipur", "Nagaon", "Thrissur", "Vishakhapatnam", "Thiruvananthapuram", "Coimbatore", "Manipur", "Dimapur", "Shilong", "Rishikesh", "Haridwar", "Gorakhpur", "Ranipet", "Amrawati", "Jorhat", "Palakkad", "Sambalpur", "Berhampur", "Imphal", "Rourkela", "Balasore", "Puri", "Baripada","Jharsuguda", "Angul", "Bhadrak", "Bargarh", "Jeypore", "Kendrapara", "Rayagada", "Whitefield", "Electronic-City", "Koramangala", "Indiranagar", "Marathahalli", "Yelahanka", "Jayanagar", "Rajajinagar", "HSR-Layout", "BTM-Layout", "Hebbal", "Malleshwaram", "Kalyan-Dombivli", "Banashankari", "Nagpur", "Solapur", "Sangli", "Jalgaon", "Akola", "Latur", "Dhule", "Ahmednagar", "Chandrapur", "Parbhani", "Nanded", "Wardha", "Satara", "Ratnagiri", "Palghar", "Basavanagudi", "Bengaluru", "Mysuru", "Dharwad","Belagavi", "Belgaum", "Kalaburagi", "Gulbarga", "Ballari", "Davanagere", "Tumakuru", "Shivamogga", "Raichur", "Vijayapura", "Bidar", "Hassan", "Chitradurga", "Kolar", "Udupi", "Karwar", "Bagalkot", "Varanasi", "Thoubal", "Churachandpur", "Bishnupur", "Ukhrul", "Senapati", "Kakching", "Tamenglong", "Jiribam", "Moreh", "Shimla", "Manali", "Kullu", "Mandi", "Solan", "Dharamshala", "Kangra", "Hamirpur", "Una", "Chamba", "Palampur", "Nahan", "Kinnaur", "Keylong", "Srinagar", "Anantnag", "Baramulla", "Udhampur", "Kathua", "Sopore", "Kupwara", "Pulwama", "Rajouri", "Poonch", "Bandipora"
 
     ];
 
@@ -43,6 +44,9 @@ const Footer = () => {
 
     const numCols = 4; // 4 columns like your previous example
     const columns = splitIntoColumns(cities, numCols);
+
+
+    const [show, setShow] = useState(0);
     return (
         <>
             <section id="redirect-links">
@@ -105,7 +109,9 @@ const Footer = () => {
                         <li><Link to="/city/surat">Packers & Movers Surat</Link></li>
                     </ul>
                 </div>
-                {<div className="container">
+                {
+                    (show) ? 
+                    <div className="container">
                     {columns.map((col, i) => (
                         <ul key={i}>
                             {col.map((city) => (
@@ -117,7 +123,12 @@ const Footer = () => {
                             ))}
                         </ul>
                     ))}
-                </div>}
+                </div> : ""}
+
+
+                {  show==0 ? (<button className="show-more-btn" onClick={() => {
+                    setShow(1)
+                    }}>Show More</button>):""}
             </section>
 
             <footer className="footer">

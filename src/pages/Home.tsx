@@ -50,6 +50,8 @@ import feature1Img from "../assets/homePagePng/feature1.jpg"
 import feature2Img from "../assets/homePagePng/feature2.jpg"
 import feature3Img from "../assets/homePagePng/feature3.jpg"
 
+// import ZohoLeadForm from "../components/ZohoForm"
+
 
 
 // import { IFaqItem } from "../models/App.model";
@@ -267,6 +269,7 @@ const Home: React.FC = () => {
                     ))}
                 </Slider>
             </Box>
+
             <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1>
             <motion.div
                 ref={ref1}
@@ -342,6 +345,7 @@ const Home: React.FC = () => {
                         <h3>Get a free <span>{text}</span> Quote</h3>
                         <i>We’ll call you within 15 minutes</i>
 
+            {/* <ZohoLeadForm></ZohoLeadForm> */}
                         <form>
                             <input type="text" placeholder="Full Name*" name="name" onChange={handleChange} value={formData.name} required />
                             <input type="text" placeholder="Mobile No*" name="phone_office" onChange={handleChange} value={formData.phone_office} required />
@@ -365,28 +369,28 @@ const Home: React.FC = () => {
             </motion.div>
 
             <section id="counter-section">
-                    <div className="container">
-                        <div className="card">
-                            <img src={truckPng} />
-                            <h1>1,032,858+</h1>
-                            <p>Homes Moved</p>
-                        </div>
-                        <div className="card">
-                            <img src={cityPng} />
-                            <h1>600+</h1>
-                            <p>Cities Covered</p>
-                        </div>
-                        <div className="card">
-                            <img src={verifiedBadgePng} />
-                            <h1>3,548+</h1>
-                            <p>Verified Professionals</p>
-                        </div>
-                        <div className="card">
-                            <img src={peoplesPng} />
-                            <h1>99%</h1>
-                            <p>Satisfied Customers</p>
-                        </div>
+                <div className="container">
+                    <div className="card">
+                        <img src={truckPng} />
+                        <h1>1,032,858+</h1>
+                        <p>Homes Moved</p>
                     </div>
+                    <div className="card">
+                        <img src={cityPng} />
+                        <h1>600+</h1>
+                        <p>Cities Covered</p>
+                    </div>
+                    <div className="card">
+                        <img src={verifiedBadgePng} />
+                        <h1>3,548+</h1>
+                        <p>Verified Professionals</p>
+                    </div>
+                    <div className="card">
+                        <img src={peoplesPng} />
+                        <h1>99%</h1>
+                        <p>Satisfied Customers</p>
+                    </div>
+                </div>
             </section>
 
             <section id="feature-section">

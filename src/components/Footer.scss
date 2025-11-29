@@ -27,6 +27,19 @@
     }
 }
 
+.show-more-btn{
+  padding: 10px 20px;
+  display: flex;
+  justify-self: center;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+  background: $primary-color;
+  color: #fff;
+  font-size: 16px;
+}
+
 .footer {
   background:#0e1a2b;          /* dark navy background */
   color:#fff;
@@ -39,9 +52,6 @@
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
-}
-.footer-logo{
-    // border-radius: 50px;
 }
 .footer-col h4 {
   margin-bottom: 15px;
