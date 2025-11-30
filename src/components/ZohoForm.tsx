@@ -91,7 +91,6 @@ const ZohoForm: React.FC = () => {
 
   return (
     <div id="crmWebToEntityForm" className="zcwf_lblLeft crmWebToEntityForm">
-      <div className="zcwf_title">Gati Shifting Website</div>
       <form onSubmit={handleSubmit}>
         {(
           Object.keys(formData) as Array<keyof FormData>
@@ -111,6 +110,7 @@ const ZohoForm: React.FC = () => {
           <div className="zcwf_col_fld">
             <button type='submit'>Get Free Quote</button>
             <input
+              style={{marginLeft: "10px", cursor:"pointer"}}
               type="reset"
               value="Reset"
               className="zcwf_button"
