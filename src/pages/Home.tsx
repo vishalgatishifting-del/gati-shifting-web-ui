@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import { Box } from "@mui/material";
 import Avatar from '@mui/material/Avatar';
