@@ -50,7 +50,7 @@ import feature1Img from "../assets/homePagePng/feature1.jpg"
 import feature2Img from "../assets/homePagePng/feature2.jpg"
 import feature3Img from "../assets/homePagePng/feature3.jpg"
 
-// import ZohoLeadForm from "../components/ZohoForm"
+import ZohoForm from "../components/ZohoForm"
 
 
 
@@ -345,7 +345,7 @@ const Home: React.FC = () => {
                         <h3>Get a free <span>{text}</span> Quote</h3>
                         <i>We’ll call you within 15 minutes</i>
 
-            {/* <ZohoLeadForm></ZohoLeadForm> */}
+            <ZohoForm></ZohoForm>
                         <form>
                             <input type="text" placeholder="Full Name*" name="name" onChange={handleChange} value={formData.name} required />
                             <input type="text" placeholder="Mobile No*" name="phone_office" onChange={handleChange} value={formData.phone_office} required />

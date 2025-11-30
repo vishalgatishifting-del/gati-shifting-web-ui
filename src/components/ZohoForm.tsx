@@ -1,32 +1,135 @@
-import { useEffect } from "react";
+import React, { useState, type FormEvent, type ChangeEvent } from 'react';
+import './ZohoForm.css';
+import axios from "axios";
 
-export default function ZohoForm() {
+type FormData = {
+  Name: string;
+  Email: string;
+  Phone: string;
+  From: string;
+  To: string;
+  Goods: string;
+};
 
-  useEffect(() => {
-    // Add Zoho validation script dynamically
-    const script = document.createElement("script");
-    script.src = "https://crm.zoho.in/crm/WebFormScriptServlet?rid=1132138000000574001"; 
-    document.body.appendChild(script);
+const ZohoForm: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
+    Name: '',
+    Phone: '',
+    Email: '',
+    From: '',
+    To: '',
+    Goods: ''
+  });
 
-    return () => {
-      document.body.removeChild(script);
+  // Change Handler
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value // ✅ TypeScript ko key safe karne ke liye FormKeys use kar sakte ho
+    }));
+  };
+
+  // Email Validation
+  const validateEmail = (email: string) => {
+    const re = /\S+@\S+\.\S+/;
+    return re.test(email);
+  };
+
+  // Submit Handler
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+
+    const mandatoryFields: { name: keyof FormData; label: string }[] = [
+      { name: 'Name', label: 'Name' },
+      { name: 'Email', label: 'Email' },
+      { name: 'Phone', label: 'Phone' },
+      { name: 'From', label: 'Pickup From' },
+      { name: 'To', label: 'Drop point' },
+      { name: 'Goods', label: 'Goods type' }
+    ];
+
+    for (let field of mandatoryFields) {
+      if (!formData[field.name].trim()) {
+        alert(`${field.label} cannot be empty.`);
+        return;
+      }
+    }
+
+    if (!validateEmail(formData.Email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    const payload = {
+      ...formData,
+      landingPage: window.location.href,
     };
-  }, []);
+
+    try {
+      console.log(payload)
+      const response = await axios.post("https://api.gatishiftingpackers.com/create-lead", payload);
+
+      if (response) {
+        alert('Form submitted successfully!');
+        setFormData({
+          Name: '',
+          Email: '',
+          Phone: '',
+          From: '',
+          To: '',
+          Goods: ''
+        });
+      } else {
+        alert('Failed to submit form...');
+      }
+    } catch (err) {
+      console.error(err);
+      alert('This error occured Error submitting form.' + err);
+    }
+  };
 
   return (
-    <form
-      id="webform1132138000000574001"
-      action="https://crm.zoho.in/crm/WebToLeadForm"
-      method="POST"
-      acceptCharset="UTF-8"
-    >
-      <input type="hidden" name="xnQsjsdp" value="dc0d740efb9028b11f55f08fddb3bc9e624a51b98ee80c602ea6a1484b98ddce" />
+    <div id="crmWebToEntityForm" className="zcwf_lblLeft crmWebToEntityForm">
+      <div className="zcwf_title">Gati Shifting Website</div>
+      <form onSubmit={handleSubmit}>
+        {(
+          Object.keys(formData) as Array<keyof FormData>
+        ).map((key) => (
+              <input
+                type={key === 'Email' ? 'email' : 'text'}
+                id={key}
+                name={key}
+                value={formData[key]}
+                onChange={handleChange}
+                placeholder={key+'*'}
+              />
+        ))}
 
-      <input type="text" name="Last Name" placeholder="Your Name" required />
-      <input type="email" name="Email" placeholder="Your Email" required />
-      <input type="text" name="Phone" placeholder="Phone" />
-
-      <input type="submit" value="Submit" />
-    </form>
+        <div className="zcwf_row">
+          <div className="zcwf_col_lab"></div>
+          <div className="zcwf_col_fld">
+            <button type='submit'>Get Free Quote</button>
+            <input
+              type="reset"
+              value="Reset"
+              className="zcwf_button"
+              onClick={() =>
+                setFormData({
+                  Name: '',
+                  Email: '',
+                  Phone: '',
+                  From: '',
+                  To: '',
+                  Goods: ''
+                })
+              }
+            />
+          </div>
+        </div>
+      </form>
+    </div>
   );
-}
+};
+
+export default ZohoForm;
