@@ -344,26 +344,26 @@ const Home: React.FC = () => {
 
                         <h3>Get a free <span>{text}</span> Quote</h3>
                         <i>We’ll call you within 15 minutes</i>
-
+   {/* <ReCAPTCHA
+                                ref={recaptchaRef}
+                                sitekey="6LfaOf4rAAAAAGZBXvb01FTAtYQoh0UXm4ChBDHV"
+                                onChange={(value: string | null) => setCaptchaValue(value)}
+                            /> */}
             <ZohoForm></ZohoForm>
-                        <form>
+                        {/* <form>
                             <input type="text" placeholder="Full Name*" name="name" onChange={handleChange} value={formData.name} required />
                             <input type="text" placeholder="Mobile No*" name="phone_office" onChange={handleChange} value={formData.phone_office} required />
                             <input type="text" placeholder="Email ID" name="email1" onChange={handleChange} value={formData.email1} required />
                             <input type="text" placeholder={from} name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} required />
                             <input type="text" placeholder={to} name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required />
                             <input type="text" placeholder={type} name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required />
-                            {/* <ReCAPTCHA
-                                ref={recaptchaRef}
-                                sitekey="6LfaOf4rAAAAAGZBXvb01FTAtYQoh0UXm4ChBDHV"
-                                onChange={(value: string | null) => setCaptchaValue(value)}
-                            /> */}
+                         
                         </form>
                         <Captcha ref={captchaRef} />
                         <button onClick={handleSubmit} className="form-submit-btn" type="submit" disabled={loading}>
                             {loading ? <CircularProgress size="30px" /> : "Get Free Quote"}
                         </button>
-                        <span className="success-msg">{success && <p>{success}</p>}</span>
+                        <span className="success-msg">{success && <p>{success}</p>}</span> */}
                     </div>
                 </div>
             </motion.div>
