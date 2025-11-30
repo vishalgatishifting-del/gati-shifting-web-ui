@@ -25,19 +25,19 @@ import gatislider5 from "../assets/sliderImg/gatislider5.webp";
 import gatislider6 from "../assets/sliderImg/gatislider6.webp";
 import FAQList from "../components/FAQList";
 import OfficeLocation from "../components/OfficeLocation";
-import axios from "axios";
+// import axios from "axios";
 import GetInTouch from "../components/GetInTouch";
 // import AwardCertification from "../components/AwardCertification";
 import TrustUsSection from "../components/TrustUsSection";
 import ReviewVideo from "../components/ReviewVideos";
 
 // import emailjs from 'emailjs-com';
-import { sendEmail } from "../utils/emailHelper";
-import CircularProgress from '@mui/material/CircularProgress';
+// import { sendEmail } from "../utils/emailHelper";
+// import CircularProgress from '@mui/material/CircularProgress';
 // import ReCAPTCHA from "react-google-recaptcha"
-import { getUserSource } from "../utils/sourceTracker";
+// import { getUserSource } from "../utils/sourceTracker";
 
-import Captcha from "../components/Captcha";
+// import Captcha from "../components/Captcha";
 
 
 import truckPng from "../assets/homePagePng/Gemini_Generated_Image_2zntak2zntak2znt.png"
@@ -66,7 +66,7 @@ import ZohoForm from "../components/ZohoForm"
 
 const Home: React.FC = () => {
 
-    const captchaRef = useRef<{ validate: () => boolean }>(null);
+    // const captchaRef = useRef<{ validate: () => boolean }>(null);
 
     const images = [gatiSlider2, gatiSlider3, gatiSlider4, gatislider5, gatislider6];
 
@@ -111,109 +111,111 @@ const Home: React.FC = () => {
     const [to, setTo] = useState("To");
     const [type, setType] = useState("Goods Type (e.g., Household, Furniture)");
     const [activeBtn, setActiveBtn] = useState("Domestic Moving");
+    console.log(from)
+    console.log(to)
+    console.log(type)
 
+    // interface FormData {
+    //     name: string;
+    //     email1: string;
+    //     phone_office: string;
+    //     pickup_location_c: string;
+    //     drop_location_c: string;
+    //     service_detail_c: string;
+    //     goods_type_c: string;
+    // }
 
-    interface FormData {
-        name: string;
-        email1: string;
-        phone_office: string;
-        pickup_location_c: string;
-        drop_location_c: string;
-        service_detail_c: string;
-        goods_type_c: string;
-    }
-
-    const [formData, setFormData] = useState<FormData>({
-        name: "",
-        email1: "",
-        phone_office: "",
-        pickup_location_c: "",
-        drop_location_c: "",
-        service_detail_c: "",
-        goods_type_c: text
-    });
-
-
-
-    const [loading, setLoading] = useState(false);
-    const [success, setSuccess] = useState("");
-    const recaptchaRef = useRef<any>(null); // 👈 Ref banaya
-
-
-    const handleChange = (
-        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-    ) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
+    // const [formData, setFormData] = useState<FormData>({
+    //     name: "",
+    //     email1: "",
+    //     phone_office: "",
+    //     pickup_location_c: "",
+    //     drop_location_c: "",
+    //     service_detail_c: "",
+    //     goods_type_c: text
+    // });
 
 
 
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        const isCaptchaValid = captchaRef.current?.validate();
-        console.log(isCaptchaValid)
-        if (!isCaptchaValid) {
-            alert("Incorrect Recaptcha");
-            return;
-        }
-        setLoading(true);
-        setSuccess("");
+    // const [loading, setLoading] = useState(false);
+    // const [success, setSuccess] = useState("");
+    // const recaptchaRef = useRef<any>(null); // 👈 Ref banaya
 
-        // Yaha updated object banao
-        const updatedData = { ...formData, goods_type_c: text };
 
-        console.log("Final goods_type_c:", updatedData.goods_type_c);
+    // const handleChange = (
+    //     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    // ) => {
+    //     setFormData({ ...formData, [e.target.name]: e.target.value });
+    // };
 
-        const jsonParam = JSON.stringify(updatedData);
 
-        const body = new FormData();
-        body.append("user", "admin_user");
-        body.append("pass", "p8mju5dnk");
-        body.append("url", "https://icrmondemand.com/wellnect");
-        body.append("module_name", "Enqu1_Enquiry1");
-        body.append("jsonParam", jsonParam);
 
-        try {
-            const apiUrl = "https://icrmondemand.com/wellnect/index.php?entryPoint=CreateEnquiryAPI";
+    // const handleSubmit = async (e: React.FormEvent) => {
+    //     e.preventDefault();
+    //     const isCaptchaValid = captchaRef.current?.validate();
+    //     console.log(isCaptchaValid)
+    //     if (!isCaptchaValid) {
+    //         alert("Incorrect Recaptcha");
+    //         return;
+    //     }
+    //     setLoading(true);
+    //     setSuccess("");
 
-            await axios.post(apiUrl, body);
-            const userSource = getUserSource();
-            const templateParams = {
-                name: formData.name,
-                email: formData.email1,
-                phone: formData.phone_office,
-                pickup_location: formData.pickup_location_c,
-                drop_location: formData.drop_location_c,
-                service_detail: formData.service_detail_c,
-                good_type: formData.goods_type_c,
-                userSource: userSource
-            };
-            sendEmail(templateParams)
-            gtag('event', 'conversion', {
-                'send_to': 'AW-17573064597/5JeFCIznu74bEJXfvrtB',
-                'value': 1.0,
-                'currency': 'INR'
-            });
-            setSuccess("Form successfully submitted!");
+    //     // Yaha updated object banao
+    //     const updatedData = { ...formData, goods_type_c: text };
 
-            setFormData({
-                name: "",
-                email1: "",
-                phone_office: "",
-                pickup_location_c: "",
-                drop_location_c: "",
-                service_detail_c: "",
-                goods_type_c: text, // reset with current tab
-            });
-            recaptchaRef.current?.reset();
+    //     console.log("Final goods_type_c:", updatedData.goods_type_c);
 
-        } catch (error) {
-            console.error("Error submitting form:", error);
-            setSuccess("Error submitting form. Try again!");
-        } finally {
-            setLoading(false);
-        }
-    };
+    //     const jsonParam = JSON.stringify(updatedData);
+
+    //     const body = new FormData();
+    //     body.append("user", "admin_user");
+    //     body.append("pass", "p8mju5dnk");
+    //     body.append("url", "https://icrmondemand.com/wellnect");
+    //     body.append("module_name", "Enqu1_Enquiry1");
+    //     body.append("jsonParam", jsonParam);
+
+    //     try {
+    //         const apiUrl = "https://icrmondemand.com/wellnect/index.php?entryPoint=CreateEnquiryAPI";
+
+    //         await axios.post(apiUrl, body);
+    //         const userSource = getUserSource();
+    //         const templateParams = {
+    //             name: formData.name,
+    //             email: formData.email1,
+    //             phone: formData.phone_office,
+    //             pickup_location: formData.pickup_location_c,
+    //             drop_location: formData.drop_location_c,
+    //             service_detail: formData.service_detail_c,
+    //             good_type: formData.goods_type_c,
+    //             userSource: userSource
+    //         };
+    //         sendEmail(templateParams)
+    //         gtag('event', 'conversion', {
+    //             'send_to': 'AW-17573064597/5JeFCIznu74bEJXfvrtB',
+    //             'value': 1.0,
+    //             'currency': 'INR'
+    //         });
+    //         setSuccess("Form successfully submitted!");
+
+    //         setFormData({
+    //             name: "",
+    //             email1: "",
+    //             phone_office: "",
+    //             pickup_location_c: "",
+    //             drop_location_c: "",
+    //             service_detail_c: "",
+    //             goods_type_c: text, // reset with current tab
+    //         });
+    //         recaptchaRef.current?.reset();
+
+    //     } catch (error) {
+    //         console.error("Error submitting form:", error);
+    //         setSuccess("Error submitting form. Try again!");
+    //     } finally {
+    //         setLoading(false);
+    //     }
+    // };
 
 
     return (
