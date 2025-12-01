@@ -198,6 +198,14 @@ import Poonch from "../assets/CityPages/Poonch.webp"
 import Bandipora from "../assets/CityPages/Bandipora.webp"
 
 
+import Ganderbal from "../assets/CityPages/Ganderbal.webp"
+import Kulgam from "../assets/CityPages/Kulgam.webp"
+import Doda from "../assets/CityPages/Doda.webp"
+import Kishtwar from "../assets/CityPages/Kishtwar.webp"
+import Samba from "../assets/CityPages/Samba.webp"
+
+
+
 
 
 
@@ -1378,6 +1386,13 @@ export const pagesData = [
   { slug: "Rajouri", city: "Rajouri", img: Rajouri, offer: "26%", address: "Shop no 22, Gujjar Mandi, Rajouri, Jammu and Kashmir 185133" },
   { slug: "Poonch", city: "Poonch", img: Poonch, offer: "26%", address: "Shankar nagar, Poonch, Jammu and Kashmir 185101" },
   { slug: "Bandipora", city: "Bandipora", img: Bandipora, offer: "26%", address: "MAIN MARKET, Bandipora-Srinagar Rd, Plan Bandipora, Jammu and Kashmir 193502" },
+
+  { slug: "Samba", city: "Samba", img: Samba, offer: "26%", address: "Mansar Morh, near GDC, Samba, Sah, Jammu and Kashmir 184121" },
+  { slug: "Kishtwar", city: "Kishtwar", img: Kishtwar, offer: "26%", address: "Kishtwar, Jammu and Kashmir 182204" },
+  { slug: "Doda", city: "Doda", img: Doda, offer: "26%", address: "Main Road Opposite ICICI Bank, near Hotel Khan's Plaza, Doda, Jammu and Kashmir 182221" },
+  { slug: "Kulgam", city: "Kulgam", img: Kulgam, offer: "26%", address: "KMD bus stand, Old, Kulgam, Jammu and Kashmir 192231" },
+  { slug: "Ganderbal", city: "Ganderbal", img: Ganderbal, offer: "26%", address: "ROOM NO. 2, 2ND FlOOR MEHMOOD UR REHMAN COMPLEX, near Dr Lal Path Lab, Beehama, Ganderbal, Jammu and Kashmir 191201" },
+
 
 
 

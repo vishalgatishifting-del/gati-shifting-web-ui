@@ -67,12 +67,14 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
         body.append("url", "https://icrmondemand.com/wellnect");
         body.append("module_name", "Enqu1_Enquiry1");
         body.append("jsonParam", jsonParam);
+        const payload = {
+            ...formData,
+            landingPage: window.location.href,
+        };
 
         try {
 
-            const apiUrl = "https://icrmondemand.com/wellnect/index.php?entryPoint=CreateEnquiryAPI";
-
-            await axios.post(apiUrl, body);
+           await axios.post("https://api.gatishiftingpackers.com/create-lead", payload);
 
             const userSource = getUserSource();
             const templateParams = {

@@ -67,7 +67,6 @@ const ZohoForm: React.FC = () => {
     };
 
     try {
-      console.log(payload)
       const response = await axios.post("https://api.gatishiftingpackers.com/create-lead", payload);
 
       if (response) {
