@@ -16,21 +16,21 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
 
 
     interface FormData {
-        name: string;
-        email1: string;
-        phone_office: string;
-        pickup_location_c: string;
-        drop_location_c: string;
-        service_detail_c: string;
+        Name: string;
+        Email: string;
+        Phone: string;
+        From: string;
+        To: string;
+        Goods: string;
     }
 
     const [formData, setFormData] = useState<FormData>({
-        name: "",
-        email1: "",
-        phone_office: "",
-        pickup_location_c: "",
-        drop_location_c: "",
-        service_detail_c: ""
+        Name: "",
+        Email: "",
+        Phone: "",
+        From: "",
+        To: "",
+        Goods: ""
     });
 
 
@@ -78,11 +78,11 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
 
             const userSource = getUserSource();
             const templateParams = {
-                name: formData.name,
-                email: formData.email1,
-                phone: formData.phone_office,
-                pickup_location: formData.pickup_location_c,
-                drop_location: formData.drop_location_c,
+                name: formData.Name,
+                email: formData.Email,
+                phone: formData.Phone,
+                pickup_location: formData.From,
+                drop_location: formData.To,
                 service_detail: "NAN. Contact Form Query",
                 good_type: "NAN. Contact Form Query",
                 userSource: userSource
@@ -96,7 +96,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
             });
             setSuccess("Form successfully submitted!");
 
-            setFormData({ name: "", email1: "", phone_office: "", pickup_location_c: "", drop_location_c: "", service_detail_c: "" });
+            setFormData({ Name: "", Email: "", Phone: "", From: "", To: "", Goods: "" });
 
             recaptchaRef.current?.reset();
             setCaptchaValue(null);
@@ -124,18 +124,18 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
                 ) : "")}
                 <div className="form" style={(showDetail == false) ? { width: "100%" } : {}} >
                     <form onSubmit={handleSubmit} className={(showDetail == false) ? "dialogeForm" : " "}>
-                        <input type="text" placeholder="Your Name" name="name" onChange={handleChange} value={formData.name} required />
+                        <input type="text" placeholder="Your Name" name="Name" onChange={handleChange} value={formData.Name} required />
 
                         {showDetail == true ? (
 
-                            <input type="text" placeholder="Your Email" name="email1" onChange={handleChange} value={formData.email1} required />
+                            <input type="text" placeholder="Your Email" name="Email" onChange={handleChange} value={formData.Email} required />
                         ) : ""}
 
-                        <input type="text" placeholder="Contact Number" name="phone_office" onChange={handleChange} value={formData.phone_office} required />
-                        <input type="text" placeholder="Pickup From" name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} required />
-                        <input type="text" placeholder="Drop Point" name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required />
+                        <input type="text" placeholder="Contact Number" name="Phone" onChange={handleChange} value={formData.Phone} required />
+                        <input type="text" placeholder="Pickup From" name="From" onChange={handleChange} value={formData.From} required />
+                        <input type="text" placeholder="Drop Point" name="To" onChange={handleChange} value={formData.To} required />
 
-                        {showDetail == true ? (<input type="text" placeholder="Goods Type (e.g. Furniture, Boxes)" name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required />) : ""}
+                        {showDetail == true ? (<input type="text" placeholder="Goods Type (e.g. Furniture, Boxes)" name="Goods" onChange={handleChange} value={formData.Goods} required />) : ""}
 
 
                         <ReCAPTCHA
