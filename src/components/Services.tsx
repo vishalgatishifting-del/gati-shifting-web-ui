@@ -18,6 +18,21 @@ import WarehouseIcon from "@mui/icons-material/Warehouse";
 import InventoryIcon from "@mui/icons-material/Inventory";
 import AcUnitOutlinedIcon from "@mui/icons-material/AcUnitOutlined";
 
+import AV_icon_png from "../assets/servicesPageImg/ac_shifting-removebg-preview.webp"
+import House_icon_png from "../assets/servicesPageImg/house_shifting-removebg-preview.webp"
+import Bike_icon_png from "../assets/servicesPageImg/Bike_Transport-removebg-preview.webp"
+import Car_icon_png from "../assets/servicesPageImg/Car_Transport-removebg-preview.webp"
+import Pet_icon_png from "../assets/servicesPageImg/Pet_Relocation-removebg-preview.webp"
+import Office_icon_png from "../assets/servicesPageImg/Office_Shifting-removebg-preview.webp"
+import Commercial_icon_png from "../assets/servicesPageImg/Commercial_Shifting-removebg-preview.webp"
+import Luggage_icon_png from "../assets/servicesPageImg/Luggage_Transport-removebg-preview.webp"
+import Domestic_icon_png from "../assets/servicesPageImg/Domestic_Moving-removebg-preview.webp"
+import International_icon_png from "../assets/servicesPageImg/International_Moving-removebg-preview.webp"
+import Temp_icon_png from "../assets/servicesPageImg/Tempo_for_Shifting-removebg-preview.webp"
+import Warehouse_icon_png from "../assets/servicesPageImg/Warehouse_Services-removebg-preview.webp"
+import Storage_icon_png from "../assets/servicesPageImg/Storage_Facility-removebg-preview.webp"
+import Cold_icon_png from "../assets/servicesPageImg/Cold_Storage-removebg-preview.webp"
+
 import "./Services.scss"
 
 type Service = {
@@ -26,23 +41,24 @@ type Service = {
   title: string;
   description: string;
   Icon: typeof HomeIcon;
+  Img?: string;
 };
 
 const services: Service[] = [
-  { id: 1, tt: "House", title: "House Shifting", description: "Smooth and reliable house shifting with professional packing, loading, transport, and setup at your new home.", Icon: HomeIcon },
-  { id: 2, tt: "AC", title: "AC Shifting", description: "Expert AC dismantling, secure packaging, and reinstallation at your destination by skilled technicians.", Icon: AcUnitIcon },
-  { id: 3, tt: "Bike", title: "Bike Transport", description: "Bike relocation with protective wrapping, proper anchoring, and doorstep pickup and delivery.", Icon: TwoWheelerIcon },
-  { id: 4, tt: "Car", title: "Car Transport", description: "Car shifting through open or enclosed carriers with tracking, insurance, and timely delivery.", Icon: DirectionsCarIcon },
-  { id: 5, tt: "Pet", title: "Pet Relocation", description: "Stress-free pet transportation with temperature-controlled spaces and necessary travel documentation.", Icon: PetsIcon },
-  { id: 6, tt: "Office", title: "Office Shifting", description: "Efficient office relocation ensuring minimal downtime, safe equipment handling, and IT setup support.", Icon: BusinessCenterIcon },
-  { id: 7, tt: "Commercial", title: "Commercial Shifting", description: "End-to-end commercial shifting designed for factories, shops, and warehouses with heavy-duty transport.", Icon: ApartmentIcon },
-  { id: 8, tt: "Luggage", title: "Luggage Transport", description: "Affordable and secure luggage transport with pickup, packaging, and on-time delivery options.", Icon: LuggageIcon },
-  { id: 9, tt: "Domestic", title: "Domestic Moving", description: "Full-service domestic relocation with packing, loading, transport, and unpacking support across India.", Icon: LocationOnIcon },
-  { id: 10, tt: "International", title: "International Moving", description: "International moving with customs documentation, freight handling, and global door-to-door service.", Icon: PublicIcon },
-  { id: 11, tt: "Tempo", title: "Tempo for Shifting", description: "On-demand tempo services for short-distance or same-day local moves, perfect for quick shifting.", Icon: LocalShippingIcon },
-  { id: 12, tt: "Warehouse", title: "Warehouse Services", description: "Safe and monitored warehouse services for short or long durations, with 24/7 security and organized storage.", Icon: WarehouseIcon },
-  { id: 13, tt: "Storage", title: "Storage Facility", description: "Flexible personal or business storage options with clean, secure units and easy access.", Icon: InventoryIcon },
-  { id: 14, tt: "Cold", title: "Cold Storage", description: "Temperature-controlled storage for sensitive items like electronics, pharmaceuticals, and perishables.", Icon: AcUnitOutlinedIcon },
+  { id: 1, tt: "House", title: "House Shifting", description: "Smooth and reliable house shifting with professional packing, loading, transport, and setup at your new home.", Icon: HomeIcon, Img: House_icon_png },
+  { id: 2, tt: "AC", title: "AC Shifting", description: "Expert AC dismantling, secure packaging, and reinstallation at your destination by skilled technicians.", Icon: AcUnitIcon, Img: AV_icon_png },
+  { id: 3, tt: "Bike", title: "Bike Transport", description: "Bike relocation with protective wrapping, proper anchoring, and doorstep pickup and delivery.", Icon: TwoWheelerIcon, Img: Bike_icon_png },
+  { id: 4, tt: "Car", title: "Car Transport", description: "Car shifting through open or enclosed carriers with tracking, insurance, and timely delivery.", Icon: DirectionsCarIcon, Img: Car_icon_png },
+  { id: 5, tt: "Pet", title: "Pet Relocation", description: "Stress-free pet transportation with temperature-controlled spaces and necessary travel documentation.", Icon: PetsIcon, Img: Pet_icon_png },
+  { id: 6, tt: "Office", title: "Office Shifting", description: "Efficient office relocation ensuring minimal downtime, safe equipment handling, and IT setup support.", Icon: BusinessCenterIcon, Img: Office_icon_png },
+  { id: 7, tt: "Commercial", title: "Commercial Shifting", description: "End-to-end commercial shifting designed for factories, shops, and warehouses with heavy-duty transport.", Icon: ApartmentIcon, Img: Commercial_icon_png },
+  { id: 8, tt: "Luggage", title: "Luggage Transport", description: "Affordable and secure luggage transport with pickup, packaging, and on-time delivery options.", Icon: LuggageIcon, Img: Luggage_icon_png },
+  { id: 9, tt: "Domestic", title: "Domestic Moving", description: "Full-service domestic relocation with packing, loading, transport, and unpacking support across India.", Icon: LocationOnIcon, Img: Domestic_icon_png },
+  { id: 10, tt: "International", title: "International Moving", description: "International moving with customs documentation, freight handling, and global door-to-door service.", Icon: PublicIcon, Img: International_icon_png },
+  { id: 11, tt: "Tempo", title: "Tempo for Shifting", description: "On-demand tempo services for short-distance or same-day local moves, perfect for quick shifting.", Icon: LocalShippingIcon, Img: Temp_icon_png },
+  { id: 12, tt: "Warehouse", title: "Warehouse Services", description: "Safe and monitored warehouse services for short or long durations, with 24/7 security and organized storage.", Icon: WarehouseIcon, Img: Warehouse_icon_png },
+  { id: 13, tt: "Storage", title: "Storage Facility", description: "Flexible personal or business storage options with clean, secure units and easy access.", Icon: InventoryIcon, Img: Storage_icon_png },
+  { id: 14, tt: "Cold", title: "Cold Storage", description: "Temperature-controlled storage for sensitive items like electronics, pharmaceuticals, and perishables.", Icon: AcUnitOutlinedIcon, Img: Cold_icon_png },
 ];
 
 const ServicesSection: FC = () => {
@@ -92,7 +108,8 @@ const ServicesSection: FC = () => {
                 }}
               >
                 <IconButton>
-                  <service.Icon fontSize="large" />
+                  {/* <service.Icon fontSize="large" /> */}
+                  <img className="icon" src={service.Img} />
                 </IconButton>
                 <Typography variant="caption">{service.tt}</Typography>
               </Paper>
