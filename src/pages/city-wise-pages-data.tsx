@@ -220,6 +220,21 @@ import Pasighat from "../assets/CityPages/Pasighat.webp"
 import Roing from "../assets/CityPages/Roing.webp"
 
 
+import Tezu from "../assets/CityPages/Tezu.webp"
+import Namsai from "../assets/CityPages/Namsai.webp"
+import Yingkiong from "../assets/CityPages/Yingkiong.webp"
+import Along from "../assets/CityPages/Along.webp"
+import Daporijo from "../assets/CityPages/Daporijo.webp"
+
+import Seppa from "../assets/CityPages/Seppa.webp"
+import Khonsa from "../assets/CityPages/Khonsa.webp"
+import Changlang from "../assets/CityPages/Changlang.webp"
+import Longding from "../assets/CityPages/Longding.webp"
+import Mizoram from "../assets/CityPages/Mizoram.webp"
+
+
+
+
 
 
 
@@ -1566,5 +1581,21 @@ export const pagesData = [
   { slug: "Ziro", city: "Ziro", img: Ziro, offer: "26%", address: "Medical line, near Near Hospital, Hapoli, Ziro, Arunachal Pradesh 791120" },
   { slug: "Pasighat", city: "Pasighat", img: Pasighat, offer: "26%", address: "GTC, Anupoma Complex, Pasighat, Arunachal Pradesh 791102" },
   { slug: "Roing", city: "Roing", img: Roing, offer: "26%", address: "LOWER MARKET, near BUS STAND, Roing, Arunachal Pradesh 792110" },
+
+
+  { slug: "Tezu", city: "Tezu", img: Tezu, offer: "26%", address: "Club Rd, Telluliang, Tezu, Arunachal Pradesh 792001" },
+  { slug: "Namsai", city: "Namsai", img: Namsai, offer: "26%", address: "khen complex, Arunachal, 2nd Mile, Namsai, Arunachal Pradesh 792103" },
+  { slug: "Yingkiong", city: "Yingkiong", img: Yingkiong, offer: "26%", address: "Lower Market, Road, Yingkiong, Arunachal Pradesh 791002" },
+  { slug: "Along", city: "Along", img: Along, offer: "26%", address: "366/1/4, New Railway Rd, Sector 12A, Jawahar Nagar, Sector 12, Gurugram, Haryana 122001" },
+  { slug: "Daporijo", city: "Daporijo", img: Daporijo, offer: "26%", address: "Rks DRUG House, Medical Line, Daporijo, Arunachal Pradesh 791122" },
+
+
+  { slug: "Seppa", city: "Seppa", img: Seppa, offer: "26%", address: "Medical Colony, near District Hospital, Seppa, Arunachal Pradesh 790102" },
+  { slug: "Khonsa", city: "Khonsa", img: Khonsa, offer: "26%", address: "MEDICAL COLONY ROAD, near GENERAL HOSPITAL, Khonsa, Arunachal Pradesh 792130" },
+  { slug: "Changlang", city: "Changlang", img: Changlang, offer: "26%", address: "Unnamed Road, Changlang, Arunachal Pradesh 792120" },
+  { slug: "Longding", city: "Longding", img: Longding, offer: "26%", address: "Longding Medical Colony Longding, Arunachal Pradesh 792131" },
+  { slug: "Mizoram", city: "Mizoram", img: Mizoram, offer: "26%", address: "Bara Bazar, Dawrpui, Aizawl, Mizoram 796001" },
+
+
 
 ];
