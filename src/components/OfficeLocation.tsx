@@ -31,6 +31,18 @@ const OfficeLocation = () => {
     };
     return (
         <section id="office-location-section">
+            <div className="buttons">
+                <button>Delhi</button>
+                <button>Mumbai</button>
+                <button>Kolkata</button>
+                <button>Chennai</button>
+                <button>Bengaluru</button>
+                <button>Hyderabad</button>
+                <button>Pune</button>
+                <button>Goa</button>
+                <button>Guwhati</button>
+                <button>Imphal</button>
+            </div>
             <div className="container">
                 <motion.div
                     ref={ref3}
@@ -68,6 +80,11 @@ const OfficeLocation = () => {
                             <li><CallIcon></CallIcon> <span>+91 9422799477</span></li>
                             <li><EmailIcon></EmailIcon> <span>gatishiftingpackers@gmail.com</span></li>
                             <li><WatchLaterIcon></WatchLaterIcon><span>Mon - Sun: 8:00 AM - 8:00 PM</span></li>
+                            <li>GST Number: 06AAMCG3191P1ZZ</li>
+                            <li>MSME Number: UDYAM-MH-19-0373918</li>
+                            <li>Corporate Identification Number: U52293HR2025PTC135734</li>
+                            <li>TAN No: RTKG21417E</li>
+                            <li>PAN Number: AAMCG3191P</li>
                         </ul>
 
                         <h1 className="hashTag">#GatiShiftingPackers</h1>

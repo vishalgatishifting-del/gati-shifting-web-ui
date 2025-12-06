@@ -7,6 +7,26 @@
     @include font-poppins-sans(400);
     padding: 60px 0;
 
+    .buttons {
+        margin: 30px;
+        margin-bottom: 50px;
+        margin-top: -10px;
+        overflow-x: auto;
+
+        button {
+            margin: 0 10px;
+            padding: 13px 20px;
+            @include font-poppins-sans(400);
+            cursor: pointer;
+            border-radius: 7px;
+            width: 120px;
+            border: none;
+            background: rgb(255, 255, 255);
+            box-shadow: 0 5px 10px #00000065;
+
+        }
+    }
+
     .container {
         display: flex;
         width: 80%;
@@ -43,6 +63,7 @@
         }
     }
 }
+
 @media screen and (max-width: 1350px) {
     #office-location-section {
         padding: 60px 10px;
