@@ -4,6 +4,7 @@ import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import WatchLaterIcon from '@mui/icons-material/WatchLater';
+import { Link } from "react-router-dom";
 import "./OfficeLocation.scss"
 
 const OfficeLocation = () => {
@@ -32,16 +33,16 @@ const OfficeLocation = () => {
     return (
         <section id="office-location-section">
             <div className="buttons">
-                <button>Delhi</button>
-                <button>Mumbai</button>
-                <button>Kolkata</button>
-                <button>Chennai</button>
-                <button>Bengaluru</button>
-                <button>Hyderabad</button>
-                <button>Pune</button>
-                <button>Goa</button>
-                <button>Guwhati</button>
-                <button>Imphal</button>
+                <Link to="https://gatishiftingpackers.com/city/delhi">Delhi</Link>
+                <Link to="https://gatishiftingpackers.com/city/Mumbai">Mumbai</Link>
+                <Link to="https://gatishiftingpackers.com/city/Kolkata">Kolkata</Link>
+                <Link to="https://gatishiftingpackers.com/city/Chennai">Chennai</Link>
+                <Link to="https://gatishiftingpackers.com/city/Bengaluru">Bengaluru</Link>
+                <Link to="https://gatishiftingpackers.com/city/Hyderabad">Hyderabad</Link>
+                <Link to="https://gatishiftingpackers.com/city/Pune">Pune</Link>
+                <Link to="https://gatishiftingpackers.com/city/Goa">Goa</Link>
+                <Link to="https://gatishiftingpackers.com/city/Guwhati">Guwhati</Link>
+                <Link to="https://gatishiftingpackers.com/city/Imphal">Imphal</Link>
             </div>
             <div className="container">
                 <motion.div

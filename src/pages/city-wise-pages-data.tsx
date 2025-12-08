@@ -240,6 +240,14 @@ import Serchhip from "../assets/CityPages/Serchhip.webp"
 import Kolasib from "../assets/CityPages/Kolasib.webp"
 
 
+import Mamit from "../assets/CityPages/Mamit.webp"
+import Lawngtlai from "../assets/CityPages/Lawngtlai.webp"
+import Saiha from "../assets/CityPages/Saiha.webp"
+import Khawzawl from "../assets/CityPages/Khawzawl.webp"
+import Saitual from "../assets/CityPages/Saitual.webp"
+
+
+
 
 
 
@@ -1715,6 +1723,15 @@ export const pagesData = [
   { slug: "Champhai", city: "Champhai", img: Champhai, offer: "26%", address: "Main Rd, Vengthlang, Champhai, Mizoram 796321" },
   { slug: "Serchhip", city: "Serchhip", img: Serchhip, offer: "26%", address: "YMA Rd, Serchhip, Mizoram 796181" },
   { slug: "Kolasib", city: "Kolasib", img: Kolasib, offer: "26%", address: "Park Kawn, Venglai, Kolasib, Mizoram 796081" },
+
+
+
+  { slug: "Mamit", city: "Mamit", img: Mamit, offer: "26%", address: "TB Tlang Rd, Zemabawk, Aizawl, Mizoram 796017" },
+  { slug: "Lawngtlai", city: "Lawngtlai", img: Lawngtlai, offer: "26%", address: "Main Road, opp. Sumo Stand, Lawngtlai Bazar, Chandmary, Lawngtlai, Mizoram 796891" },
+  { slug: "Saiha", city: "Saiha (Siaha)", img: Saiha, offer: "26%", address: "Park Kawn, Venglai, Kolasib, Mizoram 796081" },
+  { slug: "Khawzawl", city: "Khawzawl", img: Khawzawl, offer: "26%", address: "Vengthar, Khawzawl, Mizoram 796321" },
+  { slug: "Saitual", city: "Saitual", img: Saitual, offer: "26%", address: "Dawrkawn, Venglai, Saitual, Mizoram 796261" },
+
 
 
 

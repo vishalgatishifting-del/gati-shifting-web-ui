@@ -11,9 +11,8 @@
         margin: 30px;
         margin-bottom: 50px;
         margin-top: -10px;
-        overflow-x: auto;
 
-        button {
+        a {
             margin: 0 10px;
             padding: 13px 20px;
             @include font-poppins-sans(400);
@@ -23,6 +22,7 @@
             border: none;
             background: rgb(255, 255, 255);
             box-shadow: 0 5px 10px #00000065;
+            text-decoration: none;
 
         }
     }
@@ -70,6 +70,23 @@
 
         .container {
             width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1266px) {
+
+    #office-location-section {
+        .buttons{
+            margin: 0;
+            overflow-x: scroll;
+            margin-bottom: 30px;
+            display: flex;
+            a{
+                display: block;
+                height: 50px;
+                width: 130px;
+            }
         }
     }
 }
