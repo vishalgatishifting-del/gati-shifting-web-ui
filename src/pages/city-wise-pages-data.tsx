@@ -254,6 +254,20 @@ import Mangan from "../assets/CityPages/Mangan.webp"
 
 
 
+import Singtam from "../assets/CityPages/Singtam.webp"
+import Rangpo from "../assets/CityPages/Rangpo.webp"
+import Jorethang from "../assets/CityPages/Jorethang.webp"
+import Soreng from "../assets/CityPages/Soreng.webp"
+import Chungthang from "../assets/CityPages/Chungthang.webp"
+import Pakyong from "../assets/CityPages/Pakyong.webp"
+import Ravangla from "../assets/CityPages/Ravangla.webp"
+import Lachung from "../assets/CityPages/Lachung.webp"
+import Gaya from "../assets/CityPages/Gaya.webp"
+import Bhagalpur from "../assets/CityPages/Bhagalpur.webp"
+
+
+
+
 
 
 
@@ -1783,13 +1797,48 @@ export const pagesData = [
   twitterDescription: "Safe, professional and affordable Packers and Movers in Namsai by Gati Shifting Packers. Book your smooth relocation today!",
   canonical: "https://gatishiftingpackers.com/city/Namsai"
 } },
-  { slug: "Yingkiong", city: "Yingkiong", img: Yingkiong, offer: "26%", address: "Lower Market, Road, Yingkiong, Arunachal Pradesh 791002" },
-  { slug: "Along", city: "Along", img: Along, offer: "26%", address: "366/1/4, New Railway Rd, Sector 12A, Jawahar Nagar, Sector 12, Gurugram, Haryana 122001" },
-  { slug: "Daporijo", city: "Daporijo", img: Daporijo, offer: "26%", address: "Rks DRUG House, Medical Line, Daporijo, Arunachal Pradesh 791122" },
+  { slug: "Yingkiong", city: "Yingkiong", img: Yingkiong, offer: "26%", address: "Lower Market, Road, Yingkiong, Arunachal Pradesh 791002", metaDetails: {
+  title: "Packers and Movers in Yingkiong | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Yingkiong with Gati Shifting Packers. We offer safe, affordable and professional home, office and vehicle relocation services in Yingkiong and across Arunachal Pradesh.",
+  keywords: "Local movers near me Yingkiong, Packers and Movers in Yingkiong, Gati Shifting Packers Yingkiong, Best Packers and Movers Yingkiong, Affordable Packers and Movers Yingkiong, Trusted Packers and Movers Yingkiong Arunachal Pradesh, Local Packers and Movers Yingkiong, Professional Movers and Packers Yingkiong, Home Shifting Services Yingkiong, Office Relocation Yingkiong, Vehicle Transport Yingkiong, Car Transport Service Yingkiong, Bike Transport Yingkiong, Household Goods Shifting Yingkiong, Industrial Packers and Movers Yingkiong, Door-to-Door Shifting Services Yingkiong, Packing and Unpacking Services Yingkiong, Furniture Movers Yingkiong, Intercity Packers and Movers Yingkiong, Packers and Movers Yingkiong to Pasighat, Packers and Movers Yingkiong to Roing, Packers and Movers Yingkiong to Tezu, Packers and Movers Yingkiong to Namsai, Packers and Movers Yingkiong to Itanagar, Packers and Movers Yingkiong to Dibrugarh, Packers and Movers Yingkiong to Guwahati, Packers and Movers Yingkiong to Delhi, Packers and Movers Yingkiong to Kolkata, Reliable Relocation Company Yingkiong, Cost-Effective Packers and Movers Yingkiong, Quick Packers and Movers Yingkiong, 24x7 Packers and Movers Yingkiong, Mini Truck for Shifting Yingkiong, Tempo Service Yingkiong, Best Relocation Services Yingkiong, Safe and Secure Moving Services Yingkiong, Budget-Friendly Movers Yingkiong, Professional Relocation Company Yingkiong, Long-Distance Packers and Movers Yingkiong, Trusted Shifting Company Yingkiong, Goods Transport Services Yingkiong.",
+  ogDescription: "Looking for reliable Packers and Movers in Yingkiong? Gati Shifting Packers provides safe, timely and affordable relocation services for homes, offices and vehicles in Yingkiong and across Arunachal Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Yingkiong by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Yingkiong"
+} },
+  { slug: "Along", city: "Along", img: Along, offer: "26%", address: "366/1/4, New Railway Rd, Sector 12A, Jawahar Nagar, Sector 12, Gurugram, Haryana 122001", metaDetails: {
+  title: "Packers and Movers in Along | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Along with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Along (Aalo) and across Arunachal Pradesh.",
+  keywords: "Local movers near me Along, Packers and Movers in Along, Gati Shifting Packers Along, Best Packers and Movers Along, Affordable Packers and Movers Along, Trusted Packers and Movers Along Arunachal Pradesh, Local Packers and Movers Along, Professional Movers and Packers Along, Home Shifting Services Along, Office Relocation Along, Vehicle Transport Along, Car Transport Service Along, Bike Transport Along, Household Goods Shifting Along, Industrial Packers and Movers Along, Door-to-Door Shifting Services Along, Packing and Unpacking Services Along, Furniture Movers Along, Intercity Packers and Movers Along, Packers and Movers Along to Itanagar, Packers and Movers Along to Pasighat, Packers and Movers Along to Yingkiong, Packers and Movers Along to Ziro, Packers and Movers Along to Tezpur, Packers and Movers Along to Guwahati, Packers and Movers Along to Dibrugarh, Packers and Movers Along to Delhi, Packers and Movers Along to Kolkata, Reliable Relocation Company Along, Cost-Effective Packers and Movers Along, Quick Packers and Movers Along, 24x7 Packers and Movers Along, Mini Truck for Shifting Along, Tempo Service Along, Best Relocation Services Along, Safe and Secure Moving Services Along, Budget-Friendly Movers Along, Professional Relocation Company Along, Long-Distance Packers and Movers Along, Trusted Shifting Company Along, Goods Transport Services Along.",
+  ogDescription: "Looking for reliable Packers and Movers in Along? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Along and across Arunachal Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Along by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Along"
+} },
+  { slug: "Daporijo", city: "Daporijo", img: Daporijo, offer: "26%", address: "Rks DRUG House, Medical Line, Daporijo, Arunachal Pradesh 791122", metaDetails: {
+  title: "Packers and Movers in Daporijo | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Daporijo with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Daporijo and across Arunachal Pradesh.",
+  keywords: "Local movers near me Daporijo, Packers and Movers in Daporijo, Gati Shifting Packers Daporijo, Best Packers and Movers Daporijo, Affordable Packers and Movers Daporijo, Trusted Packers and Movers Daporijo Arunachal Pradesh, Local Packers and Movers Daporijo, Professional Movers and Packers Daporijo, Home Shifting Services Daporijo, Office Relocation Daporijo, Vehicle Transport Daporijo, Car Transport Service Daporijo, Bike Transport Daporijo, Household Goods Shifting Daporijo, Industrial Packers and Movers Daporijo, Door-to-Door Shifting Services Daporijo, Packing and Unpacking Services Daporijo, Furniture Movers Daporijo, Intercity Packers and Movers Daporijo, Packers and Movers Daporijo to Ziro, Packers and Movers Daporijo to Along, Packers and Movers Daporijo to Itanagar, Packers and Movers Daporijo to Pasighat, Packers and Movers Daporijo to Tezpur, Packers and Movers Daporijo to Guwahati, Packers and Movers Daporijo to Dibrugarh, Packers and Movers Daporijo to Delhi, Packers and Movers Daporijo to Kolkata, Reliable Relocation Company Daporijo, Cost-Effective Packers and Movers Daporijo, Quick Packers and Movers Daporijo, 24x7 Packers and Movers Daporijo, Mini Truck for Shifting Daporijo, Tempo Service Daporijo, Best Relocation Services Daporijo, Safe and Secure Moving Services Daporijo, Budget-Friendly Movers Daporijo, Professional Relocation Company Daporijo, Long-Distance Packers and Movers Daporijo, Trusted Shifting Company Daporijo, Goods Transport Services Daporijo.",
+  ogDescription: "Looking for reliable Packers and Movers in Daporijo? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Daporijo and across Arunachal Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Daporijo by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Daporijo"
+} },
 
 
-  { slug: "Seppa", city: "Seppa", img: Seppa, offer: "26%", address: "Medical Colony, near District Hospital, Seppa, Arunachal Pradesh 790102" },
-  { slug: "Khonsa", city: "Khonsa", img: Khonsa, offer: "26%", address: "MEDICAL COLONY ROAD, near GENERAL HOSPITAL, Khonsa, Arunachal Pradesh 792130" },
+  { slug: "Seppa", city: "Seppa", img: Seppa, offer: "26%", address: "Medical Colony, near District Hospital, Seppa, Arunachal Pradesh 790102", metaDetails: {
+  title: "Packers and Movers in Seppa | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Seppa with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Seppa and across Arunachal Pradesh.",
+  keywords: "Local movers near me Seppa, Packers and Movers in Seppa, Gati Shifting Packers Seppa, Best Packers and Movers Seppa, Affordable Packers and Movers Seppa, Trusted Packers and Movers Seppa Arunachal Pradesh, Local Packers and Movers Seppa, Professional Movers and Packers Seppa, Home Shifting Services Seppa, Office Relocation Seppa, Vehicle Transport Seppa, Car Transport Service Seppa, Bike Transport Seppa, Household Goods Shifting Seppa, Industrial Packers and Movers Seppa, Door-to-Door Shifting Services Seppa, Packing and Unpacking Services Seppa, Furniture Movers Seppa, Intercity Packers and Movers Seppa, Packers and Movers Seppa to Itanagar, Packers and Movers Seppa to Ziro, Packers and Movers Seppa to Daporijo, Packers and Movers Seppa to Tezpur, Packers and Movers Seppa to Guwahati, Packers and Movers Seppa to Tawang, Packers and Movers Seppa to Bomdila, Packers and Movers Seppa to Delhi, Packers and Movers Seppa to Kolkata, Reliable Relocation Company Seppa, Cost-Effective Packers and Movers Seppa, Quick Packers and Movers Seppa, 24x7 Packers and Movers Seppa, Mini Truck for Shifting Seppa, Tempo Service Seppa, Best Relocation Services Seppa, Safe and Secure Moving Services Seppa, Budget-Friendly Movers Seppa, Professional Relocation Company Seppa, Long-Distance Packers and Movers Seppa, Trusted Shifting Company Seppa, Goods Transport Services Seppa.",
+  ogDescription: "Looking for reliable Packers and Movers in Seppa? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Seppa and across Arunachal Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Seppa by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Seppa"
+} },
+  { slug: "Khonsa", city: "Khonsa", img: Khonsa, offer: "26%", address: "MEDICAL COLONY ROAD, near GENERAL HOSPITAL, Khonsa, Arunachal Pradesh 792130", metaDetails: {
+  title: "Packers and Movers in Khonsa | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Khonsa with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Khonsa and across Arunachal Pradesh.",
+  keywords: "Local movers near me Khonsa, Packers and Movers in Khonsa, Gati Shifting Packers Khonsa, Best Packers and Movers Khonsa, Affordable Packers and Movers Khonsa, Trusted Packers and Movers Khonsa Arunachal Pradesh, Local Packers and Movers Khonsa, Professional Movers and Packers Khonsa, Home Shifting Services Khonsa, Office Relocation Khonsa, Vehicle Transport Khonsa, Car Transport Service Khonsa, Bike Transport Khonsa, Household Goods Shifting Khonsa, Industrial Packers and Movers Khonsa, Door-to-Door Shifting Services Khonsa, Packing and Unpacking Services Khonsa, Furniture Movers Khonsa, Intercity Packers and Movers Khonsa, Packers and Movers Khonsa to Itanagar, Packers and Movers Khonsa to Namsai, Packers and Movers Khonsa to Tezu, Packers and Movers Khonsa to Roing, Packers and Movers Khonsa to Dibrugarh, Packers and Movers Khonsa to Tinsukia, Packers and Movers Khonsa to Guwahati, Packers and Movers Khonsa to Delhi, Packers and Movers Khonsa to Kolkata, Reliable Relocation Company Khonsa, Cost-Effective Packers and Movers Khonsa, Quick Packers and Movers Khonsa, 24x7 Packers and Movers Khonsa, Mini Truck for Shifting Khonsa, Tempo Service Khonsa, Best Relocation Services Khonsa, Safe and Secure Moving Services Khonsa, Budget-Friendly Movers Khonsa, Professional Relocation Company Khonsa, Long-Distance Packers and Movers Khonsa, Trusted Shifting Company Khonsa, Goods Transport Services Khonsa.",
+  ogDescription: "Looking for reliable Packers and Movers in Khonsa? Gati Shifting Packers delivers safe, timely and affordable relocation for homes, offices and vehicles in Khonsa and across Arunachal Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Khonsa by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Khonsa"
+} },
   { slug: "Changlang", city: "Changlang", img: Changlang, offer: "26%", address: "Unnamed Road, Changlang, Arunachal Pradesh 792120" },
   { slug: "Longding", city: "Longding", img: Longding, offer: "26%", address: "Longding Medical Colony Longding, Arunachal Pradesh 792131" },
   { slug: "Mizoram", city: "Mizoram", img: Mizoram, offer: "26%", address: "Bara Bazar, Dawrpui, Aizawl, Mizoram 796001" },
@@ -1816,6 +1865,20 @@ export const pagesData = [
   { slug: "Namchi", city: "Namchi", img: Namchi, offer: "18%", address: "Bhanjyang, Road, Namchi, Sikkim 737126" },
   { slug: "Gyalshing", city: "Gyalshing (Gayzing)", img: Gyalshing, offer: "18%", address: "Hospital Rd, opposite Bionic Diagnostics, Geyzing, Sikkim 737111" },
   { slug: "Mangan", city: "Mangan", img: Mangan, offer: "18%", address: "Unnamed Road, Mangan, Sikkim 737116" },
+
+
+
+  { slug: "Singtam", city: "Singtam", img: Singtam, offer: "18%", address: "Singtam, Sikkim 737134" },
+  { slug: "Rangpo", city: "Rangpo", img: Rangpo, offer: "18%", address: "Lower Bazar, Rangpo, Sikkim 737132" },
+  { slug: "Jorethang", city: "Jorethang", img: Jorethang, offer: "18%", address: "Santinagar ward no.1, Jorethang, Sikkim 737121" },
+  { slug: "Soreng", city: "Soreng", img: Soreng, offer: "18%", address: "Darmadatt Sharma Marg, Soreng, Sikkim 737121" },
+  { slug: "Chungthang", city: "Chungthang", img: Chungthang, offer: "18%", address: "Chungthang, Sikkim 737120" },
+  { slug: "Pakyong", city: "Pakyong", img: Pakyong, offer: "18%", address: "Main Road, Bazaar, Pakyong, Sikkim 737106" },
+  { slug: "Ravangla", city: "Ravangla", img: Ravangla, offer: "18%", address: "Ralong Rd, Ravangla, Sikkim 737139" },
+  { slug: "Lachung", city: "Lachung", img: Lachung, offer: "18%", address: "Biulding, Nh310a, Old Mangan Bazaar, Mangan - 737116" },
+  { slug: "Gaya", city: "Gaya", img: Gaya, offer: "18%", address: "Gautam Buddha Rd, Dulhingunj, Gaya, Bihar 823001" },
+  { slug: "Bhagalpur", city: "Bhagalpur", img: Bhagalpur, offer: "18%", address: "Tilkamanjhi - Champanagar Rd, Katahalbari, Khanjarpur, Bhagalpur, Bihar 812001" },
+
 
 
 
