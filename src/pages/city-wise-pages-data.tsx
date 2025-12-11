@@ -266,17 +266,16 @@ import Gaya from "../assets/CityPages/Gaya.webp"
 import Bhagalpur from "../assets/CityPages/Bhagalpur.webp"
 
 
-
-
-
-
-
-
-
-
-
-
-
+import Muzaffarpur from "../assets/CityPages/Muzaffarpur.webp"
+import Darbhanga from "../assets/CityPages/Darbhanga.webp"
+import Purnia from "../assets/CityPages/Purnia.webp"
+import Arrah from "../assets/CityPages/Arrah.webp"
+import Hajipur from "../assets/CityPages/Hajipur.webp"
+import Begusarai from "../assets/CityPages/Begusarai.webp"
+import Chhapra from "../assets/CityPages/Chhapra.webp"
+import Samastipur from "../assets/CityPages/Samastipur.webp"
+import Lakhisarai from "../assets/CityPages/Lakhisarai.webp"
+import Buxar from "../assets/CityPages/Buxar.webp"
 
 
 
@@ -1839,13 +1838,48 @@ export const pagesData = [
   twitterDescription: "Safe, professional and affordable Packers and Movers in Khonsa by Gati Shifting Packers. Book your smooth relocation today!",
   canonical: "https://gatishiftingpackers.com/city/Khonsa"
 } },
-  { slug: "Changlang", city: "Changlang", img: Changlang, offer: "26%", address: "Unnamed Road, Changlang, Arunachal Pradesh 792120" },
-  { slug: "Longding", city: "Longding", img: Longding, offer: "26%", address: "Longding Medical Colony Longding, Arunachal Pradesh 792131" },
-  { slug: "Mizoram", city: "Mizoram", img: Mizoram, offer: "26%", address: "Bara Bazar, Dawrpui, Aizawl, Mizoram 796001" },
+  { slug: "Changlang", city: "Changlang", img: Changlang, offer: "26%", address: "Unnamed Road, Changlang, Arunachal Pradesh 792120", metaDetails: {
+  title: "Packers and Movers in Changlang | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Changlang with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Changlang and across Arunachal Pradesh.",
+  keywords: "Local movers near me Changlang, Packers and Movers in Changlang, Gati Shifting Packers Changlang, Best Packers and Movers Changlang, Affordable Packers and Movers Changlang, Trusted Packers and Movers Changlang Arunachal Pradesh, Local Packers and Movers Changlang, Professional Movers and Packers Changlang, Home Shifting Services Changlang, Office Relocation Changlang, Vehicle Transport Changlang, Car Transport Service Changlang, Bike Transport Changlang, Household Goods Shifting Changlang, Industrial Packers and Movers Changlang, Door-to-Door Shifting Services Changlang, Packing and Unpacking Services Changlang, Furniture Movers Changlang, Intercity Packers and Movers Changlang, Packers and Movers Changlang to Itanagar, Packers and Movers Changlang to Naharlagun, Packers and Movers Changlang to Pasighat, Packers and Movers Changlang to Namsai, Packers and Movers Changlang to Guwahati, Packers and Movers Changlang to Dibrugarh, Packers and Movers Changlang to Delhi, Packers and Movers Changlang to Kolkata, Reliable Relocation Company Changlang, Cost-Effective Packers and Movers Changlang, Quick Packers and Movers Changlang, 24x7 Packers and Movers Changlang, Mini Truck for Shifting Changlang, Tempo Service Changlang, Best Relocation Services Changlang, Safe and Secure Moving Services Changlang, Budget-Friendly Movers Changlang, Professional Relocation Company Changlang, Long-Distance Packers and Movers Changlang, Trusted Shifting Company Changlang, Goods Transport Services Changlang.",
+  ogDescription: "Looking for reliable Packers and Movers in Changlang? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Changlang and across Arunachal Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Changlang by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Changlang"
+} },
+  { slug: "Longding", city: "Longding", img: Longding, offer: "26%", address: "Longding Medical Colony Longding, Arunachal Pradesh 792131", metaDetails: {
+  title: "Packers and Movers in Longding | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Longding with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Longding and across Arunachal Pradesh.",
+  keywords: "Local movers near me Longding, Packers and Movers in Longding, Gati Shifting Packers Longding, Best Packers and Movers Longding, Affordable Packers and Movers Longding, Trusted Packers and Movers Longding Arunachal Pradesh, Local Packers and Movers Longding, Professional Movers and Packers Longding, Home Shifting Services Longding, Office Relocation Longding, Vehicle Transport Longding, Car Transport Service Longding, Bike Transport Longding, Household Goods Shifting Longding, Industrial Packers and Movers Longding, Door-to-Door Shifting Services Longding, Packing and Unpacking Services Longding, Furniture Movers Longding, Intercity Packers and Movers Longding, Packers and Movers Longding to Itanagar, Packers and Movers Longding to Tawang, Packers and Movers Longding to Pasighat, Packers and Movers Longding to Assam, Packers and Movers Longding to Guwahati, Packers and Movers Longding to Delhi, Packers and Movers Longding to Kolkata, Reliable Relocation Company Longding, Cost-Effective Packers and Movers Longding, Quick Packers and Movers Longding, 24x7 Packers and Movers Longding, Mini Truck for Shifting Longding, Tempo Service Longding, Best Relocation Services Longding, Safe and Secure Moving Services Longding, Budget-Friendly Movers Longding, Professional Relocation Company Longding, Long-Distance Packers and Movers Longding, Trusted Shifting Company Longding, Goods Transport Services Longding.",
+  ogDescription: "Looking for reliable Packers and Movers in Longding? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Longding and across Arunachal Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Longding by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Longding"
+} },
+  { slug: "Mizoram", city: "Mizoram", img: Mizoram, offer: "26%", address: "Bara Bazar, Dawrpui, Aizawl, Mizoram 796001", metaDetails: {
+  title: "Packers and Movers in Mizoram | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Mizoram with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services across all major cities of Mizoram.",
+  keywords: "Local movers near me Mizoram, Packers and Movers in Mizoram, Gati Shifting Packers Mizoram, Best Packers and Movers Mizoram, Affordable Packers and Movers Mizoram, Trusted Packers and Movers Mizoram, Local Packers and Movers Mizoram, Professional Movers and Packers Mizoram, Home Shifting Services Mizoram, Office Relocation Mizoram, Vehicle Transport Mizoram, Car Transport Service Mizoram, Bike Transport Mizoram, Household Goods Shifting Mizoram, Industrial Packers and Movers Mizoram, Door-to-Door Shifting Services Mizoram, Packing and Unpacking Services Mizoram, Furniture Movers Mizoram, Intercity Packers and Movers Mizoram, Packers and Movers Mizoram to Aizawl, Packers and Movers Mizoram to Lunglei, Packers and Movers Mizoram to Champhai, Packers and Movers Mizoram to Kolkata, Packers and Movers Mizoram to Guwahati, Packers and Movers Mizoram to Delhi, Reliable Relocation Company Mizoram, Cost-Effective Packers and Movers Mizoram, Quick Packers and Movers Mizoram, 24x7 Packers and Movers Mizoram, Mini Truck for Shifting Mizoram, Tempo Service Mizoram, Best Relocation Services Mizoram, Safe and Secure Moving Services Mizoram, Budget-Friendly Movers Mizoram, Professional Relocation Company Mizoram, Long-Distance Packers and Movers Mizoram, Trusted Shifting Company Mizoram, Goods Transport Services Mizoram.",
+  ogDescription: "Looking for reliable Packers and Movers in Mizoram? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles across Mizoram.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Mizoram by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Mizoram"
+} },
 
 
-  { slug: "Aizawl", city: "Aizawl", img: Aizawl, offer: "26%", address: "Bara Bazar, Dawrpui, Aizawl, Mizoram 796001" },
-  { slug: "Lunglei", city: "Lunglei", img: Lunglei, offer: "26%", address: "Chanmari Near Civil Hospital Lunglei S Laldingliana ex-MLA Building, Lunglei, Mizoram 796701" },
+  { slug: "Aizawl", city: "Aizawl", img: Aizawl, offer: "26%", address: "Bara Bazar, Dawrpui, Aizawl, Mizoram 796001", metaDetails: {
+  title: "Packers and Movers in Aizawl | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Aizawl with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Aizawl and across Mizoram.",
+  keywords: "Local movers near me Aizawl, Packers and Movers in Aizawl, Gati Shifting Packers Aizawl, Best Packers and Movers Aizawl, Affordable Packers and Movers Aizawl, Trusted Packers and Movers Aizawl Mizoram, Local Packers and Movers Aizawl, Professional Movers and Packers Aizawl, Home Shifting Services Aizawl, Office Relocation Aizawl, Vehicle Transport Aizawl, Car Transport Service Aizawl, Bike Transport Aizawl, Household Goods Shifting Aizawl, Industrial Packers and Movers Aizawl, Door-to-Door Shifting Services Aizawl, Packing and Unpacking Services Aizawl, Furniture Movers Aizawl, Intercity Packers and Movers Aizawl, Packers and Movers Aizawl to Lunglei, Packers and Movers Aizawl to Champhai, Packers and Movers Aizawl to Kolasib, Packers and Movers Aizawl to Silchar, Packers and Movers Aizawl to Guwahati, Packers and Movers Aizawl to Kolkata, Packers and Movers Aizawl to Delhi, Reliable Relocation Company Aizawl, Cost-Effective Packers and Movers Aizawl, Quick Packers and Movers Aizawl, 24x7 Packers and Movers Aizawl, Mini Truck for Shifting Aizawl, Tempo Service Aizawl, Best Relocation Services Aizawl, Safe and Secure Moving Services Aizawl, Budget-Friendly Movers Aizawl, Professional Relocation Company Aizawl, Long-Distance Packers and Movers Aizawl, Trusted Shifting Company Aizawl, Goods Transport Services Aizawl.",
+  ogDescription: "Looking for reliable Packers and Movers in Aizawl? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Aizawl and across Mizoram.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Aizawl by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Aizawl"
+} },
+  { slug: "Lunglei", city: "Lunglei", img: Lunglei, offer: "26%", address: "Chanmari Near Civil Hospital Lunglei S Laldingliana ex-MLA Building, Lunglei, Mizoram 796701", metaDetails: {
+  title: "Packers and Movers in Lunglei | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Lunglei with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Lunglei and across Mizoram.",
+  keywords: "Local movers near me Lunglei, Packers and Movers in Lunglei, Gati Shifting Packers Lunglei, Best Packers and Movers Lunglei, Affordable Packers and Movers Lunglei, Trusted Packers and Movers Lunglei Mizoram, Local Packers and Movers Lunglei, Professional Movers and Packers Lunglei, Home Shifting Services Lunglei, Office Relocation Lunglei, Vehicle Transport Lunglei, Car Transport Service Lunglei, Bike Transport Lunglei, Household Goods Shifting Lunglei, Industrial Packers and Movers Lunglei, Door-to-Door Shifting Services Lunglei, Packing and Unpacking Services Lunglei, Furniture Movers Lunglei, Intercity Packers and Movers Lunglei, Packers and Movers Lunglei to Aizawl, Packers and Movers Lunglei to Champhai, Packers and Movers Lunglei to Kolasib, Packers and Movers Lunglei to Shillong, Packers and Movers Lunglei to Guwahati, Packers and Movers Lunglei to Kolkata, Reliable Relocation Company Lunglei, Cost-Effective Packers and Movers Lunglei, Quick Packers and Movers Lunglei, 24x7 Packers and Movers Lunglei, Mini Truck for Shifting Lunglei, Tempo Service Lunglei, Best Relocation Services Lunglei, Safe and Secure Moving Services Lunglei, Budget-Friendly Movers Lunglei, Long-Distance Packers and Movers Lunglei, Trusted Shifting Company Lunglei, Goods Transport Services Lunglei.",
+  ogDescription: "Looking for reliable Packers and Movers in Lunglei? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Lunglei and across Mizoram.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Lunglei by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Lunglei"
+} },
   { slug: "Champhai", city: "Champhai", img: Champhai, offer: "26%", address: "Main Rd, Vengthlang, Champhai, Mizoram 796321" },
   { slug: "Serchhip", city: "Serchhip", img: Serchhip, offer: "26%", address: "YMA Rd, Serchhip, Mizoram 796181" },
   { slug: "Kolasib", city: "Kolasib", img: Kolasib, offer: "26%", address: "Park Kawn, Venglai, Kolasib, Mizoram 796081" },
@@ -1878,6 +1912,21 @@ export const pagesData = [
   { slug: "Lachung", city: "Lachung", img: Lachung, offer: "18%", address: "Biulding, Nh310a, Old Mangan Bazaar, Mangan - 737116" },
   { slug: "Gaya", city: "Gaya", img: Gaya, offer: "18%", address: "Gautam Buddha Rd, Dulhingunj, Gaya, Bihar 823001" },
   { slug: "Bhagalpur", city: "Bhagalpur", img: Bhagalpur, offer: "18%", address: "Tilkamanjhi - Champanagar Rd, Katahalbari, Khanjarpur, Bhagalpur, Bihar 812001" },
+
+
+
+
+  { slug: "Muzaffarpur", city: "Muzaffarpur", img: Muzaffarpur, offer: "18%", address: "Maripur Overbridge, Imlichatti Rd, Muzaffarpur, Bihar 842001" },
+  { slug: "Darbhanga", city: "Darbhanga", img: Darbhanga, offer: "18%", address: "NAKA No-6, near Out Door DMCH, Rahamganj, Darbhanga, Bihar 846004" },
+  { slug: "Purnia", city: "Purnia", img: Purnia, offer: "18%", address: "Shop - 102, Near Tanishq Showroom, Purnia, Bihar 854301" },
+  { slug: "Arrah", city: "Arrah", img: Arrah, offer: "18%", address: "NH 30, Hospital Road, Mahajan Toli, Arrah, Bihar 802301" },
+  { slug: "Hajipur", city: "Hajipur", img: Hajipur, offer: "18%", address: "front shop, New market, Cinema Rd, Baghdulhan, Hajipur, Bihar 844101" },
+  { slug: "Begusarai", city: "Begusarai", img: Begusarai, offer: "18%", address: "NEAR AGRASEN Matri SEVA SADAN , NAGDAH, NH 31, Kapasiya, Begusarai, Bihar 851117" },
+  { slug: "Chhapra", city: "Chhapra", img: Chhapra, offer: "18%", address: "Hari Mohan gali, Harimohan Gali, Dahiyawan Tola, Sadhapur, Chapra, Bihar 841301" },
+  { slug: "Samastipur", city: "Samastipur", img: Samastipur, offer: "18%", address: "Ground and First Floor, Santhalia Complex, SH 55, Gola Rd, opposite Titan Eye Plus, Gudari Bazar, Samastipur, Bihar 848101" },
+  { slug: "Lakhisarai", city: "Lakhisarai", img: Lakhisarai, offer: "18%", address: "Near, Vidyapeeth Chowk Rd, purani bazar, Lakhisarai, Bihar 811311" },
+  { slug: "Buxar", city: "Buxar", img: Buxar, offer: "18%", address: "Gajadhar Ganj, Buxar, Bihar 802103" },
+
 
 
 
