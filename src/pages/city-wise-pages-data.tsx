@@ -278,6 +278,18 @@ import Lakhisarai from "../assets/CityPages/Lakhisarai.webp"
 import Buxar from "../assets/CityPages/Buxar.webp"
 
 
+import Vijayawada from "../assets/CityPages/Vijayawada.webp"
+import Guntur from "../assets/CityPages/Guntur.webp"
+import Nellore from "../assets/CityPages/Nellore.webp"
+import Tirupati from "../assets/CityPages/Tirupati.webp"
+import Kurnool from "../assets/CityPages/Kurnool.webp"
+import Rajahmundry from "../assets/CityPages/Rajahmundry (Rajamahendravaram).webp"
+import Kadapa from "../assets/CityPages/Kadapa (Cuddapah).webp"
+import Anantapur from "../assets/CityPages/Anantapur.webp"
+import Eluru from "../assets/CityPages/Eluru.webp"
+import Ongole from "../assets/CityPages/Ongole.webp"
+
+
 
 
 
@@ -1880,14 +1892,49 @@ export const pagesData = [
   twitterDescription: "Safe, professional and affordable Packers and Movers in Lunglei by Gati Shifting Packers. Book your smooth relocation today!",
   canonical: "https://gatishiftingpackers.com/city/Lunglei"
 } },
-  { slug: "Champhai", city: "Champhai", img: Champhai, offer: "26%", address: "Main Rd, Vengthlang, Champhai, Mizoram 796321" },
-  { slug: "Serchhip", city: "Serchhip", img: Serchhip, offer: "26%", address: "YMA Rd, Serchhip, Mizoram 796181" },
-  { slug: "Kolasib", city: "Kolasib", img: Kolasib, offer: "26%", address: "Park Kawn, Venglai, Kolasib, Mizoram 796081" },
+  { slug: "Champhai", city: "Champhai", img: Champhai, offer: "26%", address: "Main Rd, Vengthlang, Champhai, Mizoram 796321", metaDetails: {
+  title: "Packers and Movers in Champhai | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Champhai with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Champhai and across Mizoram.",
+  keywords: "Local movers near me Champhai, Packers and Movers in Champhai, Gati Shifting Packers Champhai, Best Packers and Movers Champhai, Affordable Packers and Movers Champhai, Trusted Packers and Movers Champhai Mizoram, Local Packers and Movers Champhai, Professional Movers and Packers Champhai, Home Shifting Services Champhai, Office Relocation Champhai, Vehicle Transport Champhai, Car Transport Service Champhai, Bike Transport Champhai, Household Goods Shifting Champhai, Industrial Packers and Movers Champhai, Door-to-Door Shifting Services Champhai, Packing and Unpacking Services Champhai, Furniture Movers Champhai, Intercity Packers and Movers Champhai, Packers and Movers Champhai to Aizawl, Packers and Movers Champhai to Lunglei, Packers and Movers Champhai to Kolasib, Packers and Movers Champhai to Silchar, Packers and Movers Champhai to Guwahati, Packers and Movers Champhai to Kolkata, Packers and Movers Champhai to Delhi, Reliable Relocation Company Champhai, Cost-Effective Packers and Movers Champhai, Quick Packers and Movers Champhai, 24x7 Packers and Movers Champhai, Mini Truck for Shifting Champhai, Tempo Service Champhai, Best Relocation Services Champhai, Safe and Secure Moving Services Champhai, Budget-Friendly Movers Champhai, Professional Relocation Company Champhai, Long-Distance Packers and Movers Champhai, Trusted Shifting Company Champhai, Goods Transport Services Champhai.",
+  ogDescription: "Looking for reliable Packers and Movers in Champhai? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Champhai and across Mizoram.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Champhai by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Champhai"
+} },
+  { slug: "Serchhip", city: "Serchhip", img: Serchhip, offer: "26%", address: "YMA Rd, Serchhip, Mizoram 796181", metaDetails: {
+  title: "Packers and Movers in Serchhip | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Serchhip with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Serchhip and across Mizoram.",
+  keywords: "Local movers near me Serchhip, Packers and Movers in Serchhip, Gati Shifting Packers Serchhip, Best Packers and Movers Serchhip, Affordable Packers and Movers Serchhip, Trusted Packers and Movers Serchhip Mizoram, Local Packers and Movers Serchhip, Professional Movers and Packers Serchhip, Home Shifting Services Serchhip, Office Relocation Serchhip, Vehicle Transport Serchhip, Car Transport Service Serchhip, Bike Transport Serchhip, Household Goods Shifting Serchhip, Industrial Packers and Movers Serchhip, Door-to-Door Shifting Services Serchhip, Packing and Unpacking Services Serchhip, Furniture Movers Serchhip, Intercity Packers and Movers Serchhip, Packers and Movers Serchhip to Aizawl, Packers and Movers Serchhip to Lunglei, Packers and Movers Serchhip to Champhai, Packers and Movers Serchhip to Kolasib, Packers and Movers Serchhip to Saitual, Packers and Movers Serchhip to Delhi, Packers and Movers Serchhip to Kolkata, Reliable Relocation Company Serchhip, Cost-Effective Packers and Movers Serchhip, Quick Packers and Movers Serchhip, 24x7 Packers and Movers Serchhip, Mini Truck for Shifting Serchhip, Tempo Service Serchhip, Best Relocation Services Serchhip, Safe and Secure Moving Services Serchhip, Budget-Friendly Movers Serchhip, Professional Relocation Company Serchhip, Long-Distance Packers and Movers Serchhip, Trusted Shifting Company Serchhip, Goods Transport Services Serchhip.",
+  ogDescription: "Looking for reliable Packers and Movers in Serchhip? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Serchhip and across Mizoram.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Serchhip by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Serchhip"
+} },
+  { slug: "Kolasib", city: "Kolasib", img: Kolasib, offer: "26%", address: "Park Kawn, Venglai, Kolasib, Mizoram 796081", metaDetails: {
+  title: "Packers and Movers in Kolasib | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Kolasib with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Kolasib and across Mizoram.",
+  keywords: "Local movers near me Kolasib, Packers and Movers in Kolasib, Gati Shifting Packers Kolasib, Best Packers and Movers Kolasib, Affordable Packers and Movers Kolasib, Trusted Packers and Movers Kolasib Mizoram, Local Packers and Movers Kolasib, Professional Movers and Packers Kolasib, Home Shifting Services Kolasib, Office Relocation Kolasib, Vehicle Transport Kolasib, Car Transport Service Kolasib, Bike Transport Kolasib, Household Goods Shifting Kolasib, Industrial Packers and Movers Kolasib, Door-to-Door Shifting Services Kolasib, Packing and Unpacking Services Kolasib, Furniture Movers Kolasib, Intercity Packers and Movers Kolasib, Packers and Movers Kolasib to Aizawl, Packers and Movers Kolasib to Lunglei, Packers and Movers Kolasib to Champhai, Packers and Movers Kolasib to Silchar, Packers and Movers Kolasib to Guwahati, Packers and Movers Kolasib to Delhi, Packers and Movers Kolasib to Kolkata, Reliable Relocation Company Kolasib, Cost-Effective Packers and Movers Kolasib, Quick Packers and Movers Kolasib, 24x7 Packers and Movers Kolasib, Mini Truck for Shifting Kolasib, Tempo Service Kolasib, Best Relocation Services Kolasib, Safe and Secure Moving Services Kolasib, Budget-Friendly Movers Kolasib, Professional Relocation Company Kolasib, Long-Distance Packers and Movers Kolasib, Trusted Shifting Company Kolasib, Goods Transport Services Kolasib.",
+  ogDescription: "Looking for reliable Packers and Movers in Kolasib? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Kolasib and across Mizoram.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Kolasib by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Kolasib"
+} },
 
 
 
-  { slug: "Mamit", city: "Mamit", img: Mamit, offer: "26%", address: "TB Tlang Rd, Zemabawk, Aizawl, Mizoram 796017" },
-  { slug: "Lawngtlai", city: "Lawngtlai", img: Lawngtlai, offer: "26%", address: "Main Road, opp. Sumo Stand, Lawngtlai Bazar, Chandmary, Lawngtlai, Mizoram 796891" },
+  { slug: "Mamit", city: "Mamit", img: Mamit, offer: "26%", address: "TB Tlang Rd, Zemabawk, Aizawl, Mizoram 796017", metaDetails: {
+  title: "Packers and Movers in Mamit | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Mamit with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Mamit and across Mizoram.",
+  keywords: "Local movers near me Mamit, Packers and Movers in Mamit, Gati Shifting Packers Mamit, Best Packers and Movers Mamit, Affordable Packers and Movers Mamit, Trusted Packers and Movers Mamit Mizoram, Local Packers and Movers Mamit, Professional Movers and Packers Mamit, Home Shifting Services Mamit, Office Relocation Mamit, Vehicle Transport Mamit, Car Transport Service Mamit, Bike Transport Mamit, Household Goods Shifting Mamit, Industrial Packers and Movers Mamit, Door-to-Door Shifting Services Mamit, Packing and Unpacking Services Mamit, Furniture Movers Mamit, Intercity Packers and Movers Mamit, Packers and Movers Mamit to Aizawl, Packers and Movers Mamit to Lunglei, Packers and Movers Mamit to Champhai, Packers and Movers Mamit to Serchhip, Packers and Movers Mamit to Kolasib, Packers and Movers Mamit to Guwahati, Packers and Movers Mamit to Silchar, Reliable Relocation Company Mamit, Cost-Effective Packers and Movers Mamit, Quick Packers and Movers Mamit, 24x7 Packers and Movers Mamit, Mini Truck for Shifting Mamit, Tempo Service Mamit, Best Relocation Services Mamit, Safe and Secure Moving Services Mamit, Budget-Friendly Movers Mamit, Professional Relocation Company Mamit, Long-Distance Packers and Movers Mamit, Trusted Shifting Company Mamit, Goods Transport Services Mamit.",
+  ogDescription: "Looking for reliable Packers and Movers in Mamit? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Mamit and across Mizoram.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Mamit by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Mamit"
+} },
+  { slug: "Lawngtlai", city: "Lawngtlai", img: Lawngtlai, offer: "26%", address: "Main Road, opp. Sumo Stand, Lawngtlai Bazar, Chandmary, Lawngtlai, Mizoram 796891", metaDetails: {
+  title: "Packers and Movers in Lawngtlai | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Lawngtlai with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Lawngtlai and across Mizoram.",
+  keywords: "Local movers near me Lawngtlai, Packers and Movers in Lawngtlai, Gati Shifting Packers Lawngtlai, Best Packers and Movers Lawngtlai, Affordable Packers and Movers Lawngtlai, Trusted Packers and Movers Lawngtlai Mizoram, Local Packers and Movers Lawngtlai, Professional Movers and Packers Lawngtlai, Home Shifting Services Lawngtlai, Office Relocation Lawngtlai, Vehicle Transport Lawngtlai, Car Transport Service Lawngtlai, Bike Transport Lawngtlai, Household Goods Shifting Lawngtlai, Industrial Packers and Movers Lawngtlai, Door-to-Door Shifting Services Lawngtlai, Packing and Unpacking Services Lawngtlai, Furniture Movers Lawngtlai, Intercity Packers and Movers Lawngtlai, Packers and Movers Lawngtlai to Aizawl, Packers and Movers Lawngtlai to Lunglei, Packers and Movers Lawngtlai to Champhai, Packers and Movers Lawngtlai to Mamit, Packers and Movers Lawngtlai to Kolkata, Packers and Movers Lawngtlai to Guwahati, Reliable Relocation Company Lawngtlai, Cost-Effective Packers and Movers Lawngtlai, Quick Packers and Movers Lawngtlai, 24x7 Packers and Movers Lawngtlai, Mini Truck for Shifting Lawngtlai, Tempo Service Lawngtlai, Best Relocation Services Lawngtlai, Safe and Secure Moving Services Lawngtlai, Budget-Friendly Movers Lawngtlai, Professional Relocation Company Lawngtlai, Long-Distance Packers and Movers Lawngtlai, Trusted Shifting Company Lawngtlai, Goods Transport Services Lawngtlai.",
+  ogDescription: "Looking for reliable Packers and Movers in Lawngtlai? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Lawngtlai and across Mizoram.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Lawngtlai by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Lawngtlai"
+} },
   { slug: "Saiha", city: "Saiha (Siaha)", img: Saiha, offer: "26%", address: "Park Kawn, Venglai, Kolasib, Mizoram 796081" },
   { slug: "Khawzawl", city: "Khawzawl", img: Khawzawl, offer: "26%", address: "Vengthar, Khawzawl, Mizoram 796321" },
   { slug: "Saitual", city: "Saitual", img: Saitual, offer: "26%", address: "Dawrkawn, Venglai, Saitual, Mizoram 796261" },
@@ -1932,6 +1979,17 @@ export const pagesData = [
 
 
 
+
+  { slug: "Vijayawada", city: "Vijayawada", img: Vijayawada, offer: "23%", address: "No 29, 37/98, Eluru Road, Governor Peta (Near Vijaya Talkies), Vijayawada – 520002" },
+  { slug: "Guntur", city: "Guntur", img: Guntur, offer: "23%", address: "Kakumanu Vari St, Kotha Peta, Guntur – 522001" },
+  { slug: "Nellore", city: "Nellore", img: Nellore, offer: "23%", address: "No 27/1/560/1, Children’s Park Road, Ramji Nagar, Near Aditya Degree College, Nellore – 524001" },
+  { slug: "Tirupati", city: "Tirupati", img: Tirupati, offer: "23%", address: "Mahal Rd, RS Gardens, Reddy and Reddy's Colony, Tirupati, Andhra Pradesh 517507" },
+  { slug: "Kurnool", city: "Kurnool", img: Kurnool, offer: "23%", address: "Kotha Peta, Kurnool, Andhra Pradesh 518004" },
+  { slug: "Rajahmundry", city: "Rajahmundry (Rajamahendravaram)", img: Rajahmundry, offer: "23%", address: "D.No: 76-1-15, Prakash Nagar, Near Raju Neuro & Multispeciality Hospital, Rajahmundry HO – 533101" },
+  { slug: "Kadapa", city: "Kadapa (Cuddapah)", img: Kadapa, offer: "23%", address: "YSR grand inn, SLB Enclave, Y.S.Nagar, Kadapa, Andhra Pradesh 516001" },
+  { slug: "Anantapur", city: "Anantapur", img: Anantapur, offer: "23%", address: "Shop No - 112, Ganesha Nagar, Ananatapur, Pilligundla, Anantapur, Andhra Pradesh 515004" },
+  { slug: "Eluru", city: "Eluru", img: Eluru, offer: "23%", address: "Door No: 1, GOODSHEED ROAD, OLD BUSSTAND, PANDURANGA PURAM, Eluru, Andhra Pradesh 534002" },
+  { slug: "Ongole", city: "Ongole", img: Ongole, offer: "23%", address: "Ongole Road, Near Joyalukkas Showroom, Ongole – 523001" },
 
 
 ];
