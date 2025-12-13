@@ -52,6 +52,9 @@ import feature3Img from "../assets/homePagePng/feature3.jpg"
 
 import ZohoForm from "../components/ZohoForm"
 
+import justDialCertificateImg from "../assets/homePagePng/justDialCertificate.png"
+import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.png"
+
 
 
 // import { IFaqItem } from "../models/App.model";
@@ -272,7 +275,6 @@ const Home: React.FC = () => {
                 </Slider>
             </Box>
 
-            <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1>
             <motion.div
                 ref={ref1}
                 initial="hidden"
@@ -346,12 +348,12 @@ const Home: React.FC = () => {
 
                         <h3>Get a free <span>{text}</span> Quote</h3>
                         <i>We’ll call you within 15 minutes</i>
-   {/* <ReCAPTCHA
+                        {/* <ReCAPTCHA
                                 ref={recaptchaRef}
                                 sitekey="6LfaOf4rAAAAAGZBXvb01FTAtYQoh0UXm4ChBDHV"
                                 onChange={(value: string | null) => setCaptchaValue(value)}
                             /> */}
-            <ZohoForm></ZohoForm>
+                        <ZohoForm></ZohoForm>
                         {/* <form>
                             <input type="text" placeholder="Full Name*" name="name" onChange={handleChange} value={formData.name} required />
                             <input type="text" placeholder="Mobile No*" name="phone_office" onChange={handleChange} value={formData.phone_office} required />
@@ -370,6 +372,27 @@ const Home: React.FC = () => {
                 </div>
             </motion.div>
 
+            <section id="certificate-section">
+            <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1>
+                <div className="container">
+                    <div className="card">
+                        <a href={justDialCertificateImg} className="hidden" target="_blank">
+                            Click To View
+                        </a>
+                        <img src={justDialCertificateImg} />
+                        <h3>JustDial Certificate</h3>
+                    </div>
+                    <div className="card">
+                        <a href={MSMECertificateImg} className="hidden" target="_blank">
+                            Click To View
+                        </a>
+                         <img src={MSMECertificateImg} />
+                        <h3>MSME Ceritificate</h3>
+                    </div>
+                </div>
+            </section>
+
+            
             <section id="counter-section">
                 <div className="container">
                     <div className="card">
