@@ -290,6 +290,18 @@ import Eluru from "../assets/CityPages/Eluru.webp"
 import Ongole from "../assets/CityPages/Ongole.webp"
 
 
+import Srikakulam from "../assets/CityPages/Srikakulam.webp"
+import Vizianagaram from "../assets/CityPages/Vizianagaram.webp"
+import Chittoor from "../assets/CityPages/Chittoor.webp"
+import Proddatur from "../assets/CityPages/Proddatur.webp"
+import Hindupur from "../assets/CityPages/Hindupur.webp"
+import Tenali from "../assets/CityPages/Tenali.webp"
+import Nandyal from "../assets/CityPages/Nandyal.webp"
+import Adoni from "../assets/CityPages/Adoni.webp"
+import Nepal from "../assets/CityPages/Nepal.webp"
+import Kollam from "../assets/CityPages/Kollam.webp"
+
+
 
 
 
@@ -1935,14 +1947,49 @@ export const pagesData = [
   twitterDescription: "Safe, professional and affordable Packers and Movers in Lawngtlai by Gati Shifting Packers. Book your smooth relocation today!",
   canonical: "https://gatishiftingpackers.com/city/Lawngtlai"
 } },
-  { slug: "Saiha", city: "Saiha (Siaha)", img: Saiha, offer: "26%", address: "Park Kawn, Venglai, Kolasib, Mizoram 796081" },
-  { slug: "Khawzawl", city: "Khawzawl", img: Khawzawl, offer: "26%", address: "Vengthar, Khawzawl, Mizoram 796321" },
-  { slug: "Saitual", city: "Saitual", img: Saitual, offer: "26%", address: "Dawrkawn, Venglai, Saitual, Mizoram 796261" },
+  { slug: "Saiha", city: "Saiha (Siaha)", img: Saiha, offer: "26%", address: "Park Kawn, Venglai, Kolasib, Mizoram 796081", metaDetails: {
+  title: "Packers and Movers in Saiha | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Saiha with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Saiha and across Mizoram.",
+  keywords: "Local movers near me Saiha, Packers and Movers in Saiha, Gati Shifting Packers Saiha, Best Packers and Movers Saiha, Affordable Packers and Movers Saiha, Trusted Packers and Movers Saiha Mizoram, Local Packers and Movers Saiha, Professional Movers and Packers Saiha, Home Shifting Services Saiha, Office Relocation Saiha, Vehicle Transport Saiha, Car Transport Service Saiha, Bike Transport Saiha, Household Goods Shifting Saiha, Industrial Packers and Movers Saiha, Door-to-Door Shifting Services Saiha, Packing and Unpacking Services Saiha, Furniture Movers Saiha, Intercity Packers and Movers Saiha, Packers and Movers Saiha to Aizawl, Packers and Movers Saiha to Lunglei, Packers and Movers Saiha to Lawngtlai, Packers and Movers Saiha to Champhai, Packers and Movers Saiha to Silchar, Packers and Movers Saiha to Guwahati, Packers and Movers Saiha to Kolkata, Packers and Movers Saiha to Delhi, Reliable Relocation Company Saiha, Cost-Effective Packers and Movers Saiha, Quick Packers and Movers Saiha, 24x7 Packers and Movers Saiha, Mini Truck for Shifting Saiha, Tempo Service Saiha, Best Relocation Services Saiha, Safe and Secure Moving Services Saiha, Budget-Friendly Movers Saiha, Professional Relocation Company Saiha, Long-Distance Packers and Movers Saiha, Trusted Shifting Company Saiha, Goods Transport Services Saiha.",
+  ogDescription: "Looking for reliable Packers and Movers in Saiha? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Saiha and across Mizoram.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Saiha by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Saiha"
+} },
+  { slug: "Khawzawl", city: "Khawzawl", img: Khawzawl, offer: "26%", address: "Vengthar, Khawzawl, Mizoram 796321", metaDetails: {
+  title: "Packers and Movers in Khawzawl | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Khawzawl with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Khawzawl and across Mizoram.",
+  keywords: "Local movers near me Khawzawl, Packers and Movers in Khawzawl, Gati Shifting Packers Khawzawl, Best Packers and Movers Khawzawl, Affordable Packers and Movers Khawzawl, Trusted Packers and Movers Khawzawl Mizoram, Local Packers and Movers Khawzawl, Professional Movers and Packers Khawzawl, Home Shifting Services Khawzawl, Office Relocation Khawzawl, Vehicle Transport Khawzawl, Car Transport Service Khawzawl, Bike Transport Khawzawl, Household Goods Shifting Khawzawl, Industrial Packers and Movers Khawzawl, Door-to-Door Shifting Services Khawzawl, Packing and Unpacking Services Khawzawl, Furniture Movers Khawzawl, Intercity Packers and Movers Khawzawl, Packers and Movers Khawzawl to Aizawl, Packers and Movers Khawzawl to Champhai, Packers and Movers Khawzawl to Serchhip, Packers and Movers Khawzawl to Lunglei, Packers and Movers Khawzawl to Silchar, Packers and Movers Khawzawl to Guwahati, Reliable Relocation Company Khawzawl, Cost-Effective Packers and Movers Khawzawl, Quick Packers and Movers Khawzawl, 24x7 Packers and Movers Khawzawl, Mini Truck for Shifting Khawzawl, Tempo Service Khawzawl, Best Relocation Services Khawzawl, Safe and Secure Moving Services Khawzawl, Budget-Friendly Movers Khawzawl, Professional Relocation Company Khawzawl, Long-Distance Packers and Movers Khawzawl, Trusted Shifting Company Khawzawl, Goods Transport Services Khawzawl.",
+  ogDescription: "Looking for reliable Packers and Movers in Khawzawl? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Khawzawl and across Mizoram.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Khawzawl by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Khawzawl"
+} },
+  { slug: "Saitual", city: "Saitual", img: Saitual, offer: "26%", address: "Dawrkawn, Venglai, Saitual, Mizoram 796261", metaDetails: {
+  title: "Packers and Movers in Saitual | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Saitual with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Saitual and across Mizoram.",
+  keywords: "Local movers near me Saitual, Packers and Movers in Saitual, Gati Shifting Packers Saitual, Best Packers and Movers Saitual, Affordable Packers and Movers Saitual, Trusted Packers and Movers Saitual Mizoram, Local Packers and Movers Saitual, Professional Movers and Packers Saitual, Home Shifting Services Saitual, Office Relocation Saitual, Vehicle Transport Saitual, Car Transport Service Saitual, Bike Transport Saitual, Household Goods Shifting Saitual, Industrial Packers and Movers Saitual, Door-to-Door Shifting Services Saitual, Packing and Unpacking Services Saitual, Furniture Movers Saitual, Intercity Packers and Movers Saitual, Packers and Movers Saitual to Aizawl, Packers and Movers Saitual to Champhai, Packers and Movers Saitual to Serchhip, Packers and Movers Saitual to Lunglei, Packers and Movers Saitual to Silchar, Packers and Movers Saitual to Guwahati, Packers and Movers Saitual to Delhi, Reliable Relocation Company Saitual, Cost-Effective Packers and Movers Saitual, Quick Packers and Movers Saitual, 24x7 Packers and Movers Saitual, Mini Truck for Shifting Saitual, Tempo Service Saitual, Best Relocation Services Saitual, Safe and Secure Moving Services Saitual, Budget-Friendly Movers Saitual, Professional Relocation Company Saitual, Long-Distance Packers and Movers Saitual, Trusted Shifting Company Saitual, Goods Transport Services Saitual.",
+  ogDescription: "Looking for reliable Packers and Movers in Saitual? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Saitual and across Mizoram.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Saitual by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Saitual"
+} },
 
 
 
-  { slug: "Hnahthial", city: "Hnahthial", img: Hnahthial, offer: "18%", address: "Saitual, Mizoram 796261" },
-  { slug: "Gangtok", city: "Gangtok (Capital)", img: Gangtok, offer: "18%", address: "MG Market, Arithang, Gangtok, Sikkim 737101" },
+  { slug: "Hnahthial", city: "Hnahthial", img: Hnahthial, offer: "18%", address: "Saitual, Mizoram 796261", metaDetails: {
+  title: "Packers and Movers in Hnahthial | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Hnahthial with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Hnahthial and across Mizoram.",
+  keywords: "Local movers near me Hnahthial, Packers and Movers in Hnahthial, Gati Shifting Packers Hnahthial, Best Packers and Movers Hnahthial, Affordable Packers and Movers Hnahthial, Trusted Packers and Movers Hnahthial Mizoram, Local Packers and Movers Hnahthial, Professional Movers and Packers Hnahthial, Home Shifting Services Hnahthial, Office Relocation Hnahthial, Vehicle Transport Hnahthial, Car Transport Service Hnahthial, Bike Transport Hnahthial, Household Goods Shifting Hnahthial, Industrial Packers and Movers Hnahthial, Door-to-Door Shifting Services Hnahthial, Packing and Unpacking Services Hnahthial, Furniture Movers Hnahthial, Intercity Packers and Movers Hnahthial, Packers and Movers Hnahthial to Aizawl, Packers and Movers Hnahthial to Lunglei, Packers and Movers Hnahthial to Lawngtlai, Packers and Movers Hnahthial to Champhai, Packers and Movers Hnahthial to Silchar, Packers and Movers Hnahthial to Guwahati, Packers and Movers Hnahthial to Delhi, Reliable Relocation Company Hnahthial, Cost-Effective Packers and Movers Hnahthial, Quick Packers and Movers Hnahthial, 24x7 Packers and Movers Hnahthial, Mini Truck for Shifting Hnahthial, Tempo Service Hnahthial, Best Relocation Services Hnahthial, Safe and Secure Moving Services Hnahthial, Budget-Friendly Movers Hnahthial, Professional Relocation Company Hnahthial, Long-Distance Packers and Movers Hnahthial, Trusted Shifting Company Hnahthial, Goods Transport Services Hnahthial.",
+  ogDescription: "Looking for reliable Packers and Movers in Hnahthial? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Hnahthial and across Mizoram.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Hnahthial by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Hnahthial"
+} },
+  { slug: "Gangtok", city: "Gangtok (Capital)", img: Gangtok, offer: "18%", address: "MG Market, Arithang, Gangtok, Sikkim 737101", metaDetails: {
+  title: "Packers and Movers in Gangtok | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Gangtok with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Gangtok and across Sikkim.",
+  keywords: "Local movers near me Gangtok, Packers and Movers in Gangtok, Gati Shifting Packers Gangtok, Best Packers and Movers Gangtok, Affordable Packers and Movers Gangtok, Trusted Packers and Movers Gangtok Sikkim, Local Packers and Movers Gangtok, Professional Movers and Packers Gangtok, Home Shifting Services Gangtok, Office Relocation Gangtok, Vehicle Transport Gangtok, Car Transport Service Gangtok, Bike Transport Gangtok, Household Goods Shifting Gangtok, Industrial Packers and Movers Gangtok, Door-to-Door Shifting Services Gangtok, Packing and Unpacking Services Gangtok, Furniture Movers Gangtok, Intercity Packers and Movers Gangtok, Packers and Movers Gangtok to Siliguri, Packers and Movers Gangtok to Rangpo, Packers and Movers Gangtok to Kalimpong, Packers and Movers Gangtok to Darjeeling, Packers and Movers Gangtok to Guwahati, Packers and Movers Gangtok to Kolkata, Packers and Movers Gangtok to Delhi, Reliable Relocation Company Gangtok, Cost-Effective Packers and Movers Gangtok, Quick Packers and Movers Gangtok, 24x7 Packers and Movers Gangtok, Mini Truck for Shifting Gangtok, Tempo Service Gangtok, Best Relocation Services Gangtok, Safe and Secure Moving Services Gangtok, Budget-Friendly Movers Gangtok, Professional Relocation Company Gangtok, Long-Distance Packers and Movers Gangtok, Trusted Shifting Company Gangtok, Goods Transport Services Gangtok.",
+  ogDescription: "Looking for reliable Packers and Movers in Gangtok? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Gangtok and across Sikkim.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Gangtok by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Gangtok"
+} },
   { slug: "Namchi", city: "Namchi", img: Namchi, offer: "18%", address: "Bhanjyang, Road, Namchi, Sikkim 737126" },
   { slug: "Gyalshing", city: "Gyalshing (Gayzing)", img: Gyalshing, offer: "18%", address: "Hospital Rd, opposite Bionic Diagnostics, Geyzing, Sikkim 737111" },
   { slug: "Mangan", city: "Mangan", img: Mangan, offer: "18%", address: "Unnamed Road, Mangan, Sikkim 737116" },
@@ -1990,6 +2037,21 @@ export const pagesData = [
   { slug: "Anantapur", city: "Anantapur", img: Anantapur, offer: "23%", address: "Shop No - 112, Ganesha Nagar, Ananatapur, Pilligundla, Anantapur, Andhra Pradesh 515004" },
   { slug: "Eluru", city: "Eluru", img: Eluru, offer: "23%", address: "Door No: 1, GOODSHEED ROAD, OLD BUSSTAND, PANDURANGA PURAM, Eluru, Andhra Pradesh 534002" },
   { slug: "Ongole", city: "Ongole", img: Ongole, offer: "23%", address: "Ongole Road, Near Joyalukkas Showroom, Ongole – 523001" },
+
+
+
+
+  { slug: "Srikakulam", city: "Srikakulam", img: Srikakulam, offer: "23%", address: "Zilla Parishad Road, L.B.S Colony, near Maharishi Vidyalayam, Srikakulam – 532001" },
+  { slug: "Vizianagaram", city: "Vizianagaram", img: Vizianagaram, offer: "23%", address: "Anjaneya Swamy Temple, Indira Nagar, Balaji Nagar, Vizianagaram, Andhra Pradesh 535003" },
+  { slug: "Chittoor", city: "Chittoor", img: Chittoor, offer: "23%", address: "G.K.Nagar,Near Collector Office-chittoor Chennai - Bangalore, National Highway, Chittoor, Andhra Pradesh 517002" },
+  { slug: "Proddatur", city: "Proddatur", img: Proddatur, offer: "23%", address: "17/9 B, G K STREET, PRODDATUR, Proddatur, Andhra Pradesh 516360" },
+  { slug: "Hindupur", city: "Hindupur", img: Hindupur, offer: "23%", address: "Hindupur, Lakshmipuram, Hindupuram, Sreekanthapuram Rural, Andhra Pradesh 515201" },
+  { slug: "Tenali", city: "Tenali", img: Tenali, offer: "23%", address: "Sai Ram Complex, Prakasam Road, Tenali, Guntur, Andhra Pradesh 522201" },
+  { slug: "Nandyal", city: "Nandyal", img: Nandyal, offer: "23%", address: "V. C. Calany, 26/605, near school, Telugu Peta, Nandyala, Andhra Pradesh 518502" },
+  { slug: "Adoni", city: "Adoni", img: Adoni, offer: "23%", address: " SRI MAHAYOGI LAKSHMAMMA COMPLEX, beside VBS OIL FACTORY, Vengalapuram, Adoni, D.T, Andhra Pradesh 518301" },
+  { slug: "Nepal", city: "Nepal", img: Nepal, offer: "23%", address: "Chatramaharaj Ayurved Center, Near, Kathmandu 44600, Nepal" },
+  { slug: "Kollam ", city: "Kollam ", img: Kollam , offer: "23%", address: "Musaliar Buildings Thiruvananthapuram, Panvel - Kochi - Kanyakumari Hwy, near Kollam, Chinnakada, Kollam, Kerala 691001" },
+
 
 
 ];
