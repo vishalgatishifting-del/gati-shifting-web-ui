@@ -29,6 +29,7 @@ import HomeStorage from "../pages/HomeStorage"
 import SafetyStandard from "../pages/SafetyStandard"
 import VideoGallery from "../pages/VideoGallery"
 import CityPage from "../pages/CityPage"
+import InternationalShifting from "../pages/InternationalShifting"
 import { pagesData } from "../pages/city-wise-pages-data"
 import { useState } from 'react';
 import NotFound from "../pages/NotFound";
@@ -66,6 +67,7 @@ const AppRoutes = () => {
                     <Route path="/home-storage" element={<HomeStorage></HomeStorage>}></Route>
                     <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
                     <Route path="/video-gallery" element={<VideoGallery></VideoGallery>}></Route>
+                    <Route path="/international-shifting" element={<InternationalShifting></InternationalShifting>}></Route>
                     {
                         pagesData.map((page) => (
                             <Route path={`/city/${page.slug}`} element={
@@ -76,6 +78,7 @@ const AppRoutes = () => {
                         ))
                     }
                     {/* 404 Page */}
+
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </ScrollToTop>

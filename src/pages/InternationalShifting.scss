@@ -1,0 +1,151 @@
+@import "../style/variables";
+
+#banner-image {
+    margin-top: 100px;
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.images-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    img{
+        width: 100%;
+    }
+}
+
+#content {
+    @include font-poppins-sans(400);
+    padding: 20px;
+
+    .container {
+        width: 1200px;
+        margin: auto;
+        margin-top: 50px;
+
+        .box {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            // align-items: center;
+            margin-bottom: 30px;
+
+            .img-bx {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .detail {
+                h2 {
+                    color: $primary-color;
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+
+                grid-column: span 2;
+                padding: 0 20px;
+
+                p {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.btn-bx{
+    a{
+        margin: auto;
+        display: block;
+        width: 200px;
+        background: $primary-color;
+        padding: 10px 0;
+        text-align: center;
+        @include font-poppins-sans(400);
+        border-radius: 30px;
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 1276px) {
+    #content {
+
+        .container {
+            width: 100%;
+
+            .box{
+                .detail:first-child{
+                    padding-left: 0;
+                }
+                .detail:last-child{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    #banner-image{
+        margin-top: 64px;
+    }
+}
+@media screen and (max-width: 1092px) {
+    #content {
+
+        .container {
+            width: 100%;
+
+            .box{
+                grid-template-columns: repeat(2, 1fr);
+                .detail{
+                    grid-column: span 1;
+                    h2{
+                        font-size: 25px;
+                    }
+                    
+                    p{
+                        font-size: 14px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    #content {
+        padding: 10px;
+        .container {
+            width: 100%;
+
+            .box{
+                grid-template-columns: repeat(1, 1fr);
+                .detail{
+                    grid-column: span 1;
+
+                    p{
+                        font-size: 13px;
+                    }
+
+                    padding: 0;
+                }
+            }
+
+            .box:last-child{
+                .img-bx{
+                    order: 2;
+                }
+                .detail{
+                    order: 1;
+                }
+            }
+        }
+    }
+}
