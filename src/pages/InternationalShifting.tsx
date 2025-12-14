@@ -49,9 +49,9 @@ const InternationalShifting = () => {
                 </div>
             </section>
 
-            <div className="btn-bx">
+            {/* <div className="btn-bx">
                 <a href={quotationPDF} target="_blank" >Get Quotation</a>
-            </div>
+            </div> */}
         </>
     )
 }
