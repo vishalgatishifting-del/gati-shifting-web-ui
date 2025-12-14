@@ -4,7 +4,7 @@ import InternationalShiftingByAir from "../assets/homePagePng/international shif
 import InternationalCargoShipTruckImg from "../assets/homePagePng/international cargo ship truck.png"
 import InternationalAirlineImg from "../assets/homePagePng/international airline.png"
 
-import quotationPDF from "../assets/homePagePng/GATI SHIFTING PACKERS PVT LTD .pdf"
+// import quotationPDF from "../assets/homePagePng/GATI SHIFTING PACKERS PVT LTD .pdf"
 import "./InternationalShifting.scss"
 
 const InternationalShifting = () => {
