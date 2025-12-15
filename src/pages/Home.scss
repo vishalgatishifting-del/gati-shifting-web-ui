@@ -184,7 +184,7 @@
             }
             img{
                 width: 200px;
-                box-shadow: 0 0 20px #0000004a;
+                box-shadow: 0 1px 2px 0 rgba(48, 48, 48, .30), 0 1px 3px 1px rgba(48, 48, 48, .15);
                 border-radius: 10px;
             }
             h3{
@@ -208,13 +208,14 @@
         width: 90%;
 
         .card {
-            background: #fdfefe;
+            background: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
             border-radius: 10px;
-            box-shadow: 0 6px 10px #0000003b;
+            // box-shadow: 0 6px 10px #0000003b;
+            border: 1px solid #a9acaa;
             padding-bottom: 40px;
 
             img {
@@ -228,14 +229,14 @@
     padding: 10px;
 
     .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 1350px;
+        margin: auto;
 
         .imgBx {
-            width: 400px;
             height: 500px;
-            margin: 20px;
 
             img {
                 height: 100%;
@@ -503,6 +504,19 @@
 }
 
 
+@media screen and (max-width: 1382px) {
+
+    #feature-section {
+
+        .container {
+            width: 100%;
+            .imgBx {
+                height: auto;
+
+            }
+        }
+    }
+}
 
 
 @media screen and (max-width: 1173px) {
@@ -549,22 +563,6 @@
 
         .container {
             width: 100%;
-        }
-    }
-}
-
-@media screen and (max-width: 990px) {
-
-    #feature-section {
-        padding: 10px;
-
-        .container {
-
-            .imgBx {
-                height: 400px;
-                margin: 10px;
-
-            }
         }
     }
 }
@@ -672,25 +670,6 @@
     }
 }
 
-
-
-
-
-@media screen and (max-width: 750px) {
-
-    #feature-section {
-        padding: 10px;
-
-        .container {
-
-            .imgBx {
-                height: 300px;
-                margin: 5px;
-
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 726px) {
     #company-description {
@@ -824,19 +803,12 @@
 
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 514px) {
 
     #feature-section {
-        padding: 10px;
 
         .container {
-            flex-wrap: wrap;
-            .imgBx {
-                height: 600px;
-                margin: 0px;
-                margin-bottom: 10px;
-
-            }
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }

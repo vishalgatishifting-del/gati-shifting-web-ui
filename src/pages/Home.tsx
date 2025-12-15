@@ -49,6 +49,7 @@ import peoplesPng from "../assets/homePagePng/Gemini_Generated_Image_lrzvt4lrzvt
 import feature1Img from "../assets/homePagePng/feature1.jpg"
 import feature2Img from "../assets/homePagePng/feature2.jpg"
 import feature3Img from "../assets/homePagePng/feature3.jpg"
+import feature4Img from "../assets/homePagePng/feature4.jpg"
 
 import ZohoForm from "../components/ZohoForm"
 
@@ -418,20 +419,6 @@ const Home: React.FC = () => {
                 </div>
             </section>
 
-            <section id="feature-section">
-                <div className="container">
-                    <div className="imgBx">
-                        <img src={feature1Img} />
-                    </div>
-                    <div className="imgBx">
-                        <img src={feature2Img} />
-                    </div>
-                    <div className="imgBx">
-                        <img src={feature3Img} />
-                    </div>
-                </div>
-            </section>
-
             <section id="company-description">
                 <div className="img-bx">
                     {/* <img src={whyGatiImg} /> */}
@@ -447,6 +434,23 @@ const Home: React.FC = () => {
                     </p>
                 </div>
             </section>
+            <section id="feature-section">
+                <div className="container">
+                    <div className="imgBx">
+                        <img src={feature1Img} />
+                    </div>
+                    <div className="imgBx">
+                        <img src={feature2Img} />
+                    </div>
+                    <div className="imgBx">
+                        <img src={feature3Img} />
+                    </div>
+                    <div className="imgBx">
+                        <img src={feature4Img} />
+                    </div>
+                </div>
+            </section>
+
 
             <ReviewVideo></ReviewVideo>
 
