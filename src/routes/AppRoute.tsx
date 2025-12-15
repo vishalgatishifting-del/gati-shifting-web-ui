@@ -33,12 +33,18 @@ import InternationalShifting from "../pages/InternationalShifting"
 import { pagesData } from "../pages/city-wise-pages-data"
 import { useState } from 'react';
 import NotFound from "../pages/NotFound";
+// import PopUp from "../components/PopUpDisplay.tsx"
 
 const AppRoutes = () => {
     const [open, setOpen] = useState(false);
+    // const [message, setMesssage] = useState<string>("");
+    // setMesssage("");
+    // const [visibilityCondition, setVisibilityCondition] = useState<boolean>(false);
+    // setVisibilityCondition(false);
     return (
         <section style={{ overflowX: "hidden" }}>
             <Navbar setOpen={setOpen} open={open} />
+            {/* <PopUp message={message} visibility={visibilityCondition}></PopUp> */}
             <ScrollToTop>
                 <Routes>
                     <Route path="/" element={<Home></Home>}></Route>

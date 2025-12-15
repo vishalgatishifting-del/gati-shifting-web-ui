@@ -301,6 +301,17 @@ import Adoni from "../assets/CityPages/Adoni.webp"
 import Nepal from "../assets/CityPages/Nepal.webp"
 import Kollam from "../assets/CityPages/Kollam.webp"
 
+import Alappuzha from "../assets/CityPages/Alappuzha.webp" 
+import Idukki from "../assets/CityPages/Idukki.webp"
+import Kozhikode from "../assets/CityPages/Kozhikode.webp"
+import Wayanad from "../assets/CityPages/Wayanad.webp"
+import Kannur from "../assets/CityPages/Kannur.webp"
+import Kasaragod from "../assets/CityPages/Kasaragod.webp"
+import Pathanamthitta from "../assets/CityPages/Pathanamthitta.webp"
+import Warangal from "../assets/CityPages/Warangal.webp"
+import Nizamabad from "../assets/CityPages/Nizamabad.webp"
+import Khammam from "../assets/CityPages/Khammam.webp"
+
 
 
 
@@ -2052,6 +2063,18 @@ export const pagesData = [
   { slug: "Nepal", city: "Nepal", img: Nepal, offer: "23%", address: "Chatramaharaj Ayurved Center, Near, Kathmandu 44600, Nepal" },
   { slug: "Kollam ", city: "Kollam ", img: Kollam , offer: "23%", address: "Musaliar Buildings Thiruvananthapuram, Panvel - Kochi - Kanyakumari Hwy, near Kollam, Chinnakada, Kollam, Kerala 691001" },
 
+
+
+  { slug: "Alappuzha", city: "Alappuzha", img: Alappuzha, offer: "23%", address: "General Hospital Rd, Anantha Narayanapuram, Alappuzha, Kerala 688011" },
+  { slug: "Idukki", city: "Idukki", img: Idukki, offer: "23%", address: "Munjanattu Towers Opposite Private Bus Stand, Thodupuzha, Kerala 685584" },
+  { slug: "Kozhikode", city: "Kozhikode", img: Kozhikode, offer: "23%", address: "Blue Mount Plaza, Medical college, Kozhikode, Kerala 673008" },
+  { slug: "Wayanad", city: "Wayanad", img: Wayanad, offer: "23%", address: "Mandayapuram, Kalpetta, Kerala 673121" },
+  { slug: "Kannur", city: "Kannur", img: Kannur, offer: "23%", address: "Employees cooperative society building , caltex, Kerala 670002" },
+  { slug: "Kasaragod", city: "Kasaragod", img: Kasaragod, offer: "23%", address: "MG Rd, Kasaragod, Kerala 671121" },
+  { slug: "Pathanamthitta", city: "Pathanamthitta", img: Pathanamthitta, offer: "23%", address: "Collectorate Rd, opp. SNDP Yogam Gurumandiram, Jn, Pathanamthitta, Kerala 689645" },
+  { slug: "Warangal", city: "Warangal", img: Warangal, offer: "23%", address: "opposite Best price, Ekashila Nagar, Warangal, Telangana 506002" },
+  { slug: "Nizamabad", city: "Nizamabad", img: Nizamabad, offer: "23%", address: "Barkatpura, Nizamabad, Telangana 503001" },
+  { slug: "Khammam", city: "Khammam", img: Khammam, offer: "23%", address: "ELLANDU X ROAD, BESIDE SAMATHA NURSING HOME, Telangana 507002" },
 
 
 ];

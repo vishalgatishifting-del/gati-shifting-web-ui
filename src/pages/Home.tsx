@@ -354,6 +354,7 @@ const Home: React.FC = () => {
                                 sitekey="6LfaOf4rAAAAAGZBXvb01FTAtYQoh0UXm4ChBDHV"
                                 onChange={(value: string | null) => setCaptchaValue(value)}
                             /> */}
+                            
                         <ZohoForm></ZohoForm>
                         {/* <form>
                             <input type="text" placeholder="Full Name*" name="name" onChange={handleChange} value={formData.name} required />

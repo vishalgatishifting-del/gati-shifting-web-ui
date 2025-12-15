@@ -174,6 +174,11 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen }) => {
           <img src={gmailIcon} alt="Email" />
         </a>
       </div>
+
+{/*       
+      <div className='success-screen'>
+        <h2>Successfully Submitted</h2>
+      </div> */}
     </>
   );
 };
