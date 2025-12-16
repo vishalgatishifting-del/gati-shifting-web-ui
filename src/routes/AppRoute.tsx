@@ -70,7 +70,7 @@ const AppRoutes = () => {
                     <Route path="/home-storage" element={<HomeStorage></HomeStorage>}></Route>
                     <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
                     <Route path="/video-gallery" element={<VideoGallery></VideoGallery>}></Route>
-                    <Route path="/international-shifting" element={<InternationalShifting></InternationalShifting>}></Route>
+                    <Route path="/international-shifting" element={<InternationalShifting successCondition={setVisibilityCondition}></InternationalShifting>}></Route>
                     {
                         pagesData.map((page) => (
                             <Route path={`/city/${page.slug}`} element={

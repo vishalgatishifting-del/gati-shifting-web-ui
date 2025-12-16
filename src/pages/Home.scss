@@ -762,6 +762,24 @@
     }
 }
 
+@media screen and (max-width: 566px) {
+    #about-company{
+        .container{
+            .detail{
+                h2{
+                    font-size: 17px;
+                    margin-bottom: 5px;
+                }
+                p{
+                    font-size: 14px;
+                }
+                ul{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 563px) {
     .sliderBox {
         border-radius: 20px;
