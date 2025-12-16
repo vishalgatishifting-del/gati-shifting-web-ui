@@ -41,8 +41,15 @@ header {
         justify-content: space-around;
         padding: 10px;
 
-        .logo img {
-            width: 110px;
+        .logo {
+            a {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 110px;
+                }
+            }
         }
 
         ul {
@@ -122,14 +129,14 @@ header.diwali {
     }
 
     nav {
-        .logo{
-            img{
+        .logo {
+            img {
                 width: 100px;
             }
         }
+
         ul {
             li {
-                a {}
 
                 a.active {
                     background-color: #ff951d;
@@ -144,7 +151,7 @@ header.diwali {
 
         .get-in-touch-btns {
             a {
-                    color: $text-color;
+                color: $text-color;
             }
 
             button {
@@ -162,9 +169,13 @@ header.diwali {
 
         nav {
             justify-content: space-between;
-            .logo{
-                img{
-                    width: 90px;
+
+            .logo {
+                a {
+                    img {
+                        width: 90px;
+                    }
+
                 }
             }
 

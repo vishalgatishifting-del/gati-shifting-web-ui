@@ -55,6 +55,8 @@ import ZohoForm from "../components/ZohoForm"
 
 import justDialCertificateImg from "../assets/homePagePng/justDialCertificate.png"
 import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.png"
+import incorporationCertificate from "../assets/homePagePng/incorporationCertificate.png"
+import GSTIncorporation from "../assets/homePagePng/GSTCertificate.png"
 
 
 
@@ -392,6 +394,20 @@ const Home: React.FC<props> = ({successCondition}) => {
                         </a>
                          <img src={MSMECertificateImg} />
                         <h3>MSME Ceritificate</h3>
+                    </div>
+                    <div className="card">
+                        <a href={incorporationCertificate} className="hidden" target="_blank">
+                            Click To View
+                        </a>
+                         <img src={incorporationCertificate} />
+                        <h3>Incorporation Certificate</h3>
+                    </div>
+                    <div className="card">
+                        <a href={GSTIncorporation} className="hidden" target="_blank">
+                            Click To View
+                        </a>
+                         <img src={GSTIncorporation} />
+                        <h3>GST Certificate</h3>
                     </div>
                 </div>
             </section>
