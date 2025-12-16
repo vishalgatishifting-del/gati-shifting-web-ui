@@ -1,18 +1,19 @@
 import "./ContactForm.scss";
 import React, { useState, useRef } from "react";
-import axios from "axios";
 import { sendEmail } from "../utils/emailHelper";
 
 import ReCAPTCHA from "react-google-recaptcha"
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { getUserSource } from "../utils/sourceTracker";
+import { submitForm } from "../api/formAPI";
 
 interface ContactFormProps {
     showDetail?: true | false;
     closeControl?: () => void;
+    successCondition: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeControl }) => {
+const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeControl, successCondition }) => {
 
 
     interface FormData {
@@ -36,11 +37,10 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
 
 
     const [loading, setLoading] = useState(false);
-    const [success, setSuccess] = useState("");
 
 
     const [captchaValue, setCaptchaValue] = useState<string | null>(null);
-    const recaptchaRef = useRef<any>(null); // 👈 Ref banaya
+    const recaptchaRef = useRef<any>(null);
 
 
     const handleChange = (
@@ -56,25 +56,17 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
             alert("Please verify that you're not a robot!");
             return;
         }
+
+
         setLoading(true);
-        setSuccess("");
-
-        const jsonParam = JSON.stringify(formData);
-
-        const body = new FormData();
-        body.append("user", "admin_user");
-        body.append("pass", "p8mju5dnk");
-        body.append("url", "https://icrmondemand.com/wellnect");
-        body.append("module_name", "Enqu1_Enquiry1");
-        body.append("jsonParam", jsonParam);
         const payload = {
             ...formData,
             landingPage: window.location.href,
         };
 
         try {
-
-           await axios.post("https://api.gatishiftingpackers.com/create-lead", payload);
+           await submitForm(payload);
+           successCondition(true)
 
             const userSource = getUserSource();
             const templateParams = {
@@ -94,7 +86,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
                 'value': 1.0,
                 'currency': 'INR'
             });
-            setSuccess("Form successfully submitted!");
 
             setFormData({ Name: "", Email: "", Phone: "", From: "", To: "", Goods: "" });
 
@@ -102,7 +93,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
             setCaptchaValue(null);
             closeControl?.();
         } catch (error) {
-            setSuccess("Error submitting form. Try again!");
+            
         } finally {
             setLoading(false);
         }
@@ -148,7 +139,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
                         </button>
                         <i>Instant Response | No Hidden Charges | 24x7 Support</i>
                         <a href="https://wa.me/917065994000">Chat Instantly on<WhatsAppIcon className="icon"></WhatsAppIcon></a>
-                        <span className="success-msg">{success && <p>{success}</p>}</span>
                     </form>
                 </div>
             </div>

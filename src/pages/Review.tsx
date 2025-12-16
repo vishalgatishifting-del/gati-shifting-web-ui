@@ -23,7 +23,12 @@ const settings2 = {
     swipeToSlide: true
 };
 
-const Review = () => {
+
+interface props{
+  successCondition: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Review = ({successCondition} : props) => {
     return (
         <>
             <Helmet>
@@ -421,7 +426,7 @@ const Review = () => {
 
                 </div>
             </section>
-            <ContactForm></ContactForm>
+            <ContactForm successCondition={successCondition}></ContactForm>
             <ReviewForm dialog={false}></ReviewForm>
         </>
     )

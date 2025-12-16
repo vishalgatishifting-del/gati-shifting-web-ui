@@ -15,7 +15,10 @@ import {
 import "./CustomerSupport.scss";
 
 
-const CustomerSupport = () => {
+interface props{
+  successCondition: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const CustomerSupport = ({successCondition} : props) => {
     return (
         <>
             <section id="customer-support-sec">
@@ -95,7 +98,7 @@ const CustomerSupport = () => {
                     </div>
                 </div>
             </section>
-            <ContactForm></ContactForm>
+            <ContactForm successCondition={successCondition}></ContactForm>
             <OfficeLocation></OfficeLocation>
             <AwardCertification></AwardCertification>
             <BrandList></BrandList>

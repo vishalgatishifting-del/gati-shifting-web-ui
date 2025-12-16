@@ -28,15 +28,15 @@ import gmailIcon from "../assets/gmailIcon.webp";
 interface NavbarProps {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  successCondition: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ open, setOpen }) => {
+const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
   const location = useLocation();
   const currentPath = location.pathname;
   const [openNav, setOpenNav] = useState(false);
 
   useEffect(() => {
-    // 2 second baad dialog khulega
     const timer = setTimeout(() => {
       setOpen(true);
     }, 2000);
@@ -159,7 +159,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen }) => {
           </Button>
         </DialogActions>
         <DialogContent sx={{ padding: '0 !important' }}>
-          <ContactForm closeControl={handleClose} showDetail={false} />
+          <ContactForm closeControl={handleClose} showDetail={false}  successCondition={successCondition} />
         </DialogContent>
       </Dialog>
 
@@ -174,11 +174,6 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen }) => {
           <img src={gmailIcon} alt="Email" />
         </a>
       </div>
-
-{/*       
-      <div className='success-screen'>
-        <h2>Successfully Submitted</h2>
-      </div> */}
     </>
   );
 };

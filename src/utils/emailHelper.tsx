@@ -18,9 +18,9 @@ export const sendEmail = (templateParams: {
 }) => {
   return emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams)
     .then(() => {
-      alert('Email sent!');
+      
     })
-    .catch((err: any) => {  // 👈 yahan ek hi argument hai
-      console.log(err);
+    .catch(() => {  
+      
     });
 };

@@ -23,7 +23,10 @@ import car from "../assets/expandable_slider/car.webp";
 
 
 
-const Services = () => {
+interface props{
+  successCondition: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const Services = ({successCondition} : props) => {
 
     interface Service {
         shiftingType: string;
@@ -120,7 +123,7 @@ const Services = () => {
 
 
             </section>
-            <ContactForm></ContactForm>
+            <ContactForm successCondition={successCondition}></ContactForm>
             <BrandList />
         </>
     )

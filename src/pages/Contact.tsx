@@ -6,8 +6,11 @@ import "./Contact.scss"
 import { Helmet } from "react-helmet-async";
 
 
+interface props{
+  successCondition: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-const Contact = ()=>{
+const Contact = ({successCondition} : props)=>{
     return (
         <>
 
@@ -34,7 +37,7 @@ const Contact = ()=>{
       </Helmet>
 
         <section id="contact-page-sec">
-        <ContactForm />
+        <ContactForm successCondition={successCondition} />
         <BrandList />
         <OfficeLocation />
         <FAQList />

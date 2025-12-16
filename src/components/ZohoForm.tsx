@@ -1,6 +1,7 @@
 import React, { useState, type FormEvent, type ChangeEvent } from 'react';
 import './ZohoForm.css';
-import axios from "axios";
+import { submitForm } from '../api/formAPI';
+import CircularProgress from '@mui/material/CircularProgress';
 
 type FormData = {
   Name: string;
@@ -11,7 +12,12 @@ type FormData = {
   Goods: string;
 };
 
-const ZohoForm: React.FC = () => {
+interface props {
+  successCondition: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const ZohoForm: React.FC<props> = ({ successCondition }) => {
+
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     Name: '',
     Phone: '',
@@ -26,7 +32,7 @@ const ZohoForm: React.FC = () => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: value // ✅ TypeScript ko key safe karne ke liye FormKeys use kar sakte ho
+      [name]: value
     }));
   };
 
@@ -40,6 +46,9 @@ const ZohoForm: React.FC = () => {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
 
+
+    setLoading(true);
+
     const mandatoryFields: { name: keyof FormData; label: string }[] = [
       { name: 'Name', label: 'Name' },
       { name: 'Email', label: 'Email' },
@@ -52,11 +61,14 @@ const ZohoForm: React.FC = () => {
     for (let field of mandatoryFields) {
       if (!formData[field.name].trim()) {
         alert(`${field.label} cannot be empty.`);
+
+        setLoading(false);
         return;
       }
     }
 
     if (!validateEmail(formData.Email)) {
+      setLoading(false);
       alert('Please enter a valid email address.');
       return;
     }
@@ -67,10 +79,10 @@ const ZohoForm: React.FC = () => {
     };
 
     try {
-      const response = await axios.post("https://api.gatishiftingpackers.com/create-lead", payload);
+
+      const response = await submitForm(payload);
 
       if (response) {
-        alert('Form submitted successfully!');
         setFormData({
           Name: '',
           Email: '',
@@ -79,12 +91,16 @@ const ZohoForm: React.FC = () => {
           To: '',
           Goods: ''
         });
+        successCondition(true)
       } else {
         alert('Failed to submit form...');
       }
+
+      setLoading(false);
     } catch (err) {
-      console.error(err);
       alert('This error occured Error submitting form.' + err);
+
+      setLoading(false);
     }
   };
 
@@ -94,22 +110,23 @@ const ZohoForm: React.FC = () => {
         {(
           Object.keys(formData) as Array<keyof FormData>
         ).map((key) => (
-              <input
-                type={key === 'Email' ? 'email' : 'text'}
-                id={key}
-                name={key}
-                value={formData[key]}
-                onChange={handleChange}
-                placeholder={key+'*'}
-              />
+          <input
+            type={key === 'Email' ? 'email' : 'text'}
+            id={key}
+            name={key}
+            value={formData[key]}
+            onChange={handleChange}
+            placeholder={key + '*'}
+          />
         ))}
 
         <div className="zcwf_row">
           <div className="zcwf_col_lab"></div>
           <div className="zcwf_col_fld">
-            <button type='submit'>Get Free Quote</button>
+            <button type='submit' disabled={loading}>
+              {loading ? <CircularProgress color='inherit'></CircularProgress> : "Get Free Quote"}</button>
             <input
-              style={{marginLeft: "10px", cursor:"pointer"}}
+              style={{ marginLeft: "10px", cursor: "pointer" }}
               type="reset"
               value="Reset"
               className="zcwf_button"

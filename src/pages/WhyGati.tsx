@@ -5,7 +5,10 @@ import "./WhyGati.scss"
 
 
 
-const WhyGati = () => {
+interface props{
+  successCondition: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const WhyGati = ({successCondition} : props) => {
     return (
         <>
             <section id="why-gati-sec">
@@ -40,7 +43,7 @@ const WhyGati = () => {
                     </div>
                 </div>
             </section>
-            <ContactForm></ContactForm>
+            <ContactForm successCondition={successCondition}></ContactForm>
             <AwardCertification></AwardCertification>
             <FAQList></FAQList>
         </>

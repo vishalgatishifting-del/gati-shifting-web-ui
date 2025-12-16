@@ -67,8 +67,10 @@ import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.png"
 //         gtag: (...args: any[]) => void;
 //     }
 // }
-
-const Home: React.FC = () => {
+interface props{
+    successCondition: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const Home: React.FC<props> = ({successCondition}) => {
 
     // const captchaRef = useRef<{ validate: () => boolean }>(null);
 
@@ -355,7 +357,7 @@ const Home: React.FC = () => {
                                 onChange={(value: string | null) => setCaptchaValue(value)}
                             /> */}
                             
-                        <ZohoForm></ZohoForm>
+                        <ZohoForm successCondition={successCondition}></ZohoForm>
                         {/* <form>
                             <input type="text" placeholder="Full Name*" name="name" onChange={handleChange} value={formData.name} required />
                             <input type="text" placeholder="Mobile No*" name="phone_office" onChange={handleChange} value={formData.phone_office} required />

@@ -119,8 +119,9 @@ import BrandList from "../components/BrandsList";
 
 interface AboutUsProps {
     setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  successCondition: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const About: React.FC<AboutUsProps> = ({setOpen}) => {
+const About: React.FC<AboutUsProps> = ({setOpen, successCondition}) => {
 
 
 
@@ -518,7 +519,7 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
             </section>
             <BrandList />
 
-            <ContactForm></ContactForm>
+            <ContactForm successCondition={successCondition}></ContactForm>
 
         </>
     )
