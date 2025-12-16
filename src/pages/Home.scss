@@ -613,6 +613,12 @@
         // padding: 10px;
         .container {
             flex-direction: column;
+
+            .detail{
+                ul{
+                    padding: 0 13px;
+                }
+            }
         }
     }
 }

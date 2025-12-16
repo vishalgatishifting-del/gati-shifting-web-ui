@@ -162,6 +162,11 @@ header.diwali {
 
         nav {
             justify-content: space-between;
+            .logo{
+                img{
+                    width: 90px;
+                }
+            }
 
             ul {
                 top: 100%;
