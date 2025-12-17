@@ -338,6 +338,7 @@ import Jalpaiguri from "../assets/CityPages/Jalpaiguri.webp"
 
 
 
+
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg, offer: "15%", address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007" },
   { slug: "ankleshwar", city: "Ankleshwar", img: ankleshwarImg, offer: "15%", address: "Plot No. D-2529, Brahmanpuri, Ankleshwar GIDC, 6th Road, near Asian Paint, Chokdi, Ankleshwar, Gujarat 393002" },
