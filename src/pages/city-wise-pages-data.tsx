@@ -313,6 +313,27 @@ import Nizamabad from "../assets/CityPages/Nizamabad.webp"
 import Khammam from "../assets/CityPages/Khammam.webp"
 
 
+import Karimnagar from "../assets/CityPages/Karimnagar.webp"
+import Mahbubnagar from "../assets/CityPages/Mahbubnagar.webp"
+import Adilabad from "../assets/CityPages/Adilabad.webp"
+import Nagarkurnool from "../assets/CityPages/Nagarkurnool.webp"
+import Medak from "../assets/CityPages/Medak.webp"
+import Vikarabad from "../assets/CityPages/Vikarabad.webp"
+import Suryapet from "../assets/CityPages/Suryapet.webp"
+import Wanaparthy from "../assets/CityPages/Wanaparthy.webp"
+
+
+import Howrah from "../assets/CityPages/Howrah.webp"
+import Durgapur from "../assets/CityPages/Durgapur.webp"
+import Asansol from "../assets/CityPages/Asansol.webp"
+import Siliguri from "../assets/CityPages/Siliguri.webp"
+import Darjeeling from "../assets/CityPages/Darjeeling.webp"
+import Kharagpur from "../assets/CityPages/Kharagpur.webp"
+import Haldia from "../assets/CityPages/Haldia.webp"
+import Malda from "../assets/CityPages/Malda.webp"
+import Bardhaman from "../assets/CityPages/Bardhaman.webp"
+import Jalpaiguri from "../assets/CityPages/Jalpaiguri.webp"
+
 
 
 
@@ -2001,28 +2022,133 @@ export const pagesData = [
   twitterDescription: "Safe, professional and affordable Packers and Movers in Gangtok by Gati Shifting Packers. Book your smooth relocation today!",
   canonical: "https://gatishiftingpackers.com/city/Gangtok"
 } },
-  { slug: "Namchi", city: "Namchi", img: Namchi, offer: "18%", address: "Bhanjyang, Road, Namchi, Sikkim 737126" },
-  { slug: "Gyalshing", city: "Gyalshing (Gayzing)", img: Gyalshing, offer: "18%", address: "Hospital Rd, opposite Bionic Diagnostics, Geyzing, Sikkim 737111" },
-  { slug: "Mangan", city: "Mangan", img: Mangan, offer: "18%", address: "Unnamed Road, Mangan, Sikkim 737116" },
+  { slug: "Namchi", city: "Namchi", img: Namchi, offer: "18%", address: "Bhanjyang, Road, Namchi, Sikkim 737126", metaDetails: {
+  title: "Packers and Movers in Namchi | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Namchi with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Namchi and across Sikkim.",
+  keywords: "Local movers near me Namchi, Packers and Movers in Namchi, Gati Shifting Packers Namchi, Best Packers and Movers Namchi, Affordable Packers and Movers Namchi, Trusted Packers and Movers Namchi Sikkim, Local Packers and Movers Namchi, Professional Movers and Packers Namchi, Home Shifting Services Namchi, Office Relocation Namchi, Vehicle Transport Namchi, Car Transport Service Namchi, Bike Transport Namchi, Household Goods Shifting Namchi, Industrial Packers and Movers Namchi, Door-to-Door Shifting Services Namchi, Packing and Unpacking Services Namchi, Furniture Movers Namchi, Intercity Packers and Movers Namchi, Packers and Movers Namchi to Gangtok, Packers and Movers Namchi to Mangan, Packers and Movers Namchi to Gyalshing, Packers and Movers Namchi to Siliguri, Packers and Movers Namchi to Kolkata, Packers and Movers Namchi to Delhi, Reliable Relocation Company Namchi, Cost-Effective Packers and Movers Namchi, Quick Packers and Movers Namchi, 24x7 Packers and Movers Namchi, Mini Truck for Shifting Namchi, Tempo Service Namchi, Best Relocation Services Namchi, Safe and Secure Moving Services Namchi, Budget-Friendly Movers Namchi, Professional Relocation Company Namchi, Long-Distance Packers and Movers Namchi, Trusted Shifting Company Namchi, Goods Transport Services Namchi.",
+  ogDescription: "Looking for reliable Packers and Movers in Namchi? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Namchi and across Sikkim.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Namchi by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Namchi"
+} },
+  { slug: "Gyalshing", city: "Gyalshing (Gayzing)", img: Gyalshing, offer: "18%", address: "Hospital Rd, opposite Bionic Diagnostics, Geyzing, Sikkim 737111", metaDetails: {
+  title: "Packers and Movers in Gyalshing | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Gyalshing with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Gyalshing and across Sikkim.",
+  keywords: "Local movers near me Gyalshing, Packers and Movers in Gyalshing, Gati Shifting Packers Gyalshing, Best Packers and Movers Gyalshing, Affordable Packers and Movers Gyalshing, Trusted Packers and Movers Gyalshing Sikkim, Local Packers and Movers Gyalshing, Professional Movers and Packers Gyalshing, Home Shifting Services Gyalshing, Office Relocation Gyalshing, Vehicle Transport Gyalshing, Car Transport Service Gyalshing, Bike Transport Gyalshing, Household Goods Shifting Gyalshing, Industrial Packers and Movers Gyalshing, Door-to-Door Shifting Services Gyalshing, Packing and Unpacking Services Gyalshing, Furniture Movers Gyalshing, Intercity Packers and Movers Gyalshing, Packers and Movers Gyalshing to Gangtok, Packers and Movers Gyalshing to Namchi, Packers and Movers Gyalshing to Mangan, Packers and Movers Gyalshing to Siliguri, Packers and Movers Gyalshing to Kolkata, Packers and Movers Gyalshing to Delhi, Reliable Relocation Company Gyalshing, Cost-Effective Packers and Movers Gyalshing, Quick Packers and Movers Gyalshing, 24x7 Packers and Movers Gyalshing, Mini Truck for Shifting Gyalshing, Tempo Service Gyalshing, Best Relocation Services Gyalshing, Safe and Secure Moving Services Gyalshing, Budget-Friendly Movers Gyalshing, Professional Relocation Company Gyalshing, Long-Distance Packers and Movers Gyalshing, Trusted Shifting Company Gyalshing, Goods Transport Services Gyalshing.",
+  ogDescription: "Looking for reliable Packers and Movers in Gyalshing? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Gyalshing and across Sikkim.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Gyalshing by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Gyalshing"
+} },
+  { slug: "Mangan", city: "Mangan", img: Mangan, offer: "18%", address: "Unnamed Road, Mangan, Sikkim 737116", metaDetails: {
+  title: "Packers and Movers in Mangan | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Mangan with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Mangan and across Sikkim.",
+  keywords: "Local movers near me Mangan, Packers and Movers in Mangan, Gati Shifting Packers Mangan, Best Packers and Movers Mangan, Affordable Packers and Movers Mangan, Trusted Packers and Movers Mangan Sikkim, Local Packers and Movers Mangan, Professional Movers and Packers Mangan, Home Shifting Services Mangan, Office Relocation Mangan, Vehicle Transport Mangan, Car Transport Service Mangan, Bike Transport Mangan, Household Goods Shifting Mangan, Industrial Packers and Movers Mangan, Door-to-Door Shifting Services Mangan, Packing and Unpacking Services Mangan, Furniture Movers Mangan, Intercity Packers and Movers Mangan, Packers and Movers Mangan to Gangtok, Packers and Movers Mangan to Namchi, Packers and Movers Mangan to Gyalshing, Packers and Movers Mangan to Siliguri, Packers and Movers Mangan to Kolkata, Packers and Movers Mangan to Delhi, Reliable Relocation Company Mangan, Cost-Effective Packers and Movers Mangan, Quick Packers and Movers Mangan, 24x7 Packers and Movers Mangan, Mini Truck for Shifting Mangan, Tempo Service Mangan, Best Relocation Services Mangan, Safe and Secure Moving Services Mangan, Budget-Friendly Movers Mangan, Professional Relocation Company Mangan, Long-Distance Packers and Movers Mangan, Trusted Shifting Company Mangan, Goods Transport Services Mangan.",
+  ogDescription: "Looking for reliable Packers and Movers in Mangan? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Mangan and across Sikkim.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Mangan by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Mangan"
+} },
 
 
 
-  { slug: "Singtam", city: "Singtam", img: Singtam, offer: "18%", address: "Singtam, Sikkim 737134" },
-  { slug: "Rangpo", city: "Rangpo", img: Rangpo, offer: "18%", address: "Lower Bazar, Rangpo, Sikkim 737132" },
-  { slug: "Jorethang", city: "Jorethang", img: Jorethang, offer: "18%", address: "Santinagar ward no.1, Jorethang, Sikkim 737121" },
-  { slug: "Soreng", city: "Soreng", img: Soreng, offer: "18%", address: "Darmadatt Sharma Marg, Soreng, Sikkim 737121" },
-  { slug: "Chungthang", city: "Chungthang", img: Chungthang, offer: "18%", address: "Chungthang, Sikkim 737120" },
-  { slug: "Pakyong", city: "Pakyong", img: Pakyong, offer: "18%", address: "Main Road, Bazaar, Pakyong, Sikkim 737106" },
-  { slug: "Ravangla", city: "Ravangla", img: Ravangla, offer: "18%", address: "Ralong Rd, Ravangla, Sikkim 737139" },
-  { slug: "Lachung", city: "Lachung", img: Lachung, offer: "18%", address: "Biulding, Nh310a, Old Mangan Bazaar, Mangan - 737116" },
-  { slug: "Gaya", city: "Gaya", img: Gaya, offer: "18%", address: "Gautam Buddha Rd, Dulhingunj, Gaya, Bihar 823001" },
-  { slug: "Bhagalpur", city: "Bhagalpur", img: Bhagalpur, offer: "18%", address: "Tilkamanjhi - Champanagar Rd, Katahalbari, Khanjarpur, Bhagalpur, Bihar 812001" },
+  { slug: "Singtam", city: "Singtam", img: Singtam, offer: "18%", address: "Singtam, Sikkim 737134", metaDetails: {
+  title: "Packers and Movers in Singtam | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Singtam with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Singtam and across Sikkim.",
+  keywords: "Local movers near me Singtam, Packers and Movers in Singtam, Gati Shifting Packers Singtam, Best Packers and Movers Singtam, Affordable Packers and Movers Singtam, Trusted Packers and Movers Singtam Sikkim, Local Packers and Movers Singtam, Professional Movers and Packers Singtam, Home Shifting Services Singtam, Office Relocation Singtam, Vehicle Transport Singtam, Car Transport Service Singtam, Bike Transport Singtam, Household Goods Shifting Singtam, Industrial Packers and Movers Singtam, Door-to-Door Shifting Services Singtam, Packing and Unpacking Services Singtam, Furniture Movers Singtam, Intercity Packers and Movers Singtam, Packers and Movers Singtam to Gangtok, Packers and Movers Singtam to Namchi, Packers and Movers Singtam to Mangan, Packers and Movers Singtam to Gyalshing, Packers and Movers Singtam to Siliguri, Packers and Movers Singtam to Kolkata, Reliable Relocation Company Singtam, Cost-Effective Packers and Movers Singtam, Quick Packers and Movers Singtam, 24x7 Packers and Movers Singtam, Mini Truck for Shifting Singtam, Tempo Service Singtam, Best Relocation Services Singtam, Safe and Secure Moving Services Singtam, Budget-Friendly Movers Singtam, Professional Relocation Company Singtam, Long-Distance Packers and Movers Singtam, Trusted Shifting Company Singtam, Goods Transport Services Singtam.",
+  ogDescription: "Looking for reliable Packers and Movers in Singtam? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Singtam and across Sikkim.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Singtam by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Singtam"
+} },
+  { slug: "Rangpo", city: "Rangpo", img: Rangpo, offer: "18%", address: "Lower Bazar, Rangpo, Sikkim 737132", metaDetails: {
+  title: "Packers and Movers in Rangpo | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Rangpo with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Rangpo and across Sikkim.",
+  keywords: "Local movers near me Rangpo, Packers and Movers in Rangpo, Gati Shifting Packers Rangpo, Best Packers and Movers Rangpo, Affordable Packers and Movers Rangpo, Trusted Packers and Movers Rangpo Sikkim, Local Packers and Movers Rangpo, Professional Movers and Packers Rangpo, Home Shifting Services Rangpo, Office Relocation Rangpo, Vehicle Transport Rangpo, Car Transport Service Rangpo, Bike Transport Rangpo, Household Goods Shifting Rangpo, Industrial Packers and Movers Rangpo, Door-to-Door Shifting Services Rangpo, Packing and Unpacking Services Rangpo, Furniture Movers Rangpo, Intercity Packers and Movers Rangpo, Packers and Movers Rangpo to Gangtok, Packers and Movers Rangpo to Singtam, Packers and Movers Rangpo to Mangan, Packers and Movers Rangpo to Namchi, Packers and Movers Rangpo to Siliguri, Packers and Movers Rangpo to Kolkata, Reliable Relocation Company Rangpo, Cost-Effective Packers and Movers Rangpo, Quick Packers and Movers Rangpo, 24x7 Packers and Movers Rangpo, Mini Truck for Shifting Rangpo, Tempo Service Rangpo, Best Relocation Services Rangpo, Safe and Secure Moving Services Rangpo, Budget-Friendly Movers Rangpo, Professional Relocation Company Rangpo, Long-Distance Packers and Movers Rangpo, Trusted Shifting Company Rangpo, Goods Transport Services Rangpo.",
+  ogDescription: "Looking for reliable Packers and Movers in Rangpo? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Rangpo and across Sikkim.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Rangpo by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Rangpo"
+} },
+  { slug: "Jorethang", city: "Jorethang", img: Jorethang, offer: "18%", address: "Santinagar ward no.1, Jorethang, Sikkim 737121", metaDetails: {
+  title: "Packers and Movers in Jorethang | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Jorethang with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Jorethang and across Sikkim.",
+  keywords: "Local movers near me Jorethang, Packers and Movers in Jorethang, Gati Shifting Packers Jorethang, Best Packers and Movers Jorethang, Affordable Packers and Movers Jorethang, Trusted Packers and Movers Jorethang Sikkim, Local Packers and Movers Jorethang, Professional Movers and Packers Jorethang, Home Shifting Services Jorethang, Office Relocation Jorethang, Vehicle Transport Jorethang, Car Transport Service Jorethang, Bike Transport Jorethang, Household Goods Shifting Jorethang, Industrial Packers and Movers Jorethang, Door-to-Door Shifting Services Jorethang, Packing and Unpacking Services Jorethang, Furniture Movers Jorethang, Intercity Packers and Movers Jorethang, Packers and Movers Jorethang to Gangtok, Packers and Movers Jorethang to Namchi, Packers and Movers Jorethang to Singtam, Packers and Movers Jorethang to Rangpo, Packers and Movers Jorethang to Siliguri, Packers and Movers Jorethang to Kolkata, Packers and Movers Jorethang to Delhi, Reliable Relocation Company Jorethang, Cost-Effective Packers and Movers Jorethang, Quick Packers and Movers Jorethang, 24x7 Packers and Movers Jorethang, Mini Truck for Shifting Jorethang, Tempo Service Jorethang, Best Relocation Services Jorethang, Safe and Secure Moving Services Jorethang, Budget-Friendly Movers Jorethang, Professional Relocation Company Jorethang, Long-Distance Packers and Movers Jorethang, Trusted Shifting Company Jorethang, Goods Transport Services Jorethang.",
+  ogDescription: "Looking for reliable Packers and Movers in Jorethang? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Jorethang and across Sikkim.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Jorethang by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Jorethang"
+} },
+  { slug: "Soreng", city: "Soreng", img: Soreng, offer: "18%", address: "Darmadatt Sharma Marg, Soreng, Sikkim 737121", metaDetails: {
+  title: "Packers and Movers in Soreng | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Soreng with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Soreng and across Sikkim.",
+  keywords: "Local movers near me Soreng, Packers and Movers in Soreng, Gati Shifting Packers Soreng, Best Packers and Movers Soreng, Affordable Packers and Movers Soreng, Trusted Packers and Movers Soreng Sikkim, Local Packers and Movers Soreng, Professional Movers and Packers Soreng, Home Shifting Services Soreng, Office Relocation Soreng, Vehicle Transport Soreng, Car Transport Service Soreng, Bike Transport Soreng, Household Goods Shifting Soreng, Industrial Packers and Movers Soreng, Door-to-Door Shifting Services Soreng, Packing and Unpacking Services Soreng, Furniture Movers Soreng, Intercity Packers and Movers Soreng, Packers and Movers Soreng to Gangtok, Packers and Movers Soreng to Namchi, Packers and Movers Soreng to Gyalshing, Packers and Movers Soreng to Siliguri, Packers and Movers Soreng to Kolkata, Reliable Relocation Company Soreng, Cost-Effective Packers and Movers Soreng, Quick Packers and Movers Soreng, 24x7 Packers and Movers Soreng, Mini Truck for Shifting Soreng, Tempo Service Soreng, Best Relocation Services Soreng, Safe and Secure Moving Services Soreng, Budget-Friendly Movers Soreng, Professional Relocation Company Soreng, Long-Distance Packers and Movers Soreng, Trusted Shifting Company Soreng, Goods Transport Services Soreng.",
+  ogDescription: "Looking for reliable Packers and Movers in Soreng? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Soreng and across Sikkim.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Soreng by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Soreng"
+} },
+  { slug: "Chungthang", city: "Chungthang", img: Chungthang, offer: "18%", address: "Chungthang, Sikkim 737120", metaDetails: {
+  title: "Packers and Movers in Chungthang | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Chungthang with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Chungthang and across Sikkim.",
+  keywords: "Local movers near me Chungthang, Packers and Movers in Chungthang, Gati Shifting Packers Chungthang, Best Packers and Movers Chungthang, Affordable Packers and Movers Chungthang, Trusted Packers and Movers Chungthang Sikkim, Local Packers and Movers Chungthang, Professional Movers and Packers Chungthang, Home Shifting Services Chungthang, Office Relocation Chungthang, Vehicle Transport Chungthang, Car Transport Service Chungthang, Bike Transport Chungthang, Household Goods Shifting Chungthang, Industrial Packers and Movers Chungthang, Door-to-Door Shifting Services Chungthang, Packing and Unpacking Services Chungthang, Furniture Movers Chungthang, Intercity Packers and Movers Chungthang, Packers and Movers Chungthang to Gangtok, Packers and Movers Chungthang to Mangan, Packers and Movers Chungthang to Singtam, Packers and Movers Chungthang to Rangpo, Packers and Movers Chungthang to Siliguri, Packers and Movers Chungthang to Kolkata, Packers and Movers Chungthang to Delhi, Reliable Relocation Company Chungthang, Cost-Effective Packers and Movers Chungthang, Quick Packers and Movers Chungthang, 24x7 Packers and Movers Chungthang, Mini Truck for Shifting Chungthang, Tempo Service Chungthang, Best Relocation Services Chungthang, Safe and Secure Moving Services Chungthang, Budget-Friendly Movers Chungthang, Professional Relocation Company Chungthang, Long-Distance Packers and Movers Chungthang, Trusted Shifting Company Chungthang, Goods Transport Services Chungthang.",
+  ogDescription: "Looking for reliable Packers and Movers in Chungthang? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Chungthang and across Sikkim.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Chungthang by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Chungthang"
+} },
+  { slug: "Pakyong", city: "Pakyong", img: Pakyong, offer: "18%", address: "Main Road, Bazaar, Pakyong, Sikkim 737106", metaDetails: {
+  title: "Packers and Movers in Pakyong | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Pakyong with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Pakyong and across Sikkim.",
+  keywords: "Local movers near me Pakyong, Packers and Movers in Pakyong, Gati Shifting Packers Pakyong, Best Packers and Movers Pakyong, Affordable Packers and Movers Pakyong, Trusted Packers and Movers Pakyong Sikkim, Local Packers and Movers Pakyong, Professional Movers and Packers Pakyong, Home Shifting Services Pakyong, Office Relocation Pakyong, Vehicle Transport Pakyong, Car Transport Service Pakyong, Bike Transport Pakyong, Household Goods Shifting Pakyong, Industrial Packers and Movers Pakyong, Door-to-Door Shifting Services Pakyong, Packing and Unpacking Services Pakyong, Furniture Movers Pakyong, Intercity Packers and Movers Pakyong, Packers and Movers Pakyong to Gangtok, Packers and Movers Pakyong to Singtam, Packers and Movers Pakyong to Rangpo, Packers and Movers Pakyong to Namchi, Packers and Movers Pakyong to Siliguri, Packers and Movers Pakyong to Kolkata, Packers and Movers Pakyong to Delhi, Reliable Relocation Company Pakyong, Cost-Effective Packers and Movers Pakyong, Quick Packers and Movers Pakyong, 24x7 Packers and Movers Pakyong, Mini Truck for Shifting Pakyong, Tempo Service Pakyong, Best Relocation Services Pakyong, Safe and Secure Moving Services Pakyong, Budget-Friendly Movers Pakyong, Professional Relocation Company Pakyong, Long-Distance Packers and Movers Pakyong, Trusted Shifting Company Pakyong, Goods Transport Services Pakyong.",
+  ogDescription: "Looking for reliable Packers and Movers in Pakyong? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Pakyong and across Sikkim.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Pakyong by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Pakyong"
+} },
+  { slug: "Ravangla", city: "Ravangla", img: Ravangla, offer: "18%", address: "Ralong Rd, Ravangla, Sikkim 737139", metaDetails: {
+  title: "Packers and Movers in Ravangla | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Ravangla with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Ravangla and across Sikkim.",
+  keywords: "Local movers near me Ravangla, Packers and Movers in Ravangla, Gati Shifting Packers Ravangla, Best Packers and Movers Ravangla, Affordable Packers and Movers Ravangla, Trusted Packers and Movers Ravangla Sikkim, Local Packers and Movers Ravangla, Professional Movers and Packers Ravangla, Home Shifting Services Ravangla, Office Relocation Ravangla, Vehicle Transport Ravangla, Car Transport Service Ravangla, Bike Transport Ravangla, Household Goods Shifting Ravangla, Industrial Packers and Movers Ravangla, Door-to-Door Shifting Services Ravangla, Packing and Unpacking Services Ravangla, Furniture Movers Ravangla, Intercity Packers and Movers Ravangla, Packers and Movers Ravangla to Gangtok, Packers and Movers Ravangla to Namchi, Packers and Movers Ravangla to Singtam, Packers and Movers Ravangla to Rangpo, Packers and Movers Ravangla to Siliguri, Packers and Movers Ravangla to Kolkata, Packers and Movers Ravangla to Delhi, Reliable Relocation Company Ravangla, Cost-Effective Packers and Movers Ravangla, Quick Packers and Movers Ravangla, 24x7 Packers and Movers Ravangla, Mini Truck for Shifting Ravangla, Tempo Service Ravangla, Best Relocation Services Ravangla, Safe and Secure Moving Services Ravangla, Budget-Friendly Movers Ravangla, Professional Relocation Company Ravangla, Long-Distance Packers and Movers Ravangla, Trusted Shifting Company Ravangla, Goods Transport Services Ravangla.",
+  ogDescription: "Looking for reliable Packers and Movers in Ravangla? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Ravangla and across Sikkim.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Ravangla by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Ravangla"
+} },
+  { slug: "Lachung", city: "Lachung", img: Lachung, offer: "18%", address: "Biulding, Nh310a, Old Mangan Bazaar, Mangan - 737116", metaDetails: {
+  title: "Packers and Movers in Lachung | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Lachung with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Lachung and across Sikkim.",
+  keywords: "Local movers near me Lachung, Packers and Movers in Lachung, Gati Shifting Packers Lachung, Best Packers and Movers Lachung, Affordable Packers and Movers Lachung, Trusted Packers and Movers Lachung Sikkim, Local Packers and Movers Lachung, Professional Movers and Packers Lachung, Home Shifting Services Lachung, Office Relocation Lachung, Vehicle Transport Lachung, Car Transport Service Lachung, Bike Transport Lachung, Household Goods Shifting Lachung, Industrial Packers and Movers Lachung, Door-to-Door Shifting Services Lachung, Packing and Unpacking Services Lachung, Furniture Movers Lachung, Intercity Packers and Movers Lachung, Packers and Movers Lachung to Gangtok, Packers and Movers Lachung to Chungthang, Packers and Movers Lachung to Mangan, Packers and Movers Lachung to Rangpo, Packers and Movers Lachung to Siliguri, Packers and Movers Lachung to Kolkata, Reliable Relocation Company Lachung, Cost-Effective Packers and Movers Lachung, Quick Packers and Movers Lachung, 24x7 Packers and Movers Lachung, Mini Truck for Shifting Lachung, Tempo Service Lachung, Best Relocation Services Lachung, Safe and Secure Moving Services Lachung, Budget-Friendly Movers Lachung, Professional Relocation Company Lachung, Long-Distance Packers and Movers Lachung, Trusted Shifting Company Lachung, Goods Transport Services Lachung.",
+  ogDescription: "Looking for reliable Packers and Movers in Lachung? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Lachung and across Sikkim.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Lachung by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Lachung"
+} },
+  { slug: "Gaya", city: "Gaya", img: Gaya, offer: "18%", address: "Gautam Buddha Rd, Dulhingunj, Gaya, Bihar 823001", metaDetails: {
+  title: "Packers and Movers in Gaya | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Gaya with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Gaya and across Bihar.",
+  keywords: "Local movers near me Gaya, Packers and Movers in Gaya, Gati Shifting Packers Gaya, Best Packers and Movers Gaya, Affordable Packers and Movers Gaya, Trusted Packers and Movers Gaya Bihar, Local Packers and Movers Gaya, Professional Movers and Packers Gaya, Home Shifting Services Gaya, Office Relocation Gaya, Vehicle Transport Gaya, Car Transport Service Gaya, Bike Transport Gaya, Household Goods Shifting Gaya, Industrial Packers and Movers Gaya, Door-to-Door Shifting Services Gaya, Packing and Unpacking Services Gaya, Furniture Movers Gaya, Intercity Packers and Movers Gaya, Packers and Movers Gaya to Patna, Packers and Movers Gaya to Bodh Gaya, Packers and Movers Gaya to Rajgir, Packers and Movers Gaya to Delhi, Packers and Movers Gaya to Kolkata, Reliable Relocation Company Gaya, Cost-Effective Packers and Movers Gaya, Quick Packers and Movers Gaya, 24x7 Packers and Movers Gaya, Mini Truck for Shifting Gaya, Tempo Service Gaya, Best Relocation Services Gaya, Safe and Secure Moving Services Gaya, Budget-Friendly Movers Gaya, Professional Relocation Company Gaya, Long-Distance Packers and Movers Gaya, Trusted Shifting Company Gaya, Goods Transport Services Gaya.",
+  ogDescription: "Looking for reliable Packers and Movers in Gaya? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Gaya and across Bihar.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Gaya by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Gaya"
+} },
+  { slug: "Bhagalpur", city: "Bhagalpur", img: Bhagalpur, offer: "18%", address: "Tilkamanjhi - Champanagar Rd, Katahalbari, Khanjarpur, Bhagalpur, Bihar 812001", metaDetails: {
+  title: "Packers and Movers in Bhagalpur | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Bhagalpur with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Bhagalpur and across Bihar.",
+  keywords: "Local movers near me Bhagalpur, Packers and Movers in Bhagalpur, Gati Shifting Packers Bhagalpur, Best Packers and Movers Bhagalpur, Affordable Packers and Movers Bhagalpur, Trusted Packers and Movers Bhagalpur Bihar, Local Packers and Movers Bhagalpur, Professional Movers and Packers Bhagalpur, Home Shifting Services Bhagalpur, Office Relocation Bhagalpur, Vehicle Transport Bhagalpur, Car Transport Service Bhagalpur, Bike Transport Bhagalpur, Household Goods Shifting Bhagalpur, Industrial Packers and Movers Bhagalpur, Door-to-Door Shifting Services Bhagalpur, Packing and Unpacking Services Bhagalpur, Furniture Movers Bhagalpur, Intercity Packers and Movers Bhagalpur, Packers and Movers Bhagalpur to Patna, Packers and Movers Bhagalpur to Gaya, Packers and Movers Bhagalpur to Rajgir, Packers and Movers Bhagalpur to Delhi, Packers and Movers Bhagalpur to Kolkata, Reliable Relocation Company Bhagalpur, Cost-Effective Packers and Movers Bhagalpur, Quick Packers and Movers Bhagalpur, 24x7 Packers and Movers Bhagalpur, Mini Truck for Shifting Bhagalpur, Tempo Service Bhagalpur, Best Relocation Services Bhagalpur, Safe and Secure Moving Services Bhagalpur, Budget-Friendly Movers Bhagalpur, Professional Relocation Company Bhagalpur, Long-Distance Packers and Movers Bhagalpur, Trusted Shifting Company Bhagalpur, Goods Transport Services Bhagalpur.",
+  ogDescription: "Looking for reliable Packers and Movers in Bhagalpur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Bhagalpur and across Bihar.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Bhagalpur by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Bhagalpur"
+} },
 
 
 
 
-  { slug: "Muzaffarpur", city: "Muzaffarpur", img: Muzaffarpur, offer: "18%", address: "Maripur Overbridge, Imlichatti Rd, Muzaffarpur, Bihar 842001" },
-  { slug: "Darbhanga", city: "Darbhanga", img: Darbhanga, offer: "18%", address: "NAKA No-6, near Out Door DMCH, Rahamganj, Darbhanga, Bihar 846004" },
+  { slug: "Muzaffarpur", city: "Muzaffarpur", img: Muzaffarpur, offer: "18%", address: "Maripur Overbridge, Imlichatti Rd, Muzaffarpur, Bihar 842001", metaDetails: {
+  title: "Packers and Movers in Muzaffarpur | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Muzaffarpur with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Muzaffarpur and across Bihar.",
+  keywords: "Local movers near me Muzaffarpur, Packers and Movers in Muzaffarpur, Gati Shifting Packers Muzaffarpur, Best Packers and Movers Muzaffarpur, Affordable Packers and Movers Muzaffarpur, Trusted Packers and Movers Muzaffarpur Bihar, Local Packers and Movers Muzaffarpur, Professional Movers and Packers Muzaffarpur, Home Shifting Services Muzaffarpur, Office Relocation Muzaffarpur, Vehicle Transport Muzaffarpur, Car Transport Service Muzaffarpur, Bike Transport Muzaffarpur, Household Goods Shifting Muzaffarpur, Industrial Packers and Movers Muzaffarpur, Door-to-Door Shifting Services Muzaffarpur, Packing and Unpacking Services Muzaffarpur, Furniture Movers Muzaffarpur, Intercity Packers and Movers Muzaffarpur, Packers and Movers Muzaffarpur to Patna, Packers and Movers Muzaffarpur to Gaya, Packers and Movers Muzaffarpur to Bhagalpur, Packers and Movers Muzaffarpur to Delhi, Packers and Movers Muzaffarpur to Kolkata, Reliable Relocation Company Muzaffarpur, Cost-Effective Packers and Movers Muzaffarpur, Quick Packers and Movers Muzaffarpur, 24x7 Packers and Movers Muzaffarpur, Mini Truck for Shifting Muzaffarpur, Tempo Service Muzaffarpur, Best Relocation Services Muzaffarpur, Safe and Secure Moving Services Muzaffarpur, Budget-Friendly Movers Muzaffarpur, Professional Relocation Company Muzaffarpur, Long-Distance Packers and Movers Muzaffarpur, Trusted Shifting Company Muzaffarpur, Goods Transport Services Muzaffarpur.",
+  ogDescription: "Looking for reliable Packers and Movers in Muzaffarpur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Muzaffarpur and across Bihar.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Muzaffarpur by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Muzaffarpur"
+} },
+  { slug: "Darbhanga", city: "Darbhanga", img: Darbhanga, offer: "18%", address: "NAKA No-6, near Out Door DMCH, Rahamganj, Darbhanga, Bihar 846004", metaDetails: {
+  title: "Packers and Movers in Darbhanga | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Darbhanga with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Darbhanga and across Bihar.",
+  keywords: "Local movers near me Darbhanga, Packers and Movers in Darbhanga, Gati Shifting Packers Darbhanga, Best Packers and Movers Darbhanga, Affordable Packers and Movers Darbhanga, Trusted Packers and Movers Darbhanga Bihar, Local Packers and Movers Darbhanga, Professional Movers and Packers Darbhanga, Home Shifting Services Darbhanga, Office Relocation Darbhanga, Vehicle Transport Darbhanga, Car Transport Service Darbhanga, Bike Transport Darbhanga, Household Goods Shifting Darbhanga, Industrial Packers and Movers Darbhanga, Door-to-Door Shifting Services Darbhanga, Packing and Unpacking Services Darbhanga, Furniture Movers Darbhanga, Intercity Packers and Movers Darbhanga, Packers and Movers Darbhanga to Patna, Packers and Movers Darbhanga to Muzaffarpur, Packers and Movers Darbhanga to Bhagalpur, Packers and Movers Darbhanga to Delhi, Packers and Movers Darbhanga to Kolkata, Reliable Relocation Company Darbhanga, Cost-Effective Packers and Movers Darbhanga, Quick Packers and Movers Darbhanga, 24x7 Packers and Movers Darbhanga, Mini Truck for Shifting Darbhanga, Tempo Service Darbhanga, Best Relocation Services Darbhanga, Safe and Secure Moving Services Darbhanga, Budget-Friendly Movers Darbhanga, Professional Relocation Company Darbhanga, Long-Distance Packers and Movers Darbhanga, Trusted Shifting Company Darbhanga, Goods Transport Services Darbhanga.",
+  ogDescription: "Looking for reliable Packers and Movers in Darbhanga? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Darbhanga and across Bihar.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Darbhanga by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Darbhanga"
+} },
   { slug: "Purnia", city: "Purnia", img: Purnia, offer: "18%", address: "Shop - 102, Near Tanishq Showroom, Purnia, Bihar 854301" },
   { slug: "Arrah", city: "Arrah", img: Arrah, offer: "18%", address: "NH 30, Hospital Road, Mahajan Toli, Arrah, Bihar 802301" },
   { slug: "Hajipur", city: "Hajipur", img: Hajipur, offer: "18%", address: "front shop, New market, Cinema Rd, Baghdulhan, Hajipur, Bihar 844101" },
@@ -2075,6 +2201,32 @@ export const pagesData = [
   { slug: "Warangal", city: "Warangal", img: Warangal, offer: "23%", address: "opposite Best price, Ekashila Nagar, Warangal, Telangana 506002" },
   { slug: "Nizamabad", city: "Nizamabad", img: Nizamabad, offer: "23%", address: "Barkatpura, Nizamabad, Telangana 503001" },
   { slug: "Khammam", city: "Khammam", img: Khammam, offer: "23%", address: "ELLANDU X ROAD, BESIDE SAMATHA NURSING HOME, Telangana 507002" },
+
+
+
+  { slug: "Karimnagar", city: "Karimnagar", img: Karimnagar, offer: "23%", address: "Doctors Street, District Govt Hospital Complex, Karimnagar, Telangana 505001" },
+  { slug: "Mahbubnagar", city: "Mahbubnagar", img: Mahbubnagar, offer: "23%", address: "Shop No 14, Clock Tower Rd, Monappagutta, Boyapalle Rural, Mahbubnagar, Telangana 509001" },
+  { slug: "Adilabad", city: "Adilabad", img: Adilabad, offer: "23%", address: "Satnala Quarters, Sapthagiri Colony, chaitanyapuri, Adilabad, Telangana 504001" },
+  { slug: "Nagarkurnool", city: "Nagarkurnool", img: Nagarkurnool, offer: "23%", address: "Nagarkurnool - Gatturavipakula Rd, opp. Government High School, Nagarkurnool, Telangana 509209" },
+  { slug: "Medak", city: "Medak", img: Medak, offer: "23%", address: "Fathe Nagar, Medak, Telangana 502110" },
+  { slug: "Vikarabad", city: "Vikarabad", img: Vikarabad, offer: "23%", address: "Station Road, Vikarabad, Telangana 501101" },
+  { slug: "Suryapet", city: "Suryapet", img: Suryapet, offer: "23%", address: "MG Rd, Vidyanagar, Suryapet, Telangana 508213" },
+  { slug: "Wanaparthy", city: "Wanaparthy", img: Wanaparthy, offer: "23%", address: "Gandhi Chowk Rd, Raigadda, Wanaparthy, Telangana 509103" },
+
+
+
+
+  { slug: "Howrah", city: "Howrah", img: Howrah, offer: "23%", address: "51, Dobson Road, Near Howrah A C Market, Pilkhana, Howrah 711101" },
+  { slug: "Durgapur", city: "Durgapur", img: Durgapur, offer: "23%", address: "Ground Floor, Near Prantika Bus Stop, Durgapur A Zone, Steel Town West, Durgapur 713204" },
+  { slug: "Asansol", city: "Asansol", img: Asansol, offer: "23%", address: "General Provision Store – Radhanagar Road, Radhanagar, Asansol 713325" },
+  { slug: "Siliguri", city: "Siliguri", img: Siliguri, offer: "23%", address: "S.P. Mukherjee Road, Khalpara, Siliguri 734405" },
+  { slug: "Darjeeling", city: "Darjeeling", img: Darjeeling, offer: "23%", address: "Municipal Building, Thana Line, Darjeeling Bazar, Darjeeling 734101" },
+  { slug: "Kharagpur", city: "Kharagpur", img: Kharagpur, offer: "23%", address: "Gole Bazar, Rammandir Road, Kharagpur 721301" },
+  { slug: "Haldia", city: "Haldia", img: Haldia, offer: "23%", address: "30B Gobinda Auddy Road, Chetla, Haldia 721604" },
+  { slug: "Malda", city: "Malda", img: Malda, offer: "23%", address: "Main Road, Kaliachak (near Taj Market), Malda 732210" },
+  { slug: "Bardhaman", city: "Bardhaman", img: Bardhaman, offer: "23%", address: "Saraitikar Rd, near Party Office, Bardhaman 713104" },
+  { slug: "Jalpaiguri", city: "Jalpaiguri", img: Jalpaiguri, offer: "23%", address: "NH31, Tilabari, Dakshin Dhupjhora, Jalpaiguri 735206" },
+
 
 
 ];
