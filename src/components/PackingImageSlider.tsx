@@ -9,42 +9,57 @@ interface ProductSliderProps {
 }
 
 const ProductImageSlider: React.FC<ProductSliderProps> = ({ images = [] }) => {
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 600,
+const settings = {
+    dots: false,
+    infinite: true,
+    speed: 600,
 
-        slidesToShow: 4,
-        slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 1,
 
-        autoplay: true,        // ✅ ADD
-        autoplaySpeed: 1000,   // ✅ ADD (2.5 sec)
+    autoplay: true,
+    autoplaySpeed: 1000,
 
-        pauseOnHover: true,
-        swipeToSlide: true,
-        draggable: true,
-        centerMode: true,
-        centerPadding: "0px",
-        responsive: [
-            {
-                breakpoint: 1244,
-                settings: {
-                    slidesToShow: 3,
-                },
+    pauseOnHover: true,
+    swipeToSlide: true,
+    draggable: true,
+
+    // ❌ REMOVE FROM HERE
+    // centerMode: true,
+    // centerPadding: "0px",
+
+    responsive: [
+        {
+            breakpoint: 9999, // Desktop only
+            settings: {
+                slidesToShow: 4,
+                centerMode: true,
+                centerPadding: "0px",
             },
-            {
-                breakpoint: 954,
-                settings: {
-                    slidesToShow: 2, // Mobile me 2 images
-                },
+        },
+        {
+            breakpoint: 1244,
+            settings: {
+                slidesToShow: 3,
+                centerMode: false,
             },
-        ],
-    };
+        },
+        {
+            breakpoint: 954,
+            settings: {
+                slidesToShow: 2,
+                centerMode: false,
+            },
+        },
+    ],
+};
+
+
 
     return (
         <>
 
-            <div className="w-full px-4 feature">
+            <div className="feature">
                 <Slider {...settings}>
                     {images.map((img, index) => (
                         <div key={index} className="px-3">
