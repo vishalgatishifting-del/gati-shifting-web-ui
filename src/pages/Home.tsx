@@ -471,7 +471,7 @@ const Home: React.FC<props> = ({successCondition}) => {
             </section>
 
              <ProductImageSlider images={sliderImages}></ProductImageSlider> 
-            <section id="feature-section">
+            {/* <section id="feature-section">
                 <div className="container">
                     <div className="imgBx">
                         <img src={feature1Img} />
@@ -486,7 +486,7 @@ const Home: React.FC<props> = ({successCondition}) => {
                         <img src={feature4Img} />
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
             <ReviewVideo></ReviewVideo>
