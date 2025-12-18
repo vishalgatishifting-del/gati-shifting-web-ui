@@ -63,6 +63,8 @@ import incorporationCertificate from "../assets/homePagePng/incorporationCertifi
 import GSTIncorporation from "../assets/homePagePng/GSTCertificate.png"
 
 import ProductImageSlider from "../components/PackingImageSlider"
+import Counter from "../components/Counter";
+
 
 
 
@@ -433,22 +435,26 @@ const Home: React.FC<props> = ({successCondition}) => {
                 <div className="container">
                     <div className="card">
                         <img src={truckPng} />
-                        <h1>1,032,858+</h1>
+                        <Counter end={1032858} suffix="+" />
+                        {/* <h1>1,032,858+</h1> */}
                         <p>Homes Moved</p>
                     </div>
                     <div className="card">
                         <img src={cityPng} />
-                        <h1>600+</h1>
+                        <Counter end={600} suffix="+" />
+                        {/* <h1>600+</h1> */}
                         <p>Cities Covered</p>
                     </div>
                     <div className="card">
                         <img src={verifiedBadgePng} />
-                        <h1>3,548+</h1>
+                        <Counter end={3548} suffix="+" />
+                        {/* <h1>3,548+</h1> */}
                         <p>Verified Professionals</p>
                     </div>
                     <div className="card">
                         <img src={peoplesPng} />
-                        <h1>99%</h1>
+                        <Counter end={99} suffix="%" />
+                        {/* <h1>99%</h1> */}
                         <p>Satisfied Customers</p>
                     </div>
                 </div>

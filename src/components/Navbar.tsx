@@ -55,11 +55,11 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
             <LocalPhoneIcon />
             <span>Contact No - +91 9422799477</span>
           </a>
-          <a href="mailto:gatishiftingpackers@gmail.com">
+          <a className="email" href="mailto:gatishiftingpackers@gmail.com">
             <EmailIcon />
             <span>gatishiftingpackers@gmail.com</span>
           </a>
-          <a href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer">
+          <a  className="whatsapp" href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer">
             <WhatsAppIcon />
             <span>Chat Now</span>
           </a>

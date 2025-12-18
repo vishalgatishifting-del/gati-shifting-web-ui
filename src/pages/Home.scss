@@ -148,7 +148,7 @@
 
 #certificate-section {
     padding: 30px 10px;
-    @include font-poppins-sans(400);
+    @include font-poppins-sans(100);
 
     .container {
         display: grid;
@@ -196,6 +196,8 @@
             h3 {
                 margin-top: 10px;
                 text-align: center;
+                font-weight: 300;
+
             }
         }
     }
@@ -548,7 +550,7 @@
 
 @media screen and (max-width: 1101px) {
     .sliderBox {
-        margin-top: 63.01px !important;
+        margin-top: 98px !important;
     }
 }
 
