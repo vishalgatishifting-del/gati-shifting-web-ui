@@ -1,98 +1,44 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./PackingImageSlider.scss"
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+import "swiper/css";
 
 interface ProductSliderProps {
-    images?: string[]; // optional banaya to avoid undefined error
+  images?: string[];
 }
 
 const ProductImageSlider: React.FC<ProductSliderProps> = ({ images = [] }) => {
-const settings = {
-  dots: false,
-  infinite: true,
-  speed: 600,
-
-  slidesToShow: 4, 
-  slidesToScroll: 1,
-
-  autoplay: true,
-  autoplaySpeed: 2000,
-  pauseOnHover: true,
-  swipeToSlide: true,
-  draggable: true,
-
-  responsive: [
-    {
-      breakpoint: 1244, // <= 1244px
-      settings: {
-        slidesToShow: 3,
-        centerMode: false,
-      },
-    },
-    {
-      breakpoint: 954, // <= 954px (TABLET)
-      settings: {
-        slidesToShow: 2,
-        centerMode: false,
-      },
-    },
-    {
-      breakpoint: 600, // <= 600px (MOBILE)
-      settings: {
-        slidesToShow: 2,
-        centerMode: false,
-      },
-    },
-  ],
-};
-
-
-
-
-    return (
-        <>
-
-            <div className="feature">
-                <Slider {...settings}>
-                    {images.map((img, index) => (
-                        <div key={index} className="px-3">
-                            {/* FIXED HEIGHT WRAPPER */}
-                            <div className="rounded-xl overflow-hidden shadow-md h-48 image-box">
-                                <img
-                                    src={img}
-                                    alt={`product-${index}`}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
+  return (
+    <div className="feature">
+      <Swiper
+        modules={[Autoplay]}
+        autoplay={{ delay: 2000 }}
+        spaceBetween={20}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          600: {
+            slidesPerView: 2,
+          },
+          900: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+        }}
+      >
+        {images.map((img, index) => (
+          <SwiperSlide key={index}>
+            <div className="image-box">
+              <img src={img} alt="" />
             </div>
-
-        </>
-    );
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
 };
 
 export default ProductImageSlider;
-
-/*
-USAGE:
-
-import ProductImageSlider from "./ProductImageSlider";
-
-const images = [
-  "/img/p1.jpg",
-  "/img/p2.jpg",
-  "/img/p3.jpg",
-  "/img/p4.jpg",
-  "/img/p5.jpg",
-];
-
-<ProductImageSlider images={images} />
-
-INSTALL:
-
-npm install react-slick slick-carousel
-*/
