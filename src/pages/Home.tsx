@@ -50,10 +50,10 @@ import feature1Img from "../assets/homePagePng/feature1.jpg"
 import feature2Img from "../assets/homePagePng/feature2.jpg"
 import feature3Img from "../assets/homePagePng/feature3.jpg"
 import feature4Img from "../assets/homePagePng/feature4.jpg"
-// import feature5Img from "../assets/homePagePng/feature5.jpeg"
-// import feature6Img from "../assets/homePagePng/feature6.jpeg"
-// import feature7Img from "../assets/homePagePng/feature7.jpeg"
-// import feature8Img from "../assets/homePagePng/feature8.jpeg"
+import feature5Img from "../assets/homePagePng/feature5.jpeg"
+import feature6Img from "../assets/homePagePng/feature6.jpeg"
+import feature7Img from "../assets/homePagePng/feature7.jpeg"
+import feature8Img from "../assets/homePagePng/feature8.jpeg"
 
 import ZohoForm from "../components/ZohoForm"
 
@@ -62,7 +62,7 @@ import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.png"
 import incorporationCertificate from "../assets/homePagePng/incorporationCertificate.png"
 import GSTIncorporation from "../assets/homePagePng/GSTCertificate.png"
 
-// import ProductImageSlider from "../components/PackingImageSlider"
+import ProductImageSlider from "../components/PackingImageSlider"
 
 
 
@@ -89,17 +89,17 @@ const Home: React.FC<props> = ({successCondition}) => {
 
 
 
-    // const sliderImages = [
-    //     feature1Img,
-    //     feature2Img,
-    //     feature3Img,
-    //     feature4Img,
-    //     feature5Img,
-    //     feature6Img,
-    //     feature7Img,
-    //     feature8Img,
+    const sliderImages = [
+        feature1Img,
+        feature2Img,
+        feature3Img,
+        feature4Img,
+        feature5Img,
+        feature6Img,
+        feature7Img,
+        feature8Img,
 
-    // ]
+    ]
 
     const settings = {
         dots: true,
@@ -470,7 +470,7 @@ const Home: React.FC<props> = ({successCondition}) => {
                 </div>
             </section>
 
-            {/* <ProductImageSlider images={sliderImages}></ProductImageSlider> */}
+             <ProductImageSlider images={sliderImages}></ProductImageSlider> 
             <section id="feature-section">
                 <div className="container">
                     <div className="imgBx">
