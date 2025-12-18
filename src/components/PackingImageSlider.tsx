@@ -10,49 +10,44 @@ interface ProductSliderProps {
 
 const ProductImageSlider: React.FC<ProductSliderProps> = ({ images = [] }) => {
 const settings = {
-    dots: false,
-    infinite: true,
-    speed: 600,
+  dots: false,
+  infinite: true,
+  speed: 600,
 
-    slidesToShow: 4,
-    slidesToScroll: 1,
+  slidesToShow: 4, 
+  slidesToScroll: 1,
 
-    autoplay: true,
-    autoplaySpeed: 1000,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  pauseOnHover: true,
+  swipeToSlide: true,
+  draggable: true,
 
-    pauseOnHover: true,
-    swipeToSlide: true,
-    draggable: true,
-
-    // ❌ REMOVE FROM HERE
-    // centerMode: true,
-    // centerPadding: "0px",
-
-    responsive: [
-        {
-            breakpoint: 9999, // Desktop only
-            settings: {
-                slidesToShow: 4,
-                centerMode: true,
-                centerPadding: "0px",
-            },
-        },
-        {
-            breakpoint: 1244,
-            settings: {
-                slidesToShow: 3,
-                centerMode: false,
-            },
-        },
-        {
-            breakpoint: 954,
-            settings: {
-                slidesToShow: 2,
-                centerMode: false,
-            },
-        },
-    ],
+  responsive: [
+    {
+      breakpoint: 1244, // <= 1244px
+      settings: {
+        slidesToShow: 3,
+        centerMode: false,
+      },
+    },
+    {
+      breakpoint: 954, // <= 954px (TABLET)
+      settings: {
+        slidesToShow: 2,
+        centerMode: false,
+      },
+    },
+    {
+      breakpoint: 600, // <= 600px (MOBILE)
+      settings: {
+        slidesToShow: 2,
+        centerMode: false,
+      },
+    },
+  ],
 };
+
 
 
 
@@ -64,7 +59,7 @@ const settings = {
                     {images.map((img, index) => (
                         <div key={index} className="px-3">
                             {/* FIXED HEIGHT WRAPPER */}
-                            <div className="rounded-xl overflow-hidden shadow-md h-48">
+                            <div className="rounded-xl overflow-hidden shadow-md h-48 image-box">
                                 <img
                                     src={img}
                                     alt={`product-${index}`}
