@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-
+import "./PackingImageSlider.scss"
 import "swiper/css";
 
 interface ProductSliderProps {
@@ -13,10 +13,10 @@ const ProductImageSlider: React.FC<ProductSliderProps> = ({ images = [] }) => {
       <Swiper
         modules={[Autoplay]}
         autoplay={{ delay: 2000 }}
-        spaceBetween={20}
+        spaceBetween={0}
         breakpoints={{
           0: {
-            slidesPerView: 1,
+            slidesPerView: 2,
           },
           600: {
             slidesPerView: 2,
