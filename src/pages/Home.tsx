@@ -54,6 +54,9 @@ import feature5Img from "../assets/homePagePng/feature5.jpeg"
 import feature6Img from "../assets/homePagePng/feature6.jpeg"
 import feature7Img from "../assets/homePagePng/feature7.jpeg"
 import feature8Img from "../assets/homePagePng/feature8.jpeg"
+import feature9Img from "../assets/homePagePng/feature9.jpg"
+import feature10Img from "../assets/homePagePng/feature10.jpg"
+import feature11Img from "../assets/homePagePng/feature11.jpg"
 
 import ZohoForm from "../components/ZohoForm"
 
@@ -100,7 +103,9 @@ const Home: React.FC<props> = ({successCondition}) => {
         feature6Img,
         feature7Img,
         feature8Img,
-
+        feature9Img,
+        feature10Img,
+        feature11Img
     ]
 
     const settings = {

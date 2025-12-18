@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 
 interface CounterProps {
     end: number;
-    duration?: number; // ms
+    duration?: number; 
     suffix?: string;
-    delayBetweenLoops?: number; // ms
+    delayBetweenLoops?: number; 
 }
 
 const Counter: React.FC<CounterProps> = ({

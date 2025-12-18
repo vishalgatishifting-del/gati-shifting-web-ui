@@ -4,6 +4,11 @@ import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import WatchLaterIcon from '@mui/icons-material/WatchLater';
+import BadgeIcon from '@mui/icons-material/Badge';
+import BrandingWatermarkIcon from '@mui/icons-material/BrandingWatermark';
+import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
+import HotelClassIcon from '@mui/icons-material/HotelClass';
+import CreditCardIcon from '@mui/icons-material/CreditCard';
 import { Link } from "react-router-dom";
 import "./OfficeLocation.scss"
 
@@ -81,11 +86,11 @@ const OfficeLocation = () => {
                             <li><CallIcon></CallIcon> <span>+91 9422799477</span></li>
                             <li><EmailIcon></EmailIcon> <span>gatishiftingpackers@gmail.com</span></li>
                             <li><WatchLaterIcon></WatchLaterIcon><span>Mon - Sun: 8:00 AM - 8:00 PM</span></li>
-                            <li>GST Number: 06AAMCG3191P1ZZ</li>
-                            <li>MSME Number: UDYAM-MH-19-0373918</li>
-                            <li>Corporate Identification Number: U52293HR2025PTC135734</li>
-                            <li>TAN No: RTKG21417E</li>
-                            <li>PAN Number: AAMCG3191P</li>
+                            <li><BadgeIcon></BadgeIcon><span>GST Number: 06AAMCG3191P1ZZ</span></li>
+                            <li><BrandingWatermarkIcon></BrandingWatermarkIcon><span>MSME Number: UDYAM-MH-19-0373918</span></li>
+                            <li><VerifiedUserIcon></VerifiedUserIcon><span>Corporate Identification Number: U52293HR2025PTC135734</span></li>
+                            <li><HotelClassIcon></HotelClassIcon><span>TAN No: RTKG21417E</span></li>
+                            <li><CreditCardIcon></CreditCardIcon><span>PAN Number: AAMCG3191P</span></li>
                         </ul>
 
                         <h1 className="hashTag">#GatiShiftingPackers</h1>

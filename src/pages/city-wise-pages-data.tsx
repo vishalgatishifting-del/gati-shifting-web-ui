@@ -335,6 +335,18 @@ import Bardhaman from "../assets/CityPages/Bardhaman.webp"
 import Jalpaiguri from "../assets/CityPages/Jalpaiguri.webp"
 
 
+import Berhampore from "../assets/CityPages/Berhampore.webp"
+import Cooch from "../assets/CityPages/Cooch Behar.webp"
+import Krishnanagar from "../assets/CityPages/Krishnanagar.webp"
+import Chandannagar from "../assets/CityPages/Chandannagar.webp"
+import Panaji from "../assets/CityPages/Panaji.webp"
+import Mapusa from "../assets/CityPages/Mapusa.webp"
+import Bicholim from "../assets/CityPages/Bicholim.webp"
+import Sanquelim from "../assets/CityPages/Sanquelim.webp"
+import Ponda from "../assets/CityPages/Ponda.webp"
+import Margao from "../assets/CityPages/Margao.webp"
+
+
 
 
 
@@ -2150,11 +2162,46 @@ export const pagesData = [
   twitterDescription: "Safe, professional and affordable Packers and Movers in Darbhanga by Gati Shifting Packers. Book your smooth relocation today!",
   canonical: "https://gatishiftingpackers.com/city/Darbhanga"
 } },
-  { slug: "Purnia", city: "Purnia", img: Purnia, offer: "18%", address: "Shop - 102, Near Tanishq Showroom, Purnia, Bihar 854301" },
-  { slug: "Arrah", city: "Arrah", img: Arrah, offer: "18%", address: "NH 30, Hospital Road, Mahajan Toli, Arrah, Bihar 802301" },
-  { slug: "Hajipur", city: "Hajipur", img: Hajipur, offer: "18%", address: "front shop, New market, Cinema Rd, Baghdulhan, Hajipur, Bihar 844101" },
-  { slug: "Begusarai", city: "Begusarai", img: Begusarai, offer: "18%", address: "NEAR AGRASEN Matri SEVA SADAN , NAGDAH, NH 31, Kapasiya, Begusarai, Bihar 851117" },
-  { slug: "Chhapra", city: "Chhapra", img: Chhapra, offer: "18%", address: "Hari Mohan gali, Harimohan Gali, Dahiyawan Tola, Sadhapur, Chapra, Bihar 841301" },
+  { slug: "Purnia", city: "Purnia", img: Purnia, offer: "18%", address: "Shop - 102, Near Tanishq Showroom, Purnia, Bihar 854301", metaDetails: {
+  title: "Packers and Movers in Purnia | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Purnia with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Purnia and across Bihar.",
+  keywords: "Local movers near me Purnia, Packers and Movers in Purnia, Gati Shifting Packers Purnia, Best Packers and Movers Purnia, Affordable Packers and Movers Purnia, Trusted Packers and Movers Purnia Bihar, Local Packers and Movers Purnia, Professional Movers and Packers Purnia, Home Shifting Services Purnia, Office Relocation Purnia, Vehicle Transport Purnia, Car Transport Service Purnia, Bike Transport Purnia, Household Goods Shifting Purnia, Industrial Packers and Movers Purnia, Door-to-Door Shifting Services Purnia, Packing and Unpacking Services Purnia, Furniture Movers Purnia, Intercity Packers and Movers Purnia, Packers and Movers Purnia to Patna, Packers and Movers Purnia to Darbhanga, Packers and Movers Purnia to Katihar, Packers and Movers Purnia to Delhi, Packers and Movers Purnia to Kolkata, Reliable Relocation Company Purnia, Cost-Effective Packers and Movers Purnia, Quick Packers and Movers Purnia, 24x7 Packers and Movers Purnia, Mini Truck for Shifting Purnia, Tempo Service Purnia, Best Relocation Services Purnia, Safe and Secure Moving Services Purnia, Budget-Friendly Movers Purnia, Professional Relocation Company Purnia, Long-Distance Packers and Movers Purnia, Trusted Shifting Company Purnia, Goods Transport Services Purnia.",
+  ogDescription: "Looking for reliable Packers and Movers in Purnia? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Purnia and across Bihar.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Purnia by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Purnia"
+} },
+  { slug: "Arrah", city: "Arrah", img: Arrah, offer: "18%", address: "NH 30, Hospital Road, Mahajan Toli, Arrah, Bihar 802301", metaDetails: {
+  title: "Packers and Movers in Arrah | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Arrah with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Arrah and across Bihar.",
+  keywords: "Local movers near me Arrah, Packers and Movers in Arrah, Gati Shifting Packers Arrah, Best Packers and Movers Arrah, Affordable Packers and Movers Arrah, Trusted Packers and Movers Arrah Bihar, Local Packers and Movers Arrah, Professional Movers and Packers Arrah, Home Shifting Services Arrah, Office Relocation Arrah, Vehicle Transport Arrah, Car Transport Service Arrah, Bike Transport Arrah, Household Goods Shifting Arrah, Industrial Packers and Movers Arrah, Door-to-Door Shifting Services Arrah, Packing and Unpacking Services Arrah, Furniture Movers Arrah, Intercity Packers and Movers Arrah, Packers and Movers Arrah to Patna, Packers and Movers Arrah to Buxar, Packers and Movers Arrah to Chhapra, Packers and Movers Arrah to Delhi, Packers and Movers Arrah to Kolkata, Reliable Relocation Company Arrah, Cost-Effective Packers and Movers Arrah, Quick Packers and Movers Arrah, 24x7 Packers and Movers Arrah, Mini Truck for Shifting Arrah, Tempo Service Arrah, Best Relocation Services Arrah, Safe and Secure Moving Services Arrah, Budget-Friendly Movers Arrah, Professional Relocation Company Arrah, Long-Distance Packers and Movers Arrah, Trusted Shifting Company Arrah, Goods Transport Services Arrah.",
+  ogDescription: "Looking for reliable Packers and Movers in Arrah? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Arrah and across Bihar.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Arrah by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Arrah"
+} },
+  { slug: "Hajipur", city: "Hajipur", img: Hajipur, offer: "18%", address: "front shop, New market, Cinema Rd, Baghdulhan, Hajipur, Bihar 844101", metaDetails: {
+  title: "Packers and Movers in Hajipur | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Hajipur with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Hajipur and across Bihar.",
+  keywords: "Local movers near me Hajipur, Packers and Movers in Hajipur, Gati Shifting Packers Hajipur, Best Packers and Movers Hajipur, Affordable Packers and Movers Hajipur, Trusted Packers and Movers Hajipur Bihar, Local Packers and Movers Hajipur, Professional Movers and Packers Hajipur, Home Shifting Services Hajipur, Office Relocation Hajipur, Vehicle Transport Hajipur, Car Transport Service Hajipur, Bike Transport Hajipur, Household Goods Shifting Hajipur, Industrial Packers and Movers Hajipur, Door-to-Door Shifting Services Hajipur, Packing and Unpacking Services Hajipur, Furniture Movers Hajipur, Intercity Packers and Movers Hajipur, Packers and Movers Hajipur to Patna, Packers and Movers Hajipur to Muzaffarpur, Packers and Movers Hajipur to Darbhanga, Packers and Movers Hajipur to Gaya, Packers and Movers Hajipur to Delhi, Packers and Movers Hajipur to Kolkata, Reliable Relocation Company Hajipur, Cost-Effective Packers and Movers Hajipur, Quick Packers and Movers Hajipur, 24x7 Packers and Movers Hajipur, Mini Truck for Shifting Hajipur, Tempo Service Hajipur, Best Relocation Services Hajipur, Safe and Secure Moving Services Hajipur, Budget-Friendly Movers Hajipur, Professional Relocation Company Hajipur, Long-Distance Packers and Movers Hajipur, Trusted Shifting Company Hajipur, Goods Transport Services Hajipur.",
+  ogDescription: "Looking for reliable Packers and Movers in Hajipur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Hajipur and across Bihar.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Hajipur by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Hajipur"
+} },
+  { slug: "Begusarai", city: "Begusarai", img: Begusarai, offer: "18%", address: "NEAR AGRASEN Matri SEVA SADAN , NAGDAH, NH 31, Kapasiya, Begusarai, Bihar 851117", metaDetails: {
+  title: "Packers and Movers in Begusarai | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Begusarai with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Begusarai and across Bihar.",
+  keywords: "Local movers near me Begusarai, Packers and Movers in Begusarai, Gati Shifting Packers Begusarai, Best Packers and Movers Begusarai, Affordable Packers and Movers Begusarai, Trusted Packers and Movers Begusarai Bihar, Local Packers and Movers Begusarai, Professional Movers and Packers Begusarai, Home Shifting Services Begusarai, Office Relocation Begusarai, Vehicle Transport Begusarai, Car Transport Service Begusarai, Bike Transport Begusarai, Household Goods Shifting Begusarai, Industrial Packers and Movers Begusarai, Door-to-Door Shifting Services Begusarai, Packing and Unpacking Services Begusarai, Furniture Movers Begusarai, Intercity Packers and Movers Begusarai, Packers and Movers Begusarai to Patna, Packers and Movers Begusarai to Muzaffarpur, Packers and Movers Begusarai to Darbhanga, Packers and Movers Begusarai to Gaya, Packers and Movers Begusarai to Delhi, Packers and Movers Begusarai to Kolkata, Reliable Relocation Company Begusarai, Cost-Effective Packers and Movers Begusarai, Quick Packers and Movers Begusarai, 24x7 Packers and Movers Begusarai, Mini Truck for Shifting Begusarai, Tempo Service Begusarai, Best Relocation Services Begusarai, Safe and Secure Moving Services Begusarai, Budget-Friendly Movers Begusarai, Professional Relocation Company Begusarai, Long-Distance Packers and Movers Begusarai, Trusted Shifting Company Begusarai, Goods Transport Services Begusarai.",
+  ogDescription: "Looking for reliable Packers and Movers in Begusarai? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Begusarai and across Bihar.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Begusarai by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Begusarai"
+} },
+  { slug: "Chhapra", city: "Chhapra", img: Chhapra, offer: "18%", address: "Hari Mohan gali, Harimohan Gali, Dahiyawan Tola, Sadhapur, Chapra, Bihar 841301", metaDetails: {
+  title: "Packers and Movers in Chhapra | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Chhapra with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Chhapra and across Bihar.",
+  keywords: "Local movers near me Chhapra, Packers and Movers in Chhapra, Gati Shifting Packers Chhapra, Best Packers and Movers Chhapra, Affordable Packers and Movers Chhapra, Trusted Packers and Movers Chhapra Bihar, Local Packers and Movers Chhapra, Professional Movers and Packers Chhapra, Home Shifting Services Chhapra, Office Relocation Chhapra, Vehicle Transport Chhapra, Car Transport Service Chhapra, Bike Transport Chhapra, Household Goods Shifting Chhapra, Industrial Packers and Movers Chhapra, Door-to-Door Shifting Services Chhapra, Packing and Unpacking Services Chhapra, Furniture Movers Chhapra, Intercity Packers and Movers Chhapra, Packers and Movers Chhapra to Patna, Packers and Movers Chhapra to Muzaffarpur, Packers and Movers Chhapra to Darbhanga, Packers and Movers Chhapra to Gaya, Packers and Movers Chhapra to Delhi, Packers and Movers Chhapra to Kolkata, Reliable Relocation Company Chhapra, Cost-Effective Packers and Movers Chhapra, Quick Packers and Movers Chhapra, 24x7 Packers and Movers Chhapra, Mini Truck for Shifting Chhapra, Tempo Service Chhapra, Best Relocation Services Chhapra, Safe and Secure Moving Services Chhapra, Budget-Friendly Movers Chhapra, Professional Relocation Company Chhapra, Long-Distance Packers and Movers Chhapra, Trusted Shifting Company Chhapra, Goods Transport Services Chhapra.",
+  ogDescription: "Looking for reliable Packers and Movers in Chhapra? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Chhapra and across Bihar.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Chhapra by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Chhapra"
+} },
   { slug: "Samastipur", city: "Samastipur", img: Samastipur, offer: "18%", address: "Ground and First Floor, Santhalia Complex, SH 55, Gola Rd, opposite Titan Eye Plus, Gudari Bazar, Samastipur, Bihar 848101" },
   { slug: "Lakhisarai", city: "Lakhisarai", img: Lakhisarai, offer: "18%", address: "Near, Vidyapeeth Chowk Rd, purani bazar, Lakhisarai, Bihar 811311" },
   { slug: "Buxar", city: "Buxar", img: Buxar, offer: "18%", address: "Gajadhar Ganj, Buxar, Bihar 802103" },
@@ -2227,6 +2274,21 @@ export const pagesData = [
   { slug: "Malda", city: "Malda", img: Malda, offer: "23%", address: "Main Road, Kaliachak (near Taj Market), Malda 732210" },
   { slug: "Bardhaman", city: "Bardhaman", img: Bardhaman, offer: "23%", address: "Saraitikar Rd, near Party Office, Bardhaman 713104" },
   { slug: "Jalpaiguri", city: "Jalpaiguri", img: Jalpaiguri, offer: "23%", address: "NH31, Tilabari, Dakshin Dhupjhora, Jalpaiguri 735206" },
+
+
+
+
+  { slug: "Berhampore", city: "Berhampore", img: Berhampore, offer: "23%", address: "Bonbehari Sen Rd, Khagra, Berhampore, West Bengal 742101" },
+  { slug: "Cooch", city: "Cooch Behar", img: Cooch, offer: "23%", address: "Chilakhana, Cooch Behar (near AP School) 736177" },
+  { slug: "Krishnanagar", city: "Krishnanagar", img: Krishnanagar, offer: "23%", address: "Pal Para More, Bhatjangla, Krishnanagar, West Bengal 741101" },
+  { slug: "Chandannagar", city: "Chandannagar", img: Chandannagar, offer: "23%", address: "Strand Road, Bara Bazar Chandannagar, Dist: Hooghly, West Bengal Pin: 712136" },
+  { slug: "Panaji", city: "Panaji", img: Panaji, offer: "23%", address: "Shop No 5, Inam Complex, Opposite Don Bosco School, Panjim, Goa 403001" },
+  { slug: "Mapusa", city: "Mapusa", img: Mapusa, offer: "23%", address: "Shop No 3/4, Marjorie Apartments, Near Asilo Hospital, Mapusa, Goa 403507" },
+  { slug: "Bicholim", city: "Bicholim", img: Bicholim, offer: "23%", address: "Ground Floor, SHETYE APARTMENT, Grand Village, near Registration, Dicholi, Goa 403504" },
+  { slug: "Sanquelim", city: "Sanquelim", img: Sanquelim, offer: "23%", address: "Shop No A1SLGF-09, Ground Floor, Vassuudev Shetye Residency, Mapusa-Sanquelim Road, Sanquelim, Goa 403505" },
+  { slug: "Ponda", city: "Ponda", img: Ponda, offer: "23%", address: "Shop No 2, Garkul Apartment, Opposite Savikar Hospital, Ponda, Goa 403401" },
+  { slug: "Margao", city: "Margao", img: Margao, offer: "23%", address: "Shop No 8, Gracias Building, Near Loyola School, Loyola Road, Margao, Goa 403601" },
+
 
 
 

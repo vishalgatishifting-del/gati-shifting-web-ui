@@ -51,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
     <>
       <header>
         <div className="top-area">
-          <a href="tel:+919422799477">
+          <a className='phone' href="tel:+919422799477">
             <LocalPhoneIcon />
             <span>Contact No - +91 9422799477</span>
           </a>
@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
           </a>
           <a  className="whatsapp" href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer">
             <WhatsAppIcon />
-            <span>Chat Now</span>
+            <span><span className='no'>Click to </span>Chat Now<span className='no'> - 7065994000</span></span>
           </a>
         </div>
 

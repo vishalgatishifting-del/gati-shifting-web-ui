@@ -31,6 +31,9 @@ header {
 
             span {
                 margin-left: 5px;
+                .no{
+                    display: none;
+                }
             }
         }
     }
@@ -167,11 +170,16 @@ header.diwali {
             padding: 7px;
             a{
                 justify-content: center;
+                span{
+                    .no{
+                        display: inline;
+                    }
+                }
             }
-            .email{
+            .phone{
                 display: none;
             }
-            .whatsapp{
+            .email{
                 display: none;
             }
         }
