@@ -347,6 +347,18 @@ import Ponda from "../assets/CityPages/Ponda.webp"
 import Margao from "../assets/CityPages/Margao.webp"
 
 
+import Vasco_da_Gama from "../assets/CityPages/Vasco da Gama.webp"
+import Madurai from "../assets/CityPages/Madurai.webp"
+import Tiruchirappalli from "../assets/CityPages/Tiruchirappalli (Trichy).webp"
+import Salem from "../assets/CityPages/Salem.webp"
+import Tirunelveli from "../assets/CityPages/Tirunelveli.webp"
+import Erode from "../assets/CityPages/Erode.webp"
+import Vellore from "../assets/CityPages/Vellore.webp"
+import Thanjavur from "../assets/CityPages/Thanjavur.webp"
+import Thoothukudi from "../assets/CityPages/Thoothukudi (Tuticorin).webp"
+import Dindigul from "../assets/CityPages/Dindigul.webp"
+
+
 
 
 
@@ -2288,6 +2300,21 @@ export const pagesData = [
   { slug: "Sanquelim", city: "Sanquelim", img: Sanquelim, offer: "23%", address: "Shop No A1SLGF-09, Ground Floor, Vassuudev Shetye Residency, Mapusa-Sanquelim Road, Sanquelim, Goa 403505" },
   { slug: "Ponda", city: "Ponda", img: Ponda, offer: "23%", address: "Shop No 2, Garkul Apartment, Opposite Savikar Hospital, Ponda, Goa 403401" },
   { slug: "Margao", city: "Margao", img: Margao, offer: "23%", address: "Shop No 8, Gracias Building, Near Loyola School, Loyola Road, Margao, Goa 403601" },
+
+
+
+  
+
+  { slug: "Vasco-da-Gama", city: "Vasco da Gama", img: Vasco_da_Gama, offer: "23%", address: "Ground Floor, Anand Chambers, opposite to SBI Bank, Vaddem, Vasco Da Gama, Goa 403802" },
+  { slug: "Madurai", city: "Madurai", img: Madurai, offer: "23%", address: "KURIVIKARAN SALAI NEAR ANNA BUS STAND 650020, opposite ANNA BUS STAND, Madurai, Tamil Nadu 625020" },
+  { slug: "Tiruchirappalli (Trichy)", city: "Tiruchirappalli (Trichy)", img: Tiruchirappalli, offer: "23%", address: "Fort Station Rd E, opp. Fastrack store, Thillai Nagar East, West Thillai Nagar, Tiruchirappalli, Tamil Nadu 620018" },
+  { slug: "Salem", city: "Salem", img: Salem, offer: "23%", address: "0/1, Advaitha Ashram Rd, Fairlands, Salem, Tamil Nadu 636016" },
+  { slug: "Tirunelveli", city: "Tirunelveli", img: Tirunelveli, offer: "23%", address: "Jawahar Street, Main road, Palayamkottai, V.M.Chatram, Tirunelveli, Tamil Nadu 627011" },
+  { slug: "Erode", city: "Erode", img: Erode, offer: "23%", address: "Moolagoundan palayam, Kalyanasundaram St, Sakthi Nagar, Erode, Tamil Nadu 638002" },
+  { slug: "Vellore", city: "Vellore", img: Vellore, offer: "23%", address: "Gandhi Rd, opposite to CMC Hospital, Sripuram, Beripettai, Vellore, Tamil Nadu 632004" },
+  { slug: "Thanjavur", city: "Thanjavur", img: Thanjavur, offer: "23%", address: "Rajakrisnapuram, South Rampart, Thanjavur, Tamil Nadu 613001" },
+  { slug: "Thoothukudi (Tuticorin)", city: "Thoothukudi (Tuticorin)", img: Thoothukudi, offer: "23%", address: "Palay Road, 3rd Mile, Thoothukudi, Tamil Nadu 628003" },
+  { slug: "Dindigul", city: "Dindigul", img: Dindigul, offer: "23%", address: "Ground Floor, 8/1, Thiruvalluvar Salai, Spencer Compound, Dindigul, Tamil Nadu 624003" },
 
 
 
