@@ -21,6 +21,8 @@
         box-shadow: 0 5px 20px #00000029;
         border-radius: 10px;
         overflow: hidden;
+        justify-content: center;
+        // align-items: center;
 
         .detail {
             width: 50%;
@@ -157,9 +159,9 @@
 @media screen and (max-width: 483px) {
     
 #get-in-touch-form {
-    h2{
+    // h2{
         // font-size: 20px;
-    }
+    // }
     .container{
         .form{
             form{

@@ -360,6 +360,19 @@ import Dindigul from "../assets/CityPages/Dindigul.webp"
 
 
 
+import Kanchipuram from "../assets/CityPages/Kanchipuram.webp"
+import Tiruppur from "../assets/CityPages/Tiruppur.webp"
+import Cuddalore from "../assets/CityPages/Cuddalore.webp"
+import Nagercoil from "../assets/CityPages/Nagercoil.webp"
+import Hosur from "../assets/CityPages/Hosur.webp"
+import Sivakasi from "../assets/CityPages/Sivakasi.webp"
+import Davangere from "../assets/CityPages/Davangere.webp"
+import Hospet from "../assets/CityPages/Hospet.webp"
+import Rajkot from "../assets/CityPages/Rajkot.webp"
+import Mundra from "../assets/CityPages/Mundra.webp"
+
+
+
 
 
 
@@ -2315,6 +2328,20 @@ export const pagesData = [
   { slug: "Thanjavur", city: "Thanjavur", img: Thanjavur, offer: "23%", address: "Rajakrisnapuram, South Rampart, Thanjavur, Tamil Nadu 613001" },
   { slug: "Thoothukudi (Tuticorin)", city: "Thoothukudi (Tuticorin)", img: Thoothukudi, offer: "23%", address: "Palay Road, 3rd Mile, Thoothukudi, Tamil Nadu 628003" },
   { slug: "Dindigul", city: "Dindigul", img: Dindigul, offer: "23%", address: "Ground Floor, 8/1, Thiruvalluvar Salai, Spencer Compound, Dindigul, Tamil Nadu 624003" },
+
+
+
+  { slug: "Kanchipuram", city: "Kanchipuram", img: Kanchipuram, offer: "23%", address: "3B, GROUND FLOOR, E Raja St, Kanchipuram, Tamil Nadu 631502" },
+  { slug: "Tiruppur", city: "Tiruppur", img: Tiruppur, offer: "23%", address: "Privu, Bus stop, Serankadu, Dharapuram Main Rd, near Kongu Heart Center, Pudur, Tamil Nadu 641601" },
+  { slug: "Cuddalore", city: "Cuddalore", img: Cuddalore, offer: "23%", address: "Nethaji Rd, near Airtel Store, North Venugopalapuram, Allpettai, Manjakuppam, Cuddalore, Tamil Nadu 607001" },
+  { slug: "Nagercoil", city: "Nagercoil (Kanyakumari)", img: Nagercoil, offer: "23%", address: "Concordia School Road, near Bishop House, Weavers Colony, Nagercoil, Tamil Nadu 629001" },
+  { slug: "Hosur", city: "Hosur", img: Hosur, offer: "23%", address: "Nethaji Road, opposite Ramar temple, Hosur, Tamil Nadu 635109" },
+  { slug: "Sivakasi", city: "Sivakasi", img: Sivakasi, offer: "23%", address: "Narikudi-Parthibanoor Rd, near Sri Krishna Hospital, Thiruthangal, Sivakasi, Tamil Nadu 626130" },
+  { slug: "Davangere", city: "Davangere", img: Davangere, offer: "23%", address: "S O G Colony, Shri Ramanagara, Davanagere, Karnataka 577005" },
+  { slug: "Hospet", city: "Hospet", img: Hospet, offer: "23%", address: "Basaveshwara Badavane, Hosapete Tq, DIST, VIJAYANAGAR, Hosapete, Karnataka 585201" },
+  { slug: "Rajkot", city: "Rajkot", img: Rajkot, offer: "23%", address: "Sadar Civil Hospital Campus, Gujarat 360001" },
+  { slug: "Mundra", city: "Mundra", img: Mundra, offer: "23%", address: "Baroi Rd, Mahavir Nagar, Mahesh Nagar, Mundra, Baroi, Gujarat 370421" },
+
 
 
 

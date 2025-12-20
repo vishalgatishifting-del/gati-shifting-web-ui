@@ -6,6 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha"
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { getUserSource } from "../utils/sourceTracker";
 import { submitForm } from "../api/formAPI";
+// import FeatureVideo from "../assets/HomePage/FinalFeatureVideo.webm"
 
 interface ContactFormProps {
     showDetail?: true | false;
@@ -65,8 +66,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
         };
 
         try {
-           await submitForm(payload);
-           successCondition(true)
+            await submitForm(payload);
+            successCondition(true)
 
             const userSource = getUserSource();
             const templateParams = {
@@ -93,7 +94,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
             setCaptchaValue(null);
             closeControl?.();
         } catch (error) {
-            
+
         } finally {
             setLoading(false);
         }
@@ -101,6 +102,17 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
 
     return (
         <section id="get-in-touch-form" style={(showDetail == false) ? { boxShadow: "0 5px 20px #00000029", marginTop: "0px", width: "100%", padding: "14px" } : {}}>
+            
+                    {/* <video
+                        autoPlay
+                        loop
+                        muted
+                        preload="none"
+                        poster="preview.webp"
+                        style={{ width: "27%", height: "100%", padding:"20px 0" }}
+                        >
+                        <source src={FeatureVideo} type="video/webm"></source>
+                    </video> */}
             <h2>Get Free Quote in 1 min!</h2>
             <p>Fast, Safe & Affordable Shifting - Book Now & Save Upto 20%!</p>
             <div className="container" style={(showDetail == false) ? { width: "100%", boxShadow: "none" } : {}}>

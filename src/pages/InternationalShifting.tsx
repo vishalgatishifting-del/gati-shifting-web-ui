@@ -4,10 +4,10 @@ import InternationalShiftingByAir from "../assets/homePagePng/international shif
 import InternationalCargoShipTruckImg from "../assets/homePagePng/international cargo ship truck.png"
 import InternationalAirlineImg from "../assets/homePagePng/international airline.png"
 
-import quotation1Img from "../assets/HomePage/quotation1.png"
-import quotation2Img from "../assets/HomePage/quotation2.png"
-import quotation3Img from "../assets/HomePage/quotation3.png"
-import quotation4Img from "../assets/HomePage/quotation4.png"
+// import quotation1Img from "../assets/HomePage/quotation1.png"
+// import quotation2Img from "../assets/HomePage/quotation2.png"
+// import quotation3Img from "../assets/HomePage/quotation3.png"
+// import quotation4Img from "../assets/HomePage/quotation4.png"
 
 // import quotationPDF from "../assets/homePagePng/GATI SHIFTING PACKERS PVT LTD .pdf"
 import "./InternationalShifting.scss"
@@ -57,10 +57,10 @@ const InternationalShifting = ({successCondition}: props) => {
                 </div>
             </section>
             <section id="img-list">
-                <img src={quotation1Img} />
+                {/* <img src={quotation1Img} />
                 <img src={quotation2Img} />
                 <img src={quotation3Img} />
-                <img src={quotation4Img} />
+                <img src={quotation4Img} /> */}
             </section>
             <ContactForm successCondition={successCondition}></ContactForm>
 
