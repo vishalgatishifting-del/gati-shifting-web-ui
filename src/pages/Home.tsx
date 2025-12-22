@@ -57,6 +57,22 @@ import feature8Img from "../assets/homePagePng/feature8.jpeg"
 import feature9Img from "../assets/homePagePng/feature9.jpg"
 import feature10Img from "../assets/homePagePng/feature10.jpg"
 import feature11Img from "../assets/homePagePng/feature11.jpg"
+import feature12Img from "../assets/homePagePng/feature12.jpg"
+import feature13Img from "../assets/homePagePng/feature13.jpg"
+import feature14Img from "../assets/homePagePng/feature14.jpg"
+import feature15Img from "../assets/homePagePng/feature15.jpg"
+import feature16Img from "../assets/homePagePng/feature16.jpg"
+import feature17Img from "../assets/homePagePng/feature17.jpg"
+import feature18Img from "../assets/homePagePng/feature18.jpg"
+import feature19Img from "../assets/homePagePng/feature19.jpg"
+import feature20Img from "../assets/homePagePng/feature20.jpg"
+import feature21Img from "../assets/homePagePng/feature21.jpg"
+import feature22Img from "../assets/homePagePng/feature22.jpg"
+import feature23Img from "../assets/homePagePng/feature23.jpg"
+import feature24Img from "../assets/homePagePng/feature24.jpg"
+import feature25Img from "../assets/homePagePng/feature25.jpg"
+import feature26Img from "../assets/homePagePng/feature26.jpeg"
+import feature27Img from "../assets/homePagePng/feature27.png"
 
 import ZohoForm from "../components/ZohoForm"
 
@@ -105,7 +121,23 @@ const Home: React.FC<props> = ({successCondition}) => {
         feature8Img,
         feature9Img,
         feature10Img,
-        feature11Img
+        feature11Img,
+        feature12Img,
+        feature13Img,
+        feature14Img,
+        feature15Img,
+        feature16Img,
+        feature17Img,
+        feature18Img,
+        feature19Img,
+        feature20Img,
+        feature21Img,
+        feature22Img,
+        feature23Img,
+        feature24Img,
+        feature25Img,
+        feature26Img,
+        feature27Img,
     ]
 
     const settings = {

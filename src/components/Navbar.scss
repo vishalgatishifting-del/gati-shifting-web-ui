@@ -6,7 +6,8 @@ header {
     top: 0;
     display: flex;
     flex-direction: column;
-    background: #fff;
+    // background: #fff;
+
 
 
     z-index: 30;
@@ -31,7 +32,8 @@ header {
 
             span {
                 margin-left: 5px;
-                .no{
+
+                .no {
                     display: none;
                 }
             }
@@ -123,12 +125,16 @@ header {
 
 header.diwali {
     // background: linear-gradient(360deg, #ff271e, #ff8901);
-    background: url("../assets/diwaliTheme/headerBG.png");
+    background: url("../assets/diwaliTheme/christmas2.png");
     background-size: cover;
     background-position: bottom;
 
     .top-area {
         background: transparent;
+
+        a {
+            color: #000;
+        }
     }
 
     nav {
@@ -142,12 +148,13 @@ header.diwali {
             li {
 
                 a.active {
-                    background-color: #ff951d;
+                    background-color: #ff0000;
                 }
 
                 a:hover {
 
-                    background-color: #ff951d;
+                    background-color: #ff0000;
+                    backdrop-filter: blur(10px);
                 }
             }
         }
@@ -158,7 +165,7 @@ header.diwali {
             }
 
             button {
-                background-color: #ff951d;
+                background-color: #ff0000;
             }
         }
     }
@@ -169,18 +176,22 @@ header.diwali {
         .top-area {
             padding: 7px;
             background: #4FCE5D;
-            a{
+
+            a {
                 justify-content: center;
-                span{
-                    .no{
+
+                span {
+                    .no {
                         display: inline;
                     }
                 }
             }
-            .phone{
+
+            .phone {
                 display: none;
             }
-            .email{
+
+            .email {
                 display: none;
             }
         }
@@ -294,5 +305,97 @@ header.diwali {
 
     a:hover img {
         transform: scale(1.2);
+    }
+}
+
+.santaClouse {
+    position: fixed;
+    bottom: -1%;
+    left: -2.5%;
+    width: 150px;
+    z-index: 1000;
+}
+
+.tree {
+    position: fixed;
+    bottom: -0.5%;
+    right: 3%;
+    width: 150px;
+    z-index: 1000000;
+}
+
+#christmas-theme {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#0e5689, #207bad, transparent);
+    z-index: -1;
+
+
+    .gifts {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../assets/diwaliTheme/gifts.png");
+        background-size: cover;
+        background-position: center;
+    }
+    .particle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../assets/diwaliTheme/particles.png");
+        background-size: cover;
+
+        animation: fall 10s linear infinite;
+
+        @keyframes fall {
+            0% {
+                top: 0;
+            }
+
+            100% {
+                top: 100%;
+            }
+        }
+    }
+
+    .particle2 {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../assets/diwaliTheme/particles.png");
+        background-size: cover;
+
+        animation: fall2 10s linear infinite;
+        // animation-delay: 5s;
+
+        @keyframes fall2 {
+            0% {
+                top: -100%;
+            }
+
+            100% {
+                top: 0%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .santaClouse {
+        width: 100px;
+    }
+    .tree{
+        width: 100px;
     }
 }
