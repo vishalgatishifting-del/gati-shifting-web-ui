@@ -49,7 +49,7 @@ const Footer = () => {
     const [show, setShow] = useState(0);
     return (
         <>
-            <section id="redirect-links">
+            <section id="redirect-links" className="christmas">
                 <h1>Search By Location</h1>
                 <div className="container">
                     <ul>

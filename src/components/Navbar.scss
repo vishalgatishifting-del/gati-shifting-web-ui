@@ -140,7 +140,7 @@ header.diwali {
     nav {
         .logo {
             img {
-                width: 100px;
+                width: 150px;
             }
         }
 
@@ -166,6 +166,18 @@ header.diwali {
 
             button {
                 background-color: #ff0000;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1141px) {
+    header.diwali{
+        nav{
+            .logo{
+                img{
+                    width: 100px;
+                }
             }
         }
     }
