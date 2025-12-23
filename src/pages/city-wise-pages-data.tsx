@@ -385,6 +385,19 @@ import Kashipur from "../assets/CityPages/Kashipur.webp"
 
 
 
+import Nainital from "../assets/CityPages/Nanital.webp"
+import Almora from "../assets/CityPages/Almora.webp"
+import Mussoorie from "../assets/CityPages/Mussoorie.webp"
+import Bareilly from "../assets/CityPages/Bareilly.webp"
+import Aligarh from "../assets/CityPages/Aligarh.webp"
+import Moradabad from "../assets/CityPages/Moradabad.webp"
+import Saharanpur from "../assets/CityPages/Saharanpur.webp"
+import Jhansi from "../assets/CityPages/Jhansi.webp"
+import Mathura from "../assets/CityPages/Mathura.webp"
+import Firozabad from "../assets/CityPages/Firozabad.webp"
+
+
+
 
 
 
@@ -2370,14 +2383,70 @@ export const pagesData = [
   twitterDescription: "Safe, professional and affordable Packers and Movers in Vizianagaram by Gati Shifting Packers. Book your smooth relocation today!",
   canonical: "https://gatishiftingpackers.com/city/Vizianagaram"
 } },
-  { slug: "Chittoor", city: "Chittoor", img: Chittoor, offer: "23%", address: "G.K.Nagar,Near Collector Office-chittoor Chennai - Bangalore, National Highway, Chittoor, Andhra Pradesh 517002" },
-  { slug: "Proddatur", city: "Proddatur", img: Proddatur, offer: "23%", address: "17/9 B, G K STREET, PRODDATUR, Proddatur, Andhra Pradesh 516360" },
-  { slug: "Hindupur", city: "Hindupur", img: Hindupur, offer: "23%", address: "Hindupur, Lakshmipuram, Hindupuram, Sreekanthapuram Rural, Andhra Pradesh 515201" },
-  { slug: "Tenali", city: "Tenali", img: Tenali, offer: "23%", address: "Sai Ram Complex, Prakasam Road, Tenali, Guntur, Andhra Pradesh 522201" },
-  { slug: "Nandyal", city: "Nandyal", img: Nandyal, offer: "23%", address: "V. C. Calany, 26/605, near school, Telugu Peta, Nandyala, Andhra Pradesh 518502" },
-  { slug: "Adoni", city: "Adoni", img: Adoni, offer: "23%", address: " SRI MAHAYOGI LAKSHMAMMA COMPLEX, beside VBS OIL FACTORY, Vengalapuram, Adoni, D.T, Andhra Pradesh 518301" },
-  { slug: "Nepal", city: "Nepal", img: Nepal, offer: "23%", address: "Chatramaharaj Ayurved Center, Near, Kathmandu 44600, Nepal" },
-  { slug: "Kollam ", city: "Kollam ", img: Kollam , offer: "23%", address: "Musaliar Buildings Thiruvananthapuram, Panvel - Kochi - Kanyakumari Hwy, near Kollam, Chinnakada, Kollam, Kerala 691001" },
+  { slug: "Chittoor", city: "Chittoor", img: Chittoor, offer: "23%", address: "G.K.Nagar,Near Collector Office-chittoor Chennai - Bangalore, National Highway, Chittoor, Andhra Pradesh 517002", metaDetails: {
+  title: "Packers and Movers in Chittoor | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Chittoor with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Chittoor and across Andhra Pradesh.",
+  keywords: "Local movers near me Chittoor, Packers and Movers in Chittoor, Gati Shifting Packers Chittoor, Best Packers and Movers Chittoor, Affordable Packers and Movers Chittoor, Trusted Packers and Movers Chittoor Andhra Pradesh, Local Packers and Movers Chittoor, Professional Movers and Packers Chittoor, Home Shifting Services Chittoor, Office Relocation Chittoor, Vehicle Transport Chittoor, Car Transport Service Chittoor, Bike Transport Chittoor, Household Goods Shifting Chittoor, Industrial Packers and Movers Chittoor, Door-to-Door Shifting Services Chittoor, Packing and Unpacking Services Chittoor, Furniture Movers Chittoor, Intercity Packers and Movers Chittoor, Packers and Movers Chittoor to Vijayawada, Packers and Movers Chittoor to Hyderabad, Packers and Movers Chittoor to Chennai, Packers and Movers Chittoor to Bengaluru, Packers and Movers Chittoor to Delhi, Packers and Movers Chittoor to Kolkata, Reliable Relocation Company Chittoor, Cost-Effective Packers and Movers Chittoor, Quick Packers and Movers Chittoor, 24x7 Packers and Movers Chittoor, Mini Truck for Shifting Chittoor, Tempo Service Chittoor, Best Relocation Services Chittoor, Safe and Secure Moving Services Chittoor, Budget-Friendly Movers Chittoor, Professional Relocation Company Chittoor, Long-Distance Packers and Movers Chittoor, Trusted Shifting Company Chittoor, Goods Transport Services Chittoor.",
+  ogDescription: "Looking for reliable Packers and Movers in Chittoor? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Chittoor and across Andhra Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Chittoor by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Chittoor"
+} },
+  { slug: "Proddatur", city: "Proddatur", img: Proddatur, offer: "23%", address: "17/9 B, G K STREET, PRODDATUR, Proddatur, Andhra Pradesh 516360", metaDetails: {
+  title: "Packers and Movers in Proddatur | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Proddatur with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Proddatur and across Andhra Pradesh.",
+  keywords: "Local movers near me Proddatur, Packers and Movers in Proddatur, Gati Shifting Packers Proddatur, Best Packers and Movers Proddatur, Affordable Packers and Movers Proddatur, Trusted Packers and Movers Proddatur Andhra Pradesh, Local Packers and Movers Proddatur, Professional Movers and Packers Proddatur, Home Shifting Services Proddatur, Office Relocation Proddatur, Vehicle Transport Proddatur, Car Transport Service Proddatur, Bike Transport Proddatur, Household Goods Shifting Proddatur, Industrial Packers and Movers Proddatur, Door-to-Door Shifting Services Proddatur, Packing and Unpacking Services Proddatur, Furniture Movers Proddatur, Intercity Packers and Movers Proddatur, Packers and Movers Proddatur to Vijayawada, Packers and Movers Proddatur to Hyderabad, Packers and Movers Proddatur to Chennai, Packers and Movers Proddatur to Bengaluru, Packers and Movers Proddatur to Delhi, Packers and Movers Proddatur to Kolkata, Reliable Relocation Company Proddatur, Cost-Effective Packers and Movers Proddatur, Quick Packers and Movers Proddatur, 24x7 Packers and Movers Proddatur, Mini Truck for Shifting Proddatur, Tempo Service Proddatur, Best Relocation Services Proddatur, Safe and Secure Moving Services Proddatur, Budget-Friendly Movers Proddatur, Professional Relocation Company Proddatur, Long-Distance Packers and Movers Proddatur, Trusted Shifting Company Proddatur, Goods Transport Services Proddatur.",
+  ogDescription: "Looking for reliable Packers and Movers in Proddatur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Proddatur and across Andhra Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Proddatur by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Proddatur"
+} },
+  { slug: "Hindupur", city: "Hindupur", img: Hindupur, offer: "23%", address: "Hindupur, Lakshmipuram, Hindupuram, Sreekanthapuram Rural, Andhra Pradesh 515201", metaDetails: {
+  title: "Packers and Movers in Hindupur | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Hindupur with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Hindupur and across Andhra Pradesh.",
+  keywords: "Local movers near me Hindupur, Packers and Movers in Hindupur, Gati Shifting Packers Hindupur, Best Packers and Movers Hindupur, Affordable Packers and Movers Hindupur, Trusted Packers and Movers Hindupur Andhra Pradesh, Local Packers and Movers Hindupur, Professional Movers and Packers Hindupur, Home Shifting Services Hindupur, Office Relocation Hindupur, Vehicle Transport Hindupur, Car Transport Service Hindupur, Bike Transport Hindupur, Household Goods Shifting Hindupur, Industrial Packers and Movers Hindupur, Door-to-Door Shifting Services Hindupur, Packing and Unpacking Services Hindupur, Furniture Movers Hindupur, Intercity Packers and Movers Hindupur, Packers and Movers Hindupur to Bangalore, Packers and Movers Hindupur to Vijayawada, Packers and Movers Hindupur to Hyderabad, Packers and Movers Hindupur to Chennai, Packers and Movers Hindupur to Delhi, Packers and Movers Hindupur to Kolkata, Reliable Relocation Company Hindupur, Cost-Effective Packers and Movers Hindupur, Quick Packers and Movers Hindupur, 24x7 Packers and Movers Hindupur, Mini Truck for Shifting Hindupur, Tempo Service Hindupur, Best Relocation Services Hindupur, Safe and Secure Moving Services Hindupur, Budget-Friendly Movers Hindupur, Professional Relocation Company Hindupur, Long-Distance Packers and Movers Hindupur, Trusted Shifting Company Hindupur, Goods Transport Services Hindupur.",
+  ogDescription: "Looking for reliable Packers and Movers in Hindupur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Hindupur and across Andhra Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Hindupur by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Hindupur"
+} },
+  { slug: "Tenali", city: "Tenali", img: Tenali, offer: "23%", address: "Sai Ram Complex, Prakasam Road, Tenali, Guntur, Andhra Pradesh 522201", metaDetails: {
+  title: "Packers and Movers in Tenali | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Tenali with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Tenali and across Andhra Pradesh.",
+  keywords: "Local movers near me Tenali, Packers and Movers in Tenali, Gati Shifting Packers Tenali, Best Packers and Movers Tenali, Affordable Packers and Movers Tenali, Trusted Packers and Movers Tenali Andhra Pradesh, Local Packers and Movers Tenali, Professional Movers and Packers Tenali, Home Shifting Services Tenali, Office Relocation Tenali, Vehicle Transport Tenali, Car Transport Service Tenali, Bike Transport Tenali, Household Goods Shifting Tenali, Industrial Packers and Movers Tenali, Door-to-Door Shifting Services Tenali, Packing and Unpacking Services Tenali, Furniture Movers Tenali, Intercity Packers and Movers Tenali, Packers and Movers Tenali to Vijayawada, Packers and Movers Tenali to Guntur, Packers and Movers Tenali to Hyderabad, Packers and Movers Tenali to Chennai, Packers and Movers Tenali to Bengaluru, Packers and Movers Tenali to Delhi, Packers and Movers Tenali to Kolkata, Reliable Relocation Company Tenali, Cost-Effective Packers and Movers Tenali, Quick Packers and Movers Tenali, 24x7 Packers and Movers Tenali, Mini Truck for Shifting Tenali, Tempo Service Tenali, Best Relocation Services Tenali, Safe and Secure Moving Services Tenali, Budget-Friendly Movers Tenali, Professional Relocation Company Tenali, Long-Distance Packers and Movers Tenali, Trusted Shifting Company Tenali, Goods Transport Services Tenali.",
+  ogDescription: "Looking for reliable Packers and Movers in Tenali? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Tenali and across Andhra Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Tenali by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Tenali"
+} },
+  { slug: "Nandyal", city: "Nandyal", img: Nandyal, offer: "23%", address: "V. C. Calany, 26/605, near school, Telugu Peta, Nandyala, Andhra Pradesh 518502", metaDetails: {
+  title: "Packers and Movers in Nandyal | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Nandyal with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Nandyal and across Andhra Pradesh.",
+  keywords: "Local movers near me Nandyal, Packers and Movers in Nandyal, Gati Shifting Packers Nandyal, Best Packers and Movers Nandyal, Affordable Packers and Movers Nandyal, Trusted Packers and Movers Nandyal Andhra Pradesh, Local Packers and Movers Nandyal, Professional Movers and Packers Nandyal, Home Shifting Services Nandyal, Office Relocation Nandyal, Vehicle Transport Nandyal, Car Transport Service Nandyal, Bike Transport Nandyal, Household Goods Shifting Nandyal, Industrial Packers and Movers Nandyal, Door-to-Door Shifting Services Nandyal, Packing and Unpacking Services Nandyal, Furniture Movers Nandyal, Intercity Packers and Movers Nandyal, Packers and Movers Nandyal to Vijayawada, Packers and Movers Nandyal to Hyderabad, Packers and Movers Nandyal to Chennai, Packers and Movers Nandyal to Bengaluru, Packers and Movers Nandyal to Delhi, Packers and Movers Nandyal to Kolkata, Reliable Relocation Company Nandyal, Cost-Effective Packers and Movers Nandyal, Quick Packers and Movers Nandyal, 24x7 Packers and Movers Nandyal, Mini Truck for Shifting Nandyal, Tempo Service Nandyal, Best Relocation Services Nandyal, Safe and Secure Moving Services Nandyal, Budget-Friendly Movers Nandyal, Professional Relocation Company Nandyal, Long-Distance Packers and Movers Nandyal, Trusted Shifting Company Nandyal, Goods Transport Services Nandyal.",
+  ogDescription: "Looking for reliable Packers and Movers in Nandyal? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Nandyal and across Andhra Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Nandyal by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Nandyal"
+} },
+  { slug: "Adoni", city: "Adoni", img: Adoni, offer: "23%", address: " SRI MAHAYOGI LAKSHMAMMA COMPLEX, beside VBS OIL FACTORY, Vengalapuram, Adoni, D.T, Andhra Pradesh 518301", metaDetails: {
+  title: "Packers and Movers in Adoni | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Adoni with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Adoni and across Andhra Pradesh.",
+  keywords: "Local movers near me Adoni, Packers and Movers in Adoni, Gati Shifting Packers Adoni, Best Packers and Movers Adoni, Affordable Packers and Movers Adoni, Trusted Packers and Movers Adoni Andhra Pradesh, Local Packers and Movers Adoni, Professional Movers and Packers Adoni, Home Shifting Services Adoni, Office Relocation Adoni, Vehicle Transport Adoni, Car Transport Service Adoni, Bike Transport Adoni, Household Goods Shifting Adoni, Industrial Packers and Movers Adoni, Door-to-Door Shifting Services Adoni, Packing and Unpacking Services Adoni, Furniture Movers Adoni, Intercity Packers and Movers Adoni, Packers and Movers Adoni to Vijayawada, Packers and Movers Adoni to Hyderabad, Packers and Movers Adoni to Chennai, Packers and Movers Adoni to Bengaluru, Packers and Movers Adoni to Delhi, Packers and Movers Adoni to Kolkata, Reliable Relocation Company Adoni, Cost-Effective Packers and Movers Adoni, Quick Packers and Movers Adoni, 24x7 Packers and Movers Adoni, Mini Truck for Shifting Adoni, Tempo Service Adoni, Best Relocation Services Adoni, Safe and Secure Moving Services Adoni, Budget-Friendly Movers Adoni, Professional Relocation Company Adoni, Long-Distance Packers and Movers Adoni, Trusted Shifting Company Adoni, Goods Transport Services Adoni.",
+  ogDescription: "Looking for reliable Packers and Movers in Adoni? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Adoni and across Andhra Pradesh.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Adoni by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Adoni"
+} },
+  { slug: "Nepal", city: "Nepal", img: Nepal, offer: "23%", address: "Chatramaharaj Ayurved Center, Near, Kathmandu 44600, Nepal", metaDetails: {
+  title: "Packers and Movers in Nepal | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Nepal with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Nepal and across the country.",
+  keywords: "Local movers near me Nepal, Packers and Movers in Nepal, Gati Shifting Packers Nepal, Best Packers and Movers Nepal, Affordable Packers and Movers Nepal, Trusted Packers and Movers Nepal, Local Packers and Movers Nepal, Professional Movers and Packers Nepal, Home Shifting Services Nepal, Office Relocation Nepal, Vehicle Transport Nepal, Car Transport Service Nepal, Bike Transport Nepal, Household Goods Shifting Nepal, Industrial Packers and Movers Nepal, Door-to-Door Shifting Services Nepal, Packing and Unpacking Services Nepal, Furniture Movers Nepal, Intercity Packers and Movers Nepal, Packers and Movers Nepal to Kathmandu, Packers and Movers Nepal to Pokhara, Packers and Movers Nepal to Biratnagar, Packers and Movers Nepal to Delhi, Packers and Movers Nepal to Kolkata, Reliable Relocation Company Nepal, Cost-Effective Packers and Movers Nepal, Quick Packers and Movers Nepal, 24x7 Packers and Movers Nepal, Mini Truck for Shifting Nepal, Tempo Service Nepal, Best Relocation Services Nepal, Safe and Secure Moving Services Nepal, Budget-Friendly Movers Nepal, Professional Relocation Company Nepal, Long-Distance Packers and Movers Nepal, Trusted Shifting Company Nepal, Goods Transport Services Nepal.",
+  ogDescription: "Looking for reliable Packers and Movers in Nepal? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Nepal.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Nepal by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Nepal"
+} },
+  { slug: "Kollam ", city: "Kollam ", img: Kollam , offer: "23%", address: "Musaliar Buildings Thiruvananthapuram, Panvel - Kochi - Kanyakumari Hwy, near Kollam, Chinnakada, Kollam, Kerala 691001", metaDetails: {
+  title: "Packers and Movers in Kollam | Gati Shifting Packers",
+  description: "Hire trusted Packers and Movers in Kollam with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Kollam and across Kerala.",
+  keywords: "Local movers near me Kollam, Packers and Movers in Kollam, Gati Shifting Packers Kollam, Best Packers and Movers Kollam, Affordable Packers and Movers Kollam, Trusted Packers and Movers Kollam Kerala, Local Packers and Movers Kollam, Professional Movers and Packers Kollam, Home Shifting Services Kollam, Office Relocation Kollam, Vehicle Transport Kollam, Car Transport Service Kollam, Bike Transport Kollam, Household Goods Shifting Kollam, Industrial Packers and Movers Kollam, Door-to-Door Shifting Services Kollam, Packing and Unpacking Services Kollam, Furniture Movers Kollam, Intercity Packers and Movers Kollam, Packers and Movers Kollam to Thiruvananthapuram, Packers and Movers Kollam to Kochi, Packers and Movers Kollam to Kozhikode, Packers and Movers Kollam to Bangalore, Packers and Movers Kollam to Chennai, Reliable Relocation Company Kollam, Cost-Effective Packers and Movers Kollam, Quick Packers and Movers Kollam, 24x7 Packers and Movers Kollam, Mini Truck for Shifting Kollam, Tempo Service Kollam, Best Relocation Services Kollam, Safe and Secure Moving Services Kollam, Budget-Friendly Movers Kollam, Professional Relocation Company Kollam, Long-Distance Packers and Movers Kollam, Trusted Shifting Company Kollam, Goods Transport Services Kollam.",
+  ogDescription: "Looking for reliable Packers and Movers in Kollam? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Kollam and across Kerala.",
+  twitterDescription: "Safe, professional and affordable Packers and Movers in Kollam by Gati Shifting Packers. Book your smooth relocation today!",
+  canonical: "https://gatishiftingpackers.com/city/Kollam"
+} },
 
 
 
@@ -2470,6 +2539,20 @@ export const pagesData = [
   { slug: "Haldwani", city: "Haldwani", img: Haldwani, offer: "23%", address: "Rampur Rd, Haldu Pokhara Nayak, Rampur, Haldwani, Uttarakhand 263139" },
   { slug: "Rudrapur", city: "Rudrapur", img: Rudrapur, offer: "23%", address: "Kalyanpur, Jagatpura, Uttarakhand 263153" },
   { slug: "Kashipur", city: "Kashipur", img: Kashipur, offer: "23%", address: "Police Lines, Rudrapur, Kalyanpur, Uttarakhand 263153" },
+
+
+
+  { slug: "Nainital", city: "Nainital", img: Nainital, offer: "23%", address: "Manpur Rd, Kachnal Gazi, Kashipur, Uttarakhand 244713" },
+  { slug: "Almora", city: "Almora", img: Almora, offer: "23%", address: "Rampur Rd, Haldu Pokhara Nayak, Rampur, Haldwani, Uttarakhand 263139" },
+  { slug: "Mussoorie", city: "Mussoorie", img: Mussoorie, offer: "23%", address: "Haridwar Road, P.O. Harrawala, Kuwan Wala, Dehradun, Uttarakhand 248160" },
+  { slug: "Bareilly", city: "Bareilly", img: Bareilly, offer: "23%", address: "Shop No. 4 & 5, Rajendra Nagar Market, opposite Sheel Hospital, Rajendra Nagar, Bareilly, Uttar Pradesh 243001" },
+  { slug: "Aligarh", city: "Aligarh", img: Aligarh, offer: "23%", address: "G 19, Ramghat Rd, Saraswati Vihar, Phase 1, ADA Colony, Aligarh, Uttar Pradesh 202001" },
+  { slug: "Moradabad", city: "Moradabad", img: Moradabad, offer: "23%", address: "Budh Bazaar Rd, near Post Office, Malviya Nagar, Budh Bazaar, Moradabad, Uttar Pradesh 244001" },
+  { slug: "Saharanpur", city: "Saharanpur", img: Saharanpur, offer: "23%", address: "Khan Alampura, Saharanpur, Uttar Pradesh 247001" },
+  { slug: "Jhansi", city: "Jhansi", img: Jhansi, offer: "23%", address: "Bundelkhand University, National Highway 25, Bundelkhand University, Jhansi, Uttar Pradesh 284128" },
+  { slug: "Mathura", city: "Mathura", img: Mathura, offer: "23%", address: "Farm, Delhi, Near Nayati Hospital, Awagarh, Road Bye Pass, Mathura, Uttar Pradesh 281001" },
+  { slug: "Firozabad", city: "Firozabad", img: Firozabad, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+
 
 
 
