@@ -398,6 +398,20 @@ import Firozabad from "../assets/CityPages/Firozabad.webp"
 
 
 
+import Ayodhya from "../assets/CityPages/Ayodhya.webp"
+import Muzaffarnagar from "../assets/CityPages/Muzaffarnagar.webp"
+import Rajasthan from "../assets/CityPages/Rajasthan.webp"
+import Kakinada from "../assets/CityPages/Kakinada.webp"
+import Dibrugarh from "../assets/CityPages/Dibrugarh.webp"
+import Silchar from "../assets/CityPages/Silchar.webp"
+import Bhilai from "../assets/CityPages/Bhilai.webp"
+import Durg from "../assets/CityPages/Durg.webp"
+import Bilaspur from "../assets/CityPages/Bilaspur.webp"
+import Junagadh from "../assets/CityPages/Junagadh.webp"
+
+
+
+
 
 
 
@@ -2552,6 +2566,20 @@ export const pagesData = [
   { slug: "Jhansi", city: "Jhansi", img: Jhansi, offer: "23%", address: "Bundelkhand University, National Highway 25, Bundelkhand University, Jhansi, Uttar Pradesh 284128" },
   { slug: "Mathura", city: "Mathura", img: Mathura, offer: "23%", address: "Farm, Delhi, Near Nayati Hospital, Awagarh, Road Bye Pass, Mathura, Uttar Pradesh 281001" },
   { slug: "Firozabad", city: "Firozabad", img: Firozabad, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+
+
+
+  { slug: "Ayodhya", city: "Ayodhya", img: Ayodhya, offer: "23%", address: "Shop No 41, Girls Degree Collage In front of Gomti Hospital Faizabad (AYODHYA) - 224001" },
+  { slug: "Muzaffarnagar", city: "Muzaffarnagar", img: Muzaffarnagar, offer: "23%", address: "Meerut Rd, Santosh Vihar, Civil Lines South, Muzaffarnagar, Uttar Pradesh 251001" },
+  { slug: "Rajasthan", city: "Rajasthan", img: Rajasthan, offer: "23%", address: "PREM SAGAR, near SUBH VILLA SOCIETY, Bhakrota, Jaipur, Rajasthan 302026" },
+  { slug: "Kakinada", city: "Kakinada", img: Kakinada, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Dibrugarh", city: "Dibrugarh", img: Dibrugarh, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Silchar", city: "Silchar", img: Silchar, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Bhilai", city: "Bhilai", img: Bhilai, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Durg", city: "Durg", img: Durg, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Bilaspur", city: "Bilaspur", img: Bilaspur, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Junagadh", city: "Junagadh", img: Junagadh, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+
 
 
 
