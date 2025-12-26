@@ -410,7 +410,16 @@ import Bilaspur from "../assets/CityPages/Bilaspur.webp"
 import Junagadh from "../assets/CityPages/Junagadh.webp"
 
 
-
+import Bhavnagar from "../assets/CityPages/Bhavnagar.webp" 
+import Nadiad from "../assets/CityPages/Nadiad.webp" 
+import Hisar from "../assets/CityPages/Hisar.webp" 
+import Panipat from "../assets/CityPages/Panipat.webp" 
+import Rohtak from "../assets/CityPages/Rohtak.webp" 
+import Yamunanagar from "../assets/CityPages/Yamunanagar.webp" 
+import Karnal from "../assets/CityPages/Karnal.webp" 
+import Dhanbad from "../assets/CityPages/Dhanbad.webp" 
+import Hazaribagh from "../assets/CityPages/Hazaribagh.webp" 
+import Bokaro from "../assets/CityPages/Bokaro Steel City.webp" 
 
 
 
@@ -2579,6 +2588,20 @@ export const pagesData = [
   { slug: "Durg", city: "Durg", img: Durg, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
   { slug: "Bilaspur", city: "Bilaspur", img: Bilaspur, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
   { slug: "Junagadh", city: "Junagadh", img: Junagadh, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+
+
+
+  { slug: "Bhavnagar", city: "Bhavnagar", img: Bhavnagar, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Nadiad", city: "Nadiad", img: Nadiad, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Hisar", city: "Hisar", img: Hisar, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Panipat", city: "Panipat", img: Panipat, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Rohtak", city: "Rohtak", img: Rohtak, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Yamunanagar", city: "Yamunanagar", img: Yamunanagar, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Karnal", city: "Karnal", img: Karnal, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Dhanbad", city: "Dhanbad", img: Dhanbad, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Hazaribagh", city: "Hazaribagh", img: Hazaribagh, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
+  { slug: "Bokaro Steel City", city: "Bokaro Steel City", img: Bokaro, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" }
+
 
 
 

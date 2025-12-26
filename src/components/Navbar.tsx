@@ -178,10 +178,10 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
 
 
 
-      <section id='christmas-theme'>
+      {/* <section id='christmas-theme'>
         <div className='particle'></div>
         <div className='particle2'></div>
-      </section>
+      </section> */}
     </>
   );
 };

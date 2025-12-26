@@ -60,8 +60,8 @@ const Services = ({successCondition} : props) => {
 
             <Helmet>
 
-                <title>Our Services | Gati Shifting Packers</title>
-                <meta name="description" content="Explore Gati Shifting Packers services including home shifting, office relocation, vehicle transport, and customized packing solutions across India. Get estimated charges for your move." />
+                <title>Gati packers and movers services| Gati Shifting packers</title>
+                <meta name="description" content="Explore Gati Packers and Movers services including home shifting, office relocation, vehicle transport, and customized packing solutions across India. Get estimated charges for your move." />
                 <meta name="keywords" content="Gati services, packers and movers charges, relocation services India, house shifting cost, office moving, vehicle transport" />
                 <meta name="robots" content="index, follow" />
 
