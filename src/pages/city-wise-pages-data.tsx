@@ -2600,7 +2600,7 @@ export const pagesData = [
   { slug: "Karnal", city: "Karnal", img: Karnal, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
   { slug: "Dhanbad", city: "Dhanbad", img: Dhanbad, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
   { slug: "Hazaribagh", city: "Hazaribagh", img: Hazaribagh, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" },
-  { slug: "Bokaro Steel City", city: "Bokaro Steel City", img: Bokaro, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" }
+  { slug: "Bokaro-Steel-City", city: "Bokaro Steel City", img: Bokaro, offer: "16%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203" }
 
 
 
