@@ -6,7 +6,7 @@ header {
     top: 0;
     display: flex;
     flex-direction: column;
-    // background: #fff;
+    background: #fff;
 
 
 
@@ -52,7 +52,7 @@ header {
                 align-items: center;
 
                 img {
-                    width: 110px;
+                    width: 100px;
                 }
             }
         }
@@ -171,22 +171,22 @@ header.diwali {
     }
 }
 
-@media screen and (max-width: 1141px) {
-    header.diwali{
-        nav{
-            .logo{
-                img{
-                    width: 100px;
-                }
-            }
-        }
-    }
-}
+// @media screen and (max-width: 1141px) {
+//     header.diwali{
+//         nav{
+//             .logo{
+//                 img{
+//                     width: 90px;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 @media screen and (max-width: 1101px) {
     header {
         .top-area {
-            padding: 7px;
+            padding: 5px;
             background: #4FCE5D;
 
             a {
@@ -214,7 +214,7 @@ header.diwali {
             .logo {
                 a {
                     img {
-                        width: 90px;
+                        width: 80px;
                     }
 
                 }
@@ -242,7 +242,7 @@ header.diwali {
             ul.active {
                 max-height: 468px;
                 padding: 5px 0;
-                box-shadow: 0 5px 20px #00000063;
+                box-shadow: 0 20px 20px #00000063;
                 // overflow: visible;
             }
 
@@ -271,8 +271,18 @@ header.diwali {
         }
     }
 
-    header nav .logo img {
-        width: 80px;
+    header {
+        nav {
+            .logo {
+                a{
+
+                img {
+                    width: 70px;
+                }
+                }
+            }
+
+        }
     }
 
     header nav .get-in-touch-btns a {
@@ -356,6 +366,7 @@ header.diwali {
         background-size: cover;
         background-position: center;
     }
+
     .particle {
         position: absolute;
         top: 0;
@@ -365,7 +376,7 @@ header.diwali {
         background: url("../assets/diwaliTheme/particles.png");
         background-size: cover;
 
-        animation: fall 10s linear infinite;
+        animation: fall 15s linear infinite;
 
         @keyframes fall {
             0% {
@@ -387,7 +398,7 @@ header.diwali {
         background: url("../assets/diwaliTheme/particles.png");
         background-size: cover;
 
-        animation: fall2 10s linear infinite;
+        animation: fall2 15s linear infinite;
         // animation-delay: 5s;
 
         @keyframes fall2 {
@@ -407,7 +418,8 @@ header.diwali {
     .santaClouse {
         width: 100px;
     }
-    .tree{
+
+    .tree {
         width: 100px;
     }
 }

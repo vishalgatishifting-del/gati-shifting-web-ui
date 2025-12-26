@@ -20,14 +20,11 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ContactForm from './ContactForm';
 
-// import Logo from "../assets/logo2.webp";
-import Logo from "../assets/diwaliTheme/christmasLogo.png";
+import Logo from "../assets/logo2.webp";
+// import Logo from "../assets/diwaliTheme/christmasLogo.png";
 import whatsappIcon from "../assets/whatsappIcon.jpg";
 import callIcon from "../assets/call.webp";
 import gmailIcon from "../assets/gmailIcon.webp";
-
-import christmasTree from "../assets/diwaliTheme/christmasTree.png"
-import santaClouse from "../assets/diwaliTheme/santaClouse.png"
 
 interface NavbarProps {
   open: boolean;
@@ -53,7 +50,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
 
   return (
     <>
-      <header className='diwali'>
+      <header >
         <div className="top-area">
           <a className='phone' href="tel:+919422799477">
             <LocalPhoneIcon />
@@ -181,15 +178,9 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
 
 
 
-        <img className='santaClouse' src={santaClouse} />
-        <img className='tree' src={christmasTree} />
       <section id='christmas-theme'>
-        <div className='particle'>
-
-        </div>
-        
+        <div className='particle'></div>
         <div className='particle2'></div>
-        <div className='gifts'></div>
       </section>
     </>
   );
