@@ -26,6 +26,16 @@ import whatsappIcon from "../assets/whatsappIcon.jpg";
 import callIcon from "../assets/call.webp";
 import gmailIcon from "../assets/gmailIcon.webp";
 
+
+
+
+
+
+
+
+// Pngs For New Year Theme
+import starPng from "../assets/Themes/NewYear/star.png"
+
 interface NavbarProps {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -50,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
 
   return (
     <>
-      <header >
+      <header className='newYearTheme'>
         <div className="top-area">
           <a className='phone' href="tel:+919422799477">
             <LocalPhoneIcon />
@@ -176,6 +186,15 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
         </a>
       </div>
 
+
+    <section>
+      <div className='star1'>
+        <img src={starPng} />
+      </div>
+      <div className='star2'>
+        <img src={starPng} />
+      </div>
+    </section>
 
 
       {/* <section id='christmas-theme'>

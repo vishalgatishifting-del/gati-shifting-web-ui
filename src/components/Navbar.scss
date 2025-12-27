@@ -424,3 +424,32 @@ header.diwali {
         width: 100px;
     }
 }
+
+
+
+
+.newYearTheme{
+    nav{
+        background: url("../assets/Themes/NewYear/navBG.png");
+    }
+}
+.star1, .star2{
+    position: fixed;
+    z-index: 1;
+    top: -100px;
+
+    img{
+        width: 160px;
+    }
+}
+.star2{
+    right: 0%;
+}
+@media screen and (max-width: 660px) {
+    .star1, .star2{
+        top: -30px;
+        img{
+            width: 100px;
+        }
+    }
+}
