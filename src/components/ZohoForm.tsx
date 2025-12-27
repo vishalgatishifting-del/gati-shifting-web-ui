@@ -133,8 +133,8 @@ const ZohoForm: React.FC<props> = ({ successCondition }) => {
               onClick={() =>
                 setFormData({
                   Name: '',
-                  Email: '',
                   Phone: '',
+                  Email: '',
                   From: '',
                   To: '',
                   Goods: ''

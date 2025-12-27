@@ -1,8 +1,27 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
+import "./Home.scss"
+
+
 import Slider from "react-slick";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
+
 import { Box } from "@mui/material";
 import Avatar from '@mui/material/Avatar';
-import "./Home.scss"
+
+
+// Main Slider Images
+import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
+import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
+import gatiSlider4 from "../assets/sliderImg/gatislider4.webp"
+import gatislider5 from "../assets/sliderImg/gatislider5.webp";
+import gatislider6 from "../assets/sliderImg/gatislider6.webp";
+
+
+
+// Icons for shipping category
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import DirectionsCarFilledIcon from '@mui/icons-material/DirectionsCarFilled';
 import WarehouseIcon from '@mui/icons-material/Warehouse';
@@ -10,42 +29,26 @@ import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
 import LanguageIcon from '@mui/icons-material/Language';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import FactoryIcon from '@mui/icons-material/Factory';
-import stepsImg from "../assets/5-steps-banner.png";
-import { Helmet } from "react-helmet-async";
-import DescriptionIcon from '@mui/icons-material/Description';
-import HandshakeIcon from '@mui/icons-material/Handshake';
-import BalanceIcon from '@mui/icons-material/Balance';
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
-import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
-import gatiSlider4 from "../assets/sliderImg/gatislider4.webp"
-import gatislider5 from "../assets/sliderImg/gatislider5.webp";
-import gatislider6 from "../assets/sliderImg/gatislider6.webp";
-
-import FAQList from "../components/FAQList";
-import OfficeLocation from "../components/OfficeLocation";
-// import axios from "axios";
-import GetInTouch from "../components/GetInTouch";
-// import AwardCertification from "../components/AwardCertification";
-import TrustUsSection from "../components/TrustUsSection";
-import ReviewVideo from "../components/ReviewVideos";
-
-// import emailjs from 'emailjs-com';
-// import { sendEmail } from "../utils/emailHelper";
-// import CircularProgress from '@mui/material/CircularProgress';
-// import ReCAPTCHA from "react-google-recaptcha"
-// import { getUserSource } from "../utils/sourceTracker";
-
-// import Captcha from "../components/Captcha";
 
 
+import ZohoForm from "../components/ZohoForm"   // Form Component
+
+
+
+import justDialCertificateImg from "../assets/homePagePng/justDialCertificate.png"
+import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.png"
+import incorporationCertificate from "../assets/homePagePng/incorporationCertificate.png"
+import GSTIncorporation from "../assets/homePagePng/GSTCertificate.png"
+
+
+// CountDown Section PNG
 import truckPng from "../assets/homePagePng/Gemini_Generated_Image_2zntak2zntak2znt.png"
 import cityPng from "../assets/homePagePng/Gemini_Generated_Image_lfceqflfceqflfce.png"
 import verifiedBadgePng from "../assets/homePagePng/Gemini_Generated_Image_seeh1bseeh1bseeh.png"
 import peoplesPng from "../assets/homePagePng/Gemini_Generated_Image_lrzvt4lrzvt4lrzv.png"
 
 
+// Feature Slider Images
 import feature1Img from "../assets/homePagePng/feature1.jpg"
 import feature2Img from "../assets/homePagePng/feature2.jpg"
 import feature3Img from "../assets/homePagePng/feature3.jpg"
@@ -74,34 +77,36 @@ import feature25Img from "../assets/homePagePng/feature25.jpg"
 import feature26Img from "../assets/homePagePng/feature26.jpeg"
 import feature27Img from "../assets/homePagePng/feature27.png"
 
-import ZohoForm from "../components/ZohoForm"
 
-import justDialCertificateImg from "../assets/homePagePng/justDialCertificate.png"
-import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.png"
-import incorporationCertificate from "../assets/homePagePng/incorporationCertificate.png"
-import GSTIncorporation from "../assets/homePagePng/GSTCertificate.png"
+// Steps Section Icons
+import DescriptionIcon from '@mui/icons-material/Description';
+import HandshakeIcon from '@mui/icons-material/Handshake';
+import BalanceIcon from '@mui/icons-material/Balance';
+
+
+// Components
+import ReviewVideo from "../components/ReviewVideos";
+import GetInTouch from "../components/GetInTouch";
+import OfficeLocation from "../components/OfficeLocation";
+import TrustUsSection from "../components/TrustUsSection";
+import FAQList from "../components/FAQList";
+
 
 import ProductImageSlider from "../components/PackingImageSlider"
 import Counter from "../components/Counter";
 
 
+import stepsImg from "../assets/5-steps-banner.png";
 
 
 // import { IFaqItem } from "../models/App.model";
 // import { AppConstant } from "../constants/app.constant";
 
-
-// declare global {
-//     interface Window {
-//         gtag: (...args: any[]) => void;
-//     }
-// }
-interface props{
+interface props {
     successCondition: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const Home: React.FC<props> = ({successCondition}) => {
+const Home: React.FC<props> = ({ successCondition }) => {
 
-    // const captchaRef = useRef<{ validate: () => boolean }>(null);
 
     const images = [gatiSlider2, gatiSlider3, gatiSlider4, gatislider5, gatislider6];
 
@@ -174,111 +179,24 @@ const Home: React.FC<props> = ({successCondition}) => {
     const [to, setTo] = useState("To");
     const [type, setType] = useState("Goods Type (e.g., Household, Furniture)");
     const [activeBtn, setActiveBtn] = useState("Domestic Moving");
-    console.log(from)
-    console.log(to)
-    console.log(type)
-
-    // interface FormData {
-    //     name: string;
-    //     email1: string;
-    //     phone_office: string;
-    //     pickup_location_c: string;
-    //     drop_location_c: string;
-    //     service_detail_c: string;
-    //     goods_type_c: string;
-    // }
-
-    // const [formData, setFormData] = useState<FormData>({
-    //     name: "",
-    //     email1: "",
-    //     phone_office: "",
-    //     pickup_location_c: "",
-    //     drop_location_c: "",
-    //     service_detail_c: "",
-    //     goods_type_c: text
-    // });
+    console.log(from, to, type)
 
 
-
-    // const [loading, setLoading] = useState(false);
-    // const [success, setSuccess] = useState("");
-    // const recaptchaRef = useRef<any>(null); // 👈 Ref banaya
-
-
-    // const handleChange = (
-    //     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-    // ) => {
-    //     setFormData({ ...formData, [e.target.name]: e.target.value });
-    // };
-
-
-
-    // const handleSubmit = async (e: React.FormEvent) => {
-    //     e.preventDefault();
-    //     const isCaptchaValid = captchaRef.current?.validate();
-    //     console.log(isCaptchaValid)
-    //     if (!isCaptchaValid) {
-    //         alert("Incorrect Recaptcha");
-    //         return;
-    //     }
-    //     setLoading(true);
-    //     setSuccess("");
-
-    //     // Yaha updated object banao
-    //     const updatedData = { ...formData, goods_type_c: text };
-
-    //     console.log("Final goods_type_c:", updatedData.goods_type_c);
-
-    //     const jsonParam = JSON.stringify(updatedData);
-
-    //     const body = new FormData();
-    //     body.append("user", "admin_user");
-    //     body.append("pass", "p8mju5dnk");
-    //     body.append("url", "https://icrmondemand.com/wellnect");
-    //     body.append("module_name", "Enqu1_Enquiry1");
-    //     body.append("jsonParam", jsonParam);
-
-    //     try {
-    //         const apiUrl = "https://icrmondemand.com/wellnect/index.php?entryPoint=CreateEnquiryAPI";
-
-    //         await axios.post(apiUrl, body);
-    //         const userSource = getUserSource();
-    //         const templateParams = {
-    //             name: formData.name,
-    //             email: formData.email1,
-    //             phone: formData.phone_office,
-    //             pickup_location: formData.pickup_location_c,
-    //             drop_location: formData.drop_location_c,
-    //             service_detail: formData.service_detail_c,
-    //             good_type: formData.goods_type_c,
-    //             userSource: userSource
-    //         };
-    //         sendEmail(templateParams)
-    //         gtag('event', 'conversion', {
-    //             'send_to': 'AW-17573064597/5JeFCIznu74bEJXfvrtB',
-    //             'value': 1.0,
-    //             'currency': 'INR'
-    //         });
-    //         setSuccess("Form successfully submitted!");
-
-    //         setFormData({
-    //             name: "",
-    //             email1: "",
-    //             phone_office: "",
-    //             pickup_location_c: "",
-    //             drop_location_c: "",
-    //             service_detail_c: "",
-    //             goods_type_c: text, // reset with current tab
-    //         });
-    //         recaptchaRef.current?.reset();
-
-    //     } catch (error) {
-    //         console.error("Error submitting form:", error);
-    //         setSuccess("Error submitting form. Try again!");
-    //     } finally {
-    //         setLoading(false);
-    //     }
-    // };
+    const keywords = ["gati packers and movers",
+        "movers near me",
+        "moving company",
+        "packers and movers near me",
+        "local movers",
+        "moving services",
+        "moving companies near me",
+        "home shifting services",
+        "office shifting services",
+        "interstate packers and movers",
+        "vehicle transportation services",
+        "packing and unpacking services",
+        "best packers and movers",
+        "cheap packers and movers",
+        "packers and movers in delhi"]
 
 
     return (
@@ -408,33 +326,13 @@ const Home: React.FC<props> = ({successCondition}) => {
 
                         <h3>Get a free <span>{text}</span> Quote</h3>
                         <i>We’ll call you within 15 minutes</i>
-                        {/* <ReCAPTCHA
-                                ref={recaptchaRef}
-                                sitekey="6LfaOf4rAAAAAGZBXvb01FTAtYQoh0UXm4ChBDHV"
-                                onChange={(value: string | null) => setCaptchaValue(value)}
-                            /> */}
-                            
                         <ZohoForm successCondition={successCondition}></ZohoForm>
-                        {/* <form>
-                            <input type="text" placeholder="Full Name*" name="name" onChange={handleChange} value={formData.name} required />
-                            <input type="text" placeholder="Mobile No*" name="phone_office" onChange={handleChange} value={formData.phone_office} required />
-                            <input type="text" placeholder="Email ID" name="email1" onChange={handleChange} value={formData.email1} required />
-                            <input type="text" placeholder={from} name="pickup_location_c" onChange={handleChange} value={formData.pickup_location_c} required />
-                            <input type="text" placeholder={to} name="drop_location_c" onChange={handleChange} value={formData.drop_location_c} required />
-                            <input type="text" placeholder={type} name="service_detail_c" onChange={handleChange} value={formData.service_detail_c} required />
-                         
-                        </form>
-                        <Captcha ref={captchaRef} />
-                        <button onClick={handleSubmit} className="form-submit-btn" type="submit" disabled={loading}>
-                            {loading ? <CircularProgress size="30px" /> : "Get Free Quote"}
-                        </button>
-                        <span className="success-msg">{success && <p>{success}</p>}</span> */}
                     </div>
                 </div>
             </motion.div>
 
             <section id="certificate-section">
-            <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1>
+                <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1>
                 <div className="container">
                     <div className="card">
                         <a href={justDialCertificateImg} className="hidden" target="_blank">
@@ -447,51 +345,47 @@ const Home: React.FC<props> = ({successCondition}) => {
                         <a href={MSMECertificateImg} className="hidden" target="_blank">
                             Click To View
                         </a>
-                         <img src={MSMECertificateImg} />
+                        <img src={MSMECertificateImg} />
                         <h3>MSME Ceritificate</h3>
                     </div>
                     <div className="card">
                         <a href={incorporationCertificate} className="hidden" target="_blank">
                             Click To View
                         </a>
-                         <img src={incorporationCertificate} />
+                        <img src={incorporationCertificate} />
                         <h3>Incorporation Certificate</h3>
                     </div>
                     <div className="card">
                         <a href={GSTIncorporation} className="hidden" target="_blank">
                             Click To View
                         </a>
-                         <img src={GSTIncorporation} />
+                        <img src={GSTIncorporation} />
                         <h3>GST Certificate</h3>
                     </div>
                 </div>
             </section>
 
-            
+
             <section id="counter-section">
                 <div className="container">
                     <div className="card">
                         <img src={truckPng} />
                         <Counter end={1032858} suffix="+" />
-                        {/* <h1>1,032,858+</h1> */}
                         <p>Homes Moved</p>
                     </div>
                     <div className="card">
                         <img src={cityPng} />
                         <Counter end={600} suffix="+" />
-                        {/* <h1>600+</h1> */}
                         <p>Cities Covered</p>
                     </div>
                     <div className="card">
                         <img src={verifiedBadgePng} />
                         <Counter end={3548} suffix="+" />
-                        {/* <h1>3,548+</h1> */}
                         <p>Verified Professionals</p>
                     </div>
                     <div className="card">
                         <img src={peoplesPng} />
                         <Counter end={99} suffix="%" />
-                        {/* <h1>99%</h1> */}
                         <p>Satisfied Customers</p>
                     </div>
                 </div>
@@ -513,23 +407,7 @@ const Home: React.FC<props> = ({successCondition}) => {
                 </div>
             </section>
 
-             <ProductImageSlider images={sliderImages}></ProductImageSlider> 
-            {/* <section id="feature-section">
-                <div className="container">
-                    <div className="imgBx">
-                        <img src={feature1Img} />
-                    </div>
-                    <div className="imgBx">
-                        <img src={feature2Img} />
-                    </div>
-                    <div className="imgBx">
-                        <img src={feature3Img} />
-                    </div>
-                    <div className="imgBx">
-                        <img src={feature4Img} />
-                    </div>
-                </div>
-            </section> */}
+            <ProductImageSlider images={sliderImages}></ProductImageSlider>
 
 
             <ReviewVideo></ReviewVideo>
@@ -572,7 +450,6 @@ const Home: React.FC<props> = ({successCondition}) => {
 
             <GetInTouch></GetInTouch>
             <OfficeLocation />
-            {/* <AwardCertification></AwardCertification> */}
             <TrustUsSection />
 
 
@@ -806,6 +683,14 @@ const Home: React.FC<props> = ({successCondition}) => {
             </section>
 
             <FAQList></FAQList>
+            <section id="keywords-section">
+                <h1>People also search for these Queries</h1>
+                <div className="container">
+                    {keywords.map((col) => {
+                        return <h5 className="keyword">{col}</h5>
+                    })}
+                </div>
+            </section>
         </>
     )
 }
