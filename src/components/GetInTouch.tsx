@@ -20,7 +20,7 @@ const GetInTouch = () => {
                 </div>
                 <div className="details">
                     <h1>Get In Touch</h1>
-                    <p>For reliable shifting services across India, choose Gati House Shifting Packers & Movers. We provide door-to-door transport and affordable logistics solutions.</p>
+                    <p>For reliable shifting services across India, choose Gati Shifting Packers PVT LTD. We provide door-to-door transport and affordable logistics solutions.</p>
 
                     <ul>
                         <li><CallIcon></CallIcon> <span>+91 9422799477</span></li>
