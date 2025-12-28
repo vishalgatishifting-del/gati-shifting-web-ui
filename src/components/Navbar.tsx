@@ -28,6 +28,15 @@ import gmailIcon from "../assets/gmailIcon.webp";
 
 
 
+import PinterestIcon from '@mui/icons-material/Pinterest';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+
+
+
 
 
 
@@ -70,7 +79,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
             <EmailIcon />
             <span>gatishiftingpackers@gmail.com</span>
           </a>
-          <a  className="whatsapp" href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer">
+          <a className="whatsapp" href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer">
             <WhatsAppIcon />
             <span><span className='no'>Click to </span>Chat Now</span>
           </a>
@@ -170,7 +179,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
           </Button>
         </DialogActions>
         <DialogContent sx={{ padding: '0 !important' }}>
-          <ContactForm closeControl={handleClose} showDetail={false}  successCondition={successCondition} />
+          <ContactForm closeControl={handleClose} showDetail={false} successCondition={successCondition} />
         </DialogContent>
       </Dialog>
 
@@ -186,15 +195,25 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
         </a>
       </div>
 
+      <div className="social-button">
 
-    <section>
-      <div className='star1'>
-        <img src={starPng} />
+        <a href="https://www.instagram.com/gati_shifting_packers_pvt_ltd/profilecard/?igsh=eXYzY25mYXkyNG05"><InstagramIcon className='icon'></InstagramIcon></a>
+        <a href="https://www.facebook.com/share/1CZTDwNPWw/"><FacebookIcon className='icon'></FacebookIcon></a>
+        <a href="https://x.com/gati_shifting"><XIcon className='icon'></XIcon></a>
+        <a href="https://www.linkedin.com/in/gati-shifting-6878bb377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><LinkedInIcon className='icon'></LinkedInIcon></a>
+        <a href="https://youtube.com/@gatishifting-moves?si=Lz283_yPnXuNCkQW"><YouTubeIcon className='icon'></YouTubeIcon></a>
+        <a href="https://in.pinterest.com/infogatishiftingpackers"><PinterestIcon className='icon'></PinterestIcon></a>
       </div>
-      <div className='star2'>
-        <img src={starPng} />
-      </div>
-    </section>
+
+
+      <section>
+        <div className='star1'>
+          <img src={starPng} />
+        </div>
+        <div className='star2'>
+          <img src={starPng} />
+        </div>
+      </section>
 
 
       {/* <section id='christmas-theme'>
