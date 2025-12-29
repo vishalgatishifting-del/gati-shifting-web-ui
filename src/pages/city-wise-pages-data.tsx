@@ -434,6 +434,13 @@ import Amritsar from "../assets/CityPages/Amritsar.webp"
 import Jalandhar from "../assets/CityPages/Jalandhar.webp"
 import Patiala from "../assets/CityPages/Patiala.webp"
 
+import Bathinda from "../assets/CityPages/Bathinda.webp"
+import Jodhpur from "../assets/CityPages/Jodhpur.webp"
+import Kota from "../assets/CityPages/Kota.webp"
+import Ajmer from "../assets/CityPages/Ajmer.webp"
+import Udaipur from "../assets/CityPages/Udaipur.webp"
+import Agartala from "../assets/CityPages/Agartala.webp"
+
 
 
 export const pagesData = [
@@ -2770,9 +2777,11 @@ export const pagesData = [
 
 
 
-
-
-
-
+  { slug: "Bathinda", city: "Bathinda", img: Bathinda, offer: "16%", address: "Shop No - 12, Hopnext Wellness, SCO No.14, 2nd Floor, Bibi Wala Road, Bathinda, Punjab." },
+  { slug: "Jodhpur", city: "Jodhpur", img: Jodhpur, offer: "16%", address: "Shop No - 504 - near Mahatma Gandhi Hospital, Jodhpur, Rajasthan" },
+  { slug: "Kota", city: "Kota", img: Kota, offer: "16%", address: "Plot No 07, Near Government Hospital, Kota, Rajasthan" },
+  { slug: "Ajmer", city: "Ajmer", img: Ajmer, offer: "16%", address: "Shop No 133, Near Ana Sagar Rd, Ajmer, Rajasthan" },
+  { slug: "Udaipur", city: "Udaipur", img: Udaipur, offer: "16%", address: "Shop No 107, Near City Palace Rd, Udaipur, Rajasthan" },
+  { slug: "Agartala", city: "Agartala", img: Agartala, offer: "16%", address: "Shop No 9, Malancha Nagar, near Sonali Guest House, Kunjaban, Agartala, Tripura 799006" },
 
 ];
