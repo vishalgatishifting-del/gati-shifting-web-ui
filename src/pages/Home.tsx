@@ -332,7 +332,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
             </motion.div>
 
             <section id="certificate-section">
-                <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1>
+                {/* <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1> */}
                 <div className="container">
                     <div className="card">
                         <a href={justDialCertificateImg} className="hidden" target="_blank">
@@ -396,13 +396,14 @@ const Home: React.FC<props> = ({ successCondition }) => {
                     {/* <img src={whyGatiImg} /> */}
                 </div>
                 <div className="text-bx">
-                    <h1>Moving Services by Gati Shifting Packers</h1>
+                    <h1>Moving Services by <span className="primary-color">Gati Shifting Packers</span></h1>
                     <p>
-                        Gati House Shifting Packers Movers are always ready to help make the moving and packing experience excellent, more efficient and easier for you and your family. Just sit back, chill out and know that you are in safe hands!
+                        Gati Shifting Packers PVT LTD. are always ready to help make the moving and packing experience excellent, more efficient and easier for you and your family. Just sit back, chill out and know that you are in safe hands!
+                        </p>
 
-                        Relocating to a new place can be a tiring and difficult process. There are many things to arrange and pack, including heavy furniture, electrical appliances and fragile and valuable antique items.
+                        <p>Relocating to a new place can be a tiring and difficult process. There are many things to arrange and pack, including heavy furniture, electrical appliances and fragile and valuable antique items.</p>
 
-                        Gati House Shifting's goal is to make your relocating experience as trouble-free as possible. Let us manage all of the difficult work. Our job is to be sure that your shifting is complete on time, every time.
+                       <p> Gati Shifting Packers's goal is to make your relocating experience as trouble-free as possible. Let us manage all of the difficult work. Our job is to be sure that your shifting is complete on time, every time.
                     </p>
                 </div>
             </section>
@@ -459,8 +460,8 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         <img src={stepsImg} alt="Gati relocation services including packing and unpacking, loading and unloading, secure transportation with GPS vehicles, car and bike relocation, transit insurance, storage, warehousing, and all-in-one transport solutions" title="Steps" loading="lazy" />
                     </div>
                     <div className="detail">
-                        <h2>About Us | Comprehensive Moving Solutions by Gati Packers and Movers in India</h2>
-                        <p>At Gati Packers and Movers, we specialize in delivering seamless and stress-free relocation experiences across India. With years of expertise and a client-first approach, we offer customized moving solutions that cater to individual, commercial, and industrial relocation needs.</p>
+                        <h2>About Us | Comprehensive Moving Solutions by <span className="primary-color">Gati Shifting Packers</span> in India</h2>
+                        <p>At Gati Shifting Packers, we specialize in delivering seamless and stress-free relocation experiences across India. With years of expertise and a client-first approach, we offer customized moving solutions that cater to individual, commercial, and industrial relocation needs.</p>
                         <ul>
                             <li>
                                 <b>Packing & Unpacking:</b> Professional-grade packing using high-quality materials to ensure every item is protected. Unpacking is done with equal care at your new destination.

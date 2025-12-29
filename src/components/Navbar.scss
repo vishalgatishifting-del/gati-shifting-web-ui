@@ -333,7 +333,7 @@ header.diwali {
 
 .social-button {
     position: fixed;
-    left: 1%;
+    left: 1.4285714286em;
     // bottom: 3.7%;
     bottom: 1.4285714286em;
     display: flex;
@@ -377,6 +377,17 @@ header.diwali {
             height: 50px;
             .icon{
                 font-size: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 347px) {
+    .social-button {
+        a{
+            width: 35px;
+            height: 50px;
+            .icon{
+                font-size: 18px;
             }
         }
     }

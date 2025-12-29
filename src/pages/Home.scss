@@ -2,6 +2,11 @@
 @import "slick-carousel/slick/slick-theme.css";
 @import "../style/variables";
 
+
+.primary-color {
+    color: $primary-color;
+}
+
 .sliderBox {
     border-radius: 40px;
     // margin: 20px;
@@ -259,7 +264,7 @@
 
 #company-description {
     margin-top: 50px;
-    padding: 10px;
+    padding: 30px;
     @include font-poppins-sans(400);
 
     .img-bx {
@@ -276,12 +281,24 @@
         text-align: center;
         padding: 50px;
 
+        h1 {
+            margin-bottom: 20px;
+        }
+
         p {
             color: #4b5563;
+            font-size: 14px;
         }
     }
 
 }
+
+@media screen and (max-width:580px) {
+    #company-description {
+        padding: 10px;
+    }
+}
+
 
 #steps-section {
     background: linear-gradient(20deg, #12337a, #0a1a3c, #000);
@@ -369,6 +386,10 @@
         ul {
             color: #4b5563;
             font-size: 15px;
+
+            li {
+                margin: 10px 0;
+            }
         }
     }
 }
