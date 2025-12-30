@@ -425,6 +425,7 @@ header.diwali {
 @media screen and (max-width: 345px) {
     .social-button {
         bottom: 2.028571em;
+
         a {
             margin: 0 3px;
             width: 30px;
@@ -537,10 +538,18 @@ header.diwali {
 
 
 
+.crackers-png {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
 .newYearTheme {
-    nav {
-        background: url("../assets/Themes/NewYear/navBG.png");
-    }
+    background: url("../assets/Themes/NewYear/navBGcrackers.png") #fff;
+    background-size: cover;
+    background-position: center;
 }
 
 .star1,
