@@ -333,17 +333,14 @@ header.diwali {
 
 .social-button {
     position: fixed;
-    left: 1.4285714286em;
+    left: 0.9em;
     // bottom: 3.7%;
     bottom: 1.4285714286em;
     display: flex;
-    border-radius: 50px;
-    overflow: hidden;
     z-index: 100;
-    background: #414141;
-    box-shadow: 0 5px 38px rgba(0, 0, 0, 0.15);
 
     a {
+        margin: 0 5px;
         width: 50px;
         height: 50px;
         font-size: 30px;
@@ -351,12 +348,38 @@ header.diwali {
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 50px;
+        box-shadow: 0 5px 38px rgba(0, 0, 0, 0.15);
 
         .icon {
             font-size: 23px;
         }
     }
-    
+
+    a.social-link-insta {
+        background: #E4405F;
+    }
+
+    a.social-link-facebook {
+        background: #1877F2;
+    }
+
+    a.social-link-x {
+        background: #1DA1F2;
+    }
+
+    a.social-link-linkedin {
+        background: #0A66C2;
+    }
+
+    a.social-link-youtube {
+        background: #CD201F;
+    }
+
+    a.social-link-pinterest {
+        background: #BD081C;
+    }
+
 
 }
 
@@ -369,30 +392,50 @@ header.diwali {
 // }
 
 
-@media screen and (max-width: 407px) {
+@media screen and (max-width: 488px) {
     .social-button {
+        bottom: 1.828571em;
+
         // left: 3%;
-        a{
+        a {
             width: 40px;
-            height: 50px;
-            .icon{
+            height: 40px;
+
+            .icon {
                 font-size: 20px;
             }
         }
     }
 }
-@media screen and (max-width: 347px) {
+
+@media screen and (max-width: 400px) {
     .social-button {
-        a{
+        a {
+            margin: 0 3px;
             width: 35px;
-            height: 50px;
-            .icon{
+            height: 35px;
+
+            .icon {
                 font-size: 18px;
             }
         }
     }
 }
 
+@media screen and (max-width: 345px) {
+    .social-button {
+        bottom: 2.028571em;
+        a {
+            margin: 0 3px;
+            width: 30px;
+            height: 30px;
+
+            .icon {
+                font-size: 18px;
+            }
+        }
+    }
+}
 
 
 

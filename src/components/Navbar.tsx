@@ -197,12 +197,12 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
 
       <div className="social-button">
 
-        <a href="https://www.instagram.com/gati_shifting_packers_pvt_ltd/profilecard/?igsh=eXYzY25mYXkyNG05"><InstagramIcon className='icon'></InstagramIcon></a>
-        <a href="https://www.facebook.com/share/1CZTDwNPWw/"><FacebookIcon className='icon'></FacebookIcon></a>
-        <a href="https://x.com/gati_shifting"><XIcon className='icon'></XIcon></a>
-        <a href="https://www.linkedin.com/in/gati-shifting-6878bb377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><LinkedInIcon className='icon'></LinkedInIcon></a>
-        <a href="https://youtube.com/@gatishifting-moves?si=Lz283_yPnXuNCkQW"><YouTubeIcon className='icon'></YouTubeIcon></a>
-        <a href="https://in.pinterest.com/infogatishiftingpackers"><PinterestIcon className='icon'></PinterestIcon></a>
+        <a className='social-link-insta' href="https://www.instagram.com/gati_shifting_packers_pvt_ltd/profilecard/?igsh=eXYzY25mYXkyNG05"><InstagramIcon className='icon'></InstagramIcon></a>
+        <a className='social-link-facebook' href="https://www.facebook.com/share/1CZTDwNPWw/"><FacebookIcon className='icon'></FacebookIcon></a>
+        <a className='social-link-x' href="https://x.com/gati_shifting"><XIcon className='icon'></XIcon></a>
+        <a className='social-link-linkedin' href="https://www.linkedin.com/in/gati-shifting-6878bb377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><LinkedInIcon className='icon'></LinkedInIcon></a>
+        <a className='social-link-youtube' href="https://youtube.com/@gatishifting-moves?si=Lz283_yPnXuNCkQW"><YouTubeIcon className='icon'></YouTubeIcon></a>
+        <a className='social-link-pinterest' href="https://in.pinterest.com/infogatishiftingpackers"><PinterestIcon className='icon'></PinterestIcon></a>
       </div>
 
 
