@@ -27,24 +27,31 @@ import HomeIcon from '@mui/icons-material/Home';
 import DescriptionIcon from '@mui/icons-material/Description';
 import DirectionsCarFilledIcon from '@mui/icons-material/DirectionsCarFilled';
 import InventoryIcon from '@mui/icons-material/Inventory';
+import TwoWheelerIcon from '@mui/icons-material/TwoWheeler';
+import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 
 
 import houseImg from "../assets/Storage/house.jpg"
 import documentImg from "../assets/Storage/document.jpg"
 import businessImg from "../assets/Storage/business.jpg"
 import boxImg from "../assets/Storage/boxes.jpg"
+import bikeImg from "../assets/Storage/bikeStorage.png"
+import carImg from "../assets/Storage/carStorage.png"
+
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 
 
 
-import FingerprintIcon from '@mui/icons-material/Fingerprint';
 import SecurityIcon from '@mui/icons-material/Security';
-import QrCode2Icon from '@mui/icons-material/QrCode2';
 import FireExtinguisherIcon from '@mui/icons-material/FireExtinguisher';
 import PestControlIcon from '@mui/icons-material/PestControl';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
-import HttpsIcon from '@mui/icons-material/Https';
 
 const Storage = () => {
     return (
@@ -166,6 +173,211 @@ const Storage = () => {
                 </div>
             </section>
 
+
+
+            <section id="slider-section">
+                <div className="heading">Everything You Need In One Place</div>
+                <div className="container">
+                    <Swiper
+                        modules={[Autoplay, Navigation]}
+                        navigation={true}
+                        autoplay={{
+                            delay: 2000,
+                            pauseOnMouseEnter: true,
+                        }}
+                        spaceBetween={0}
+                        breakpoints={{
+                            0: {
+                                slidesPerView: 2,
+                            },
+                            600: {
+                                slidesPerView: 2,
+                            },
+                            900: {
+                                slidesPerView: 3,
+                            },
+                            1200: {
+                                slidesPerView: 4,
+                            },
+                        }}
+                    >
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#546BFF"}}>💲</div>
+                                <span>TRANSPARENT</span>
+                                <h3>No Hidden Fees</h3>
+                                <Link to="/contact-us">Only pay for what you use</Link>
+                            </div>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#FFF154"}}>🔓</div>
+                                <span>Flexible</span>
+                                <h3>No Deposit Required</h3>
+                                <Link to="/contact-us">Start storing immediately</Link>
+                            </div>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#F954FF"}}>🛡️</div>
+                                <span>Protected</span>
+                                <h3>Free Insurance</h3>
+                                <Link to="/contact-us">Complete protection included</Link>
+                            </div>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon"  style={{background: "#FF546E"}}>🚚</div>
+                                <span>Convenient</span>
+                                <h3>Doorstep Pickup & Delivery</h3>
+                                <Link to="/contact-us">We come to you</Link>
+                            </div>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon"  style={{background: "#5DFF54"}}>📉</div>
+                                <span>Affordable</span>
+                                <h3>Long-Term Discounts</h3>
+                                <Link to="/contact-us">Save with commitment</Link>
+                            </div>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#FFB854"}}>👥</div>
+                                <span>Trusted</span>
+                                <h3>1 Lakh+ Happy Customers</h3>
+                                <Link to="/contact-us">Join the community</Link>
+                            </div>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#54FF98"}}>🎥</div>
+                                <span>Secure</span>
+                                <h3>24/7 Security Monitoring</h3>
+                                <Link to="/contact-us">Peace of mind guaranteed</Link>
+                            </div>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#5476FF"}}>🧹</div>
+                                <span>Hygienic</span>
+                                <h3>Pest-Free Warehouses</h3>
+                                <Link to="/contact-us">Clean storage environment</Link>
+                            </div>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#9B54FF"}}>🔥</div>
+                                <span>Safety</span>
+                                <h3>Fire Safety Enabled</h3>
+                                <Link to="/contact-us">Safety first</Link>
+                            </div>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#FF54B5"}}>🌡️</div>
+                                <span>Preserved</span>
+                                <h3>Climate-Controlled Storage</h3>
+                                <Link to="/contact-us">Protects sensitive items</Link>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#40FF1F"}}>📦</div>
+                                <span>Packed Right</span>
+                                <h3>Custom Packing Services</h3>
+                                <Link to="/contact-us">Handled with care</Link>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#FF881F"}}>🤖</div>
+                                <span>Smart</span>
+                                <h3>AI-Powered Tracking</h3>
+                                <Link to="/contact-us">Know what's stored</Link>
+                            </div>
+                        </SwiperSlide>
+
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#FF1F2A"}}>🏆</div>
+                                <span>Top Rated</span>
+                                <h3>India's No. 1 Storage</h3>
+                                <Link to="/contact-us">#1 in secure storage</Link>
+                            </div>
+                        </SwiperSlide>
+
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#1FC3FF"}}>🌆</div>
+                                <span>Pan India</span>
+                                <h3>11 Cities Covered</h3>
+                                <Link to="/contact-us">Nationwide reach</Link>
+                            </div>
+                        </SwiperSlide>
+
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#67BF3B"}}>🔓</div>
+                                <span>Flexible Terms</span>
+                                <h3>No Lock-In Contracts</h3>
+                                <Link to="/contact-us">Cancel anytime</Link>
+                            </div>
+                        </SwiperSlide>
+
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#3BABBF"}}>🤝</div>
+                                <span>Best Value</span>
+                                <h3>Price Match Guarantee</h3>
+                                <Link to="/contact-us">Better deal? We'll match it</Link>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#BF3BB8"}}>📜</div>
+                                <span>Certified</span>
+                                <h3>ISO Certified Storage</h3>
+                                <Link to="/contact-us">Global standards</Link>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#007C8A"}}>⭐</div>
+                                <span>Rated 4.9</span>
+                                <h3>Customer Favorite</h3>
+                                <Link to="/contact-us">4.9 Rating</Link>
+                            </div>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide>
+                            <div className="card">
+                                <div className="icon" style={{background: "#3ED400"}}>⭐</div>
+                                <span>Support</span>
+                                <h3>Live Chat & Support</h3>
+                                <Link to="/contact-us">We’re here for you</Link>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
+            </section>
+
+
+
+
             <section id="what-we-offer-section">
                 <div className="heading">
                     <h1>What we offer</h1>
@@ -185,6 +397,55 @@ const Storage = () => {
                         </div>
                         <div className="img-bx">
                             <img src={houseImg} />
+                        </div>
+                    </div>
+
+
+                    <div className="card">
+                        <div className="detail">
+                            <h2><span className="icon"><InventoryIcon></InventoryIcon></span> Box Storage</h2>
+                            <p>Gati Shifting Packers provides corrugated boxes in different sizes to store your clothes, decor, utensils, and documents — available for all use cases. These sturdy boxes are perfect for safe packing and easy organization.</p>
+                            <div className="features-box">
+                                <span>📦 Different Sizes</span>
+                                <span>💼 Versatile Use</span>
+                                <span>🎯 Quality Boxes</span>
+                            </div>
+                            <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
+                        </div>
+                        <div className="img-bx">
+                            <img src={boxImg} />
+                        </div>
+                    </div>
+
+
+                    <div className="card">
+                        <div className="detail">
+                            <h2><span className="icon"><TwoWheelerIcon></TwoWheelerIcon></span> Bike Storage</h2>
+                            <p>Gati Shifting Packers offers safe and monitored bike storage services, ensuring your two-wheeler remains protected, clean, and ready to ride whenever needed.</p>
+                            <div className="features-box">
+                                <span>📦 Different Sizes</span>
+                                <span>💼 Versatile Use</span>
+                                <span>🎯 Quality Boxes</span>
+                            </div>
+                            <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
+                        </div>
+                        <div className="img-bx">
+                            <img src={bikeImg} />
+                        </div>
+                    </div>
+                    <div className="card">
+                        <div className="detail">
+                            <h2><span className="icon"><DirectionsCarIcon></DirectionsCarIcon></span> Car Storage</h2>
+                            <p>Gati Shifting Packers provides secure car storage facilities to protect your vehicle from damage, theft, and weather conditions with complete peace of mind.</p>
+                            <div className="features-box">
+                                <span>📦 Different Sizes</span>
+                                <span>💼 Versatile Use</span>
+                                <span>🎯 Quality Boxes</span>
+                            </div>
+                            <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
+                        </div>
+                        <div className="img-bx">
+                            <img src={carImg} />
                         </div>
                     </div>
 
@@ -209,8 +470,8 @@ const Storage = () => {
 
                     <div className="card">
                         <div className="detail">
-                            <h2><span className="icon"><DirectionsCarFilledIcon></DirectionsCarFilledIcon></span> Automobile Storage</h2>
-                            <p>SafeStorage gives you the perfect solution for your vehicle and ensures it's monitored 24x7, rodent proof, and in a protected environment. Store your vehicles in major cities.</p>
+                            <h2><span className="icon"><DirectionsCarFilledIcon></DirectionsCarFilledIcon></span> Commercial Storage</h2>
+                            <p>Gati Shifting Packers offers reliable commercial storage solutions for businesses, providing secure and well-managed space for inventory, equipment, and operational assets.</p>
                             <div className="features-box">
                                 <span>🎥 24x7 Monitoring</span>
                                 <span>🐭 Rodent Proof</span>
@@ -223,21 +484,6 @@ const Storage = () => {
                         </div>
                     </div>
 
-                    <div className="card">
-                        <div className="detail">
-                            <h2><span className="icon"><InventoryIcon></InventoryIcon></span> Box Storage</h2>
-                            <p>SafeStorage provides corrugated boxes in different sizes to store your clothes, decor, utensils, and documents — available for all use cases. These sturdy boxes are perfect for safe packing and easy organization.</p>
-                            <div className="features-box">
-                                <span>📦 Different Sizes</span>
-                                <span>💼 Versatile Use</span>
-                                <span>🎯 Quality Boxes</span>
-                            </div>
-                            <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
-                        </div>
-                        <div className="img-bx">
-                            <img src={boxImg} />
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -249,16 +495,8 @@ const Storage = () => {
 
                     <div className="content">
                         <div className="card">
-                            <FingerprintIcon className="icon"></FingerprintIcon>
-                            <span>Biometric Access</span>
-                        </div>
-                        <div className="card">
                             <SecurityIcon className="icon"></SecurityIcon>
                             <span>Insurance Coverage</span>
-                        </div>
-                        <div className="card">
-                            <QrCode2Icon className="icon"></QrCode2Icon>
-                            <span>Barcode Tracking</span>
                         </div>
                         <div className="card">
                             <FireExtinguisherIcon className="icon"></FireExtinguisherIcon>
@@ -275,10 +513,6 @@ const Storage = () => {
                         <div className="card">
                             <LocalShippingIcon className="icon"></LocalShippingIcon>
                             <span>24/7 Security</span>
-                        </div>
-                        <div className="card">
-                            <HttpsIcon className="icon"></HttpsIcon>
-                            <span>Biometric Access</span>
                         </div>
                     </div>
                 </div>
