@@ -34,6 +34,7 @@ import { pagesData } from "../pages/city-wise-pages-data"
 import { useState } from 'react';
 import NotFound from "../pages/NotFound";
 import PopUp from "../components/PopUpDisplay.tsx"
+import Storage from "../pages/Storage.tsx"
 
 const AppRoutes = () => {
     const [open, setOpen] = useState(false);
@@ -71,6 +72,7 @@ const AppRoutes = () => {
                     <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
                     <Route path="/video-gallery" element={<VideoGallery></VideoGallery>}></Route>
                     <Route path="/international-shifting" element={<InternationalShifting successCondition={setVisibilityCondition}></InternationalShifting>}></Route>
+                    <Route path="/storage" element={<Storage></Storage>}></Route>
                     {
                         pagesData.map((page) => (
                             <Route path={`/city/${page.slug}`} element={
@@ -80,8 +82,9 @@ const AppRoutes = () => {
                             </Route>
                         ))
                     }
-                    {/* 404 Page */}
 
+
+                    {/* 404 Page */}
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </ScrollToTop>
