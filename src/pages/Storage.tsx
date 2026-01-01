@@ -501,8 +501,9 @@ const Storage = () => {
 
             <section id="safe-secure-section">
                 <div className="container">
-                    <h1>Safe, secure, reliable storage</h1>
-                    <p>SafeStorage is operational in 11 major cities across India: Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Noida, Gurugram, Kolkata, Coimbatore, and Jaipur — delivering secure and reliable storage solutions wherever you are.</p>
+                    <h1>🔐 Safe • Secure • Reliable Storage Solutions</h1>
+                    <p>Gati Shifting Packers offers trusted storage services all over India, ensuring your belongings remain safe, protected, and well-managed for both short-term and long-term needs.
+Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Noida, Gurugram, Kolkata, Coimbatore, Jaipur 7 All Over India delivering secure and reliable storage solutions wherever you are.</p>
 
                     <div className="content">
                         <div className="card">
