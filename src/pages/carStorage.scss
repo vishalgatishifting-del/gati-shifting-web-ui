@@ -1,0 +1,129 @@
+@import "../style/variables";
+
+section#hero-section {
+    .container {
+        .content {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+#about-car-storage {
+    padding: 100px 0;
+    text-align: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    width: 1200px;
+    margin: 100px auto;
+
+    h2 {
+        margin: 20px 0;
+    }
+
+    .contact-container {
+        text-align: center;
+        margin-top: 40px;
+
+        span {
+
+            color: #3f3f3f;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+
+            a {
+
+                text-decoration: none;
+                padding: 10px 30px;
+                display: inline-flex;
+                margin: 0 10px;
+                border-radius: 8px;
+            }
+
+            .quote-btn {
+                padding: 10px 30px;
+                background: linear-gradient(45deg, $primary-color, blue);
+                color: #fff;
+                border: 2px solid $primary-color;
+                box-shadow: 5px 5px 30px #3582ff9f;
+            }
+
+            .call-btn {
+                border: 2px solid $primary-color;
+            }
+        }
+    }
+}
+
+.price-img-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+@media screen and (max-width: 1368px) {
+    .price-img-container {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 1228px) {
+    #about-car-storage {
+        padding: 30px;
+        width: 100%;
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 932px) {
+    #about-car-storage {
+        h1 {
+            font-size: 25px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 739px) {
+    #about-car-storage {
+        h1 {
+            font-size: 22px;
+        }
+
+        h2 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (max-width: 478px) {
+
+
+    .contact-container {
+        .links {
+            flex-direction: column;
+
+            a {
+                display: block;
+                width: 100%;
+                margin: 10px 0 !important;
+            }
+        }
+    }
+}

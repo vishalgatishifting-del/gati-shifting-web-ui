@@ -179,6 +179,7 @@ const Footer = () => {
                     <div className="footer-col">
                         <h4>Secure Storage</h4>
                         <ul>
+                            <li><Link to="/storage">Warehouse</Link></li>
                             <li><Link to="/warehouse">Warehouse</Link></li>
                             <li><Link to="/home-storage">Home Storage</Link></li>
                         </ul>
