@@ -39,14 +39,14 @@ import PestControlIcon from '@mui/icons-material/PestControl';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
-import sampleImg1 from "../assets/Storage/sample1.png"
-import sampleImg2 from "../assets/Storage/sample2.png"
-import sampleImg3 from "../assets/Storage/sample3.png"
-import sampleImg4 from "../assets/Storage/sample4.png"
-import sampleImg5 from "../assets/Storage/sample5.jpeg"
-import sampleImg6 from "../assets/Storage/sample6.jpeg"
-import sampleImg7 from "../assets/Storage/sample7.jpeg"
-import sampleImg8 from "../assets/Storage/sample8.jpeg"
+import sampleImg1 from "../assets/CarStorage/sample1.png"
+import sampleImg2 from "../assets/CarStorage/sample2.png"
+import sampleImg3 from "../assets/CarStorage/sample3.png"
+import sampleImg4 from "../assets/CarStorage/sample4.png"
+import sampleImg5 from "../assets/CarStorage/sample5.png"
+import sampleImg6 from "../assets/CarStorage/sample6.png"
+import sampleImg7 from "../assets/CarStorage/sample7.png"
+import sampleImg8 from "../assets/CarStorage/sample8.png"
 
 
 import priceImg from "../assets/CarStorage/priceImg.jpeg"
