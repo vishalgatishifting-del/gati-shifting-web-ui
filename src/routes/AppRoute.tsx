@@ -36,6 +36,7 @@ import NotFound from "../pages/NotFound";
 import PopUp from "../components/PopUpDisplay.tsx"
 import Storage from "../pages/Storage.tsx"
 import CarStorage from "../pages/CarStorage.tsx"
+import BikeStorage from "../pages/BikeStorage.tsx"
 
 const AppRoutes = () => {
     const [open, setOpen] = useState(false);
@@ -75,6 +76,7 @@ const AppRoutes = () => {
                     <Route path="/international-shifting" element={<InternationalShifting successCondition={setVisibilityCondition}></InternationalShifting>}></Route>
                     <Route path="/storage" element={<Storage></Storage>}></Route>
                     <Route path="/car-storage" element={<CarStorage></CarStorage>}></Route>
+                    <Route path="/bike-storage" element={<BikeStorage></BikeStorage>}></Route>
                     
                     {
                         pagesData.map((page) => (

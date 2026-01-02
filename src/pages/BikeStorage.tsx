@@ -1,5 +1,5 @@
-import "./Storage.scss"
-import heroSectionImg from "../assets/Storage/hero-section-img.webp"
+import "./carStorage.scss"
+import heroSectionImg from "../assets/BikeStorage/hero-section-img.png"
 import { Link } from "react-router-dom";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
@@ -23,20 +23,6 @@ import HDFC_icon from "../assets/Storage/HDFC-icon.webp"
 
 
 
-import HomeIcon from '@mui/icons-material/Home';
-import DescriptionIcon from '@mui/icons-material/Description';
-import DirectionsCarFilledIcon from '@mui/icons-material/DirectionsCarFilled';
-import InventoryIcon from '@mui/icons-material/Inventory';
-import TwoWheelerIcon from '@mui/icons-material/TwoWheeler';
-import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
-
-
-import houseImg from "../assets/Storage/house.jpg"
-import documentImg from "../assets/Storage/document.jpg"
-import businessImg from "../assets/Storage/business.jpg"
-import boxImg from "../assets/Storage/boxes.jpg"
-import bikeImg from "../assets/Storage/bikeStorage.png"
-import carImg from "../assets/Storage/carStorage.png"
 
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -47,62 +33,34 @@ import "swiper/css/navigation";
 
 
 
-
 import SecurityIcon from '@mui/icons-material/Security';
 import FireExtinguisherIcon from '@mui/icons-material/FireExtinguisher';
 import PestControlIcon from '@mui/icons-material/PestControl';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 
-import sampleImg1 from "../assets/Storage/sample1.png"
-import sampleImg2 from "../assets/Storage/sample2.png"
-import sampleImg3 from "../assets/Storage/sample3.png"
-import sampleImg4 from "../assets/Storage/sample4.png"
-import sampleImg5 from "../assets/Storage/sample5.jpeg"
-import sampleImg6 from "../assets/Storage/sample6.jpeg"
-import sampleImg7 from "../assets/Storage/sample7.jpeg"
-import sampleImg8 from "../assets/Storage/sample8.jpeg"
-import { Helmet } from "react-helmet-async";
+import sampleImg1 from "../assets/BikeStorage/sample1.png"
+import sampleImg2 from "../assets/BikeStorage/sample2.png"
+import sampleImg3 from "../assets/BikeStorage/sample3.png"
+import sampleImg4 from "../assets/BikeStorage/sample4.png"
+import sampleImg5 from "../assets/BikeStorage/sample5.png"
+import sampleImg6 from "../assets/BikeStorage/sample6.png"
+import sampleImg7 from "../assets/BikeStorage/sample7.png"
+import sampleImg8 from "../assets/BikeStorage/sample8.png"
 
-const Storage = () => {
+
+import priceImg from "../assets/BikeStorage/priceImg.jpeg"
+
+const BikeStorage = () => {
 
     const imgArr = [sampleImg1, sampleImg2, sampleImg3, sampleImg4, sampleImg5, sampleImg6, sampleImg7, sampleImg8];
     return (
         <>
-        <Helmet>
-            {/* Meta Tags for Car Storage Service Page */}
-<title>Car Storage Services | Gati Shifting Packers</title>
-
-<meta name="description" content="Secure and affordable Car Storage Services by Gati Shifting Packers. Safe, monitored and reliable short-term and long-term vehicle storage solutions across India." />
-<meta name="keywords" content="Gati Shifting Packers car storage, car storage services India, vehicle storage services, secure car storage, long term car storage, short term car storage, car warehousing services, car parking storage, indoor car storage, outdoor car storage, safe car storage facility, affordable car storage services, car storage near me, vehicle storage during relocation, automobile storage services, car and bike storage services, professional car storage company India, reliable vehicle storage solutions, car storage facilities India, temporary car storage, monitored car storage facility, climate controlled car storage, door to door car storage services, best car storage services in India, trusted car storage company near me" />
-<meta name="robots" content="index, follow" />
-<meta name="author" content="Abhishek" />
-
-
-{/* Open Graph */}
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Car Storage Services | Gati Shifting Packers" />
-<meta property="og:description" content="Looking for secure car storage? Gati Shifting Packers offers safe, monitored and professional vehicle storage services for short-term and long-term needs." />
-<meta property="og:url" content="https://gatishiftingpackers.com/car-storage" />
-<meta property="og:site_name" content="Gati Shifting Packers" />
-<meta property="og:image" content="" />
-
-
-{/* Twitter Card */}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Car Storage Services | Gati Shifting Packers" />
-<meta name="twitter:description" content="Safe, secure and affordable car storage solutions by Gati Shifting Packers. Protect your vehicle with trusted storage services." />
-<meta name="twitter:image" content="" />
-<meta http-equiv="Content-Language" content="en" />
-
-
-{/* Canonical URL */}
-<link rel="canonical" href="https://gatishiftingpackers.com/car-storage" />
-        </Helmet>
             <section id="hero-section">
                 <div className="container">
                     <div className="content">
-                        <h1>We Store Anything You Care...Best Storage Services</h1>
+                        <h1><span className="primary-color">Bike</span> Storage Services | Safe & Secure <span className="primary-color">Two-Wheeler</span> Storage</h1>
+                        <p>If you are looking for a safe and secure place to store your bike or two-wheeler, Gati Shifting Packers provides professional bike storage services to keep your vehicle protected from damage, theft, and harsh weather conditions.</p>
                         <p>🎉Book Today For 20% OFF!!!🎉</p>
                         <div className="links">
                             <a className="call-btn" href="tel:+919422799477"><LocalPhoneIcon></LocalPhoneIcon> +91 9422799477</a>
@@ -111,6 +69,20 @@ const Storage = () => {
                     </div>
                     <div className="img-bx">
                         <img src={heroSectionImg} />
+                    </div>
+                </div>
+            </section>
+
+            <section id="about-car-storage">
+                <h1>Bike Storage Services | Safe & Secure Vehicle Storage</h1>
+                <h2>Reliable Bike Storage Solutions You Can Trust</h2>
+                <p>If you are looking for a safe and secure place to store your bike for a short or long duration, Gati Shifting Packers offers professional bike storage services designed to protect your vehicle from damage, theft, and weather conditions. Our modern storage facilities ensure your bike remains in perfect condition until you need it again.</p>
+
+
+                <div className="contact-container">
+                    <div className="links">
+                        <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
+                        <a className="call-btn" href="tel:+919422799477"><LocalPhoneIcon></LocalPhoneIcon> +91 9422799477</a>
                     </div>
                 </div>
             </section>
@@ -188,34 +160,29 @@ const Storage = () => {
                 </div>
             </section>
 
-            <section id="numbers-section">
+ <section id="numbers-section">
                 <div className="numbers-container">
                     <div>
-                        <h4>630+</h4>
-                        <span>B2B Clients</span>
+                        <h4>70K+</h4>
+                        <span>Verified Experts</span>
                     </div>
                     <div>
-                        <h4>71K+</h4>
-                        <span>Business Items Stored</span>
+                        <h4>5.2L+</h4>
+                        <span>Happy Users</span>
                     </div>
                     <div>
-                        <h4>24/7</h4>
-                        <span>Business Support</span>
-                    </div>
-                    <div>
-                        <h4>99.9%</h4>
-                        <span>Client Retention</span>
+                        <h4>18+</h4>
+                        <span>Years of Expertise</span>
                     </div>
                 </div>
                 <div className="contact-container">
-                    <span>Trusted by top Indian companies for secure and reliable storage solutions.</span>
+                    <span>Trusted by lot of Indians for secure and reliable car storage solutions.</span>
                     <div className="links">
                         <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
                         <a className="call-btn" href="tel:+919422799477"><LocalPhoneIcon></LocalPhoneIcon> +91 9422799477</a>
                     </div>
                 </div>
             </section>
-
 
 
             <section id="slider-section">
@@ -246,88 +213,88 @@ const Storage = () => {
                     >
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#546BFF"}}>💲</div>
+                                <div className="icon" style={{ background: "#546BFF" }}>💲</div>
                                 <span>TRANSPARENT</span>
                                 <h3>No Hidden Fees</h3>
                                 <Link to="/contact-us">Only pay for what you use</Link>
                             </div>
                         </SwiperSlide>
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#FFF154"}}>🔓</div>
+                                <div className="icon" style={{ background: "#FFF154" }}>🔓</div>
                                 <span>Flexible</span>
                                 <h3>No Deposit Required</h3>
                                 <Link to="/contact-us">Start storing immediately</Link>
                             </div>
                         </SwiperSlide>
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#F954FF"}}>🛡️</div>
+                                <div className="icon" style={{ background: "#F954FF" }}>🛡️</div>
                                 <span>Protected</span>
                                 <h3>Free Insurance</h3>
                                 <Link to="/contact-us">Complete protection included</Link>
                             </div>
                         </SwiperSlide>
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon"  style={{background: "#FF546E"}}>🚚</div>
+                                <div className="icon" style={{ background: "#FF546E" }}>🚚</div>
                                 <span>Convenient</span>
                                 <h3>Doorstep Pickup & Delivery</h3>
                                 <Link to="/contact-us">We come to you</Link>
                             </div>
                         </SwiperSlide>
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon"  style={{background: "#5DFF54"}}>📉</div>
+                                <div className="icon" style={{ background: "#5DFF54" }}>📉</div>
                                 <span>Affordable</span>
                                 <h3>Long-Term Discounts</h3>
                                 <Link to="/contact-us">Save with commitment</Link>
                             </div>
                         </SwiperSlide>
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#FFB854"}}>👥</div>
+                                <div className="icon" style={{ background: "#FFB854" }}>👥</div>
                                 <span>Trusted</span>
                                 <h3>1 Lakh+ Happy Customers</h3>
                                 <Link to="/contact-us">Join the community</Link>
                             </div>
                         </SwiperSlide>
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#54FF98"}}>🎥</div>
+                                <div className="icon" style={{ background: "#54FF98" }}>🎥</div>
                                 <span>Secure</span>
                                 <h3>24/7 Security Monitoring</h3>
                                 <Link to="/contact-us">Peace of mind guaranteed</Link>
                             </div>
                         </SwiperSlide>
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#5476FF"}}>🧹</div>
+                                <div className="icon" style={{ background: "#5476FF" }}>🧹</div>
                                 <span>Hygienic</span>
                                 <h3>Pest-Free Warehouses</h3>
                                 <Link to="/contact-us">Clean storage environment</Link>
                             </div>
                         </SwiperSlide>
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#9B54FF"}}>🔥</div>
+                                <div className="icon" style={{ background: "#9B54FF" }}>🔥</div>
                                 <span>Safety</span>
                                 <h3>Fire Safety Enabled</h3>
                                 <Link to="/contact-us">Safety first</Link>
                             </div>
                         </SwiperSlide>
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#FF54B5"}}>🌡️</div>
+                                <div className="icon" style={{ background: "#FF54B5" }}>🌡️</div>
                                 <span>Preserved</span>
                                 <h3>Climate-Controlled Storage</h3>
                                 <Link to="/contact-us">Protects sensitive items</Link>
@@ -335,7 +302,7 @@ const Storage = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#40FF1F"}}>📦</div>
+                                <div className="icon" style={{ background: "#40FF1F" }}>📦</div>
                                 <span>Packed Right</span>
                                 <h3>Custom Packing Services</h3>
                                 <Link to="/contact-us">Handled with care</Link>
@@ -343,47 +310,47 @@ const Storage = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#FF881F"}}>🤖</div>
+                                <div className="icon" style={{ background: "#FF881F" }}>🤖</div>
                                 <span>Smart</span>
                                 <h3>AI-Powered Tracking</h3>
                                 <Link to="/contact-us">Know what's stored</Link>
                             </div>
                         </SwiperSlide>
 
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#FF1F2A"}}>🏆</div>
+                                <div className="icon" style={{ background: "#FF1F2A" }}>🏆</div>
                                 <span>Top Rated</span>
                                 <h3>India's No. 1 Storage</h3>
                                 <Link to="/contact-us">#1 in secure storage</Link>
                             </div>
                         </SwiperSlide>
 
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#1FC3FF"}}>🌆</div>
+                                <div className="icon" style={{ background: "#1FC3FF" }}>🌆</div>
                                 <span>Pan India</span>
                                 <h3>11 Cities Covered</h3>
                                 <Link to="/contact-us">Nationwide reach</Link>
                             </div>
                         </SwiperSlide>
 
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#67BF3B"}}>🔓</div>
+                                <div className="icon" style={{ background: "#67BF3B" }}>🔓</div>
                                 <span>Flexible Terms</span>
                                 <h3>No Lock-In Contracts</h3>
                                 <Link to="/contact-us">Cancel anytime</Link>
                             </div>
                         </SwiperSlide>
 
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#3BABBF"}}>🤝</div>
+                                <div className="icon" style={{ background: "#3BABBF" }}>🤝</div>
                                 <span>Best Value</span>
                                 <h3>Price Match Guarantee</h3>
                                 <Link to="/contact-us">Better deal? We'll match it</Link>
@@ -391,7 +358,7 @@ const Storage = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#BF3BB8"}}>📜</div>
+                                <div className="icon" style={{ background: "#BF3BB8" }}>📜</div>
                                 <span>Certified</span>
                                 <h3>ISO Certified Storage</h3>
                                 <Link to="/contact-us">Global standards</Link>
@@ -399,16 +366,16 @@ const Storage = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#007C8A"}}>⭐</div>
+                                <div className="icon" style={{ background: "#007C8A" }}>⭐</div>
                                 <span>Rated 4.9</span>
                                 <h3>Customer Favorite</h3>
                                 <Link to="/contact-us">4.9 Rating</Link>
                             </div>
                         </SwiperSlide>
-                        
+
                         <SwiperSlide>
                             <div className="card">
-                                <div className="icon" style={{background: "#3ED400"}}>⭐</div>
+                                <div className="icon" style={{ background: "#3ED400" }}>⭐</div>
                                 <span>Support</span>
                                 <h3>Live Chat & Support</h3>
                                 <Link to="/contact-us">We’re here for you</Link>
@@ -419,123 +386,16 @@ const Storage = () => {
             </section>
 
 
-
-
-            <section id="what-we-offer-section">
-                <div className="heading">
-                    <h1>What we offer</h1>
-                    <p>Comprehensive storage solutions tailored to meet your specific needs</p>
-                </div>
-                <div className="container">
-                    <div className="card">
-                        <div className="detail">
-                            <h2><span className="icon"><HomeIcon></HomeIcon></span> Household Storage</h2>
-                            <p>We pride ourselves on being the best when it comes to helping you with storing your furniture. Stow your household items safely with our storage services in Hyderabad, Chennai, Pune and Mumbai.</p>
-                            <div className="features-box">
-                                <span>🛋 Furniture Protection</span>
-                                <span>📍 Multiple Cities</span>
-                                <span>🔒 Safe & Secure</span>
-                            </div>
-                            <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
-                        </div>
-                        <div className="img-bx">
-                            <img src={houseImg} />
-                        </div>
-                    </div>
-
-
-                    <div className="card">
-                        <div className="detail">
-                            <h2><span className="icon"><InventoryIcon></InventoryIcon></span> Box Storage</h2>
-                            <p>Gati Shifting Packers provides corrugated boxes in different sizes to store your clothes, decor, utensils, and documents — available for all use cases. These sturdy boxes are perfect for safe packing and easy organization.</p>
-                            <div className="features-box">
-                                <span>📦 Different Sizes</span>
-                                <span>💼 Versatile Use</span>
-                                <span>🎯 Quality Boxes</span>
-                            </div>
-                            <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
-                        </div>
-                        <div className="img-bx">
-                            <img src={boxImg} />
-                        </div>
-                    </div>
-
-
-                    <div className="card">
-                        <div className="detail">
-                            <h2><span className="icon"><TwoWheelerIcon></TwoWheelerIcon></span> Bike Storage</h2>
-                            <p>Gati Shifting Packers offers safe and monitored bike storage services, ensuring your two-wheeler remains protected, clean, and ready to ride whenever needed.</p>
-                            <div className="features-box">
-                                <span>📦 Different Sizes</span>
-                                <span>💼 Versatile Use</span>
-                                <span>🎯 Quality Boxes</span>
-                            </div>
-                            <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
-                        </div>
-                        <div className="img-bx">
-                            <img src={bikeImg} />
-                        </div>
-                    </div>
-                    <div className="card">
-                        <div className="detail">
-                            <h2><span className="icon"><DirectionsCarIcon></DirectionsCarIcon></span> Car Storage</h2>
-                            <p>Gati Shifting Packers provides secure car storage facilities to protect your vehicle from damage, theft, and weather conditions with complete peace of mind.</p>
-                            <div className="features-box">
-                                <span>📦 Different Sizes</span>
-                                <span>💼 Versatile Use</span>
-                                <span>🎯 Quality Boxes</span>
-                            </div>
-                            <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
-                        </div>
-                        <div className="img-bx">
-                            <img src={carImg} />
-                        </div>
-                    </div>
-
-
-
-                    <div className="card">
-                        <div className="detail">
-                            <h2><span className="icon"><DescriptionIcon></DescriptionIcon></span> Document Storage</h2>
-                            <p>Gati Shifting Packers provides records management document storage services for professionals and small businesses for the safe and secure business storage space of official files and documents.</p>
-                            <div className="features-box">
-                                <span>👔 Professional Service</span>
-                                <span>🏢 Business Storage</span>
-                                <span>🔐 Secure Files</span>
-                            </div>
-                            <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
-                        </div>
-                        <div className="img-bx">
-                            <img src={documentImg} />
-                        </div>
-                    </div>
-
-
-                    <div className="card">
-                        <div className="detail">
-                            <h2><span className="icon"><DirectionsCarFilledIcon></DirectionsCarFilledIcon></span> Commercial Storage</h2>
-                            <p>Gati Shifting Packers offers reliable commercial storage solutions for businesses, providing secure and well-managed space for inventory, equipment, and operational assets.</p>
-                            <div className="features-box">
-                                <span>🎥 24x7 Monitoring</span>
-                                <span>🐭 Rodent Proof</span>
-                                <span>🌐 Multiple Locations</span>
-                            </div>
-                            <Link className="quote-btn" to="/contact-us">Get Free Quote</Link>
-                        </div>
-                        <div className="img-bx">
-                            <img src={businessImg} />
-                        </div>
-                    </div>
-
-                </div>
+            <section className="price-img-container">
+                <img src={priceImg} className="price-img" />
             </section>
 
 
             <section id="safe-secure-section">
                 <div className="container">
-                    <h1>🔐 Safe • Secure • Reliable Storage Solutions</h1>
-                    <p>Gati Shifting Packers offers trusted storage services all over India, ensuring your belongings remain safe, protected, and well-managed for both short-term and long-term needs.
-Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Noida, Gurugram, Kolkata, Coimbatore, Jaipur 7 All Over India delivering secure and reliable storage solutions wherever you are.</p>
+                    <h1>Why Choose Our Bike Storage Services?</h1>
+                    <p>Gati Shifting Packers offers trusted bike storage services all over India, ensuring your belongings remain safe, protected, and well-managed for both short-term and long-term needs.
+                        Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Noida, Gurugram, Kolkata, Coimbatore, Jaipur 7 All Over India delivering secure and reliable car storage solutions wherever you are.</p>
 
                     <div className="content">
                         <div className="card">
@@ -564,7 +424,7 @@ Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Noida, Gurugram, Kolkata, Co
 
             <section id="sample-images">
                 <div className="container">
-                    {imgArr.map((img)=>{
+                    {imgArr.map((img) => {
                         return (<img src={img} />)
                     })}
                 </div>
@@ -573,4 +433,4 @@ Bangalore, Hyderabad, Mumbai, Pune, Chennai, Delhi, Noida, Gurugram, Kolkata, Co
     )
 }
 
-export default Storage;
+export default BikeStorage;

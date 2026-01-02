@@ -2,9 +2,25 @@
 
 section#hero-section {
     .container {
+        height: calc(100vh - 104px);
         .content {
+            h1{
+                font-size: 35px;
+            }
             p {
                 font-size: 16px;
+            }
+
+            .links{
+                a.call-btn{
+                    border: 1px solid $primary-color;
+                    border-radius: 30px;
+                    padding: 5px 0;
+                    font-size: 20px;
+
+                    display: flex;
+                    justify-content: center;
+                }
             }
         }
     }
