@@ -22,20 +22,20 @@ import house from "../assets/expandable_slider/house.webp";
 import car from "../assets/expandable_slider/car.webp";
 
 
-import AV_icon_png from "../assets/servicesPageImg/ac.png"
-import House_icon_png from "../assets/servicesPageImg/household.png"
-import Bike_icon_png from "../assets/servicesPageImg/bike.png"
-import Car_icon_png from "../assets/servicesPageImg/car.png"
-import Pet_icon_png from "../assets/servicesPageImg/pets.png"
-import Office_icon_png from "../assets/servicesPageImg/office.png"
-import Commercial_icon_png from "../assets/servicesPageImg/commercial.png"
-import Luggage_icon_png from "../assets/servicesPageImg/luggage.png"
-import Domestic_icon_png from "../assets/servicesPageImg/domestic.png"
-import International_icon_png from "../assets/servicesPageImg/international.png"
-import Temp_icon_png from "../assets/servicesPageImg/tempo.png"
-import Warehouse_icon_png from "../assets/servicesPageImg/warehouse.png"
-import Storage_icon_png from "../assets/servicesPageImg/storage.png"
-import Cold_icon_png from "../assets/servicesPageImg/cold.png"
+import AV_icon_png from "../assets/servicesPageImg/ac.webp"
+import House_icon_png from "../assets/servicesPageImg/household.webp"
+import Bike_icon_png from "../assets/servicesPageImg/bike.webp"
+import Car_icon_png from "../assets/servicesPageImg/car.webp"
+import Pet_icon_png from "../assets/servicesPageImg/pets.webp"
+import Office_icon_png from "../assets/servicesPageImg/office.webp"
+import Commercial_icon_png from "../assets/servicesPageImg/commercial.webp"
+import Luggage_icon_png from "../assets/servicesPageImg/luggage.webp"
+import Domestic_icon_png from "../assets/servicesPageImg/domestic.webp"
+import International_icon_png from "../assets/servicesPageImg/international.webp"
+import Temp_icon_png from "../assets/servicesPageImg/tempo.webp"
+import Warehouse_icon_png from "../assets/servicesPageImg/warehouse.webp"
+import Storage_icon_png from "../assets/servicesPageImg/storage.webp"
+import Cold_icon_png from "../assets/servicesPageImg/cold.webp"
 
 
 type Services = {

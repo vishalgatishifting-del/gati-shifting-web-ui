@@ -6,14 +6,14 @@ import "./About.scss";
 import about_company_photo from "../assets/about_company_photo.png"
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
-import houseShiftingImg from "../assets/house_shifting_img.jpg"
+import houseShiftingImg from "../assets/AboutPage/household.webp"
 import storageImg from "../assets/storage_img.jpg"
-import internationalImg from "../assets/international_img.jpg"
-import carImg from "../assets/car_img.jpg"
-import bikeImg from "../assets/bike_img.jpg"
+import internationalImg from "../assets/AboutPage/international.webp"
+import carImg from "../assets/AboutPage/Car.webp"
+import bikeImg from "../assets/AboutPage/Bike.webp"
 import petImg from "../assets/pet_img.jpg"
-import officeImg from "../assets/office_img.jpg"
-import commercialImg from "../assets/commercial_img.jpg"
+import officeImg from "../assets/AboutPage/office.webp"
+import commercialImg from "../assets/AboutPage/commercial.webp"
 import CheckIcon from '@mui/icons-material/Check';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -294,19 +294,20 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                         <div className="img-bx">
                             <img src={houseShiftingImg} alt="Professional house shifting services by Gati Shifting Packers in India" title="HouseShiftingservices" loading="lazy" />
                         </div>
-                        <h4>House Shifting</h4>
+                        <h4>Household</h4>
                     </div>
                     <div className="card">
                         <div className="img-bx">
-                            <img src={storageImg} alt="Safe and reliable storage services by Gati Shifting Packers" title="Storageservice" loading="lazy" />
+                            <img src={commercialImg} alt="Safe and reliable commercial shifting by Gati Shifting Packers" title="commercialshifting" loading="lazy" />
                         </div>
-                        <h4>Storage</h4>
+                        <h4>Luggage</h4>
                     </div>
+                    
                     <div className="card">
                         <div className="img-bx">
-                            <img src={internationalImg} alt="Professional international movers and packers – Gati Shifting Packers" title="internationalservice" loading="lazy" />
+                            <img src={bikeImg} alt="Gati Shifting Packers providing safe bike and motorcycle transportation services" title="biketransportation" loading="lazy" />
                         </div>
-                        <h4>International</h4>
+                        <h4>Bike</h4>
                     </div>
                     <div className="card">
                         <div className="img-bx">
@@ -316,15 +317,15 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                     </div>
                     <div className="card">
                         <div className="img-bx">
-                            <img src={bikeImg} alt="Gati Shifting Packers providing safe bike and motorcycle transportation services" title="biketransportation" loading="lazy" />
-                        </div>
-                        <h4>Bike</h4>
-                    </div>
-                    <div className="card">
-                        <div className="img-bx">
                             <img src={petImg} alt="Professional pet relocation services by Gati Shifting Packers" title="petTransportation" loading="lazy" />
                         </div>
                         <h4>Pet</h4>
+                    </div>
+                    <div className="card">
+                        <div className="img-bx">
+                            <img src={internationalImg} alt="Professional international movers and packers – Gati Shifting Packers" title="internationalservice" loading="lazy" />
+                        </div>
+                        <h4>International</h4>
                     </div>
                     <div className="card">
                         <div className="img-bx">
@@ -332,11 +333,12 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                         </div>
                         <h4>Office</h4>
                     </div>
+                    
                     <div className="card">
                         <div className="img-bx">
-                            <img src={commercialImg} alt="Safe and reliable commercial shifting by Gati Shifting Packers" title="commercialshifting" loading="lazy" />
+                            <img src={storageImg} alt="Safe and reliable storage services by Gati Shifting Packers" title="Storageservice" loading="lazy" />
                         </div>
-                        <h4>Commercial</h4>
+                        <h4>Storage</h4>
                     </div>
                 </div>
             </section>
