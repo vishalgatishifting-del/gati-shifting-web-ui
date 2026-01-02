@@ -1,6 +1,6 @@
 import BrandList from "../components/BrandsList";
 import ContactForm from "../components/ContactForm";
-import ServicesSection from "../components/Services";
+// import ServicesSection from "../components/Services";
 import {
     Table,
     TableBody,
