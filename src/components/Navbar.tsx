@@ -45,7 +45,6 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 
 
 // Pngs For New Year Theme
-import starPng from "../assets/Themes/NewYear/star.png"
 
 interface NavbarProps {
   open: boolean;

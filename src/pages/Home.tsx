@@ -18,7 +18,6 @@ import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
 import gatiSlider4 from "../assets/sliderImg/gatislider4.webp"
 import gatislider5 from "../assets/sliderImg/gatislider5.webp";
 import gatislider6 from "../assets/sliderImg/gatislider6.webp";
-import gatislider7 from "../assets/Themes/NewYear/slider.png";
 
 
 
