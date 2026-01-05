@@ -17,37 +17,37 @@ const HomeShifting = () => {
 
             <Helmet>
 
-           {/* Meta Tags for Home Shifting Service Page */}
-<title>Home Shifting Services | Gati Shifting Packers</title>
+                {/* Meta Tags for Home Shifting Service Page */}
+                <title>Home Shifting Services | Gati Shifting Packers</title>
 
-<meta name="description" content="Professional Home Shifting Services by Gati Shifting Packers. Safe and reliable packing, moving, and delivery of your household items across India." />
-<meta name="keywords" content="Gati Shifting Packers home shifting, Gati House Shifting Packers & Movers,household movers, residential relocation, packing and moving services, home shifting India, home shifting services in delhi,home shifting services in noida, home shifting services in ghaziabad,home shifting services in gurgaon, home shifting services, packers and movers, house relocation, home movers India, domestic shifting, local shifting services, household shifting, best home shifting services in India, affordable packers and movers for home relocation, trusted home shifting company near me, door to door house shifting services, reliable household goods shifting service, professional home packers and movers India, safe and secure house relocation services, top-rated home shifting service providers, budget-friendly home relocation company, expert movers for residential shifting, complete home packing and moving solutions, interstate home relocation with insurance, local home shifting within city, packers and movers for apartment relocation" />
-<meta name="robots" content="index, follow" />
-<meta name="author" content="Abhishek" />
-
-
-{/* Open Graph  */}
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Home Shifting Services | Gati Shifting Packers" />
-<meta property="og:description" content="Experience safe and hassle-free home shifting with Gati Shifting Packers. Expert packing and moving services for all your residential needs." />
-<meta property="og:url" content="https://gatishiftingpackers.com/home-shifting" />
-<meta property="og:site_name" content="Gati Shifting Packers" />
-<meta property="og:image" content="" />
+                <meta name="description" content="Professional Home Shifting Services by Gati Shifting Packers. Safe and reliable packing, moving, and delivery of your household items across India." />
+                <meta name="keywords" content="Gati Shifting Packers home shifting, Gati House Shifting Packers & Movers,household movers, residential relocation, packing and moving services, home shifting India, home shifting services in delhi,home shifting services in noida, home shifting services in ghaziabad,home shifting services in gurgaon, home shifting services, packers and movers, house relocation, home movers India, domestic shifting, local shifting services, household shifting, best home shifting services in India, affordable packers and movers for home relocation, trusted home shifting company near me, door to door house shifting services, reliable household goods shifting service, professional home packers and movers India, safe and secure house relocation services, top-rated home shifting service providers, budget-friendly home relocation company, expert movers for residential shifting, complete home packing and moving solutions, interstate home relocation with insurance, local home shifting within city, packers and movers for apartment relocation" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Abhishek" />
 
 
-
-{/* Twitter Card */} 
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Home Shifting Services | Gati Shifting Packers" />
-<meta name="twitter:description" content="Reliable home shifting solutions by Gati Shifting Packers. Ensure safe and timely relocation of your household goods across India." />
-<meta name="twitter:image" content="" />
-
-
-<meta http-equiv="Content-Language" content="en" />
+                {/* Open Graph  */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Home Shifting Services | Gati Shifting Packers" />
+                <meta property="og:description" content="Experience safe and hassle-free home shifting with Gati Shifting Packers. Expert packing and moving services for all your residential needs." />
+                <meta property="og:url" content="https://gatishiftingpackers.com/home-shifting" />
+                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:image" content="" />
 
 
-{/* Canonical URL */} 
-<link rel="canonical" href="https://gatishiftingpackers.com/home-shifting" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Home Shifting Services | Gati Shifting Packers" />
+                <meta name="twitter:description" content="Reliable home shifting solutions by Gati Shifting Packers. Ensure safe and timely relocation of your household goods across India." />
+                <meta name="twitter:image" content="" />
+
+
+                <meta http-equiv="Content-Language" content="en" />
+
+
+                {/* Canonical URL */}
+                <link rel="canonical" href="https://gatishiftingpackers.com/home-shifting" />
 
             </Helmet>
 
@@ -97,7 +97,7 @@ const HomeShifting = () => {
                             <li>🏠 After delivery and reinstallation, share your valuable feedback to help us serve you better.
                                 <br />
                             </li>
-                                <ReviewDialog></ReviewDialog>
+                            <ReviewDialog></ReviewDialog>
                         </ul>
                     </div>
                     <div className="content household-items">
@@ -134,22 +134,22 @@ const HomeShifting = () => {
                         <p>The cost of house shifting depends on several things. Here are the main factors that affect the price:</p>
 
                         <ol>
-                            <li>Distance - 
+                            <li>Distance -
                                 The farther the move, the higher the cost. Longer distances require more fuel, time, and resources, whether you’re shifting a home, office, or other goods.
                             </li>
-                            <li>Number of Items - 
+                            <li>Number of Items -
                                 If you have more or heavier items to move, you’ll need a bigger vehicle and more labor, which increases the cost.
                             </li>
                             <li>
-                                Packing Quality - 
+                                Packing Quality -
                                 Using good packing materials like bubble wrap and boxes keeps your items safe but adds a little extra to the cost, especially for fragile items.
                             </li>
                             <li>
-                                Type of Vehicle - 
+                                Type of Vehicle -
                                 The type of truck or container used depends on how many goods you have. Bigger or special vehicles cost more than small ones.
                             </li>
                             <li>
-                                Time of Moving - 
+                                Time of Moving -
                                 Moving on weekends, month-end, or during busy seasons usually costs more. Choosing a weekday or off-season date can help you save money.
 
                             </li>

@@ -21,13 +21,18 @@ import DocumentScannerIcon from '@mui/icons-material/DocumentScanner';
 import ReceiptIcon from '@mui/icons-material/Receipt';
 import { Helmet } from "react-helmet-async";
 
+
+import deliveryChallan from "../assets/billClaimbPage/deliveryChallan.png"
+import paymentReceipt from "../assets/billClaimbPage/paymentReceipt.png"
+import taxInvoice from "../assets/billClaimbPage/taxInvoice.png"
+
 const BillClaim = () => {
     return (
         <>
             <Helmet>
                 {/* Meta Tags for Bill Claim Page */}
 
-                <title>Bill Claim | Gati Shifting Packers</title>
+                <title>Bill Claim - Gati Shifting Packers</title>
 
                 <meta name="description" content="Easily claim your shifting bill online with Gati Shifting Packers. Submit your details and get your verified relocation bill for reimbursement quickly and securely." />
                 <meta name="keywords" content="Gati Shifting Packers bill claim, shifting bill claim, relocation bill for reimbursement, packers movers bill claim, transport bill claim, claim shifting invoice" />
@@ -131,6 +136,23 @@ const BillClaim = () => {
                         </ul>
                         Note: Please read policy terms carefully before submitting a claim.
                     </div>
+                </div>
+            </section>
+
+            <section id="sample-section">
+                <div className="sample-images">
+                    <figure>
+                        <img src={deliveryChallan} />
+                        <figcaption>SAMPLE COPY</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={paymentReceipt} />
+                        <figcaption>SAMPLE COPY</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={taxInvoice} />
+                        <figcaption>SAMPLE COPY</figcaption>
+                    </figure>
                 </div>
             </section>
             <ReviewVideo></ReviewVideo>

@@ -109,7 +109,7 @@ interface props {
 const Home: React.FC<props> = ({ successCondition }) => {
 
 
-    const images = [gatislider7, gatiSlider2, gatiSlider3, gatiSlider4, gatislider5, gatislider6];
+    const images = [gatiSlider2, gatiSlider3, gatiSlider4, gatislider5, gatislider6];
 
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });

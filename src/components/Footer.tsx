@@ -1,8 +1,9 @@
 
 import { Link } from "react-router-dom";
 import "./Footer.scss"
-import logoImg from "../assets/logo/roundedLogo.png"
+import logoImg from "../assets/logo/transparentIco.png"
 import { useState } from "react";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 //     "Itanagar", "Dibrugarh", "Silchar", "Gaya", "Muzaffarpur", "Darbhanga",
 //     "Raipur", "Bhilai", "Durg", "Bilaspur",
@@ -53,60 +54,60 @@ const Footer = () => {
                 <h1>Search By Location</h1>
                 <div className="container">
                     <ul>
-                        <li><Link to="/city/Agra">Packers & Movers Agra</Link></li>
-                        <li><Link to="/city/ankleshwar">Packers & Movers Ankleshwar</Link></li>
-                        <li><Link to="/city/Bhiwandi">Packers & Movers Bhiwandi</Link></li>
-                        <li><Link to="/city/Calicut">Packers & Movers Calicut</Link></li>
-                        <li><Link to="/city/Cuttack">Packers & Movers Cuttack</Link></li>
-                        <li><Link to="/city/Gandhidham">Packers & Movers Gandhidham</Link></li>
-                        <li><Link to="/city/Guwahati">Packers & Movers Guwahati</Link></li>
-                        <li><Link to="/city/Hyderabad">Packers & Movers Hyderabad</Link></li>
-                        <li><Link to="/city/Jamshedpur">Packers & Movers Jamshedpur</Link></li>
-                        <li><Link to="/city/Kolhapur">Packers & Movers Kolhapur</Link></li>
-                        <li><Link to="/city/Lucknow">Packers & Movers Lucknow</Link></li>
-                        <li><Link to="/city/Meerut">Packers & Movers Meerut</Link></li>
+                        <li><Link to="/city/Agra"><LocationOnIcon></LocationOnIcon>Packers & Movers Agra</Link></li>
+                        <li><Link to="/city/ankleshwar"><LocationOnIcon></LocationOnIcon>Packers & Movers Ankleshwar</Link></li>
+                        <li><Link to="/city/Bhiwandi"><LocationOnIcon></LocationOnIcon>Packers & Movers Bhiwandi</Link></li>
+                        <li><Link to="/city/Calicut"><LocationOnIcon></LocationOnIcon>Packers & Movers Calicut</Link></li>
+                        <li><Link to="/city/Cuttack"><LocationOnIcon></LocationOnIcon>Packers & Movers Cuttack</Link></li>
+                        <li><Link to="/city/Gandhidham"><LocationOnIcon></LocationOnIcon>Packers & Movers Gandhidham</Link></li>
+                        <li><Link to="/city/Guwahati"><LocationOnIcon></LocationOnIcon>Packers & Movers Guwahati</Link></li>
+                        <li><Link to="/city/Hyderabad"><LocationOnIcon></LocationOnIcon>Packers & Movers Hyderabad</Link></li>
+                        <li><Link to="/city/Jamshedpur"><LocationOnIcon></LocationOnIcon>Packers & Movers Jamshedpur</Link></li>
+                        <li><Link to="/city/Kolhapur"><LocationOnIcon></LocationOnIcon>Packers & Movers Kolhapur</Link></li>
+                        <li><Link to="/city/Lucknow"><LocationOnIcon></LocationOnIcon>Packers & Movers Lucknow</Link></li>
+                        <li><Link to="/city/Meerut"><LocationOnIcon></LocationOnIcon>Packers & Movers Meerut</Link></li>
                     </ul>
                     <ul>
-                        <li><Link to="/city/ahmedabad">Packers & Movers Ahmedabad</Link></li>
-                        <li><Link to="/city/aurangabad">Packers & Movers Aurangabad</Link></li>
-                        <li><Link to="/city/bhopal">Packers & Movers Bhopal</Link></li>
-                        <li><Link to="/city/chandigarh">Packers & Movers Chandigarh</Link></li>
-                        <li><Link to="/city/dehradun">Packers & Movers Dehradun</Link></li>
-                        <li><Link to="/city/ghaziabad">Packers & Movers Ghaziabad</Link></li>
-                        <li><Link to="/city/gwalior">Packers & Movers Gwalior</Link></li>
-                        <li><Link to="/city/indore">Packers & Movers Indore</Link></li>
-                        <li><Link to="/city/jamnagar">Packers & Movers Jamnagar</Link></li>
-                        <li><Link to="/city/kolkata">Packers & Movers Kolkata</Link></li>
-                        <li><Link to="/city/ludhiana">Packers & Movers Ludhiana</Link></li>
-                        <li><Link to="/city/mumbai">Packers & Movers Mumbai</Link></li>
+                        <li><Link to="/city/ahmedabad"><LocationOnIcon></LocationOnIcon>Packers & Movers Ahmedabad</Link></li>
+                        <li><Link to="/city/aurangabad"><LocationOnIcon></LocationOnIcon>Packers & Movers Aurangabad</Link></li>
+                        <li><Link to="/city/bhopal"><LocationOnIcon></LocationOnIcon>Packers & Movers Bhopal</Link></li>
+                        <li><Link to="/city/chandigarh"><LocationOnIcon></LocationOnIcon>Packers & Movers Chandigarh</Link></li>
+                        <li><Link to="/city/dehradun"><LocationOnIcon></LocationOnIcon>Packers & Movers Dehradun</Link></li>
+                        <li><Link to="/city/ghaziabad"><LocationOnIcon></LocationOnIcon>Packers & Movers Ghaziabad</Link></li>
+                        <li><Link to="/city/gwalior"><LocationOnIcon></LocationOnIcon>Packers & Movers Gwalior</Link></li>
+                        <li><Link to="/city/indore"><LocationOnIcon></LocationOnIcon>Packers & Movers Indore</Link></li>
+                        <li><Link to="/city/jamnagar"><LocationOnIcon></LocationOnIcon>Packers & Movers Jamnagar</Link></li>
+                        <li><Link to="/city/kolkata"><LocationOnIcon></LocationOnIcon>Packers & Movers Kolkata</Link></li>
+                        <li><Link to="/city/ludhiana"><LocationOnIcon></LocationOnIcon>Packers & Movers Ludhiana</Link></li>
+                        <li><Link to="/city/mumbai"><LocationOnIcon></LocationOnIcon>Packers & Movers Mumbai</Link></li>
                     </ul>
                     <ul>
-                        <li><Link to="/city/allahabad">Packers & Movers Allahabad</Link></li>
-                        <li><Link to="/city/alwar">Packers & Movers Alwar</Link></li>
-                        <li><Link to="/city/ambala">Packers & Movers Ambala</Link></li>
-                        <li><Link to="/city/vadodara">Packers & Movers Vadodara</Link></li>
-                        <li><Link to="/city/bikaner">Packers & Movers Bikaner</Link></li>
-                        <li><Link to="/city/bhubaneswar">Packers & Movers Bhubaneswar</Link></li>
-                        <li><Link to="/city/chennai">Packers & Movers Chennai</Link></li>
-                        <li><Link to="/city/kochi">Packers & Movers Kochi</Link></li>
-                        <li><Link to="/city/delhi">Packers & Movers Delhi</Link></li>
-                        <li><Link to="/city/dwarka">Packers & Movers Dwarka</Link></li>
-                        <li><Link to="/city/faridabad">Packers & Movers Faridabad</Link></li>
-                        <li><Link to="/city/goa">Packers & Movers Goa</Link></li>
+                        <li><Link to="/city/allahabad"><LocationOnIcon></LocationOnIcon>Packers & Movers Allahabad</Link></li>
+                        <li><Link to="/city/alwar"><LocationOnIcon></LocationOnIcon>Packers & Movers Alwar</Link></li>
+                        <li><Link to="/city/ambala"><LocationOnIcon></LocationOnIcon>Packers & Movers Ambala</Link></li>
+                        <li><Link to="/city/vadodara"><LocationOnIcon></LocationOnIcon>Packers & Movers Vadodara</Link></li>
+                        <li><Link to="/city/bikaner"><LocationOnIcon></LocationOnIcon>Packers & Movers Bikaner</Link></li>
+                        <li><Link to="/city/bhubaneswar"><LocationOnIcon></LocationOnIcon>Packers & Movers Bhubaneswar</Link></li>
+                        <li><Link to="/city/chennai"><LocationOnIcon></LocationOnIcon>Packers & Movers Chennai</Link></li>
+                        <li><Link to="/city/kochi"><LocationOnIcon></LocationOnIcon>Packers & Movers Kochi</Link></li>
+                        <li><Link to="/city/delhi"><LocationOnIcon></LocationOnIcon>Packers & Movers Delhi</Link></li>
+                        <li><Link to="/city/dwarka"><LocationOnIcon></LocationOnIcon>Packers & Movers Dwarka</Link></li>
+                        <li><Link to="/city/faridabad"><LocationOnIcon></LocationOnIcon>Packers & Movers Faridabad</Link></li>
+                        <li><Link to="/city/goa"><LocationOnIcon></LocationOnIcon>Packers & Movers Goa</Link></li>
                     </ul>
                     <ul>
-                        <li><Link to="/city/greaternoida">Packers & Movers Greaternoida</Link></li>
-                        <li><Link to="/city/gurgaon">Packers & Movers Gurgaon</Link></li>
-                        <li><Link to="/city/hubli">Packers & Movers Hubli</Link></li>
-                        <li><Link to="/city/jammu">Packers & Movers Jammu</Link></li>
-                        <li><Link to="/city/kanpur">Packers & Movers Kanpur</Link></li>
-                        <li><Link to="/city/kottayam">Packers & Movers Kottayam</Link></li>
-                        <li><Link to="/city/mangalore">Packers & Movers Mangalore</Link></li>
-                        <li><Link to="/city/nashik">Packers & Movers Nashik</Link></li>
-                        <li><Link to="/city/noida">Packers & Movers Noida</Link></li>
-                        <li><Link to="/city/patna">Packers & Movers Patna</Link></li>
-                        <li><Link to="/city/pune">Packers & Movers Pune</Link></li>
-                        <li><Link to="/city/surat">Packers & Movers Surat</Link></li>
+                        <li><Link to="/city/greaternoida"><LocationOnIcon></LocationOnIcon>Packers & Movers Greaternoida</Link></li>
+                        <li><Link to="/city/gurgaon"><LocationOnIcon></LocationOnIcon>Packers & Movers Gurgaon</Link></li>
+                        <li><Link to="/city/hubli"><LocationOnIcon></LocationOnIcon>Packers & Movers Hubli</Link></li>
+                        <li><Link to="/city/jammu"><LocationOnIcon></LocationOnIcon>Packers & Movers Jammu</Link></li>
+                        <li><Link to="/city/kanpur"><LocationOnIcon></LocationOnIcon>Packers & Movers Kanpur</Link></li>
+                        <li><Link to="/city/kottayam"><LocationOnIcon></LocationOnIcon>Packers & Movers Kottayam</Link></li>
+                        <li><Link to="/city/mangalore"><LocationOnIcon></LocationOnIcon>Packers & Movers Mangalore</Link></li>
+                        <li><Link to="/city/nashik"><LocationOnIcon></LocationOnIcon>Packers & Movers Nashik</Link></li>
+                        <li><Link to="/city/noida"><LocationOnIcon></LocationOnIcon>Packers & Movers Noida</Link></li>
+                        <li><Link to="/city/patna"><LocationOnIcon></LocationOnIcon>Packers & Movers Patna</Link></li>
+                        <li><Link to="/city/pune"><LocationOnIcon></LocationOnIcon>Packers & Movers Pune</Link></li>
+                        <li><Link to="/city/surat"><LocationOnIcon></LocationOnIcon>Packers & Movers Surat</Link></li>
                     </ul>
                 </div>
                 {
@@ -117,7 +118,7 @@ const Footer = () => {
                             {col.map((city) => (
                                 <li key={city}>
                                     <Link to={`/city/${city.replace(/\s+/g, "")}`}>
-                                        Packers & Movers {city}
+                                       <LocationOnIcon></LocationOnIcon> Packers & Movers {city}
                                     </Link>
                                 </li>
                             ))}
@@ -135,8 +136,8 @@ const Footer = () => {
                 <div className="footer-top">
                     <div className="footer-col logo-col">
                         <img src={logoImg} alt="Gati Logo" className="footer-logo" />
-                        <p>Gati Shifting Packers & Movers<br />
-                            Ghansoli, Navi Mumbai, Maharashtra – 400701
+                        <p>📍 Gati Shifting Packers<br />
+                            Ghansoli, Navi Mumbai<br /> Maharashtra 400701
                         </p>
                         <p>📞 +91 9422799477</p>
                     </div>

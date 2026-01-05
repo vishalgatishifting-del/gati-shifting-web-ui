@@ -71,7 +71,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
 
   return (
     <>
-      <header className='newYearTheme'>
+      <header>
         <div className="top-area">
           <a className='phone' href="tel:+919422799477">
             <LocalPhoneIcon />
@@ -208,14 +208,14 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
       </div>
 
 
-      <section>
+      {/* <section>
         <div className='star1'>
           <img src={starPng} />
         </div>
         <div className='star2'>
           <img src={starPng} />
         </div>
-      </section>
+      </section> */}
 
 
 
