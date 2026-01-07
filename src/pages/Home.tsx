@@ -100,10 +100,11 @@ import stepsImg from "../assets/5-steps-banner.png";
 
 
 
-import petSlider from "../assets/HomePage/slide2.png";
-import bike from "../assets/HomePage/slide3.png";
-import house from "../assets/HomePage/slide4.png";
-import car from "../assets/HomePage/slide1.png";
+import petSlider from "../assets/HomePage/slide2.webp";
+import bike from "../assets/HomePage/slide3.webp";
+import house from "../assets/HomePage/slide4.webp";
+import car from "../assets/HomePage/slide1.webp";
+import slide5 from "../assets/HomePage/slide5.webp";
 
 
 // import { IFaqItem } from "../models/App.model";
@@ -218,6 +219,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
         { img: house, heading: "Expert Team", text: "Our movers and packers team works with precision, ensuring protective wrapping, proper anchoring, and smooth doorstep pickup and delivery." },
         { img: bike, heading: "House Shifting", text: "Smooth and reliable house shifting with professional packing, loading, transport, and setup at your new home." },
         { img: petSlider, heading: "Bike Transport", text: "Bike relocation with protective wrapping, proper anchoring, and doorstep pickup and delivery." },
+        { img: slide5, heading: "24/7 Available", text: "We provide reliable movers and packers services with 24/7 availability for your convenience." },
     ];
 
 

@@ -301,7 +301,8 @@
 
 
 #steps-section {
-    background: linear-gradient(20deg, #12337a, #0a1a3c, #000);
+    // background: linear-gradient(20deg, #12337a, #0a1a3c, #000);
+    background: linear-gradient(20deg, #23acf1, #135070, #000);
     color: #fff;
     padding: 30px 10px 30px 10px;
     margin-bottom: 50px;
@@ -339,6 +340,7 @@
                 .icon {
                     padding: 10px;
                     background: linear-gradient(#25a6eb, #005eac);
+                    // background: linear-gradient(#18af50, #05431c);
                     border-radius: 10px;
                     display: flex;
                     margin-right: 10px;

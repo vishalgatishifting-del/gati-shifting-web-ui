@@ -126,7 +126,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
                 <StarRateIcon className="icon" /> Review
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 className={currentPath === "/faqs" ? "active" : ""}
                 to="/faqs"
@@ -134,7 +134,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
               >
                 <HelpOutlineIcon className="icon" /> FAQs
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 className={currentPath === "/contact-us" ? "active" : ""}
