@@ -5,10 +5,24 @@ import "./WhyGati.scss"
 
 
 
-interface props{
-  successCondition: React.Dispatch<React.SetStateAction<boolean>>;
+interface props {
+    successCondition: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const WhyGati = ({successCondition} : props) => {
+const WhyGati = ({ successCondition }: props) => {
+
+    const keywords = [
+        "why choose packers and movers",
+        "why choose us packers and movers",
+        "trusted packers and movers in India",
+        "best packers and movers",
+        "packers and movers benefits",
+        "experienced relocation services India",
+        "why hire professional packers and movers",
+        "packers movers reliability and safety",
+        "why Gati Shifting Packers",
+        "gati packers and movers"
+    ];
+
     return (
         <>
             <section id="why-gati-sec">
@@ -46,6 +60,14 @@ const WhyGati = ({successCondition} : props) => {
             <ContactForm successCondition={successCondition}></ContactForm>
             <AwardCertification></AwardCertification>
             <FAQList></FAQList>
+            <section id="keywords-section">
+                <h1>People also search for these Queries</h1>
+                <div className="container">
+                    {keywords.map((col) => {
+                        return <h5 className="keyword">{col}</h5>
+                    })}
+                </div>
+            </section>
         </>
     )
 }

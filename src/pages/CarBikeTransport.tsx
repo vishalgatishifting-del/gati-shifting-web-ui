@@ -11,6 +11,24 @@ import ReviewDialog from "../components/ReviewDialog";
 
 
 const CarBikeTransport = () => {
+    const keywords = [
+  "gati packers and movers",
+  "car transport services",
+  "vehicle transport services",
+  "auto transport companies",
+  "car shipping companies",
+  "car transport company",
+  "car shipping services",
+  "motorcycle transport services",
+  "bike transport services",
+  "door to door car transport",
+  "enclosed auto transport",
+  "vehicle relocation services",
+  "car transport near me",
+  "how to transport a car",
+  "car transport cost India"
+];
+
     return (
         <>
             <Helmet>
@@ -162,6 +180,14 @@ const CarBikeTransport = () => {
             <TrustUsSection></TrustUsSection>
             <BrandList></BrandList>
             <FAQList></FAQList>
+              <section id="keywords-section">
+                <h1>People also search for these Queries</h1>
+                <div className="container">
+                    {keywords.map((col) => {
+                        return <h5 className="keyword">{col}</h5>
+                    })}
+                </div>
+            </section>
         </>
     )
 }

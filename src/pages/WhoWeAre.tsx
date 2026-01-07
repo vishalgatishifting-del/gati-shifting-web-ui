@@ -29,6 +29,25 @@ const WhoWeAre = () => {
         pauseOnFocus: false,
         swipeToSlide: true
     };
+
+    const keywords = [
+  "Gati Shifting Packers about us",
+  "gati packers and movers",
+  "trusted packers and movers in India",
+  "reliable packers and movers",
+  "packers and movers company profile",
+  "packers and movers with experience",
+  "leading packers and movers in India",
+  "about us moving company",
+  "trusted moving services India",
+  "professional relocation services",
+  "experienced home shifting company",
+  "about our relocation company",
+  "packing and unpacking services",
+  "best packers and movers",
+  "cheap packers and movers"
+];
+
     return (
         <>
             <section id="who-we-are-section">
@@ -252,6 +271,14 @@ const WhoWeAre = () => {
                 </div>
             </section>
             <FAQList></FAQList>
+            <section id="keywords-section">
+                <h1>People also search for these Queries</h1>
+                <div className="container">
+                    {keywords.map((col) => {
+                        return <h5 className="keyword">{col}</h5>
+                    })}
+                </div>
+            </section>
         </>
     )
 }

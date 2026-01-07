@@ -12,6 +12,26 @@ import ReviewDialog from "../components/ReviewDialog";
 
 
 const HomeShifting = () => {
+
+    const keywords = [
+  "home shifting services",
+  "house shifting services",
+  "home relocation services",
+  "home shifting company near me",
+  "local home shifting services",
+  "affordable home shifting services",
+  "professional home relocation",
+  "home shifting and packing services",
+  "house shifting services in delhi",
+  "house shifting services in gurgaon",
+  "house shifting services in noida",
+  "house shifting services in ghaziabad",
+  "house shifting services in bangalore",
+  "home shifting quotes",
+  "home relocation cost India",
+  "gati packers and movers"
+];
+
     return (
         <>
 
@@ -165,7 +185,14 @@ const HomeShifting = () => {
             <TrustUsSection></TrustUsSection>
             <BrandList></BrandList>
             <FAQList></FAQList>
-
+<section id="keywords-section">
+                <h1>People also search for these Queries</h1>
+                <div className="container">
+                    {keywords.map((col) => {
+                        return <h5 className="keyword">{col}</h5>
+                    })}
+                </div>
+            </section>
         </>
     )
 }

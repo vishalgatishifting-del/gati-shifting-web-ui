@@ -119,9 +119,9 @@ import BrandList from "../components/BrandsList";
 
 interface AboutUsProps {
     setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  successCondition: React.Dispatch<React.SetStateAction<boolean>>;
+    successCondition: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const About: React.FC<AboutUsProps> = ({setOpen, successCondition}) => {
+const About: React.FC<AboutUsProps> = ({ setOpen, successCondition }) => {
 
 
 
@@ -131,18 +131,18 @@ const About: React.FC<AboutUsProps> = ({setOpen, successCondition}) => {
 
 
     const rows = [
-        { Service_Features: "Certified Vehicle", Typical_Local_Movers: <CheckIcon className="green-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon  className="green-sign" /> + Insurance Cover</span> },
+        { Service_Features: "Certified Vehicle", Typical_Local_Movers: <CheckIcon className="green-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Insurance Cover</span> },
         { Service_Features: "Vetted Drivers", Typical_Local_Movers: <CloseIcon className="red-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Police Verified</span> },
-        { Service_Features: "Tracking System", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + App Updates</span> },
+        { Service_Features: "Tracking System", Typical_Local_Movers: <CloseIcon className="red-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + App Updates</span> },
         { Service_Features: "Packing Quality", Typical_Local_Movers: <CheckIcon className="green-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Recyclable Wraps</span> },
         { Service_Features: "Furniture Handling", Typical_Local_Movers: <CheckIcon className="green-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Tools Included</span> },
-        { Service_Features: "Staff Support", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Coordinator</span> },
-        { Service_Features: "Cushioning", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Dust-Free</span> },
-        { Service_Features: "Storage", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Temp Regulated</span> },
-        { Service_Features: "Item Protection", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Full Coverage</span> },
-        { Service_Features: "Helpline", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Move Advisor</span> },
-        { Service_Features: "Pricing", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Transparent</span> },
-        { Service_Features: "Eco-Friendly", Typical_Local_Movers: <CloseIcon className="red-sign"  />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Green Materials</span> },
+        { Service_Features: "Staff Support", Typical_Local_Movers: <CloseIcon className="red-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Coordinator</span> },
+        { Service_Features: "Cushioning", Typical_Local_Movers: <CloseIcon className="red-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Dust-Free</span> },
+        { Service_Features: "Storage", Typical_Local_Movers: <CloseIcon className="red-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Temp Regulated</span> },
+        { Service_Features: "Item Protection", Typical_Local_Movers: <CloseIcon className="red-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Full Coverage</span> },
+        { Service_Features: "Helpline", Typical_Local_Movers: <CloseIcon className="red-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Move Advisor</span> },
+        { Service_Features: "Pricing", Typical_Local_Movers: <CloseIcon className="red-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Transparent</span> },
+        { Service_Features: "Eco-Friendly", Typical_Local_Movers: <CloseIcon className="red-sign" />, Rehousing_Packers_Movers: <span className="table-column-data"><CheckIcon className="green-sign" /> + Green Materials</span> },
     ];
 
 
@@ -220,6 +220,23 @@ const About: React.FC<AboutUsProps> = ({setOpen, successCondition}) => {
     //     "https://picsum.photos/id/1020/600/400",
     // ];
 
+
+    const keywords = ["gati packers and movers",
+        "movers near me",
+        "moving company",
+        "packers and movers near me",
+        "local movers",
+        "moving services",
+        "moving companies near me",
+        "home shifting services",
+        "office shifting services",
+        "interstate packers and movers",
+        "vehicle transportation services",
+        "packing and unpacking services",
+        "best packers and movers",
+        "cheap packers and movers",
+        "packers and movers in delhi"]
+
     return (
         <>
 
@@ -267,7 +284,7 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                             <li><CheckCircleIcon className="icon"></CheckCircleIcon> On-Time Pickup & Delivery</li>
                             <li><CheckCircleIcon className="icon"></CheckCircleIcon> Premium Packing Supplies</li>
                         </ul>
-                        <button className="contact-btn" onClick={ ()=> setOpen(true)}>Enquiry Now</button>
+                        <button className="contact-btn" onClick={() => setOpen(true)}>Enquiry Now</button>
                     </div>
                 </div>
             </section>
@@ -302,7 +319,7 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                         </div>
                         <h4>Luggage</h4>
                     </div>
-                    
+
                     <div className="card">
                         <div className="img-bx">
                             <img src={bikeImg} alt="Gati Shifting Packers providing safe bike and motorcycle transportation services" title="biketransportation" loading="lazy" />
@@ -333,7 +350,7 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                         </div>
                         <h4>Office</h4>
                     </div>
-                    
+
                     <div className="card">
                         <div className="img-bx">
                             <img src={storageImg} alt="Safe and reliable storage services by Gati Shifting Packers" title="Storageservice" loading="lazy" />
@@ -522,7 +539,14 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
             <BrandList />
 
             <ContactForm successCondition={successCondition}></ContactForm>
-
+            <section id="keywords-section">
+                <h1>People also search for these Queries</h1>
+                <div className="container">
+                    {keywords.map((col) => {
+                        return <h5 className="keyword">{col}</h5>
+                    })}
+                </div>
+            </section>
         </>
     )
 }

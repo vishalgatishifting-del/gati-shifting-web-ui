@@ -9,6 +9,25 @@ import { Helmet } from "react-helmet-async";
 import ReviewDialog from "../components/ReviewDialog";
 
 const OfficeRelocation = () => {
+    const keywords = [
+  "office relocation services",
+  "office movers",
+  "commercial moving services",
+  "office shifting services",
+  "business relocation services",
+  "office furniture movers",
+  "small office movers",
+  "corporate relocation services",
+  "commercial movers",
+  "office moving company",
+  "office shifting company near me",
+  "office move planning services",
+  "office relocation cost",
+  "office move checklist",
+  "professional office movers",
+  "gati packers and movers"
+];
+
     return (
         <>
             <Helmet>
@@ -165,6 +184,15 @@ const OfficeRelocation = () => {
             <TrustUsSection></TrustUsSection>
             <BrandList></BrandList>
             <FAQList></FAQList>
+
+            <section id="keywords-section">
+                <h1>People also search for these Queries</h1>
+                <div className="container">
+                    {keywords.map((col) => {
+                        return <h5 className="keyword">{col}</h5>
+                    })}
+                </div>
+            </section>
         </>
     )
 }
