@@ -4,7 +4,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import StarRateIcon from '@mui/icons-material/StarRate';
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+// import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 import ContactsIcon from '@mui/icons-material/Contacts';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
