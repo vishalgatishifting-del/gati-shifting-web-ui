@@ -8,6 +8,27 @@ import { Helmet } from "react-helmet-async";
 import ReviewDialog from "../components/ReviewDialog";
 
 const Warehouse = () => {
+
+
+    const keywords = [
+  "gati packers and movers",
+  "warehouse storage services",
+  "warehouse services",
+  "goods storage services",
+  "storage & warehousing services",
+  "warehouse facilities near me",
+  "warehouse for storage",
+  "short term storage services",
+  "long term storage solutions",
+  "goods warehousing services",
+  "industrial warehouse services",
+  "warehouse logistics services",
+  "warehouse & distribution services",
+  "secure storage services",
+  "climate controlled storage",
+  "warehouse storage cost"
+];
+
     return (
         <>
             <Helmet>
@@ -164,6 +185,15 @@ const Warehouse = () => {
             <TrustUsSection></TrustUsSection>
             <BrandList></BrandList>
             <FAQList></FAQList>
+
+                <section id="keywords-section">
+                <h1>People also search for these Queries</h1>
+                <div className="container">
+                    {keywords.map((col) => {
+                        return <h5 className="keyword">{col}</h5>
+                    })}
+                </div>
+            </section>
         </>
     )
 }

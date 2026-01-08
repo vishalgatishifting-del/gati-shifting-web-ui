@@ -154,6 +154,8 @@
 #certificate-section {
     padding: 30px 10px;
     @include font-poppins-sans(100);
+    background: linear-gradient(transparent, $primary-color, transparent);
+    // background: $primary-color;
 
     .container {
         display: grid;
@@ -208,9 +210,11 @@
     }
 }
 
+
+
 #counter-section {
     padding: 10px;
-    margin-top: 50px;
+    // margin-top: 50px;
     @include font-poppins-sans(400);
 
     .container {

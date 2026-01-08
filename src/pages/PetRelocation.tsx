@@ -11,38 +11,58 @@ import "./PetRelocation.scss"
 import ReviewDialog from "../components/ReviewDialog";
 
 const PetRelocation = () => {
+
+    const keywords = [
+        "pet transport services",
+        "pet relocation services",
+        "pet shipping companies",
+        "dog transport service",
+        "pet transport",
+        "animal transport services",
+        "pet delivery service",
+        "cat transport services",
+        "dog relocation services",
+        "pet relocation near me",
+        "international pet relocation",
+        "pet travel services",
+        "safe pet transport",
+        "pet relocation cost",
+        "how to relocate a pet",
+        "gati packers and movers"
+    ];
+
     return (
         <>
 
             <Helmet>
 
-{/* Meta Tags for Pet Relocation Page */}
-  <title>Pet Relocation Services | Gati Shifting Packers</title>
+                {/* Meta Tags for Pet Relocation Page */}
+                <title>Pet Relocation Services | Gati Shifting Packers</title>
 
-  <meta name="description" content="Safe and reliable Pet Relocation Services by Gati Shifting Packers. Expert care for transporting your pets across India with comfort and security." />
-  <meta name="keywords" content="Gati Shifting Packers pet relocation, pet movers, pet transportation services, pet moving India, safe pet relocation, pet relocation, pet shifting, animal transportation, pet movers, pet travel services, pet relocation company, pet transport in India, international pet relocation, domestic pet transport, safe pet relocation, pet relocation by Gati Shifting Packers, dog and cat relocation services, affordable pet moving services, pet relocation experts near me, reliable pet shifting company, pet transport service providers, best pet movers in India, pet travel assistance, Gati Shifting Packers pet relocation reviews, door-to-door pet transport services, stress-free pet relocation solutions, professional pet transport company, animal relocation specialists, pet relocation packages India, pan-India pet shifting services" />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Abhishek" />
+                <meta name="description" content="Safe and reliable Pet Relocation Services by Gati Shifting Packers. Expert care for transporting your pets across India with comfort and security." />
+                <meta name="keywords" content="Gati Shifting Packers pet relocation, pet movers, pet transportation services, pet moving India, safe pet relocation, pet relocation, pet shifting, animal transportation, pet movers, pet travel services, pet relocation company, pet transport in India, international pet relocation, domestic pet transport, safe pet relocation, pet relocation by Gati Shifting Packers, dog and cat relocation services, affordable pet moving services, pet relocation experts near me, reliable pet shifting company, pet transport service providers, best pet movers in India, pet travel assistance, Gati Shifting Packers pet relocation reviews, door-to-door pet transport services, stress-free pet relocation solutions, professional pet transport company, animal relocation specialists, pet relocation packages India, pan-India pet shifting services" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Abhishek" />
 
-  {/* Open Graph */}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Pet Relocation Services | Gati Shifting Packers" />
-  <meta property="og:description" content="Trust Gati Shifting Packers for safe and stress-free pet relocation across India. Expert handling for all types of pets." />
-  <meta property="og:url" content="https://gatishiftingpackers.com/pet-relocation" />
-  <meta property="og:site_name" content="Gati Shifting Packers" />
-  <meta property="og:image" content="" />
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Pet Relocation Services | Gati Shifting Packers" />
+                <meta property="og:description" content="Trust Gati Shifting Packers for safe and stress-free pet relocation across India. Expert handling for all types of pets." />
+                <meta property="og:url" content="https://gatishiftingpackers.com/pet-relocation" />
+                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:image" content="" />
 
-  {/* Twitter Card */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Pet Relocation Services | Gati Shifting Packers" />
-  <meta name="twitter:description" content="Reliable pet relocation services by Gati Shifting Packers. Ensure the safe and comfortable transport of your pets anywhere in India." />
-  <meta name="twitter:image" content="" />
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Pet Relocation Services | Gati Shifting Packers" />
+                <meta name="twitter:description" content="Reliable pet relocation services by Gati Shifting Packers. Ensure the safe and comfortable transport of your pets anywhere in India." />
+                <meta name="twitter:image" content="" />
 
-  <meta http-equiv="Content-Language" content="en" />
+                <meta http-equiv="Content-Language" content="en" />
 
-  {/* Canonical URL */}
-  <link rel="canonical" href="https://gatishiftingpackers.com/pet-relocation" />
-  
+                {/* Canonical URL */}
+                <link rel="canonical" href="https://gatishiftingpackers.com/pet-relocation" />
+
             </Helmet>
 
             <section id="pet-relocation-sec">
@@ -92,8 +112,8 @@ const PetRelocation = () => {
                             <li>🏠 After delivery and reinstallation, share your valuable feedback to help us serve you better.
                                 <br />
                             </li>
-                            
-                                <ReviewDialog></ReviewDialog>
+
+                            <ReviewDialog></ReviewDialog>
                         </ul>
                     </div>
                     <div className="content types">
@@ -127,26 +147,26 @@ const PetRelocation = () => {
                         <p>The cost of house shifting depends on several things. Here are the main factors that affect the price:</p>
 
                         <ol>
-                            <li>Distance - 
+                            <li>Distance -
                                 Longer distances increase cost due to more travel time and logistics.
 
                             </li>
-                            <li>Pet Type & Size - 
+                            <li>Pet Type & Size -
                                 Larger pets or multiple animals require bigger carriers and extra care, raising the cost.
 
                             </li>
                             <li>
-                                Travel Method - 
+                                Travel Method -
                                 Air transport, ground transport, or a combination affects pricing. Enclosed or specialized carriers add to the cost.
 
                             </li>
                             <li>
-                                Health & Documentation Needs - 
+                                Health & Documentation Needs -
                                 Vaccination certificates, permits, and veterinary checks may increase charges slightly.
 
                             </li>
                             <li>
-                                Timing & Urgency - 
+                                Timing & Urgency -
                                 Peak seasons or urgent relocations can cost more than planned, scheduled moves.
 
                             </li>
@@ -162,6 +182,15 @@ const PetRelocation = () => {
             <TrustUsSection></TrustUsSection>
             <BrandList></BrandList>
             <FAQList></FAQList>
+
+             <section id="keywords-section">
+                <h1>People also search for these Queries</h1>
+                <div className="container">
+                    {keywords.map((col) => {
+                        return <h5 className="keyword">{col}</h5>
+                    })}
+                </div>
+            </section>
 
         </>
     )

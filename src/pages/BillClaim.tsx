@@ -107,7 +107,7 @@ const BillClaim = () => {
                                 <TableBody>
                                     <TableRow>
                                         <TableCell align="left">India (Head Office)</TableCell>
-                                        <TableCell align="left">+91 7290008200</TableCell>
+                                        <TableCell align="left">+91 9422799477</TableCell>
                                     </TableRow>
                                 </TableBody>
                             </Table>

@@ -59,6 +59,7 @@
 .image-box {
     @include font-poppins-sans(400);
     border-radius: 20px;
+    width: 90%;
     background: #000;
 
     .image-item {
@@ -84,6 +85,7 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            font-size: 20px;
         }
         p{
             position: absolute;
@@ -93,15 +95,16 @@
             transition: .5s;
             transform: translateX(-50%);
             color: #fff;
+            font-size: 14px;
         }
     }
 
     .image-item:hover{
         h2{
-            transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -140%) rotate(0deg);
         }
         p{
-            top: 60%;
+            top: 45%;
         }
     }
 }
@@ -175,6 +178,7 @@
 @media screen and (max-width: 573px) {
   .image-box{
     flex-direction: column;
+    height: 500px!important;
 
     .image-item{
       h2{
