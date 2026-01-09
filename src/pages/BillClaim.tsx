@@ -59,6 +59,9 @@ const BillClaim = () => {
                 <link rel="canonical" href="https://gatishiftingpackers.com/bill-claim" />
 
             </Helmet>
+            <div className="bg-attached">
+                    <h1>Bill Claim</h1>
+                </div>
             <section id="billclaimsec">
                 <div className="container">
                     <div className="card c1">
@@ -72,6 +75,25 @@ const BillClaim = () => {
                             <p>Our billing for claim policy ensures transparency in case of damages or losses during a move. Customers can request a bill for claim through our 24/7 support team.</p>
                         </div>
                     </div>
+
+                    
+
+            <section id="sample-section">
+                <div className="sample-images">
+                    <figure>
+                        <img src={deliveryChallan} />
+                        <figcaption>SAMPLE COPY</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={paymentReceipt} />
+                        <figcaption>SAMPLE COPY</figcaption>
+                    </figure>
+                    <figure>
+                        <img src={taxInvoice} />
+                        <figcaption>SAMPLE COPY</figcaption>
+                    </figure>
+                </div>
+            </section>
 
                     <div className="card">
                         <h3><AccountTreeIcon></AccountTreeIcon><span>Steps to File a Claim</span></h3>
@@ -136,23 +158,6 @@ const BillClaim = () => {
                         </ul>
                         Note: Please read policy terms carefully before submitting a claim.
                     </div>
-                </div>
-            </section>
-
-            <section id="sample-section">
-                <div className="sample-images">
-                    <figure>
-                        <img src={deliveryChallan} />
-                        <figcaption>SAMPLE COPY</figcaption>
-                    </figure>
-                    <figure>
-                        <img src={paymentReceipt} />
-                        <figcaption>SAMPLE COPY</figcaption>
-                    </figure>
-                    <figure>
-                        <img src={taxInvoice} />
-                        <figcaption>SAMPLE COPY</figcaption>
-                    </figure>
                 </div>
             </section>
             <ReviewVideo></ReviewVideo>

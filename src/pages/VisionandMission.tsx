@@ -40,6 +40,9 @@ const VisionandMision = () => {
 
      
         </Helmet>
+        <div className="bg-attached-vission-mission">
+                    <h1>Vission and Mission</h1>
+                </div>
             <section id="vissionandmissionsec">
                 <div className="container">
                     <div className="content">

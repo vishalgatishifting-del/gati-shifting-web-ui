@@ -55,7 +55,9 @@ const BikeStorage = () => {
 
     const imgArr = [sampleImg1, sampleImg2, sampleImg3, sampleImg4, sampleImg5, sampleImg6, sampleImg7, sampleImg8];
     return (
-        <>
+        <><div className="bg-attached">
+            <h1>Bike Storage</h1>
+        </div>
             <section id="hero-section">
                 <div className="container">
                     <div className="content">
@@ -160,7 +162,7 @@ const BikeStorage = () => {
                 </div>
             </section>
 
- <section id="numbers-section">
+            <section id="numbers-section">
                 <div className="numbers-container">
                     <div>
                         <h4>70K+</h4>

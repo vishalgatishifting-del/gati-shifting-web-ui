@@ -90,6 +90,10 @@ const PhotoGallery = () => {
 
                 <link rel="canonical" href="https://gatishiftingpackers.com/photo-gallery"></link>
             </Helmet>
+
+            <div className="bg-attached">
+                    <h1>Photo Gallery</h1>
+                </div>
             <section id="photogallerysec">
                 <div className="container">
                     <div className="btns">

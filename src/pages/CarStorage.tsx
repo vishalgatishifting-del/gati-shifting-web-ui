@@ -87,7 +87,9 @@ const Storage = () => {
             {/* Canonical URL */}
             <link rel="canonical" href="https://gatishiftingpackers.com/car-storage" />
         </Helmet>
-        
+        <div className="bg-attached">
+                    <h1>Car Storage</h1>
+                </div>
             <section id="hero-section">
                 <div className="container">
                     <div className="content">

@@ -12,55 +12,57 @@ import ReviewDialog from "../components/ReviewDialog";
 
 const CarBikeTransport = () => {
     const keywords = [
-  "gati packers and movers",
-  "car transport services",
-  "vehicle transport services",
-  "auto transport companies",
-  "car shipping companies",
-  "car transport company",
-  "car shipping services",
-  "motorcycle transport services",
-  "bike transport services",
-  "door to door car transport",
-  "enclosed auto transport",
-  "vehicle relocation services",
-  "car transport near me",
-  "how to transport a car",
-  "car transport cost India"
-];
+        "gati packers and movers",
+        "car transport services",
+        "vehicle transport services",
+        "auto transport companies",
+        "car shipping companies",
+        "car transport company",
+        "car shipping services",
+        "motorcycle transport services",
+        "bike transport services",
+        "door to door car transport",
+        "enclosed auto transport",
+        "vehicle relocation services",
+        "car transport near me",
+        "how to transport a car",
+        "car transport cost India"
+    ];
 
     return (
         <>
             <Helmet>
-<title>Car & Bike Transport Services | Gati Shifting Packers</title>
+                <title>Car & Bike Transport Services | Gati Shifting Packers</title>
 
-<meta name="description" content="Get safe and affordable Car & Bike Transport Services across India with Gati Shifting Packers. We ensure secure vehicle relocation with expert handling and timely delivery." />
-<meta name="keywords" content="Gati Shifting Packers car transport, bike transport, vehicle relocation, car moving services, bike shifting India, car carrier services,car and bike shifting, vehicle transportation, car transport service, bike transport service, car movers and packers, bike movers and packers, vehicle relocation services, car and bike relocation by Gati Shifting Packers, affordable car transport, reliable bike shifting services, door-to-door vehicle transport, professional car movers near me, trusted bike transport company, safe car and bike relocation, car carrier services in India, bike courier services, Gati Shifting Packers vehicle shifting, interstate car and bike transport, best car transport company in India, two-wheeler relocation services, four-wheeler transport service, vehicle shifting experts, hassle-free car and bike moving, pan-India vehicle relocation, secure car and bike delivery" />
-<meta name="robots" content="index, follow" />
-<meta name="author" content="Abhishek" />
+                <meta name="description" content="Get safe and affordable Car & Bike Transport Services across India with Gati Shifting Packers. We ensure secure vehicle relocation with expert handling and timely delivery." />
+                <meta name="keywords" content="Gati Shifting Packers car transport, bike transport, vehicle relocation, car moving services, bike shifting India, car carrier services,car and bike shifting, vehicle transportation, car transport service, bike transport service, car movers and packers, bike movers and packers, vehicle relocation services, car and bike relocation by Gati Shifting Packers, affordable car transport, reliable bike shifting services, door-to-door vehicle transport, professional car movers near me, trusted bike transport company, safe car and bike relocation, car carrier services in India, bike courier services, Gati Shifting Packers vehicle shifting, interstate car and bike transport, best car transport company in India, two-wheeler relocation services, four-wheeler transport service, vehicle shifting experts, hassle-free car and bike moving, pan-India vehicle relocation, secure car and bike delivery" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Abhishek" />
 
-{/* Open Graph */}
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Car & Bike Transport Services | Gati Shifting Packers" />
-<meta property="og:description" content="Reliable and professional Car & Bike Transport Services by Gati Shifting Packers. Move your vehicles safely anywhere in India." />
-<meta property="og:url" content="https://gatishiftingpackers.com/car-bike-transport" />
-<meta property="og:site_name" content="Gati Shifting Packers" />
-<meta property="og:image" content="" />
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Car & Bike Transport Services | Gati Shifting Packers" />
+                <meta property="og:description" content="Reliable and professional Car & Bike Transport Services by Gati Shifting Packers. Move your vehicles safely anywhere in India." />
+                <meta property="og:url" content="https://gatishiftingpackers.com/car-bike-transport" />
+                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:image" content="" />
 
-{/* Twitter Card */}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Car & Bike Transport Services | Gati Shifting Packers" />
-<meta name="twitter:description" content="Trust Gati Shifting Packers for secure and affordable Car & Bike Transport Services across India. Safe, fast, and hassle-free vehicle shifting." />
-<meta name="twitter:image" content="" />
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Car & Bike Transport Services | Gati Shifting Packers" />
+                <meta name="twitter:description" content="Trust Gati Shifting Packers for secure and affordable Car & Bike Transport Services across India. Safe, fast, and hassle-free vehicle shifting." />
+                <meta name="twitter:image" content="" />
 
-<meta http-equiv="Content-Language" content="en" />
+                <meta http-equiv="Content-Language" content="en" />
 
-{/* Canonical URL */}
-<link rel="canonical" href="https://gatishiftingpackers.com/car-bike-transport" />
+                {/* Canonical URL */}
+                <link rel="canonical" href="https://gatishiftingpackers.com/car-bike-transport" />
 
 
             </Helmet>
-
+            <div className="bg-attached">
+                <h1>Car/Bike Transport</h1>
+            </div>
             <section id="pet-relocation-sec">
                 <div className="container">
                     <h1>Gati Shifting Packers – Reliable Car & Bike Transport Services in India</h1>
@@ -180,7 +182,7 @@ const CarBikeTransport = () => {
             <TrustUsSection></TrustUsSection>
             <BrandList></BrandList>
             <FAQList></FAQList>
-              <section id="keywords-section">
+            <section id="keywords-section">
                 <h1>People also search for these Queries</h1>
                 <div className="container">
                     {keywords.map((col) => {

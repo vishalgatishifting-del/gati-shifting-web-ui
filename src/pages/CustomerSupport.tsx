@@ -21,6 +21,9 @@ interface props{
 const CustomerSupport = ({successCondition} : props) => {
     return (
         <>
+        <div className="bg-attached">
+                    <h1>Customer Support</h1>
+                </div>
             <section id="customer-support-sec">
                 <div className="container">
                     <div className="content">

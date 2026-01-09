@@ -11,7 +11,9 @@ import TrustUsSection from "../components/TrustUsSection";
 
 const OurTeam = () => {
     return (
-        <>
+        <> <div className="bg-attached-our-team">
+                    <h1>Our Team</h1>
+                </div>
             <section id="our-team-section">
                 <div className="container">
                     <div className="content">

@@ -13,35 +13,37 @@ const SafetyStandard = () => {
         <>
             <Helmet>
 
-{/* Meta Tags for Safety Standard Page */}
-<title>Safety Standards | Gati Shifting Packers</title>
+                {/* Meta Tags for Safety Standard Page */}
+                <title>Safety Standards | Gati Shifting Packers</title>
 
-<meta name="description" content="Experience top-tier Safety Standards with Gati Shifting Packers. We ensure secure packing, handling, and transportation with trusted safety protocols and professional care." />
-<meta name="keywords" content="Gati Shifting Packers safety standards, safe relocation services, packing and moving safety, professional movers, goods protection, secure transportation, moving safety guidelines, safety measures for shifting, reliable packers and movers, trusted moving company, damage-free moving, quality packing materials, safety-focused relocation, professional handling, household goods safety, cargo safety standards, moving company with safety assurance" />
-<meta name="robots" content="index, follow" />
-<meta name="author" content="Abhishek" />
+                <meta name="description" content="Experience top-tier Safety Standards with Gati Shifting Packers. We ensure secure packing, handling, and transportation with trusted safety protocols and professional care." />
+                <meta name="keywords" content="Gati Shifting Packers safety standards, safe relocation services, packing and moving safety, professional movers, goods protection, secure transportation, moving safety guidelines, safety measures for shifting, reliable packers and movers, trusted moving company, damage-free moving, quality packing materials, safety-focused relocation, professional handling, household goods safety, cargo safety standards, moving company with safety assurance" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Abhishek" />
 
-{/* Open Graph */}
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Safety Standards | Gati Shifting Packers" />
-<meta property="og:description" content="Gati Shifting Packers follows strict Safety Standards to ensure secure packing, loading, and delivery of your belongings with utmost care." />
-<meta property="og:url" content="https://gatishiftingpackers.com/safety-standard" />
-<meta property="og:site_name" content="Gati Shifting Packers" />
-<meta property="og:image" content="" />
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Safety Standards | Gati Shifting Packers" />
+                <meta property="og:description" content="Gati Shifting Packers follows strict Safety Standards to ensure secure packing, loading, and delivery of your belongings with utmost care." />
+                <meta property="og:url" content="https://gatishiftingpackers.com/safety-standard" />
+                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:image" content="" />
 
-{/* Twitter Card */}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Safety Standards | Gati Shifting Packers" />
-<meta name="twitter:description" content="Ensure safe and damage-free relocation with Gati Shifting Packers’ professional Safety Standards and trusted moving practices." />
-<meta name="twitter:image" content="" />
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Safety Standards | Gati Shifting Packers" />
+                <meta name="twitter:description" content="Ensure safe and damage-free relocation with Gati Shifting Packers’ professional Safety Standards and trusted moving practices." />
+                <meta name="twitter:image" content="" />
 
-<meta http-equiv="Content-Language" content="en" />
+                <meta http-equiv="Content-Language" content="en" />
 
-{/* Canonical URL */}
-<link rel="canonical" href="https://gatishiftingpackers.com/safety-standard" />
+                {/* Canonical URL */}
+                <link rel="canonical" href="https://gatishiftingpackers.com/safety-standard" />
 
             </Helmet>
-
+            <div className="bg-attached">
+                <h1>Safety Standard</h1>
+            </div>
             <section id="pet-relocation-sec">
                 <div className="container">
                     <h1>Our Safety Standards</h1>
@@ -60,11 +62,11 @@ const SafetyStandard = () => {
                             </li>
                             <li>
                                 <h3>GPS-Enabled Vehicles</h3>
-                               Our fleet of well-maintained and GPS-enabled vehicles is operated by experienced and verified drivers. This ensures timely delivery, minimal handling, and complete protection against damage or delays.
+                                Our fleet of well-maintained and GPS-enabled vehicles is operated by experienced and verified drivers. This ensures timely delivery, minimal handling, and complete protection against damage or delays.
                             </li>
                             <li>
                                 <h3>Sealed and Labeled Shipments</h3>
-                               Every box is properly sealed, labeled, and documented for easy identification and to prevent tampering or loss during transportation. This ensures total transparency and traceability at every step.
+                                Every box is properly sealed, labeled, and documented for easy identification and to prevent tampering or loss during transportation. This ensures total transparency and traceability at every step.
                             </li>
                             <li>
                                 <h3>Real-Time Tracking</h3>

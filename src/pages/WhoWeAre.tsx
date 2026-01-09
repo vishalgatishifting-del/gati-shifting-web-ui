@@ -50,6 +50,9 @@ const WhoWeAre = () => {
 
     return (
         <>
+                <div className="bg-attached-who-we-are">
+                    <h1>Who we are?</h1>
+                </div>
             <section id="who-we-are-section">
                 <div className="container">
                     <div className="content">

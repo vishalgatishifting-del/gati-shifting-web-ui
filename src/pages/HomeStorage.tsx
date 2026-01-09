@@ -33,7 +33,9 @@ const HomeStorage = () => {
 
 
             </Helmet>
-
+            <div className="bg-attached">
+                <h1>Home Storage</h1>
+            </div>
             <section id="pet-relocation-sec">
                 <div className="container">
                     <h1>Gati Shifting Packers – Reliable Home Storage Services in India</h1>

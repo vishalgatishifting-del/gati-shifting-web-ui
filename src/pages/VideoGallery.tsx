@@ -21,6 +21,9 @@ const VideoGallery = () => {
     ];
     return (
         <>
+        <div className="bg-attached">
+                    <h1>Our Video</h1>
+                </div>
             <section id="video-gallery-sec">
                 <div className="container">
                     <h1>Our Videos</h1>

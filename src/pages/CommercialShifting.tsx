@@ -63,7 +63,9 @@ const CommercialShifting = () => {
                 <link rel="canonical" href="https://gatishiftingpackers.com/commercial-shifting" />
 
             </Helmet>
-
+<div className="bg-attached">
+                    <h1>Commercial Shifting</h1>
+                </div>
             <div className="bg-attached-sec">
                 <h1>Commercial Vehicle Transport Services in India</h1>
             </div>

@@ -10,56 +10,58 @@ import ReviewDialog from "../components/ReviewDialog";
 
 const OfficeRelocation = () => {
     const keywords = [
-  "office relocation services",
-  "office movers",
-  "commercial moving services",
-  "office shifting services",
-  "business relocation services",
-  "office furniture movers",
-  "small office movers",
-  "corporate relocation services",
-  "commercial movers",
-  "office moving company",
-  "office shifting company near me",
-  "office move planning services",
-  "office relocation cost",
-  "office move checklist",
-  "professional office movers",
-  "gati packers and movers"
-];
+        "office relocation services",
+        "office movers",
+        "commercial moving services",
+        "office shifting services",
+        "business relocation services",
+        "office furniture movers",
+        "small office movers",
+        "corporate relocation services",
+        "commercial movers",
+        "office moving company",
+        "office shifting company near me",
+        "office move planning services",
+        "office relocation cost",
+        "office move checklist",
+        "professional office movers",
+        "gati packers and movers"
+    ];
 
     return (
         <>
             <Helmet>
-{/* Meta Tags for Office Relocation Page */}
- <title>Office Relocation Services | Gati Shifting Packers</title>
+                {/* Meta Tags for Office Relocation Page */}
+                <title>Office Relocation Services | Gati Shifting Packers</title>
 
-  <meta name="description" content="Professional Office Relocation Services by Gati Shifting Packers. Efficient, safe, and timely shifting of your office equipment and furniture across India." />
-  <meta name="keywords" content="Gati Shifting Packers office relocation, commercial movers, office shifting services, corporate relocation, office moving India, office movers,affordable office movers in delhi, affordable office movers in noida, gati office relocation services,office relocation, office shifting, corporate relocation, business moving services, commercial movers, office packers and movers, relocation services, office shifting company, office moving, office shifting services, best office relocation services in India, professional office shifting company near me, affordable office movers and packers, office relocation services by Gati Shifting Packers, corporate office shifting solutions, trusted business relocation company in India, top-rated office shifting services near me, IT office relocation experts, end-to-end office relocation and setup services, safe and reliable office relocation with Gati Shifting Packers, how to relocate an office without downtime, office furniture and equipment moving services, Gati Shifting Packers office relocation reviews, customized corporate relocation packages, pan-India office relocation solutions" />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Abhishek" />
+                <meta name="description" content="Professional Office Relocation Services by Gati Shifting Packers. Efficient, safe, and timely shifting of your office equipment and furniture across India." />
+                <meta name="keywords" content="Gati Shifting Packers office relocation, commercial movers, office shifting services, corporate relocation, office moving India, office movers,affordable office movers in delhi, affordable office movers in noida, gati office relocation services,office relocation, office shifting, corporate relocation, business moving services, commercial movers, office packers and movers, relocation services, office shifting company, office moving, office shifting services, best office relocation services in India, professional office shifting company near me, affordable office movers and packers, office relocation services by Gati Shifting Packers, corporate office shifting solutions, trusted business relocation company in India, top-rated office shifting services near me, IT office relocation experts, end-to-end office relocation and setup services, safe and reliable office relocation with Gati Shifting Packers, how to relocate an office without downtime, office furniture and equipment moving services, Gati Shifting Packers office relocation reviews, customized corporate relocation packages, pan-India office relocation solutions" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Abhishek" />
 
-  {/* Open Graph */}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Office Relocation Services | Gati Shifting Packers" />
-  <meta property="og:description" content="Trust Gati Shifting Packers for hassle-free office relocation. Safe packing and moving services for your commercial space anywhere in India." />
-  <meta property="og:url" content="https://gatishiftingpackers.com/office-relocation" />
-  <meta property="og:site_name" content="Gati Shifting Packers" />
-  <meta property="og:image" content="" />
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Office Relocation Services | Gati Shifting Packers" />
+                <meta property="og:description" content="Trust Gati Shifting Packers for hassle-free office relocation. Safe packing and moving services for your commercial space anywhere in India." />
+                <meta property="og:url" content="https://gatishiftingpackers.com/office-relocation" />
+                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:image" content="" />
 
-  {/* Twitter Card */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Office Relocation Services | Gati Shifting Packers" />
-  <meta name="twitter:description" content="Efficient office relocation services by Gati Shifting Packers. Securely move your office furniture and equipment anywhere in India." />
-  <meta name="twitter:image" content="" />
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Office Relocation Services | Gati Shifting Packers" />
+                <meta name="twitter:description" content="Efficient office relocation services by Gati Shifting Packers. Securely move your office furniture and equipment anywhere in India." />
+                <meta name="twitter:image" content="" />
 
-  <meta http-equiv="Content-Language" content="en" />
+                <meta http-equiv="Content-Language" content="en" />
 
-  {/* Canonical URL */}
-  <link rel="canonical" href="https://gatishiftingpackers.com/office-relocation" />
+                {/* Canonical URL */}
+                <link rel="canonical" href="https://gatishiftingpackers.com/office-relocation" />
 
             </Helmet>
-
+            <div className="bg-attached">
+                <h1>Office Relocation</h1>
+            </div>
             <section id="pet-relocation-sec">
                 <div className="container">
                     <h1>Gati Shifting Packers – Reliable Office Shifting Services in India</h1>
@@ -107,14 +109,14 @@ const OfficeRelocation = () => {
                         <ul>
                             <li>🏠 After delivery and reinstallation, share your valuable feedback to help us serve you better.
                                 <br />
-                                
+
                             </li>
                             <ReviewDialog></ReviewDialog>
                         </ul>
                     </div>
                     <div className="content types">
                         <h2>Office Items We Shift</h2>
-                        <p style={{marginBottom: "10px"}}>At Gati Shifting Packers, we provide complete office shifting solutions across India, covering all essential workplace items:</p>
+                        <p style={{ marginBottom: "10px" }}>At Gati Shifting Packers, we provide complete office shifting solutions across India, covering all essential workplace items:</p>
                         <ul>
                             <li>Office Furniture: Desks, chairs, tables, cabinets, and workstations.</li>
                             <li>IT Equipment: Computers, servers, printers, scanners, and networking devices.</li>
@@ -145,29 +147,29 @@ const OfficeRelocation = () => {
                         <h2>Factors Affecting the Cost of Office Shifting in India</h2>
 
                         <ol>
-                            <li>Distance - 
+                            <li>Distance -
                                 The farther the move, the higher the cost. Longer distances require more fuel, time, and resources, whether you’re shifting a home, office, or other goods.
 
                             </li>
-                            <li>Number of Items - 
+                            <li>Number of Items -
                                 If you have more or heavier items to move, you’ll need a bigger vehicle and more labor, which increases the cost.
 
 
                             </li>
                             <li>
-                                Packing Quality - 
+                                Packing Quality -
                                 Using good packing materials like bubble wrap and boxes keeps your items safe but adds a little extra to the cost, especially for fragile items.
 
 
                             </li>
                             <li>
-                                Type of Vehicle - 
+                                Type of Vehicle -
                                 The type of truck or container used depends on how many goods you have. Bigger or special vehicles cost more than small ones.
 
 
                             </li>
                             <li>
-                                Time of Moving - 
+                                Time of Moving -
                                 Moving on weekends, month-end, or during busy seasons usually costs more. Choosing a weekday or off-season date can help you save money.
 
 

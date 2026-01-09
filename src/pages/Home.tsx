@@ -39,6 +39,7 @@ import justDialCertificateImg from "../assets/homePagePng/justDialCertificate.pn
 import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.png"
 import incorporationCertificate from "../assets/homePagePng/incorporationCertificate.png"
 import GSTIncorporation from "../assets/homePagePng/GSTCertificate.png"
+import ISOcertificate from "../assets/homePagePng/isoCertificate.png"
 
 
 // CountDown Section PNG
@@ -86,7 +87,8 @@ import BalanceIcon from '@mui/icons-material/Balance';
 
 // Components
 import ReviewVideo from "../components/ReviewVideos";
-import GetInTouch from "../components/GetInTouch";
+// import GetInTouch from "../components/GetInTouch";
+import googleRatingImg from "../assets/HomePage/ghs-google-rating.png"
 import OfficeLocation from "../components/OfficeLocation";
 import TrustUsSection from "../components/TrustUsSection";
 import FAQList from "../components/FAQList";
@@ -96,7 +98,7 @@ import ProductImageSlider from "../components/PackingImageSlider"
 import Counter from "../components/Counter";
 
 
-import stepsImg from "../assets/5-steps-banner.png";
+// import stepsImg from "../assets/5-steps-banner.png";
 
 
 
@@ -106,9 +108,15 @@ import house from "../assets/HomePage/slide4.webp";
 import car from "../assets/HomePage/slide1.webp";
 import slide5 from "../assets/HomePage/slide5.webp";
 
+import { Link } from "react-router-dom";
 
 // import { IFaqItem } from "../models/App.model";
 // import { AppConstant } from "../constants/app.constant";
+
+import isoBadge from "../assets/HomePage/isoicon.png"
+import googleRatingBadge from "../assets/HomePage/5star.png"
+import trustedBadge from "../assets/HomePage/trusted.png"
+
 
 interface props {
     successCondition: React.Dispatch<React.SetStateAction<boolean>>;
@@ -386,6 +394,37 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         <img src={GSTIncorporation} />
                         <h3>GST Certificate</h3>
                     </div>
+
+                    
+                    <div className="card">
+                        <a href={ISOcertificate} className="hidden" target="_blank">
+                            Click To View
+                        </a>
+                        <img src={ISOcertificate} />
+                        <h3>ISO Certificate</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section id="badge-section">
+                <div className="container">
+                    <div className="card">
+                        <img src={isoBadge} />
+                        <h3>ISO 9001:2015</h3>
+                        <p>Certificate No: 2713SAFV2021, for Courier Services, Packers & Movers, Transportation and Storage of Goods.</p>
+                    </div>
+
+                    
+                    <div className="card">
+                        <img src={googleRatingBadge} />
+                        <h3>5 Star Ratings</h3>
+                        <p>We have been rated 5 stars by our valuable clients in multiple platforms like Google, Facebook etc.</p>
+                    </div>
+                    <div className="card">
+                        <img src={trustedBadge} />
+                        <h3>15+ Years of Trust</h3>
+                        <p>Since 2007, we are at your service expanding all over the country to be one of the best Packers and Movers company.</p>
+                    </div>
                 </div>
             </section>
 
@@ -489,12 +528,29 @@ const Home: React.FC<props> = ({ successCondition }) => {
                 ))}
             </div>
 
-            <GetInTouch></GetInTouch>
+            {/* <GetInTouch></GetInTouch> */}
+            <section id="google-review-sec">
+                <div className="container">
+                    <div className="text-box">
+                        <h1>Trusted by Hundreds of <span className="primary-color">Happy Customers</span></h1>
+                        <p>Real experiences from customers who trusted Gati Shifting Packers for safe, timely, and stress-free relocation.</p>
+                    </div>
+                    <div className="img-rating-box">
+                        <Link className="detail-link" to="/review">
+                        <img src={googleRatingImg} />
+                        <span>4.9 ★★★★★</span>
+                        <span>1000+ Reviews</span>
+                        <span>Based on genuine customer reviews</span>
+                        </Link>
+                        <Link to="/review" className="review-btn">Leave a Review</Link>
+                    </div>
+                </div>
+            </section>
             <OfficeLocation />
             <TrustUsSection />
 
 
-            <section id="about-company">
+            {/* <section id="about-company">
                 <div className="container">
                     <div className="img-bx">
                         <img src={stepsImg} alt="Gati relocation services including packing and unpacking, loading and unloading, secure transportation with GPS vehicles, car and bike relocation, transit insurance, storage, warehousing, and all-in-one transport solutions" title="Steps" loading="lazy" />
@@ -530,7 +586,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         </ul>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section id="customer-review-list">
                 <h1>What Our Customers Say</h1>

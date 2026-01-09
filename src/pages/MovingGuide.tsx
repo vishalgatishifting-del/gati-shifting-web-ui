@@ -49,7 +49,9 @@ const MovingGuide = () => {
 <meta httpEquiv="content-language" content="en" />
 
 </Helmet>
-
+<div className="bg-attached">
+                    <h1>Moving Guide</h1>
+                </div>
             <section id="movingguidesec">
                 <div className="container">
                     <aside className="left-area">

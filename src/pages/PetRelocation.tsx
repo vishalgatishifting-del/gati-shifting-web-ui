@@ -64,7 +64,9 @@ const PetRelocation = () => {
                 <link rel="canonical" href="https://gatishiftingpackers.com/pet-relocation" />
 
             </Helmet>
-
+            <div className="bg-attached">
+                <h1>Pet Relocation</h1>
+            </div>
             <section id="pet-relocation-sec">
                 <div className="container">
                     <h1>Gati Shifting Packers – Trusted Pet Relocation Services in India</h1>
@@ -183,7 +185,7 @@ const PetRelocation = () => {
             <BrandList></BrandList>
             <FAQList></FAQList>
 
-             <section id="keywords-section">
+            <section id="keywords-section">
                 <h1>People also search for these Queries</h1>
                 <div className="container">
                     {keywords.map((col) => {

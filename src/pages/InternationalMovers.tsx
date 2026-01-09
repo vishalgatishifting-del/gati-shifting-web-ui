@@ -13,27 +13,27 @@ const InternationalMovers = () => {
 
 
     const keywords = [
-  "gati packers and movers",
-  "international moving companies",
-  "international moving services",
-  "Gati International Shifting Packers and Movers",
-  "International shifting packers and movers",
-  "International Gati Shifting Packers",
-  "International packers and movers",
-  "International relocation services",
-  "International shifting services",
-  "International moving company",
-  "International household shifting",
-  "International cargo services",
-  "International logistics services",
-  "best international moving companies",
-  "international relocation services",
-  "international packing and moving",
-  "international household relocation",
-  "international moving cost",
-  "how to move abroad with belongings",
-  "international relocation company near me"
-];
+        "gati packers and movers",
+        "international moving companies",
+        "international moving services",
+        "Gati International Shifting Packers and Movers",
+        "International shifting packers and movers",
+        "International Gati Shifting Packers",
+        "International packers and movers",
+        "International relocation services",
+        "International shifting services",
+        "International moving company",
+        "International household shifting",
+        "International cargo services",
+        "International logistics services",
+        "best international moving companies",
+        "international relocation services",
+        "international packing and moving",
+        "international household relocation",
+        "international moving cost",
+        "how to move abroad with belongings",
+        "international relocation company near me"
+    ];
 
     return (
         <>
@@ -66,7 +66,9 @@ const InternationalMovers = () => {
                 <link rel="canonical" href="https://gatishiftingpackers.com/international-moves" />
 
             </Helmet>
-
+            <div className="bg-attached">
+                <h1>International Movers</h1>
+            </div>
             <section id="pet-relocation-sec">
                 <div className="container">
                     <h1>Gati Shifting Packers – Trusted International Moving Services</h1>

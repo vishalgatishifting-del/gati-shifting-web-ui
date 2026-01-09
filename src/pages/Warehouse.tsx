@@ -11,57 +11,59 @@ const Warehouse = () => {
 
 
     const keywords = [
-  "gati packers and movers",
-  "warehouse storage services",
-  "warehouse services",
-  "goods storage services",
-  "storage & warehousing services",
-  "warehouse facilities near me",
-  "warehouse for storage",
-  "short term storage services",
-  "long term storage solutions",
-  "goods warehousing services",
-  "industrial warehouse services",
-  "warehouse logistics services",
-  "warehouse & distribution services",
-  "secure storage services",
-  "climate controlled storage",
-  "warehouse storage cost"
-];
+        "gati packers and movers",
+        "warehouse storage services",
+        "warehouse services",
+        "goods storage services",
+        "storage & warehousing services",
+        "warehouse facilities near me",
+        "warehouse for storage",
+        "short term storage services",
+        "long term storage solutions",
+        "goods warehousing services",
+        "industrial warehouse services",
+        "warehouse logistics services",
+        "warehouse & distribution services",
+        "secure storage services",
+        "climate controlled storage",
+        "warehouse storage cost"
+    ];
 
     return (
         <>
             <Helmet>
 
-{/* Meta Tags for Warehouse Page */}
-<title>Warehouse & Storage Services | Gati Shifting Packers</title>
+                {/* Meta Tags for Warehouse Page */}
+                <title>Warehouse & Storage Services | Gati Shifting Packers</title>
 
-<meta name="description" content="Secure and flexible Warehouse & Storage Services by Gati Shifting Packers. Safe storage solutions for household, office, and commercial goods." />
-<meta name="keywords" content="Gati Shifting Packers warehouse, storage services, secure storage solutions, commercial storage, household storage, office storage, inventory management, warehouse and logistics services, safe goods storage, professional warehousing, flexible storage plans, storage facilities near me, Gati Shifting Packers storage services, reliable warehouse company, affordable storage services, warehouse solutions for business, storage for furniture and appliances, warehouse for commercial goods, storage management, warehousing and distribution, logistics and storage, trusted storage providers" />
-<meta name="robots" content="index, follow" />
-<meta name="author" content="Abhishek" />
+                <meta name="description" content="Secure and flexible Warehouse & Storage Services by Gati Shifting Packers. Safe storage solutions for household, office, and commercial goods." />
+                <meta name="keywords" content="Gati Shifting Packers warehouse, storage services, secure storage solutions, commercial storage, household storage, office storage, inventory management, warehouse and logistics services, safe goods storage, professional warehousing, flexible storage plans, storage facilities near me, Gati Shifting Packers storage services, reliable warehouse company, affordable storage services, warehouse solutions for business, storage for furniture and appliances, warehouse for commercial goods, storage management, warehousing and distribution, logistics and storage, trusted storage providers" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Abhishek" />
 
-{/* Open Graph */}
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Warehouse & Storage Services | Gati Shifting Packers" />
-<meta property="og:description" content="Reliable Warehouse & Storage Services by Gati Shifting Packers. Safe and secure storage solutions for your household, office, or commercial goods." />
-<meta property="og:url" content="https://gatishiftingpackers.com/warehouse" />
-<meta property="og:site_name" content="Gati Shifting Packers" />
-<meta property="og:image" content="" />
+                {/* Open Graph */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Warehouse & Storage Services | Gati Shifting Packers" />
+                <meta property="og:description" content="Reliable Warehouse & Storage Services by Gati Shifting Packers. Safe and secure storage solutions for your household, office, or commercial goods." />
+                <meta property="og:url" content="https://gatishiftingpackers.com/warehouse" />
+                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:image" content="" />
 
-{/* Twitter Card */}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Warehouse & Storage Services | Gati Shifting Packers" />
-<meta name="twitter:description" content="Professional Warehouse & Storage Services by Gati Shifting Packers. Flexible and secure storage solutions for all types of goods." />
-<meta name="twitter:image" content="" />
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Warehouse & Storage Services | Gati Shifting Packers" />
+                <meta name="twitter:description" content="Professional Warehouse & Storage Services by Gati Shifting Packers. Flexible and secure storage solutions for all types of goods." />
+                <meta name="twitter:image" content="" />
 
-<meta http-equiv="Content-Language" content="en" />
+                <meta http-equiv="Content-Language" content="en" />
 
-{/* Canonical URL */}
-<link rel="canonical" href="https://gatishiftingpackers.com/warehouse" />
+                {/* Canonical URL */}
+                <link rel="canonical" href="https://gatishiftingpackers.com/warehouse" />
 
             </Helmet>
-
+            <div className="bg-attached">
+                <h1>Warehouse</h1>
+            </div>
             <section id="pet-relocation-sec">
                 <div className="container">
                     <h1>Gati Shifting Packers – Reliable Warehouse Services in India</h1>
@@ -168,7 +170,7 @@ const Warehouse = () => {
 
                             </li>
                             <li>
-                                Access & Retrieval Frequency - 
+                                Access & Retrieval Frequency -
                                 Frequent access or retrieval of stored items may incur additional handling charges.
 
 
@@ -186,7 +188,7 @@ const Warehouse = () => {
             <BrandList></BrandList>
             <FAQList></FAQList>
 
-                <section id="keywords-section">
+            <section id="keywords-section">
                 <h1>People also search for these Queries</h1>
                 <div className="container">
                     {keywords.map((col) => {
