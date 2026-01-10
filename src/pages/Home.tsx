@@ -118,6 +118,14 @@ import googleRatingBadge from "../assets/HomePage/5star.png"
 import trustedBadge from "../assets/HomePage/trusted.png"
 
 
+import truckImg from "../assets/HomePage/truck.webp"
+import carLoadingImg from "../assets/HomePage/carLoading.png"
+import shipImg from "../assets/HomePage/ship.jpg"
+import ship2 from "../assets/HomePage/ship2.jpg"
+import airplaneImg from "../assets/HomePage/airplane.jpg"
+import truck2 from "../assets/HomePage/truck2.jpeg"
+
+
 interface props {
     successCondition: React.Dispatch<React.SetStateAction<boolean>>;
 }
@@ -395,7 +403,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         <h3>GST Certificate</h3>
                     </div>
 
-                    
+
                     <div className="card">
                         <a href={ISOcertificate} className="hidden" target="_blank">
                             Click To View
@@ -414,7 +422,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         <p>Certificate No: 2713SAFV2021, for Courier Services, Packers & Movers, Transportation and Storage of Goods.</p>
                     </div>
 
-                    
+
                     <div className="card">
                         <img src={googleRatingBadge} />
                         <h3>5 Star Ratings</h3>
@@ -532,15 +540,15 @@ const Home: React.FC<props> = ({ successCondition }) => {
             <section id="google-review-sec">
                 <div className="container">
                     <div className="text-box">
-                        <h1>Trusted by Hundreds of <span className="primary-color">Happy Customers</span></h1>
+                        <h1>Trusted by Thousands of <span className="primary-color">Happy Customers</span></h1>
                         <p>Real experiences from customers who trusted Gati Shifting Packers for safe, timely, and stress-free relocation.</p>
                     </div>
                     <div className="img-rating-box">
                         <Link className="detail-link" to="/review">
-                        <img src={googleRatingImg} />
-                        <span>4.9 ★★★★★</span>
-                        <span>1000+ Reviews</span>
-                        <span>Based on genuine customer reviews</span>
+                            <img src={googleRatingImg} />
+                            <span>4.9 ★★★★★</span>
+                            <span>1000+ Reviews</span>
+                            <span>Based on genuine customer reviews</span>
                         </Link>
                         <Link to="/review" className="review-btn">Leave a Review</Link>
                     </div>
@@ -587,6 +595,43 @@ const Home: React.FC<props> = ({ successCondition }) => {
                     </div>
                 </div>
             </section> */}
+
+
+            <section id="about-company-cards">
+                <div className="container">
+                    <div className="card">
+                        <img src={truckImg} />
+                        <h2>PACKING AND MOVING</h2>
+                        <p>We offer a range of packing and moving services from packing your entire household to packing selected items only or fragile item and any other furniture.</p>
+                    </div>
+                    <div className="card">
+                        <img src={carLoadingImg} />
+                        <h2>CAR TRANSPORT SERVICES</h2>
+                        <p>Movers Aryavarta Association, are one of India's finest car carrier service providers. Our car transport services have been satisfactorily used by clients from corporates.</p>
+                    </div>
+                    <div className="card">
+                        <img src={shipImg} />
+                        <h2>CORP. GOODS RELOCATION</h2>
+                        <p>Reckoned across the country for our efficient and reliable cargo moving and packing services, we undertake corporate Goods Relocation Service as per the requirements.</p>
+                    </div>
+                    <div className="card">
+                        <img src={ship2} />
+                        <h2>FREIGHT FORWARDING</h2>
+                        <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...</p>
+                    </div>
+                    <div className="card">
+                        <img src={airplaneImg} />
+                        <h2>INTERNATIONAL LOGISTICS</h2>
+                        <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...
+                            (neeche thoda cut ho gaya hai image me)</p>
+                    </div>
+                    <div className="card">
+                        <img src={truck2} />
+                        <h2>LOADING & UNLOADING</h2>
+                        <p>A crucial part of every relocation process, the loading and unloading is executed by highly skilled teams. The goods are loaded and unloaded with the use of pulleys,lifters etc...</p>
+                    </div>
+                </div>
+            </section>
 
             <section id="customer-review-list">
                 <h1>What Our Customers Say</h1>

@@ -43,11 +43,17 @@ const CustomerSupport = ({successCondition} : props) => {
                                 <TableBody>
                                     <TableRow>
                                         <TableCell align="left">Phone</TableCell>
-                                        <TableCell align="left">+91 7290008200</TableCell>
+                                        <TableCell align="left">+91 9422799477</TableCell>
                                     </TableRow>
                                     <TableRow>
                                         <TableCell align="left">E-mail</TableCell>
-                                        <TableCell align="left">gatishiftingpackers@gmail.com</TableCell>
+                                        <TableCell align="left">
+                                            <a href="mailto:gatishiftingpackers@gmail.com">gatishiftingpackers@gmail.com</a>
+                                            <br />
+                                            <a href="mailto:infogatishiftingpackers@gmail.com">infogatishiftingpackers@gmail.com</a>
+                                            <br />  
+                                            <a href="mailto:salesgatishifting@gmail.com">salesgatishifting@gmail.com</a>
+                                        </TableCell>
                                     </TableRow>
                                     <TableRow>
                                         <TableCell align="left">Live Chat/Whatsapp</TableCell>

@@ -7,6 +7,7 @@ import TrustUsSection from "../components/TrustUsSection";
 import InternationalMovesImg from "../assets/InternationalMoves/internationalMovesImg.jpg"
 import { Helmet } from "react-helmet-async";
 import ReviewDialog from "../components/ReviewDialog";
+import InternationalBannerImg from "../assets/homePagePng/INTERNATIONAL.png"
 
 
 const InternationalMovers = () => {
@@ -66,9 +67,10 @@ const InternationalMovers = () => {
                 <link rel="canonical" href="https://gatishiftingpackers.com/international-moves" />
 
             </Helmet>
-            <div className="bg-attached">
-                <h1>International Movers</h1>
-            </div>
+            
+            <section id="banner-image">
+                <img src={InternationalBannerImg} alt="International Banner Img" />
+            </section>
             <section id="pet-relocation-sec">
                 <div className="container">
                     <h1>Gati Shifting Packers – Trusted International Moving Services</h1>
