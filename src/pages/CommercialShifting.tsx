@@ -12,23 +12,23 @@ import "./CommercialShifting.scss"
 const CommercialShifting = () => {
 
     const keywords = [
-  "gati packers and movers",
-  "commercial movers",
-  "commercial moving company",
-  "office movers",
-  "office relocation services",
-  "commercial moving services",
-  "business movers",
-  "office moving company",
-  "office furniture movers",
-  "corporate relocation services",
-  "industrial shifting services",
-  "warehouse relocation services",
-  "factory relocation services",
-  "retail shifting services",
-  "business relocation services near me",
-  "commercial shifting company in delhi"
-];
+        "gati packers and movers",
+        "commercial movers",
+        "commercial moving company",
+        "office movers",
+        "office relocation services",
+        "commercial moving services",
+        "business movers",
+        "office moving company",
+        "office furniture movers",
+        "corporate relocation services",
+        "industrial shifting services",
+        "warehouse relocation services",
+        "factory relocation services",
+        "retail shifting services",
+        "business relocation services near me",
+        "commercial shifting company in delhi"
+    ];
 
     return (
         <>
@@ -63,9 +63,9 @@ const CommercialShifting = () => {
                 <link rel="canonical" href="https://gatishiftingpackers.com/commercial-shifting" />
 
             </Helmet>
-<div className="bg-attached">
-                    <h1>Commercial Shifting</h1>
-                </div>
+            <div className="bg-attached">
+                <h1>Commercial Shifting</h1>
+            </div>
             <div className="bg-attached-sec">
                 <h1>Commercial Vehicle Transport Services in India</h1>
             </div>
@@ -191,7 +191,7 @@ const CommercialShifting = () => {
             <BrandList></BrandList>
             <FAQList></FAQList>
 
-                    <section id="keywords-section">
+            <section id="keywords-section">
                 <h1>People also search for these Queries</h1>
                 <div className="container">
                     {keywords.map((col) => {

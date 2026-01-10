@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 import "./Footer.scss"
 import logoImg from "../assets/logo/transparentIco.png"
 import { useState } from "react";
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+
+
+import { cities2 } from "./citiesData";
 
 //     "Itanagar", "Dibrugarh", "Silchar", "Gaya", "Muzaffarpur", "Darbhanga",
 //     "Raipur", "Bhilai", "Durg", "Bilaspur",
@@ -29,33 +31,66 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 //     "Asansol", "Durgapur", "Siliguri"
 const Footer = () => {
 
-    const cities = [
-        "Jaipur", "Nagaon", "Thrissur", "Vishakhapatnam", "Thiruvananthapuram", "Coimbatore", "Manipur", "Dimapur", "Shilong", "Rishikesh", "Haridwar", "Gorakhpur", "Ranipet", "Amrawati", "Jorhat", "Palakkad", "Sambalpur", "Berhampur", "Imphal", "Rourkela", "Balasore", "Puri", "Baripada","Jharsuguda", "Angul", "Bhadrak", "Bargarh", "Jeypore", "Kendrapara", "Rayagada", "Whitefield", "Electronic-City", "Koramangala", "Indiranagar", "Marathahalli", "Yelahanka", "Jayanagar", "Rajajinagar", "HSR-Layout", "BTM-Layout", "Hebbal", "Malleshwaram", "Kalyan-Dombivli", "Banashankari", "Nagpur", "Solapur", "Sangli", "Jalgaon", "Akola", "Latur", "Dhule", "Ahmednagar", "Chandrapur", "Parbhani", "Nanded", "Wardha", "Satara", "Ratnagiri", "Palghar", "Basavanagudi", "Bengaluru", "Mysuru", "Dharwad","Belagavi", "Belgaum", "Kalaburagi", "Gulbarga", "Ballari", "Davanagere", "Tumakuru", "Shivamogga", "Raichur", "Vijayapura", "Bidar", "Hassan", "Chitradurga", "Kolar", "Udupi", "Karwar", "Bagalkot", "Varanasi", "Thoubal", "Churachandpur", "Bishnupur", "Ukhrul", "Senapati", "Kakching", "Tamenglong", "Jiribam", "Moreh", "Shimla", "Manali", "Kullu", "Mandi", "Solan", "Dharamshala", "Kangra", "Hamirpur", "Una", "Chamba", "Palampur", "Nahan", "Kinnaur", "Keylong", "Srinagar", "Anantnag", "Baramulla", "Udhampur", "Kathua", "Sopore", "Kupwara", "Pulwama", "Rajouri", "Poonch", "Bandipora", "Ganderbal", "Kulgam", "Doda", "Kishtwar", "Samba", "Shopian", "Leh", "Kargil", "Itanagar", "Naharlagun", "Tawang", "Bomdila", "Ziro", "Pasighat", "Roing", "Tezu", "Namsai", "Yingkiong", "Along", "Daporijo", "Seppa", "Khonsa", "Changlang", "Longding", "Mizoram", "Aizawl", "Lunglei", "Champhai", "Serchhip", "Kolasib", "Mamit","Lawngtlai", "Saiha", "Khawzawl", "Saitual", "Hnahthial", "Gangtok", "Namchi", "Gyalshing", "Mangan", "Singtam","Rangpo", "Jorethang", "Soreng", "Chungthang", "Pakyong", "Ravangla", "Lachung","Gaya", "Bhagalpur", "Muzaffarpur", "Darbhanga", "Purnia", "Arrah", "Hajipur", "Begusarai", "Chhapra", "Samastipur", "Lakhisarai", "Buxar", "Vijayawada", "Guntur", "Nellore", "Tirupati", "Kurnool", "Rajahmundry", "Kadapa", "Anantapur", "Eluru", "Ongole", "Srikakulam", "Vizianagaram", "Chittoor", "Proddatur", "Hindupur", "Tenali", "Nandyal", "Adoni", "Nepal", "Kollam", "Alappuzha", "Idukki", "Kozhikode", "Wayanad", "Kannur", "Kasaragod", "Pathanamthitta", "Warangal", "Nizamabad", "Khammam", "Karimnagar", "Mahbubnagar", "Adilabad", "Nagarkurnool", "Medak", "Vikarabad", "Suryapet", "Wanaparthy", "Howrah", "Durgapur", "Asansol", "Siliguri", "Darjeeling", "Kharagpur", "Haldia", "Malda", "Bardhaman", "Jalpaiguri", "Berhampore", "Cooch", "Krishnanagar", "Chandannagar", "Panaji", "Mapusa", "Bicholim", "Sanquelim", "Ponda", "Margao", "Vasco-da-Gama", "Madurai", "Tiruchirappalli", "Salem", "Tirunelveli", "Erode", "Vellore", "Thanjavur", "Thoothukudi", "Dindigul", "Kanchipuram", "Tiruppur", "Cuddalore", "Nagercoil", "Hosur", "Sivakasi", "Davangere", "Hospet", "Rajkot", "Mundra", "Gandhinagar", "Morbi", "Mehsana", "Navsari", "Bharuch", "Valsad", "Roorkee", "Haldwani", "Rudrapur", "Kashipur", "Nainital", "Almora", "Mussoorie", "Bareilly", "Aligarh", "Moradabad", "Saharanpur", "Jhansi", "Mathura", "Firozabad", "Ayodhya", "Muzaffarnagar", "Rajasthan", "Kakinada", "Dibrugarh", "Silchar", "Bhilai", "Durg", "Bilaspur", "Junagadh", "Bhavnagar", "Nadiad", "Hisar", "Panipat", "Rohtak", "Yamunanagar", "Karnal", "Dhanbad", "Hazaribagh", "Bokaro-Steel-City", "Bangalore", "Mysore", "Jabalpur", "Ujjain", "Sagar", "Satna", "Kohima", "Amritsar", "Jalandhar", "Patiala", "Bathinda", "Jodhpur", "Kota", "Ajmer", "Udaipur", "Agartala"
+    // const cities = [
+    //     "Jaipur", "Nagaon", "Thrissur", "Vishakhapatnam", "Thiruvananthapuram", "Coimbatore", "Manipur", "Dimapur", "Shilong", "Rishikesh", "Haridwar", "Gorakhpur", "Ranipet", "Amrawati", "Jorhat", "Palakkad", "Sambalpur", "Berhampur", "Imphal", "Rourkela", "Balasore", "Puri", "Baripada", "Jharsuguda", "Angul", "Bhadrak", "Bargarh", "Jeypore", "Kendrapara", "Rayagada", "Whitefield", "Electronic-City", "Koramangala", "Indiranagar", "Marathahalli", "Yelahanka", "Jayanagar", "Rajajinagar", "HSR-Layout", "BTM-Layout", "Hebbal", "Malleshwaram", "Kalyan-Dombivli", "Banashankari", "Nagpur", "Solapur", "Sangli", "Jalgaon", "Akola", "Latur", "Dhule", "Ahmednagar", "Chandrapur", "Parbhani", "Nanded", "Wardha", "Satara", "Ratnagiri", "Palghar", "Basavanagudi", "Bengaluru", "Mysuru", "Dharwad", "Belagavi", "Belgaum", "Kalaburagi", "Gulbarga", "Ballari", "Davanagere", "Tumakuru", "Shivamogga", "Raichur", "Vijayapura", "Bidar", "Hassan", "Chitradurga", "Kolar", "Udupi", "Karwar", "Bagalkot", "Varanasi", "Thoubal", "Churachandpur", "Bishnupur", "Ukhrul", "Senapati", "Kakching", "Tamenglong", "Jiribam", "Moreh", "Shimla", "Manali", "Kullu", "Mandi", "Solan", "Dharamshala", "Kangra", "Hamirpur", "Una", "Chamba", "Palampur", "Nahan", "Kinnaur", "Keylong", "Srinagar", "Anantnag", "Baramulla", "Udhampur", "Kathua", "Sopore", "Kupwara", "Pulwama", "Rajouri", "Poonch", "Bandipora", "Ganderbal", "Kulgam", "Doda", "Kishtwar", "Samba", "Shopian", "Leh", "Kargil", "Itanagar", "Naharlagun", "Tawang", "Bomdila", "Ziro", "Pasighat", "Roing", "Tezu", "Namsai", "Yingkiong", "Along", "Daporijo", "Seppa", "Khonsa", "Changlang", "Longding", "Mizoram", "Aizawl", "Lunglei", "Champhai", "Serchhip", "Kolasib", "Mamit", "Lawngtlai", "Saiha", "Khawzawl", "Saitual", "Hnahthial", "Gangtok", "Namchi", "Gyalshing", "Mangan", "Singtam", "Rangpo", "Jorethang", "Soreng", "Chungthang", "Pakyong", "Ravangla", "Lachung", "Gaya", "Bhagalpur", "Muzaffarpur", "Darbhanga", "Purnia", "Arrah", "Hajipur", "Begusarai", "Chhapra", "Samastipur", "Lakhisarai", "Buxar", "Vijayawada", "Guntur", "Nellore", "Tirupati", "Kurnool", "Rajahmundry", "Kadapa", "Anantapur", "Eluru", "Ongole", "Srikakulam", "Vizianagaram", "Chittoor", "Proddatur", "Hindupur", "Tenali", "Nandyal", "Adoni", "Nepal", "Kollam", "Alappuzha", "Idukki", "Kozhikode", "Wayanad", "Kannur", "Kasaragod", "Pathanamthitta", "Warangal", "Nizamabad", "Khammam", "Karimnagar", "Mahbubnagar", "Adilabad", "Nagarkurnool", "Medak", "Vikarabad", "Suryapet", "Wanaparthy", "Howrah", "Durgapur", "Asansol", "Siliguri", "Darjeeling", "Kharagpur", "Haldia", "Malda", "Bardhaman", "Jalpaiguri", "Berhampore", "Cooch", "Krishnanagar", "Chandannagar", "Panaji", "Mapusa", "Bicholim", "Sanquelim", "Ponda", "Margao", "Vasco-da-Gama", "Madurai", "Tiruchirappalli", "Salem", "Tirunelveli", "Erode", "Vellore", "Thanjavur", "Thoothukudi", "Dindigul", "Kanchipuram", "Tiruppur", "Cuddalore", "Nagercoil", "Hosur", "Sivakasi", "Davangere", "Hospet", "Rajkot", "Mundra", "Gandhinagar", "Morbi", "Mehsana", "Navsari", "Bharuch", "Valsad", "Roorkee", "Haldwani", "Rudrapur", "Kashipur", "Nainital", "Almora", "Mussoorie", "Bareilly", "Aligarh", "Moradabad", "Saharanpur", "Jhansi", "Mathura", "Firozabad", "Ayodhya", "Muzaffarnagar", "Rajasthan", "Kakinada", "Dibrugarh", "Silchar", "Bhilai", "Durg", "Bilaspur", "Junagadh", "Bhavnagar", "Nadiad", "Hisar", "Panipat", "Rohtak", "Yamunanagar", "Karnal", "Dhanbad", "Hazaribagh", "Bokaro-Steel-City", "Bangalore", "Mysore", "Jabalpur", "Ujjain", "Sagar", "Satna", "Kohima", "Amritsar", "Jalandhar", "Patiala", "Bathinda", "Jodhpur", "Kota", "Ajmer", "Udaipur", "Agartala"
 
-    ];
+    // ];
 
     // Helper function to split array into N columns
-    const splitIntoColumns = (arr: string[], numCols: number) => {
-        const cols: string[][] = Array.from({ length: numCols }, () => []);
-        arr.forEach((city, index) => {
-            cols[index % numCols].push(city);
-        });
-        return cols;
-    };
+    // const splitIntoColumns = (arr: string[], numCols: number) => {
+    //     const cols: string[][] = Array.from({ length: numCols }, () => []);
+    //     arr.forEach((city, index) => {
+    //         cols[index % numCols].push(city);
+    //     });
+    //     return cols;
+    // };
 
-    const numCols = 4; // 4 columns like your previous example
-    const columns = splitIntoColumns(cities, numCols);
+    // const numCols = 4; // 4 columns like your previous example
+    // const columns = splitIntoColumns(cities, numCols);
 
 
-    const [show, setShow] = useState(0);
+    // const [show, setShow] = useState(0);
+
+    const [visibleCount, setVisibleCount] = useState(16);
     return (
         <>
-            <section id="redirect-links" >
-                <h1>Search By Location</h1>
+            <section id="redirect-links">
+                 <h1>Search By Location</h1>
                 <div className="container">
                     <ul>
-                        <li><Link to="/city/Agra"><LocationOnIcon></LocationOnIcon>Packers & Movers Agra</Link></li>
-                        <li><Link to="/city/ankleshwar"><LocationOnIcon></LocationOnIcon>Packers & Movers Ankleshwar</Link></li>
+                        {cities2.slice(0, visibleCount).map((item, i) => (
+                            <li key={i}>
+                                <Link to={`/city/${item.city}`}>
+                                    <img src={item.img} alt={item.city} />
+                                    <span>{item.city}</span>
+                                </Link>
+                            </li>
+                        ))}
+
+                    </ul>
+                    {visibleCount < cities2.length && (
+                        <button className="show-more-btn" onClick={() => setVisibleCount(prev => prev + 16)}>
+                            Show More
+                        </button>
+                    )}
+                </div>
+            </section>
+            {/* <section id="redirect-links" >
+               
+                <div className="container">
+                    <ul>
+                        <li>
+                            <Link to="/city/Agra">
+                                <img src={agra} />
+                                <span>Agra</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/city/ankleshwar">
+                                <img src={ankleshwar} />
+                                <span>Ankleshwar</span>
+                            </Link>
+                        </li>
                         <li><Link to="/city/Bhiwandi"><LocationOnIcon></LocationOnIcon>Packers & Movers Bhiwandi</Link></li>
                         <li><Link to="/city/Calicut"><LocationOnIcon></LocationOnIcon>Packers & Movers Calicut</Link></li>
                         <li><Link to="/city/Cuttack"><LocationOnIcon></LocationOnIcon>Packers & Movers Cuttack</Link></li>
@@ -111,26 +146,27 @@ const Footer = () => {
                     </ul>
                 </div>
                 {
-                    (show) ? 
-                    <div className="container">
-                    {columns.map((col, i) => (
-                        <ul key={i}>
-                            {col.map((city) => (
-                                <li key={city}>
-                                    <Link to={`/city/${city.replace(/\s+/g, "")}`}>
-                                       <LocationOnIcon></LocationOnIcon> Packers & Movers {city}
-                                    </Link>
-                                </li>
+                    (show) ?
+                        <div className="container">
+                            {columns.map((col, i) => (
+                                <ul key={i}>
+                                    {col.map((city) => (
+                                        <li key={city}>
+                                            <Link to={`/city/${city.replace(/\s+/g, "")}`}>
+                                                <img src={`../assets/CityPages/${city}.webp`} />
+                                                <LocationOnIcon></LocationOnIcon> Packers & Movers {city}
+                                            </Link>
+                                        </li>
+                                    ))}
+                                </ul>
                             ))}
-                        </ul>
-                    ))}
-                </div> : ""}
+                        </div> : ""}
 
 
-                {  show==0 ? (<button className="show-more-btn" onClick={() => {
+                {show == 0 ? (<button className="show-more-btn" onClick={() => {
                     setShow(1)
-                    }}>Show More</button>):""}
-            </section>
+                }}>Show More</button>) : ""}
+            </section> */}
 
             <footer className="footer">
                 <div className="footer-top">
