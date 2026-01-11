@@ -40,6 +40,7 @@ import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.png"
 import incorporationCertificate from "../assets/homePagePng/incorporationCertificate.png"
 import GSTIncorporation from "../assets/homePagePng/GSTCertificate.png"
 import ISOcertificate from "../assets/homePagePng/isoCertificate.png"
+import gatiCertificate from "../assets/homePagePng/gatiCertificate.png"
 
 
 // CountDown Section PNG
@@ -411,6 +412,15 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         <img src={ISOcertificate} />
                         <h3>ISO Certificate</h3>
                     </div>
+
+                    
+                    <div className="card">
+                        <a href={gatiCertificate} className="hidden" target="_blank">
+                            Click To View
+                        </a>
+                        <img src={gatiCertificate} />
+                        <h3>Achievement Certificate</h3>
+                    </div>
                 </div>
             </section>
 
@@ -554,7 +564,6 @@ const Home: React.FC<props> = ({ successCondition }) => {
                     </div>
                 </div>
             </section>
-            <OfficeLocation />
             <TrustUsSection />
 
 
@@ -632,6 +641,10 @@ const Home: React.FC<props> = ({ successCondition }) => {
                     </div>
                 </div>
             </section>
+
+            
+            <OfficeLocation />
+            <FAQList></FAQList>
 
             <section id="customer-review-list">
                 <h1>What Our Customers Say</h1>
@@ -824,7 +837,6 @@ const Home: React.FC<props> = ({ successCondition }) => {
                 </div>
             </section>
 
-            <FAQList></FAQList>
             <section id="keywords-section">
                 <h1>People also search for these Queries</h1>
                 <div className="container">
