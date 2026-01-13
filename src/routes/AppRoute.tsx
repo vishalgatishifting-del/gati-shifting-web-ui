@@ -37,6 +37,8 @@ import PopUp from "../components/PopUpDisplay.tsx"
 import Storage from "../pages/Storage.tsx"
 import CarStorage from "../pages/CarStorage.tsx"
 import BikeStorage from "../pages/BikeStorage.tsx"
+import BusinessPartner from "../pages/BusinessPartner.tsx"
+
 
 const AppRoutes = () => {
     const [open, setOpen] = useState(false);
@@ -77,6 +79,7 @@ const AppRoutes = () => {
                     <Route path="/storage" element={<Storage></Storage>}></Route>
                     <Route path="/car-storage" element={<CarStorage></CarStorage>}></Route>
                     <Route path="/bike-storage" element={<BikeStorage></BikeStorage>}></Route>
+                    <Route path="/document-upload" element={<BusinessPartner></BusinessPartner>}></Route>
                     
                     {
                         pagesData.map((page) => (
