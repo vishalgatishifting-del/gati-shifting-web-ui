@@ -5,8 +5,6 @@ import Review from "../pages/Review"
 import FAQ from "../pages/FAQ"
 import Services from "../pages/Services"
 import Contact from "../pages/Contact"
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
 import WhoWeAre from "../pages/WhoWeAre"
 import ScrollToTop from "../components/ScrollToTop";
 import WhyGati from "../pages/WhyGati"
@@ -39,53 +37,55 @@ import CarStorage from "../pages/CarStorage.tsx"
 import BikeStorage from "../pages/BikeStorage.tsx"
 import BusinessPartner from "../pages/BusinessPartner.tsx"
 
+import Layout from "../pages/Laoytout.tsx"
+
 
 const AppRoutes = () => {
-    const [open, setOpen] = useState(false);
+    const [, setOpen] = useState(false);
     const [visibilityCondition, setVisibilityCondition] = useState<boolean>(false);
     return (
         <section style={{ overflowX: "hidden" }}>
-            <Navbar successCondition={setVisibilityCondition} setOpen={setOpen} open={open} />
+            {/* <Navbar successCondition={setVisibilityCondition} setOpen={setOpen} open={open} /> */}
             <PopUp visibility={visibilityCondition} condition={setVisibilityCondition}></PopUp>
             <ScrollToTop>
                 <Routes>
-                    <Route path="/" element={<Home successCondition={setVisibilityCondition}></Home>}></Route>
-                    <Route path="/about" element={<About  successCondition={setVisibilityCondition}  setOpen={setOpen}></About>}></Route>
-                    <Route path="/review" element={<Review  successCondition={setVisibilityCondition} ></Review>}></Route>
-                    <Route path="/faqs" element={<FAQ></FAQ>}></Route>
-                    <Route path="/services" element={<Services  successCondition={setVisibilityCondition} ></Services>}></Route>
-                    <Route path="/contact-us" element={<Contact  successCondition={setVisibilityCondition}></Contact>}></Route>
-                    <Route path="/who-we-are" element={<WhoWeAre></WhoWeAre>}></Route>
-                    <Route path="/why-gati" element={<WhyGati  successCondition={setVisibilityCondition} ></WhyGati>}></Route>
-                    <Route path="/our-team" element={<OurTeam></OurTeam>}></Route>
-                    <Route path="/vission-mission" element={<VisionandMision></VisionandMision>}></Route>
-                    <Route path="/terms-and-conditions" element={<TermsCondition></TermsCondition>}></Route>
-                    <Route path="/privacy-and-policy" element={<PrivacyPolicy></PrivacyPolicy>}></Route>
-                    <Route path="/bill-claim" element={<BillClaim></BillClaim>}></Route>
-                    <Route path="/moving-guide" element={<MovingGuide></MovingGuide>}></Route>
-                    <Route path="/photo-gallery" element={<PhotoGallery></PhotoGallery>}></Route>
-                    <Route path="/customer-support" element={<CustomerSupport  successCondition={setVisibilityCondition} ></CustomerSupport>}></Route>
-                    <Route path="/home-shifting" element={<HomeShifting></HomeShifting>}></Route>
-                    <Route path="/pet-relocation" element={<PetRelocation></PetRelocation>}></Route>
-                    <Route path="/office-relocation" element={<OfficeRelocation></OfficeRelocation>}></Route>
-                    <Route path="/car-bike-transport" element={<CarBikeTransport></CarBikeTransport>}></Route>
-                    <Route path="/commercial-shifting" element={<CommercialShifting></CommercialShifting>}></Route>
-                    <Route path="/international-moves" element={<InternationalMovers></InternationalMovers>}></Route>
-                    <Route path="/warehouse" element={<Warehouse></Warehouse>}></Route>
-                    <Route path="/home-storage" element={<HomeStorage></HomeStorage>}></Route>
-                    <Route path="/safety-standard" element={<SafetyStandard></SafetyStandard>}></Route>
-                    <Route path="/video-gallery" element={<VideoGallery></VideoGallery>}></Route>
-                    <Route path="/international-shifting" element={<InternationalShifting successCondition={setVisibilityCondition}></InternationalShifting>}></Route>
-                    <Route path="/storage" element={<Storage></Storage>}></Route>
-                    <Route path="/car-storage" element={<CarStorage></CarStorage>}></Route>
-                    <Route path="/bike-storage" element={<BikeStorage></BikeStorage>}></Route>
+                    <Route path="/" element={<Layout><Home successCondition={setVisibilityCondition}></Home></Layout>}></Route>
+                    <Route path="/about" element={<Layout><About successCondition={setVisibilityCondition} setOpen={setOpen}></About></Layout>}></Route>
+                    <Route path="/review" element={<Layout><Review successCondition={setVisibilityCondition} ></Review></Layout>}></Route>
+                    <Route path="/faqs" element={<Layout><FAQ></FAQ></Layout>}></Route>
+                    <Route path="/services" element={<Layout><Services successCondition={setVisibilityCondition} ></Services></Layout>}></Route>
+                    <Route path="/contact-us" element={<Layout><Contact successCondition={setVisibilityCondition}></Contact></Layout>}></Route>
+                    <Route path="/who-we-are" element={<Layout><WhoWeAre></WhoWeAre></Layout>}></Route>
+                    <Route path="/why-gati" element={<Layout><WhyGati successCondition={setVisibilityCondition} ></WhyGati></Layout>}></Route>
+                    <Route path="/our-team" element={<Layout><OurTeam></OurTeam></Layout>}></Route>
+                    <Route path="/vission-mission" element={<Layout><VisionandMision></VisionandMision></Layout>}></Route>
+                    <Route path="/terms-and-conditions" element={<Layout><TermsCondition></TermsCondition></Layout>}></Route>
+                    <Route path="/privacy-and-policy" element={<Layout><PrivacyPolicy></PrivacyPolicy></Layout>}></Route>
+                    <Route path="/bill-claim" element={<Layout><BillClaim></BillClaim></Layout>}></Route>
+                    <Route path="/moving-guide" element={<Layout><MovingGuide></MovingGuide></Layout>}></Route>
+                    <Route path="/photo-gallery" element={<Layout><PhotoGallery></PhotoGallery></Layout>}></Route>
+                    <Route path="/customer-support" element={<Layout><CustomerSupport successCondition={setVisibilityCondition} ></CustomerSupport></Layout>}></Route>
+                    <Route path="/home-shifting" element={<Layout><HomeShifting></HomeShifting></Layout>}></Route>
+                    <Route path="/pet-relocation" element={<Layout><PetRelocation></PetRelocation></Layout>}></Route>
+                    <Route path="/office-relocation" element={<Layout><OfficeRelocation></OfficeRelocation></Layout>}></Route>
+                    <Route path="/car-bike-transport" element={<Layout><CarBikeTransport></CarBikeTransport></Layout>}></Route>
+                    <Route path="/commercial-shifting" element={<Layout><CommercialShifting></CommercialShifting></Layout>}></Route>
+                    <Route path="/international-moves" element={<Layout><InternationalMovers></InternationalMovers></Layout>}></Route>
+                    <Route path="/warehouse" element={<Layout><Warehouse></Warehouse></Layout>}></Route>
+                    <Route path="/home-storage" element={<Layout><HomeStorage></HomeStorage></Layout>}></Route>
+                    <Route path="/safety-standard" element={<Layout><SafetyStandard></SafetyStandard></Layout>}></Route>
+                    <Route path="/video-gallery" element={<Layout><VideoGallery></VideoGallery></Layout>}></Route>
+                    <Route path="/international-shifting" element={<Layout><InternationalShifting successCondition={setVisibilityCondition}></InternationalShifting></Layout>}></Route>
+                    <Route path="/storage" element={<Layout><Storage></Storage></Layout>}></Route>
+                    <Route path="/car-storage" element={<Layout><CarStorage></CarStorage></Layout>}></Route>
+                    <Route path="/bike-storage" element={<Layout><BikeStorage></BikeStorage></Layout>}></Route>
                     <Route path="/document-upload" element={<BusinessPartner></BusinessPartner>}></Route>
-                    
+
                     {
                         pagesData.map((page) => (
-                            <Route path={`/city/${page.slug}`} element={
+                            <Route path={`/city/${page.slug}`} element={<Layout>
                                 <CityPage city={page.city} img={page.img} metaData={page.metaDetails} offer={page.offer} pageData={page.pageData} address={page.address}></CityPage>
-                            }>
+                            </Layout>}>
 
                             </Route>
                         ))
@@ -96,7 +96,6 @@ const AppRoutes = () => {
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </ScrollToTop>
-            <Footer />
         </section>
     )
 

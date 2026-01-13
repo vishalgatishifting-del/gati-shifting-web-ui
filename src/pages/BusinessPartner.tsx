@@ -9,6 +9,8 @@ import {
 } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 import "./BusinessPartner.scss"
+import Logo from "../assets/logo/transparentIco.png"
+import BannerImg from "../assets/get-in-touch.webp"
 
 const BusinessPartner: React.FC = () => {
     const [files, setFiles] = useState<(File | null)[]>([
@@ -123,7 +125,13 @@ const BusinessPartner: React.FC = () => {
 
     return (
         <section id="form-section">
-            <Box p={4} maxWidth={600} mx="auto">
+            <div className="logo">
+                <img src={Logo} className="logoImg" />
+                <div className="images">
+                    <img src={BannerImg} />
+                </div>
+            </div>
+            <Box m={0} >
                 <Typography variant="h5" mb={3} fontWeight="bold">
                     Business Partner Form
                 </Typography>
