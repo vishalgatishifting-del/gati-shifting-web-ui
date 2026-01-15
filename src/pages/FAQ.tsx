@@ -1,6 +1,6 @@
 import FAQList from "../components/FAQList";
 import "./FAQ.scss";
-import car5 from "../assets/car5.jpg"
+import car5 from "../assets/FAQPageImg/hero-section-img.png"
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
@@ -30,54 +30,66 @@ const FAQ = () => {
             </Helmet>
             <section className="info-section">
                 <div className="info-left">
-                    <h2>Reliable Moving & Packing Solutions Across India</h2>
+                    <span className="badge">Trusted Movers Across India</span>
+
+                    <h2>
+                        Reliable Moving & Packing <br />
+                        Solutions Across India
+                    </h2>
+
                     <p>
-                        At Gati Shifting Packers and Movers, we understand that relocating
-                        your home or office is more than just moving belongings — it’s about
-                        transitioning your life smoothly and securely. With years of
-                        expertise in the logistics industry, we offer comprehensive,
-                        end-to-end relocation services tailored to meet the unique needs of
-                        every customer across India. Our dedicated team of trained
-                        professionals ensures that every item, whether fragile or bulky, is
-                        packed with utmost care using high-quality materials to prevent
-                        damage during transit. We employ modern packing techniques and secure
-                        loading processes so that your valuables reach their destination
-                        intact and on time. From local moves within cities to interstate or
-                        even pan-India relocations, we provide customized transport solutions
-                        that combine efficiency, safety, and affordability. We leverage a
-                        fleet of well-maintained vehicles equipped to handle a wide range of
-                        goods — household items, office equipment, industrial machinery, and
-                        more. Transparency is at the heart of our service. We offer accurate,
-                        upfront cost estimates with no hidden charges, helping you plan your
-                        move without surprises. Our customer support remains available at
-                        every step — from initial consultation and packing to transport and
-                        final unpacking at your new location. Experience a hassle-free
-                        relocation with Gati Shifting Packers and Movers — your trusted
-                        partner in moving. Let us handle the logistics while you focus on
-                        starting fresh in your new place.
+                        At <strong>Gati Shifting Packers</strong>, relocating is more
+                        than transport — it’s about trust, safety, and peace of mind. Our
+                        expert team ensures secure packing, smooth transportation, and
+                        timely delivery using modern equipment and high-quality materials.
                     </p>
-                    <Link to="/services" className="explore-link">
-                        Explore Services
-                    </Link>
+
+                    <p>
+                        From local household shifting to corporate and pan-India relocation,
+                        we offer transparent pricing, zero hidden charges, and dedicated
+                        customer support at every stage of your move.
+                    </p>
+
+                    <div className="cta-group">
+                        <Link to="/services" className="primary-btn">
+                            Explore Our Services
+                        </Link>
+                        <Link to="/contact" className="secondary-btn">
+                            Get Free Quote
+                        </Link>
+                    </div>
+
+                    <div className="trust-stats">
+                        <div>
+                            <h4>10K+</h4>
+                            <span>Happy Customers</span>
+                        </div>
+                        <div>
+                            <h4>100+</h4>
+                            <span>Cities Covered</span>
+                        </div>
+                        <div>
+                            <h4>5★</h4>
+                            <span>Customer Rating</span>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="info-right">
                     <div className="image-card">
-                        <img
-                            src={car5}
-                            alt="Moving Vehicle"
-                        />
-                        <div className="card-text">
-                            <h4>Top Rated by Thousands</h4>
+                        <img src={car5} alt="Gati Shifting Packers Moving Vehicle" />
+
+                        <div className="overlay">
+                            <h4>Top Rated Packers & Movers</h4>
                             <p>
-                                From household to corporate relocations, our trained staff ensures
-                                seamless service. Get accurate cost estimates and zero hidden
-                                charges.
+                                Safe packing, insured transport & on-time delivery trusted by
+                                thousands of customers across India.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
+
             <FAQList></FAQList>
         </>
     )

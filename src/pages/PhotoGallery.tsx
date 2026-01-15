@@ -37,7 +37,7 @@ const PhotoGallery = () => {
         household: [
             "ahou1.webp", "House1.webp", "House10.webp", "House11.webp", "House12.webp", "House13.webp",
             "House14.webp", "House16.webp", "House17.webp", "House18.webp", "House19.webp", "House2.webp",
-            "House20.webp", "House21.webp", "House22.webp", "House23.webp", "House24.webp", "House25.webp",
+            "House20.webp", "House21.webp", "House22.webp", "House23.webp", "House24.jpeg", "House25.webp",
             "House26.webp", "House27.webp", "house29.webp", "House3.webp", "house30.webp", "house31.webp",
             "house32.webp", "house34.webp", "House4.webp", "House5.webp", "House6.webp", "House7.webp",
             "House8.webp", "House9.webp", "other1.webp", "other2.webp", "other3.webp", "other4.webp"
