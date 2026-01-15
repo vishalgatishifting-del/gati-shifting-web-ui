@@ -36,11 +36,17 @@ import Storage from "../pages/Storage.tsx"
 import CarStorage from "../pages/CarStorage.tsx"
 import BikeStorage from "../pages/BikeStorage.tsx"
 import BusinessPartner from "../pages/BusinessPartner.tsx"
-
 import Layout from "../pages/Laoytout.tsx"
+
+import AdminDashboard from "../pages/AdminDashboard.tsx"
+import AdminLogin from "../pages/AdminLogin.tsx"
 
 
 const AppRoutes = () => {
+
+    const testing = ()=>{
+        console.log("fire")
+    }
     const [, setOpen] = useState(false);
     const [visibilityCondition, setVisibilityCondition] = useState<boolean>(false);
     return (
@@ -80,6 +86,8 @@ const AppRoutes = () => {
                     <Route path="/car-storage" element={<Layout><CarStorage></CarStorage></Layout>}></Route>
                     <Route path="/bike-storage" element={<Layout><BikeStorage></BikeStorage></Layout>}></Route>
                     <Route path="/document-upload" element={<BusinessPartner></BusinessPartner>}></Route>
+                    <Route path="/admin-login" element={<AdminLogin onLoginSuccess={testing}></AdminLogin>}></Route>
+                    <Route path="/admin" element={<AdminDashboard></AdminDashboard>}></Route>
 
                     {
                         pagesData.map((page) => (
