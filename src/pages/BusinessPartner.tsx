@@ -100,7 +100,7 @@ const BusinessPartner: React.FC = () => {
 
         try {
             setLoading(true);
-
+// https://api.gatishiftingpackers.com/upload
             const res = await fetch("https://api.gatishiftingpackers.com/upload", {
                 method: "POST",
                 body: formData,

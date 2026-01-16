@@ -54,7 +54,7 @@ const FAQ = () => {
                         <Link to="/services" className="primary-btn">
                             Explore Our Services
                         </Link>
-                        <Link to="/contact" className="secondary-btn">
+                        <Link to="/contact-us" className="secondary-btn">
                             Get Free Quote
                         </Link>
                     </div>

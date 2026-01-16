@@ -3,7 +3,7 @@ import type { PartnershipRequest } from "../pages/AdminDashboard";
 
 interface Props {
   data: PartnershipRequest;
-  onAction: (id: number, status: "approved" | "rejected") => void;
+  onAction: (id: string, status: "approved" | "rejected") => void;
 }
 
 const RequestRow: React.FC<Props> = ({ data, onAction }) => {

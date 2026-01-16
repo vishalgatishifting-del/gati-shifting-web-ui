@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import RequestRow from "../components/RequestRow";
 import "./AdminDashboard.scss";
+import axios from "axios";
 
 export interface PartnershipRequest {
-  id: number;
+  id: string;
   name: string;
   phone: string;
   images: {
@@ -16,43 +17,76 @@ export interface PartnershipRequest {
   status: "pending" | "approved" | "rejected";
 }
 
-const AdminDashboard: React.FC = () => {
-  const [requests, setRequests] = useState<PartnershipRequest[]>([
-    {
-      id: 1,
-      name: "Rahul Traders",
-      phone: "9354122998",
-      images: {
-        aadhaar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0i0kczJVMxJfYaiw7IC__9TYFVIbwhCKM2w&s",
-        gst: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNBdR5SBH_G0WENS_S16LQ3nwccr4uPKt6Mg&s",
-        pan: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNBdR5SBH_G0WENS_S16LQ3nwccr4uPKt6Mg&s",
-        shop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKnDwB2rR7DTLCUSAMx_FmmrPXuzkkIh8TjcnpP_RzkUwCH3U4r2Xf-RZZ2EHieQgGV0Y&usqp=CAU",
-        other: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzJcmUBu58Rvk9-MEGY1H1Jscyqsi4NtbrqTxChrOHFZqCI_whW_7F2rOsC2G-yKSNBug&usqp=CAU",
-      },
-      status: "pending",
-    },
-    {
-      id: 2,
-      name: "Rohan Traders",
-      phone: "9354122998",
-      images: {
-        aadhaar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0i0kczJVMxJfYaiw7IC__9TYFVIbwhCKM2w&s",
-        gst: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNBdR5SBH_G0WENS_S16LQ3nwccr4uPKt6Mg&s",
-        pan: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNBdR5SBH_G0WENS_S16LQ3nwccr4uPKt6Mg&s",
-        shop: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKnDwB2rR7DTLCUSAMx_FmmrPXuzkkIh8TjcnpP_RzkUwCH3U4r2Xf-RZZ2EHieQgGV0Y&usqp=CAU",
-        other: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzJcmUBu58Rvk9-MEGY1H1Jscyqsi4NtbrqTxChrOHFZqCI_whW_7F2rOsC2G-yKSNBug&usqp=CAU",
-      },
-      status: "pending",
-    },
-  ]);
 
-  const updateStatus = (id: number, status: "approved" | "rejected") => {
-    setRequests((prev) =>
-      prev.map((req) =>
-        req.id === id ? { ...req, status } : req
-      )
-    );
+const API_BASE = "https://api.gatishiftingpackers.com";
+
+const AdminDashboard: React.FC = () => {
+  const [requests, setRequests] = useState<PartnershipRequest[]>([]);
+  const token = localStorage.getItem("adminToken");
+
+  if (!token) {
+    window.location.href = "/admin-login";
+    return null;
+  }
+
+  // 🔹 FETCH DATA
+  const fetchRequests = useCallback(async () => {
+    try {
+      const res = await axios.get(`${API_BASE}/admin-dashboard`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      const formatted: PartnershipRequest[] = res.data.map((item: any) => ({
+        id: item.id,
+        name: item.name,
+        phone: item.phone,
+        images: {
+          aadhaar: API_BASE + (item.documents?.[0] || ""),
+          gst: API_BASE + (item.documents?.[1] || ""),
+          pan: API_BASE + (item.documents?.[2] || ""),
+          shop: API_BASE + (item.documents?.[3] || ""),
+          other: API_BASE + (item.documents?.[4] || ""),
+        },
+        status: item.status,
+      }));
+
+      setRequests(formatted);
+    } catch (error) {
+      console.error("Failed to fetch requests", error);
+    }
+  }, [token]);
+
+  // 🔹 UPDATE STATUS
+  const updateStatus = async (
+    id: string,
+    status: "approved" | "rejected"
+  ) => {
+    try {
+      await axios.post(
+        `${API_BASE}/update-status`,
+        { id, status },
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+
+      setRequests((prev) =>
+        prev.map((req) =>
+          req.id === id ? { ...req, status } : req
+        )
+      );
+    } catch (error) {
+      console.error("Status update failed", error);
+    }
   };
+
+  useEffect(() => {
+    fetchRequests();
+  }, [fetchRequests]);
 
   return (
     <div className="admin-dashboard">

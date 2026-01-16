@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./FAQList.scss"
+import { Link } from "react-router-dom";
 
 interface FaqItem {
   question: string;
@@ -132,9 +133,9 @@ const FAQList = () => {
         )}
 
         {showMore && (
-          <a href="/contact" className="contact-cta">
+          <Link to="/contact-us" className="contact-cta">
             Still have questions? Contact Us →
-          </a>
+          </Link>
         )}
       </div>
     </section>

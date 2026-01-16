@@ -4,7 +4,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import StarRateIcon from '@mui/icons-material/StarRate';
-// import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 import ContactsIcon from '@mui/icons-material/Contacts';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -126,7 +126,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
                 <StarRateIcon className="icon" /> Review
               </Link>
             </li>
-            {/* <li>
+            <li>
               <Link
                 className={currentPath === "/faqs" ? "active" : ""}
                 to="/faqs"
@@ -134,7 +134,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
               >
                 <HelpOutlineIcon className="icon" /> FAQs
               </Link>
-            </li> */}
+            </li>
             <li>
               <Link
                 className={currentPath === "/contact-us" ? "active" : ""}
