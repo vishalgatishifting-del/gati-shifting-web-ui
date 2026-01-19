@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Footer.scss"
 import logoImg from "../assets/logo/transparentIco.png"
 import { useState } from "react";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 
 import { cities2 } from "./citiesData";
@@ -51,7 +52,7 @@ const Footer = () => {
 
     // const [show, setShow] = useState(0);
 
-    const [visibleCount, setVisibleCount] = useState(16);
+    const [visibleCount, setVisibleCount] = useState(28);
     return (
         <>
             <section id="redirect-links">
@@ -61,15 +62,14 @@ const Footer = () => {
                         {cities2.slice(0, visibleCount).map((item, i) => (
                             <li key={i}>
                                 <Link to={`/city/${item.city}`}>
-                                    <img src={item.img} alt={item.city} />
-                                    <span>{item.city}</span>
+                                    <span><LocationOnIcon></LocationOnIcon>Movers and Packers {item.city}</span>
                                 </Link>
                             </li>
                         ))}
 
                     </ul>
                     {visibleCount < cities2.length && (
-                        <button className="show-more-btn" onClick={() => setVisibleCount(prev => prev + 16)}>
+                        <button className="show-more-btn" onClick={() => setVisibleCount(prev => prev + 28)}>
                             Show More
                         </button>
                     )}

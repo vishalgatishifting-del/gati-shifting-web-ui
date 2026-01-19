@@ -442,6 +442,16 @@ import Udaipur from "../assets/CityPages/Udaipur.webp"
 import Agartala from "../assets/CityPages/Agartala.webp"
 
 
+import portbiller from "../assets/CityPages/portbiller.webp"
+import Katni from "../assets/CityPages/Katni.webp"
+import Rewa from "../assets/CityPages/Rewa.webp"
+import Korba from "../assets/CityPages/Korba.webp"
+import Chhattisgarh from "../assets/CityPages/Chhattisgarh.webp"
+import Raigarh from "../assets/CityPages/Raigarh.webp"
+import Manipal from "../assets/CityPages/Manipal.webp"
+
+
+
 
 export const pagesData = [
   { slug: "agra", city: "Agra", img: agraImg, offer: "15%", address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007" },
@@ -3252,5 +3262,19 @@ export const pagesData = [
   { slug: "Ajmer", city: "Ajmer", img: Ajmer, offer: "16%", address: "Shop No 133, Near Ana Sagar Rd, Ajmer, Rajasthan" },
   { slug: "Udaipur", city: "Udaipur", img: Udaipur, offer: "16%", address: "Shop No 107, Near City Palace Rd, Udaipur, Rajasthan" },
   { slug: "Agartala", city: "Agartala", img: Agartala, offer: "16%", address: "Shop No 9, Malancha Nagar, near Sonali Guest House, Kunjaban, Agartala, Tripura 799006" },
+
+
+  
+  { slug: "portbiller", city: "portbiller", img: portbiller, offer: "16%", address: "Shop No - 109, Airport Authority Colony, Delanipur, Sri Vijaya Puram, Andaman and Nicobar Islands 744102" },
+  // { slug: "Shillong", city: "Shillong", img: Udaipur, offer: "16%", address: "4th Furlong, opp. Tarachand Hardware, MC Road, Police Bazar, Shillong, Meghalaya 793001" },
+  { slug: "Katni", city: "Katni", img: Katni, offer: "16%", address: "Shop No - 10,  Jabalpur Rd, Jharra Tikuriya, Katni, Madhya Pradesh" },
+  { slug: "Rewa", city: "Rewa", img: Rewa, offer: "16%", address: "Shop No - 111, Ravindra Nagar, Rewa, Madhya Pradesh 486005" },
+  { slug: "Korba", city: "Korba", img: Korba, offer: "16%", address: "Sec - 44, Banki Mongra, Chhattisgarh 495447" },
+  // { slug: "Durg", city: "Durg", img: Udaipur, offer: "16%", address: "Shop Np - 109, Dhamdha Road, near by pass road, Durg 491001" },
+  { slug: "Chhattisgarh", city: "Chhattisgarh", img: Chhattisgarh, offer: "16%", address: "Plot No - 105 Budhwari Bazaar, Sakti, Chhattisgarh 495689" },
+  { slug: "Raigarh", city: "Raigarh", img: Raigarh, offer: "16%", address: "Sec - 922, Muralipali, Chhattisgarh 496005" },
+  // { slug: "Visakhapatnam", city: "Visakhapatnam", img: Udaipur, offer: "16%", address: "Shop No - 313 Jail Rd, Singh Hotel Junction, Nehru Nagar, Ram Nagar, Visakhapatnam, Andhra Pradesh 530020" },
+  // { slug: "Udupi", city: "Udupi", img: Udaipur, offer: "16%", address: "Shop - 915, Ground Floor, Grass Land Commercial, Bus Stand, near Service, Thenkpete, Maruthi Veethika, Udupi, Karnataka 576101" },
+  { slug: "Manipal", city: "Manipal", img: Manipal, offer: "16%", address: "Plot - 114, Manipal, Karnataka 576104" },
 
 ];
