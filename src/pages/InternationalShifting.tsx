@@ -12,12 +12,16 @@ import InternationalAirlineImg from "../assets/homePagePng/international airline
 // import quotationPDF from "../assets/homePagePng/GATI SHIFTING PACKERS PVT LTD .pdf"
 import "./InternationalShifting.scss"
 import ContactForm from "../components/ContactForm"
+import { Helmet } from "react-helmet-async"
 interface props{
     successCondition: React.Dispatch<React.SetStateAction<boolean>>;
 }
 const InternationalShifting = ({successCondition}: props) => {
     return (
         <>
+        <Helmet>
+            <title>Gati International Packers and Movers</title>
+        </Helmet>
             <section id="banner-image">
                 <img src={InternationalBannerImg} alt="International Banner Img" />
             </section>
