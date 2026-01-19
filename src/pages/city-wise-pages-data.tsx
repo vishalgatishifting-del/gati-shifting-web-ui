@@ -442,7 +442,7 @@ import Udaipur from "../assets/CityPages/Udaipur.webp"
 import Agartala from "../assets/CityPages/Agartala.webp"
 
 
-import portbiller from "../assets/CityPages/portbiller.webp"
+import portbiller from "../assets/CityPages/Portbiller.webp"
 import Katni from "../assets/CityPages/Katni.webp"
 import Rewa from "../assets/CityPages/Rewa.webp"
 import Korba from "../assets/CityPages/Korba.webp"
