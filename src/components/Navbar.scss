@@ -17,7 +17,7 @@ header {
     // diwali theme
 
     .top-area {
-        background-color: $primary-color;
+        background: $primary-color;
         display: flex;
         justify-content: space-around;
         padding: 10px;
@@ -26,7 +26,7 @@ header {
             display: flex;
             align-items: center;
             text-decoration: none;
-            color: #fff;
+            color: $text-color;
             font-size: 15px;
             @include font-poppins-sans(300);
 
@@ -83,12 +83,12 @@ header {
 
                 a.active {
 
-                    background-color: $primary-color;
+                    background: $primary-color;
                     color: #fff;
                 }
 
                 a:hover {
-                    background-color: $primary-color;
+                    background: $primary-color;
                     color: #fff;
                 }
             }
@@ -102,7 +102,7 @@ header {
 
             button {
                 margin-left: 10px;
-                background-color: $primary-color;
+                background: $primary-color;
                 padding: 0px 20px;
                 height: 40px;
                 border: none;

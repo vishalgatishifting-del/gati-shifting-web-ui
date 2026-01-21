@@ -93,7 +93,7 @@
             transition: all 0.3s ease;
 
             &:hover {
-                background: darken($primary-color, 8%);
+                // background: darken($primary-color, 8%);
                 transform: translateY(-2px);
             }
         }
