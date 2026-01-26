@@ -127,6 +127,8 @@ import ship2 from "../assets/HomePage/ship2.jpg"
 import airplaneImg from "../assets/HomePage/airplane.jpg"
 import truck2 from "../assets/HomePage/truck2.jpeg"
 
+import republicDayImg from "../assets/Themes/RepublicDay/man-with-flag.webp"
+
 
 interface props {
     successCondition: React.Dispatch<React.SetStateAction<boolean>>;
@@ -373,18 +375,18 @@ const Home: React.FC<props> = ({ successCondition }) => {
                 </div>
             </motion.div>
 
-            <div className="republic-hero">
-                <div className="flag">
-                    <span className="saffron"></span>
-                    <span className="white">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg" />
-                    </span>
-                    <span className="green"></span>
+            <div className="republic-wrapper">
+                <img src={republicDayImg} className="man-with-flag-img right" />
+                <img src={republicDayImg} className="man-with-flag-img left" />
+
+                <div className="chakra-center">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg" />
+                    <h1>Happy Republic Day</h1>
+                    <p>26 January • Jai Hind 🇮🇳</p>
                 </div>
 
-                <h1>Happy Republic Day</h1>
-                <p>26 January • Jai Hind 🇮🇳</p>
             </div>
+
 
             <section id="certificate-section">
                 {/* <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1> */}
