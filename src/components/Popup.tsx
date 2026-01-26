@@ -21,8 +21,8 @@ const Popup: React.FC = () => {
         <button className="popup-close" onClick={() => setShowPopup(false)}>
           ✕
         </button>
-        <h2>🎁 New Year Special Offer! 🎁</h2>
-        <p>Get <strong>20% OFF</strong> if you book your shifting today!</p>
+        <h2>🎁 26th January Special Offer! 🎁</h2>
+        <p>Get <strong>15% OFF</strong> if you book your shifting today!</p>
         <Link className="popup-btn" to="/contact-us">
           Get Free Quote
         </Link>

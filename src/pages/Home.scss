@@ -3,6 +3,95 @@
 @import "../style/variables";
 
 
+.republic-hero {
+  height: 80vh;
+  background: linear-gradient(120deg, #ff9933, #ffffff, #138808);
+  background-size: 300% 300%;
+  animation: bgWave 8s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes bgWave {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* FLAG */
+.flag {
+  width: 280px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  animation: flagWave 3s ease-in-out infinite;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.flag span {
+  flex: 1;
+  position: relative;
+}
+
+.saffron { background: #ff9933; }
+.white {
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.green { background: #138808; }
+
+/* Chakra */
+.white img {
+  width: 55px;
+  animation: chakraSpin 12s linear infinite;
+}
+
+@keyframes chakraSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* FLAG WAVE */
+@keyframes flagWave {
+  0% { transform: skewY(0deg); }
+  50% { transform: skewY(-2deg); }
+  100% { transform: skewY(0deg); }
+}
+
+/* TEXT */
+.republic-hero h1 {
+  margin-top: 30px;
+  font-size: 3rem;
+  animation: fadeUp 2s ease forwards;
+}
+
+.republic-hero p {
+  font-size: 1.2rem;
+  opacity: 0;
+  animation: fadeUp 2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 .primary-color {
     color: $primary-color;
 }

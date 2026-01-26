@@ -373,6 +373,19 @@ const Home: React.FC<props> = ({ successCondition }) => {
                 </div>
             </motion.div>
 
+            <div className="republic-hero">
+                <div className="flag">
+                    <span className="saffron"></span>
+                    <span className="white">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg" />
+                    </span>
+                    <span className="green"></span>
+                </div>
+
+                <h1>Happy Republic Day</h1>
+                <p>26 January • Jai Hind 🇮🇳</p>
+            </div>
+
             <section id="certificate-section">
                 {/* <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1> */}
                 <div className="container">
@@ -414,7 +427,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         <h3>ISO Certificate</h3>
                     </div>
 
-                    
+
                     <div className="card">
                         <a href={gatiCertificate} className="hidden" target="_blank">
                             Click To View
@@ -643,7 +656,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                 </div>
             </section>
 
-            
+
             <OfficeLocation />
             <FAQList></FAQList>
 
