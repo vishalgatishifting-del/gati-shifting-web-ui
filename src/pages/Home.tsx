@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import "./Home.scss"
 
@@ -133,6 +133,11 @@ interface props {
     successCondition: React.Dispatch<React.SetStateAction<boolean>>;
 }
 const Home: React.FC<props> = ({ successCondition }) => {
+
+    useEffect(() => {
+        import("slick-carousel/slick/slick.css");
+        import("slick-carousel/slick/slick-theme.css");
+    }, []);
 
 
     const images = [gatiSlider2, gatiSlider3, gatiSlider4, gatislider5, gatislider6];
