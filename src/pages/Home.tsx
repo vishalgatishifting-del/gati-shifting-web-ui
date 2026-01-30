@@ -114,9 +114,9 @@ import { Link } from "react-router-dom";
 // import { IFaqItem } from "../models/App.model";
 // import { AppConstant } from "../constants/app.constant";
 
-import isoBadge from "../assets/HomePage/isoicon.png"
-import googleRatingBadge from "../assets/HomePage/5star.png"
-import trustedBadge from "../assets/HomePage/trusted.png"
+import isoBadge from "../assets/HomePage/isoicon.webp"
+import googleRatingBadge from "../assets/HomePage/5star.webp"
+import trustedBadge from "../assets/HomePage/trusted.webp"
 
 
 import truckImg from "../assets/HomePage/truck.webp"
