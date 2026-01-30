@@ -25,7 +25,6 @@
   <meta name="rating" content="general" />
   <meta name="coverage" content="Worldwide" />
   <meta name="audience" content="all" />
-  <meta httpEquiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <meta name="referrer" content="no-referrer-when-downgrade" />
   <meta name="business:contact_data:street_address"
     content="Office No. 04 Shree Sadguru Niwas Opp MSEB OFFICE Sector 21 Ghansoli">
@@ -34,7 +33,7 @@
   <meta name="business:contact_data:email" content="gatishiftingpackers@gmail.com">
   <meta name="business:contact_data:phone_number" content="+91-9422799477">
   <meta name="business:contact_data:website" content="https://www.gatishiftingpackers.com">
-  <link rel="preload" href="/fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
 
   <title>Gati Shifting Packers | Trusted Packers and Movers - 15% off</title>
   <meta name="description"
@@ -89,11 +88,21 @@
   ]
 }
 </script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSHZ41C6TS"></script>
-  <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-LSHZ41C6TS'); </script>
-  <!-- Global site tag (gtag.js) - Google Ads -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17573064597/5JeFCIznu74bEJXfvrtB"></script>
+  <script>
+    window.addEventListener("load", () => {
+      const s = document.createElement("script");
+      s.src = "https://www.googletagmanager.com/gtag/js?id=G-LSHZ41C6TS";
+      s.async = true;
+      document.head.appendChild(s);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag("js", new Date());
+      gtag("config", "G-LSHZ41C6TS");
+      gtag("config", "AW-17573064597");
+    });
+  </script>
+
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -103,35 +112,36 @@
 
   <!-- Meta Pixel Code -->
   <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1803175313684092');
-    fbq('track', 'PageView');
+    window.addEventListener("load", () => {
+      !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ?
+            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = true;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = true;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+      fbq('init', '1803175313684092');
+      fbq('track', 'PageView');
+    });
   </script>
+
+
+
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1803175313684092&ev=PageView&noscript=1" /></noscript>
-  <!-- End Meta Pixel Code -->
-   <!-- Begin of Chaport Live Chat code -->
-<!-- <script type="text/javascript">
-(function(w,d,v3){
-w.chaportConfig = {
-  appId : '694fb5ca46024bcc3f93ad71',
-};
 
-if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push(arguments)};v3.on=function(e,fn){if(!v3._l[e])v3._l[e]=[];v3._l[e].push(fn)};var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://app.chaport.com/javascripts/insert.js';var ss=d.getElementsByTagName('script')[0];ss.parentNode.insertBefore(s,ss)})(window, document);
-</script> -->
-<!-- End of Chaport Live Chat code -->
-
-<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"97223534", enableAutoSpaTracking: true};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+  <script>(function (w, d, t, r, u) { var f, n, i; w[u] = w[u] || [], f = function () { var o = { ti: "97223534", enableAutoSpaTracking: true }; o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad") }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () { var s = this.readyState; s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null) }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i) })(window, document, "script", "//bat.bing.com/bat.js", "uetq");</script>
 </head>
 
 
@@ -152,7 +162,7 @@ if(w.chaport)return;v3=w.chaport={};v3._q=[];v3._l={};v3.q=function(){v3._q.push
   </script> -->
   <!--End of Tawk.to Script-->
   <script type="module" src="/src/main.tsx" defer crossorigin></script>
-  
+
 </body>
 
 </html>

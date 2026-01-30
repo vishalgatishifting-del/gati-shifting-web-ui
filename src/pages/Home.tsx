@@ -13,7 +13,6 @@ import Avatar from '@mui/material/Avatar';
 
 
 // Main Slider Images
-import gatiSlider1 from "../assets/Themes/RepublicDay/sliderImg.png"
 import gatiSlider2 from "../assets/sliderImg/gatislider2.webp"
 import gatiSlider3 from "../assets/sliderImg/gatislider3.webp"
 import gatiSlider4 from "../assets/sliderImg/gatislider4.webp"
@@ -36,49 +35,49 @@ import ZohoForm from "../components/ZohoForm"   // Form Component
 
 
 
-import justDialCertificateImg from "../assets/homePagePng/justDialCertificate.png"
-import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.png"
-import incorporationCertificate from "../assets/homePagePng/incorporationCertificate.png"
-import GSTIncorporation from "../assets/homePagePng/GSTCertificate.png"
-import ISOcertificate from "../assets/homePagePng/isoCertificate.png"
-import gatiCertificate from "../assets/homePagePng/gatiCertificate.png"
+import justDialCertificateImg from "../assets/homePagePng/justDialCertificate.webp"
+import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.webp"
+import incorporationCertificate from "../assets/homePagePng/incorporationCertificate.webp"
+import GSTIncorporation from "../assets/homePagePng/GSTCertificate.webp"
+import ISOcertificate from "../assets/homePagePng/isoCertificate.webp"
+import gatiCertificate from "../assets/homePagePng/gatiCertificate.webp"
 
 
 // CountDown Section PNG
-import truckPng from "../assets/homePagePng/Gemini_Generated_Image_2zntak2zntak2znt.png"
-import cityPng from "../assets/homePagePng/Gemini_Generated_Image_lfceqflfceqflfce.png"
-import verifiedBadgePng from "../assets/homePagePng/Gemini_Generated_Image_seeh1bseeh1bseeh.png"
-import peoplesPng from "../assets/homePagePng/Gemini_Generated_Image_lrzvt4lrzvt4lrzv.png"
+import truckPng from "../assets/homePagePng/Gemini_Generated_Image_2zntak2zntak2znt.webp"
+import cityPng from "../assets/homePagePng/Gemini_Generated_Image_lfceqflfceqflfce.webp"
+import verifiedBadgePng from "../assets/homePagePng/Gemini_Generated_Image_seeh1bseeh1bseeh.webp"
+import peoplesPng from "../assets/homePagePng/Gemini_Generated_Image_lrzvt4lrzvt4lrzv.webp"
 
 
 // Feature Slider Images
-import feature1Img from "../assets/homePagePng/feature1.jpg"
-import feature2Img from "../assets/homePagePng/feature2.jpg"
-import feature3Img from "../assets/homePagePng/feature3.jpg"
-import feature4Img from "../assets/homePagePng/feature4.jpg"
-import feature5Img from "../assets/homePagePng/feature5.jpeg"
-import feature6Img from "../assets/homePagePng/feature6.jpeg"
-import feature7Img from "../assets/homePagePng/feature7.jpeg"
-import feature8Img from "../assets/homePagePng/feature8.jpeg"
-import feature9Img from "../assets/homePagePng/feature9.jpg"
-import feature10Img from "../assets/homePagePng/feature10.jpg"
-import feature11Img from "../assets/homePagePng/feature11.jpg"
-import feature12Img from "../assets/homePagePng/feature12.jpg"
-import feature13Img from "../assets/homePagePng/feature13.jpg"
-import feature14Img from "../assets/homePagePng/feature14.jpg"
-import feature15Img from "../assets/homePagePng/feature15.jpg"
-import feature16Img from "../assets/homePagePng/feature16.jpg"
-import feature17Img from "../assets/homePagePng/feature17.jpg"
-import feature18Img from "../assets/homePagePng/feature18.jpg"
-import feature19Img from "../assets/homePagePng/feature19.jpg"
-import feature20Img from "../assets/homePagePng/feature20.jpg"
-import feature21Img from "../assets/homePagePng/feature21.jpg"
-import feature22Img from "../assets/homePagePng/feature22.jpg"
-import feature23Img from "../assets/homePagePng/feature23.jpg"
-import feature24Img from "../assets/homePagePng/feature24.jpg"
-import feature25Img from "../assets/homePagePng/feature25.jpg"
-import feature26Img from "../assets/homePagePng/feature26.jpeg"
-import feature27Img from "../assets/homePagePng/feature27.png"
+import feature1Img from "../assets/homePagePng/feature1.webp"
+import feature2Img from "../assets/homePagePng/feature2.webp"
+import feature3Img from "../assets/homePagePng/feature3.webp"
+import feature4Img from "../assets/homePagePng/feature4.webp"
+import feature5Img from "../assets/homePagePng/feature5.webp"
+import feature6Img from "../assets/homePagePng/feature6.webp"
+import feature7Img from "../assets/homePagePng/feature7.webp"
+import feature8Img from "../assets/homePagePng/feature8.webp"
+import feature9Img from "../assets/homePagePng/feature9.webp"
+import feature10Img from "../assets/homePagePng/feature10.webp"
+import feature11Img from "../assets/homePagePng/feature11.webp"
+import feature12Img from "../assets/homePagePng/feature12.webp"
+import feature13Img from "../assets/homePagePng/feature13.webp"
+import feature14Img from "../assets/homePagePng/feature14.webp"
+import feature15Img from "../assets/homePagePng/feature15.webp"
+import feature16Img from "../assets/homePagePng/feature16.webp"
+import feature17Img from "../assets/homePagePng/feature17.webp"
+import feature18Img from "../assets/homePagePng/feature18.webp"
+import feature19Img from "../assets/homePagePng/feature19.webp"
+import feature20Img from "../assets/homePagePng/feature20.webp"
+import feature21Img from "../assets/homePagePng/feature21.webp"
+import feature22Img from "../assets/homePagePng/feature22.webp"
+import feature23Img from "../assets/homePagePng/feature23.webp"
+import feature24Img from "../assets/homePagePng/feature24.webp"
+import feature25Img from "../assets/homePagePng/feature25.webp"
+import feature26Img from "../assets/homePagePng/feature26.webp"
+import feature27Img from "../assets/homePagePng/feature27.webp"
 
 
 // Steps Section Icons
@@ -121,13 +120,13 @@ import trustedBadge from "../assets/HomePage/trusted.png"
 
 
 import truckImg from "../assets/HomePage/truck.webp"
-import carLoadingImg from "../assets/HomePage/carLoading.png"
-import shipImg from "../assets/HomePage/ship.jpg"
-import ship2 from "../assets/HomePage/ship2.jpg"
-import airplaneImg from "../assets/HomePage/airplane.jpg"
-import truck2 from "../assets/HomePage/truck2.jpeg"
+import carLoadingImg from "../assets/HomePage/carLoading.webp"
+import shipImg from "../assets/HomePage/ship.webp"
+import ship2 from "../assets/HomePage/ship2.webp"
+import airplaneImg from "../assets/HomePage/airplane.webp"
+import truck2 from "../assets/HomePage/truck2.webp"
 
-import republicDayImg from "../assets/Themes/RepublicDay/man-with-flag.webp"
+// import republicDayImg from "../assets/Themes/RepublicDay/man-with-flag.webp"
 
 
 interface props {
@@ -136,7 +135,7 @@ interface props {
 const Home: React.FC<props> = ({ successCondition }) => {
 
 
-    const images = [gatiSlider1, gatiSlider2, gatiSlider3, gatiSlider4, gatislider5, gatislider6];
+    const images = [gatiSlider2, gatiSlider3, gatiSlider4, gatislider5, gatislider6];
 
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
@@ -247,31 +246,28 @@ const Home: React.FC<props> = ({ successCondition }) => {
         <>
 
             <Helmet>
-                <title>Gati Shifting Packers | Trusted Packers and Movers - 15% off</title>
-                <meta name="description" content="Gati Shifting Packers offers safe and affordable relocation services India & International moving services. Expert in Home shifting, Office, Car & Bike, & Warehouse Storage. Reliable service, trusted by thousands nationwide." />
-                <meta name="keywords" content="gati house shifting service, Packers and Movers India, Home Shifting, Office Relocation, Car Transport, Bike Transport, Household Shifting, Packing and Moving Services, Affordable Packers, Trusted Movers" />
-                <meta name="author" content="Rohan" />
+                <title>Packers and Movers in India | Gati Shifting Packers – Trusted Relocation Experts</title>
 
-                {/* Open Graph for Social Sharing */}
-                <meta property="og:title" content="Gati Shifting Packers | Reliable Shifting Services" />
-                <meta property="og:description" content="Gati Shifting Packers offers safe and affordable relocation services India & International moving services. Expert in Home shifting, Office, Car & Bike, & Warehouse Storage. Reliable service, trusted by thousands nationwide." />
+                <meta name="description" content="Gati Shifting Packers is a trusted Packers and Movers company in India offering safe, affordable home shifting, office relocation, car & bike transport, and warehouse storage services nationwide." />
+
+                <meta name="keywords" content="Packers and Movers India, Home Shifting Services, Office Relocation, Car Transport, Bike Transport, Warehouse Storage, Gati Shifting Packers" />
+
+                <meta name="robots" content="index, follow" />
+                <meta httpEquiv="content-language" content="en" />
+
+                <meta property="og:title" content="Packers and Movers in India | Gati Shifting Packers" />
+                <meta property="og:description" content="Trusted Packers and Movers in India for home shifting, office relocation, vehicle transport and storage services. Safe, affordable and reliable relocation solutions." />
                 <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
                 <meta property="og:url" content="https://gatishiftingpackers.com/" />
                 <meta property="og:type" content="website" />
 
-                {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Gati Shifting Packers" />
-                <meta name="twitter:description" content="Gati Shifting Packers offers safe and affordable relocation services India & International moving services. Expert in Home shifting, Office, Car & Bike, & Warehouse Storage. Reliable service, trusted by thousands nationwide." />
+                <meta name="twitter:title" content="Packers and Movers in India | Gati Shifting Packers" />
+                <meta name="twitter:description" content="Safe, affordable and professional Packers and Movers services across India by Gati Shifting Packers." />
                 <meta name="twitter:image" content="https://gatishiftingpackers.com/metaImg.png" />
 
-
-                <meta name="robots" content="index, follow" />
-
-                {/* language used in site */}
-                <meta httpEquiv="content-language" content="en" />
-
                 <link rel="canonical" href="https://gatishiftingpackers.com/" />
+
 
 
             </Helmet>
@@ -375,7 +371,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                 </div>
             </motion.div>
 
-            <div className="republic-wrapper">
+            {/* <div className="republic-wrapper">
                 <img src={republicDayImg} className="man-with-flag-img right" />
                 <img src={republicDayImg} className="man-with-flag-img left" />
 
@@ -385,7 +381,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                     <p>26 January • Jai Hind 🇮🇳</p>
                 </div>
 
-            </div>
+            </div> */}
 
 
             <section id="certificate-section">

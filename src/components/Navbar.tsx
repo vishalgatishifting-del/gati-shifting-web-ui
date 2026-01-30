@@ -21,7 +21,7 @@ import { useState, useEffect } from "react";
 import ContactForm from './ContactForm';
 
 // import Logo from "../assets/logo2.webp";
-import Logo from "../assets/Themes/NewYear/transparentIco.png";
+import Logo from "../assets/Themes/NewYear/transparentIco.webp";
 // import Logo from "../assets/diwaliTheme/christmasLogo.png";
 import whatsappIcon from "../assets/whatsappIcon.jpg";
 import callIcon from "../assets/call.webp";
