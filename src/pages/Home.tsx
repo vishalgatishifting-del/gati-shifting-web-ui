@@ -246,6 +246,12 @@ const Home: React.FC<props> = ({ successCondition }) => {
         { img: slide5, heading: "24/7 Available", text: "We provide reliable movers and packers services with 24/7 availability for your convenience." },
     ];
 
+    const [showSlider, setShowSlider] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => setShowSlider(true), 1500);
+    }, []);
+
 
     return (
         <>
@@ -278,7 +284,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
             </Helmet>
 
             {/* marginTop: "107.01px" */}
-            <Box className="sliderBox" sx={{ marginTop: "107.01px", width: "95%", overflow: "hidden" }}>
+            {showSlider ? <Box className="sliderBox" sx={{ marginTop: "107.01px", width: "95%", overflow: "hidden" }}>
                 <Slider {...settings}>
                     {images.map((img, index) => (
                         <Box key={index} sx={{ position: "relative", outline: "none" }}>
@@ -296,7 +302,8 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         </Box>
                     ))}
                 </Slider>
-            </Box>
+            </Box> : ""}
+
 
             <motion.div
                 ref={ref1}
@@ -472,7 +479,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         <p>Homes Moved</p>
                     </div>
                     <div className="card">
-                        <img src={cityPng} alt="city png"/>
+                        <img src={cityPng} alt="city png" />
                         <Counter end={600} suffix="+" />
                         <p>Cities Covered</p>
                     </div>
@@ -646,7 +653,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...</p>
                     </div>
                     <div className="card">
-                        <img src={airplaneImg} alt="airplane png"/>
+                        <img src={airplaneImg} alt="airplane png" />
                         <h2>INTERNATIONAL LOGISTICS</h2>
                         <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...
                             (neeche thoda cut ho gaya hai image me)</p>
