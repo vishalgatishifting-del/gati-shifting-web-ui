@@ -6,7 +6,9 @@ import CircularProgress from '@mui/material/CircularProgress';
 import ChaportWidget from "./components/ChatPort.tsx";
 
 function App() {
-  
+  useEffect(() => {
+  document.getElementById("pre-hero")?.remove();
+}, []);
 
   const [loading, setLoading] = useState(true);
 
