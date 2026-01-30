@@ -23,6 +23,11 @@
         flex-wrap: wrap;
         justify-content: center;
 
+        img{
+            border-radius: 20px;
+            margin: 5px;
+        }
+
         iframe {
             border-radius: 20px;
             margin: 5px;
@@ -36,7 +41,10 @@
     #customer-review {
         .video {
             width: 100%;
-
+            img{
+                width: 100%;
+                margin: 5px 0;
+            }
             iframe {
                 width: 100%;
                 margin: 5px 0;
