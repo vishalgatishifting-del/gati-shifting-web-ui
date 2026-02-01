@@ -6,6 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha"
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { getUserSource } from "../utils/sourceTracker";
 import { submitForm } from "../api/formAPI";
+import bannerImg from "../assets/popBG.jpg"
 // import FeatureVideo from "../assets/HomePage/FinalFeatureVideo.webm"
 
 interface ContactFormProps {
@@ -113,7 +114,9 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
                         >
                         <source src={FeatureVideo} type="video/webm"></source>
                     </video> */}
-            <h2>Get Free Quote in 1 min!</h2>
+                    {(showDetail == false) ? <img width="100%" style={{borderRadius: "10px", boxShadow: "0 5px 5px #00000021"}} src={bannerImg} /> : ""}
+                    
+            <h2>🚚 Get Free Quote in 1 min!</h2>
             <p>Fast, Safe & Affordable Shifting - Book Now & Save Upto 20%!</p>
             <div className="container" style={(showDetail == false) ? { width: "100%", boxShadow: "none" } : {}}>
                 {(showDetail == true ? (

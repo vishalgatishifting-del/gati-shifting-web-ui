@@ -173,7 +173,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
         </nav>
       </header>
 
-      <Dialog open={open} onClose={handleClose}>
+      <Dialog open={open} onClose={handleClose} maxWidth="xs" >
         <DialogActions>
           <Button onClick={handleClose}>
             <CloseIcon />
