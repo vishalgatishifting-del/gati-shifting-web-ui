@@ -6,7 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha"
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { getUserSource } from "../utils/sourceTracker";
 import { submitForm } from "../api/formAPI";
-import bannerImg from "../assets/popBG.jpg"
+import bannerImg from "../assets/popUpBG.png"
 // import FeatureVideo from "../assets/HomePage/FinalFeatureVideo.webm"
 
 interface ContactFormProps {
