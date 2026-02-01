@@ -40,7 +40,7 @@ const InternationalMovers = () => {
         <>
             <Helmet>
                 {/* Meta Tags for international moves Page */}
-                <title>Gati International Packers and Movers India</title>
+                <title>Gati International Courier</title>
 
                 <meta name="description" content="Hassle-free International Moving Services by Gati Shifting Packers. We ensure safe, timely, and affordable overseas relocation for your home, office, or vehicle." />
                 <meta name="keywords" content="Gati Shifting Packers international moving, overseas relocation, international packers and movers, global shifting services, international transport, abroad relocation,international moving services, overseas relocation, international packers and movers, global relocation company, international shipping services, international household moving, cross-border relocation, international moving company in India, Gati Shifting Packers international relocation, affordable overseas movers, professional international movers near me, reliable international moving experts, international home relocation, office relocation abroad, international cargo services, door-to-door international moving, worldwide relocation services, safe and secure international shipping, international logistics solutions, best international movers in India, global household goods transport, trusted overseas relocation company, end-to-end international moving solutions, international relocation packages, hassle-free overseas shifting" />
