@@ -7,12 +7,12 @@ interface FormData {
   From: string;
   To: string;
   Goods: string;
-  SourceWebsite: string; 
+  SourceWebsite?: string; 
 }
 
 export const submitForm = (data: FormData) => {
   return axiosInstance.post("/create-lead", {
     ...data,
-    SourceWebsite: "Gati Shifting Packers",
+    SourceWebsite: data.SourceWebsite || "Gati Shifting Packers",
   });
 };
