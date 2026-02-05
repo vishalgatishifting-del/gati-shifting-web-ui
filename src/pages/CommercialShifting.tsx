@@ -36,25 +36,25 @@ const CommercialShifting = () => {
 
                 {/* Meta Tags for commercial shifting Page */}
 
-                <title>Commercial Shifting Services | Gati Shifting Packers</title>
+                <title>Commercial Shifting Services | Safexpress</title>
 
-                <meta name="description" content="Professional Commercial Shifting Services by Gati Shifting Packers. We offer secure and efficient office and business relocation solutions across India." />
-                <meta name="keywords" content="Gati Shifting Packers commercial shifting, office relocation, business moving services, corporate shifting India, warehouse relocation, commercial movers,commercial shifting, commercial relocation, business shifting services, office and commercial movers, corporate relocation company, industrial shifting services, commercial packers and movers, warehouse relocation, shop shifting services, commercial goods transport, factory relocation experts, commercial shifting company in India, Gati Shifting Packers commercial relocation, affordable commercial moving services, professional commercial movers near me, reliable business shifting company, retail store relocation, end-to-end commercial relocation solutions, heavy equipment shifting services, trusted commercial movers, safe and secure commercial transport, top-rated commercial relocation company, pan-India commercial shifting services, customized business relocation packages, commercial relocation experts India" />
+                <meta name="description" content="Professional Commercial Shifting Services by Safexpress. We offer secure and efficient office and business relocation solutions across India." />
+                <meta name="keywords" content="Safexpress commercial shifting, office relocation, business moving services, corporate shifting India, warehouse relocation, commercial movers,commercial shifting, commercial relocation, business shifting services, office and commercial movers, corporate relocation company, industrial shifting services, commercial packers and movers, warehouse relocation, shop shifting services, commercial goods transport, factory relocation experts, commercial shifting company in India, Safexpress commercial relocation, affordable commercial moving services, professional commercial movers near me, reliable business shifting company, retail store relocation, end-to-end commercial relocation solutions, heavy equipment shifting services, trusted commercial movers, safe and secure commercial transport, top-rated commercial relocation company, pan-India commercial shifting services, customized business relocation packages, commercial relocation experts India" />
                 <meta name="robots" content="index, follow" />
                 <meta name="author" content="Abhishek" />
 
                 {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Commercial Shifting Services | Gati Shifting Packers" />
-                <meta property="og:description" content="Reliable and affordable Commercial Shifting Services by Gati Shifting Packers. Move your office or business setup safely anywhere in India." />
+                <meta property="og:title" content="Commercial Shifting Services | Safexpress" />
+                <meta property="og:description" content="Reliable and affordable Commercial Shifting Services by Safexpress. Move your office or business setup safely anywhere in India." />
                 <meta property="og:url" content="https://gatishiftingpackers.com/commercial-shifting" />
-                <meta property="og:site_name" content="Gati Shifting Packers" />
+                <meta property="og:site_name" content="Safexpress" />
                 <meta property="og:image" content="" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Commercial Shifting Services | Gati Shifting Packers" />
-                <meta name="twitter:description" content="Expert Commercial Shifting Services by Gati Shifting Packers. Safe, organized, and timely relocation of offices, shops, and warehouses across India." />
+                <meta name="twitter:title" content="Commercial Shifting Services | Safexpress" />
+                <meta name="twitter:description" content="Expert Commercial Shifting Services by Safexpress. Safe, organized, and timely relocation of offices, shops, and warehouses across India." />
                 <meta name="twitter:image" content="" />
 
                 <meta http-equiv="Content-Language" content="en" />
@@ -72,14 +72,14 @@ const CommercialShifting = () => {
 
             <section id="pet-relocation-sec">
                 <div className="container">
-                    <h1>Gati Shifting Packers – Trusted commercial vehicle transport services in India</h1>
-                    <p>Gati Shifting Packers is one of the leading and most reliable names in commercial vehicle transport services across India. We specialize in relocating large-scale commercial spaces, including warehouses, showrooms, retail outlets, manufacturing units, and corporate establishments. Our professional team ensures a seamless, secure, and timely relocation that minimizes downtime and business disruption.
+                    <h1>Safexpress – Trusted commercial vehicle transport services in India</h1>
+                    <p>Safexpress is one of the leading and most reliable names in commercial vehicle transport services across India. We specialize in relocating large-scale commercial spaces, including warehouses, showrooms, retail outlets, manufacturing units, and corporate establishments. Our professional team ensures a seamless, secure, and timely relocation that minimizes downtime and business disruption.
                         <br />
-                        With a strong nationwide network, Gati Shifting Packers is known for its strategic planning, efficient packing, and end-to-end coordination. Whether it’s machinery, furniture, or sensitive equipment, we handle everything with the utmost care and precision. Our commercial moving solutions include insurance coverage, vehicle tracking, and trained professionals to ensure your valuable assets reach safely and on time.
+                        With a strong nationwide network, Safexpress is known for its strategic planning, efficient packing, and end-to-end coordination. Whether it’s machinery, furniture, or sensitive equipment, we handle everything with the utmost care and precision. Our commercial moving solutions include insurance coverage, vehicle tracking, and trained professionals to ensure your valuable assets reach safely and on time.
 
                     </p>
                     <div className="content 6-steps">
-                        <h2>🏡 Simple 6-Step Booking Process with Gati Shifting Packers</h2>
+                        <h2>🏡 Simple 6-Step Booking Process with Safexpress</h2>
 
                         <h3>Step 1: Share Your Moving Details & Get a Quote</h3>
                         <ul>
@@ -122,7 +122,7 @@ const CommercialShifting = () => {
                     </div>
                     <div className="content types">
                         <h2>Commercial Items We Shift</h2>
-                        <p style={{ marginBottom: "10px" }}>At Gati Shifting Packers, we provide comprehensive commercial moving services covering all essential items and equipment:</p>
+                        <p style={{ marginBottom: "10px" }}>At Safexpress, we provide comprehensive commercial moving services covering all essential items and equipment:</p>
                         <ul>
                             <li>Machinery & Equipment: Heavy machinery, production units, and industrial tools.</li>
                             <li>Furniture & Fixtures: Display racks, shelves, counters, tables, and chairs.</li>
@@ -133,7 +133,7 @@ const CommercialShifting = () => {
 
                         <h2>Affordable Commercial Shifting Charges in India</h2>
                         <p>
-                            We offer cost-effective and transparent commercial vehicle transport services designed for all types of businesses — from small enterprises to large corporations. Our pricing depends on your specific requirements and ensures no hidden charges. Whether you’re relocating locally or across cities, Gati Shifting Packers guarantees a smooth, hassle-free, and budget-friendly experience.
+                            We offer cost-effective and transparent commercial vehicle transport services designed for all types of businesses — from small enterprises to large corporations. Our pricing depends on your specific requirements and ensures no hidden charges. Whether you’re relocating locally or across cities, Safexpress guarantees a smooth, hassle-free, and budget-friendly experience.
                         </p>
 
 
