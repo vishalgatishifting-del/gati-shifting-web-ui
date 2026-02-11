@@ -8,12 +8,13 @@ import { Box } from "@mui/material";
 import Avatar from '@mui/material/Avatar';
 import TrustUsSection from "../components/TrustUsSection";
 import ReviewVideo from "../components/ReviewVideos";
+import { Helmet } from "react-helmet-async";
 
 
 
 
 const WhoWeAre = () => {
-    
+
     const settings2 = {
         dots: false,
         infinite: true,
@@ -31,28 +32,31 @@ const WhoWeAre = () => {
     };
 
     const keywords = [
-  "Gati Shifting Packers about us",
-  "gati packers and movers",
-  "trusted packers and movers in India",
-  "reliable packers and movers",
-  "packers and movers company profile",
-  "packers and movers with experience",
-  "leading packers and movers in India",
-  "about us moving company",
-  "trusted moving services India",
-  "professional relocation services",
-  "experienced home shifting company",
-  "about our relocation company",
-  "packing and unpacking services",
-  "best packers and movers",
-  "cheap packers and movers"
-];
+        "Gati Shifting Packers about us",
+        "gati packers and movers",
+        "trusted packers and movers in India",
+        "reliable packers and movers",
+        "packers and movers company profile",
+        "packers and movers with experience",
+        "leading packers and movers in India",
+        "about us moving company",
+        "trusted moving services India",
+        "professional relocation services",
+        "experienced home shifting company",
+        "about our relocation company",
+        "packing and unpacking services",
+        "best packers and movers",
+        "cheap packers and movers"
+    ];
 
     return (
         <>
-                <div className="bg-attached-who-we-are">
-                    <h1>Who we are?</h1>
-                </div>
+        <Helmet>
+            <title>Gati Shifting Packers – About India’s Reliable Relocation Experts | Trusted Movers</title>
+        </Helmet>
+            <div className="bg-attached-who-we-are">
+                <h1>Who we are?</h1>
+            </div>
             <section id="who-we-are-section">
                 <div className="container">
                     <div className="content">
@@ -76,10 +80,10 @@ const WhoWeAre = () => {
 
             <ReviewVideo></ReviewVideo>
 
-            
+
             <GetInTouch></GetInTouch>
             <AwardCertification></AwardCertification>
-            
+
             <TrustUsSection></TrustUsSection>
 
             <BrandList></BrandList>

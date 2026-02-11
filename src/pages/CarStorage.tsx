@@ -56,40 +56,30 @@ const Storage = () => {
 
     const imgArr = [sampleImg1, sampleImg2, sampleImg3, sampleImg4, sampleImg5, sampleImg6, sampleImg7, sampleImg8];
     return (
-       <>
+        <>
 
-        <Helmet>
-            <title>Car Storage Services | Gati Shifting Packers</title>
+            <Helmet>
+                <title>Car Storage Services | Safe Shifting Packers – Secure Vehicle Storage</title>
+                <meta name="description" content="Safe Shifting Packers offers secure car storage services including short-term and long-term vehicle parking, monitored storage facilities, and safe handling for cars and other vehicles." />
+                <meta name="keywords" content="Car storage service, Vehicle storage solutions, Car parking storage, Secure car storage, Packers and movers car storage, Vehicle warehouse, Long term car storage, Short term car storage, Safe Shifting Packers" />
+                <meta name="author" content="Safe Shifting Packers" />
+                <meta name="robots" content="index, follow" />
 
-            <meta name="description" content="Secure and affordable Car Storage Services by Gati Shifting Packers. Safe, monitored and reliable short-term and long-term vehicle storage solutions across India." />
-            <meta name="keywords" content="Gati Shifting Packers car storage, car storage services India, vehicle storage services, secure car storage, long term car storage, short term car storage, car warehousing services, car parking storage, indoor car storage, outdoor car storage, safe car storage facility, affordable car storage services, car storage near me, vehicle storage during relocation, automobile storage services, car and bike storage services, professional car storage company India, reliable vehicle storage solutions, car storage facilities India, temporary car storage, monitored car storage facility, climate controlled car storage, door to door car storage services, best car storage services in India, trusted car storage company near me" />
-            <meta name="robots" content="index, follow" />
-            <meta name="author" content="Abhishek" />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Car Storage Services – Safe Shifting Packers" />
+                <meta property="og:description" content="Discover secure and reliable car storage services by Safe Shifting Packers – vehicle storage, monitored parking, and safe handling for your car or vehicle." />
+                <meta property="og:url" content="https://safeshiftingpackers.com/car-storage" />
+                <meta property="og:site_name" content="Safe Shifting Packers" />
 
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Car Storage Services | Safe Shifting Packers" />
+                <meta name="twitter:description" content="Secure and reliable car storage services for long and short term storage of vehicles by Safe Shifting Packers." />
 
-            {/* Open Graph */}
-            <meta property="og:type" content="website" />
-            <meta property="og:title" content="Car Storage Services | Gati Shifting Packers" />
-            <meta property="og:description" content="Looking for secure car storage? Gati Shifting Packers offers safe, monitored and professional vehicle storage services for short-term and long-term needs." />
-            <meta property="og:url" content="https://gatishiftingpackers.com/car-storage" />
-            <meta property="og:site_name" content="Gati Shifting Packers" />
-            <meta property="og:image" content="" />
-
-
-            {/* Twitter Card */}
-            <meta name="twitter:card" content="summary_large_image" />
-            <meta name="twitter:title" content="Car Storage Services | Gati Shifting Packers" />
-            <meta name="twitter:description" content="Safe, secure and affordable car storage solutions by Gati Shifting Packers. Protect your vehicle with trusted storage services." />
-            <meta name="twitter:image" content="" />
-            <meta http-equiv="Content-Language" content="en" />
-
-
-            {/* Canonical URL */}
-            <link rel="canonical" href="https://gatishiftingpackers.com/car-storage" />
-        </Helmet>
-        <div className="bg-attached">
-                    <h1>Car Storage</h1>
-                </div>
+                <link rel="canonical" href="https://safeshiftingpackers.com/car-storage" />
+            </Helmet>
+            <div className="bg-attached">
+                <h1>Car Storage</h1>
+            </div>
             <section id="hero-section">
                 <div className="container">
                     <div className="content">
@@ -194,7 +184,7 @@ const Storage = () => {
                 </div>
             </section>
 
- <section id="numbers-section">
+            <section id="numbers-section">
                 <div className="numbers-container">
                     <div>
                         <h4>70K+</h4>

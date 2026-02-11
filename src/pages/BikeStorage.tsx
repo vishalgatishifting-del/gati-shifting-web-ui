@@ -50,14 +50,35 @@ import sampleImg8 from "../assets/BikeStorage/sample8.png"
 
 
 import priceImg from "../assets/BikeStorage/priceImg.jpeg"
+import { Helmet } from "react-helmet-async";
 
 const BikeStorage = () => {
 
     const imgArr = [sampleImg1, sampleImg2, sampleImg3, sampleImg4, sampleImg5, sampleImg6, sampleImg7, sampleImg8];
     return (
-        <><div className="bg-attached">
-            <h1>Bike Storage</h1>
-        </div>
+        <>
+            <Helmet>
+                <title>Bike Storage Services | Safe Shifting Packers – Secure Two-Wheeler Storage</title>
+                <meta name="description" content="Safe Shifting Packers offers reliable bike storage services including secure short-term and long-term storage for bikes and two-wheelers with professional handling and monitored facilities." />
+                <meta name="keywords" content="Bike storage service, Two-wheeler storage, Bike parking storage, Secure bike storage, Long term bike storage, Short term bike storage, Packers and movers bike storage, Safe Shifting Packers" />
+                <meta name="author" content="Safe Shifting Packers" />
+                <meta name="robots" content="index, follow" />
+
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="Bike Storage Services | Safe Shifting Packers" />
+                <meta property="og:description" content="Secure and flexible bike and two-wheeler storage solutions by Safe Shifting Packers for short and long-term storage with safety-first handling." />
+                <meta property="og:url" content="https://safeshiftingpackers.com/bike-storage" />
+                <meta property="og:site_name" content="Safe Shifting Packers" />
+
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Bike Storage Services | Safe Shifting Packers" />
+                <meta name="twitter:description" content="Professional bike and two-wheeler storage with monitored facilities and flexible terms by Safe Shifting Packers." />
+
+                <link rel="canonical" href="https://safeshiftingpackers.com/bike-storage" />
+            </Helmet>
+            <div className="bg-attached">
+                <h1>Bike Storage</h1>
+            </div>
             <section id="hero-section">
                 <div className="container">
                     <div className="content">

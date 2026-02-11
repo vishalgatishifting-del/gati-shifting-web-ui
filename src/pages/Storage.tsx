@@ -70,34 +70,23 @@ const Storage = () => {
     return (
         <>
             <Helmet>
-                {/* Meta Tags for Car Storage Service Page */}
-                <title>Car Storage Services | Gati Shifting Packers</title>
-
-                <meta name="description" content="Secure and affordable Car Storage Services by Gati Shifting Packers. Safe, monitored and reliable short-term and long-term vehicle storage solutions across India." />
-                <meta name="keywords" content="Gati Shifting Packers car storage, car storage services India, vehicle storage services, secure car storage, long term car storage, short term car storage, car warehousing services, car parking storage, indoor car storage, outdoor car storage, safe car storage facility, affordable car storage services, car storage near me, vehicle storage during relocation, automobile storage services, car and bike storage services, professional car storage company India, reliable vehicle storage solutions, car storage facilities India, temporary car storage, monitored car storage facility, climate controlled car storage, door to door car storage services, best car storage services in India, trusted car storage company near me" />
+                <title>Storage & Warehousing Services | Safe Shifting Packers</title>
+                <meta name="description" content="Safe Shifting Packers provides secure storage and warehousing solutions for household goods, vehicles, office items, and more with flexible short-term and long-term options." />
+                <meta name="keywords" content="Storage services, Warehousing services, Goods storage, Household storage, Vehicle storage, Packers and movers storage, Long term storage, Short term storage, Safe Shifting Packers" />
+                <meta name="author" content="Safe Shifting Packers" />
                 <meta name="robots" content="index, follow" />
-                <meta name="author" content="Abhishek" />
 
-
-                {/* Open Graph */}
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Car Storage Services | Gati Shifting Packers" />
-                <meta property="og:description" content="Looking for secure car storage? Gati Shifting Packers offers safe, monitored and professional vehicle storage services for short-term and long-term needs." />
-                <meta property="og:url" content="https://gatishiftingpackers.com/car-storage" />
-                <meta property="og:site_name" content="Gati Shifting Packers" />
-                <meta property="og:image" content="" />
+                <meta property="og:title" content="Secure Storage & Warehousing Services – Safe Shifting Packers" />
+                <meta property="og:description" content="Explore reliable and secure storage and warehousing solutions by Safe Shifting Packers including household goods, vehicles, and office equipment storage with flexible terms." />
+                <meta property="og:url" content="https://safeshiftingpackers.com/storage" />
+                <meta property="og:site_name" content="Safe Shifting Packers" />
 
-
-                {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Car Storage Services | Gati Shifting Packers" />
-                <meta name="twitter:description" content="Safe, secure and affordable car storage solutions by Gati Shifting Packers. Protect your vehicle with trusted storage services." />
-                <meta name="twitter:image" content="" />
-                <meta http-equiv="Content-Language" content="en" />
+                <meta name="twitter:title" content="Storage & Warehousing Services | Safe Shifting Packers" />
+                <meta name="twitter:description" content="Flexible and secure storage services for goods, vehicles, and equipment by Safe Shifting Packers." />
 
-
-                {/* Canonical URL */}
-                <link rel="canonical" href="https://gatishiftingpackers.com/car-storage" />
+                <link rel="canonical" href="https://safeshiftingpackers.com/storage" />
             </Helmet>
             <div className="bg-attached">
                 <h1>Storage</h1>
