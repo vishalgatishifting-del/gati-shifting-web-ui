@@ -2,7 +2,7 @@ import React, { useState, type FormEvent, type ChangeEvent } from 'react';
 import './ZohoForm.css';
 import { submitForm } from '../api/formAPI';
 import CircularProgress from '@mui/material/CircularProgress';
-import axios from 'axios';
+// import axios from 'axios';
 
 type FormData = {
   Name: string;
