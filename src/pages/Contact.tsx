@@ -16,8 +16,8 @@ const Contact = ({successCondition} : props)=>{
 
         <Helmet>
       
-       <title>Contact Us | Gati Shifting Packers</title> 
-        <meta  name="description"content="Get in touch with Gati Shifting Packers  for reliable relocation services across India. Contact us for free quotes, support, and service inquiries." /> 
+       <title>Contact Gati Shifting Packers | Get a Quote</title> 
+        <meta  name="description"content="Reach out to Gati Shifting Packers for quotes, assistance, or inquiries. Our team is ready to help with your relocation needs through calls, messages, or the contact form." /> 
         <meta  name="keywords"content="Gati Shifting contact, Packers and Movers contact, relocation support, moving service inquiry, Gati Shifting Packers customer care"  /> 
         <meta name="robots" content="index, follow" />
 

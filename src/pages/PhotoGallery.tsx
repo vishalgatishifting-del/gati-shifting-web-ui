@@ -68,7 +68,7 @@ const PhotoGallery = () => {
 
                 <title>Photo Gallery | Gati Shifting Packers</title>
 
-                <meta name="description" content="Explore the Photo Gallery of Gati Shifting Packers showcasing our professional packing, moving, and relocation services. See our team in action and client success stories." />
+                <meta name="description" content="Browse photos of our packing, loading, and transportation processes. Gati Shifting Packers demonstrates safe and professional handling for every relocation." />
                 <meta name="keywords" content="Gati Shifting Packers photo gallery, packing and moving photos, relocation services images, professional movers photos, client success stories" />
                 <meta name="robots" content="index, follow" />
                 <meta name="author" content="rohan" />

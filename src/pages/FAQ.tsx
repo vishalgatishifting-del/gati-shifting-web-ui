@@ -9,8 +9,8 @@ const FAQ = () => {
     return (
         <>
             <Helmet>
-                <title>FAQ | Gati Shifting Packers</title>
-                <meta name="description" content="Frequently Asked Questions about Gati Shifting Packers. Learn about our relocation services, packing solutions, cost estimates, and how we ensure a smooth move across India." />
+                <title>FAQs | Gati Shifting Packers</title>
+                <meta name="description" content="Find answers to common questions about packing, moving, pricing, and delivery. Gati Shifting Packers provides clear guidance on services, processes, and timelines." />
                 <meta name="keywords" content="Gati FAQ, Packers and Movers FAQ, relocation questions, moving tips, Gati Shifting Packers customer support" />
                 <meta name="robots" content="index, follow" />
 

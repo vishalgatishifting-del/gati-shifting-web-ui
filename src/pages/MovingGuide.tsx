@@ -26,7 +26,7 @@ const MovingGuide = () => {
       
 <title>Moving Guide | Gati Shifting Packers</title>
 
-<meta name="description" content="Read the complete Moving Guide by Gati Shifting Packers — expert tips, packing checklist, and step-by-step advice to make your relocation easy and hassle-free." />
+<meta name="description" content="Access step-by-step moving tips and guidance from Gati Shifting Packers. Learn how to pack, transport, and settle in safely for a smooth relocation experience." />
 <meta name="keywords" content="moving guide, packing tips, relocation checklist, shifting tips, home shifting, office moving, gati shifting packers" />
 <meta name="robots" content="index, follow" />
 <meta name="author" content="rohan" />
