@@ -40,6 +40,12 @@ import Layout from "../pages/Laoytout.tsx"
 
 import AdminDashboard from "../pages/AdminDashboard.tsx"
 import AdminLogin from "../pages/AdminLogin.tsx"
+import TrackOrder from "../pages/TrackOrder.tsx"
+import AdminOrders from "../pages/AdminOrders.tsx"
+import AdminCreateOrder from "../pages/AdminCreateOrder.tsx"
+
+
+
 
 
 const AppRoutes = () => {
@@ -88,6 +94,11 @@ const AppRoutes = () => {
                     <Route path="/document-upload" element={<BusinessPartner></BusinessPartner>}></Route>
                     <Route path="/admin-login" element={<AdminLogin onLoginSuccess={testing}></AdminLogin>}></Route>
                     <Route path="/admin" element={<AdminDashboard></AdminDashboard>}></Route>
+                    <Route path="/admin-orders" element={<AdminOrders></AdminOrders>}></Route>
+                    <Route path="/admin-create-order" element={<AdminCreateOrder></AdminCreateOrder>}></Route>
+
+                    <Route path="/track-order" element={<Layout><TrackOrder></TrackOrder></Layout>}></Route>
+
 
                     {
                         pagesData.map((page) => (

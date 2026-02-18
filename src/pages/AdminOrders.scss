@@ -1,0 +1,221 @@
+.admin-page {
+
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2f7, #dce6f5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+}
+
+
+.admin-box {
+
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 14px;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.08),
+    0 4px 10px rgba(0,0,0,0.04);
+
+  animation: fadeIn 0.3s ease;
+
+}
+
+
+.admin-box h1 {
+
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #0b3d91;
+  font-weight: 600;
+
+}
+
+
+/* Search */
+
+.search {
+
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+
+}
+
+
+.search input {
+
+  flex: 1;
+
+}
+
+
+/* Inputs */
+
+input,
+select {
+
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 10px;
+
+  border-radius: 8px;
+  border: 1px solid #d0d7e2;
+
+  font-size: 14px;
+
+  transition: all 0.2s ease;
+
+}
+
+
+input:focus,
+select:focus {
+
+  outline: none;
+  border-color: #0b3d91;
+  box-shadow: 0 0 0 3px rgba(11, 61, 145, 0.1);
+
+}
+
+
+/* Buttons */
+
+button {
+
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  background: linear-gradient(
+    135deg,
+    #0b3d91,
+    #1c5ed6
+  );
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+}
+
+
+button:hover {
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 6px 15px rgba(11,61,145,0.25);
+
+}
+
+
+button:active {
+
+  transform: translateY(0px);
+
+}
+
+
+/* Update Button */
+
+.update-btn {
+
+  margin-top: 20px;
+  width: 100%;
+
+  background: linear-gradient(
+    135deg,
+    #00a86b,
+    #00c27a
+  );
+
+}
+
+
+.update-btn:hover {
+
+  box-shadow:
+    0 6px 15px rgba(0,168,107,0.25);
+
+}
+
+
+/* Message */
+
+.message {
+
+  margin-top: 18px;
+  padding: 12px;
+
+  background: #e7f9ef;
+  color: #00a86b;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+
+/* Order Form */
+
+.order-form {
+
+  margin-top: 15px;
+
+}
+
+
+.order-form p {
+
+  margin: 6px 0;
+  font-size: 14px;
+
+}
+
+
+/* Animation */
+
+@keyframes fadeIn {
+
+  from {
+
+    opacity: 0;
+    transform: translateY(10px);
+
+  }
+
+  to {
+
+    opacity: 1;
+    transform: translateY(0);
+
+  }
+
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+  .admin-box {
+
+    padding: 25px 20px;
+
+  }
+
+}
