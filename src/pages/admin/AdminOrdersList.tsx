@@ -3,7 +3,8 @@ import { useState, useEffect } from "react";
 
 const AdminOrdersList = () => {
 
-  const [deleteLoading, useDeleteLoading] = useState<Boolean>(false)
+  // const [deleteLoading, useDeleteLoading] = useState<Boolean>(false)
+  // console.log(deleteLoading)
 
 
   // const API = "https://api.gatishiftingpackers.com/api/orders";
