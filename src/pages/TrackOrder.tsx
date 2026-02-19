@@ -31,7 +31,7 @@ const TrackOrder: React.FC = () => {
       setOrder(null);
 
       const res = await fetch(
-        `http://localhost:5000/api/orders/track/${trackingId}`
+        `https://api.gatishiftingpackers.com/api/orders/track/${trackingId}`
       );
 
       if (!res.ok) {

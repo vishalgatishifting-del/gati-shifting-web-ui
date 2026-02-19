@@ -791,73 +791,190 @@
 
 
 #steps-section {
-    // background: linear-gradient(20deg, #12337a, #0a1a3c, #000);
-    background: linear-gradient(20deg, #23acf1, #135070, #000);
-    color: #fff;
-    padding: 30px 10px 30px 10px;
-    margin-bottom: 50px;
-    @include font-poppins-sans(400);
-    // padding: 60px;
 
-    h1 {
-        text-align: center;
-        margin-bottom: 30px;
-        font-weight: 400;
-        font-size: 25px;
-    }
+  padding: 100px 20px;
 
-    .steps {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        width: 1000px;
-        margin: auto;
+  background:
+    radial-gradient(circle at 10% 20%, #23acf1 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, #135070 0%, transparent 40%),
+    linear-gradient(135deg, #0a0f1c, #020617);
 
-        .card {
-            padding: 30px;
-            background: #ffffff1a;
-            border-radius: 20px;
-            border: 1px solid #ffffff1d;
-            box-shadow: 0 5px 10px #00000039;
-            transition: .5s;
-            transition-delay: .3s;
+  color: white;
+  margin-bottom: 50px;
 
-            div {
-                display: flex;
-                align-items: center;
-                margin-bottom: 10px;
-
-                .icon {
-                    padding: 10px;
-                    background: linear-gradient(#25a6eb, #005eac);
-                    // background: linear-gradient(#18af50, #05431c);
-                    border-radius: 10px;
-                    display: flex;
-                    margin-right: 10px;
-                    transition: .5s
-                }
-
-                h3 {
-                    @include font-poppins-sans(600);
-                    font-size: $normal-font-size;
-                    color: #ffffffdd;
-                    margin-top: 0;
-                    margin-bottom: 0;
-
-                }
-            }
-
-            p {
-                @include font-poppins-sans(400);
-                font-size: $normal-font-size;
-                // font-weight: 300;
-                color: #ffffff;
-            }
-        }
-
-
-    }
 }
+
+
+#steps-section .container {
+
+  max-width: 1100px;
+  margin: auto;
+
+}
+
+
+/* HEADER */
+
+#steps-section .header {
+
+  text-align: center;
+  margin-bottom: 60px;
+
+}
+
+
+#steps-section h2 {
+
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+
+}
+
+
+#steps-section .header p {
+
+  color: #94a3b8;
+
+}
+
+
+/* GRID */
+
+#steps-section .steps {
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+
+}
+
+
+/* CARD */
+
+#steps-section .card {
+
+  position: relative;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.05);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: 0.3s;
+
+}
+
+
+#steps-section .card:hover {
+
+  transform: translateY(-8px);
+
+  background: rgba(255,255,255,0.08);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.4);
+
+}
+
+
+/* STEP NUMBER */
+
+.step-number {
+
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+
+  font-size: 40px;
+
+  font-weight: bold;
+
+  color: rgba(255,255,255,0.08);
+
+}
+
+
+/* ICON */
+
+#steps-section .icon {
+
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #23acf1,
+      #1b8ed1
+    );
+
+  margin-bottom: 20px;
+
+}
+
+
+#steps-section .icon svg {
+
+  font-size: 30px;
+
+}
+
+
+/* TEXT */
+
+#steps-section h3 {
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  margin-bottom: 10px;
+
+}
+
+
+#steps-section p {
+
+  color: #cbd5e1;
+
+  line-height: 1.6;
+
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width: 800px) {
+
+  #steps-section .steps {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  #steps-section h2 {
+
+    font-size: 26px;
+
+  }
+
+}
+
 
 #google-review-sec {
     padding: 80px 20px;
@@ -1238,14 +1355,6 @@
 
 
 
-@media screen and (max-width: 1028px) {
-    #steps-section {
-        .steps {
-            width: 100%;
-            gap: 10px;
-        }
-    }
-}
 
 @media screen and (max-width: 995px) {
     #about-company {
@@ -1309,14 +1418,6 @@
 
 
 
-
-@media screen and (max-width: 854px) {
-    #steps-section {
-        .steps {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-}
 
 
 @media screen and (max-width: 820px) {
@@ -1548,13 +1649,6 @@
     }
 }
 
-@media screen and (max-width: 472px) {
-    #steps-section {
-        h1 {
-            font-size: 20px;
-        }
-    }
-}
 
 
 @media screen and (max-width: 451px) {

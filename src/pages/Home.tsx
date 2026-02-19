@@ -421,10 +421,10 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         <p>Since 2007, we are at your service expanding all over the country to be one of the best Packers and Movers company.</p>
                     </div>
                 </div>
-            </section>  
+            </section>
 
 
-            
+
 
             <section id="counter-section">
                 <div className="container">
@@ -455,7 +455,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                 </div>
             </section>
 
-              <section id="company-description">
+            <section id="company-description">
 
                 <h1 className="heading">Moving Services by <span className="primary-color">Gati Shifting Packers</span></h1>
                 <div className="img-bx">
@@ -615,7 +615,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
 
 
-          
+
 
             <ProductImageSlider images={sliderImages}></ProductImageSlider>
 
@@ -623,40 +623,81 @@ const Home: React.FC<props> = ({ successCondition }) => {
             <ReviewVideo></ReviewVideo>
 
             <section id="steps-section">
-                <h1>4 Easy Steps to Hire Reliable Movers and Packers</h1>
-                <div className="steps">
-                    <div className="card">
-                        <div>
-                            <span className="icon"><DescriptionIcon></DescriptionIcon></span>
+
+                <div className="container">
+
+                    <div className="header">
+                        <h2>4 Easy Steps to Hire Reliable Movers and Packers</h2>
+                        <p>Simple, fast and secure process to book trusted relocation services</p>
+                    </div>
+
+                    <div className="steps">
+
+                        <div className="card">
+                            <div className="step-number">01</div>
+
+                            <div className="icon">
+                                <DescriptionIcon />
+                            </div>
+
                             <h3>Fill Your Enquiry Form</h3>
+
+                            <p>
+                                Share your moving requirements and get connected with verified movers instantly.
+                            </p>
                         </div>
-                        <p>Tell us about your car or bike shifting needs. Our logistics team will connect you with trusted movers for competitive rates.</p>
-                    </div>
 
 
-                    <div className="card">
-                        <div>
-                            <span className="icon"><HandshakeIcon></HandshakeIcon></span>
-                            <h3>Get Quotes within 30 Minutes</h3>
+                        <div className="card">
+                            <div className="step-number">02</div>
+
+                            <div className="icon">
+                                <HandshakeIcon />
+                            </div>
+
+                            <h3>Get Quotes in Minutes</h3>
+
+                            <p>
+                                Receive competitive quotes from trusted and verified relocation partners.
+                            </p>
                         </div>
-                        <p>Receive fast quotes from verified car carriers with 5-star reviews. We ensure only trusted movers get through.</p>
-                    </div>
-                    <div className="card">
-                        <div>
-                            <span className="icon"><BalanceIcon></BalanceIcon></span>
-                            <h3>Select the Best Quote</h3>
+
+
+                        <div className="card">
+                            <div className="step-number">03</div>
+
+                            <div className="icon">
+                                <BalanceIcon />
+                            </div>
+
+                            <h3>Compare and Choose</h3>
+
+                            <p>
+                                Compare pricing, reviews, and profiles to select the best moving service.
+                            </p>
                         </div>
-                        <p>Make an informed choice based on business profiles, pricing, and reviews before selecting the best deal.</p>
-                    </div>
-                    <div className="card">
-                        <div>
-                            <span className="icon"><LocalShippingIcon></LocalShippingIcon></span>
-                            <h3>Get Safe & Secure Shifting</h3>
+
+
+                        <div className="card">
+                            <div className="step-number">04</div>
+
+                            <div className="icon">
+                                <LocalShippingIcon />
+                            </div>
+
+                            <h3>Enjoy Safe Relocation</h3>
+
+                            <p>
+                                Sit back and relax while professionals handle your relocation safely.
+                            </p>
                         </div>
-                        <p>Choose your mover and enjoy safe, secure relocation of your car or bike—stress-free and timely.</p>
+
                     </div>
+
                 </div>
+
             </section>
+
 
 
             <div className="image-box">

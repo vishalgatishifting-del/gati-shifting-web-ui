@@ -1,70 +1,157 @@
-
-@import "../style/variables";
-
 #customer-review {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 10px;
-    
-  margin-top: 50px;
 
-    h1 {
-        @include font-poppins-sans(800);
-    }
+  padding: 80px 20px;
 
-    h4 {
-        @include font-poppins-sans(400);
-        margin: 10px 0 30px 0;
-        color: $grey-text-color;
-        font-size: $normal-font-size;
-        text-align: center;
-    }
 
-    .video {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        img{
-            border-radius: 20px;
-            margin: 5px;
-        }
-
-        iframe {
-            border-radius: 20px;
-            margin: 5px;
-        }
-    }
+  text-align: center;
 
 }
 
 
-@media screen and (max-width: 596px) {
-    #customer-review {
-        .video {
-            width: 100%;
-            img{
-                width: 100%;
-                margin: 5px 0;
-            }
-            iframe {
-                width: 100%;
-                margin: 5px 0;
-            }
-        }
-    }
+
+#customer-review .header {
+
+  margin-bottom: 50px;
+
 }
 
 
-@media screen and (max-width: 444px) {
-    #customer-review {
-        h1 {
-            font-size: 25px;
-        }
+#customer-review h2 {
 
-        h4 {
-            font-size: 15px;
-        }
-    }
+  font-size: 34px;
+  font-weight: 700;
+
+}
+
+
+#customer-review p {
+
+  color: #64748b;
+  margin-top: 10px;
+
+}
+
+
+.video-grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+
+  max-width: 1100px;
+
+  margin: auto;
+
+}
+
+
+
+.yt-card {
+
+  position: relative;
+
+  cursor: pointer;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+
+  transition: 0.3s;
+
+}
+
+
+.yt-card:hover {
+
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+
+}
+
+
+.yt-card img {
+
+  width: 100%;
+
+  display: block;
+
+}
+
+
+.play-btn {
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 70px;
+  height: 70px;
+
+  background: rgba(35,172,241,0.9);
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+
+  color: white;
+
+  transition: 0.3s;
+
+}
+
+
+.yt-card:hover .play-btn {
+
+  transform: translate(-50%, -50%) scale(1.15);
+
+}
+
+
+.yt-card iframe {
+
+  width: 100%;
+  height: 250px;
+
+  border: none;
+
+}
+
+
+@media(max-width: 900px) {
+
+  .video-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
+
+
+@media(max-width: 600px) {
+
+  .video-grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+  #customer-review h2 {
+
+    font-size: 26px;
+
+  }
+
 }
