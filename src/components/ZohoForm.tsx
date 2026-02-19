@@ -159,11 +159,11 @@ const ZohoForm: React.FC<props> = ({ successCondition }) => {
 
         <div className="zcwf_row">
           <div className="zcwf_col_lab"></div>
-          <div className="zcwf_col_fld">
+          <div className="zcwf_col_fld" style={{display:"flex"}}>
             <button type='submit' disabled={loading}>
               {loading ? <CircularProgress color='inherit'></CircularProgress> : "Get Free Quote"}</button>
             <input
-              style={{ marginLeft: "10px", cursor: "pointer" }}
+              style={{ marginLeft: "10px", cursor: "pointer", marginTop:"0", width:"100px" }}
               type="reset"
               value="Reset"
               className="zcwf_button"

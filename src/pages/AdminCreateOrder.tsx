@@ -24,7 +24,6 @@ const AdminCreateOrder: React.FC = () => {
     const API =
         "https://api.gatishiftingpackers.com/api/orders/create";
 
-
     const handleChange = (
         e: React.ChangeEvent<HTMLInputElement>
     ) => {

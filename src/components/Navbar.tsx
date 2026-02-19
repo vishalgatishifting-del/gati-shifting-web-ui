@@ -4,7 +4,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import StarRateIcon from '@mui/icons-material/StarRate';
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+// import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 import ContactsIcon from '@mui/icons-material/Contacts';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -36,7 +36,7 @@ import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 
-
+import ShareLocationIcon from '@mui/icons-material/ShareLocation';
 
 
 
@@ -128,15 +128,6 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
             </li>
             <li>
               <Link
-                className={currentPath === "/faqs" ? "active" : ""}
-                to="/faqs"
-                onClick={() => setOpenNav(false)}
-              >
-                <HelpOutlineIcon className="icon" /> FAQs
-              </Link>
-            </li>
-            <li>
-              <Link
                 className={currentPath === "/contact-us" ? "active" : ""}
                 to="/contact-us"
                 onClick={() => setOpenNav(false)}
@@ -152,6 +143,16 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
               >
                 <MiscellaneousServicesIcon className="icon" /> Services
                 <ArrowDropDownIcon />
+              </Link>
+            </li>
+            
+            <li>
+              <Link
+                className={currentPath === "/track-order" ? "active" : ""}
+                to="/track-order"
+                onClick={() => setOpenNav(false)}
+              >
+                <ShareLocationIcon className="icon" /> Track
               </Link>
             </li>
           </ul>

@@ -36,19 +36,19 @@ import ZohoForm from "../components/ZohoForm"   // Form Component
 
 
 
-import justDialCertificateImg from "../assets/homePagePng/justDialCertificate.webp"
-import MSMECertificateImg from "../assets/homePagePng/MSMECertificate.webp"
-import incorporationCertificate from "../assets/homePagePng/incorporationCertificate.webp"
-import GSTIncorporation from "../assets/homePagePng/GSTCertificate.webp"
-import ISOcertificate from "../assets/homePagePng/isoCertificate.webp"
-import gatiCertificate from "../assets/homePagePng/gatiCertificate.webp"
+import justDialCertificateImg from "../assets/homePagePng/justdial_certificate.webp"
+import MSMECertificateImg from "../assets/homePagePng/msme_certificate.webp"
+import incorporationCertificate from "../assets/homePagePng/incorporation_certificate.webp"
+import GSTIncorporation from "../assets/homePagePng/gst_certificate.webp"
+import ISOcertificate from "../assets/homePagePng/award_certificate.webp"
+import gatiCertificate from "../assets/homePagePng/gatishifting_certificate.webp"
 
 
 // CountDown Section PNG
-import truckPng from "../assets/homePagePng/Gemini_Generated_Image_2zntak2zntak2znt.webp"
-import cityPng from "../assets/homePagePng/Gemini_Generated_Image_lfceqflfceqflfce.webp"
-import verifiedBadgePng from "../assets/homePagePng/Gemini_Generated_Image_seeh1bseeh1bseeh.webp"
-import peoplesPng from "../assets/homePagePng/Gemini_Generated_Image_lrzvt4lrzvt4lrzv.webp"
+// import truckPng from "../assets/homePagePng/Gemini_Generated_Image_2zntak2zntak2znt.webp"
+// import cityPng from "../assets/homePagePng/Gemini_Generated_Image_lfceqflfceqflfce.webp"
+// import verifiedBadgePng from "../assets/homePagePng/Gemini_Generated_Image_seeh1bseeh1bseeh.webp"
+// import peoplesPng from "../assets/homePagePng/Gemini_Generated_Image_lrzvt4lrzvt4lrzv.webp"
 
 
 // Feature Slider Images
@@ -127,6 +127,9 @@ import ship2 from "../assets/HomePage/ship2.webp"
 import airplaneImg from "../assets/HomePage/airplane.webp"
 import truck2 from "../assets/HomePage/truck2.webp"
 
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+// import vectorLogo from "../assets/logo/android-chrome-192x192-v2.png"
+
 // import republicDayImg from "../assets/Themes/RepublicDay/man-with-flag.webp"
 
 
@@ -141,7 +144,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
     }, []);
 
 
-    const images = [gatiSlider2, gatiSlider7,gatislider6, gatislider5,  gatiSlider3];
+    const images = [gatiSlider2, gatiSlider7, gatislider6, gatislider5, gatiSlider3];
 
 
     const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
@@ -397,8 +400,169 @@ const Home: React.FC<props> = ({ successCondition }) => {
             </div> */}
 
 
-            <section id="certificate-section">
-                {/* <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1> */}
+
+            <section id="badge-section">
+                <div className="container">
+                    <div className="card">
+                        <img src={isoBadge} alt="Badge" />
+                        <h3>ISO 9001:2015</h3>
+                        <p>Certificate No: 2713SAFV2021, for Courier Services, Packers & Movers, Transportation and Storage of Goods.</p>
+                    </div>
+
+
+                    <div className="card">
+                        <img src={googleRatingBadge} alt="Badge" />
+                        <h3>5 Star Ratings</h3>
+                        <p>We have been rated 5 stars by our valuable clients in multiple platforms like Google, Facebook etc.</p>
+                    </div>
+                    <div className="card">
+                        <img src={trustedBadge} alt="Badge" />
+                        <h3>15+ Years of Trust</h3>
+                        <p>Since 2007, we are at your service expanding all over the country to be one of the best Packers and Movers company.</p>
+                    </div>
+                </div>
+            </section>  
+
+
+            
+
+            <section id="counter-section">
+                <div className="container">
+                    <div className="card">
+                        {/* <img src={truckPng} alt="truck" /> */}
+                        <Counter end={1032858} suffix="+" />
+                        <p>Successfully Homes Relocated</p>
+                        <Link to="/contact-us"><NavigateNextIcon></NavigateNextIcon></Link>
+                    </div>
+                    <div className="card">
+                        {/* <img src={cityPng} alt="city png" /> */}
+                        <Counter end={600} suffix="+" />
+                        <p>Service Available in Multiple Cities</p>
+                        <Link to="/contact-us"><NavigateNextIcon></NavigateNextIcon></Link>
+                    </div>
+                    <div className="card">
+                        {/* <img src={verifiedBadgePng} alt="badge png" /> */}
+                        <Counter end={3548} suffix="+" />
+                        <p>Verified Professionals</p>
+                        <Link to="/contact-us"><NavigateNextIcon></NavigateNextIcon></Link>
+                    </div>
+                    <div className="card">
+                        {/* <img src={peoplesPng} alt="people png" /> */}
+                        <Counter end={99} suffix="%" />
+                        <p>Satisfied Customers</p>
+                        <Link to="/contact-us"><NavigateNextIcon></NavigateNextIcon></Link>
+                    </div>
+                </div>
+            </section>
+
+              <section id="company-description">
+
+                <h1 className="heading">Moving Services by <span className="primary-color">Gati Shifting Packers</span></h1>
+                <div className="img-bx">
+                    {/* <img src={whyGatiImg} /> */}
+                </div>
+                <div className="card-container">
+                    <div className="card">
+                        <a href={justDialCertificateImg} className="hidden" target="_blank">
+                            <img src={justDialCertificateImg} alt="certificate" />
+                            <h3>JustDial Certificate</h3>
+                        </a>
+                    </div>
+                    <div className="card">
+                        <a href={MSMECertificateImg} className="hidden" target="_blank">
+                            <img src={MSMECertificateImg} alt="certificate" />
+                            <h3>MSME Ceritificate</h3>
+                        </a>
+                    </div>
+                    <div className="card">
+                        <a href={incorporationCertificate} className="hidden" target="_blank">
+                            <img src={incorporationCertificate} alt="certificate" />
+                            <h3>Incorporation Certificate</h3>
+                        </a>
+                    </div>
+                    <div className="card">
+                        <a href={GSTIncorporation} className="hidden" target="_blank">
+                            <img src={GSTIncorporation} alt="certificate" />
+                            <h3>GST Certificate</h3>
+                        </a>
+                    </div>
+
+
+                    <div className="card">
+                        <a href={ISOcertificate} className="hidden" target="_blank">
+                            <img src={ISOcertificate} alt="certificate" />
+                            <h3>ISO Certificate</h3>
+                        </a>
+                    </div>
+
+
+                    <div className="card">
+                        <a href={gatiCertificate} className="hidden" target="_blank">
+                            <img src={gatiCertificate} alt="certificate" />
+                            <h3>Achievement Certificate</h3>
+                        </a>
+                    </div>
+
+
+
+                    <div className="card">
+                        <a href={justDialCertificateImg} className="hidden" target="_blank">
+                            <img src={justDialCertificateImg} alt="certificate" />
+                            <h3>JustDial Certificate</h3>
+                        </a>
+                    </div>
+                    <div className="card">
+                        <a href={MSMECertificateImg} className="hidden" target="_blank">
+                            <img src={MSMECertificateImg} alt="certificate" />
+                            <h3>MSME Ceritificate</h3>
+                        </a>
+                    </div>
+                    <div className="card">
+                        <a href={incorporationCertificate} className="hidden" target="_blank">
+                            <img src={incorporationCertificate} alt="certificate" />
+                            <h3>Incorporation Certificate</h3>
+                        </a>
+                    </div>
+                    <div className="card">
+                        <a href={GSTIncorporation} className="hidden" target="_blank">
+                            <img src={GSTIncorporation} alt="certificate" />
+                            <h3>GST Certificate</h3>
+                        </a>
+                    </div>
+
+
+                    <div className="card">
+                        <a href={ISOcertificate} className="hidden" target="_blank">
+                            <img src={ISOcertificate} alt="certificate" />
+                            <h3>ISO Certificate</h3>
+                        </a>
+                    </div>
+
+
+                    <div className="card">
+                        <a href={gatiCertificate} className="hidden" target="_blank">
+                            <img src={gatiCertificate} alt="certificate" />
+                            <h3>Achievement Certificate</h3>
+                        </a>
+                    </div>
+                </div>
+                <div className="text-bx">
+                    {/* <img src={vectorLogo} /> */}
+
+                    <p>
+                        "Gati Shifting Packers PVT LTD. are always ready to help make the moving and packing experience excellent, more efficient and easier for you and your family. Just sit back, chill out and know that you are in safe hands!"
+                    </p>
+
+                    <p>Relocating to a new place can be a tiring and difficult process. There are many things to arrange and pack, including heavy furniture, electrical appliances and fragile and valuable antique items.</p>
+
+                    <p> Gati Shifting Packers's goal is to make your relocating experience as trouble-free as possible. Let us manage all of the difficult work. Our job is to be sure that your shifting is complete on time, every time.
+                    </p>
+                </div>
+            </section>
+
+
+            {/* <section id="certificate-section">
+                <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1>
                 <div className="container">
                     <div className="card">
                         <a href={justDialCertificateImg} className="hidden" target="_blank">
@@ -447,72 +611,11 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         <h3>Achievement Certificate</h3>
                     </div>
                 </div>
-            </section>
-
-            <section id="badge-section">
-                <div className="container">
-                    <div className="card">
-                        <img src={isoBadge} alt="Badge" />
-                        <h3>ISO 9001:2015</h3>
-                        <p>Certificate No: 2713SAFV2021, for Courier Services, Packers & Movers, Transportation and Storage of Goods.</p>
-                    </div>
+            </section> */}
 
 
-                    <div className="card">
-                        <img src={googleRatingBadge} alt="Badge" />
-                        <h3>5 Star Ratings</h3>
-                        <p>We have been rated 5 stars by our valuable clients in multiple platforms like Google, Facebook etc.</p>
-                    </div>
-                    <div className="card">
-                        <img src={trustedBadge} alt="Badge" />
-                        <h3>15+ Years of Trust</h3>
-                        <p>Since 2007, we are at your service expanding all over the country to be one of the best Packers and Movers company.</p>
-                    </div>
-                </div>
-            </section>
 
-
-            <section id="counter-section">
-                <div className="container">
-                    <div className="card">
-                        <img src={truckPng} alt="truck" />
-                        <Counter end={1032858} suffix="+" />
-                        <p>Homes Moved</p>
-                    </div>
-                    <div className="card">
-                        <img src={cityPng} alt="city png" />
-                        <Counter end={600} suffix="+" />
-                        <p>Cities Covered</p>
-                    </div>
-                    <div className="card">
-                        <img src={verifiedBadgePng} alt="badge png" />
-                        <Counter end={3548} suffix="+" />
-                        <p>Verified Professionals</p>
-                    </div>
-                    <div className="card">
-                        <img src={peoplesPng} alt="people png" />
-                        <Counter end={99} suffix="%" />
-                        <p>Satisfied Customers</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="company-description">
-                <div className="img-bx">
-                    {/* <img src={whyGatiImg} /> */}
-                </div>
-                <div className="text-bx">
-                    <h1>Moving Services by <span className="primary-color">Gati Shifting Packers</span></h1>
-                    <p>
-                        Gati Shifting Packers PVT LTD. are always ready to help make the moving and packing experience excellent, more efficient and easier for you and your family. Just sit back, chill out and know that you are in safe hands!
-                    </p>
-
-                    <p>Relocating to a new place can be a tiring and difficult process. There are many things to arrange and pack, including heavy furniture, electrical appliances and fragile and valuable antique items.</p>
-
-                    <p> Gati Shifting Packers's goal is to make your relocating experience as trouble-free as possible. Let us manage all of the difficult work. Our job is to be sure that your shifting is complete on time, every time.
-                    </p>
-                </div>
-            </section>
+          
 
             <ProductImageSlider images={sliderImages}></ProductImageSlider>
 
@@ -574,21 +677,46 @@ const Home: React.FC<props> = ({ successCondition }) => {
             {/* <GetInTouch></GetInTouch> */}
             <section id="google-review-sec">
                 <div className="container">
+
                     <div className="text-box">
-                        <h1>Trusted by Thousands of <span className="primary-color">Happy Customers</span></h1>
-                        <p>Real experiences from customers who trusted Gati Shifting Packers for safe, timely, and stress-free relocation.</p>
-                    </div>
-                    <div className="img-rating-box">
-                        <Link className="detail-link" to="/review">
-                            <img src={googleRatingImg} alt="googt rating png" />
-                            <span>4.9 ★★★★★</span>
-                            <span>1000+ Reviews</span>
-                            <span>Based on genuine customer reviews</span>
+                        <h2>
+                            Trusted by Thousands of <span>Happy Customers</span>
+                        </h2>
+
+                        <p>
+                            Real experiences from customers who trusted Gati Shifting Packers
+                            for safe, timely, and hassle-free relocation across India.
+                        </p>
+
+                        <Link to="/review" className="review-btn">
+                            Leave Your Review →
                         </Link>
-                        <Link to="/review" className="review-btn">Leave a Review</Link>
                     </div>
+
+
+                    <div className="rating-card">
+
+                        <img src={googleRatingImg} alt="Google Rating" />
+
+                        <div className="rating-info">
+
+                            <h3>4.9 ★★★★★</h3>
+
+                            <p className="review-count">
+                                Based on 1000+ Verified Reviews
+                            </p>
+
+                            <p className="review-desc">
+                                Customers love our fast, secure and professional moving services.
+                            </p>
+
+                        </div>
+
+                    </div>
+
                 </div>
             </section>
+
             <TrustUsSection />
 
 

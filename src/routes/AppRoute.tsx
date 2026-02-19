@@ -46,6 +46,11 @@ import AdminCreateOrder from "../pages/AdminCreateOrder.tsx"
 
 
 
+// Admin
+// import AdminDashboard from "../pages/admin/AdminDashboard.tsx"
+
+
+
 
 
 const AppRoutes = () => {
@@ -92,8 +97,10 @@ const AppRoutes = () => {
                     <Route path="/car-storage" element={<Layout><CarStorage></CarStorage></Layout>}></Route>
                     <Route path="/bike-storage" element={<Layout><BikeStorage></BikeStorage></Layout>}></Route>
                     <Route path="/document-upload" element={<BusinessPartner></BusinessPartner>}></Route>
+
+
                     <Route path="/admin-login" element={<AdminLogin onLoginSuccess={testing}></AdminLogin>}></Route>
-                    <Route path="/admin" element={<AdminDashboard></AdminDashboard>}></Route>
+                    <Route path="/admin-dashboard" element={<AdminDashboard></AdminDashboard>}></Route>
                     <Route path="/admin-orders" element={<AdminOrders></AdminOrders>}></Route>
                     <Route path="/admin-create-order" element={<AdminCreateOrder></AdminCreateOrder>}></Route>
 

@@ -9,31 +9,56 @@ import "./TrustUsSection.scss"
 const TrustUsSection = () => {
     return (
         <section id="trust-us-section">
-            <h1>Trust Us With Confidence</h1>
-            <p>Verify our reliability through real reviews, videos, images, or even a direct call:</p>
-            <div className="cards">
-                <Link className="card" to="/review">
-                    <StarRateIcon className="icon"></StarRateIcon>
-                    <span>Customer Review</span>
-                </Link>
-                <Link className="card" to="/photo-gallery">
-                    <CollectionsIcon className="icon"></CollectionsIcon>
-                    <span>Photo Gallery</span>
-                </Link>
-                <Link className="card" to="/video-gallery">
-                    <PlayCircleIcon className="icon"></PlayCircleIcon>
-                    <span>Video Gallery</span>
-                </Link>
-                <a className="card" href="https://wa.me/917065994000">
-                    <WhatsAppIcon className="icon"></WhatsAppIcon>
-                    <span>Chat With Us</span>
-                </a>
-                <a className="card" href="tel:+919422799477">
-                    <CallIcon className="icon"></CallIcon>
-                    <span>Call Now</span>
-                </a>
-            </div>
-        </section>
+
+  <div className="trust-header">
+    <h2>Trust Us With Confidence</h2>
+    <p>
+      Verify our reliability through genuine reviews, real photos, videos,
+      or connect with us directly.
+    </p>
+  </div>
+
+  <div className="cards">
+
+    <Link className="card" to="/review">
+      <div className="icon-box">
+        <StarRateIcon className="icon"/>
+      </div>
+      <span>Customer Reviews</span>
+    </Link>
+
+    <Link className="card" to="/photo-gallery">
+      <div className="icon-box">
+        <CollectionsIcon className="icon"/>
+      </div>
+      <span>Photo Gallery</span>
+    </Link>
+
+    <Link className="card" to="/video-gallery">
+      <div className="icon-box">
+        <PlayCircleIcon className="icon"/>
+      </div>
+      <span>Video Gallery</span>
+    </Link>
+
+    <a className="card" href="https://wa.me/917065994000">
+      <div className="icon-box whatsapp">
+        <WhatsAppIcon className="icon"/>
+      </div>
+      <span>WhatsApp Chat</span>
+    </a>
+
+    <a className="card" href="tel:+919422799477">
+      <div className="icon-box call">
+        <CallIcon className="icon"/>
+      </div>
+      <span>Call Now</span>
+    </a>
+
+  </div>
+
+</section>
+
     )
 }
 
