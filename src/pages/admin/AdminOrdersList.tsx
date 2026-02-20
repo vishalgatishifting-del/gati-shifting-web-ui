@@ -1,5 +1,9 @@
 import "./AdminOrdersList.scss"
 import { useState, useEffect } from "react";
+import UpdateWindow from "./UpdateWindow";
+import CreateWindow from "./CreateWindow";
+import privateAPI from "../../api/privateAxios";
+
 
 const AdminOrdersList = () => {
 
@@ -8,24 +12,25 @@ const AdminOrdersList = () => {
 
 
   // const API = "https://api.gatishiftingpackers.com/api/orders";
-  const API = "http://localhost:5000/api/orders";
+  // const API = "http://localhost:5000/api/orders";
 
 
   const [orders, setOrders] = useState<any[]>([]);
+  const [updateWindow, setUpdateWindow] = useState<boolean>(false)
+  const [createWindow, setCreateWindow] = useState<boolean>(false)
 
   // Search order
   const searchOrder = async () => {
     try {
 
-      const res = await fetch(`${API}/orders`);
+      const res = await privateAPI.get(`/api/orders/orders`);
 
-      if (!res.ok) {
+      if (!res) {
         throw new Error("Order not found");
       }
 
-      const data = await res.json();
+      setOrders(res.data);
 
-      setOrders(data); // state update karein
 
     }
     catch (err: any) {
@@ -65,17 +70,11 @@ const AdminOrdersList = () => {
   const deleteRecord = async (trackingID: any) => {
     try {
 
-      const res = await fetch(`${API}/delete/${trackingID}`, {
-        method: "DELETE"
-      });
-
-      if (!res.ok) {
-        throw new Error("Something Went Wrong");
-      }
+      await privateAPI.delete(
+        `/api/orders/delete/${trackingID}`
+      );
 
       searchOrder()
-
-      console.log(res)
 
     }
     catch (err: any) {
@@ -103,6 +102,14 @@ const AdminOrdersList = () => {
 
   };
 
+
+  const [currentRecord, setCurrentRecord] = useState<any>(null);
+  const updateRecord = (record: any) => {
+    console.log(record)
+    setUpdateWindow(true)
+    setCurrentRecord(record);
+  }
+
   return (
 
     <div className="orders-page">
@@ -111,7 +118,7 @@ const AdminOrdersList = () => {
 
         <h2>Orders Management</h2>
 
-        <button className="create-btn">
+        <button onClick={() => setCreateWindow(true)} className="create-btn">
           + Create Order
         </button>
 
@@ -184,7 +191,7 @@ const AdminOrdersList = () => {
 
                   <div className="actions">
 
-                    <button className="update-btn">
+                    <button onClick={() => updateRecord(order)} className="update-btn">
                       Update
                     </button>
 
@@ -206,6 +213,13 @@ const AdminOrdersList = () => {
         </table>
 
       </div>
+      {
+        (updateWindow) ? <UpdateWindow windowState={setUpdateWindow} data={currentRecord} searchOrder={searchOrder}></UpdateWindow> : ""
+      }
+      {
+        (createWindow) ? <CreateWindow createState={setCreateWindow} searchOrder={searchOrder}></CreateWindow> : ""
+      }
+
 
     </div>
 

@@ -14,6 +14,8 @@ import {
 } from "recharts";
 
 import LogoutIcon from '@mui/icons-material/Logout';
+import { useNavigate } from "react-router-dom";
+import privateAPI from "../../api/privateAxios";
 
 const leadData: Record<number, number> = {
     9: 5,
@@ -51,6 +53,27 @@ const AdminDashboard: React.FC = () => {
     const [activePage, setActivePage] = useState("dashboard");
 
     const days = Array.from({ length: 31 }, (_, i) => i + 1);
+
+
+
+    const navigate = useNavigate();
+
+    const handleLogout = async () => {
+
+        try {
+
+            await privateAPI.post("/api/auth/logout");
+
+            navigate("/admin-login");
+
+        }
+        catch (error) {
+
+            console.error("Logout failed");
+
+        }
+
+    };
 
     return (
 
@@ -114,7 +137,7 @@ const AdminDashboard: React.FC = () => {
 
                     <div className="header-right">
 
-                        <button className="logout-btn">
+                        <button className="logout-btn" onClick={handleLogout}>
                             <LogoutIcon />
                         </button>
 
@@ -298,4 +321,4 @@ const AdminDashboard: React.FC = () => {
 
 };
 
-export default AdminDashboard;
+export default AdminDashboard

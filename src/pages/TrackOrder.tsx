@@ -79,9 +79,13 @@ const TrackOrder: React.FC = () => {
 
     <div className="track-page">
 
+      <div className="left-content">
+        <h1>Track Shipment</h1>
+        <p>Stay updated with real-time tracking—know exactly where your shipment is every step of the way.</p>
+      </div>
       <div className="track-container">
 
-        <h1>Track Your Order</h1>
+        <h1>Track Your Shipment</h1>
 
         <div className="track-box">
 

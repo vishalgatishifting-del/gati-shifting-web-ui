@@ -87,3 +87,79 @@
   }
   
   
+  .otp-overlay {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999;
+
+}
+
+.otp-popup {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+  width: 350px;
+
+  text-align: center;
+
+}
+
+.otp-popup input {
+
+  width: 100%;
+  padding: 10px;
+
+  margin-top: 15px;
+
+  border-radius: 5px;
+
+  border: 1px solid #ccc;
+
+}
+
+.otp-buttons {
+
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.otp-buttons button {
+
+  padding: 10px 20px;
+
+  border: none;
+
+  background: #23acf1;
+
+  color: white;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+}
+
+.otp-buttons .cancel {
+
+  background: gray;
+
+}

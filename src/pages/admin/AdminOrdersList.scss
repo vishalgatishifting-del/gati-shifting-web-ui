@@ -1,8 +1,11 @@
+@import "../../style/variables";
+
 .orders-page {
 
   padding: 25px;
 
   animation: fadeIn 0.3s ease;
+    @include font-poppins-sans(400);
 
 }
 
@@ -31,9 +34,10 @@
 
 .create-btn {
 
+    @include font-poppins-sans(400);
   background: linear-gradient(
     135deg,
-    #2563eb,
+    $primary-color,
     #1e40af
   );
 
@@ -201,7 +205,8 @@
 
 .update-btn {
 
-  background: #2563eb;
+  background: $primary-color;
+    @include font-poppins-sans(400);
 
   color: white;
 
@@ -228,6 +233,7 @@
 .delete-btn {
 
   background: #ef4444;
+    @include font-poppins-sans(400);
 
   color: white;
 
