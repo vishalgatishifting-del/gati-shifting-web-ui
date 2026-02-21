@@ -4,7 +4,6 @@ import UpdateWindow from "./UpdateWindow";
 import CreateWindow from "./CreateWindow";
 import privateAPI from "../../api/privateAxios";
 
-
 const AdminOrdersList = () => {
 
   // const [deleteLoading, useDeleteLoading] = useState<Boolean>(false)
@@ -141,6 +140,8 @@ const AdminOrdersList = () => {
               <th>Goods</th>
               <th>Status</th>
               <th>Location</th>
+              <th>Expected Delivery</th>
+              <th>Note</th>
               <th>Actions</th>
 
             </tr>
@@ -185,6 +186,14 @@ const AdminOrdersList = () => {
 
                 <td>
                   {order.currentLocation}
+                </td>
+                
+                <td>
+                  {new Date(order.expectedDelivery)
+                  .toLocaleDateString()}
+                </td>
+                <td>
+                  {order.note}
                 </td>
 
                 <td>

@@ -15,7 +15,9 @@ const UpdateWindow = ({ data, windowState, searchOrder }: any) => {
         toLocation: "",
         goods: "",
         status: "",
-        currentLocation: ""
+        currentLocation: "",
+        expectedDelivery: "",
+        note: ""
     });
 
     // load default values when component opens
@@ -30,7 +32,11 @@ const UpdateWindow = ({ data, windowState, searchOrder }: any) => {
                 toLocation: data.toLocation || "",
                 goods: data.goods || "",
                 status: data.status || "",
-                currentLocation: data.currentLocation || ""
+                currentLocation: data.currentLocation || "",
+                expectedDelivery: data.expectedDelivery
+                ? new Date(data.expectedDelivery).toISOString().split("T")[0]
+                : "",
+                note: data.note || ""
             });
 
         }
@@ -144,6 +150,19 @@ const UpdateWindow = ({ data, windowState, searchOrder }: any) => {
                         value={formData.currentLocation}
                         onChange={handleChange}
                         placeholder="Current Location"
+                    />
+                    <input
+                        type="date"
+                        name="expectedDelivery"
+                        value={formData.expectedDelivery}
+                        onChange={handleChange}
+                    />
+                    <input
+                        type="text"
+                        name="note"
+                        value={formData.note}
+                        onChange={handleChange}
+                        placeholder="Note"
                     />
 
                 </form>

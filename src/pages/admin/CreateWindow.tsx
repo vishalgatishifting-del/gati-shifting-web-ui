@@ -1,17 +1,28 @@
 import { useState } from "react";
 import privateAPI from "../../api/privateAxios";
-
-
+interface OrderForm {
+    customerName: string;
+    phone: string;
+    fromLocation: string;
+    toLocation: string;
+    goods: string;
+    status: string;
+    currentLocation: string;
+    expectedDelivery: string;
+    note: string;
+}
 const CreateWindow = ({ createState, searchOrder }: any) => {
 
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<OrderForm>({
         customerName: "",
         phone: "",
         fromLocation: "",
         toLocation: "",
         goods: "",
         status: "",
-        currentLocation: ""
+        currentLocation: "",
+        expectedDelivery: "",
+        note: ""
     });
 
     const handleChange = (e: any) => {
@@ -104,6 +115,19 @@ const CreateWindow = ({ createState, searchOrder }: any) => {
                             value={formData.currentLocation}
                             onChange={handleChange}
                             placeholder="Current Location"
+                        />
+                        <input
+                            type="date"
+                            name="expectedDelivery"
+                            value={formData.expectedDelivery}
+                            onChange={handleChange}
+                        />
+                        <input
+                            type="text"
+                            name="note"
+                            value={formData.note}
+                            onChange={handleChange}
+                            placeholder="Note"
                         />
 
                     </form>

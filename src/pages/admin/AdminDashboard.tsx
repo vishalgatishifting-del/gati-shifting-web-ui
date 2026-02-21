@@ -9,7 +9,7 @@ import {
     Area,
     XAxis,
     YAxis,
-    Tooltip,
+    Tooltip as RechartsTooltip ,
     CartesianGrid
 } from "recharts";
 
@@ -17,6 +17,7 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import { useNavigate } from "react-router-dom";
 import privateAPI from "../../api/privateAxios";
 
+import Tooltip from "@mui/material/Tooltip";
 const leadData: Record<number, number> = {
     9: 5,
     12: 8,
@@ -136,10 +137,11 @@ const AdminDashboard: React.FC = () => {
                     </h1>
 
                     <div className="header-right">
-
-                        <button className="logout-btn" onClick={handleLogout}>
-                            <LogoutIcon />
-                        </button>
+                        <Tooltip title="Logout">
+                            <button className="logout-btn" onClick={handleLogout}>
+                                <LogoutIcon />
+                            </button>
+                        </Tooltip>
 
                     </div>
 
@@ -181,7 +183,7 @@ const AdminDashboard: React.FC = () => {
 
                                     <YAxis />
 
-                                    <Tooltip />
+                                    <RechartsTooltip />
 
                                     <Area
                                         type="monotone"

@@ -4,40 +4,59 @@ import privateAPI from "../../api/privateAxios";
 
 const ProtectedRoute = ({ children }: any) => {
 
-  const [loading, setLoading] = useState(true);
-  const [authenticated, setAuthenticated] =
-    useState(false);
+    const [loading, setLoading] = useState(true);
+    const [authenticated, setAuthenticated] = useState(false);
 
-  useEffect(() => {
+    useEffect(() => {
 
-    privateAPI.get(
-      "/api/auth/me"
-    )
-    .then(() => {
+        const checkAuth = async () => {
 
-      setAuthenticated(true);
+            try {
 
-    })
-    .catch(() => {
+                await privateAPI.get("/api/auth/me");
 
-      setAuthenticated(false);
+                setAuthenticated(true);
 
-    })
-    .finally(() => {
+            }
+            catch {
 
-      setLoading(false);
+                // try refresh token
+                try {
 
-    });
+                    await privateAPI.post("/api/auth/refresh");
 
-  }, []);
+                    // retry auth check
+                    await privateAPI.get("/api/auth/me");
 
-  if (loading)
-    return <div>Loading...</div>;
+                    setAuthenticated(true);
 
-  if (!authenticated)
-    return <Navigate to="/admin-login" />;
+                }
+                catch {
 
-  return children;
+                    setAuthenticated(false);
+
+                }
+
+            }
+            finally {
+
+                setLoading(false);
+
+            }
+
+        };
+
+        checkAuth();
+
+    }, []);
+
+    if (loading)
+        return <div>Loading...</div>;
+
+    if (!authenticated)
+        return <Navigate to="/admin-login" />;
+
+    return children;
 
 };
 

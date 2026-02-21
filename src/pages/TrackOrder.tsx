@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./TrackOrder.scss";
+import trackingImg from "../assets/TrackPage/trackingImg.png"
 
 interface Order {
   trackingId: string;
@@ -8,6 +9,8 @@ interface Order {
   toLocation: string;
   currentLocation: string;
   createdAt: string;
+  expectedDelivery: Date;
+  note: string;
 }
 
 const TrackOrder: React.FC = () => {
@@ -78,14 +81,11 @@ const TrackOrder: React.FC = () => {
   return (
 
     <div className="track-page">
+        {/* <h1>Track Your Shipment</h1> */}
+      <img className="track-img" src={trackingImg} />
 
-      <div className="left-content">
-        <h1>Track Shipment</h1>
-        <p>Stay updated with real-time tracking—know exactly where your shipment is every step of the way.</p>
-      </div>
       <div className="track-container">
 
-        <h1>Track Your Shipment</h1>
 
         <div className="track-box">
 
@@ -121,32 +121,39 @@ const TrackOrder: React.FC = () => {
               </p>
 
               <p>
-                <strong>Status:</strong>
+                <strong>Status: </strong>
                 <span className="status">
                   {order.status}
                 </span>
               </p>
 
               <p>
-                <strong>From:</strong>
+                <strong>From: </strong>
                 {order.fromLocation}
               </p>
 
               <p>
-                <strong>To:</strong>
+                <strong>To: </strong>
                 {order.toLocation}
               </p>
 
               <p>
-                <strong>Current Location:</strong>
+                <strong>Current Location: </strong>
                 {order.currentLocation}
               </p>
 
               <p>
-                <strong>Date:</strong>
-                {new Date(order.createdAt)
+                <strong>Expected Delivery: </strong>
+                {new Date(order.expectedDelivery)
                   .toLocaleDateString()}
               </p>
+
+              {order.note && order.note.trim() !== "" && (
+                <p>
+                  <strong>*Note: </strong>
+                  {order.note}
+                </p>
+              )}
 
             </div>
 
