@@ -46,8 +46,8 @@
   z-index: 1000;
 
   box-shadow:
-    0 20px 60px rgba(0,0,0,0.25),
-    0 5px 20px rgba(0,0,0,0.1);
+    0 20px 60px rgba(0, 0, 0, 0.25),
+    0 5px 20px rgba(0, 0, 0, 0.1);
 
   animation: popupFade 0.25s ease;
 
@@ -121,6 +121,7 @@
   background: #f9fafb;
 
   transition: 0.2s ease;
+  @include font-poppins-sans(400);
 
 }
 
@@ -134,7 +135,7 @@
 
   background: #ffffff;
 
-  box-shadow: 0 0 0 3px rgba(35,172,241,0.15);
+  box-shadow: 0 0 0 3px rgba(35, 172, 241, 0.15);
 
 }
 
@@ -166,11 +167,9 @@
 
   border-radius: 8px;
 
-  background: linear-gradient(
-    135deg,
-    $primary-color,
-    darken($primary-color, 8%)
-  );
+  background: linear-gradient(135deg,
+      $primary-color,
+      darken($primary-color, 8%));
 
   color: white;
 
@@ -179,6 +178,7 @@
   cursor: pointer;
 
   transition: 0.2s;
+  @include font-poppins-sans(400);
 
 }
 
@@ -187,7 +187,7 @@
 
   transform: translateY(-1px);
 
-  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -206,6 +206,7 @@
   background: white;
 
   cursor: pointer;
+  @include font-poppins-sans(400);
 
   transition: 0.2s;
 

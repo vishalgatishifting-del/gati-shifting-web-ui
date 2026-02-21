@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./AdminDashboard.scss";
 import AdminOrdersList from "./AdminOrdersList"
 import logo from "../../assets/logo/android-chrome-192x192-v2.png";
@@ -9,7 +9,7 @@ import {
     Area,
     XAxis,
     YAxis,
-    Tooltip as RechartsTooltip ,
+    Tooltip as RechartsTooltip,
     CartesianGrid
 } from "recharts";
 
@@ -18,6 +18,9 @@ import { useNavigate } from "react-router-dom";
 import privateAPI from "../../api/privateAxios";
 
 import Tooltip from "@mui/material/Tooltip";
+
+import LeadsList from "./LeadsList"
+
 const leadData: Record<number, number> = {
     9: 5,
     12: 8,
@@ -52,6 +55,7 @@ const graphData = [
 
 const AdminDashboard: React.FC = () => {
     const [activePage, setActivePage] = useState("dashboard");
+    const [totalOrders, setTotalOrders] = useState("0");
 
     const days = Array.from({ length: 31 }, (_, i) => i + 1);
 
@@ -75,6 +79,25 @@ const AdminDashboard: React.FC = () => {
         }
 
     };
+
+
+    const countOrders = async () => {
+        try {
+
+            const totalOrders = await privateAPI.get("/api/orders/countOrders");
+            setTotalOrders(totalOrders.data.totalOrders)
+
+        }
+        catch (error) {
+
+            console.error("Logout failed");
+
+        }
+    }
+
+    useEffect(() => {
+        countOrders()
+    }, [])
 
     return (
 
@@ -102,6 +125,12 @@ const AdminDashboard: React.FC = () => {
                         onClick={() => setActivePage("orders")}
                     >
                         📦
+                    </div>
+                    <div
+                        className={`menu-item ${activePage === "leads" ? "active" : ""}`}
+                        onClick={() => setActivePage("leads")}
+                    >
+                        📃
                     </div>
 
                     <div
@@ -237,7 +266,7 @@ const AdminDashboard: React.FC = () => {
                                     <div className="stat-card">
 
                                         <h4>Total Orders</h4>
-                                        <p>128</p>
+                                        <p>{totalOrders}</p>
 
                                     </div>
 
@@ -313,6 +342,9 @@ const AdminDashboard: React.FC = () => {
 
                 {activePage === "orders" && (
                     <AdminOrdersList />
+                )}
+                   {activePage === "leads" && (
+                    <LeadsList />
                 )}
 
             </div>
