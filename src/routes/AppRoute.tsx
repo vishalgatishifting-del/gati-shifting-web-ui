@@ -102,7 +102,8 @@ const AppRoutes = () => {
                     <Route path="/admin-login" element={<AdminLogin onLoginSuccess={testing}></AdminLogin>}></Route>
                     <Route path="/admin-dashboard" element={<ProtectedRoute><AdminDashboard></AdminDashboard></ProtectedRoute>}></Route>
 
-                    <Route path="/track-order" element={<Layout><TrackOrder></TrackOrder></Layout>}></Route>
+                    <Route path="/track-order/:id" element={<Layout><TrackOrder></TrackOrder></Layout>}></Route>
+                    <Route path="/track-order" element={<Layout><TrackOrder /></Layout>} />
 
 
                     {

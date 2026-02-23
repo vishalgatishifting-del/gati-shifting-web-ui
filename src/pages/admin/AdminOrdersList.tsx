@@ -187,10 +187,10 @@ const AdminOrdersList = () => {
                 <td>
                   {order.currentLocation}
                 </td>
-                
+
                 <td>
                   {new Date(order.expectedDelivery)
-                  .toLocaleDateString()}
+                    .toLocaleDateString()}
                 </td>
                 <td>
                   {order.note}
@@ -200,6 +200,30 @@ const AdminOrdersList = () => {
 
                   <div className="actions">
 
+                    <a href={`https://wa.me/${order.phone}?text=${encodeURIComponent(
+                      `Dear Customer,
+
+Your order has been successfully booked.
+
+You can track your order status using the link below:
+https://gatishiftingpackers.com/track-order/${order._id}
+
+Thank you for choosing Gati Shifting Packers.`
+                    )}`}
+                      className="update-btn"
+                      style={{
+                        background: "#25D366",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        padding: "10px",
+                        borderRadius: "10px",
+                        color: "#fff"
+                      }}
+                      target="_blank"
+                      rel="noopener noreferrer" >
+                      Share
+                    </a>
                     <button onClick={() => updateRecord(order)} className="update-btn">
                       Update
                     </button>

@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import "./TrackOrder.scss";
-import trackingImg from "../assets/TrackPage/trackingImg.png"
+import trackingImg from "../assets/TrackPage/trackingImg.png";
 
 interface Order {
   trackingId: string;
@@ -9,20 +10,25 @@ interface Order {
   toLocation: string;
   currentLocation: string;
   createdAt: string;
-  expectedDelivery: Date;
+  expectedDelivery: string; // better as string (comes from API)
   note: string;
 }
 
 const TrackOrder: React.FC = () => {
 
-  const [trackingId, setTrackingId] = useState("");
+  const { id } = useParams<{ id?: string }>();
+
+  const [trackingId, setTrackingId] = useState<string>("");
   const [order, setOrder] = useState<Order | null>(null);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
+  const [loading, setLoading] = useState<boolean>(false);
+  const [error, setError] = useState<string>("");
 
-  const handleTrack = async () => {
+  // 🔥 Track Function
+  const handleTrack = async (customId?: string) => {
 
-    if (!trackingId) {
+    const finalTrackingId = (customId || trackingId).trim().toUpperCase();
+
+    if (!finalTrackingId) {
       setError("Please enter tracking ID");
       return;
     }
@@ -34,20 +40,20 @@ const TrackOrder: React.FC = () => {
       setOrder(null);
 
       const res = await fetch(
-        `https://api.gatishiftingpackers.com/api/orders/track/${trackingId}`
+        `https://api.gatishiftingpackers.com/api/orders/track/${finalTrackingId}`
       );
 
       if (!res.ok) {
         throw new Error("Tracking ID not found");
       }
 
-      const data = await res.json();
+      const data: Order = await res.json();
 
       setOrder(data);
 
     } catch (err: any) {
 
-      setError(err.message);
+      setError(err.message || "Something went wrong");
 
     } finally {
 
@@ -57,10 +63,19 @@ const TrackOrder: React.FC = () => {
 
   };
 
+  // 🔥 Auto Track if URL contains ID
+  useEffect(() => {
+    if (id) {
+      const upperId = id.toUpperCase();
+      setTrackingId(upperId);
+      handleTrack(upperId);
+    }
+  }, [id]);
 
+  // 🔥 Timeline Step Logic
   const getStepClass = (step: string) => {
 
-    if (!order) return "";
+    if (!order) return "step";
 
     const steps = [
       "Order Placed",
@@ -74,19 +89,17 @@ const TrackOrder: React.FC = () => {
     const stepIndex = steps.indexOf(step);
 
     return stepIndex <= currentIndex ? "step active" : "step";
-
   };
-
 
   return (
 
     <div className="track-page">
-        {/* <h1>Track Your Shipment</h1> */}
-      <img className="track-img" src={trackingImg} />
+
+      <img className="track-img" src={trackingImg} alt="Tracking" />
 
       <div className="track-container">
 
-
+        {/* 🔹 Search Box */}
         <div className="track-box">
 
           <input
@@ -98,16 +111,18 @@ const TrackOrder: React.FC = () => {
             }
           />
 
-          <button onClick={handleTrack}>
+          <button onClick={() => handleTrack()}>
             {loading ? "Tracking..." : "Track Order"}
           </button>
 
         </div>
 
+        {/* 🔹 Error */}
         {error && (
           <div className="error">{error}</div>
         )}
 
+        {/* 🔹 Order Result */}
         {order && (
 
           <div className="order-result">
@@ -121,45 +136,38 @@ const TrackOrder: React.FC = () => {
               </p>
 
               <p>
-                <strong>Status: </strong>
+                <strong>Status:</strong>{" "}
                 <span className="status">
                   {order.status}
                 </span>
               </p>
 
               <p>
-                <strong>From: </strong>
-                {order.fromLocation}
+                <strong>From:</strong> {order.fromLocation}
               </p>
 
               <p>
-                <strong>To: </strong>
-                {order.toLocation}
+                <strong>To:</strong> {order.toLocation}
               </p>
 
               <p>
-                <strong>Current Location: </strong>
-                {order.currentLocation}
+                <strong>Current Location:</strong> {order.currentLocation}
               </p>
 
               <p>
-                <strong>Expected Delivery: </strong>
-                {new Date(order.expectedDelivery)
-                  .toLocaleDateString()}
+                <strong>Expected Delivery:</strong>{" "}
+                {new Date(order.expectedDelivery).toLocaleDateString()}
               </p>
 
               {order.note && order.note.trim() !== "" && (
                 <p>
-                  <strong>*Note: </strong>
-                  {order.note}
+                  <strong>*Note:</strong> {order.note}
                 </p>
               )}
 
             </div>
 
-
-            {/* Timeline */}
-
+            {/* 🔹 Timeline */}
             <div className="timeline">
 
               <div className={getStepClass("Order Placed")}>
