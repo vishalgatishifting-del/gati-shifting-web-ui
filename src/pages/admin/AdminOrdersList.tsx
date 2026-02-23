@@ -201,12 +201,12 @@ const AdminOrdersList = () => {
                   <div className="actions">
 
                     <a href={`https://wa.me/${order.phone}?text=${encodeURIComponent(
-                      `Dear Customer,
+                      `Dear ${order.customerName},
 
 Your order has been successfully booked.
 
 You can track your order status using the link below:
-https://gatishiftingpackers.com/track-order/${order._id}
+https://gatishiftingpackers.com/track-order/${order.trackingId}
 
 Thank you for choosing Gati Shifting Packers.`
                     )}`}
