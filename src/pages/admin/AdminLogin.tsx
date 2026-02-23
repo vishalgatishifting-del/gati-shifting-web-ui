@@ -18,6 +18,7 @@ const AdminLogin: React.FC<Props> = () => {
   const [showPassword, setShowPassword] = useState<boolean>(false);
   const [loading, setLoading] = useState(false);
 
+
   const [otp, setOtp] = useState("");
   const [showOtpPopup, setShowOtpPopup] = useState(false);
 
@@ -29,13 +30,14 @@ const AdminLogin: React.FC<Props> = () => {
     setLoading(true);
 
     try {
-      const res = await privateAPI.post("/api/auth/login", {
+      await privateAPI.post("/api/auth/login", {
         email,
         password,
         deviceId: getDeviceId()
       });
-      alert(res.data.message)
+      // alert(res.data.message)
       setShowOtpPopup(true);
+
 
       // localStorage.setItem("adminToken", res.data.token);
 
@@ -58,7 +60,7 @@ const AdminLogin: React.FC<Props> = () => {
 
     try {
 
-      const res = await privateAPI.post(
+      await privateAPI.post(
         "/api/auth/verify-otp",
         {
           email,
@@ -67,7 +69,7 @@ const AdminLogin: React.FC<Props> = () => {
         }
       );
 
-      alert(res.data.message);
+      // alert(res.data.message);
 
       setShowOtpPopup(false);
 
@@ -91,47 +93,50 @@ const AdminLogin: React.FC<Props> = () => {
 
   return (
     <div className="admin-login-container">
-      <form className="login-card" onSubmit={handleSubmit}>
-        <h2>Admin Login</h2>
-        <p>Login to access admin panel</p>
+      {!showOtpPopup && (
+        <form className="login-card" onSubmit={handleSubmit}>
+          <h2>Admin Login</h2>
+          <p>Login to access admin panel</p>
 
-        {error && <p className="error">{error}</p>}
+          {error && <p className="error">{error}</p>}
 
-        <div className="input-group">
-          <label>Email</label>
-          <input
-            type="email"
-            placeholder="admin@example.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-
-        <div className="input-group">
-          <label>Password</label>
-          <div className="password-box">
+          <div className="input-group">
+            <label>Email</label>
             <input
-              type={showPassword ? "text" : "password"}
-              placeholder="Enter password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              type="email"
+              placeholder="admin@example.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <span onClick={() => setShowPassword(!showPassword)}>
-              {showPassword ? "Hide" : "Show"}
-            </span>
           </div>
-        </div>
 
-        <button type="submit" disabled={loading}>
-          {loading ? "Logging in..." : "Login"}
-        </button>
-      </form>
+          <div className="input-group">
+            <label>Password</label>
+            <div className="password-box">
+              <input
+                type={showPassword ? "text" : "password"}
+                placeholder="Enter password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+              <span onClick={() => setShowPassword(!showPassword)}>
+                {showPassword ? "Hide" : "Show"}
+              </span>
+            </div>
+          </div>
+
+          <button type="submit" disabled={loading}>
+            {loading ? "Logging in..." : "Login"}
+          </button>
+        </form>
+      )}
+
 
       {showOtpPopup && (
 
-        <div className="otp-overlay">
+        <div className={`otp-overlay ${showOtpPopup ? "active" : ""}`}>
 
           <div className="otp-popup">
 

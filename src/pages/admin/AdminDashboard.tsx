@@ -43,19 +43,27 @@ const getIntensity = (count: number) => {
 
 };
 
-const graphData = [
-    { day: "Mon", leads: 12 },
-    { day: "Tue", leads: 18 },
-    { day: "Wed", leads: 9 },
-    { day: "Thu", leads: 15 },
-    { day: "Fri", leads: 22 },
-    { day: "Sat", leads: 17 },
-    { day: "Sun", leads: 11 }
-];
+// const graphData = [
+//     { day: "Mon", leads: 12 },
+//     { day: "Tue", leads: 18 },
+//     { day: "Wed", leads: 9 },
+//     { day: "Thu", leads: 15 },
+//     { day: "Fri", leads: 22 },
+//     { day: "Sat", leads: 17 },
+//     { day: "Sun", leads: 11 }
+// ];
 
 const AdminDashboard: React.FC = () => {
     const [activePage, setActivePage] = useState("dashboard");
     const [totalOrders, setTotalOrders] = useState("0");
+    const [totalLeads, setTotalLeads] = useState("0");
+    const [leadsProgress, setLeadsProgress] = useState(0);
+    const [todayOrders, setTodayOrders] = useState("0");
+    const [todayLeads, setTodayLeads] = useState("0");
+
+    const [graphData, setGraphData] = useState<
+        { day: string; leads: number }[]
+    >([]);
 
     const days = Array.from({ length: 31 }, (_, i) => i + 1);
 
@@ -95,9 +103,81 @@ const AdminDashboard: React.FC = () => {
         }
     }
 
+
+    const countLeads = async () => {
+        try {
+
+            const totalOrders = await privateAPI.get("/api/leads/countLeads");
+            // setTotalOrders(totalOrders.data.totalOrders)
+            setTotalLeads(totalOrders.data)
+            setLeadsProgress((Number(totalOrders.data) / 1000) * 100)
+            console.log(leadsProgress)
+        }
+        catch (error) {
+
+            console.error("Logout failed");
+
+        }
+    }
+
+
+    const countTodayOrders = async () => {
+        try {
+
+            const totalOrders = await privateAPI.get("/api/orders/today-count");
+            // setTotalOrders(totalOrders.data.totalOrders)
+
+            setTodayOrders(totalOrders.data.todayOrders)
+        }
+        catch (error) {
+
+            console.error("Logout failed");
+
+        }
+    }
+
+    const countTodayLeads = async () => {
+        try {
+
+            const totalLeads = await privateAPI.get("/api/leads/today-count");
+            // setTotalOrders(totalOrders.data.totalOrders)
+
+            setTodayLeads(totalLeads.data.todayOrders)
+        }
+        catch (error) {
+
+            console.error("Logout failed");
+
+        }
+    }
+
     useEffect(() => {
         countOrders()
+        countLeads()
+        countTodayOrders()
+        countTodayLeads()
     }, [])
+
+    useEffect(() => {
+        const fetchGraph = async () => {
+            const res = await privateAPI.get("/api/leads/last-7-days");
+
+            const formattedData = res.data.map((item: any) => {
+                const date = new Date(item._id);
+                const day = date.toLocaleDateString("en-US", { weekday: "short" });
+
+                return {
+                    day,
+                    leads: item.leads
+                };
+            });
+            console.log(res)
+
+            setGraphData(formattedData);
+        };
+
+        fetchGraph();
+    }, []);
 
     return (
 
@@ -237,14 +317,14 @@ const AdminDashboard: React.FC = () => {
 
                             <div className="left">
 
-                                <h2>Your activities today</h2>
+                                <h2>Your today's activities</h2>
 
                                 <div className="activity-cards">
 
                                     <div className="activity-card blue">
 
                                         <h3>Orders Created</h3>
-                                        <p>12 Orders</p>
+                                        <p>{todayOrders} Orders</p>
 
                                     </div>
 
@@ -252,7 +332,7 @@ const AdminDashboard: React.FC = () => {
                                     <div className="activity-card pink">
 
                                         <h3>New Leads</h3>
-                                        <p>8 Leads</p>
+                                        <p>{todayLeads} Leads</p>
 
                                     </div>
 
@@ -273,7 +353,7 @@ const AdminDashboard: React.FC = () => {
                                     <div className="stat-card yellow">
 
                                         <h4>Total Leads</h4>
-                                        <p>312</p>
+                                        <p>{totalLeads}</p>
 
                                     </div>
 
@@ -295,7 +375,7 @@ const AdminDashboard: React.FC = () => {
 
                                     <div className="progress">
 
-                                        <div className="progress-bar" />
+                                        <div className="progress-bar" style={{ width: leadsProgress }} />
 
                                     </div>
 
@@ -343,7 +423,7 @@ const AdminDashboard: React.FC = () => {
                 {activePage === "orders" && (
                     <AdminOrdersList />
                 )}
-                   {activePage === "leads" && (
+                {activePage === "leads" && (
                     <LeadsList />
                 )}
 

@@ -5,7 +5,7 @@
   padding: 25px;
 
   animation: fadeIn 0.3s ease;
-    @include font-poppins-sans(400);
+  @include font-poppins-sans(400);
 
 }
 
@@ -34,12 +34,10 @@
 
 .create-btn {
 
-    @include font-poppins-sans(400);
-  background: linear-gradient(
-    135deg,
-    $primary-color,
-    #1e40af
-  );
+  @include font-poppins-sans(400);
+  background: linear-gradient(135deg,
+      $primary-color,
+      #1e40af);
 
   color: white;
 
@@ -62,7 +60,7 @@
   transform: translateY(-2px);
 
   box-shadow:
-    0 5px 15px rgba(37,99,235,0.4);
+    0 5px 15px rgba(37, 99, 235, 0.4);
 
 }
 
@@ -76,9 +74,11 @@
   border-radius: 15px;
 
   box-shadow:
-    0 5px 25px rgba(0,0,0,0.05);
+    0 5px 25px rgba(0, 0, 0, 0.05);
 
   overflow: scroll;
+  // height: 70vh;
+  // overflow: scroll;
 
 }
 
@@ -207,7 +207,7 @@
 .update-btn {
 
   background: $primary-color;
-    @include font-poppins-sans(400);
+  @include font-poppins-sans(400);
 
   color: white;
 
@@ -234,7 +234,7 @@
 .delete-btn {
 
   background: #ef4444;
-    @include font-poppins-sans(400);
+  @include font-poppins-sans(400);
 
   color: white;
 

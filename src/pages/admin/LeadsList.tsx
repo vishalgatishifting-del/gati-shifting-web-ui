@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import privateAPI from "../../api/privateAxios";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const LeadsList = () => {
 
@@ -49,6 +50,7 @@ const LeadsList = () => {
 
                             <tr>
 
+                                <th>Whatsapp</th>
                                 <th>name</th>
                                 <th>Phone</th>
                                 <th>email</th>
@@ -69,7 +71,11 @@ const LeadsList = () => {
                             {leads.map(order => (
 
                                 <tr key={order._id}>
-
+                                    <td className="tracking" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                                        <a href={`https://wa.me/${order.phone}`} style={{ background: "#25D366", display: "flex", justifyContent: "center", alignItems: "center", padding: "10px", borderRadius: "10px", color: "#fff" }}>
+                                            <WhatsAppIcon />
+                                        </a>
+                                    </td>
                                     <td className="tracking">
                                         {order.name}
                                     </td>
