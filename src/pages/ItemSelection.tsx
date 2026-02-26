@@ -297,7 +297,7 @@ const MultiStepMoving: React.FC<NavbarProps> = ({ open, setOpen, successConditio
                 }
             );
 
-            alert("Request Submitted Successfully ✅");
+            alert("Request Submitted Successfully");
         } catch (err) {
             alert("Submission Failed");
         }
