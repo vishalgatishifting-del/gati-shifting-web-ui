@@ -38,6 +38,7 @@ import BikeStorage from "../pages/BikeStorage.tsx"
 import BusinessPartner from "../pages/BusinessPartner.tsx"
 import Layout from "../pages/Laoytout.tsx"
 
+
 // import AdminDashboard from "../pages/AdminDashboard.tsx"
 // import AdminLogin from "../pages/AdminLogin.tsx"
 import TrackOrder from "../pages/TrackOrder.tsx"
@@ -48,6 +49,7 @@ import TrackOrder from "../pages/TrackOrder.tsx"
 import AdminDashboard from "../pages/admin/AdminDashboard.tsx"
 import AdminLogin from "../pages/admin/AdminLogin.tsx"
 import ProtectedRoute from "../pages/admin/ProtectedRoute.tsx"
+import ItemSelection from "../pages/ItemSelection.tsx"
 
 
 
@@ -58,7 +60,7 @@ const AppRoutes = () => {
     const testing = ()=>{
         console.log("fire")
     }
-    const [, setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
     const [visibilityCondition, setVisibilityCondition] = useState<boolean>(false);
     return (
         <section style={{ overflowX: "hidden" }}>
@@ -104,6 +106,7 @@ const AppRoutes = () => {
 
                     <Route path="/track-order/:id" element={<Layout><TrackOrder></TrackOrder></Layout>}></Route>
                     <Route path="/track-order" element={<Layout><TrackOrder /></Layout>} />
+                    <Route path="/item-selection" element={<ItemSelection successCondition={setVisibilityCondition} setOpen={setOpen} open={open}  />} />
 
 
                     {

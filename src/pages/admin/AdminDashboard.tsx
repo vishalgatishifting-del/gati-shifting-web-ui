@@ -20,6 +20,8 @@ import privateAPI from "../../api/privateAxios";
 import Tooltip from "@mui/material/Tooltip";
 
 import LeadsList from "./LeadsList"
+import ItemsRequest from "./ItemsRequest";
+ItemsRequest
 
 const leadData: Record<number, number> = {
     9: 5,
@@ -213,6 +215,12 @@ const AdminDashboard: React.FC = () => {
                         📃
                     </div>
 
+                    <div
+                        className={`menu-item ${activePage === "items" ? "active" : ""}`}
+                        onClick={() => setActivePage("items")}
+                    >
+                        📋
+                    </div>
                     <div
                         className={`menu-item ${activePage === "partners" ? "active" : ""}`}
                         onClick={() => setActivePage("partners")}
@@ -425,6 +433,10 @@ const AdminDashboard: React.FC = () => {
                 )}
                 {activePage === "leads" && (
                     <LeadsList />
+                )}
+
+                {activePage === "items" && (
+                    <ItemsRequest />
                 )}
 
             </div>

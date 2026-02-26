@@ -23,18 +23,6 @@ import ContactForm from './ContactForm';
 // import Logo from "../assets/logo2.webp";
 import Logo from "../assets/Themes/NewYear/transparentIco.webp";
 // import Logo from "../assets/diwaliTheme/christmasLogo.png";
-import whatsappIcon from "../assets/whatsappIcon.webp";
-import callIcon from "../assets/call.webp";
-import gmailIcon from "../assets/gmailIcon.webp";
-
-
-
-import PinterestIcon from '@mui/icons-material/Pinterest';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import XIcon from '@mui/icons-material/X';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import YouTubeIcon from '@mui/icons-material/YouTube';
 
 import ShareLocationIcon from '@mui/icons-material/ShareLocation';
 
@@ -185,7 +173,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
         </DialogContent>
       </Dialog>
 
-      <div className="action-button">
+      {/* <div className="action-button">
         <a href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer">
           <img src={whatsappIcon} alt="WhatsApp" />
         </a>
@@ -195,17 +183,9 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
         <a href="mailto:gatishiftingpackers@gmail.com">
           <img src={gmailIcon} alt="Email" />
         </a>
-      </div>
+      </div> */}
 
-      <div className="social-button">
-
-        <a className='social-link-insta' href="https://www.instagram.com/gati_shifting_packers_pvt_ltd/profilecard/?igsh=eXYzY25mYXkyNG05"><InstagramIcon className='icon'></InstagramIcon></a>
-        <a className='social-link-facebook' href="https://www.facebook.com/share/1CZTDwNPWw/"><FacebookIcon className='icon'></FacebookIcon></a>
-        <a className='social-link-x' href="https://x.com/gati_shifting"><XIcon className='icon'></XIcon></a>
-        <a className='social-link-linkedin' href="https://www.linkedin.com/in/gati-shifting-6878bb377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><LinkedInIcon className='icon'></LinkedInIcon></a>
-        <a className='social-link-youtube' href="https://youtube.com/@gatishifting-moves?si=Lz283_yPnXuNCkQW"><YouTubeIcon className='icon'></YouTubeIcon></a>
-        <a className='social-link-pinterest' href="https://in.pinterest.com/infogatishiftingpackers"><PinterestIcon className='icon'></PinterestIcon></a>
-      </div>
+      
 
 
       {/* <section>
