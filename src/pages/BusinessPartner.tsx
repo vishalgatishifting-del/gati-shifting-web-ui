@@ -16,6 +16,8 @@ import "./BusinessPartner.scss";
 
 import Logo from "../assets/logo/transparentIco.png";
 import BannerImg from "../assets/get-in-touch.webp";
+import privateAPI from "../api/privateAxios";
+
 
 interface DocumentItem {
   label: string;
@@ -66,45 +68,55 @@ const BusinessPartner: React.FC = () => {
   };
 
   const handleSubmit = async () => {
-    if (!fullName.trim() || mobile.length !== 10) {
-      alert("Please enter valid name and 10 digit mobile number");
-      return;
+
+  if (!fullName.trim() || mobile.length !== 10) {
+    alert("Please enter valid name and mobile number");
+    return;
+  }
+
+  const formData = new FormData();
+
+  formData.append("fullName", fullName);
+  formData.append("mobile", mobile);
+
+  documents.forEach(doc => {
+    if (doc.file) {
+      formData.append("documents", doc.file);
     }
+  });
 
-    const formData = new FormData();
-    formData.append("fullName", fullName);
-    formData.append("mobile", mobile);
+  try {
+    setLoading(true);
 
-    documents.forEach((doc) => {
-      if (doc.file) formData.append("documents", doc.file);
-    });
-
-    try {
-      setLoading(true);
-      const res = await fetch(
-        "https://api.gatishiftingpackers.com/upload",
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
-
-      const data = await res.json();
-
-      if (data.success) {
-        alert("Form submitted successfully");
-        setFullName("");
-        setMobile("");
-        setDocuments(documents.map(d => ({ ...d, file: null })));
-      } else {
-        alert("Upload failed");
+    const res = await privateAPI.post(
+      "/api/partners/upload",
+      formData,
+      {
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
       }
-    } catch (error) {
-      alert("Server error");
-    } finally {
-      setLoading(false);
+    );
+
+    if (res.data.success) {
+
+      alert("Application submitted successfully ✅");
+
+      setFullName("");
+      setMobile("");
+
+      setDocuments(prev =>
+        prev.map(d => ({ ...d, file: null }))
+      );
     }
-  };
+
+  } catch (error) {
+    console.error(error);
+    alert("Upload failed");
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <section className="partner-form">
@@ -126,7 +138,7 @@ const BusinessPartner: React.FC = () => {
 
         {/* BASIC DETAILS */}
         <Grid container spacing={2}>
-          <Grid size={{xs:12, md:6}}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <TextField
               label="Full Name"
               fullWidth
@@ -136,7 +148,7 @@ const BusinessPartner: React.FC = () => {
             />
           </Grid>
 
-          <Grid size={{xs:12, md:6}}>
+          <Grid size={{ xs: 12, md: 6 }}>
             <TextField
               label="Mobile Number"
               fullWidth

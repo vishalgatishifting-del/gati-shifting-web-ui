@@ -21,28 +21,24 @@ import Tooltip from "@mui/material/Tooltip";
 
 import LeadsList from "./LeadsList"
 import ItemsRequest from "./ItemsRequest";
-ItemsRequest
+import PartnersManagement from "./PartnersManagement";
 
-const leadData: Record<number, number> = {
-    9: 5,
-    12: 8,
-    16: 15,
-    17: 18,
-    28: 4,
-    29: 7,
-    30: 10,
-    31: 6
-};
 
-const getIntensity = (count: number) => {
 
-    if (count > 15) return "very-high";
-    if (count > 10) return "high";
-    if (count > 5) return "medium";
-    if (count > 0) return "low";
+const getIntensity = (
+    count: number,
+    max: number
+) => {
 
-    return "";
+    if (!count) return "";
 
+    const ratio = count / max;
+
+    if (ratio > 0.75) return "very-high";
+    if (ratio > 0.5) return "high";
+    if (ratio > 0.25) return "medium";
+
+    return "low";
 };
 
 // const graphData = [
@@ -63,11 +59,41 @@ const AdminDashboard: React.FC = () => {
     const [todayOrders, setTodayOrders] = useState("0");
     const [todayLeads, setTodayLeads] = useState("0");
 
+    const [calendarData, setCalendarData] =
+        useState<Record<number, number>>({});
+
     const [graphData, setGraphData] = useState<
         { day: string; leads: number }[]
     >([]);
 
     const days = Array.from({ length: 31 }, (_, i) => i + 1);
+
+
+
+
+    const maxLeads =
+        Math.max(...Object.values(calendarData), 1);
+    useEffect(() => {
+
+        const fetchCalendar = async () => {
+
+            const res =
+                await privateAPI.get("/api/leads/monthly-calendar");
+
+            const mapped: Record<number, number> = {};
+
+            res.data.forEach((item: any) => {
+                mapped[item._id.day] = item.leads;
+            });
+            console.log("Calendar API:", res.data);
+            console.log("Mapped:", mapped);
+
+            setCalendarData(mapped);
+        };
+
+        fetchCalendar();
+
+    }, []);
 
 
 
@@ -402,22 +428,19 @@ const AdminDashboard: React.FC = () => {
 
                                     {days.map(day => {
 
-                                        const leads =
-                                            leadData[day] || 0;
+                                        const leads = calendarData[day] || 0;
 
                                         return (
-
                                             <div
                                                 key={day}
-                                                className={`day ${getIntensity(leads)}`}
+                                                className={`day ${getIntensity(
+                                                    leads,
+                                                    maxLeads
+                                                )}`}
                                             >
-
                                                 {day}
-
                                             </div>
-
                                         );
-
                                     })}
 
                                 </div>
@@ -437,6 +460,9 @@ const AdminDashboard: React.FC = () => {
 
                 {activePage === "items" && (
                     <ItemsRequest />
+                )}
+                {activePage === "partners" && (
+                    <PartnersManagement />
                 )}
 
             </div>

@@ -1,0 +1,95 @@
+.partners-management {
+    padding: 20px;
+    min-height: 100vh;
+  
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    
+  .images {
+    display: flex;
+    gap: 8px;
+  
+    img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+      cursor: pointer;
+    }
+  }
+  }
+  
+  .table-wrapper {
+    background: #fff;
+    border-radius: 10px;
+    overflow-x: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  
+    th,
+    td {
+      padding: 14px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+      vertical-align: middle;
+    }
+  
+    th {
+      background: #f9fafb;
+      font-weight: 600;
+    }
+  }
+  
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: capitalize;
+  
+    &.pending {
+      background: #fff3cd;
+      color: #856404;
+    }
+  
+    &.approved {
+      background: #d4edda;
+      color: #155724;
+    }
+  
+    &.rejected {
+      background: #f8d7da;
+      color: #721c24;
+    }
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  
+    button {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+  
+    .approve {
+      background: #28a745;
+      color: #fff;
+    }
+  
+    .reject {
+      background: #dc3545;
+      color: #fff;
+    }
+  }
+  
