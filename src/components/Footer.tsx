@@ -61,7 +61,7 @@ const Footer = () => {
                     <ul>
                         {cities2.slice(0, visibleCount).map((item, i) => (
                             <li key={i}>
-                                <Link to={`/packers-and-movers-${item.city}`}>
+                                <Link to={`/packers-and-movers-in-${item.city}`}>
                                     <span><LocationOnIcon></LocationOnIcon>Movers and Packers {item.city}</span>
                                 </Link>
                             </li>

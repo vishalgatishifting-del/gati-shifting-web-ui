@@ -9,7 +9,7 @@ export const cities2: City[] = Object.entries(images).map(([path, module]: any) 
   const filename = path.split("/").pop()?.replace(".webp", "") || "";
 
   return {
-    city: filename.replace(/[-_]/g, " "),
+    city: filename.replace(/[_]/g, " ").toLowerCase(),
     img: module.default
   };
 });
