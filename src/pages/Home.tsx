@@ -261,7 +261,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
         <>
 
             <Helmet>
-                <title>Packers and Movers in India | Gati Shifting Packers – Trusted Relocation Experts</title>
+                <title>Gati Shifting Packers | Trusted Packers and Movers - 15% off</title>
 
                 <meta name="description" content="Gati Shifting Packers is a trusted Packers and Movers company in India offering safe, affordable home shifting, office relocation, car & bike transport, and warehouse storage services nationwide." />
 
