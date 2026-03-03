@@ -22,10 +22,10 @@ import ContactForm from './ContactForm';
 
 // import Logo from "../assets/logo2.webp";
 import Logo from "../assets/Themes/NewYear/transparentIco.webp";
+// import Logo from "../assets/Themes/Holi/holiLogo.png";
 // import Logo from "../assets/diwaliTheme/christmasLogo.png";
 
 import ShareLocationIcon from '@mui/icons-material/ShareLocation';
-
 
 
 
@@ -74,7 +74,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
           </a>
         </div>
 
-        <nav>
+        <nav className='holi'>
           <div className="logo">
             <Link to="/">
               <img
@@ -203,6 +203,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
         <div className='particle'></div>
         <div className='particle2'></div>
       </section> */}
+
     </>
   );
 };
