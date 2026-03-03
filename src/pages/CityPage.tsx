@@ -67,7 +67,7 @@ const CityPage: React.FC<PageProps> = ({ city, img, metaData, offer, address }) 
                 <meta http-equiv="Content-Language" content="en" />
 
                 {/* Canonical URL */}
-                <link rel="canonical" href={`https://gatishiftingpackers.com/city/${city}`} />
+                <link rel="canonical" href={`https://gatishiftingpackers.com/packers-and-movers-in-${city}`} />
             </Helmet>
             <section id="city-page-sec">
                 <div className="offer-headling">
