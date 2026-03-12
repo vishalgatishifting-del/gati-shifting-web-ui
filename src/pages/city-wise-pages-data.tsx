@@ -121,7 +121,7 @@ import Basavanagudi from "../assets/CityPages/Basavanagudi.webp"
 import Bengaluru from "../assets/CityPages/Bengaluru-bangalore.webp"
 import Mysuru from "../assets/CityPages/Mysuru.webp"
 import Dharwad from "../assets/CityPages/Dharwad.webp"
-import Belagavi from "../assets/CityPages/belagavi-belgaum.webp"
+import Belagavi from "../assets/CityPages/Belagavi-belgaum.webp"
 // import Belgaum from "../assets/CityPages/Belgaum.webp"
 
 
