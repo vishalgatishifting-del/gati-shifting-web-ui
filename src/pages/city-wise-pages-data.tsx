@@ -400,7 +400,7 @@ import Firozabad from "../assets/CityPages/Firozabad.webp"
 
 import Ayodhya from "../assets/CityPages/Ayodhya.webp"
 import Muzaffarnagar from "../assets/CityPages/Muzaffarnagar.webp"
-import Rajasthan from "../assets/CityPages/rajasthan.webp"
+import Rajasthan from "../assets/CityPages/Rajasthan.webp"
 import Kakinada from "../assets/CityPages/Kakinada.webp"
 import Dibrugarh from "../assets/CityPages/Dibrugarh.webp"
 import Silchar from "../assets/CityPages/Silchar.webp"
