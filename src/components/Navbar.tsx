@@ -74,7 +74,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
           </a>
         </div>
 
-        <nav className='holi'>
+        <nav>
           <div className="logo">
             <Link to="/">
               <img
