@@ -453,7 +453,20 @@ import Manipal from "../assets/CityPages/Manipal.webp"
 
 
 export const pagesData = [
-  { slug: "packers-and-movers-in-agra", city: "Agra", img: agraImg, offer: "15%", address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007" },
+  { slug: "packers-and-movers-in-agra",
+    city: "Agra",
+    img: agraImg,
+    offer: "15%",
+    address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007",
+    pageData: {
+      mainHeading: "Gati Packers and Movers in Agra – Safe & Affordable Relocation Services"
+    },
+    metaDetails:{
+      title: "Packers and Movers in Agra | Gati Shifting Packers",
+      Description: "Looking for packers and movers in Agra? We offer home shifting, office relocation, car & bike transport at affordable prices."
+    }
+
+  },
   { slug: "packers-and-movers-in-ankleshwar", city: "Ankleshwar", img: ankleshwarImg, offer: "15%", address: "Plot No. D-2529, Brahmanpuri, Ankleshwar GIDC, 6th Road, near Asian Paint, Chokdi, Ankleshwar, Gujarat 393002" },
   {
     slug: "packers-and-movers-in-bhiwandi", city: "Bhiwandi", img: BhiwandiImg, metaDetails: {
