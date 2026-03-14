@@ -280,7 +280,7 @@ const CityPage: React.FC<PageProps> = ({
               <div className="box">
 
                 <div className="text-area">
-
+  
                   <h1>{pageData?.mainHeading}</h1>
 
                   <div className="city-name">{city}</div>
@@ -353,9 +353,9 @@ const CityPage: React.FC<PageProps> = ({
               <ul>
                 {pageData?.nearbyCities?.map((item, i) => (
                   <li key={i}>
-                    <Link to={item.link} target="_blank">
+                    <a href={item.link} target="_blank">
                     {item.linkText}
-                    </Link> 
+                    </a> 
                     {item.text}</li>
                 ))}
               </ul>
