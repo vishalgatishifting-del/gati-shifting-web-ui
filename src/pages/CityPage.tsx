@@ -100,7 +100,7 @@ const CityPage: React.FC<PageProps> = ({
 
 
 
-      {(city != "Ahmedabad" && city != "Amrawati" && city != "Imphal") ? (
+      {(city != "Ahmedabad" && city != "Amrawati" && city != "Imphal" && city != "Bhadrak" && city != "Bargarh" && city != "Jeypore") ? (
 
         <section id="city-page-sec">
           <div className="offer-headling"></div>
@@ -319,7 +319,7 @@ const CityPage: React.FC<PageProps> = ({
               {pageData?.services?.map((service, i) => (
                 <div key={i}>
                   <h3>{service.title}</h3>
-                  <p>{service.desc}</p>
+                  <p style={{ whiteSpace: "pre-line" }}>{service.desc}</p>
                 </div>
               ))}
 
@@ -353,9 +353,9 @@ const CityPage: React.FC<PageProps> = ({
               <ul>
                 {pageData?.nearbyCities?.map((item, i) => (
                   <li key={i}>
-                    {/* <Link to={item.link} target="_blank"> */}
+                    <Link to={item.link} target="_blank">
                     {item.linkText}
-                    {/* </Link>  */}
+                    </Link> 
                     {item.text}</li>
                 ))}
               </ul>
