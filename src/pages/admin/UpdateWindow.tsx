@@ -7,6 +7,8 @@ import privateAPI from "../../api/privateAxios";
 
 const UpdateWindow = ({ data, windowState, searchOrder }: any) => {
 
+    const [saveChangesBtnState, setSaveChangesBtnState] = useState<boolean>(false)
+    const [saveChangesLoading, setSaveChangesLoading] = useState<boolean>(false)
     // state for form
     const [formData, setFormData] = useState({
         customerName: "",
@@ -57,6 +59,9 @@ const UpdateWindow = ({ data, windowState, searchOrder }: any) => {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
 
+        setSaveChangesBtnState(true)
+        setSaveChangesLoading(true)
+
         try {
 
             await privateAPI.put(
@@ -69,11 +74,15 @@ const UpdateWindow = ({ data, windowState, searchOrder }: any) => {
             windowState(false);
             windowState(false)
             searchOrder()
+            setSaveChangesBtnState(false)
+            setSaveChangesLoading(false)
 
 
         } catch (error: any) {
 
             alert(error.message);
+            setSaveChangesBtnState(false)
+            setSaveChangesLoading(false)
 
         }
 
@@ -168,9 +177,11 @@ const UpdateWindow = ({ data, windowState, searchOrder }: any) => {
                 </form>
                 <div className="btn-group">
 
-                    <button className="cancel-btn" onClick={() => windowState(false)}>Cancel</button>
+                    <button className="cancel-btn" disabled={saveChangesBtnState} onClick={() => windowState(false)}>Cancel</button>
 
-                    <button type="submit" onClick={handleSubmit} className="save-btn" >Save Changes</button>
+                    <button type="submit" disabled={saveChangesBtnState} onClick={handleSubmit} className="save-btn" >
+                        {saveChangesLoading ? "Loading..." : "Save Changes"}
+                    </button>
 
                 </div>
 

@@ -3,6 +3,12 @@ import { useState, useEffect } from "react";
 import UpdateWindow from "./UpdateWindow";
 import CreateWindow from "./CreateWindow";
 import privateAPI from "../../api/privateAxios";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
+import SearchIcon from '@mui/icons-material/Search';
 
 const AdminOrdersList = () => {
 
@@ -17,18 +23,30 @@ const AdminOrdersList = () => {
   const [orders, setOrders] = useState<any[]>([]);
   const [updateWindow, setUpdateWindow] = useState<boolean>(false)
   const [createWindow, setCreateWindow] = useState<boolean>(false)
+  // const [createBtnState, setCreateBtnState] = useState<boolean>(false)
+  // const [data, setData] = useState([])
+  const [page, setPage] = useState(1)
+  const [responsePage, setResponsePage] = useState<number>(1)
+  const [totalPages, setTotalPages] = useState<number>(0)
+  const [totalOrders, setTotalOrders] = useState<number>(0)
+
+  const [filter, setFilter] = useState<string>("All")
+  const [search, setSearch] = useState("")
 
   // Search order
   const searchOrder = async () => {
     try {
 
-      const res = await privateAPI.get(`/api/orders/orders`);
+      const res = await privateAPI.get(`/api/orders/orders?page=${page}&limit=10&filter=${filter}&search=${search}`);
 
       if (!res) {
         throw new Error("Order not found");
       }
-
-      setOrders(res.data);
+      console.log("this ", res.data)
+      setOrders(res.data.orders);
+      setResponsePage(res.data.page)
+      setTotalPages(res.data.totalPages)
+      setTotalOrders(res.data.total)
 
 
     }
@@ -40,6 +58,11 @@ const AdminOrdersList = () => {
   useEffect(() => {
     searchOrder();
   }, []);
+
+
+  useEffect(() => {
+    searchOrder();
+  }, [page, filter, search]);
 
 
 
@@ -114,9 +137,23 @@ const AdminOrdersList = () => {
     <div className="orders-page">
 
       <div className="orders-header">
+        <div className="left-container">
 
-        <h2>Orders Management</h2>
+          <h2>Orders Management</h2>
+          <div className="filters-and-overview">
+            <button className={filter == "All" ? "active" : ""} onClick={() => { setFilter("All") }}>All</button>
+            <button className={filter == "Today" ? "active" : ""} onClick={() => { setFilter("Today") }}>Today's</button>
+            <button className={filter == "Delivered" ? "active" : ""} onClick={() => { setFilter("Delivered") }}>Delivered</button>
+            <span>Total: {totalOrders}</span>
 
+            <div className="order-search">
+              <SearchIcon className="icon" />
+              <input type="text" className="order-search-input" placeholder="Tracking ID, Phone No, Name, Address" value={search}
+                onChange={(e) => setSearch(e.target.value)} />
+
+            </div>
+          </div>
+        </div>
         <button onClick={() => setCreateWindow(true)} className="create-btn">
           + Create Order
         </button>
@@ -222,14 +259,14 @@ Thank you for choosing Gati Shifting Packers.`
                       }}
                       target="_blank"
                       rel="noopener noreferrer" >
-                      Share
+                      <WhatsAppIcon />
                     </a>
                     <button onClick={() => updateRecord(order)} className="update-btn">
-                      Update
+                      <EditIcon />
                     </button>
 
                     <button onClick={() => { deleteRecord(order.trackingId) }} className="delete-btn">
-                      Delete
+                      <DeleteIcon />
                       {/* {useDeleteLoading ? <></> : "Delete"} */}
                     </button>
 
@@ -252,6 +289,13 @@ Thank you for choosing Gati Shifting Packers.`
       {
         (createWindow) ? <CreateWindow createState={setCreateWindow} searchOrder={searchOrder}></CreateWindow> : ""
       }
+
+      <span>Total Pages: {totalPages}</span>
+      <div className="pagination-btns-container">
+        <button onClick={() => setPage(page - 1)}><ArrowLeftIcon className="icon" /></button>
+        <span>{responsePage}</span>
+        <button onClick={() => setPage(page + 1)}><ArrowRightIcon className="icon" /></button>
+      </div>
 
 
     </div>
