@@ -21,6 +21,8 @@ interface MetaDataProps {
 interface Service {
   title: string;
   desc: string;
+  link?: string;
+  linkText?: string;
 }
 
 interface FAQ {
@@ -100,7 +102,7 @@ const CityPage: React.FC<PageProps> = ({
 
 
 
-      {(city != "Ahmedabad" && city != "Amrawati" && city != "Imphal" && city != "Bhadrak" && city != "Bargarh" && city != "Jeypore") ? (
+      {(city != "Ahmedabad" && city != "Amrawati" && city != "Imphal" && city != "Bhadrak" && city != "Bargarh" && city != "Jeypore" && city != "Kendrapara" && city != "Rayagada" && city != "Whitefield" && city != "Electronic City" && city != "Koramangala" && city != "Indiranagar" && city != "Marathahalli") ? (
 
         <section id="city-page-sec">
           <div className="offer-headling"></div>
@@ -320,6 +322,7 @@ const CityPage: React.FC<PageProps> = ({
                 <div key={i}>
                   <h3>{service.title}</h3>
                   <p style={{ whiteSpace: "pre-line" }}>{service.desc}</p>
+                  <a href={service.link}>{service.linkText}</a>
                 </div>
               ))}
 
