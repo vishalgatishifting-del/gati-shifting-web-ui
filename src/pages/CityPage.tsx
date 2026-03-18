@@ -102,7 +102,7 @@ const CityPage: React.FC<PageProps> = ({
 
 
 
-      {(city != "Ahmedabad" && city != "Amrawati" && city != "Imphal" && city != "Bhadrak" && city != "Bargarh" && city != "Jeypore" && city != "Kendrapara" && city != "Rayagada" && city != "Whitefield" && city != "Electronic City" && city != "Koramangala" && city != "Indiranagar" && city != "Marathahalli") ? (
+      {(city != "Agra" && city != "Ahmedabad" && city != "Amrawati" && city != "Imphal" && city != "Bhadrak" && city != "Bargarh" && city != "Jeypore" && city != "Kendrapara" && city != "Rayagada" && city != "Whitefield" && city != "Electronic City" && city != "Koramangala" && city != "Indiranagar" && city != "Marathahalli" && city != "Yelahanka" && city != "Jayanagar" && city != "Rajajinagar" && city != "HSR Layout" && city != "BTM Layout" && city != "Solapur" && city != "Sangli" && city != "Jalgaon" && city != "Akola" && city != "Latur" && city != "gandhidham" && city != "guwahati" && city != "hyderabad" && city != "jamshedpur" && city != "kolhapur" && city != "lucknow" && city != "") ? (
 
         <section id="city-page-sec">
           <div className="offer-headling"></div>
@@ -117,14 +117,7 @@ const CityPage: React.FC<PageProps> = ({
                   <div className="city-name">{city}</div>
 
                   <span className="address">
-                    <svg
-                      className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-q7mezt"
-                      focusable="false"
-                      aria-hidden="true"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5"></path>
-                    </svg>
+                     <LocationOnIcon />
                     {address}
                   </span>
 
@@ -242,7 +235,7 @@ const CityPage: React.FC<PageProps> = ({
               <div className="img-bx">
                 <img
                   className="chargesImg"
-                  src="/assets/packers%20_%20movers%20charges-gYQHl8Hh.webp"
+                  src={chargesImg}
                   alt="Packers and movers charges"
                 />
               </div>
