@@ -102,7 +102,7 @@ const CityPage: React.FC<PageProps> = ({
 
 
 
-      {(city != "Agra" && city != "Ahmedabad" && city != "Amrawati" && city != "Imphal" && city != "Bhadrak" && city != "Bargarh" && city != "Jeypore" && city != "Kendrapara" && city != "Rayagada" && city != "Whitefield" && city != "Electronic City" && city != "Koramangala" && city != "Indiranagar" && city != "Marathahalli" && city != "Yelahanka" && city != "Jayanagar" && city != "Rajajinagar" && city != "HSR Layout" && city != "BTM Layout" && city != "Solapur" && city != "Sangli" && city != "Jalgaon" && city != "Akola" && city != "Latur" && city != "gandhidham" && city != "guwahati" && city != "hyderabad" && city != "jamshedpur" && city != "kolhapur" && city != "lucknow" && city != "") ? (
+      {(city != "Agra" && city != "Ahmedabad" && city != "Amrawati" && city != "Imphal" && city != "Bhadrak" && city != "Bargarh" && city != "Jeypore" && city != "Kendrapara" && city != "Rayagada" && city != "Whitefield" && city != "Electronic City" && city != "Koramangala" && city != "Indiranagar" && city != "Marathahalli" && city != "Yelahanka" && city != "Jayanagar" && city != "Rajajinagar" && city != "HSR Layout" && city != "BTM Layout" && city != "Solapur" && city != "Sangli" && city != "Jalgaon" && city != "Akola" && city != "Latur" && city != "gandhidham" && city != "guwahati" && city != "hyderabad" && city != "jamshedpur" && city != "kolhapur" && city != "lucknow" && city != "Bhopal" && city != "Chandigarh" && city != "Dehradun" && city != "Gandhidham" && city != "Guwahati" && city != "Hyderabad") ? (
 
         <section id="city-page-sec">
           <div className="offer-headling"></div>
