@@ -12693,37 +12693,37 @@ export const pagesData = [
           title: "Packing and Unpacking Services Vijayapura",
           desc: "Our packing and unpacking services Vijayapura are designed to ensure maximum protection of your belongings. We use strong packing materials and modern techniques to safeguard items during transportation. This makes us one of the best packers and movers in Vijayapura.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "House Shifting Services Vijayapura",
           desc: "Our well-organized house shifting services Vijayapura make residential relocation easy and stress-free. We handle everything from packing to final placement of items at your new home. Our home relocation services in Vijayapura are suitable for both local and long-distance moves.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home Shifting"
         },
         {
           title: "Office Shifting Services Vijayapura",
           desc: "We provide efficient office shifting services Vijayapura for businesses relocating within or outside the city. Our team ensures safe handling of office assets with minimal disruption.",
           link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "https://gatishiftingpackers.com/office-relocation"
+          linkText: "Office Relocation"
         },
         {
           title: "Car and Bike Transport Service in Vijayapura",
           desc: "We offer secure car transport service in Vijayapura using specialized vehicle carriers to ensure damage-free delivery. Our bike transport service in Vijayapura includes proper packing and safe transportation of two-wheelers.",
           link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "https://gatishiftingpackers.com/car-bike-transport"
+          linkText: "Car Bike Transport"
         },
         {
           title: "Local Movers Vijayapura",
           desc: "Our local movers Vijayapura provide fast and efficient relocation within the city. Whether it’s a small move or a full household shift, we ensure smooth service. Customers searching for affordable packers and movers Vijayapura or cheap packers and movers Vijayapura prefer our budget-friendly solutions.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home Shifting"
         },
         {
           title: "Intercity Packers and Movers from Vijayapura",
           desc: "Our intercity packers and movers from Vijayapura offer reliable relocation services across India. We ensure secure packing, timely transportation, and safe delivery.",
           link: "https://gatishiftingpackers.com/intercity-moving",
-          linkText: "https://gatishiftingpackers.com/intercity-moving"
+          linkText: "Intercity Moving"
         }
       ],
 
@@ -12817,37 +12817,37 @@ export const pagesData = [
           title: "Packing and Unpacking Services Bidar",
           desc: "Our packing and unpacking services Bidar ensure that your belongings are well-protected during the move. We use durable materials and advanced packing methods to safeguard items from damage. This makes us one of the best packers and movers in Bidar.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "House Shifting Services Bidar",
           desc: "Our well-planned house shifting services Bidar help you relocate your home smoothly. From packing household goods to arranging them at the destination, we handle everything with care. Our home relocation services in Bidar are suitable for both local and long-distance moves.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Office Shifting Services Bidar",
           desc: "We provide efficient office shifting services Bidar for businesses relocating within or outside the city. Our team ensures safe handling of office equipment and documents with minimal disruption.",
           link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "https://gatishiftingpackers.com/office-relocation"
+          linkText: "Office Relocation"
         },
         {
           title: "Car and Bike Transport Service in Bidar",
           desc: "Our car transport service in Bidar ensures safe vehicle relocation using secure carriers. We also offer bike transport service in Bidar, ensuring proper packing and damage-free transportation of two-wheelers.",
           link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "https://gatishiftingpackers.com/car-bike-transport"
+          linkText: "Car Bike Transport"
         },
         {
           title: "Local Movers Bidar",
           desc: "Our local movers Bidar specialize in quick and efficient relocation within the city. Whether it’s a small move or a full household shift, we ensure smooth execution. Customers looking for affordable packers and movers Bidar or cheap packers and movers Bidar can rely on our cost-effective services.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Intercity Packers and Movers from Bidar",
           desc: "Our intercity packers and movers from Bidar provide safe and reliable relocation services across India. We focus on secure packing, proper logistics, and timely delivery.",
           link: "https://gatishiftingpackers.com/intercity-moving",
-          linkText: "https://gatishiftingpackers.com/intercity-moving"
+          linkText: "Intercity Moving"
         }
       ],
 
@@ -12941,37 +12941,37 @@ export const pagesData = [
           title: "Packing and Unpacking Services Hassan",
           desc: "Our packing and unpacking services Hassan are designed to keep your belongings protected throughout the move. We use high-quality materials and proper techniques to prevent any damage. This makes us one of the best packers and movers in Hassan.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "House Shifting Services Hassan",
           desc: "Our reliable house shifting services Hassan help you relocate your home with ease. We manage everything from packing to unloading and setting up your items at your new location. Our home relocation services in Hassan are suitable for both small and large household moves.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Office Shifting Services Hassan",
           desc: "We provide efficient office shifting services Hassan for businesses relocating within or outside the city. Our team handles office equipment, furniture, and documents safely to minimize downtime.",
           link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "https://gatishiftingpackers.com/office-relocation"
+          linkText: "Office Relocation"
         },
         {
           title: "Car and Bike Transport Service in Hassan",
           desc: "Our car transport service in Hassan ensures safe vehicle relocation using specialized carriers. We also offer bike transport service in Hassan, ensuring secure packing and transportation of two-wheelers.",
           link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "https://gatishiftingpackers.com/car-bike-transport"
+          linkText: "Car Bike Transport"
         },
         {
           title: "Local Movers Hassan",
           desc: "Our local movers Hassan provide quick and efficient relocation services within the city. Whether it’s a small move or a complete household shift, we ensure smooth execution. Customers looking for affordable packers and movers Hassan or cheap packers and movers Hassan can rely on our budget-friendly solutions.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Intercity Packers and Movers from Hassan",
           desc: "Our intercity packers and movers from Hassan offer safe and reliable relocation services across India. We ensure proper packing, secure transportation, and timely delivery.",
           link: "https://gatishiftingpackers.com/intercity-moving",
-          linkText: "https://gatishiftingpackers.com/intercity-moving"
+          linkText: "Intercity Moving"
         }
       ],
 
@@ -13066,37 +13066,37 @@ export const pagesData = [
           title: "Packing and Unpacking Services Chitradurga",
           desc: "Our expert packing and unpacking services Chitradurga are designed to protect your belongings during transit. We use strong packing materials and proper handling techniques for maximum safety. This makes us one of the best packers and movers in Chitradurga.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "House Shifting Services Chitradurga",
           desc: "We offer smooth and efficient house shifting services Chitradurga tailored to your needs. Whether you are relocating a small apartment or a large home, we ensure safe handling of all items. Our home relocation services in Chitradurga cover packing, loading, transportation, and unpacking.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Office Shifting Services Chitradurga",
           desc: "Our reliable office shifting services Chitradurga help businesses relocate without disruption. We ensure safe transport of office furniture, electronics, and important documents.",
           link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "https://gatishiftingpackers.com/office-relocation"
+          linkText: "Office Relocation"
         },
         {
           title: "Car and Bike Transport Service in Chitradurga",
           desc: "We provide secure car transport service in Chitradurga using well-equipped carriers for safe vehicle relocation. Our bike transport service in Chitradurga ensures proper packing and timely delivery of two-wheelers.",
           link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "https://gatishiftingpackers.com/car-bike-transport"
+          linkText: "Car Bike Transport"
         },
         {
           title: "Local Movers Chitradurga",
           desc: "Our experienced local movers Chitradurga offer quick and efficient relocation services within the city. We ensure smooth shifting for households and offices. If you are searching for affordable packers and movers Chitradurga or cheap packers and movers Chitradurga, we provide cost-effective solutions.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Intercity Packers and Movers from Chitradurga",
           desc: "Our intercity packers and movers from Chitradurga offer reliable relocation services across India. We focus on secure logistics, careful handling, and timely delivery.",
           link: "https://gatishiftingpackers.com/intercity-moving",
-          linkText: "https://gatishiftingpackers.com/intercity-moving"
+          linkText: "Intercity Moving"
         }
       ],
 
@@ -13191,37 +13191,37 @@ export const pagesData = [
           title: "Packing and Unpacking Services Kolar",
           desc: "Our packing and unpacking services Kolar are designed to keep your belongings safe throughout the journey. We use durable packing materials and proper techniques to prevent any damage. This commitment makes us one of the best packers and movers in Kolar.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "House Shifting Services Kolar",
           desc: "We offer reliable house shifting services Kolar for all types of residential moves. From careful packing to safe unloading, we handle every step professionally. Our home relocation services in Kolar are customized to meet your specific needs, ensuring a hassle-free move.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Office Shifting Services Kolar",
           desc: "Our efficient office shifting services Kolar are ideal for businesses relocating within or outside the city. We ensure safe transport of office furniture, equipment, and important files with minimal downtime.",
           link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "https://gatishiftingpackers.com/office-relocation"
+          linkText: "Office Relocation"
         },
         {
           title: "Car and Bike Transport Service in Kolar",
           desc: "We provide secure car transport service in Kolar using modern carriers to ensure safe vehicle relocation. Our bike transport service in Kolar includes proper packing and careful handling for damage-free delivery.",
           link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "https://gatishiftingpackers.com/car-bike-transport"
+          linkText: "Car Bike Transport"
         },
         {
           title: "Local Movers Kolar",
           desc: "Our experienced local movers Kolar offer fast and efficient relocation services within the city. Whether it’s a small shift or a full household move, we ensure smooth execution. If you are looking for affordable packers and movers Kolar or cheap packers and movers Kolar, we offer cost-effective solutions without compromising quality.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Intercity Packers and Movers from Kolar",
           desc: "Our intercity packers and movers from Kolar provide safe relocation services across India. We focus on secure transportation, proper logistics, and timely delivery.",
           link: "https://gatishiftingpackers.com/intercity-moving",
-          linkText: "https://gatishiftingpackers.com/intercity-moving"
+          linkText: "Intercity Moving"
         }
       ],
 
@@ -13316,37 +13316,37 @@ export const pagesData = [
           title: "Packing and Unpacking Services Udupi",
           desc: "Our packing and unpacking services Udupi focus on protecting your goods during transit. We use strong packing materials and modern techniques to avoid damage. This makes us one of the best packers and movers in Udupi for safe relocation.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "House Shifting Services Udupi",
           desc: "We provide smooth and organized house shifting services Udupi for all types of residential moves. Our team handles packing, loading, transportation, and unloading with complete care. Our home relocation services in Udupi are designed to make your move stress-free and efficient.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Office Shifting Services Udupi",
           desc: "Our professional office shifting services Udupi ensure quick and safe relocation of offices. We carefully move office furniture, electronics, and documents to minimize downtime.",
           link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "https://gatishiftingpackers.com/office-relocation"
+          linkText: "Office Relocation"
         },
         {
           title: "Car and Bike Transport Service in Udupi",
           desc: "We offer safe and secure car transport service in Udupi using advanced vehicle carriers. Our bike transport service in Udupi ensures proper packing and timely delivery of two-wheelers.",
           link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "https://gatishiftingpackers.com/car-bike-transport"
+          linkText: "Car Bike Transport"
         },
         {
           title: "Local Movers Udupi",
           desc: "Our local movers Udupi specialize in fast and efficient shifting within the city. Whether it’s a small move or a full relocation, we ensure smooth execution. If you’re looking for affordable packers and movers Udupi or cheap packers and movers Udupi, we provide cost-effective services without compromising quality.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Intercity Packers and Movers from Udupi",
           desc: "Our intercity packers and movers from Udupi provide reliable relocation services across India. We ensure safe handling, secure transport, and timely delivery.",
           link: "https://gatishiftingpackers.com/intercity-moving",
-          linkText: "https://gatishiftingpackers.com/intercity-moving"
+          linkText: "Intercity Moving"
         }
       ],
 
@@ -13441,37 +13441,37 @@ export const pagesData = [
           title: "Packing and Unpacking Services Karwar",
           desc: "Our packing and unpacking services Karwar are designed to protect your belongings during transit. We use high-quality packing materials and proven methods to ensure safety at every stage. This makes us one of the best packers and movers in Karwar.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "House Shifting Services Karwar",
           desc: "We provide efficient house shifting services Karwar for all types of residential relocations. Our team manages packing, loading, transportation, unloading, and rearranging your items at the destination. Our home relocation services in Karwar are tailored for both local and long-distance moves.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Office Shifting Services Karwar",
           desc: "Our professional office shifting services Karwar help businesses relocate quickly and safely. We handle office furniture, equipment, and documents with care to avoid disruptions.",
           link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "https://gatishiftingpackers.com/office-relocation"
+          linkText: "Office Relocation"
         },
         {
           title: "Car and Bike Transport Service in Karwar",
           desc: "We offer safe and efficient car transport service in Karwar using modern carriers to ensure damage-free vehicle relocation. Our bike transport service in Karwar ensures secure packing and timely delivery of your two-wheeler.",
           link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "https://gatishiftingpackers.com/car-bike-transport"
+          linkText: "Car Bike Transport"
         },
         {
           title: "Local Movers Karwar",
           desc: "Our local movers Karwar provide quick and hassle-free relocation within the city. Whether it's a small move or a full household shift, we ensure smooth execution. Customers searching for affordable packers and movers Karwar or cheap packers and movers Karwar can rely on our cost-effective services.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Intercity Packers and Movers from Karwar",
           desc: "Our intercity packers and movers from Karwar offer reliable relocation services across India. We focus on secure handling, proper logistics, and timely delivery.",
           link: "https://gatishiftingpackers.com/intercity-moving",
-          linkText: "https://gatishiftingpackers.com/intercity-moving"
+          linkText: "Intercity Moving"
         }
       ],
 
@@ -13566,37 +13566,37 @@ export const pagesData = [
           title: "Packing and Unpacking Services Bagalkot",
           desc: "Our packing and unpacking services Bagalkot are designed to keep your belongings safe throughout the moving process. We use strong packing materials and modern techniques for maximum protection. This makes us one of the best packers and movers in Bagalkot.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "House Shifting Services Bagalkot",
           desc: "We provide smooth and reliable house shifting services Bagalkot for residential relocation. Our team handles everything from packing to unloading with complete care. Our home relocation services in Bagalkot are suitable for both local and long-distance moves.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Office Shifting Services Bagalkot",
           desc: "Our efficient office shifting services Bagalkot help businesses relocate without hassle. We ensure safe transport of office furniture, equipment, and documents.",
           link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "https://gatishiftingpackers.com/office-relocation"
+          linkText: "Office Relocation"
         },
         {
           title: "Car and Bike Transport Service in Bagalkot",
           desc: "We offer secure car transport service in Bagalkot using specialized carriers for safe vehicle relocation. Our bike transport service in Bagalkot ensures proper packing and damage-free delivery.",
           link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "https://gatishiftingpackers.com/car-bike-transport"
+          linkText: "Car Bike Transport"
         },
         {
           title: "Local Movers Bagalkot",
           desc: "Our local movers Bagalkot provide quick and efficient relocation services within the city. Whether it’s a small move or a full household shift, we ensure a hassle-free experience. If you are searching for affordable packers and movers Bagalkot or cheap packers and movers Bagalkot, we offer cost-effective solutions.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Intercity Packers and Movers from Bagalkot",
           desc: "Our intercity packers and movers from Bagalkot provide reliable relocation services across India. We focus on secure transportation, proper logistics, and timely delivery.",
           link: "https://gatishiftingpackers.com/intercity-moving",
-          linkText: "https://gatishiftingpackers.com/intercity-moving"
+          linkText: "Intercity Moving"
         }
       ],
 
@@ -13693,37 +13693,37 @@ export const pagesData = [
           title: "Packing and Unpacking Services Varanasi",
           desc: "Our packing and unpacking services Varanasi are designed to protect your goods during transit. We use high-quality packing materials and advanced techniques to ensure maximum safety. This makes us one of the best packers and movers in Varanasi.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "House Shifting Services Varanasi",
           desc: "We provide smooth and organized house shifting services Varanasi for all types of residential relocations. From packing to final setup, our team manages everything efficiently. Our home relocation services in Varanasi are customized for local and long-distance shifting needs.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Office Shifting Services Varanasi",
           desc: "Our office shifting services Varanasi help businesses relocate quickly with minimal downtime. We ensure safe handling of office furniture, IT equipment, and important documents.",
           link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "https://gatishiftingpackers.com/office-relocation"
+          linkText: "Office Relocation"
         },
         {
           title: "Car and Bike Transport Service in Varanasi",
           desc: "We offer secure car transport service in Varanasi using modern carriers for damage-free vehicle relocation. Our bike transport service in Varanasi ensures proper packing and safe delivery of your two-wheeler.",
           link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "https://gatishiftingpackers.com/car-bike-transport"
+          linkText: "Car Bike Transport"
         },
         {
           title: "Local Movers Varanasi",
           desc: "Our local movers Varanasi provide fast and efficient relocation services within the city. Whether it’s a small shift or a complete move, we ensure a hassle-free experience. If you are looking for affordable packers and movers Varanasi or cheap packers and movers Varanasi, we offer budget-friendly solutions without compromising quality.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Intercity Packers and Movers from Varanasi",
           desc: "Our intercity packers and movers from Varanasi provide safe and reliable relocation services across India. We ensure proper logistics, secure transportation, and timely delivery.",
           link: "https://gatishiftingpackers.com/intercity-moving",
-          linkText: "https://gatishiftingpackers.com/intercity-moving"
+          linkText: "Intercity Moving"
         }
       ],
 
@@ -13817,37 +13817,37 @@ export const pagesData = [
           title: "Packing and Unpacking Services Thoubal",
           desc: "Our packing and unpacking services Thoubal are designed to keep your belongings safe throughout the move. We use premium packing materials and proper techniques to avoid any damage. This makes us one of the best packers and movers in Thoubal.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "House Shifting Services Thoubal",
           desc: "We offer hassle-free house shifting services Thoubal for all types of residential moves. Our team handles packing, loading, transportation, unloading, and arrangement at your new location. Our home relocation services in Thoubal ensure a smooth and stress-free experience.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Office Shifting Services Thoubal",
           desc: "Our professional office shifting services Thoubal help businesses relocate efficiently. We ensure safe transport of office furniture, electronics, and important documents with minimal disruption.",
           link: "https://gatishiftingpackers.com/office-relocation",
-          linkText: "https://gatishiftingpackers.com/office-relocation"
+          linkText: "Office Relocation"
         },
         {
           title: "Car and Bike Transport Service in Thoubal",
           desc: "We provide secure car transport service in Thoubal using specialized carriers for safe vehicle relocation. Our bike transport service in Thoubal ensures proper packing and damage-free delivery of your two-wheeler.",
           link: "https://gatishiftingpackers.com/car-bike-transport",
-          linkText: "https://gatishiftingpackers.com/car-bike-transport"
+          linkText: "Car Bike Transport"
         },
         {
           title: "Local Movers Thoubal",
           desc: "Our local movers Thoubal offer quick and efficient relocation services within the city. Whether it’s a small move or a full household shift, we ensure smooth execution. If you are searching for affordable packers and movers Thoubal or cheap packers and movers Thoubal, we provide budget-friendly services without compromising quality.",
           link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "https://gatishiftingpackers.com/home-shifting"
+          linkText: "Home shifting"
         },
         {
           title: "Intercity Packers and Movers from Thoubal",
           desc: "Our intercity packers and movers from Thoubal provide reliable relocation services across India. We focus on safe handling, secure logistics, and on-time delivery.",
           link: "https://gatishiftingpackers.com/intercity-moving",
-          linkText: "https://gatishiftingpackers.com/intercity-moving"
+          linkText: "Intercity Moving"
         }
       ],
 
