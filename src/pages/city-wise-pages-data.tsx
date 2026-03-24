@@ -473,6 +473,7 @@ export const pagesData = [
     city: "Agra",
     img: agraImg,
     offer: "10%",
+    address: "Shop - 119 Mod, Road, near by Mahaprabhu Mandir, Bodla, Dehtora, Agra, Uttar Pradesh 282007",
 
     metaDetails: {
       title: "Best Packers and Movers in Agra | Gati Shifting Packers",
@@ -606,7 +607,7 @@ export const pagesData = [
     city: "Ankleshwar",
     img: ankleshwarImg,
     offer: "10%",
-
+address: "Plot No. D-2529, Brahmanpuri, Ankleshwar GIDC, 6th Road, near Asian Paint, Chokdi, Ankleshwar, Gujarat 393002",
     metaDetails: {
       title: "Best Packers and Movers in Ankleshwar | Gati Shifting Packers",
       desc: "Looking for trusted packers and movers in Ankleshwar? Gati Shifting Packers offers home shifting, office relocation, car & bike transport, warehouse and affordable moving services."
@@ -893,7 +894,7 @@ export const pagesData = [
     city: "Calicut",
     img: CalicutImg,
     offer: "10%",
-
+address: "Kurial Line, Nas Arcade, 61/1351, Cherooty Rd, Mananchira, Kozhikode, Kerala 673001",
     metaDetails: {
       title: "Best Packers and Movers in Calicut | Gati Shifting Packers",
       desc: "Looking for trusted packers and movers in Calicut? Gati Shifting Packers offers home shifting, office relocation, car & bike transport, storage and affordable relocation services."
@@ -1033,6 +1034,7 @@ export const pagesData = [
     city: "Cuttack",
     img: CuttackImg,
     offer: "10%",
+    address: "Sarthak Palace, Plot No.: 1570/1571, CDA Sector VI, Cuttack, Odisha 753014",
 
     metaDetails: {
       title: "Best Packers and Movers in Cuttack | Gati Shifting Packers",
@@ -1320,6 +1322,7 @@ export const pagesData = [
     city: "Gandhidham",
     img: GandhidhamImg,
     offer: "10%",
+    address: "Plot No.54, near Lilasha Railway Crossing, Parthvi Nagar, Meghpar, Gandhidham, Gujarat 370205",
     metaDetails: {
       title: "Packers and Movers in Gandhidham | Gati Shifting Packers",
       desc: "Reliable packers and movers in Gandhidham Gujarat for home shifting, office relocation & vehicle transport at affordable charges."
@@ -1569,6 +1572,7 @@ export const pagesData = [
     city: "Guwahati",
     img: GuwahatiImg,
     offer: "10%",
+    address: "No.28, Nalapada, Guwahati, Assam 781028",
     metaDetails: {
       title: "Packers and Movers in Guwahati | Gati Shifting Packers",
       desc: "Best packers and movers in Guwahati Assam for household shifting, office relocation, car & bike transport. Professional & affordable movers."
@@ -1823,6 +1827,7 @@ export const pagesData = [
     city: "Hyderabad",
     img: HyderabadImg,
     offer: "10%",
+    address:  "Shop 115, Street No. 5, Maitrivan Colony, Old Bowenpally, Hyderabad, Secunderabad, Telangana 500011",
     metaDetails: {
       title: "Packers and Movers in Hyderabad | Gati Shifting Packers",
       desc: "Trusted packers and movers in Hyderabad for home shifting, office relocation, bike transport & storage services at best price."
@@ -2064,6 +2069,7 @@ export const pagesData = [
     city: "Jamshedpur",
     img: JamshedpurImg,
     offer: "10%",
+    address: "Shop No 115, Golmuri Rd, Tuiladungri, Sakchi, Jamshedpur, Jharkhand 831001",
     metaDetails: {
       title: "Packers and Movers in Jamshedpur | Gati Shifting Packers",
       desc: "Affordable packers and movers in Jamshedpur for household shifting, office relocation, car & bike transport. Call Gati Shifting Packers today."
@@ -2305,6 +2311,7 @@ export const pagesData = [
     city: "Kolhapur",
     img: KolhapurImg,
     offer: "10%",
+    address: "Shop no.11, Shukratara Complex, opp. Mahavir Collage, Nagalapark, Kolhapur, Maharashtra 416002",
     metaDetails: {
       title: "Packers and Movers in Kolhapur | Gati Shifting Packers",
       desc: "Best packers and movers in Kolhapur for home shifting, office relocation, car & bike transport. Affordable charges by Gati Shifting Packers."
@@ -2555,6 +2562,7 @@ export const pagesData = [
     city: "Lucknow",
     img: LucknowImg,
     offer: "10%",
+    address: "DSE/555, near Indu Nursing Home, Sector C, Jankipuram, Lucknow, Uttar Pradesh 226021",
     metaDetails: {
       title: "Packers and Movers in Lucknow | Gati Shifting Packers",
       desc: "Gati Shifting Packers offers reliable packers and movers in Lucknow for home shifting, office relocation, car & bike transport with affordable charges."
@@ -2813,6 +2821,7 @@ export const pagesData = [
     city: "Ahmedabad",
     img: AhmedabadImg,
     offer: "10%",
+    address: "Shop No 6, Police station, Aakruti Avanue, behind Aslali, Ahmedabad, Gujarat 382427",
     metaDetails: {
       title: "Packers and Movers in Ahmedabad – Gati Shifting Packers Reliable Relocation Service",
       desc: "Looking for trusted packers and movers in Ahmedabad? Gati Shifting Packers provides safe home shifting, office relocation, vehicle transport, packing, storage and complete moving solutions at affordable prices."
@@ -3057,6 +3066,7 @@ export const pagesData = [
     city: "Aurangabad",
     img: AurangabadImg,
     offer: "10%",
+    address: "plot no-34, Shrikrishna Nagar, Ulkanagari, Chhatrapati Sambhajinagar, Maharashtra 431009",
     metaDetails: {
       title: "Packers and Movers in Aurangabad | Gati Shifting Packers",
       desc: "Looking for packers and movers in Aurangabad? Gati Shifting Packers offers home relocation, office shifting, car & bike transport, and affordable moving services."
@@ -3324,6 +3334,7 @@ export const pagesData = [
     city: "Bhopal",
     img: BhopalImg,
     offer: "10%",
+    address: "Shop No. 65, Near Itwara, New, Itwara Rd, Bhopal, Madhya Pradesh 462001",
 
     metaDetails: {
       title: "Packers and Movers in Bhopal | Gati Shifting Packers",
@@ -3630,6 +3641,7 @@ export const pagesData = [
     city: "Chandigarh",
     img: ChandigarhImg,
     offer: "10%",
+    address: "plot no.261, Transport Area, Sector 26, Chandigarh, 160019",
 
     metaDetails: {
       title: "Packers and Movers in Chandigarh | Gati Shifting Packers",
@@ -3905,6 +3917,7 @@ export const pagesData = [
     city: "Dehradun",
     img: DehradunImg,
     offer: "10%",
+      address: "Shop - 131, Chandrabani Rd, Chandrabani, Chandrwani Khalsa, Dehradun, Uttarakhand 248002",
 
     metaDetails: {
       title: "Packers and Movers in Dehradun | Gati Shifting Packers",
@@ -4141,6 +4154,7 @@ export const pagesData = [
     city: "Ghaziabad",
     img: GhaziabadImg,
     offer: "10%",
+      address: "Plot No. 27, Sher Singh Enclave, Main Khera Rd, opp. HP Petrol Pump, Najafgarh, New Delhi, Delhi 110043",
 
     metaDetails: {
       title: "Reliable Packers and Movers in Ghaziabad for Safe Relocation",
@@ -4348,6 +4362,7 @@ export const pagesData = [
     city: "Gwalior",
     img: GwaliorImg,
     offer: "10%",
+      address: "G-7 The Legacy Plaza, Airport Rd, Gwalior, Madhya Pradesh 474005",
 
     metaDetails: {
       title: "Packers and Movers in Gwalior for Safe Home & Office Shifting",
@@ -4575,6 +4590,7 @@ export const pagesData = [
     city: "Indore",
     img: Indore,
     offer: "10%",
+    address: "4/3, opp. Mangal city, Vijay Nagar, Scheme No 54, Indore, Madhya Pradesh 452010",
 
     metaDetails: {
       title: "Reliable Packers and Movers in Indore | Gati Shifting Packers",
@@ -4828,6 +4844,7 @@ export const pagesData = [
     city: "Jamnagar",
     img: Jamnagar,
     offer: "10%",
+    address: "Shop - 1465, Akhilam Cornar Mayur Villa Road, near Samrpan Circle, Ajanta Society, Jamnagar, Gujarat 361006",
 
     metaDetails: {
       title: "Trusted Packers and Movers in Jamnagar | Gati Shifting Packers",
@@ -5077,6 +5094,7 @@ export const pagesData = [
     city: "Kolkata",
     img: Kolkata,
     offer: "10%",
+    address: "Shop - 176H,  near Ideal Residency, Kadapara, Phool Bagan, Kankurgachi, Kolkata, West Bengal 700054",
 
     metaDetails: {
       title: "Reliable Packers and Movers in Kolkata | Gati Shifting Packers",
@@ -5230,7 +5248,7 @@ export const pagesData = [
     city: "Ludhiana",
     img: Ludhiana,
     offer: "10%",
-
+ address: "Plot 4531, street no. 4, 1, Street Number 5, opposite transport nagar, near Arora clinic, Ludhiana, Punjab 141003",
     metaDetails: {
       title: "Professional Packers and Movers in Ludhiana | Gati Shifting Packers",
       desc: "Looking for packers and movers in Ludhiana? Gati Shifting Packers provides home shifting, office relocation, car & bike transport, packing and moving services at affordable prices."
@@ -5385,7 +5403,7 @@ export const pagesData = [
     city: "Allahabad",
     img: Allahabad,
     offer: "10%",
-
+address: "Shop - 122, Mundera Rd, T.P Nagar, Transport Nagar, Prayagraj, Uttar Pradesh 211001",
     metaDetails: {
       title: "Reliable Packers and Movers in Allahabad | Gati Shifting Packers",
       desc: "Looking for trusted packers and movers in Allahabad? Gati Shifting Packers offers home shifting, office relocation, vehicle transport and affordable moving services."
@@ -5532,7 +5550,7 @@ export const pagesData = [
     city: "Alwar",
     img: Alwar,
     offer: "10%",
-
+address: "Shop - 1254, Bakhtal ki chowki,, MIA main road, Alwar, Rajasthan 301001",
     metaDetails: {
       title: "Packers and Movers in Alwar | Gati Shifting Packers Services",
       desc: "Looking for reliable packers and movers in Alwar? Gati Shifting Packers offers affordable home shifting, office relocation, car & bike transport services."
@@ -5673,7 +5691,7 @@ export const pagesData = [
     city: "Ambala",
     img: Ambala,
     offer: "10%",
-
+address: "Shop - 109, Sarafa Bazar Rd, Jagadhri Gate, Jogiwara, Old Town, Ambala, Haryana 134003",
     metaDetails: {
       title: "Packers and Movers in Ambala for Safe Relocation",
       desc: "Need trusted packers and movers in Ambala? Gati Shifting Packers provides affordable home relocation, office shifting, car & bike transport services with safe delivery."
@@ -5814,7 +5832,7 @@ export const pagesData = [
     city: "Vadodara",
     img: Vadodara,
     offer: "10%",
-
+address: "B 20, Harni Rd, opp. Vrundavan Town Ship, Nageshwar Society, Pushpakunj Society, Karelibagh, Vadodara, Gujarat 390006",
     metaDetails: {
       title: "Packers and Movers in Vadodara | Trusted Relocation Experts",
       desc: "Looking for packers and movers in Vadodara? Gati Shifting Packers offers safe home shifting, office relocation, car & bike transport and affordable moving services."
@@ -6129,7 +6147,7 @@ export const pagesData = [
     city: "Delhi",
     img: Delhi,
     offer: "10%",
-
+ address: "Shop - 124, Kapoor Wali Gali, Rama Market, Munirka, New Delhi, Delhi 110067",
     metaDetails: {
       title: "Packers and Movers in Delhi | Gati Shifting Packers",
       desc: "Looking for packers and movers in Delhi? Gati Shifting Packers offers home shifting, office relocation, car & bike transport and intercity moving services at affordable prices."
@@ -6247,7 +6265,7 @@ export const pagesData = [
     city: "Dwarka",
     img: Dwarka,
     offer: "10%",
-
+address: "khatri vatika, 188, near Rivigo logistic, Bharthal, Sector 26 Dwarka, Dwarka, New Delhi, Delhi, 110077",
     metaDetails: {
       title: "Dwarka Relocation Experts | Gati Shifting Packers Moving Services",
       desc: "Need reliable movers in Dwarka? Gati Shifting Packers provides household shifting, office relocation, packing services, and vehicle transport with safe and affordable moving solutions."
@@ -6364,7 +6382,7 @@ export const pagesData = [
     city: "Faridabad",
     img: Faridabad,
     offer: "10%",
-
+address: "Shop No, 105, opposite Indira Enclave Sector-22D, Village Ankhir, NIT, Faridabad, Haryana 121001",
     metaDetails: {
       title: "Faridabad Moving Services by Gati Shifting Packers",
       desc: "Planning relocation in Faridabad? Gati Shifting Packers offers reliable household shifting, office relocation, vehicle transport, and packing services at affordable prices."
@@ -6487,7 +6505,7 @@ export const pagesData = [
     city: "Goa",
     img: Goa,
     offer: "10%",
-
+address: "Flat no. 102, Jairam appartment, Sai parking, Belgam Highway, near Amigoz hotel, Curti, Ponda, Goa 403401",
     metaDetails: {
       title: "Move Smoothly in Goa with Gati Shifting Packers",
       desc: "Looking for packers and movers in Goa? Gati Shifting Packers offers reliable household shifting, office relocation, packing services, and vehicle transportation at affordable prices."
@@ -6610,7 +6628,7 @@ export const pagesData = [
     city: "Greater Noida",
     img: GreaterNoida,
     offer: "10%",
-
+address: "Shop no.109 CH. Hansraj Bhati Market Accher, Eldeco Green Meadows, Greater Noida, Uttar Pradesh 201315",
     metaDetails: {
       title: "Greater Noida Moving Solutions | Gati Shifting Packers",
       desc: "Searching for packers and movers in Greater Noida? Gati Shifting Packers offers household shifting, office relocation, packing services, and vehicle transportation at affordable rates."
@@ -6733,7 +6751,7 @@ export const pagesData = [
     city: "Gurgaon",
     img: Gurgaon,
     offer: "10%",
-
+address: "Plot No. 134, Gali Number B-10, Block B, Ashok Vihar Phase III Extension, Gurugram, Haryana 122001",
     metaDetails: {
       title: "Professional Movers in Gurgaon – Gati Shifting Packers",
       desc: "Searching for packers and movers in Gurgaon? Gati Shifting Packers offers household shifting, office relocation, packing services, and vehicle transport at affordable prices."
@@ -6857,7 +6875,7 @@ export const pagesData = [
     city: "Hubli",
     img: Hubli,
     offer: "10%",
-
+address: "Shop No.102, Subhas Arcade, Gokul Rd, opp. IDBI BANK, Silver Town, Manjunath Nagar, Hubballi, Karnataka 580030",
     metaDetails: {
       title: "Packers and Movers in Hubli | Gati Shifting Packers",
       desc: "Searching for packers and movers in Hubli? Gati Shifting Packers provides home shifting, office relocation, vehicle transportation, and packing services at affordable prices."
@@ -6974,7 +6992,7 @@ export const pagesData = [
     city: "Jammu",
     img: Jammu,
     offer: "10%",
-
+address: "Block. Kaluchak, Shop No.2, Lane No. 56, Town, Greater Kailash Road, Jammu, Jammu and Kashmir 180011",
     metaDetails: {
       title: "Best Packers and Movers in Jammu | Gati Shifting Packers",
       desc: "Looking for packers and movers in Jammu? Gati Shifting Packers offers home shifting, office relocation, packing services, and vehicle transport at affordable prices."
@@ -7091,7 +7109,7 @@ export const pagesData = [
     city: "Kanpur",
     img: Kanpur,
     offer: "10%",
-
+address: "Simran Chauraha, near Pratap hotel, Deoki Nagar, Yashoda Nagar, Kanpur, Uttar Pradesh 208011",
     metaDetails: {
       title: "Best Packers and Movers in Kanpur | Affordable Relocation Services",
       desc: "Looking for packers and movers in Kanpur? Gati Shifting Packers provides household shifting, office relocation, packing and moving services, car transportation, and bike shifting services at affordable prices."
