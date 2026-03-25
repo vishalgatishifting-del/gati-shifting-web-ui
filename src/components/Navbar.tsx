@@ -26,7 +26,7 @@ import Logo from "../assets/Themes/NewYear/transparentIco.webp";
 // import Logo from "../assets/diwaliTheme/christmasLogo.png";
 
 import ShareLocationIcon from '@mui/icons-material/ShareLocation';
-
+import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 
 
 
@@ -59,28 +59,35 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
   return (
     <>
       <header>
-        <div className="top-area">
-          <div>
-          <a className='phone' href="tel:+919422799477">
-            <LocalPhoneIcon />
-            <span>Contact No - +91 9422799477</span>
-          </a>
-          <a className="whatsapp" href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer">
-            <WhatsAppIcon />
-            <span><span className='no'>Click to </span>Chat Now</span>
-          </a>
+        <div className="top-bar">
+          <div className="top-left">
+            <a className='phone' href="tel:+919422799477">
+              <LocalPhoneIcon />
+              <span>+91 9422799477</span>
+            </a>
+
+            <a className='whatsapp' href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer">
+              <WhatsAppIcon />
+              <span>WhatsApp</span>
+            </a>
           </div>
-          <div>
-          <a className="email" href="mailto:sales@gatishiftingpackers.com">
-            <EmailIcon />
-            <span>sales@gatishiftingpackers.com</span>
-          </a>
-          <a className="email" href="mailto:info@gatishiftingpackers.com">
-            <EmailIcon />
-            <span>info@gatishiftingpackers.com</span>
-          </a>
+
+          <div className="top-center">
+            <a className="email" href="mailto:sales@gatishiftingpackers.com">
+              <EmailIcon />
+              <span>sales@gatishiftingpackers.com</span>
+            </a>
+
+            <a className="email" href="mailto:info@gatishiftingpackers.com">
+              <EmailIcon />
+              <span>info@gatishiftingpackers.com</span>
+            </a>
           </div>
-          <span className='gstin'>GSTIN: 06AAMCG3191P1ZZ</span>
+
+          <div className="top-right gstin">
+            <CorporateFareIcon />
+            GSTIN: 06AAMCG3191P1ZZ
+          </div>
         </div>
 
         <nav>
@@ -142,7 +149,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
                 <ArrowDropDownIcon />
               </Link>
             </li>
-            
+
             <li>
               <Link
                 className={currentPath === "/track-order" ? "active" : ""}
@@ -194,7 +201,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
         </a>
       </div> */}
 
-      
+
 
 
       {/* <section>

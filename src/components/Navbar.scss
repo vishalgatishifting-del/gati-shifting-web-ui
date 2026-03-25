@@ -7,46 +7,47 @@ header {
     display: flex;
     flex-direction: column;
     background: #fff;
-
-
-
     z-index: 30;
-    // margin-bottom: 100%;
 
-
-    // diwali theme
-
-    .top-area {
+    .top-bar {
         background: $primary-color;
+        color: #fff;
         display: flex;
-        justify-content: space-around;
-        padding: 10px;
-
-        div {
-            display: flex;
-        }
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 40px;
+        font-size: 13px;
+        font-family: 'Poppins', sans-serif;
 
         a {
             display: flex;
             align-items: center;
+            gap: 6px;
+            color: #fff;
             text-decoration: none;
-            color: $text-color;
-            font-size: 13px;
-            margin: 0 15px;
-            @include font-poppins-sans(300);
+            transition: 0.3s ease;
 
-            span {
-                margin-left: 5px;
+            &:hover {
+                color: #ffd700; // gold hover effect
+            }
 
-                .no {
-                    display: none;
-                }
+            svg {
+                font-size: 16px;
             }
         }
-        .gstin{
-            font-size: 13px;
+
+        .top-left,
+        .top-center {
+            display: flex;
+            gap: 20px;
+        }
+
+        .top-right {
+            font-weight: 500;
+            letter-spacing: 0.5px;
             display: flex;
             align-items: center;
+            gap: 6px;
         }
     }
 
@@ -200,7 +201,7 @@ header.diwali {
 
 @media screen and (max-width: 1101px) {
     header {
-        .top-area {
+        .top-bar {
             padding: 5px;
             background: #4FCE5D;
             justify-content: center;
@@ -216,6 +217,10 @@ header.diwali {
                 }
             }
 
+            // .top-left {
+            //     display: none;
+            // }
+
             .phone {
                 display: none;
             }
@@ -223,7 +228,8 @@ header.diwali {
             .email {
                 display: none;
             }
-            .gstin{
+
+            .gstin {
                 display: none;
             }
         }
