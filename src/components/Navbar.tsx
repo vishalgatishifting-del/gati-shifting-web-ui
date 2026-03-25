@@ -60,18 +60,27 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
     <>
       <header>
         <div className="top-area">
+          <div>
           <a className='phone' href="tel:+919422799477">
             <LocalPhoneIcon />
             <span>Contact No - +91 9422799477</span>
-          </a>
-          <a className="email" href="mailto:gatishiftingpackers@gmail.com">
-            <EmailIcon />
-            <span>gatishiftingpackers@gmail.com</span>
           </a>
           <a className="whatsapp" href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer">
             <WhatsAppIcon />
             <span><span className='no'>Click to </span>Chat Now</span>
           </a>
+          </div>
+          <div>
+          <a className="email" href="mailto:sales@gatishiftingpackers.com">
+            <EmailIcon />
+            <span>sales@gatishiftingpackers.com</span>
+          </a>
+          <a className="email" href="mailto:info@gatishiftingpackers.com">
+            <EmailIcon />
+            <span>info@gatishiftingpackers.com</span>
+          </a>
+          </div>
+          <span className='gstin'>GSTIN: 06AAMCG3191P1ZZ</span>
         </div>
 
         <nav>
