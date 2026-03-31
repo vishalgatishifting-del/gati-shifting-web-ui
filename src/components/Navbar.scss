@@ -10,7 +10,7 @@ header {
     z-index: 30;
 
     .top-bar {
-        background: $primary-color;
+        background: #202d3d;
         color: #fff;
         display: flex;
         justify-content: space-between;
@@ -82,7 +82,7 @@ header {
                     align-items: center;
                     padding: 8px 20px;
                     margin: 0 5px;
-                    border-radius: 8px;
+                    border-radius: 20px;
                     font-size: 14px;
                     transition: .2s;
 
@@ -262,6 +262,7 @@ header.diwali {
                 li {
                     a {
                         padding: 20px;
+                        border-radius: 8px;
                     }
                 }
             }

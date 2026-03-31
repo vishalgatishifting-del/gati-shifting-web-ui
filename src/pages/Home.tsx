@@ -289,7 +289,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
             </Helmet>
 
             {/* marginTop: "107.01px" */}
-            {showSlider ? <Box className="sliderBox" sx={{ marginTop: "107.01px", width: "95%", overflow: "hidden" }}>
+            {showSlider ? <Box className="sliderBox" sx={{ marginTop: "100px", width: "95%", overflow: "hidden" }}>
                 <Slider {...settings}>
                     {images.map((img, index) => (
                         <Box key={index} sx={{ position: "relative", outline: "none" }}>

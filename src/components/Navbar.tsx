@@ -1,12 +1,12 @@
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import HomeIcon from '@mui/icons-material/Home';
-import InfoIcon from '@mui/icons-material/Info';
-import StarRateIcon from '@mui/icons-material/StarRate';
+// import HomeIcon from '@mui/icons-material/Home';
+// import InfoIcon from '@mui/icons-material/Info';
+// import StarRateIcon from '@mui/icons-material/StarRate';
 // import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
-import ContactsIcon from '@mui/icons-material/Contacts';
+// import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
+// import ContactsIcon from '@mui/icons-material/Contacts';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
@@ -25,7 +25,7 @@ import Logo from "../assets/Themes/NewYear/transparentIco.webp";
 // import Logo from "../assets/Themes/Holi/holiLogo.png";
 // import Logo from "../assets/diwaliTheme/christmasLogo.png";
 
-import ShareLocationIcon from '@mui/icons-material/ShareLocation';
+// import ShareLocationIcon from '@mui/icons-material/ShareLocation';
 import CorporateFareIcon from '@mui/icons-material/CorporateFare';
 
 
@@ -109,7 +109,8 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
                 to="/"
                 onClick={() => setOpenNav(false)}
               >
-                <HomeIcon className="icon" /> Home
+                {/* <HomeIcon className="icon" />  */}
+                Home
               </Link>
             </li>
             <li>
@@ -118,7 +119,8 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
                 to="/about"
                 onClick={() => setOpenNav(false)}
               >
-                <InfoIcon className="icon" /> About Us
+                {/* <InfoIcon className="icon" /> */}
+                 About Us
               </Link>
             </li>
             <li>
@@ -127,7 +129,8 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
                 to="/review"
                 onClick={() => setOpenNav(false)}
               >
-                <StarRateIcon className="icon" /> Review
+                {/* <StarRateIcon className="icon" /> */}
+                 Review
               </Link>
             </li>
             <li>
@@ -136,7 +139,8 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
                 to="/contact-us"
                 onClick={() => setOpenNav(false)}
               >
-                <ContactsIcon className="icon" /> Contact Us
+                {/* <ContactsIcon className="icon" /> */}
+                 Contact Us
               </Link>
             </li>
             <li>
@@ -145,7 +149,8 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
                 to="/services"
                 onClick={() => setOpenNav(false)}
               >
-                <MiscellaneousServicesIcon className="icon" /> Services
+                {/* <MiscellaneousServicesIcon className="icon" /> */}
+                 Services
                 <ArrowDropDownIcon />
               </Link>
             </li>
@@ -156,7 +161,8 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
                 to="/track-order"
                 onClick={() => setOpenNav(false)}
               >
-                <ShareLocationIcon className="icon" /> Track
+                {/* <ShareLocationIcon className="icon" /> */}
+                 Track
               </Link>
             </li>
           </ul>
