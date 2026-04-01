@@ -22377,5 +22377,7 @@ export const pagesData = [
   // { slug: "packers-and-movers-in-Visakhapatnam", city: "Visakhapatnam", img: Udaipur, offer: "16%", address: "Shop No - 313 Jail Rd, Singh Hotel Junction, Nehru Nagar, Ram Nagar, Visakhapatnam, Andhra Pradesh 530020" },
   // { slug: "packers-and-movers-in-Udupi", city: "Udupi", img: Udaipur, offer: "16%", address: "Shop - 915, Ground Floor, Grass Land Commercial, Bus Stand, near Service, Thenkpete, Maruthi Veethika, Udupi, Karnataka 576101" },
   { slug: "packers-and-movers-in-Manipal", city: "Manipal", img: Manipal, offer: "16%", address: "Plot - 114, Manipal, Karnataka 576104" },
+  
+  { slug: "packers-and-movers-in-Jaisalmer", city: "Jaisalmer", img: Gorakhpur, offer: "18%", address: " B.O- Nagar Nigam Complex, Shop no.29, Mahewa chowk, Transport Nagar, Gorakhpur, Uttar Pradesh 273016" },
 
 ];
