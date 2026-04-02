@@ -132,7 +132,8 @@
 /* TABLE WRAPPER */
 
 .orders-table-wrapper {
-
+  max-height: 70vh;
+  overflow: scroll;
   background: white;
 
   border-radius: 15px;
@@ -186,7 +187,13 @@
   padding: 15px;
 
   border-top: 1px solid #f1f5f9;
-  min-width: 158px;
+  min-width: 180px;
+
+  white-space: nowrap;      /* line break nahi hone dega */
+  overflow: hidden;         /* extra text hide karega */
+  text-overflow: ellipsis;
+  max-width: 180px;
+  font-size: 15px;
 
 }
 
@@ -235,10 +242,19 @@
 
 .status.transit {
 
-  background: #dbeafe;
+  // background: #dbeafe;
 
-  color: #1e40af;
+  // color: #1e40af;
+  background: rgba(255, 183, 0, 0.27);
+  color: rgb(91, 91, 0);
 
+}
+
+.status.placed{
+  // color: #166534;
+  color: #00a8ff;
+  // background: rgb(0, 255, 0);
+  background: #28adf05c;
 }
 
 .status.packed {
@@ -251,9 +267,9 @@
 
 .status.delivered {
 
-  background: #dcfce7;
+  background: #71f7a081;
 
-  color: #166534;
+  color: #00792e;
 
 }
 

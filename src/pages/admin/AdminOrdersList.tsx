@@ -107,6 +107,8 @@ const AdminOrdersList = () => {
   const getStatusClass = (status: string) => {
 
     switch (status) {
+      case "Order Placed":
+        return "status placed";
 
       case "Delivered":
         return "status delivered";
