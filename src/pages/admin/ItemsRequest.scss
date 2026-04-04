@@ -1,3 +1,4 @@
+@import "../../style/variables";
 .items-modal-overlay {
   position: fixed;
   inset: 0;
@@ -44,7 +45,8 @@
   padding: 6px 14px;
   border-radius: 6px;
   border: none;
-  background: #1565c0;
+  background: $primary-color;
   color: white;
   cursor: pointer;
+  @include font-poppins-sans(400);
 }

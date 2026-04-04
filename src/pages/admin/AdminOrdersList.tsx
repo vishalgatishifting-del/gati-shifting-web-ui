@@ -42,7 +42,6 @@ const AdminOrdersList = () => {
       if (!res) {
         throw new Error("Order not found");
       }
-      console.log("this ", res.data)
       setOrders(res.data.orders);
       setResponsePage(res.data.page)
       setTotalPages(res.data.totalPages)
@@ -65,29 +64,6 @@ const AdminOrdersList = () => {
   }, [page, filter, search]);
 
 
-
-  // const orders = [
-  //   {
-  //     trackingId: "GTI123456",
-  //     customer: "Rahul Sharma",
-  //     phone: "9354122998",
-  //     from: "ghaziabad",
-  //     to: "delhi",
-  //     goods: "domestic",
-  //     status: "In Transit",
-  //     location: "Delhi"
-  //   },
-  //   {
-  //     trackingId: "GTI123456",
-  //     customer: "Rahul Sharma",
-  //     phone: "9354122998",
-  //     from: "ghaziabad",
-  //     to: "delhi",
-  //     goods: "domestic",
-  //     status: "In Transit",
-  //     location: "Delhi"
-  //   }
-  // ];
 
   const deleteRecord = async (trackingID: any) => {
     try {
@@ -129,7 +105,6 @@ const AdminOrdersList = () => {
 
   const [currentRecord, setCurrentRecord] = useState<any>(null);
   const updateRecord = (record: any) => {
-    console.log(record)
     setUpdateWindow(true)
     setCurrentRecord(record);
   }

@@ -7,6 +7,8 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 
 import { cities2 } from "./citiesData";
+import { COMPANY } from "../config/Company";
+
 
 //     "Itanagar", "Dibrugarh", "Silchar", "Gaya", "Muzaffarpur", "Darbhanga",
 //     "Raipur", "Bhilai", "Durg", "Bilaspur",
@@ -175,7 +177,7 @@ const Footer = () => {
                         <p>📍 Gati Shifting Packers<br />
                             Ghansoli, Navi Mumbai<br /> Maharashtra 400701
                         </p>
-                        <p>📞 +91 9422799477</p>
+                        <p>📞 +91 {COMPANY.phone}</p>
                     </div>
 
                     <div className="footer-col">

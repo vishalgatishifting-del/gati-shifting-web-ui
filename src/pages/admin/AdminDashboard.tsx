@@ -22,7 +22,7 @@ import Tooltip from "@mui/material/Tooltip";
 import LeadsList from "./LeadsList"
 import ItemsRequest from "./ItemsRequest";
 import PartnersManagement from "./PartnersManagement";
-
+import homePng from "../../assets/AdminPage/home.png"
 
 
 const getIntensity = (
@@ -225,7 +225,7 @@ const AdminDashboard: React.FC = () => {
                         className={`menu-item ${activePage === "dashboard" ? "active" : ""}`}
                         onClick={() => setActivePage("dashboard")}
                     >
-                        🏠
+                        <img className="menu-img" src={homePng} />
                     </div>
 
                     <div

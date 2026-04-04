@@ -9,6 +9,8 @@ import { submitForm } from "../api/formAPI";
 import bannerImg from "../assets/popUpBG.png"
 // import FeatureVideo from "../assets/HomePage/FinalFeatureVideo.webm"
 
+import { COMPANY } from "../config/Company";
+
 interface ContactFormProps {
     showDetail?: true | false;
     closeControl?: () => void;
@@ -123,8 +125,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
 
                     <div className="detail">
                         <h4>Gati Shifting Packers and Movers</h4>
-                        <span>+91 9422799477</span>
-                        <span>gatishiftingpackers@gmail.com</span>
+                        <span>+91 {COMPANY.phone}</span>
+                        <span>{COMPANY.email}</span>
                         <p>Office No. 001, Shree Ganesh Tower CHS, Plot No. 98, Sector 21, Ghansoli, Navi Mumbai, Maharashtra 400701, India</p>
                     </div>
                 ) : "")}
