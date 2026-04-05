@@ -298,7 +298,8 @@ const Home: React.FC<props> = ({ successCondition }) => {
                                 src={img}
                                 alt={`slide-${index}`}
                                 title="Slider"
-                                loading="lazy"
+                                loading={index === 0 ? "eager" : "lazy"}
+                                fetchPriority={index === 0 ? "high" : "auto"}
                                 style={{
                                     width: "100%",
                                     height: "100%",
