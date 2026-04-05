@@ -9,7 +9,7 @@ import { useInView } from "react-intersection-observer";
 
 
 import { Box } from "@mui/material";
-import Avatar from '@mui/material/Avatar';
+// import Avatar from '@mui/material/Avatar';
 
 
 // Main Slider Images
@@ -194,21 +194,21 @@ const Home: React.FC<props> = ({ successCondition }) => {
     };
 
 
-    const settings2 = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: true,
-        centerMode: true,
-        centerPadding: "0px",
-        autoplay: true,
-        autoplaySpeed: 2000,
-        pauseOnHover: false,
-        pauseOnFocus: false,
-        swipeToSlide: true
-    };
+    // const settings2 = {
+    //     dots: false,
+    //     infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     variableWidth: true,
+    //     centerMode: true,
+    //     centerPadding: "0px",
+    //     autoplay: true,
+    //     autoplaySpeed: 2000,
+    //     pauseOnHover: false,
+    //     pauseOnFocus: false,
+    //     swipeToSlide: true
+    // };
 
 
 
