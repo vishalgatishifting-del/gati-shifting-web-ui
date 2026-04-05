@@ -110,7 +110,7 @@ import flightPng from "../assets/HomePage/flight.webp"
 import internationalPng from "../assets/HomePage/international.webp"
 // import officePng from "../assets/HomePage/office.png"
 // import commercialPng from "../assets/HomePage/commercial.png"
-import warehousePng from "../assets/homePage/warehouse.webp"
+import warehousePng from "../assets/homePage/warehouseicon.webp"
 import bikePng from "../assets/HomePage/bike.webp"
 
 
