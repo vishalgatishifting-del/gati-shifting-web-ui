@@ -8,7 +8,7 @@ import ChaportWidget from "../components/ChatPort.tsx";
 import whatsappIcon from "../assets/whatsappIcon.webp";
 import callIcon from "../assets/call.webp";
 import gmailIcon from "../assets/gmailIcon.webp";
-import Popup from "../components/Popup";
+// import Popup from "../components/Popup";
 
 
 import PinterestIcon from '@mui/icons-material/Pinterest';
@@ -47,7 +47,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <a className='social-link-youtube' href="https://youtube.com/@gatishifting-moves?si=Lz283_yPnXuNCkQW"><YouTubeIcon className='icon'></YouTubeIcon></a>
                 <a className='social-link-pinterest' href="https://in.pinterest.com/infogatishiftingpackers"><PinterestIcon className='icon'></PinterestIcon></a>
             </div>
-            <Popup />
+            {/* <Popup /> */}
             <ChaportWidget></ChaportWidget>
             <PopUp visibility={visibilityCondition} condition={setVisibilityCondition}></PopUp>
             <Navbar successCondition={setVisibilityCondition} setOpen={setOpen} open={open} />
