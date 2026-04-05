@@ -1,16 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import "./Home.scss"
-
-
 import Slider from "react-slick";
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-
-
-import { Box } from "@mui/material";
-// import Avatar from '@mui/material/Avatar';
-
+// import { motion } from "framer-motion";
+// import { useInView } from "react-intersection-observer";
+// import { Box } from "@mui/material";
 
 // Main Slider Images
 // import gatiSlider1 from "../assets/Themes/Holi/sliderImg.webp"
@@ -44,13 +38,6 @@ import incorporationCertificate from "../assets/homePagePng/incorporation_certif
 import GSTIncorporation from "../assets/homePagePng/gst_certificate.webp"
 import ISOcertificate from "../assets/homePagePng/award_certificate.webp"
 import gatiCertificate from "../assets/homePagePng/gatishifting_certificate.webp"
-
-
-// CountDown Section PNG
-// import truckPng from "../assets/homePagePng/Gemini_Generated_Image_2zntak2zntak2znt.webp"
-// import cityPng from "../assets/homePagePng/Gemini_Generated_Image_lfceqflfceqflfce.webp"
-// import verifiedBadgePng from "../assets/homePagePng/Gemini_Generated_Image_seeh1bseeh1bseeh.webp"
-// import peoplesPng from "../assets/homePagePng/Gemini_Generated_Image_lrzvt4lrzvt4lrzv.webp"
 
 
 // Feature Slider Images
@@ -102,20 +89,8 @@ import ProductImageSlider from "../components/PackingImageSlider"
 import Counter from "../components/Counter";
 
 
-// import stepsImg from "../assets/5-steps-banner.png";
-
-
-
-// import petSlider from "../assets/HomePage/slide2.webp";
-// import bike from "../assets/HomePage/slide3.webp";
-// import house from "../assets/HomePage/slide4.webp";
-// import car from "../assets/HomePage/slide1.webp";
-// import slide5 from "../assets/HomePage/slide5.webp";
-
 import { Link } from "react-router-dom";
 
-// import { IFaqItem } from "../models/App.model";
-// import { AppConstant } from "../constants/app.constant";
 
 import isoBadge from "../assets/HomePage/isoicon.webp"
 import googleRatingBadge from "../assets/HomePage/5star.webp"
@@ -149,7 +124,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
     const images = [ gatiSlider2, gatislider8, gatiSlider7, gatislider6, gatislider5, gatiSlider3];
 
 
-    const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
+    // const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
 
 
 
@@ -290,10 +265,10 @@ const Home: React.FC<props> = ({ successCondition }) => {
             </Helmet>
 
             {/* marginTop: "107.01px" */}
-            {showSlider ? <Box className="sliderBox" sx={{ marginTop: "100px!important", width: "95%", overflow: "hidden" }}>
+            {showSlider ? <div className="sliderBox" style={{ marginTop: "100px", width: "95%", overflow: "hidden" }}>
                 <Slider {...settings}>
                     {images.map((img, index) => (
-                        <Box key={index} sx={{ position: "relative", outline: "none" }}>
+                        <div key={index} style={{ position: "relative", outline: "none" }}>
                             <img
                                 src={img}
                                 alt={`slide-${index}`}
@@ -306,18 +281,18 @@ const Home: React.FC<props> = ({ successCondition }) => {
                                     objectFit: "cover",
                                 }}
                             />
-                        </Box>
+                        </div>
                     ))}
                 </Slider>
-            </Box> : ""}
+            </div> : ""}
 
 
-            <motion.div
+            {/* <motion.div
                 ref={ref1}
                 initial="hidden"
                 animate={inView1 ? "visible" : "hidden"}
                 className="p-6 bg-pink-200 rounded-lg shadow-lg"
-            >
+            > */}
                 <div className="service-tab">
                     <div className="tabs">
                         <button className={activeBtn === "Domestic Moving" ? "active" : ""}
@@ -388,7 +363,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         <ZohoForm successCondition={successCondition}></ZohoForm>
                     </div>
                 </div>
-            </motion.div>
+            {/* </motion.div> */}
 
             {/* <div className="republic-wrapper">
                 <img src={republicDayImg} className="man-with-flag-img right" />
