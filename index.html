@@ -69,6 +69,12 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
 
   <meta name="msvalidate.01" content="CB54E10F3756745E4631C5259D6FA902" />
+
+  <link rel="dns-prefetch" href="//www.googletagmanager.com">
+  <link rel="dns-prefetch" href="//connect.facebook.net">
+  <link rel="dns-prefetch" href="//bat.bing.com">
+
+  <link rel="preload" as="image" href="/metaImg2.png">
   <!-- Preconnect (fast handshake) -->
   <script type="application/ld+json">
 {
@@ -89,7 +95,8 @@
 }
 </script>
   <script>
-    window.addEventListener("load", () => {
+    function loadGoogle() {
+
       const s = document.createElement("script");
       s.src = "https://www.googletagmanager.com/gtag/js?id=G-LSHZ41C6TS";
       s.async = true;
@@ -100,19 +107,22 @@
       gtag("js", new Date());
       gtag("config", "G-LSHZ41C6TS");
       gtag("config", "AW-17573064597");
-    });
-  </script>
+    }
 
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'AW-17573064597/5JeFCIznu74bEJXfvrtB');
-  </script>
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(loadGoogle);
+    } else {
+      setTimeout(loadGoogle, 2000);
+    }
 
-  <!-- Meta Pixel Code -->
-  <script>
-    window.addEventListener("load", () => {
+
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag() { dataLayer.push(arguments); }
+    // gtag('js', new Date());
+    // gtag('config', 'AW-17573064597/5JeFCIznu74bEJXfvrtB');
+
+    //  Meta Pixel Code
+    function loadFB() {
       !function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
@@ -133,7 +143,44 @@
 
       fbq('init', '1803175313684092');
       fbq('track', 'PageView');
-    });
+    }
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(loadFB);
+    } else {
+      setTimeout(loadFB, 2000);
+    }
+
+
+    function loadBing() {
+      (function (w, d, t, r, u) {
+        var f, n, i;
+        w[u] = w[u] || [];
+        f = function () {
+          var o = { ti: "97223534", enableAutoSpaTracking: true };
+          o.q = w[u];
+          w[u] = new UET(o);
+          w[u].push("pageLoad");
+        };
+        n = d.createElement(t);
+        n.src = r;
+        n.async = 1;
+        n.onload = n.onreadystatechange = function () {
+          var s = this.readyState;
+          if (!s || s === "loaded" || s === "complete") {
+            f();
+            n.onload = n.onreadystatechange = null;
+          }
+        };
+        i = d.getElementsByTagName(t)[0];
+        i.parentNode.insertBefore(n, i);
+      })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    }
+
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(loadBing);
+    } else {
+      setTimeout(loadBing, 2000);
+    }
   </script>
 
 
@@ -141,34 +188,45 @@
   <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=1803175313684092&ev=PageView&noscript=1" /></noscript>
 
-  <script>(function (w, d, t, r, u) { var f, n, i; w[u] = w[u] || [], f = function () { var o = { ti: "97223534", enableAutoSpaTracking: true }; o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad") }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () { var s = this.readyState; s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null) }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i) })(window, document, "script", "//bat.bing.com/bat.js", "uetq");</script>
+  <!-- <script>(function (w, d, t, r, u) { var f, n, i; w[u] = w[u] || [], f = function () { var o = { ti: "97223534", enableAutoSpaTracking: true }; o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad") }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () { var s = this.readyState; s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null) }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i) })(window, document, "script", "//bat.bing.com/bat.js", "uetq");</script> -->
 
   <style>
-  body { margin: 0; font-family: Poppins, sans-serif; }
-  #static-hero { min-height: 240px; padding: 40px; }
-</style>
-<style>
-  #pre-hero {
-  
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    font-family: Poppins, sans-serif;
-    background: #fff;
-  }
-</style>
+    body {
+      margin: 0;
+      font-family: Poppins, sans-serif;
+    }
+
+    #static-hero {
+      min-height: 240px;
+      padding: 40px;
+    }
+  </style>
+  <style>
+    #pre-hero {
+
+      height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      font-family: Poppins, sans-serif;
+      background: #fff;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 
 
 <body>
   <div id="pre-hero">
-  <h1>Trusted Packers & Movers in India</h1>
-  <p>Safe • Affordable • Nationwide Relocation</p>
-</div>
+    <h1>Trusted Packers & Movers in India</h1>
+    <p>Safe • Affordable • Nationwide Relocation</p>
+  </div>
   <div id="root"></div>
   <!--Start of Tawk.to Script-->
   <!-- <script type="text/javascript">
@@ -183,7 +241,7 @@
     })();
   </script> -->
   <!--End of Tawk.to Script-->
-  <script type="module" src="/src/main.tsx" defer crossorigin></script>
+  <script type="module" src="/src/main.tsx" crossorigin></script>
 
 </body>
 
