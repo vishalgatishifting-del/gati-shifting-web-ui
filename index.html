@@ -241,8 +241,15 @@
     })();
   </script> -->
   <!--End of Tawk.to Script-->
-  <script type="module" src="/src/main.tsx" crossorigin></script>
-
+  <!-- <script type="module" src="/src/main.tsx" crossorigin></script> -->
+<script>
+  setTimeout(() => {
+  const s = document.createElement("script");
+  s.type = "module";
+  s.src = "/src/main.tsx";
+  document.body.appendChild(s);
+}, 3000);
+</script>
 </body>
 
 </html>
