@@ -1,11 +1,11 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom"
-// import Home from "../pages/Home"
-// import About from "../pages/About"
-// import Review from "../pages/Review"
+import Home from "../pages/Home"
+import About from "../pages/About"
+import Review from "../pages/Review"
 // import FAQ from "../pages/FAQ"
-// import Services from "../pages/Services"
-// import Contact from "../pages/Contact"
+import Services from "../pages/Services"
+import Contact from "../pages/Contact"
 // import WhoWeAre from "../pages/WhoWeAre"
 import ScrollToTop from "../components/ScrollToTop";
 // import WhyGati from "../pages/WhyGati"
@@ -38,19 +38,19 @@ import PopUp from "../components/PopUpDisplay.tsx"
 // import BikeStorage from "../pages/BikeStorage.tsx"
 // import BusinessPartner from "../pages/BusinessPartner.tsx"
 // import Layout from "../pages/Laoytout.tsx"
-// import TrackOrder from "../pages/TrackOrder.tsx"
+import TrackOrder from "../pages/TrackOrder.tsx"
 // // Admin
 // import AdminDashboard from "../pages/admin/AdminDashboard.tsx"
 // import AdminLogin from "../pages/admin/AdminLogin.tsx"
 import ProtectedRoute from "../pages/admin/ProtectedRoute.tsx"
 // import ItemSelection from "../pages/ItemSelection.tsx"
 
-const Home = React.lazy(() => import("../pages/Home"));
-const About = React.lazy(() => import("../pages/About"));
-const Review = React.lazy(() => import("../pages/Review"));
+// const Home = React.lazy(() => import("../pages/Home"));
+// const About = React.lazy(() => import("../pages/About"));
+// const Review = React.lazy(() => import("../pages/Review"));
 const FAQ = React.lazy(() => import("../pages/FAQ"));
-const Services = React.lazy(() => import("../pages/Services"));
-const Contact = React.lazy(() => import("../pages/Contact"));
+// const Services = React.lazy(() => import("../pages/Services"));
+// const Contact = React.lazy(() => import("../pages/Contact"));
 const WhoWeAre = React.lazy(() => import("../pages/WhoWeAre"));
 const WhyGati = React.lazy(() => import("../pages/WhyGati"));
 const OurTeam = React.lazy(() => import("../pages/OurTeam"));
@@ -78,7 +78,7 @@ const CarStorage = React.lazy(() => import("../pages/CarStorage.tsx"));
 const BikeStorage = React.lazy(() => import("../pages/BikeStorage.tsx"));
 const BusinessPartner = React.lazy(() => import("../pages/BusinessPartner.tsx"));
 const Layout = React.lazy(() => import("../pages/Laoytout.tsx"));
-const TrackOrder = React.lazy(() => import("../pages/TrackOrder.tsx"));
+// const TrackOrder = React.lazy(() => import("../pages/TrackOrder.tsx"));
 const NotFound = React.lazy(() => import("../pages/NotFound"));
 const AdminDashboard = React.lazy(() => import("../pages/admin/AdminDashboard.tsx"));
 const AdminLogin = React.lazy(() => import("../pages/admin/AdminLogin.tsx"));

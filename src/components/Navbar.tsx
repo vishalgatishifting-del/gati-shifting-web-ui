@@ -37,6 +37,20 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   const location = useLocation();
   const currentPath = location.pathname;
   const [openNav, setOpenNav] = useState(false);
@@ -86,7 +100,7 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
           </div>
         </div>
 
-        <nav>
+        <nav className={`${isScrolled ? "scrolled" : ""}`}>
           <div className="logo">
             <Link to="/">
               <img
