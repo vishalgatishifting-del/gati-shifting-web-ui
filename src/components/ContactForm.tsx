@@ -2,7 +2,7 @@ import "./ContactForm.scss";
 import React, { useState, useRef } from "react";
 import { sendEmail } from "../utils/emailHelper";
 
-import ReCAPTCHA from "react-google-recaptcha"
+// import ReCAPTCHA from "react-google-recaptcha"
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { getUserSource } from "../utils/sourceTracker";
 import { submitForm } from "../api/formAPI";
@@ -43,7 +43,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
     const [loading, setLoading] = useState(false);
 
 
-    const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+    // const [captchaValue, setCaptchaValue] = useState<string | null>(null);
     const recaptchaRef = useRef<any>(null);
 
 
@@ -56,10 +56,10 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
 
-        if (!captchaValue) {
-            alert("Please verify that you're not a robot!");
-            return;
-        }
+        // if (!captchaValue) {
+        //     alert("Please verify that you're not a robot!");
+        //     return;
+        // }
 
 
         setLoading(true);
@@ -94,7 +94,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
             setFormData({ Name: "", Email: "", Phone: "", From: "", To: "", Goods: "" });
 
             recaptchaRef.current?.reset();
-            setCaptchaValue(null);
+            // setCaptchaValue(null);
             closeControl?.();
         } catch (error) {
 
@@ -146,11 +146,11 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
                         {showDetail == true ? (<input type="text" placeholder="Goods Type (e.g. Furniture, Boxes)" name="Goods" onChange={handleChange} value={formData.Goods} required />) : ""}
 
 
-                        <ReCAPTCHA
+                        {/* <ReCAPTCHA
                             ref={recaptchaRef}
                             sitekey="6LfaOf4rAAAAAGZBXvb01FTAtYQoh0UXm4ChBDHV"
                             onChange={(value: string | null) => setCaptchaValue(value)}
-                        />
+                        /> */}
                         <button type="submit" disabled={loading}>
                             {loading ? "Submitting..." : "Get My Free Quote"}
                         </button>
