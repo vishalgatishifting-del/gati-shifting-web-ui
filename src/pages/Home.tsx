@@ -20,12 +20,12 @@ import gatislider8 from "../assets/sliderImg/gatiSlider8.webp"
 
 // Icons for shipping category
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
-import DirectionsCarFilledIcon from '@mui/icons-material/DirectionsCarFilled';
-import WarehouseIcon from '@mui/icons-material/Warehouse';
-import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
-import LanguageIcon from '@mui/icons-material/Language';
-import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
-import FactoryIcon from '@mui/icons-material/Factory';
+// import DirectionsCarFilledIcon from '@mui/icons-material/DirectionsCarFilled';
+// import WarehouseIcon from '@mui/icons-material/Warehouse';
+// import ConnectingAirportsIcon from '@mui/icons-material/ConnectingAirports';
+// import LanguageIcon from '@mui/icons-material/Language';
+// import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+// import FactoryIcon from '@mui/icons-material/Factory';
 
 
 import ZohoForm from "../components/ZohoForm"   // Form Component
@@ -104,10 +104,15 @@ import ship2 from "../assets/HomePage/ship2.webp"
 import airplaneImg from "../assets/HomePage/airplane.webp"
 import truck2 from "../assets/HomePage/truck2.webp"
 
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-// import vectorLogo from "../assets/logo/android-chrome-192x192-v2.png"
+import domesticPng from "../assets/HomePage/domestic.webp"
+import carPng from "../assets/HomePage/car.webp"
+import flightPng from "../assets/HomePage/flight.webp"
+import internationalPng from "../assets/HomePage/international.webp"
+// import officePng from "../assets/HomePage/office.png"
+// import commercialPng from "../assets/HomePage/commercial.png"
+import warehousePng from "../assets/homePage/warehouse.webp"
+import bikePng from "../assets/HomePage/bike.webp"
 
-// import republicDayImg from "../assets/Themes/RepublicDay/man-with-flag.webp"
 
 
 interface props {
@@ -121,11 +126,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
     }, []);
 
 
-    const images = [ gatiSlider2, gatislider8, gatiSlider7, gatislider6, gatislider5, gatiSlider3];
-
-
-    // const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: false, threshold: 0.1 });
-
+    const images = [gatiSlider2, gatislider8, gatiSlider7, gatislider6, gatislider5, gatiSlider3];
 
 
     const sliderImages = [
@@ -168,31 +169,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
         autoplaySpeed: 3000,
     };
 
-
-    // const settings2 = {
-    //     dots: false,
-    //     infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     variableWidth: true,
-    //     centerMode: true,
-    //     centerPadding: "0px",
-    //     autoplay: true,
-    //     autoplaySpeed: 2000,
-    //     pauseOnHover: false,
-    //     pauseOnFocus: false,
-    //     swipeToSlide: true
-    // };
-
-
-
-    const [text, setText] = useState("Domestic Moving");
-    const [from, setFrom] = useState("From");
-    const [to, setTo] = useState("To");
-    const [type, setType] = useState("Goods Type (e.g., Household, Furniture)");
     const [activeBtn, setActiveBtn] = useState("Domestic Moving");
-    console.log(from, to, type)
 
 
     const keywords = ["gati packers and movers",
@@ -211,27 +188,12 @@ const Home: React.FC<props> = ({ successCondition }) => {
         "cheap packers and movers",
         "packers and movers in delhi"]
 
-    // const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
-    // interface ImageItem {
-    //     img: string;
-    //     heading: string;
-    //     text: string;
-    // }
-
-    // const imagesForC: ImageItem[] = [
-    //     { img: car, heading: "Trusted Movers & Packers", text: "As a trusted movers and packers company, we ensure protective wrapping, proper anchoring, and smooth doorstep pickup and delivery through our dedicated team." },
-    //     { img: house, heading: "Expert Team", text: "Our movers and packers team works with precision, ensuring protective wrapping, proper anchoring, and smooth doorstep pickup and delivery." },
-    //     { img: bike, heading: "House Shifting", text: "Smooth and reliable house shifting with professional packing, loading, transport, and setup at your new home." },
-    //     { img: petSlider, heading: "Bike Transport", text: "Bike relocation with protective wrapping, proper anchoring, and doorstep pickup and delivery." },
-    //     { img: slide5, heading: "24/7 Available", text: "We provide reliable movers and packers services with 24/7 availability for your convenience." },
-    // ];
-
     const [showSlider, setShowSlider] = useState(false);
 
     useEffect(() => {
         setTimeout(() => setShowSlider(true), 1500);
     }, []);
+
 
 
     return (
@@ -265,7 +227,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
             </Helmet>
 
             {/* marginTop: "107.01px" */}
-            {showSlider ? <div className="sliderBox" style={{ marginTop: "100px", width: "95%", overflow: "hidden" }}>
+            {showSlider ? <div className="sliderBox" style={{ marginTop: "96px", width: "95%", overflow: "hidden" }}>
                 <Slider {...settings}>
                     {images.map((img, index) => (
                         <div key={index} style={{ position: "relative", outline: "none" }}>
@@ -287,114 +249,79 @@ const Home: React.FC<props> = ({ successCondition }) => {
             </div> : ""}
 
 
-            {/* <motion.div
-                ref={ref1}
-                initial="hidden"
-                animate={inView1 ? "visible" : "hidden"}
-                className="p-6 bg-pink-200 rounded-lg shadow-lg"
-            > */}
-                <div className="service-tab">
-                    <div className="tabs">
-                        <button className={activeBtn === "Domestic Moving" ? "active" : ""}
-                            onClick={() => {
-                                setActiveBtn("Domestic Moving");
-                                setText("Domestic Moving")
-                                setFrom("From")
-                                setTo("To")
-                                setType("Goods Type (e.g., Household, Furniture)")
-                            }}><LocalShippingIcon></LocalShippingIcon> <span>Domestic</span></button>
-                        <button className={activeBtn === "Car Moving" ? "active" : ""}
-                            onClick={() => {
-                                setActiveBtn("Car Moving");
-                                setText("Car Moving")
-                                setFrom("Pickup City")
-                                setTo("Drop City")
-                                setType("Car Type (e.g., SUV, Sedan)")
-                            }}><DirectionsCarFilledIcon></DirectionsCarFilledIcon><span>Car</span></button>
-                        <button className={activeBtn === "Storage" ? "active" : ""}
-                            onClick={() => {
-                                setActiveBtn("Storage");
-                                setText("Storage")
-                                setFrom("City of Storage")
-                                setTo("Duration of Other Details")
-                                setType("Storage Tyep (e.g., Household)")
 
-                            }}><WarehouseIcon></WarehouseIcon><span>Storage</span></button>
-                        <button className={activeBtn === "Flight Cargo" ? "active" : ""}
-                            onClick={() => {
-                                setActiveBtn("Flight Cargo");
-                                setText("Flight Cargo")
-                                setFrom("From Airport")
-                                setTo("To Airport")
-                                setType("Approximate Weight (kg)")
+            <div className="service-tab">
+                <div className="tabs">
+                    <button className={activeBtn === "Domestic Moving" ? "active" : ""}
+                        onClick={() => {
+                            setActiveBtn("Domestic Moving");
+                        }}><img src={domesticPng} /></button>
 
-                            }}><ConnectingAirportsIcon></ConnectingAirportsIcon><span>Flight</span></button>
-                        <button className={activeBtn === "International Moving" ? "active" : ""}
-                            onClick={() => {
-                                setActiveBtn("International Moving");
-                                setText("International Moving")
-                                setFrom("From Country")
-                                setTo("To Country")
-                                setType("Moving Type (e.g., Household, Furniture)")
-                            }}><LanguageIcon></LanguageIcon><span>International</span></button>
-                        <button className={activeBtn === "Office Shifting" ? "active" : ""}
+                    <button className={activeBtn === "Car Moving" ? "active" : ""}
+                        onClick={() => {
+                            setActiveBtn("Car Moving");
+                        }}><img src={carPng} /></button>
+                    <button className={activeBtn === "Bike Moving" ? "active" : ""}
+                        onClick={() => {
+                            setActiveBtn("Bike Moving")
+                        }} >
+                        <img src={bikePng} />
+                    </button>
+                    <button className={activeBtn === "Flight Cargo" ? "active" : ""}
+                        onClick={() => {
+                            setActiveBtn("Flight Cargo");
+
+                        }}><img src={flightPng} /></button>
+
+
+                    <button className={activeBtn === "International Moving" ? "active" : ""}
+                        onClick={() => {
+                            setActiveBtn("International Moving");
+                        }}><img src={internationalPng} /></button>
+
+                    <button className={activeBtn === "Storage" ? "active" : ""}
+                        onClick={() => {
+                            setActiveBtn("Storage");
+
+                        }}><img src={warehousePng} /></button>
+                    {/* <button className={activeBtn === "Office Shifting" ? "active" : ""}
                             onClick={() => {
                                 setActiveBtn("Office Shifting");
-                                setText("Office Shifting")
-                                setFrom("Current Office Location")
-                                setTo("New Office Location")
-                                setType("Approximate Office Size (e.g., 1000 sq ft)")
 
-                            }}><BusinessCenterIcon></BusinessCenterIcon><span>Office</span></button>
+                            }}><img src={officePng} /></button>
                         <button className={activeBtn === "Commercial Shifting" ? "active" : ""}
                             onClick={() => {
                                 setActiveBtn("Commercial Shifting");
-                                setText("Commercial Shifting")
-                                setFrom("From Location")
-                                setTo("To Location")
-                                setType("Business Type (e.g., Retail, Warehouse)")
-                            }}><FactoryIcon></FactoryIcon><span>Commercial</span></button>
-                    </div>
-
-                    <div className="form-area">
-
-                        <h3>Get a free <span>{text}</span> Quote</h3>
-                        <i>We’ll call you within 15 minutes</i>
-                        <ZohoForm successCondition={successCondition}></ZohoForm>
-                    </div>
-                </div>
-            {/* </motion.div> */}
-
-            {/* <div className="republic-wrapper">
-                <img src={republicDayImg} className="man-with-flag-img right" />
-                <img src={republicDayImg} className="man-with-flag-img left" />
-
-                <div className="chakra-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Ashoka_Chakra.svg" />
-                    <h1>Happy Republic Day</h1>
-                    <p>26 January • Jai Hind 🇮🇳</p>
+                            }}><img src={commercialPng} /></button> */}
                 </div>
 
-            </div> */}
+                <div className="form-area">
+
+                    <h3>Get a free <span>{activeBtn}</span> Quote</h3>
+                    <i>We’ll call you within 15 minutes</i>
+                    <ZohoForm successCondition={successCondition}></ZohoForm>
+                </div>
+            </div>
+
 
 
 
             <section id="badge-section">
                 <div className="container">
                     <div className="card">
-                        <img src={isoBadge} alt="Badge" loading="lazy"  />
+                        <img src={isoBadge} alt="Badge" loading="lazy" />
                         <h3>ISO 9001:2015</h3>
                         <p>Certificate No: 2713SAFV2021, for Courier Services, Packers & Movers, Transportation and Storage of Goods.</p>
                     </div>
 
 
                     <div className="card">
-                        <img src={googleRatingBadge} alt="Badge" loading="lazy"  />
+                        <img src={googleRatingBadge} alt="Badge" loading="lazy" />
                         <h3>5 Star Ratings</h3>
                         <p>We have been rated 5 stars by our valuable clients in multiple platforms like Google, Facebook etc.</p>
                     </div>
                     <div className="card">
-                        <img src={trustedBadge} alt="Badge" loading="lazy"  />
+                        <img src={trustedBadge} alt="Badge" loading="lazy" />
                         <h3>15+ Years of Trust</h3>
                         <p>Since 2007, we are at your service expanding all over the country to be one of the best Packers and Movers company.</p>
                     </div>
@@ -410,25 +337,25 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         {/* <img src={truckPng} alt="truck" /> */}
                         <Counter end={1032858} suffix="+" />
                         <p>Successfully Homes Relocated</p>
-                        <Link to="/contact-us"><NavigateNextIcon></NavigateNextIcon></Link>
+                        <Link to="/contact-us">&gt;</Link>
                     </div>
                     <div className="card">
                         {/* <img src={cityPng} alt="city png" /> */}
                         <Counter end={600} suffix="+" />
                         <p>Service Available in Multiple Cities</p>
-                        <Link to="/contact-us"><NavigateNextIcon></NavigateNextIcon></Link>
+                        <Link to="/contact-us">&gt;</Link>
                     </div>
                     <div className="card">
                         {/* <img src={verifiedBadgePng} alt="badge png" /> */}
                         <Counter end={3548} suffix="+" />
                         <p>Verified Professionals</p>
-                        <Link to="/contact-us"><NavigateNextIcon></NavigateNextIcon></Link>
+                        <Link to="/contact-us">&gt;</Link>
                     </div>
                     <div className="card">
                         {/* <img src={peoplesPng} alt="people png" /> */}
                         <Counter end={99} suffix="%" />
                         <p>Satisfied Customers</p>
-                        <Link to="/contact-us"><NavigateNextIcon></NavigateNextIcon></Link>
+                        <Link to="/contact-us">&gt;</Link>
                     </div>
                 </div>
             </section>
@@ -442,25 +369,25 @@ const Home: React.FC<props> = ({ successCondition }) => {
                 <div className="card-container">
                     <div className="card">
                         <a href={justDialCertificateImg} className="hidden" target="_blank">
-                            <img src={justDialCertificateImg} alt="certificate" loading="lazy"  />
+                            <img src={justDialCertificateImg} alt="certificate" loading="lazy" />
                             <h3>JustDial Certificate</h3>
                         </a>
                     </div>
                     <div className="card">
                         <a href={MSMECertificateImg} className="hidden" target="_blank">
-                            <img src={MSMECertificateImg} alt="certificate" loading="lazy"  />
+                            <img src={MSMECertificateImg} alt="certificate" loading="lazy" />
                             <h3>MSME Ceritificate</h3>
                         </a>
                     </div>
                     <div className="card">
                         <a href={incorporationCertificate} className="hidden" target="_blank">
-                            <img src={incorporationCertificate} alt="certificate" loading="lazy"  />
+                            <img src={incorporationCertificate} alt="certificate" loading="lazy" />
                             <h3>Incorporation Certificate</h3>
                         </a>
                     </div>
                     <div className="card">
                         <a href={GSTIncorporation} className="hidden" target="_blank">
-                            <img src={GSTIncorporation} alt="certificate" loading="lazy"  />
+                            <img src={GSTIncorporation} alt="certificate" loading="lazy" />
                             <h3>GST Certificate</h3>
                         </a>
                     </div>
@@ -468,7 +395,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
                     <div className="card">
                         <a href={ISOcertificate} className="hidden" target="_blank">
-                            <img src={ISOcertificate} alt="certificate" loading="lazy"  />
+                            <img src={ISOcertificate} alt="certificate" loading="lazy" />
                             <h3>ISO Certificate</h3>
                         </a>
                     </div>
@@ -476,7 +403,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
                     <div className="card">
                         <a href={gatiCertificate} className="hidden" target="_blank">
-                            <img src={gatiCertificate} alt="certificate" loading="lazy"  />
+                            <img src={gatiCertificate} alt="certificate" loading="lazy" />
                             <h3>Achievement Certificate</h3>
                         </a>
                     </div>
@@ -485,25 +412,25 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
                     <div className="card">
                         <a href={justDialCertificateImg} className="hidden" target="_blank">
-                            <img src={justDialCertificateImg} alt="certificate" loading="lazy"  />
+                            <img src={justDialCertificateImg} alt="certificate" loading="lazy" />
                             <h3>JustDial Certificate</h3>
                         </a>
                     </div>
                     <div className="card">
                         <a href={MSMECertificateImg} className="hidden" target="_blank">
-                            <img src={MSMECertificateImg} alt="certificate" loading="lazy"  />
+                            <img src={MSMECertificateImg} alt="certificate" loading="lazy" />
                             <h3>MSME Ceritificate</h3>
                         </a>
                     </div>
                     <div className="card">
                         <a href={incorporationCertificate} className="hidden" target="_blank">
-                            <img src={incorporationCertificate} alt="certificate" loading="lazy"  />
+                            <img src={incorporationCertificate} alt="certificate" loading="lazy" />
                             <h3>Incorporation Certificate</h3>
                         </a>
                     </div>
                     <div className="card">
                         <a href={GSTIncorporation} className="hidden" target="_blank">
-                            <img src={GSTIncorporation} alt="certificate" loading="lazy"  />
+                            <img src={GSTIncorporation} alt="certificate" loading="lazy" />
                             <h3>GST Certificate</h3>
                         </a>
                     </div>
@@ -511,7 +438,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
                     <div className="card">
                         <a href={ISOcertificate} className="hidden" target="_blank">
-                            <img src={ISOcertificate} alt="certificate" loading="lazy"  />
+                            <img src={ISOcertificate} alt="certificate" loading="lazy" />
                             <h3>ISO Certificate</h3>
                         </a>
                     </div>
@@ -519,7 +446,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
                     <div className="card">
                         <a href={gatiCertificate} className="hidden" target="_blank">
-                            <img src={gatiCertificate} alt="certificate" loading="lazy"  />
+                            <img src={gatiCertificate} alt="certificate" loading="lazy" />
                             <h3>Achievement Certificate</h3>
                         </a>
                     </div>
@@ -537,63 +464,6 @@ const Home: React.FC<props> = ({ successCondition }) => {
                     </p>
                 </div>
             </section>
-
-
-            {/* <section id="certificate-section">
-                <h1 className="trustLine">India’s Trusted Packers & Movers – 24x7 Support</h1>
-                <div className="container">
-                    <div className="card">
-                        <a href={justDialCertificateImg} className="hidden" target="_blank">
-                            Click To View
-                        </a>
-                        <img src={justDialCertificateImg} alt="certificate" />
-                        <h3>JustDial Certificate</h3>
-                    </div>
-                    <div className="card">
-                        <a href={MSMECertificateImg} className="hidden" target="_blank">
-                            Click To View
-                        </a>
-                        <img src={MSMECertificateImg} alt="certificate" />
-                        <h3>MSME Ceritificate</h3>
-                    </div>
-                    <div className="card">
-                        <a href={incorporationCertificate} className="hidden" target="_blank">
-                            Click To View
-                        </a>
-                        <img src={incorporationCertificate} alt="certificate" />
-                        <h3>Incorporation Certificate</h3>
-                    </div>
-                    <div className="card">
-                        <a href={GSTIncorporation} className="hidden" target="_blank">
-                            Click To View
-                        </a>
-                        <img src={GSTIncorporation} alt="certificate" />
-                        <h3>GST Certificate</h3>
-                    </div>
-
-
-                    <div className="card">
-                        <a href={ISOcertificate} className="hidden" target="_blank">
-                            Click To View
-                        </a>
-                        <img src={ISOcertificate} alt="certificate" />
-                        <h3>ISO Certificate</h3>
-                    </div>
-
-
-                    <div className="card">
-                        <a href={gatiCertificate} className="hidden" target="_blank">
-                            Click To View
-                        </a>
-                        <img src={gatiCertificate} alt="certificate" />
-                        <h3>Achievement Certificate</h3>
-                    </div>
-                </div>
-            </section> */}
-
-
-
-
 
             <ProductImageSlider images={sliderImages}></ProductImageSlider>
 
@@ -715,7 +585,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
                     <div className="rating-card">
 
-                        <img src={googleRatingImg} alt="Google Rating" loading="lazy"  />
+                        <img src={googleRatingImg} alt="Google Rating" loading="lazy" />
 
                         <div className="rating-info">
 
@@ -739,75 +609,36 @@ const Home: React.FC<props> = ({ successCondition }) => {
             <TrustUsSection />
 
 
-            {/* <section id="about-company">
-                <div className="container">
-                    <div className="img-bx">
-                        <img src={stepsImg} alt="Gati relocation services including packing and unpacking, loading and unloading, secure transportation with GPS vehicles, car and bike relocation, transit insurance, storage, warehousing, and all-in-one transport solutions" title="Steps" loading="lazy" />
-                    </div>
-                    <div className="detail">
-                        <h2>About Us | Comprehensive Moving Solutions by <span className="primary-color">Gati Shifting Packers</span> in India</h2>
-                        <p>At Gati Shifting Packers, we specialize in delivering seamless and stress-free relocation experiences across India. With years of expertise and a client-first approach, we offer customized moving solutions that cater to individual, commercial, and industrial relocation needs.</p>
-                        <ul>
-                            <li>
-                                <b>Packing & Unpacking:</b> Professional-grade packing using high-quality materials to ensure every item is protected. Unpacking is done with equal care at your new destination.
-                            </li>
-                            <li>
-                                <b>Loading & Unloading:</b> Skilled handlers carefully load and unload your belongings to prevent damage and ensure a smooth relocation experience.
-                            </li>
-                            <li>
-                                <b>Secure Transportation:</b> A fleet of GPS-enabled, well-maintained vehicles is used to safely transport your belongings across India.
-                            </li>
-                            <li>
-                                <b>Car Relocation Services:</b> Reliable and hassle-free car transport solutions by Gati.
-                            </li>
-                            <li>
-                                <b>Transit Insurance:</b> Comprehensive insurance coverage to safeguard your goods during transit.
-                            </li>
-                            <li>
-                                <b>Bike Relocation Services:</b> On-time bike transport services using dedicated carriers.
-                            </li>
-                            <li>
-                                <b>Storage & Warehousing:</b> Clean and secure storage for short or long-term needs.
-                            </li>
-                            <li>
-                                <b>All-in-One Transport Solutions:</b> End-to-end logistics and moving services by Gati.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section> */}
-
-
             <section id="about-company-cards">
                 <div className="container">
                     <div className="card">
-                        <img src={truckImg} alt="truck png" loading="lazy"  />
+                        <img src={truckImg} alt="truck png" loading="lazy" />
                         <h2>PACKING AND MOVING</h2>
                         <p>We offer a range of packing and moving services from packing your entire household to packing selected items only or fragile item and any other furniture.</p>
                     </div>
                     <div className="card">
-                        <img src={carLoadingImg} alt="car png" loading="lazy"  />
+                        <img src={carLoadingImg} alt="car png" loading="lazy" />
                         <h2>CAR TRANSPORT SERVICES</h2>
                         <p>Movers Aryavarta Association, are one of India's finest car carrier service providers. Our car transport services have been satisfactorily used by clients from corporates.</p>
                     </div>
                     <div className="card">
-                        <img src={shipImg} alt="ship png" loading="lazy"  />
+                        <img src={shipImg} alt="ship png" loading="lazy" />
                         <h2>CORP. GOODS RELOCATION</h2>
                         <p>Reckoned across the country for our efficient and reliable cargo moving and packing services, we undertake corporate Goods Relocation Service as per the requirements.</p>
                     </div>
                     <div className="card">
-                        <img src={ship2} alt="ship png" loading="lazy"  />
+                        <img src={ship2} alt="ship png" loading="lazy" />
                         <h2>FREIGHT FORWARDING</h2>
                         <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...</p>
                     </div>
                     <div className="card">
-                        <img src={airplaneImg} alt="airplane png" loading="lazy"  />
+                        <img src={airplaneImg} alt="airplane png" loading="lazy" />
                         <h2>INTERNATIONAL LOGISTICS</h2>
                         <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...
                             (neeche thoda cut ho gaya hai image me)</p>
                     </div>
                     <div className="card">
-                        <img src={truck2} alt="truck png" loading="lazy"  />
+                        <img src={truck2} alt="truck png" loading="lazy" />
                         <h2>LOADING & UNLOADING</h2>
                         <p>A crucial part of every relocation process, the loading and unloading is executed by highly skilled teams. The goods are loaded and unloaded with the use of pulleys,lifters etc...</p>
                     </div>
@@ -817,189 +648,6 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
             <OfficeLocation />
             <FAQList></FAQList>
-
-            {/* <section id="customer-review-list">
-                <h1>What Our Customers Say</h1>
-                <p className="para">Genuine feedback from people who’ve moved homes, offices & even countries with us.</p>
-
-                <div className="container">
-
-                    <Slider {...settings2}>
-                        <Box key="1" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Smooth Domestic Move</h4>
-                                    <p>"Gati made our move from Delhi to Bangalore seamless."</p>
-                                    <div className="rating">
-                                        ★★★★☆
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "orange", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        A
-                                    </Avatar>
-                                    Arjun S.
-                                </div>
-                            </div>
-                        </Box>
-                        <Box key="2" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>International Relocation</h4>
-                                    <p>"Moved from Mumbai to Dubai. Excellent support."</p>
-                                    <div className="rating">
-                                        ★★★★★
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "#a6a600", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        P
-                                    </Avatar>
-                                    Pooja M.
-                                </div>
-                            </div>
-                        </Box>
-                        <Box key="3" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Packing Quality</h4>
-                                    <p>"Boxes were well labeled and nothing broke."</p>
-                                    <div className="rating">
-                                        ★★★★☆
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "red", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        R
-                                    </Avatar>
-                                    Ravi K.
-                                </div>
-                            </div>
-                        </Box>
-                        <Box key="4" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Fast and Reliable</h4>
-                                    <p>"They delivered from Pune to Hyderabad a day early."</p>
-                                    <div className="rating">
-                                        ★★★⯨☆
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "Gray", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        S
-                                    </Avatar>
-                                    Simran T.
-                                </div>
-                            </div>
-                        </Box>
-                        <Box key="5" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Bike Transport</h4>
-                                    <p>"Bike arrived in Chennai scratch-free. Happy!"</p>
-                                    <div className="rating">
-                                        ★★★★★
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "orange", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        N
-                                    </Avatar>
-                                    Neeraj B.
-                                </div>
-                            </div>
-                        </Box>
-                        <Box key="6" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Office Shift</h4>
-                                    <p>"Relocated office to Gurgaon over the weekend."</p>
-                                    <div className="rating">
-                                        ★★★★⯨
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "#b80046", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        M
-                                    </Avatar>
-                                    Megha R.
-                                </div>
-                            </div>
-                        </Box>
-
-
-                        <Box key="6" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Furniture Shifting</h4>
-                                    <p>"No damage, no stress. Superb service."</p>
-                                    <div className="rating">
-                                        ★★★★★
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "#ea00ff", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        K
-                                    </Avatar>
-                                    Kavita D.
-                                </div>
-                            </div>
-                        </Box>
-                        <Box key="6" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Pet Relocation</h4>
-                                    <p>"Handled my dog with care during the move. Thankful!"</p>
-                                    <div className="rating">
-                                        ★★★★☆
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "#00fff5", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        S
-                                    </Avatar>
-                                    Suresh P.
-                                </div>
-                            </div>
-                        </Box>
-                    </Slider>
-
-
-                </div>
-            </section> */}
 
             <section id="keywords-section">
                 <h1>People also search for these Queries</h1>
