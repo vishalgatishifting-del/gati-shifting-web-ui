@@ -33,9 +33,13 @@ const ProductImageSlider: React.FC<ProductSliderProps> = ({ images = [] }) => {
                 }}
             >
                 {images.map((img, index) => (
-                    <SwiperSlide key={index}>
+                    <SwiperSlide key={index} >
                         <div className="image-box">
-                            <img src={img} alt="" loading="lazy"  />
+                            <img
+                                src={img}
+                                alt="packing"
+                                loading="lazy"
+                            />
                         </div>
                     </SwiperSlide>
                 ))}

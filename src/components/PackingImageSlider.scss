@@ -6,6 +6,12 @@
   height: 320px!important;
   border-radius: 12px;
   overflow: hidden;
+
+  display: flex;
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
 }
 
 .image-box img {

@@ -843,7 +843,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
             <OfficeLocation />
             <FAQList></FAQList>
 
-            <section id="customer-review-list">
+            {/* <section id="customer-review-list">
                 <h1>What Our Customers Say</h1>
                 <p className="para">Genuine feedback from people who’ve moved homes, offices & even countries with us.</p>
 
@@ -857,7 +857,6 @@ const Home: React.FC<props> = ({ successCondition }) => {
                                     <p>"Gati made our move from Delhi to Bangalore seamless."</p>
                                     <div className="rating">
                                         ★★★★☆
-                                        {/* <span>4.5</span> */}
                                     </div>
                                 </div>
                                 <div className="customer-name">
@@ -879,7 +878,6 @@ const Home: React.FC<props> = ({ successCondition }) => {
                                     <p>"Moved from Mumbai to Dubai. Excellent support."</p>
                                     <div className="rating">
                                         ★★★★★
-                                        {/* <span>4.5</span> */}
                                     </div>
                                 </div>
                                 <div className="customer-name">
@@ -901,7 +899,6 @@ const Home: React.FC<props> = ({ successCondition }) => {
                                     <p>"Boxes were well labeled and nothing broke."</p>
                                     <div className="rating">
                                         ★★★★☆
-                                        {/* <span>4.5</span> */}
                                     </div>
                                 </div>
                                 <div className="customer-name">
@@ -923,7 +920,6 @@ const Home: React.FC<props> = ({ successCondition }) => {
                                     <p>"They delivered from Pune to Hyderabad a day early."</p>
                                     <div className="rating">
                                         ★★★⯨☆
-                                        {/* <span>4.5</span> */}
                                     </div>
                                 </div>
                                 <div className="customer-name">
@@ -945,7 +941,6 @@ const Home: React.FC<props> = ({ successCondition }) => {
                                     <p>"Bike arrived in Chennai scratch-free. Happy!"</p>
                                     <div className="rating">
                                         ★★★★★
-                                        {/* <span>4.5</span> */}
                                     </div>
                                 </div>
                                 <div className="customer-name">
@@ -967,7 +962,6 @@ const Home: React.FC<props> = ({ successCondition }) => {
                                     <p>"Relocated office to Gurgaon over the weekend."</p>
                                     <div className="rating">
                                         ★★★★⯨
-                                        {/* <span>4.5</span> */}
                                     </div>
                                 </div>
                                 <div className="customer-name">
@@ -991,7 +985,6 @@ const Home: React.FC<props> = ({ successCondition }) => {
                                     <p>"No damage, no stress. Superb service."</p>
                                     <div className="rating">
                                         ★★★★★
-                                        {/* <span>4.5</span> */}
                                     </div>
                                 </div>
                                 <div className="customer-name">
@@ -1013,7 +1006,6 @@ const Home: React.FC<props> = ({ successCondition }) => {
                                     <p>"Handled my dog with care during the move. Thankful!"</p>
                                     <div className="rating">
                                         ★★★★☆
-                                        {/* <span>4.5</span> */}
                                     </div>
                                 </div>
                                 <div className="customer-name">
@@ -1032,7 +1024,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
 
                 </div>
-            </section>
+            </section> */}
 
             <section id="keywords-section">
                 <h1>People also search for these Queries</h1>

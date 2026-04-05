@@ -380,7 +380,7 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                 </div>
             </section>
 
-            <div className="image-box">
+            <div className="image-box-official">
                 {imagesForC.map((data, index) => (
                     <div
                         key={index}
