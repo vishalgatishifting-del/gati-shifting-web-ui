@@ -128,7 +128,7 @@ const Services = ({ successCondition }: props) => {
             <section id="services-section">
                 {services.map((element)=>(
                     <div className="card">
-                        <img src={element.Img} />
+                        <img src={element.Img} loading="lazy"  />
                         <span>{element.title}</span>
                     </div>
                 ))}
@@ -143,7 +143,7 @@ const Services = ({ successCondition }: props) => {
                     >
                         <h2>{data.heading}</h2>
                         <p>{data.text}</p>
-                        <img src={data.img} alt={`img-${index}`} />
+                        <img src={data.img} alt={`img-${index}`} loading="lazy"  />
                     </div>
                 ))}
             </div>

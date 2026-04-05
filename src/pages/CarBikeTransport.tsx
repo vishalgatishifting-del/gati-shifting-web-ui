@@ -127,8 +127,8 @@ const CarBikeTransport = () => {
                         </p>
 
 
-                        <img src={bikePricingImg} />
-                        <img src={carPricingImg} />
+                        <img src={bikePricingImg} loading="lazy"  />
+                        <img src={carPricingImg} loading="lazy"  />
                     </div>
                     <div className="content why-choose">
                         <h2>Why Choose Professional Vehicle Transport Services in India?</h2>

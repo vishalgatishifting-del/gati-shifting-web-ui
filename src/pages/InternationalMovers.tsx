@@ -69,7 +69,7 @@ const InternationalMovers = () => {
             </Helmet>
             
             <section id="banner-image">
-                <img src={InternationalBannerImg} alt="International Banner Img" />
+                <img src={InternationalBannerImg} loading="lazy"  alt="International Banner Img" />
             </section>
             <section id="pet-relocation-sec">
                 <div className="container">
@@ -140,7 +140,7 @@ const InternationalMovers = () => {
                         </p>
 
 
-                        <img src={InternationalMovesImg} />
+                        <img src={InternationalMovesImg} loading="lazy"  />
                     </div>
                     <div className="content why-choose">
                         <h2>Why Choose Gati Shifting Packers for International Moves?</h2>

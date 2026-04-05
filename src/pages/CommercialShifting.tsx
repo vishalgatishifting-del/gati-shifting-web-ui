@@ -137,7 +137,7 @@ const CommercialShifting = () => {
                         </p>
 
 
-                        <img src={commercialShiftingImg} />
+                        <img src={commercialShiftingImg} loading="lazy"  />
                     </div>
                     <div className="content why-choose">
                         <h2>Why Choose Professional commercial vehicle transport services in India?</h2>

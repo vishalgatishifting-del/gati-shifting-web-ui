@@ -13,11 +13,11 @@ const RequestRow: React.FC<Props> = ({ data, onAction }) => {
       <td>{data.phone}</td>
 
       <td className="images">
-        <img src={data.images.aadhaar} alt="Aadhaar" />
-        <img src={data.images.gst} alt="GST" />
-        <img src={data.images.pan} alt="PAN" />
-        <img src={data.images.shop} alt="Shop" />
-        <img src={data.images.other} alt="Other" />
+        <img src={data.images.aadhaar} alt="Aadhaar" loading="lazy"  />
+        <img src={data.images.gst} alt="GST" loading="lazy"  />
+        <img src={data.images.pan} alt="PAN" loading="lazy"  />
+        <img src={data.images.shop} alt="Shop" loading="lazy"  />
+        <img src={data.images.other} alt="Other" loading="lazy"  />
       </td>
 
       <td>

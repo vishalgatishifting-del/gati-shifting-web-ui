@@ -131,7 +131,7 @@ const OfficeRelocation = () => {
                         </p>
 
 
-                        <img src={officeRelocationImg} />
+                        <img src={officeRelocationImg} loading="lazy"  />
                     </div>
                     <div className="content why-choose">
                         <h2>Why Choose Professional Office Shifting Services in India?</h2>

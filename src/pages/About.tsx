@@ -456,7 +456,7 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                         {images.map((item, index) => (
                             <Box key={index} sx={{ position: "relative", outline: "none" }}>
                                 <div className="card-container">
-                                    <div className="img-bx"><img src={item.src} alt={`Slide ${index + 1}`} className="state-img" /></div>
+                                    <div className="img-bx"><img src={item.src} alt={`Slide ${index + 1}`} className="state-img" loading="lazy"  /></div>
                                     <span>{item.title}</span>
                                 </div>
                             </Box>
@@ -471,7 +471,7 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                         {images2.map((item, index) => (
                             <Box key={index} sx={{ position: "relative", outline: "none" }}>
                                 <div className="card-container">
-                                    <div className="img-bx"><img src={item.src} alt={`Slide ${index + 1}`} className="state-img" /></div>
+                                    <div className="img-bx"><img src={item.src} loading="lazy"  alt={`Slide ${index + 1}`} className="state-img" /></div>
                                     <span>{item.title}</span>
                                 </div>
                             </Box>

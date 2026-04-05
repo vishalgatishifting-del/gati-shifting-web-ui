@@ -29,13 +29,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <>
             <div className="action-button">
                 <a href="https://wa.me/917065994000" target="_blank" rel="noopener noreferrer">
-                    <img src={whatsappIcon} alt="WhatsApp" />
+                    <img src={whatsappIcon} alt="WhatsApp" loading="lazy"  />
                 </a>
                 <a href="tel:+919422799477">
-                    <img src={callIcon} alt="Call" />
+                    <img src={callIcon} alt="Call" loading="lazy"  />
                 </a>
                 <a href="mailto:gatishiftingpackers@gmail.com">
-                    <img src={gmailIcon} alt="Email" />
+                    <img src={gmailIcon} alt="Email" loading="lazy"  />
                 </a>
             </div>
             <div className="social-button">

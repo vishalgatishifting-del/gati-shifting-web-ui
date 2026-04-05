@@ -80,7 +80,7 @@ const SafetyStandard = () => {
                     </div>
                     <div className="content types">
 
-                        <img src={safetystandardImg} alt="our commitment to safety" title="standardsafetyimage" loading="lazy" />
+                        <img src={safetystandardImg}  alt="our commitment to safety" title="standardsafetyimage" loading="lazy" />
                     </div>
                 </div>
             </section>

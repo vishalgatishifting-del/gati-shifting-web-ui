@@ -138,7 +138,7 @@ const HomeShifting = () => {
                         <h2>Affordable House Shifting Charges in India</h2>
                         <p>At Gati Shifting Packers, we aim to deliver quality relocation at low cost. Our transparent pricing ensures you get value for every rupee spent — without any hidden charges. Whether it’s local shifting, intercity relocation, or office moving, our team provides professional support at every stage to make your move stress-free and affordable.</p>
 
-                        <img src={HouseShiftingPriceImg} />
+                        <img src={HouseShiftingPriceImg} loading="lazy"  />
 
                         <h3>Why Choose Professional House Shifting Services in India?</h3>
                         <ol>

@@ -28,7 +28,7 @@ const OurTeam = () => {
                                 <p>Our team consists of highly trained professionals with expertise in both domestic and global shifting. Whether you’re moving across India—Chennai, Kolkata, Pune, Ahmedabad, Surat, Jaipur, Lucknow, Nagpur, Indore, Patna, Chandigarh, Noida, Faridabad, and more—or relocating to international destinations like the USA, Canada, Australia, United Kingdom (UK), Germany, France, Singapore, UAE, Qatar, or Saudi Arabia, our specialists ensure your belongings are transported with utmost care.</p>
                             </div>
                             <div className="imgBx">
-                                <img src={OurTeamImg} />
+                                <img src={OurTeamImg} loading="lazy"  />
                             </div>
                         </div>
                         <div className="card second">
@@ -43,7 +43,7 @@ const OurTeam = () => {
                                 </ul>
                             </div>
                             <div className="imgBx">
-                                <img src={OurTeamImg2} />
+                                <img src={OurTeamImg2} loading="lazy"  />
                             </div>
 
                         </div>

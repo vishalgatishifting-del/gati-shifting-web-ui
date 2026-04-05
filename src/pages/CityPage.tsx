@@ -130,7 +130,7 @@ const CityPage: React.FC<PageProps> = ({
 
                 </div>
 
-                <img src={img} alt={city} />
+                <img src={img} alt={city} loading="lazy"  />
               </div>
 
               <p>
@@ -294,7 +294,7 @@ const CityPage: React.FC<PageProps> = ({
 
                 </div>
 
-                <img src={img} alt={city} />
+                <img src={img} alt={city} loading="lazy"  />
 
               </div>
 

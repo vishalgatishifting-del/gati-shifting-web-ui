@@ -406,19 +406,19 @@ const Home: React.FC<props> = ({ successCondition }) => {
             <section id="badge-section">
                 <div className="container">
                     <div className="card">
-                        <img src={isoBadge} alt="Badge" />
+                        <img src={isoBadge} alt="Badge" loading="lazy"  />
                         <h3>ISO 9001:2015</h3>
                         <p>Certificate No: 2713SAFV2021, for Courier Services, Packers & Movers, Transportation and Storage of Goods.</p>
                     </div>
 
 
                     <div className="card">
-                        <img src={googleRatingBadge} alt="Badge" />
+                        <img src={googleRatingBadge} alt="Badge" loading="lazy"  />
                         <h3>5 Star Ratings</h3>
                         <p>We have been rated 5 stars by our valuable clients in multiple platforms like Google, Facebook etc.</p>
                     </div>
                     <div className="card">
-                        <img src={trustedBadge} alt="Badge" />
+                        <img src={trustedBadge} alt="Badge" loading="lazy"  />
                         <h3>15+ Years of Trust</h3>
                         <p>Since 2007, we are at your service expanding all over the country to be one of the best Packers and Movers company.</p>
                     </div>
@@ -466,25 +466,25 @@ const Home: React.FC<props> = ({ successCondition }) => {
                 <div className="card-container">
                     <div className="card">
                         <a href={justDialCertificateImg} className="hidden" target="_blank">
-                            <img src={justDialCertificateImg} alt="certificate" />
+                            <img src={justDialCertificateImg} alt="certificate" loading="lazy"  />
                             <h3>JustDial Certificate</h3>
                         </a>
                     </div>
                     <div className="card">
                         <a href={MSMECertificateImg} className="hidden" target="_blank">
-                            <img src={MSMECertificateImg} alt="certificate" />
+                            <img src={MSMECertificateImg} alt="certificate" loading="lazy"  />
                             <h3>MSME Ceritificate</h3>
                         </a>
                     </div>
                     <div className="card">
                         <a href={incorporationCertificate} className="hidden" target="_blank">
-                            <img src={incorporationCertificate} alt="certificate" />
+                            <img src={incorporationCertificate} alt="certificate" loading="lazy"  />
                             <h3>Incorporation Certificate</h3>
                         </a>
                     </div>
                     <div className="card">
                         <a href={GSTIncorporation} className="hidden" target="_blank">
-                            <img src={GSTIncorporation} alt="certificate" />
+                            <img src={GSTIncorporation} alt="certificate" loading="lazy"  />
                             <h3>GST Certificate</h3>
                         </a>
                     </div>
@@ -492,7 +492,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
                     <div className="card">
                         <a href={ISOcertificate} className="hidden" target="_blank">
-                            <img src={ISOcertificate} alt="certificate" />
+                            <img src={ISOcertificate} alt="certificate" loading="lazy"  />
                             <h3>ISO Certificate</h3>
                         </a>
                     </div>
@@ -500,7 +500,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
                     <div className="card">
                         <a href={gatiCertificate} className="hidden" target="_blank">
-                            <img src={gatiCertificate} alt="certificate" />
+                            <img src={gatiCertificate} alt="certificate" loading="lazy"  />
                             <h3>Achievement Certificate</h3>
                         </a>
                     </div>
@@ -509,25 +509,25 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
                     <div className="card">
                         <a href={justDialCertificateImg} className="hidden" target="_blank">
-                            <img src={justDialCertificateImg} alt="certificate" />
+                            <img src={justDialCertificateImg} alt="certificate" loading="lazy"  />
                             <h3>JustDial Certificate</h3>
                         </a>
                     </div>
                     <div className="card">
                         <a href={MSMECertificateImg} className="hidden" target="_blank">
-                            <img src={MSMECertificateImg} alt="certificate" />
+                            <img src={MSMECertificateImg} alt="certificate" loading="lazy"  />
                             <h3>MSME Ceritificate</h3>
                         </a>
                     </div>
                     <div className="card">
                         <a href={incorporationCertificate} className="hidden" target="_blank">
-                            <img src={incorporationCertificate} alt="certificate" />
+                            <img src={incorporationCertificate} alt="certificate" loading="lazy"  />
                             <h3>Incorporation Certificate</h3>
                         </a>
                     </div>
                     <div className="card">
                         <a href={GSTIncorporation} className="hidden" target="_blank">
-                            <img src={GSTIncorporation} alt="certificate" />
+                            <img src={GSTIncorporation} alt="certificate" loading="lazy"  />
                             <h3>GST Certificate</h3>
                         </a>
                     </div>
@@ -535,7 +535,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
                     <div className="card">
                         <a href={ISOcertificate} className="hidden" target="_blank">
-                            <img src={ISOcertificate} alt="certificate" />
+                            <img src={ISOcertificate} alt="certificate" loading="lazy"  />
                             <h3>ISO Certificate</h3>
                         </a>
                     </div>
@@ -543,7 +543,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
                     <div className="card">
                         <a href={gatiCertificate} className="hidden" target="_blank">
-                            <img src={gatiCertificate} alt="certificate" />
+                            <img src={gatiCertificate} alt="certificate" loading="lazy"  />
                             <h3>Achievement Certificate</h3>
                         </a>
                     </div>
@@ -712,7 +712,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                     >
                         <h2>{data.heading}</h2>
                         <p>{data.text}</p>
-                        <img src={data.img} alt={`img-${index}`} />
+                        <img src={data.img} alt={`img-${index}`} loading="lazy"  />
                     </div>
                 ))}
             </div>
@@ -739,7 +739,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
                     <div className="rating-card">
 
-                        <img src={googleRatingImg} alt="Google Rating" />
+                        <img src={googleRatingImg} alt="Google Rating" loading="lazy"  />
 
                         <div className="rating-info">
 
@@ -805,33 +805,33 @@ const Home: React.FC<props> = ({ successCondition }) => {
             <section id="about-company-cards">
                 <div className="container">
                     <div className="card">
-                        <img src={truckImg} alt="truck png" />
+                        <img src={truckImg} alt="truck png" loading="lazy"  />
                         <h2>PACKING AND MOVING</h2>
                         <p>We offer a range of packing and moving services from packing your entire household to packing selected items only or fragile item and any other furniture.</p>
                     </div>
                     <div className="card">
-                        <img src={carLoadingImg} alt="car png" />
+                        <img src={carLoadingImg} alt="car png" loading="lazy"  />
                         <h2>CAR TRANSPORT SERVICES</h2>
                         <p>Movers Aryavarta Association, are one of India's finest car carrier service providers. Our car transport services have been satisfactorily used by clients from corporates.</p>
                     </div>
                     <div className="card">
-                        <img src={shipImg} alt="ship png" />
+                        <img src={shipImg} alt="ship png" loading="lazy"  />
                         <h2>CORP. GOODS RELOCATION</h2>
                         <p>Reckoned across the country for our efficient and reliable cargo moving and packing services, we undertake corporate Goods Relocation Service as per the requirements.</p>
                     </div>
                     <div className="card">
-                        <img src={ship2} alt="ship png" />
+                        <img src={ship2} alt="ship png" loading="lazy"  />
                         <h2>FREIGHT FORWARDING</h2>
                         <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...</p>
                     </div>
                     <div className="card">
-                        <img src={airplaneImg} alt="airplane png" />
+                        <img src={airplaneImg} alt="airplane png" loading="lazy"  />
                         <h2>INTERNATIONAL LOGISTICS</h2>
                         <p>We offer our customers the best Freight Forwarding services, which are provided by means of air as well as sea.With the help of an efficient team, we have emerged...
                             (neeche thoda cut ho gaya hai image me)</p>
                     </div>
                     <div className="card">
-                        <img src={truck2} alt="truck png" />
+                        <img src={truck2} alt="truck png" loading="lazy"  />
                         <h2>LOADING & UNLOADING</h2>
                         <p>A crucial part of every relocation process, the loading and unloading is executed by highly skilled teams. The goods are loaded and unloaded with the use of pulleys,lifters etc...</p>
                     </div>

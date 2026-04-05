@@ -173,7 +173,7 @@ const Footer = () => {
             <footer className="footer">
                 <div className="footer-top">
                     <div className="footer-col logo-col">
-                        <img src={logoImg} alt="Gati Logo" className="footer-logo" />
+                        <img src={logoImg} alt="Gati Logo" className="footer-logo" loading="lazy"  />
                         <p>📍 Gati Shifting Packers<br />
                             Ghansoli, Navi Mumbai<br /> Maharashtra 400701
                         </p>

@@ -23,12 +23,12 @@ const InternationalShifting = ({successCondition}: props) => {
             <title>Gati International Packers and Movers</title>
         </Helmet>
             <section id="banner-image">
-                <img src={InternationalBannerImg} alt="International Banner Img" />
+                <img src={InternationalBannerImg} alt="International Banner Img" loading="lazy"  />
             </section>
 
             <div className="images-grid">
-                <img src={InternationalCargoShipTruckImg} />
-                <img src={InternationalAirlineImg} />
+                <img src={InternationalCargoShipTruckImg} loading="lazy"  />
+                <img src={InternationalAirlineImg} loading="lazy"  />
             </div>
             <section id="content">
                 <div className="container">
@@ -40,7 +40,7 @@ const InternationalShifting = ({successCondition}: props) => {
                             <p>Upon arrival at the destination port, our global network manages unloading, customs procedures, and final delivery to your home or office. Dedicated customer support is available at every stage—from initial planning to final delivery—ensuring a worry-free international move. With <b>Gati Shifting Packers</b>, your relocation by ship is handled with care, reliability, and attention to detail.</p>
                         </div>
                         <div className="img-bx">
-                            <img src={InternationalShiftingByShipImg} />
+                            <img src={InternationalShiftingByShipImg} loading="lazy"  />
                         </div>
                     </div>
 
@@ -48,7 +48,7 @@ const InternationalShifting = ({successCondition}: props) => {
 
                     <div className="box">
                         <div className="img-bx">
-                            <img src={InternationalShiftingByAir} />
+                            <img src={InternationalShiftingByAir} loading="lazy"  />
                         </div>
                         <div className="detail">
                             <h2>International Shifting by Air</h2>

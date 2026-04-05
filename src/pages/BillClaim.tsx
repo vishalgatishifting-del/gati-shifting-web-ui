@@ -81,15 +81,15 @@ const BillClaim = () => {
             <section id="sample-section">
                 <div className="sample-images">
                     <figure>
-                        <img src={deliveryChallan} />
+                        <img src={deliveryChallan} loading="lazy"  />
                         <figcaption>SAMPLE COPY</figcaption>
                     </figure>
                     <figure>
-                        <img src={paymentReceipt} />
+                        <img src={paymentReceipt} loading="lazy"  />
                         <figcaption>SAMPLE COPY</figcaption>
                     </figure>
                     <figure>
-                        <img src={taxInvoice} />
+                        <img src={taxInvoice} loading="lazy"  />
                         <figcaption>SAMPLE COPY</figcaption>
                     </figure>
                 </div>

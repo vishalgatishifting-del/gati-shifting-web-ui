@@ -57,7 +57,7 @@ const BusinessPartner: React.FC = () => {
     const url = URL.createObjectURL(file);
 
     if (file.type.startsWith("image/")) {
-      return <img src={url} alt="preview" className="preview-img" />;
+      return <img src={url} alt="preview" className="preview-img" loading="lazy"  />;
     }
 
     if (file.type === "application/pdf") {
@@ -122,8 +122,8 @@ const BusinessPartner: React.FC = () => {
     <section className="partner-form">
       {/* HEADER */}
       <div className="header">
-        <img src={Logo} alt="logo" className="logo" />
-        <img src={BannerImg} alt="banner" className="banner" />
+        <img src={Logo} alt="logo" className="logo" loading="lazy"  />
+        <img src={BannerImg} alt="banner" className="banner" loading="lazy"  />
       </div>
 
       <Card className="form-card">

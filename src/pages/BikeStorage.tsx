@@ -91,7 +91,7 @@ const BikeStorage = () => {
                         </div>
                     </div>
                     <div className="img-bx">
-                        <img src={heroSectionImg} />
+                        <img src={heroSectionImg} loading="lazy"  />
                     </div>
                 </div>
             </section>
@@ -117,67 +117,67 @@ const BikeStorage = () => {
                 </div>
                 <div className="container">
                     <div className="brand">
-                        <img src={abhibus_icon} alt="Abhibus" />
+                        <img src={abhibus_icon} alt="Abhibus" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={AIMMAF_icon} alt="AIMMAF" />
+                        <img src={AIMMAF_icon} alt="AIMMAF" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={cartello_icon} alt="Cartello" />
+                        <img src={cartello_icon} alt="Cartello" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={cmo_axis_icon} alt="CMO Axis" />
+                        <img src={cmo_axis_icon} alt="CMO Axis" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={edgar_icon} alt="Edgar" />
+                        <img src={edgar_icon} alt="Edgar" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={ezetap_icon} alt="Ezetap" />
+                        <img src={ezetap_icon} alt="Ezetap" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={greencube_icon} alt="Greencube" />
+                        <img src={greencube_icon} alt="Greencube" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={hubler_icon} alt="Hubler" />
+                        <img src={hubler_icon} alt="Hubler" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={intelligentia_it_systems_icon} alt="Intelligentia IT Systems" />
+                        <img src={intelligentia_it_systems_icon} alt="Intelligentia IT Systems" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={ixigo_icon} alt="Ixigo" />
+                        <img src={ixigo_icon} alt="Ixigo" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={qwikcliver_icon} alt="Qwikcliver" />
+                        <img src={qwikcliver_icon} alt="Qwikcliver" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={rapyder_icon} alt="Rapyder" />
+                        <img src={rapyder_icon} alt="Rapyder" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={rotzler_icon} alt="Rotzler" />
+                        <img src={rotzler_icon} alt="Rotzler" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={ToneTag_icon} alt="ToneTag" />
+                        <img src={ToneTag_icon} alt="ToneTag" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={toyota_tsusho_icon} alt="Toyota Tsusho" />
+                        <img src={toyota_tsusho_icon} alt="Toyota Tsusho" loading="lazy"  />
                     </div>
 
                     <div className="brand">
-                        <img src={HDFC_icon} alt="HDFC" />
+                        <img src={HDFC_icon} alt="HDFC" loading="lazy"  />
                     </div>
 
                 </div>
@@ -410,7 +410,7 @@ const BikeStorage = () => {
 
 
             <section className="price-img-container">
-                <img src={priceImg} className="price-img" />
+                <img src={priceImg} className="price-img" loading="lazy"  />
             </section>
 
 
@@ -448,7 +448,7 @@ const BikeStorage = () => {
             <section id="sample-images">
                 <div className="container">
                     {imgArr.map((img) => {
-                        return (<img src={img} />)
+                        return (<img src={img} loading="lazy"  />)
                     })}
                 </div>
             </section>

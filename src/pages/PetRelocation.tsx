@@ -132,7 +132,7 @@ const PetRelocation = () => {
                         </p>
 
 
-                        <img src={petrelocationImg} />
+                        <img src={petrelocationImg} loading="lazy"  />
                     </div>
                     <div className="content why-choose">
                         <h2>Why Choose Professional Pet Relocation Services in India?</h2>

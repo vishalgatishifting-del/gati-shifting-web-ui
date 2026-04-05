@@ -77,7 +77,7 @@ const FAQ = () => {
 
                 <div className="info-right">
                     <div className="image-card">
-                        <img src={car5} alt="Gati Shifting Packers Moving Vehicle" />
+                        <img src={car5} alt="Gati Shifting Packers Moving Vehicle" loading="lazy"  />
 
                         <div className="overlay">
                             <h4>Top Rated Packers & Movers</h4>
