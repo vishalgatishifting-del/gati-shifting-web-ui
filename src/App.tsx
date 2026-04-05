@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import './App.css'
 import AppRoutes from './routes/AppRoute'
 import CircularProgress from '@mui/material/CircularProgress';
-import ChaportWidget from "./components/ChatPort.tsx";
+// import ChaportWidget from "./components/ChatPort.tsx";
 
 function App() {
   useEffect(() => {
@@ -35,7 +35,7 @@ function App() {
   return (
     <>
         <AppRoutes></AppRoutes>
-        <ChaportWidget />
+        {/* <ChaportWidget /> */}
     </>
   )
 }
