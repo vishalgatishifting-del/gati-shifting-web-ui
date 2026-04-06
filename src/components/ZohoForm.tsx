@@ -105,7 +105,9 @@ const ZohoForm: React.FC<props> = ({ successCondition }) => {
         });
         successCondition(true)
         fireConversion();
-
+        if (window.fbq) {
+          window.fbq('track', 'Lead');
+        }
 
         // try {
         //   axios.post(

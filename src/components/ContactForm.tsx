@@ -19,15 +19,15 @@ interface ContactFormProps {
 
 const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeControl, successCondition }) => {
 
-      const fireConversion = () => {
-    if (window.gtag) {
-      window.gtag('event', 'conversion', {
-        send_to: 'AW-17573064597/5JeFCIznu74bEJXfvrtB',
-        value: 1.0,
-        currency: 'INR'
-      });
-    }
-  };
+    const fireConversion = () => {
+        if (window.gtag) {
+            window.gtag('event', 'conversion', {
+                send_to: 'AW-17573064597/5JeFCIznu74bEJXfvrtB',
+                value: 1.0,
+                currency: 'INR'
+            });
+        }
+    };
 
 
     interface FormData {
@@ -107,6 +107,9 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
             // setCaptchaValue(null);
             closeControl?.();
             fireConversion()
+            if (window.fbq) {
+                window.fbq('track', 'Lead');
+            }
         } catch (error) {
 
         } finally {
@@ -116,8 +119,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
 
     return (
         <section id="get-in-touch-form" style={(showDetail == false) ? { boxShadow: "0 5px 20px #00000029", marginTop: "0px", width: "100%", padding: "14px" } : {}}>
-            
-                    {/* <video
+
+            {/* <video
                         autoPlay
                         loop
                         muted
@@ -127,8 +130,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
                         >
                         <source src={FeatureVideo} type="video/webm"></source>
                     </video> */}
-                    {(showDetail == false) ? <img width="100%" style={{borderRadius: "10px", boxShadow: "0 5px 5px #00000021"}} src={bannerImg} /> : ""}
-                    
+            {(showDetail == false) ? <img width="100%" style={{ borderRadius: "10px", boxShadow: "0 5px 5px #00000021" }} src={bannerImg} /> : ""}
+
             <h2>🚚 Get Free Quote in 1 min!</h2>
             <p>Fast, Safe & Affordable Shifting - Book Now & Save Upto 20%!</p>
             <div className="container" style={(showDetail == false) ? { width: "100%", boxShadow: "none" } : {}}>
