@@ -94,61 +94,41 @@
   ]
 }
 </script>
-  <script>
-    function loadGoogle() {
-
-      const s = document.createElement("script");
-      s.src = "https://www.googletagmanager.com/gtag/js?id=G-LSHZ41C6TS";
-      s.async = true;
-      document.head.appendChild(s);
-
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag("js", new Date());
-      gtag("config", "G-LSHZ41C6TS");
-      gtag("config", "AW-17573064597");
-    }
-
-    if ("requestIdleCallback" in window) {
-      requestIdleCallback(loadGoogle);
-    } else {
-      setTimeout(loadGoogle, 2000);
-    }
 
 
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag() { dataLayer.push(arguments); }
-    // gtag('js', new Date());
-    // gtag('config', 'AW-17573064597/5JeFCIznu74bEJXfvrtB');
+<script>
+    const s = document.createElement("script");
+    s.src = "https://www.googletagmanager.com/gtag/js?id=G-LSHZ41C6TS";
+    s.async = true;
+    document.head.appendChild(s);
 
-    //  Meta Pixel Code
-    function loadFB() {
-      !function (f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function () {
-          n.callMethod ?
-            n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = true;
-        n.version = '2.0';
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = true;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s)
-      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-LSHZ41C6TS");
+    gtag("config", "AW-17573064597");
 
-      fbq('init', '1803175313684092');
-      fbq('track', 'PageView');
-    }
-    if ("requestIdleCallback" in window) {
-      requestIdleCallback(loadFB);
-    } else {
-      setTimeout(loadFB, 2000);
-    }
+
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = true;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = true;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1803175313684092');
+    fbq('track', 'PageView');
 
 
     function loadBing() {

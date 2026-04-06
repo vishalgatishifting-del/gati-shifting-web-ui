@@ -19,6 +19,16 @@ interface ContactFormProps {
 
 const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeControl, successCondition }) => {
 
+      const fireConversion = () => {
+    if (window.gtag) {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-17573064597/5JeFCIznu74bEJXfvrtB',
+        value: 1.0,
+        currency: 'INR'
+      });
+    }
+  };
+
 
     interface FormData {
         Name: string;
@@ -85,17 +95,18 @@ const ContactForm: React.FC<ContactFormProps> = ({ showDetail = true, closeContr
             };
 
             sendEmail(templateParams)
-            gtag('event', 'conversion', {
-                'send_to': 'AW-17573064597/5JeFCIznu74bEJXfvrtB',
-                'value': 1.0,
-                'currency': 'INR'
-            });
+            // gtag('event', 'conversion', {
+            //     'send_to': 'AW-17573064597/5JeFCIznu74bEJXfvrtB',
+            //     'value': 1.0,
+            //     'currency': 'INR'
+            // });
 
             setFormData({ Name: "", Email: "", Phone: "", From: "", To: "", Goods: "" });
 
             recaptchaRef.current?.reset();
             // setCaptchaValue(null);
             closeControl?.();
+            fireConversion()
         } catch (error) {
 
         } finally {

@@ -18,6 +18,17 @@ interface props {
 }
 const ZohoForm: React.FC<props> = ({ successCondition }) => {
 
+
+  const fireConversion = () => {
+    if (window.gtag) {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-17573064597/5JeFCIznu74bEJXfvrtB',
+        value: 1.0,
+        currency: 'INR'
+      });
+    }
+  };
+
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     Name: '',
@@ -93,6 +104,7 @@ const ZohoForm: React.FC<props> = ({ successCondition }) => {
           Goods: ''
         });
         successCondition(true)
+        fireConversion();
 
 
         // try {
@@ -159,11 +171,11 @@ const ZohoForm: React.FC<props> = ({ successCondition }) => {
 
         <div className="zcwf_row">
           <div className="zcwf_col_lab"></div>
-          <div className="zcwf_col_fld" style={{display:"flex"}}>
+          <div className="zcwf_col_fld" style={{ display: "flex" }}>
             <button type='submit' disabled={loading}>
               {loading ? <CircularProgress color='inherit'></CircularProgress> : "Get Free Quote"}</button>
             <input
-              style={{ marginLeft: "10px", cursor: "pointer", marginTop:"0", width:"100px" }}
+              style={{ marginLeft: "10px", cursor: "pointer", marginTop: "0", width: "100px" }}
               type="reset"
               value="Reset"
               className="zcwf_button"
