@@ -19,7 +19,7 @@ const GetInTouch = () => {
                     <img src={getInTouchImg} alt="Get In Touch Image" title="Get In Touch" loading="lazy" />
                 </div>
                 <div className="details">
-                    <h1>Get In Touch</h1>
+                    <h2>Get In Touch</h2>
                     <p>For reliable shifting services across India, choose Gati Shifting Packers PVT LTD. We provide door-to-door transport and affordable logistics solutions.</p>
 
                     <ul>

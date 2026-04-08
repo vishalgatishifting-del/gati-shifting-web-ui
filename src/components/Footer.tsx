@@ -58,7 +58,7 @@ const Footer = () => {
     return (
         <>
             <section id="redirect-links">
-                 <h1>Search By Location</h1>
+                 <h2>Search By Location</h2>
                 <div className="container">
                     <ul>
                         {cities2.slice(0, visibleCount).map((item, i) => (

@@ -11,7 +11,7 @@ import "./BrandList.scss"
 const BrandList = () => {
     return (
         <section id="brands-list">
-            <h1>Brands That Trusted Us</h1>
+            <h2>Brands That Trusted Us</h2>
             <div className="container">
                 <div className="brand">
                     <img src={zoffImg} alt="zoff-company-logo" title="zofflogo" loading="lazy" />

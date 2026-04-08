@@ -21,7 +21,7 @@ const AwardCertification = () => {
     const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: false, threshold: 0.2 });
     return (
         <section id="award-certifications">
-            <h1>Awards & Certifications</h1>
+            <h2>Awards & Certifications</h2>
             <div className="container">
 
                 <motion.div
