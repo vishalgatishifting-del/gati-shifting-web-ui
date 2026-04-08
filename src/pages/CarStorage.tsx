@@ -59,23 +59,23 @@ const Storage = () => {
         <>
 
             <Helmet>
-                <title>Car Storage Services | Safe Shifting Packers – Secure Vehicle Storage</title>
-                <meta name="description" content="Safe Shifting Packers offers secure car storage services including short-term and long-term vehicle parking, monitored storage facilities, and safe handling for cars and other vehicles." />
-                <meta name="keywords" content="Car storage service, Vehicle storage solutions, Car parking storage, Secure car storage, Packers and movers car storage, Vehicle warehouse, Long term car storage, Short term car storage, Safe Shifting Packers" />
-                <meta name="author" content="Safe Shifting Packers" />
+                <title>Car Storage Services | Gati Shifting Packers – Secure Vehicle Storage</title>
+                <meta name="description" content="Gati Shifting Packers offers secure car storage services including short-term and long-term vehicle parking, monitored storage facilities, and safe handling for cars and other vehicles." />
+                <meta name="keywords" content="Car storage service, Vehicle storage solutions, Car parking storage, Secure car storage, Packers and movers car storage, Vehicle warehouse, Long term car storage, Short term car storage, Gati Shifting Packers" />
+                <meta name="author" content="Gati Shifting Packers" />
                 <meta name="robots" content="index, follow" />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:title" content="Car Storage Services – Safe Shifting Packers" />
-                <meta property="og:description" content="Discover secure and reliable car storage services by Safe Shifting Packers – vehicle storage, monitored parking, and safe handling for your car or vehicle." />
-                <meta property="og:url" content="https://safeshiftingpackers.com/car-storage" />
-                <meta property="og:site_name" content="Safe Shifting Packers" />
+                <meta property="og:title" content="Car Storage Services – Gati Shifting Packers" />
+                <meta property="og:description" content="Discover secure and reliable car storage services by Gati Shifting Packers – vehicle storage, monitored parking, and safe handling for your car or vehicle." />
+                <meta property="og:url" content="https://gatishiftingpackers.com/car-storage" />
+                <meta property="og:site_name" content="Gati Shifting Packers" />
 
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Car Storage Services | Safe Shifting Packers" />
-                <meta name="twitter:description" content="Secure and reliable car storage services for long and short term storage of vehicles by Safe Shifting Packers." />
+                <meta name="twitter:title" content="Car Storage Services | Gati Shifting Packers" />
+                <meta name="twitter:description" content="Secure and reliable car storage services for long and short term storage of vehicles by Gati Shifting Packers." />
 
-                <link rel="canonical" href="https://safeshiftingpackers.com/car-storage" />
+                <link rel="canonical" href="https://gatishiftingpackers.com/car-storage" />
             </Helmet>
             <div className="bg-attached">
                 <h1>Car Storage</h1>
