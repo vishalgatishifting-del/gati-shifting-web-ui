@@ -97,7 +97,7 @@ const CityPage: React.FC<PageProps> = ({
 
         <link
           rel="canonical"
-          href={`https://gatishiftingpackers.com/packers-and-movers-in-${city}`}
+          href={`https://gatishiftingpackers.com/packers-and-movers-in-${city.toLowerCase()}`}
         />
       </Helmet>
 
