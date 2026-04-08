@@ -255,35 +255,35 @@ const Home: React.FC<props> = ({ successCondition }) => {
                     <button className={activeBtn === "Domestic Moving" ? "active" : ""}
                         onClick={() => {
                             setActiveBtn("Domestic Moving");
-                        }}><img src={domesticPng} /></button>
+                        }}><img src={domesticPng} alt="Domestic Moving" loading="eager" /></button>
 
                     <button className={activeBtn === "Car Moving" ? "active" : ""}
                         onClick={() => {
                             setActiveBtn("Car Moving");
-                        }}><img src={carPng} /></button>
+                        }}><img src={carPng} alt="Car Moving" loading="eager" /></button>
                     <button className={activeBtn === "Bike Moving" ? "active" : ""}
                         onClick={() => {
                             setActiveBtn("Bike Moving")
                         }} >
-                        <img src={bikePng} />
+                        <img src={bikePng} alt="Bike Moving" loading="eager" />
                     </button>
                     <button className={activeBtn === "Flight Cargo" ? "active" : ""}
                         onClick={() => {
                             setActiveBtn("Flight Cargo");
 
-                        }}><img src={flightPng} /></button>
+                        }}><img src={flightPng} alt="Flight Cargo" loading="eager" /></button>
 
 
                     <button className={activeBtn === "International Moving" ? "active" : ""}
                         onClick={() => {
                             setActiveBtn("International Moving");
-                        }}><img src={internationalPng} /></button>
+                        }}><img src={internationalPng} className="International Moving" loading="eager" alt="International Moving" /></button>
 
                     <button className={activeBtn === "Storage" ? "active" : ""}
                         onClick={() => {
                             setActiveBtn("Storage");
 
-                        }}><img src={warehousePng} /></button>
+                        }}><img src={warehousePng} alt="Storage" loading="eager" /></button>
                     {/* <button className={activeBtn === "Office Shifting" ? "active" : ""}
                             onClick={() => {
                                 setActiveBtn("Office Shifting");
