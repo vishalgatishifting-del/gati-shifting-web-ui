@@ -35,11 +35,11 @@ const CreateWindow = ({ createState, searchOrder }: any) => {
     };
 
     const handleSubmit = async () => {
-        await privateAPI.post(
+        const out = await privateAPI.post(
             "/api/orders/create",
             formData
         );
-
+        console.log(out)
         // const data = await res.json();
 
         // setTrackingId(data.trackingId);
