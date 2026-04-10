@@ -19,7 +19,7 @@ const CreateWindow = ({ createState, searchOrder }: any) => {
         fromLocation: "",
         toLocation: "",
         goods: "",
-        status: "",
+        status: "Order Placed",
         currentLocation: "",
         expectedDelivery: "",
         note: ""
