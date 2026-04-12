@@ -26544,107 +26544,807 @@ export const pagesData = [
 
 
 
+  // {
+  //   slug: "packers-and-movers-in-Nainital", city: "Nainital", img: Nainital, offer: "23%", address: "Manpur Rd, Kachnal Gazi, Kashipur, Uttarakhand 244713", metaDetails: {
+  //     title: "Packers and Movers in Nainital | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Nainital with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Nainital and across Uttarakhand.",
+  //     keywords: "Local movers near me Nainital, Packers and Movers in Nainital, Gati Shifting Packers Nainital, Best Packers and Movers Nainital, Affordable Packers and Movers Nainital, Trusted Packers and Movers Nainital Uttarakhand, Local Packers and Movers Nainital, Professional Movers and Packers Nainital, Home Shifting Services Nainital, Office Relocation Nainital, Vehicle Transport Nainital, Car Transport Service Nainital, Bike Transport Nainital, Household Goods Shifting Nainital, Industrial Packers and Movers Nainital, Door-to-Door Shifting Services Nainital, Packing and Unpacking Services Nainital, Furniture Movers Nainital, Intercity Packers and Movers Nainital, Packers and Movers Nainital to Haldwani, Packers and Movers Nainital to Rudrapur, Packers and Movers Nainital to Dehradun, Packers and Movers Nainital to Haridwar, Packers and Movers Nainital to Rishikesh, Packers and Movers Nainital to Delhi, Reliable Relocation Company Nainital, Cost-Effective Packers and Movers Nainital, Quick Packers and Movers Nainital, 24x7 Packers and Movers Nainital, Mini Truck for Shifting Nainital, Tempo Service Nainital, Best Relocation Services Nainital, Safe and Secure Moving Services Nainital, Budget-Friendly Movers Nainital, Professional Relocation Company Nainital, Long-Distance Packers and Movers Nainital, Trusted Shifting Company Nainital, Goods Transport Services Nainital.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Nainital? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Nainital and across Uttarakhand.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Nainital by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Nainital"
+  //   }
+  // },
   {
-    slug: "packers-and-movers-in-Nainital", city: "Nainital", img: Nainital, offer: "23%", address: "Manpur Rd, Kachnal Gazi, Kashipur, Uttarakhand 244713", metaDetails: {
-      title: "Packers and Movers in Nainital | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Nainital with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Nainital and across Uttarakhand.",
-      keywords: "Local movers near me Nainital, Packers and Movers in Nainital, Gati Shifting Packers Nainital, Best Packers and Movers Nainital, Affordable Packers and Movers Nainital, Trusted Packers and Movers Nainital Uttarakhand, Local Packers and Movers Nainital, Professional Movers and Packers Nainital, Home Shifting Services Nainital, Office Relocation Nainital, Vehicle Transport Nainital, Car Transport Service Nainital, Bike Transport Nainital, Household Goods Shifting Nainital, Industrial Packers and Movers Nainital, Door-to-Door Shifting Services Nainital, Packing and Unpacking Services Nainital, Furniture Movers Nainital, Intercity Packers and Movers Nainital, Packers and Movers Nainital to Haldwani, Packers and Movers Nainital to Rudrapur, Packers and Movers Nainital to Dehradun, Packers and Movers Nainital to Haridwar, Packers and Movers Nainital to Rishikesh, Packers and Movers Nainital to Delhi, Reliable Relocation Company Nainital, Cost-Effective Packers and Movers Nainital, Quick Packers and Movers Nainital, 24x7 Packers and Movers Nainital, Mini Truck for Shifting Nainital, Tempo Service Nainital, Best Relocation Services Nainital, Safe and Secure Moving Services Nainital, Budget-Friendly Movers Nainital, Professional Relocation Company Nainital, Long-Distance Packers and Movers Nainital, Trusted Shifting Company Nainital, Goods Transport Services Nainital.",
-      ogdesc: "Looking for reliable Packers and Movers in Nainital? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Nainital and across Uttarakhand.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Nainital by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Nainital"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Almora", city: "Almora", img: Almora, offer: "23%", address: "Rampur Rd, Haldu Pokhara Nayak, Rampur, Haldwani, Uttarakhand 263139", metaDetails: {
-      title: "Packers and Movers in Almora | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Almora with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Almora and across Uttarakhand.",
-      keywords: "Local movers near me Almora, Packers and Movers in Almora, Gati Shifting Packers Almora, Best Packers and Movers Almora, Affordable Packers and Movers Almora, Trusted Packers and Movers Almora Uttarakhand, Local Packers and Movers Almora, Professional Movers and Packers Almora, Home Shifting Services Almora, Office Relocation Almora, Vehicle Transport Almora, Car Transport Service Almora, Bike Transport Almora, Household Goods Shifting Almora, Industrial Packers and Movers Almora, Door-to-Door Shifting Services Almora, Packing and Unpacking Services Almora, Furniture Movers Almora, Intercity Packers and Movers Almora, Packers and Movers Almora to Nainital, Packers and Movers Almora to Haldwani, Packers and Movers Almora to Rudrapur, Packers and Movers Almora to Dehradun, Packers and Movers Almora to Haridwar, Packers and Movers Almora to Rishikesh, Reliable Relocation Company Almora, Cost-Effective Packers and Movers Almora, Quick Packers and Movers Almora, 24x7 Packers and Movers Almora, Mini Truck for Shifting Almora, Tempo Service Almora, Best Relocation Services Almora, Safe and Secure Moving Services Almora, Budget-Friendly Movers Almora, Professional Relocation Company Almora, Long-Distance Packers and Movers Almora, Trusted Shifting Company Almora, Goods Transport Services Almora.",
-      ogdesc: "Looking for reliable Packers and Movers in Almora? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Almora and across Uttarakhand.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Almora by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Almora"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Mussoorie", city: "Mussoorie", img: Mussoorie, offer: "23%", address: "Haridwar Road, P.O. Harrawala, Kuwan Wala, Dehradun, Uttarakhand 248160", metaDetails: {
-      title: "Packers and Movers in Mussoorie | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Mussoorie with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Mussoorie and across Uttarakhand.",
-      keywords: "Local movers near me Mussoorie, Packers and Movers in Mussoorie, Gati Shifting Packers Mussoorie, Best Packers and Movers Mussoorie, Affordable Packers and Movers Mussoorie, Trusted Packers and Movers Mussoorie Uttarakhand, Local Packers and Movers Mussoorie, Professional Movers and Packers Mussoorie, Home Shifting Services Mussoorie, Office Relocation Mussoorie, Vehicle Transport Mussoorie, Car Transport Service Mussoorie, Bike Transport Mussoorie, Household Goods Shifting Mussoorie, Industrial Packers and Movers Mussoorie, Door-to-Door Shifting Services Mussoorie, Packing and Unpacking Services Mussoorie, Furniture Movers Mussoorie, Intercity Packers and Movers Mussoorie, Packers and Movers Mussoorie to Dehradun, Packers and Movers Mussoorie to Haridwar, Packers and Movers Mussoorie to Rishikesh, Packers and Movers Mussoorie to Nainital, Packers and Movers Mussoorie to Haldwani, Reliable Relocation Company Mussoorie, Cost-Effective Packers and Movers Mussoorie, Quick Packers and Movers Mussoorie, 24x7 Packers and Movers Mussoorie, Mini Truck for Shifting Mussoorie, Tempo Service Mussoorie, Best Relocation Services Mussoorie, Safe and Secure Moving Services Mussoorie, Budget-Friendly Movers Mussoorie, Professional Relocation Company Mussoorie, Long-Distance Packers and Movers Mussoorie, Trusted Shifting Company Mussoorie, Goods Transport Services Mussoorie.",
-      ogdesc: "Looking for reliable Packers and Movers in Mussoorie? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Mussoorie and across Uttarakhand.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Mussoorie by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Mussoorie"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Bareilly", city: "Bareilly", img: Bareilly, offer: "23%", address: "Shop No. 4 & 5, Rajendra Nagar Market, opposite Sheel Hospital, Rajendra Nagar, Bareilly, Uttar Pradesh 243001", metaDetails: {
-      title: "Packers and Movers in Bareilly | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Bareilly with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Bareilly and across Uttar Pradesh.",
-      keywords: "Local movers near me Bareilly, Packers and Movers in Bareilly, Gati Shifting Packers Bareilly, Best Packers and Movers Bareilly, Affordable Packers and Movers Bareilly, Trusted Packers and Movers Bareilly Uttar Pradesh, Local Packers and Movers Bareilly, Professional Movers and Packers Bareilly, Home Shifting Services Bareilly, Office Relocation Bareilly, Vehicle Transport Bareilly, Car Transport Service Bareilly, Bike Transport Bareilly, Household Goods Shifting Bareilly, Industrial Packers and Movers Bareilly, Door-to-Door Shifting Services Bareilly, Packing and Unpacking Services Bareilly, Furniture Movers Bareilly, Intercity Packers and Movers Bareilly, Packers and Movers Bareilly to Lucknow, Packers and Movers Bareilly to Kanpur, Packers and Movers Bareilly to Noida, Packers and Movers Bareilly to Ghaziabad, Packers and Movers Bareilly to Delhi, Reliable Relocation Company Bareilly, Cost-Effective Packers and Movers Bareilly, Quick Packers and Movers Bareilly, 24x7 Packers and Movers Bareilly, Mini Truck for Shifting Bareilly, Tempo Service Bareilly, Best Relocation Services Bareilly, Safe and Secure Moving Services Bareilly, Budget-Friendly Movers Bareilly, Professional Relocation Company Bareilly, Long-Distance Packers and Movers Bareilly, Trusted Shifting Company Bareilly, Goods Transport Services Bareilly.",
-      ogdesc: "Looking for reliable Packers and Movers in Bareilly? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Bareilly and across Uttar Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Bareilly by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Bareilly"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Aligarh", city: "Aligarh", img: Aligarh, offer: "23%", address: "G 19, Ramghat Rd, Saraswati Vihar, Phase 1, ADA Colony, Aligarh, Uttar Pradesh 202001", metaDetails: {
-      title: "Packers and Movers in Aligarh | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Aligarh with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Aligarh and across Uttar Pradesh.",
-      keywords: "Local movers near me Aligarh, Packers and Movers in Aligarh, Gati Shifting Packers Aligarh, Best Packers and Movers Aligarh, Affordable Packers and Movers Aligarh, Trusted Packers and Movers Aligarh Uttar Pradesh, Local Packers and Movers Aligarh, Professional Movers and Packers Aligarh, Home Shifting Services Aligarh, Office Relocation Aligarh, Vehicle Transport Aligarh, Car Transport Service Aligarh, Bike Transport Aligarh, Household Goods Shifting Aligarh, Industrial Packers and Movers Aligarh, Door-to-Door Shifting Services Aligarh, Packing and Unpacking Services Aligarh, Furniture Movers Aligarh, Intercity Packers and Movers Aligarh, Packers and Movers Aligarh to Lucknow, Packers and Movers Aligarh to Kanpur, Packers and Movers Aligarh to Noida, Packers and Movers Aligarh to Ghaziabad, Packers and Movers Aligarh to Delhi, Reliable Relocation Company Aligarh, Cost-Effective Packers and Movers Aligarh, Quick Packers and Movers Aligarh, 24x7 Packers and Movers Aligarh, Mini Truck for Shifting Aligarh, Tempo Service Aligarh, Best Relocation Services Aligarh, Safe and Secure Moving Services Aligarh, Budget-Friendly Movers Aligarh, Professional Relocation Company Aligarh, Long-Distance Packers and Movers Aligarh, Trusted Shifting Company Aligarh, Goods Transport Services Aligarh.",
-      ogdesc: "Looking for reliable Packers and Movers in Aligarh? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Aligarh and across Uttar Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Aligarh by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Aligarh"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Moradabad", city: "Moradabad", img: Moradabad, offer: "23%", address: "Budh Bazaar Rd, near Post Office, Malviya Nagar, Budh Bazaar, Moradabad, Uttar Pradesh 244001", metaDetails: {
-      title: "Packers and Movers in Moradabad | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Moradabad with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Moradabad and across Uttar Pradesh.",
-      keywords: "Local movers near me Moradabad, Packers and Movers in Moradabad, Gati Shifting Packers Moradabad, Best Packers and Movers Moradabad, Affordable Packers and Movers Moradabad, Trusted Packers and Movers Moradabad Uttar Pradesh, Local Packers and Movers Moradabad, Professional Movers and Packers Moradabad, Home Shifting Services Moradabad, Office Relocation Moradabad, Vehicle Transport Moradabad, Car Transport Service Moradabad, Bike Transport Moradabad, Household Goods Shifting Moradabad, Industrial Packers and Movers Moradabad, Door-to-Door Shifting Services Moradabad, Packing and Unpacking Services Moradabad, Furniture Movers Moradabad, Intercity Packers and Movers Moradabad, Packers and Movers Moradabad to Lucknow, Packers and Movers Moradabad to Kanpur, Packers and Movers Moradabad to Noida, Packers and Movers Moradabad to Ghaziabad, Packers and Movers Moradabad to Delhi, Reliable Relocation Company Moradabad, Cost-Effective Packers and Movers Moradabad, Quick Packers and Movers Moradabad, 24x7 Packers and Movers Moradabad, Mini Truck for Shifting Moradabad, Tempo Service Moradabad, Best Relocation Services Moradabad, Safe and Secure Moving Services Moradabad, Budget-Friendly Movers Moradabad, Professional Relocation Company Moradabad, Long-Distance Packers and Movers Moradabad, Trusted Shifting Company Moradabad, Goods Transport Services Moradabad.",
-      ogdesc: "Looking for reliable Packers and Movers in Moradabad? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Moradabad and across Uttar Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Moradabad by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Moradabad"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Saharanpur", city: "Saharanpur", img: Saharanpur, offer: "23%", address: "Khan Alampura, Saharanpur, Uttar Pradesh 247001", metaDetails: {
-      title: "Packers and Movers in Saharanpur | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Saharanpur with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Saharanpur and across Uttar Pradesh.",
-      keywords: "Local movers near me Saharanpur, Packers and Movers in Saharanpur, Gati Shifting Packers Saharanpur, Best Packers and Movers Saharanpur, Affordable Packers and Movers Saharanpur, Trusted Packers and Movers Saharanpur Uttar Pradesh, Local Packers and Movers Saharanpur, Professional Movers and Packers Saharanpur, Home Shifting Services Saharanpur, Office Relocation Saharanpur, Vehicle Transport Saharanpur, Car Transport Service Saharanpur, Bike Transport Saharanpur, Household Goods Shifting Saharanpur, Industrial Packers and Movers Saharanpur, Door-to-Door Shifting Services Saharanpur, Packing and Unpacking Services Saharanpur, Furniture Movers Saharanpur, Intercity Packers and Movers Saharanpur, Packers and Movers Saharanpur to Lucknow, Packers and Movers Saharanpur to Kanpur, Packers and Movers Saharanpur to Noida, Packers and Movers Saharanpur to Ghaziabad, Packers and Movers Saharanpur to Delhi, Reliable Relocation Company Saharanpur, Cost-Effective Packers and Movers Saharanpur, Quick Packers and Movers Saharanpur, 24x7 Packers and Movers Saharanpur, Mini Truck for Shifting Saharanpur, Tempo Service Saharanpur, Best Relocation Services Saharanpur, Safe and Secure Moving Services Saharanpur, Budget-Friendly Movers Saharanpur, Professional Relocation Company Saharanpur, Long-Distance Packers and Movers Saharanpur, Trusted Shifting Company Saharanpur, Goods Transport Services Saharanpur.",
-      ogdesc: "Looking for reliable Packers and Movers in Saharanpur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Saharanpur and across Uttar Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Saharanpur by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Saharanpur"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Jhansi", city: "Jhansi", img: Jhansi, offer: "23%", address: "Bundelkhand University, National Highway 25, Bundelkhand University, Jhansi, Uttar Pradesh 284128", metaDetails: {
-      title: "Packers and Movers in Jhansi | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Jhansi with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Jhansi and across Uttar Pradesh.",
-      keywords: "Local movers near me Jhansi, Packers and Movers in Jhansi, Gati Shifting Packers Jhansi, Best Packers and Movers Jhansi, Affordable Packers and Movers Jhansi, Trusted Packers and Movers Jhansi Uttar Pradesh, Local Packers and Movers Jhansi, Professional Movers and Packers Jhansi, Home Shifting Services Jhansi, Office Relocation Jhansi, Vehicle Transport Jhansi, Car Transport Service Jhansi, Bike Transport Jhansi, Household Goods Shifting Jhansi, Industrial Packers and Movers Jhansi, Door-to-Door Shifting Services Jhansi, Packing and Unpacking Services Jhansi, Furniture Movers Jhansi, Intercity Packers and Movers Jhansi, Packers and Movers Jhansi to Lucknow, Packers and Movers Jhansi to Kanpur, Packers and Movers Jhansi to Noida, Packers and Movers Jhansi to Ghaziabad, Packers and Movers Jhansi to Delhi, Reliable Relocation Company Jhansi, Cost-Effective Packers and Movers Jhansi, Quick Packers and Movers Jhansi, 24x7 Packers and Movers Jhansi, Mini Truck for Shifting Jhansi, Tempo Service Jhansi, Best Relocation Services Jhansi, Safe and Secure Moving Services Jhansi, Budget-Friendly Movers Jhansi, Professional Relocation Company Jhansi, Long-Distance Packers and Movers Jhansi, Trusted Shifting Company Jhansi, Goods Transport Services Jhansi.",
-      ogdesc: "Looking for reliable Packers and Movers in Jhansi? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Jhansi and across Uttar Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Jhansi by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Jhansi"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Mathura", city: "Mathura", img: Mathura, offer: "23%", address: "Farm, Delhi, Near Nayati Hospital, Awagarh, Road Bye Pass, Mathura, Uttar Pradesh 281001", metaDetails: {
-      title: "Packers and Movers in Mathura | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Mathura with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Mathura and across Uttar Pradesh.",
-      keywords: "Local movers near me Mathura, Packers and Movers in Mathura, Gati Shifting Packers Mathura, Best Packers and Movers Mathura, Affordable Packers and Movers Mathura, Trusted Packers and Movers Mathura Uttar Pradesh, Local Packers and Movers Mathura, Professional Movers and Packers Mathura, Home Shifting Services Mathura, Office Relocation Mathura, Vehicle Transport Mathura, Car Transport Service Mathura, Bike Transport Mathura, Household Goods Shifting Mathura, Industrial Packers and Movers Mathura, Door-to-Door Shifting Services Mathura, Packing and Unpacking Services Mathura, Furniture Movers Mathura, Intercity Packers and Movers Mathura, Packers and Movers Mathura to Lucknow, Packers and Movers Mathura to Kanpur, Packers and Movers Mathura to Noida, Packers and Movers Mathura to Ghaziabad, Packers and Movers Mathura to Delhi, Reliable Relocation Company Mathura, Cost-Effective Packers and Movers Mathura, Quick Packers and Movers Mathura, 24x7 Packers and Movers Mathura, Mini Truck for Shifting Mathura, Tempo Service Mathura, Best Relocation Services Mathura, Safe and Secure Moving Services Mathura, Budget-Friendly Movers Mathura, Professional Relocation Company Mathura, Long-Distance Packers and Movers Mathura, Trusted Shifting Company Mathura, Goods Transport Services Mathura.",
-      ogdesc: "Looking for reliable Packers and Movers in Mathura? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Mathura and across Uttar Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Mathura by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Mathura"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Firozabad", city: "Firozabad", img: Firozabad, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203", metaDetails: {
-      title: "Packers and Movers in Firozabad | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Firozabad with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Firozabad and across Uttar Pradesh.",
-      keywords: "Local movers near me Firozabad, Packers and Movers in Firozabad, Gati Shifting Packers Firozabad, Best Packers and Movers Firozabad, Affordable Packers and Movers Firozabad, Trusted Packers and Movers Firozabad Uttar Pradesh, Local Packers and Movers Firozabad, Professional Movers and Packers Firozabad, Home Shifting Services Firozabad, Office Relocation Firozabad, Vehicle Transport Firozabad, Car Transport Service Firozabad, Bike Transport Firozabad, Household Goods Shifting Firozabad, Industrial Packers and Movers Firozabad, Door-to-Door Shifting Services Firozabad, Packing and Unpacking Services Firozabad, Furniture Movers Firozabad, Intercity Packers and Movers Firozabad, Packers and Movers Firozabad to Lucknow, Packers and Movers Firozabad to Kanpur, Packers and Movers Firozabad to Agra, Packers and Movers Firozabad to Noida, Packers and Movers Firozabad to Delhi, Reliable Relocation Company Firozabad, Cost-Effective Packers and Movers Firozabad, Quick Packers and Movers Firozabad, 24x7 Packers and Movers Firozabad, Mini Truck for Shifting Firozabad, Tempo Service Firozabad, Best Relocation Services Firozabad, Safe and Secure Moving Services Firozabad, Budget-Friendly Movers Firozabad, Professional Relocation Company Firozabad, Long-Distance Packers and Movers Firozabad, Trusted Shifting Company Firozabad, Goods Transport Services Firozabad.",
-      ogdesc: "Looking for reliable Packers and Movers in Firozabad? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Firozabad and across Uttar Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Firozabad by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Firozabad"
-    }
+  slug: "packers-and-movers-in-nainital",
+  city: "Nainital",
+  img: Nainital,
+  offer: "10%",
+  address: "Manpur Rd, Kachnal Gazi, Kashipur, Uttarakhand 244713",
+
+  metaDetails: {
+    title: "Packers and Movers in Nainital | Gati Shifting Packers",
+    desc: "Hire trusted packers and movers in Nainital for home shifting, office relocation, and vehicle transport at affordable prices."
   },
 
+  pageData: {
+    mainHeading: "Packers and Movers in Nainital – Smart & Secure Moving Solutions",
+
+    paragraph: [
+      "Looking for reliable packers and movers in Nainital? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transportation, and timely delivery for both local and long-distance moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Nainital",
+
+    services: [
+      {
+        title: "Home Shifting Services Nainital",
+        desc: "Complete home relocation including packing, transport, and unpacking.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Nainital",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Nainital",
+        desc: "High-quality packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Nainital",
+        desc: "Reliable car and bike transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Nainital",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "How much does shifting cost?", a: "Charges depend on distance and items." },
+      { q: "Do you provide home shifting?", a: "Yes, complete services available." },
+      { q: "Do you transport vehicles?", a: "Yes, car and bike transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Almora", city: "Almora", img: Almora, offer: "23%", address: "Rampur Rd, Haldu Pokhara Nayak, Rampur, Haldwani, Uttarakhand 263139", metaDetails: {
+  //     title: "Packers and Movers in Almora | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Almora with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Almora and across Uttarakhand.",
+  //     keywords: "Local movers near me Almora, Packers and Movers in Almora, Gati Shifting Packers Almora, Best Packers and Movers Almora, Affordable Packers and Movers Almora, Trusted Packers and Movers Almora Uttarakhand, Local Packers and Movers Almora, Professional Movers and Packers Almora, Home Shifting Services Almora, Office Relocation Almora, Vehicle Transport Almora, Car Transport Service Almora, Bike Transport Almora, Household Goods Shifting Almora, Industrial Packers and Movers Almora, Door-to-Door Shifting Services Almora, Packing and Unpacking Services Almora, Furniture Movers Almora, Intercity Packers and Movers Almora, Packers and Movers Almora to Nainital, Packers and Movers Almora to Haldwani, Packers and Movers Almora to Rudrapur, Packers and Movers Almora to Dehradun, Packers and Movers Almora to Haridwar, Packers and Movers Almora to Rishikesh, Reliable Relocation Company Almora, Cost-Effective Packers and Movers Almora, Quick Packers and Movers Almora, 24x7 Packers and Movers Almora, Mini Truck for Shifting Almora, Tempo Service Almora, Best Relocation Services Almora, Safe and Secure Moving Services Almora, Budget-Friendly Movers Almora, Professional Relocation Company Almora, Long-Distance Packers and Movers Almora, Trusted Shifting Company Almora, Goods Transport Services Almora.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Almora? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Almora and across Uttarakhand.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Almora by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Almora"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-almora",
+  city: "Almora",
+  img: Almora,
+  offer: "10%",
+  address: "Rampur Rd, Haldu Pokhara Nayak, Rampur, Haldwani, Uttarakhand 263139",
+
+  metaDetails: {
+    title: "Packers and Movers in Almora | Gati Shifting Packers",
+    desc: "Best packers and movers in Almora for home shifting, office relocation, and vehicle transport services at affordable prices."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Almora – Safe & Hassle-Free Relocation",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Almora? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure handling, and timely delivery for all types of moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Almora",
+
+    services: [
+      {
+        title: "Home Shifting Services Almora",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Almora",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Almora",
+        desc: "Premium packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Almora",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Almora",
+
+    whyChoose: [
+      "Skilled professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "Do you provide home shifting?", a: "Yes, complete relocation services available." },
+      { q: "Do you handle office relocation?", a: "Yes, office relocation available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Are services affordable?", a: "Yes, budget-friendly pricing." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Mussoorie", city: "Mussoorie", img: Mussoorie, offer: "23%", address: "Haridwar Road, P.O. Harrawala, Kuwan Wala, Dehradun, Uttarakhand 248160", metaDetails: {
+  //     title: "Packers and Movers in Mussoorie | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Mussoorie with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Mussoorie and across Uttarakhand.",
+  //     keywords: "Local movers near me Mussoorie, Packers and Movers in Mussoorie, Gati Shifting Packers Mussoorie, Best Packers and Movers Mussoorie, Affordable Packers and Movers Mussoorie, Trusted Packers and Movers Mussoorie Uttarakhand, Local Packers and Movers Mussoorie, Professional Movers and Packers Mussoorie, Home Shifting Services Mussoorie, Office Relocation Mussoorie, Vehicle Transport Mussoorie, Car Transport Service Mussoorie, Bike Transport Mussoorie, Household Goods Shifting Mussoorie, Industrial Packers and Movers Mussoorie, Door-to-Door Shifting Services Mussoorie, Packing and Unpacking Services Mussoorie, Furniture Movers Mussoorie, Intercity Packers and Movers Mussoorie, Packers and Movers Mussoorie to Dehradun, Packers and Movers Mussoorie to Haridwar, Packers and Movers Mussoorie to Rishikesh, Packers and Movers Mussoorie to Nainital, Packers and Movers Mussoorie to Haldwani, Reliable Relocation Company Mussoorie, Cost-Effective Packers and Movers Mussoorie, Quick Packers and Movers Mussoorie, 24x7 Packers and Movers Mussoorie, Mini Truck for Shifting Mussoorie, Tempo Service Mussoorie, Best Relocation Services Mussoorie, Safe and Secure Moving Services Mussoorie, Budget-Friendly Movers Mussoorie, Professional Relocation Company Mussoorie, Long-Distance Packers and Movers Mussoorie, Trusted Shifting Company Mussoorie, Goods Transport Services Mussoorie.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Mussoorie? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Mussoorie and across Uttarakhand.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Mussoorie by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Mussoorie"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-mussoorie",
+  city: "Mussoorie",
+  img: Mussoorie,
+  offer: "10%",
+  address: "Haridwar Road, P.O. Harrawala, Kuwan Wala, Dehradun, Uttarakhand 248160",
+
+  metaDetails: {
+    title: "Packers and Movers in Mussoorie | Gati Shifting Packers",
+    desc: "Affordable packers and movers in Mussoorie for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Mussoorie – Smooth & Secure Relocation",
+
+    paragraph: [
+      "Looking for professional packers and movers in Mussoorie? Gati Shifting Packers provides reliable relocation services.",
+      "We ensure safe packing, secure transport, and timely delivery for local and intercity moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Mussoorie",
+
+    services: [
+      {
+        title: "Home Shifting Services Mussoorie",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Mussoorie",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Mussoorie",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Mussoorie",
+        desc: "Reliable car and bike transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Mussoorie",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "Timely delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What is moving cost?", a: "Depends on distance and goods." },
+      { q: "Do you provide home shifting?", a: "Yes, full services available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle intercity moves?", a: "Yes, long-distance relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Bareilly", city: "Bareilly", img: Bareilly, offer: "23%", address: "Shop No. 4 & 5, Rajendra Nagar Market, opposite Sheel Hospital, Rajendra Nagar, Bareilly, Uttar Pradesh 243001", metaDetails: {
+  //     title: "Packers and Movers in Bareilly | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Bareilly with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Bareilly and across Uttar Pradesh.",
+  //     keywords: "Local movers near me Bareilly, Packers and Movers in Bareilly, Gati Shifting Packers Bareilly, Best Packers and Movers Bareilly, Affordable Packers and Movers Bareilly, Trusted Packers and Movers Bareilly Uttar Pradesh, Local Packers and Movers Bareilly, Professional Movers and Packers Bareilly, Home Shifting Services Bareilly, Office Relocation Bareilly, Vehicle Transport Bareilly, Car Transport Service Bareilly, Bike Transport Bareilly, Household Goods Shifting Bareilly, Industrial Packers and Movers Bareilly, Door-to-Door Shifting Services Bareilly, Packing and Unpacking Services Bareilly, Furniture Movers Bareilly, Intercity Packers and Movers Bareilly, Packers and Movers Bareilly to Lucknow, Packers and Movers Bareilly to Kanpur, Packers and Movers Bareilly to Noida, Packers and Movers Bareilly to Ghaziabad, Packers and Movers Bareilly to Delhi, Reliable Relocation Company Bareilly, Cost-Effective Packers and Movers Bareilly, Quick Packers and Movers Bareilly, 24x7 Packers and Movers Bareilly, Mini Truck for Shifting Bareilly, Tempo Service Bareilly, Best Relocation Services Bareilly, Safe and Secure Moving Services Bareilly, Budget-Friendly Movers Bareilly, Professional Relocation Company Bareilly, Long-Distance Packers and Movers Bareilly, Trusted Shifting Company Bareilly, Goods Transport Services Bareilly.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Bareilly? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Bareilly and across Uttar Pradesh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Bareilly by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Bareilly"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-bareilly",
+  city: "Bareilly",
+  img: Bareilly,
+  offer: "10%",
+  address: "Shop No. 4 & 5, Rajendra Nagar Market, opposite Sheel Hospital, Rajendra Nagar, Bareilly, Uttar Pradesh 243001",
+
+  metaDetails: {
+    title: "Packers and Movers in Bareilly | Gati Shifting Packers",
+    desc: "Trusted packers and movers in Bareilly for home shifting, office relocation, and vehicle transport services at affordable prices."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Bareilly – Reliable & Efficient Relocation Services",
+
+    paragraph: [
+      "Looking for professional packers and movers in Bareilly? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transportation, and timely delivery for both local and long-distance moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Bareilly",
+
+    services: [
+      {
+        title: "Home Shifting Services Bareilly",
+        desc: "Complete home relocation including packing, loading, transport, and unpacking.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Bareilly",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Bareilly",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Bareilly",
+        desc: "Reliable car and bike transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Bareilly",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What are shifting charges?", a: "Charges depend on distance and items." },
+      { q: "Do you provide home shifting?", a: "Yes, full relocation services available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Aligarh", city: "Aligarh", img: Aligarh, offer: "23%", address: "G 19, Ramghat Rd, Saraswati Vihar, Phase 1, ADA Colony, Aligarh, Uttar Pradesh 202001", metaDetails: {
+  //     title: "Packers and Movers in Aligarh | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Aligarh with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Aligarh and across Uttar Pradesh.",
+  //     keywords: "Local movers near me Aligarh, Packers and Movers in Aligarh, Gati Shifting Packers Aligarh, Best Packers and Movers Aligarh, Affordable Packers and Movers Aligarh, Trusted Packers and Movers Aligarh Uttar Pradesh, Local Packers and Movers Aligarh, Professional Movers and Packers Aligarh, Home Shifting Services Aligarh, Office Relocation Aligarh, Vehicle Transport Aligarh, Car Transport Service Aligarh, Bike Transport Aligarh, Household Goods Shifting Aligarh, Industrial Packers and Movers Aligarh, Door-to-Door Shifting Services Aligarh, Packing and Unpacking Services Aligarh, Furniture Movers Aligarh, Intercity Packers and Movers Aligarh, Packers and Movers Aligarh to Lucknow, Packers and Movers Aligarh to Kanpur, Packers and Movers Aligarh to Noida, Packers and Movers Aligarh to Ghaziabad, Packers and Movers Aligarh to Delhi, Reliable Relocation Company Aligarh, Cost-Effective Packers and Movers Aligarh, Quick Packers and Movers Aligarh, 24x7 Packers and Movers Aligarh, Mini Truck for Shifting Aligarh, Tempo Service Aligarh, Best Relocation Services Aligarh, Safe and Secure Moving Services Aligarh, Budget-Friendly Movers Aligarh, Professional Relocation Company Aligarh, Long-Distance Packers and Movers Aligarh, Trusted Shifting Company Aligarh, Goods Transport Services Aligarh.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Aligarh? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Aligarh and across Uttar Pradesh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Aligarh by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Aligarh"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-aligarh",
+  city: "Aligarh",
+  img: Aligarh,
+  offer: "10%",
+  address: "G 19, Ramghat Rd, Saraswati Vihar, Phase 1, ADA Colony, Aligarh, Uttar Pradesh 202001",
+
+  metaDetails: {
+    title: "Packers and Movers in Aligarh | Gati Shifting Packers",
+    desc: "Reliable packers and movers in Aligarh for home shifting, office relocation, and vehicle transport services at affordable prices."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Aligarh – Smooth & Trusted Shifting Services",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Aligarh? Gati Shifting Packers offers complete relocation services.",
+      "We ensure safe packing, secure handling, and timely delivery for all types of moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Aligarh",
+
+    services: [
+      {
+        title: "Home Shifting Services Aligarh",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Aligarh",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Aligarh",
+        desc: "Premium packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Aligarh",
+        desc: "Reliable car and bike transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Aligarh",
+
+    whyChoose: [
+      "Experienced team",
+      "Safe packing and handling",
+      "Timely delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What is relocation cost?", a: "Depends on distance and goods." },
+      { q: "Do you provide home shifting?", a: "Yes, full services available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle intercity moves?", a: "Yes, long-distance relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Moradabad", city: "Moradabad", img: Moradabad, offer: "23%", address: "Budh Bazaar Rd, near Post Office, Malviya Nagar, Budh Bazaar, Moradabad, Uttar Pradesh 244001", metaDetails: {
+  //     title: "Packers and Movers in Moradabad | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Moradabad with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Moradabad and across Uttar Pradesh.",
+  //     keywords: "Local movers near me Moradabad, Packers and Movers in Moradabad, Gati Shifting Packers Moradabad, Best Packers and Movers Moradabad, Affordable Packers and Movers Moradabad, Trusted Packers and Movers Moradabad Uttar Pradesh, Local Packers and Movers Moradabad, Professional Movers and Packers Moradabad, Home Shifting Services Moradabad, Office Relocation Moradabad, Vehicle Transport Moradabad, Car Transport Service Moradabad, Bike Transport Moradabad, Household Goods Shifting Moradabad, Industrial Packers and Movers Moradabad, Door-to-Door Shifting Services Moradabad, Packing and Unpacking Services Moradabad, Furniture Movers Moradabad, Intercity Packers and Movers Moradabad, Packers and Movers Moradabad to Lucknow, Packers and Movers Moradabad to Kanpur, Packers and Movers Moradabad to Noida, Packers and Movers Moradabad to Ghaziabad, Packers and Movers Moradabad to Delhi, Reliable Relocation Company Moradabad, Cost-Effective Packers and Movers Moradabad, Quick Packers and Movers Moradabad, 24x7 Packers and Movers Moradabad, Mini Truck for Shifting Moradabad, Tempo Service Moradabad, Best Relocation Services Moradabad, Safe and Secure Moving Services Moradabad, Budget-Friendly Movers Moradabad, Professional Relocation Company Moradabad, Long-Distance Packers and Movers Moradabad, Trusted Shifting Company Moradabad, Goods Transport Services Moradabad.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Moradabad? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Moradabad and across Uttar Pradesh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Moradabad by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Moradabad"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-moradabad",
+  city: "Moradabad",
+  img: Moradabad,
+  offer: "10%",
+  address: "Budh Bazaar Rd, near Post Office, Malviya Nagar, Budh Bazaar, Moradabad, Uttar Pradesh 244001",
+
+  metaDetails: {
+    title: "Packers and Movers in Moradabad | Gati Shifting Packers",
+    desc: "Hire expert packers and movers in Moradabad for home shifting, office relocation, and vehicle transport services at affordable prices."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Moradabad – Safe & Efficient Relocation Services",
+
+    paragraph: [
+      "Looking for reliable packers and movers in Moradabad? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transport, and timely delivery for local and long-distance moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Moradabad",
+
+    services: [
+      {
+        title: "Home Shifting Services Moradabad",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Moradabad",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Moradabad",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Moradabad",
+        desc: "Reliable car and bike transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Moradabad",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What are relocation charges?", a: "Depends on distance and goods." },
+      { q: "Do you provide home shifting?", a: "Yes, complete services available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Saharanpur", city: "Saharanpur", img: Saharanpur, offer: "23%", address: "Khan Alampura, Saharanpur, Uttar Pradesh 247001", metaDetails: {
+  //     title: "Packers and Movers in Saharanpur | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Saharanpur with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Saharanpur and across Uttar Pradesh.",
+  //     keywords: "Local movers near me Saharanpur, Packers and Movers in Saharanpur, Gati Shifting Packers Saharanpur, Best Packers and Movers Saharanpur, Affordable Packers and Movers Saharanpur, Trusted Packers and Movers Saharanpur Uttar Pradesh, Local Packers and Movers Saharanpur, Professional Movers and Packers Saharanpur, Home Shifting Services Saharanpur, Office Relocation Saharanpur, Vehicle Transport Saharanpur, Car Transport Service Saharanpur, Bike Transport Saharanpur, Household Goods Shifting Saharanpur, Industrial Packers and Movers Saharanpur, Door-to-Door Shifting Services Saharanpur, Packing and Unpacking Services Saharanpur, Furniture Movers Saharanpur, Intercity Packers and Movers Saharanpur, Packers and Movers Saharanpur to Lucknow, Packers and Movers Saharanpur to Kanpur, Packers and Movers Saharanpur to Noida, Packers and Movers Saharanpur to Ghaziabad, Packers and Movers Saharanpur to Delhi, Reliable Relocation Company Saharanpur, Cost-Effective Packers and Movers Saharanpur, Quick Packers and Movers Saharanpur, 24x7 Packers and Movers Saharanpur, Mini Truck for Shifting Saharanpur, Tempo Service Saharanpur, Best Relocation Services Saharanpur, Safe and Secure Moving Services Saharanpur, Budget-Friendly Movers Saharanpur, Professional Relocation Company Saharanpur, Long-Distance Packers and Movers Saharanpur, Trusted Shifting Company Saharanpur, Goods Transport Services Saharanpur.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Saharanpur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Saharanpur and across Uttar Pradesh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Saharanpur by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Saharanpur"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-saharanpur",
+  city: "Saharanpur",
+  img: Saharanpur,
+  offer: "10%",
+  address: "Khan Alampura, Saharanpur, Uttar Pradesh 247001",
+
+  metaDetails: {
+    title: "Packers and Movers in Saharanpur | Gati Shifting Packers",
+    desc: "Trusted packers and movers in Saharanpur for home shifting, office relocation, and vehicle transport services at affordable prices."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Saharanpur – Smooth & Secure Moving Solutions",
+
+    paragraph: [
+      "Looking for reliable packers and movers in Saharanpur? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transportation, and timely delivery for both local and long-distance moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Saharanpur",
+
+    services: [
+      {
+        title: "Home Shifting Services Saharanpur",
+        desc: "Complete home relocation including packing, loading, transport, and unpacking.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Saharanpur",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Saharanpur",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Saharanpur",
+        desc: "Reliable car and bike transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Saharanpur",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What is shifting cost?", a: "Depends on distance and goods." },
+      { q: "Do you provide home shifting?", a: "Yes, complete services available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Jhansi", city: "Jhansi", img: Jhansi, offer: "23%", address: "Bundelkhand University, National Highway 25, Bundelkhand University, Jhansi, Uttar Pradesh 284128", metaDetails: {
+  //     title: "Packers and Movers in Jhansi | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Jhansi with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Jhansi and across Uttar Pradesh.",
+  //     keywords: "Local movers near me Jhansi, Packers and Movers in Jhansi, Gati Shifting Packers Jhansi, Best Packers and Movers Jhansi, Affordable Packers and Movers Jhansi, Trusted Packers and Movers Jhansi Uttar Pradesh, Local Packers and Movers Jhansi, Professional Movers and Packers Jhansi, Home Shifting Services Jhansi, Office Relocation Jhansi, Vehicle Transport Jhansi, Car Transport Service Jhansi, Bike Transport Jhansi, Household Goods Shifting Jhansi, Industrial Packers and Movers Jhansi, Door-to-Door Shifting Services Jhansi, Packing and Unpacking Services Jhansi, Furniture Movers Jhansi, Intercity Packers and Movers Jhansi, Packers and Movers Jhansi to Lucknow, Packers and Movers Jhansi to Kanpur, Packers and Movers Jhansi to Noida, Packers and Movers Jhansi to Ghaziabad, Packers and Movers Jhansi to Delhi, Reliable Relocation Company Jhansi, Cost-Effective Packers and Movers Jhansi, Quick Packers and Movers Jhansi, 24x7 Packers and Movers Jhansi, Mini Truck for Shifting Jhansi, Tempo Service Jhansi, Best Relocation Services Jhansi, Safe and Secure Moving Services Jhansi, Budget-Friendly Movers Jhansi, Professional Relocation Company Jhansi, Long-Distance Packers and Movers Jhansi, Trusted Shifting Company Jhansi, Goods Transport Services Jhansi.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Jhansi? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Jhansi and across Uttar Pradesh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Jhansi by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Jhansi"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-jhansi",
+  city: "Jhansi",
+  img: Jhansi,
+  offer: "10%",
+  address: "Bundelkhand University, National Highway 25, Bundelkhand University, Jhansi, Uttar Pradesh 284128",
+
+  metaDetails: {
+    title: "Packers and Movers in Jhansi | Gati Shifting Packers",
+    desc: "Affordable packers and movers in Jhansi for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Jhansi – Reliable & Safe Relocation Services",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Jhansi? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure handling, and timely delivery for local and intercity moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Jhansi",
+
+    services: [
+      {
+        title: "Home Shifting Services Jhansi",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Jhansi",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Jhansi",
+        desc: "High-quality packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Jhansi",
+        desc: "Reliable car and bike transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Jhansi",
+
+    whyChoose: [
+      "Experienced team",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What are shifting charges?", a: "Depends on distance and goods." },
+      { q: "Do you provide home shifting?", a: "Yes, full relocation services available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Mathura", city: "Mathura", img: Mathura, offer: "23%", address: "Farm, Delhi, Near Nayati Hospital, Awagarh, Road Bye Pass, Mathura, Uttar Pradesh 281001", metaDetails: {
+  //     title: "Packers and Movers in Mathura | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Mathura with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Mathura and across Uttar Pradesh.",
+  //     keywords: "Local movers near me Mathura, Packers and Movers in Mathura, Gati Shifting Packers Mathura, Best Packers and Movers Mathura, Affordable Packers and Movers Mathura, Trusted Packers and Movers Mathura Uttar Pradesh, Local Packers and Movers Mathura, Professional Movers and Packers Mathura, Home Shifting Services Mathura, Office Relocation Mathura, Vehicle Transport Mathura, Car Transport Service Mathura, Bike Transport Mathura, Household Goods Shifting Mathura, Industrial Packers and Movers Mathura, Door-to-Door Shifting Services Mathura, Packing and Unpacking Services Mathura, Furniture Movers Mathura, Intercity Packers and Movers Mathura, Packers and Movers Mathura to Lucknow, Packers and Movers Mathura to Kanpur, Packers and Movers Mathura to Noida, Packers and Movers Mathura to Ghaziabad, Packers and Movers Mathura to Delhi, Reliable Relocation Company Mathura, Cost-Effective Packers and Movers Mathura, Quick Packers and Movers Mathura, 24x7 Packers and Movers Mathura, Mini Truck for Shifting Mathura, Tempo Service Mathura, Best Relocation Services Mathura, Safe and Secure Moving Services Mathura, Budget-Friendly Movers Mathura, Professional Relocation Company Mathura, Long-Distance Packers and Movers Mathura, Trusted Shifting Company Mathura, Goods Transport Services Mathura.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Mathura? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Mathura and across Uttar Pradesh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Mathura by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Mathura"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-mathura",
+  city: "Mathura",
+  img: Mathura,
+  offer: "10%",
+  address: "Farm, Delhi, Near Nayati Hospital, Awagarh, Road Bye Pass, Mathura, Uttar Pradesh 281001",
+
+  metaDetails: {
+    title: "Packers and Movers in Mathura | Gati Shifting Packers",
+    desc: "Reliable packers and movers in Mathura for home shifting, office relocation, and vehicle transport services at affordable prices."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Mathura – Trusted & Efficient Moving Services",
+
+    paragraph: [
+      "Looking for professional packers and movers in Mathura? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transportation, and timely delivery for both local and long-distance moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Mathura",
+
+    services: [
+      {
+        title: "Home Shifting Services Mathura",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Mathura",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Mathura",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Mathura",
+        desc: "Reliable car and bike transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Mathura",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What is the cost of moving in Mathura?", a: "Charges depend on distance, volume of goods, and services selected. Contact us for a free quote." },
+      { q: "Do you provide household shifting services in Mathura?", a: "Yes, we offer complete household shifting services Mathura including packing and transportation." },
+      { q: "Is vehicle transportation available?", a: "Yes, we provide safe car transport services in Mathura and bike transport Mathura." },
+      { q: "Do you handle long-distance relocation?", a: "Yes, we manage both local and long-distance relocations efficiently." },
+      { q: "How can I book your services?", a: "Call +91 9422799477 or email gatishiftingpackers@gmail.com to schedule your move." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Firozabad", city: "Firozabad", img: Firozabad, offer: "23%", address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203", metaDetails: {
+  //     title: "Packers and Movers in Firozabad | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Firozabad with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Firozabad and across Uttar Pradesh.",
+  //     keywords: "Local movers near me Firozabad, Packers and Movers in Firozabad, Gati Shifting Packers Firozabad, Best Packers and Movers Firozabad, Affordable Packers and Movers Firozabad, Trusted Packers and Movers Firozabad Uttar Pradesh, Local Packers and Movers Firozabad, Professional Movers and Packers Firozabad, Home Shifting Services Firozabad, Office Relocation Firozabad, Vehicle Transport Firozabad, Car Transport Service Firozabad, Bike Transport Firozabad, Household Goods Shifting Firozabad, Industrial Packers and Movers Firozabad, Door-to-Door Shifting Services Firozabad, Packing and Unpacking Services Firozabad, Furniture Movers Firozabad, Intercity Packers and Movers Firozabad, Packers and Movers Firozabad to Lucknow, Packers and Movers Firozabad to Kanpur, Packers and Movers Firozabad to Agra, Packers and Movers Firozabad to Noida, Packers and Movers Firozabad to Delhi, Reliable Relocation Company Firozabad, Cost-Effective Packers and Movers Firozabad, Quick Packers and Movers Firozabad, 24x7 Packers and Movers Firozabad, Mini Truck for Shifting Firozabad, Tempo Service Firozabad, Best Relocation Services Firozabad, Safe and Secure Moving Services Firozabad, Budget-Friendly Movers Firozabad, Professional Relocation Company Firozabad, Long-Distance Packers and Movers Firozabad, Trusted Shifting Company Firozabad, Goods Transport Services Firozabad.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Firozabad? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Firozabad and across Uttar Pradesh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Firozabad by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Firozabad"
+  //   }
+  // },
+
+  {
+  slug: "packers-and-movers-in-firozabad",
+  city: "Firozabad",
+  img: Firozabad,
+  offer: "10%",
+  address: "Sadar Bazaar Rd, Chota Chauraha, Joshiyan Mohalla, Firozabad, Uttar Pradesh 283203",
+
+  metaDetails: {
+    title: "Packers and Movers in Firozabad | Gati Shifting Packers",
+    desc: "Trusted packers and movers in Firozabad for home shifting, office relocation, and vehicle transport services at affordable prices."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Firozabad – Safe & Professional Relocation Services",
+
+    paragraph: [
+      "Looking for reliable packers and movers in Firozabad? Gati Shifting Packers provides complete relocation services.",
+      "We ensure secure packing, careful handling, and timely delivery for both local and long-distance moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Firozabad",
+
+    services: [
+      {
+        title: "Home Shifting Services Firozabad",
+        desc: "Complete home relocation including packing, loading, transport, and unpacking.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Firozabad",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Firozabad",
+        desc: "High-quality packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Firozabad",
+        desc: "Reliable car and bike transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Firozabad",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Transparent pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What are relocation charges?", a: "Charges depend on distance and goods." },
+      { q: "Do you provide home shifting?", a: "Yes, complete relocation services available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
 
 
   {
