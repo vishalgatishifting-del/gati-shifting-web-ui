@@ -27554,64 +27554,834 @@ export const pagesData = [
   // }
   //  },
   {
-    slug: "packers-and-movers-in-Mysore", city: "Mysore", img: Mysore, offer: "16%", address: "12/a Mahadevapura Road, Udayagiri, Mysore, Karnataka 570020, India. ", metaDetails: {
-      title: "Packers and Movers in Mysore | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Mysore with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Mysore and across Karnataka.",
-      keywords: "Local movers near me Mysore, Packers and Movers in Mysore, Gati Shifting Packers Mysore, Best Packers and Movers Mysore, Affordable Packers and Movers Mysore, Trusted Packers and Movers Mysore Karnataka, Local Packers and Movers Mysore, Professional Movers and Packers Mysore, Home Shifting Services Mysore, Office Relocation Mysore, Vehicle Transport Mysore, Car Transport Service Mysore, Bike Transport Mysore, Household Goods Shifting Mysore, Industrial Packers and Movers Mysore, Door-to-Door Shifting Services Mysore, Packing and Unpacking Services Mysore, Furniture Movers Mysore, Intercity Packers and Movers Mysore, Packers and Movers Mysore to Bangalore, Packers and Movers Mysore to Mangalore, Packers and Movers Mysore to Hubli, Packers and Movers Mysore to Davangere, Packers and Movers Mysore to Hyderabad, Packers and Movers Mysore to Chennai, Reliable Relocation Company Mysore, Cost-Effective Packers and Movers Mysore, Quick Packers and Movers Mysore, 24x7 Packers and Movers Mysore, Mini Truck for Shifting Mysore, Tempo Service Mysore, Best Relocation Services Mysore, Safe and Secure Moving Services Mysore, Budget-Friendly Movers Mysore, Professional Relocation Company Mysore, Long-Distance Packers and Movers Mysore, Trusted Shifting Company Mysore, Goods Transport Services Mysore.",
-      ogdesc: "Looking for reliable Packers and Movers in Mysore? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Mysore and across Karnataka.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Mysore by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Mysore"
-    }
+  slug: "packers-and-movers-in-bangalore",
+  city: "Bangalore",
+  img: Bengaluru,
+  offer: "10%",
+  address: "Bangalore City Area, Karnataka 560001",
+
+  metaDetails: {
+    title: "Packers and Movers in Bangalore | Gati Shifting Packers",
+    desc: "Best packers and movers in Bangalore for home shifting, office relocation, and vehicle transport services at affordable prices."
   },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Bangalore – Safe & Smart Moving Solutions",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Bangalore? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure handling, and timely delivery for both local and long-distance moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Bangalore",
+
+    services: [
+      {
+        title: "Home Shifting Services Bangalore",
+        desc: "Complete home relocation services with premium packing.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Bangalore",
+        desc: "Efficient office shifting with minimal disruption.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Bangalore",
+        desc: "High-quality packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Bangalore",
+        desc: "Reliable car and bike transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Bangalore",
+
+    whyChoose: [
+      "Experienced team",
+      "Safe packing and handling",
+      "Timely delivery",
+      "Transparent pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "Do you provide full relocation services?", a: "Yes, complete services available." },
+      { q: "Do you handle office relocation?", a: "Yes, office relocation available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Are services affordable?", a: "Yes, competitive pricing available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Mysore", city: "Mysore", img: Mysore, offer: "16%", address: "12/a Mahadevapura Road, Udayagiri, Mysore, Karnataka 570020, India. ", metaDetails: {
+  //     title: "Packers and Movers in Mysore | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Mysore with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Mysore and across Karnataka.",
+  //     keywords: "Local movers near me Mysore, Packers and Movers in Mysore, Gati Shifting Packers Mysore, Best Packers and Movers Mysore, Affordable Packers and Movers Mysore, Trusted Packers and Movers Mysore Karnataka, Local Packers and Movers Mysore, Professional Movers and Packers Mysore, Home Shifting Services Mysore, Office Relocation Mysore, Vehicle Transport Mysore, Car Transport Service Mysore, Bike Transport Mysore, Household Goods Shifting Mysore, Industrial Packers and Movers Mysore, Door-to-Door Shifting Services Mysore, Packing and Unpacking Services Mysore, Furniture Movers Mysore, Intercity Packers and Movers Mysore, Packers and Movers Mysore to Bangalore, Packers and Movers Mysore to Mangalore, Packers and Movers Mysore to Hubli, Packers and Movers Mysore to Davangere, Packers and Movers Mysore to Hyderabad, Packers and Movers Mysore to Chennai, Reliable Relocation Company Mysore, Cost-Effective Packers and Movers Mysore, Quick Packers and Movers Mysore, 24x7 Packers and Movers Mysore, Mini Truck for Shifting Mysore, Tempo Service Mysore, Best Relocation Services Mysore, Safe and Secure Moving Services Mysore, Budget-Friendly Movers Mysore, Professional Relocation Company Mysore, Long-Distance Packers and Movers Mysore, Trusted Shifting Company Mysore, Goods Transport Services Mysore.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Mysore? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Mysore and across Karnataka.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Mysore by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Mysore"
+  //   }
+  // },
   {
-    slug: "packers-and-movers-in-Jabalpur", city: "Jabalpur", img: Jabalpur, offer: "16%", address: "Shop - 11 Shanti Nagar Gate, Deendayal Road, Damoh Naka, Jabalpur, Madhya Pradesh 482002, India.", metaDetails: {
-      title: "Packers and Movers in Jabalpur | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Jabalpur with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Jabalpur and across Madhya Pradesh.",
-      keywords: "Local movers near me Jabalpur, Packers and Movers in Jabalpur, Gati Shifting Packers Jabalpur, Best Packers and Movers Jabalpur, Affordable Packers and Movers Jabalpur, Trusted Packers and Movers Jabalpur Madhya Pradesh, Local Packers and Movers Jabalpur, Professional Movers and Packers Jabalpur, Home Shifting Services Jabalpur, Office Relocation Jabalpur, Vehicle Transport Jabalpur, Car Transport Service Jabalpur, Bike Transport Jabalpur, Household Goods Shifting Jabalpur, Industrial Packers and Movers Jabalpur, Door-to-Door Shifting Services Jabalpur, Packing and Unpacking Services Jabalpur, Furniture Movers Jabalpur, Intercity Packers and Movers Jabalpur, Packers and Movers Jabalpur to Indore, Packers and Movers Jabalpur to Bhopal, Packers and Movers Jabalpur to Gwalior, Packers and Movers Jabalpur to Nagpur, Packers and Movers Jabalpur to Delhi, Reliable Relocation Company Jabalpur, Cost-Effective Packers and Movers Jabalpur, Quick Packers and Movers Jabalpur, 24x7 Packers and Movers Jabalpur, Mini Truck for Shifting Jabalpur, Tempo Service Jabalpur, Best Relocation Services Jabalpur, Safe and Secure Moving Services Jabalpur, Budget-Friendly Movers Jabalpur, Professional Relocation Company Jabalpur, Long-Distance Packers and Movers Jabalpur, Trusted Shifting Company Jabalpur, Goods Transport Services Jabalpur.",
-      ogdesc: "Looking for reliable Packers and Movers in Jabalpur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Jabalpur and across Madhya Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Jabalpur by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Jabalpur"
-    }
+  slug: "packers-and-movers-in-mysore",
+  city: "Mysore",
+  img: Mysore,
+  offer: "10%",
+  address: "12/a Mahadevapura Road, Udayagiri, Mysore, Karnataka 570020, India.",
+
+  metaDetails: {
+    title: "Packers and Movers in Mysore | Gati Shifting Packers",
+    desc: "Reliable packers and movers in Mysore for home shifting, office relocation, and vehicle transport services at affordable prices."
   },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Mysore – Trusted & Efficient Relocation",
+
+    paragraph: [
+      "Looking for dependable packers and movers in Mysore? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transportation, and timely delivery for homes, offices, and vehicles."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Mysore",
+
+    services: [
+      {
+        title: "Home Shifting Services Mysore",
+        desc: "Complete home relocation services with safe packing and transport.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Mysore",
+        desc: "Professional office relocation with minimal downtime.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Mysore",
+        desc: "Durable packing materials for maximum safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Mysore",
+        desc: "Safe car and bike transport across India.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Mysore",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What services do you offer?", a: "Home, office, vehicle transport, and packing services." },
+      { q: "Do you provide home shifting?", a: "Yes, complete relocation available." },
+      { q: "Do you transport vehicles?", a: "Yes, car and bike transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Jabalpur", city: "Jabalpur", img: Jabalpur, offer: "16%", address: "Shop - 11 Shanti Nagar Gate, Deendayal Road, Damoh Naka, Jabalpur, Madhya Pradesh 482002, India.", metaDetails: {
+  //     title: "Packers and Movers in Jabalpur | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Jabalpur with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Jabalpur and across Madhya Pradesh.",
+  //     keywords: "Local movers near me Jabalpur, Packers and Movers in Jabalpur, Gati Shifting Packers Jabalpur, Best Packers and Movers Jabalpur, Affordable Packers and Movers Jabalpur, Trusted Packers and Movers Jabalpur Madhya Pradesh, Local Packers and Movers Jabalpur, Professional Movers and Packers Jabalpur, Home Shifting Services Jabalpur, Office Relocation Jabalpur, Vehicle Transport Jabalpur, Car Transport Service Jabalpur, Bike Transport Jabalpur, Household Goods Shifting Jabalpur, Industrial Packers and Movers Jabalpur, Door-to-Door Shifting Services Jabalpur, Packing and Unpacking Services Jabalpur, Furniture Movers Jabalpur, Intercity Packers and Movers Jabalpur, Packers and Movers Jabalpur to Indore, Packers and Movers Jabalpur to Bhopal, Packers and Movers Jabalpur to Gwalior, Packers and Movers Jabalpur to Nagpur, Packers and Movers Jabalpur to Delhi, Reliable Relocation Company Jabalpur, Cost-Effective Packers and Movers Jabalpur, Quick Packers and Movers Jabalpur, 24x7 Packers and Movers Jabalpur, Mini Truck for Shifting Jabalpur, Tempo Service Jabalpur, Best Relocation Services Jabalpur, Safe and Secure Moving Services Jabalpur, Budget-Friendly Movers Jabalpur, Professional Relocation Company Jabalpur, Long-Distance Packers and Movers Jabalpur, Trusted Shifting Company Jabalpur, Goods Transport Services Jabalpur.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Jabalpur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Jabalpur and across Madhya Pradesh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Jabalpur by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Jabalpur"
+  //   }
+  // },
   {
-    slug: "packers-and-movers-in-Ujjain", city: "Ujjain", img: Ujjain, offer: "16%", address: "Shop No.24, Kshapnak Marg., near Police Control Room, Madhav Nagar, Ujjain, Madhya Pradesh 456010, India.", metaDetails: {
-      title: "Packers and Movers in Ujjain | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Ujjain with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Ujjain and across Madhya Pradesh.",
-      keywords: "Local movers near me Ujjain, Packers and Movers in Ujjain, Gati Shifting Packers Ujjain, Best Packers and Movers Ujjain, Affordable Packers and Movers Ujjain, Trusted Packers and Movers Ujjain Madhya Pradesh, Local Packers and Movers Ujjain, Professional Movers and Packers Ujjain, Home Shifting Services Ujjain, Office Relocation Ujjain, Vehicle Transport Ujjain, Car Transport Service Ujjain, Bike Transport Ujjain, Household Goods Shifting Ujjain, Industrial Packers and Movers Ujjain, Door-to-Door Shifting Services Ujjain, Packing and Unpacking Services Ujjain, Furniture Movers Ujjain, Intercity Packers and Movers Ujjain, Packers and Movers Ujjain to Indore, Packers and Movers Ujjain to Bhopal, Packers and Movers Ujjain to Gwalior, Packers and Movers Ujjain to Jabalpur, Packers and Movers Ujjain to Delhi, Reliable Relocation Company Ujjain, Cost-Effective Packers and Movers Ujjain, Quick Packers and Movers Ujjain, 24x7 Packers and Movers Ujjain, Mini Truck for Shifting Ujjain, Tempo Service Ujjain, Best Relocation Services Ujjain, Safe and Secure Moving Services Ujjain, Budget-Friendly Movers Ujjain, Professional Relocation Company Ujjain, Long-Distance Packers and Movers Ujjain, Trusted Shifting Company Ujjain, Goods Transport Services Ujjain.",
-      ogdesc: "Looking for reliable Packers and Movers in Ujjain? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Ujjain and across Madhya Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Ujjain by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Ujjain"
-    }
+  slug: "packers-and-movers-in-jabalpur",
+  city: "Jabalpur",
+  img: Jabalpur,
+  offer: "10%",
+  address: "Shop - 11 Shanti Nagar Gate, Deendayal Road, Damoh Naka, Jabalpur, Madhya Pradesh 482002, India.",
+
+  metaDetails: {
+    title: "Packers and Movers in Jabalpur | Gati Shifting Packers",
+    desc: "Reliable packers and movers in Jabalpur for home shifting, office relocation, and vehicle transport services."
   },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Jabalpur – Safe & Reliable Relocation",
+
+    paragraph: [
+      "Looking for professional packers and movers in Jabalpur? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transport, and timely delivery for all types of moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Jabalpur",
+
+    services: [
+      {
+        title: "Home Shifting Services Jabalpur",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Jabalpur",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Jabalpur",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Jabalpur",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Jabalpur",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What services do you offer?", a: "Home, office, vehicle transport, and packing services." },
+      { q: "Do you provide home shifting?", a: "Yes, complete services available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Ujjain", city: "Ujjain", img: Ujjain, offer: "16%", address: "Shop No.24, Kshapnak Marg., near Police Control Room, Madhav Nagar, Ujjain, Madhya Pradesh 456010, India.", metaDetails: {
+  //     title: "Packers and Movers in Ujjain | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Ujjain with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Ujjain and across Madhya Pradesh.",
+  //     keywords: "Local movers near me Ujjain, Packers and Movers in Ujjain, Gati Shifting Packers Ujjain, Best Packers and Movers Ujjain, Affordable Packers and Movers Ujjain, Trusted Packers and Movers Ujjain Madhya Pradesh, Local Packers and Movers Ujjain, Professional Movers and Packers Ujjain, Home Shifting Services Ujjain, Office Relocation Ujjain, Vehicle Transport Ujjain, Car Transport Service Ujjain, Bike Transport Ujjain, Household Goods Shifting Ujjain, Industrial Packers and Movers Ujjain, Door-to-Door Shifting Services Ujjain, Packing and Unpacking Services Ujjain, Furniture Movers Ujjain, Intercity Packers and Movers Ujjain, Packers and Movers Ujjain to Indore, Packers and Movers Ujjain to Bhopal, Packers and Movers Ujjain to Gwalior, Packers and Movers Ujjain to Jabalpur, Packers and Movers Ujjain to Delhi, Reliable Relocation Company Ujjain, Cost-Effective Packers and Movers Ujjain, Quick Packers and Movers Ujjain, 24x7 Packers and Movers Ujjain, Mini Truck for Shifting Ujjain, Tempo Service Ujjain, Best Relocation Services Ujjain, Safe and Secure Moving Services Ujjain, Budget-Friendly Movers Ujjain, Professional Relocation Company Ujjain, Long-Distance Packers and Movers Ujjain, Trusted Shifting Company Ujjain, Goods Transport Services Ujjain.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Ujjain? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Ujjain and across Madhya Pradesh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Ujjain by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Ujjain"
+  //   }
+  // },
   {
-    slug: "packers-and-movers-in-Sagar", city: "Sagar", img: Sagar, offer: "16%", address: "Plot No 107,  Medical Store, Wright Town, Sagar, near main road", metaDetails: {
-      title: "Packers and Movers in Sagar | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Sagar with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Sagar and across Madhya Pradesh.",
-      keywords: "Local movers near me Sagar, Packers and Movers in Sagar, Gati Shifting Packers Sagar, Best Packers and Movers Sagar, Affordable Packers and Movers Sagar, Trusted Packers and Movers Sagar Madhya Pradesh, Local Packers and Movers Sagar, Professional Movers and Packers Sagar, Home Shifting Services Sagar, Office Relocation Sagar, Vehicle Transport Sagar, Car Transport Service Sagar, Bike Transport Sagar, Household Goods Shifting Sagar, Industrial Packers and Movers Sagar, Door-to-Door Shifting Services Sagar, Packing and Unpacking Services Sagar, Furniture Movers Sagar, Intercity Packers and Movers Sagar, Packers and Movers Sagar to Indore, Packers and Movers Sagar to Bhopal, Packers and Movers Sagar to Gwalior, Packers and Movers Sagar to Jabalpur, Packers and Movers Sagar to Ujjain, Packers and Movers Sagar to Delhi, Reliable Relocation Company Sagar, Cost-Effective Packers and Movers Sagar, Quick Packers and Movers Sagar, 24x7 Packers and Movers Sagar, Mini Truck for Shifting Sagar, Tempo Service Sagar, Best Relocation Services Sagar, Safe and Secure Moving Services Sagar, Budget-Friendly Movers Sagar, Professional Relocation Company Sagar, Long-Distance Packers and Movers Sagar, Trusted Shifting Company Sagar, Goods Transport Services Sagar.",
-      ogdesc: "Looking for reliable Packers and Movers in Sagar? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Sagar and across Madhya Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Sagar by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Sagar"
-    }
+  slug: "packers-and-movers-in-ujjain",
+  city: "Ujjain",
+  img: Ujjain,
+  offer: "10%",
+  address: "Shop No.24, Kshapnak Marg., near Police Control Room, Madhav Nagar, Ujjain, Madhya Pradesh 456010, India.",
+
+  metaDetails: {
+    title: "Packers and Movers in Ujjain | Gati Shifting Packers",
+    desc: "Professional packers and movers in Ujjain for home shifting, office relocation, and vehicle transport services at affordable prices."
   },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Ujjain – Smooth & Trusted Relocation",
+
+    paragraph: [
+      "Looking for reliable packers and movers in Ujjain? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transportation, and timely delivery for local and intercity moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Ujjain",
+
+    services: [
+      {
+        title: "Home Shifting Services Ujjain",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Ujjain",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Ujjain",
+        desc: "Durable packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Ujjain",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Ujjain",
+
+    whyChoose: [
+      "Experienced team",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "Do you provide full relocation services?", a: "Yes, complete services available." },
+      { q: "Do you handle office relocation?", a: "Yes, office relocation available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Sagar", city: "Sagar", img: Sagar, offer: "16%", address: "Plot No 107,  Medical Store, Wright Town, Sagar, near main road", metaDetails: {
+  //     title: "Packers and Movers in Sagar | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Sagar with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Sagar and across Madhya Pradesh.",
+  //     keywords: "Local movers near me Sagar, Packers and Movers in Sagar, Gati Shifting Packers Sagar, Best Packers and Movers Sagar, Affordable Packers and Movers Sagar, Trusted Packers and Movers Sagar Madhya Pradesh, Local Packers and Movers Sagar, Professional Movers and Packers Sagar, Home Shifting Services Sagar, Office Relocation Sagar, Vehicle Transport Sagar, Car Transport Service Sagar, Bike Transport Sagar, Household Goods Shifting Sagar, Industrial Packers and Movers Sagar, Door-to-Door Shifting Services Sagar, Packing and Unpacking Services Sagar, Furniture Movers Sagar, Intercity Packers and Movers Sagar, Packers and Movers Sagar to Indore, Packers and Movers Sagar to Bhopal, Packers and Movers Sagar to Gwalior, Packers and Movers Sagar to Jabalpur, Packers and Movers Sagar to Ujjain, Packers and Movers Sagar to Delhi, Reliable Relocation Company Sagar, Cost-Effective Packers and Movers Sagar, Quick Packers and Movers Sagar, 24x7 Packers and Movers Sagar, Mini Truck for Shifting Sagar, Tempo Service Sagar, Best Relocation Services Sagar, Safe and Secure Moving Services Sagar, Budget-Friendly Movers Sagar, Professional Relocation Company Sagar, Long-Distance Packers and Movers Sagar, Trusted Shifting Company Sagar, Goods Transport Services Sagar.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Sagar? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Sagar and across Madhya Pradesh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Sagar by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Sagar"
+  //   }
+  // },
   {
-    slug: "packers-and-movers-in-Satna", city: "Satna", img: Satna, offer: "16%", address: "Shop No - 27, Satna Road, Ghanta Ghar Chowk, Satna, Madhya Pradesh 485001", metaDetails: {
-      title: "Packers and Movers in Satna | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Satna with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Satna and across Madhya Pradesh.",
-      keywords: "Local movers near me Satna, Packers and Movers in Satna, Gati Shifting Packers Satna, Best Packers and Movers Satna, Affordable Packers and Movers Satna, Trusted Packers and Movers Satna Madhya Pradesh, Local Packers and Movers Satna, Professional Movers and Packers Satna, Home Shifting Services Satna, Office Relocation Satna, Vehicle Transport Satna, Car Transport Service Satna, Bike Transport Satna, Household Goods Shifting Satna, Industrial Packers and Movers Satna, Door-to-Door Shifting Services Satna, Packing and Unpacking Services Satna, Furniture Movers Satna, Intercity Packers and Movers Satna, Packers and Movers Satna to Indore, Packers and Movers Satna to Bhopal, Packers and Movers Satna to Gwalior, Packers and Movers Satna to Jabalpur, Packers and Movers Satna to Ujjain, Packers and Movers Satna to Delhi, Reliable Relocation Company Satna, Cost-Effective Packers and Movers Satna, Quick Packers and Movers Satna, 24x7 Packers and Movers Satna, Mini Truck for Shifting Satna, Tempo Service Satna, Best Relocation Services Satna, Safe and Secure Moving Services Satna, Budget-Friendly Movers Satna, Professional Relocation Company Satna, Long-Distance Packers and Movers Satna, Trusted Shifting Company Satna, Goods Transport Services Satna.",
-      ogdesc: "Looking for reliable Packers and Movers in Satna? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Satna and across Madhya Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Satna by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Satna"
-    }
+  slug: "packers-and-movers-in-sagar",
+  city: "Sagar",
+  img: Sagar,
+  offer: "10%",
+  address: "Plot No 107,  Medical Store, Wright Town, Sagar, near main road",
+
+  metaDetails: {
+    title: "Packers and Movers in Sagar | Gati Shifting Packers",
+    desc: "Reliable packers and movers in Sagar for home shifting, office relocation, and vehicle transport services at affordable prices."
   },
-  { slug: "packers-and-movers-in-Kohima", city: "Kohima", img: Kohima, offer: "16%", address: "Shop No - 17, Naga Bazar Junction, Kohima, Nagaland 797001, India." },
-  { slug: "packers-and-movers-in-Amritsar", city: "Amritsar", img: Amritsar, offer: "16%", address: "P14, Near Gurudwara Gurprakash, Street No. 8, Amritsar, Punjab" },
-  { slug: "packers-and-movers-in-Jalandhar", city: "Jalandhar", img: Jalandhar, offer: "16%", address: "Shop No - 104, near BMC Chowk, Jalandhar, Punjab" },
-  { slug: "packers-and-movers-in-Patiala", city: "Patiala", img: Patiala, offer: "16%", address: "Plot No - 13, Standard Medical Store, near Civil Hospital, Patiala" },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Sagar – Safe & Hassle-Free Relocation",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Sagar? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transportation, and timely delivery for local and long-distance moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Sagar",
+
+    services: [
+      {
+        title: "Home Shifting Services Sagar",
+        desc: "Complete home relocation services with safe packing and transport.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Sagar",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Sagar",
+        desc: "High-quality packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Sagar",
+        desc: "Reliable car and bike transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Sagar",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What services do you offer?", a: "Home, office, vehicle transport, and packing services." },
+      { q: "Do you provide home shifting?", a: "Yes, complete services available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // {
+  //   slug: "packers-and-movers-in-Satna", city: "Satna", img: Satna, offer: "16%", address: "Shop No - 27, Satna Road, Ghanta Ghar Chowk, Satna, Madhya Pradesh 485001", metaDetails: {
+  //     title: "Packers and Movers in Satna | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Satna with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Satna and across Madhya Pradesh.",
+  //     keywords: "Local movers near me Satna, Packers and Movers in Satna, Gati Shifting Packers Satna, Best Packers and Movers Satna, Affordable Packers and Movers Satna, Trusted Packers and Movers Satna Madhya Pradesh, Local Packers and Movers Satna, Professional Movers and Packers Satna, Home Shifting Services Satna, Office Relocation Satna, Vehicle Transport Satna, Car Transport Service Satna, Bike Transport Satna, Household Goods Shifting Satna, Industrial Packers and Movers Satna, Door-to-Door Shifting Services Satna, Packing and Unpacking Services Satna, Furniture Movers Satna, Intercity Packers and Movers Satna, Packers and Movers Satna to Indore, Packers and Movers Satna to Bhopal, Packers and Movers Satna to Gwalior, Packers and Movers Satna to Jabalpur, Packers and Movers Satna to Ujjain, Packers and Movers Satna to Delhi, Reliable Relocation Company Satna, Cost-Effective Packers and Movers Satna, Quick Packers and Movers Satna, 24x7 Packers and Movers Satna, Mini Truck for Shifting Satna, Tempo Service Satna, Best Relocation Services Satna, Safe and Secure Moving Services Satna, Budget-Friendly Movers Satna, Professional Relocation Company Satna, Long-Distance Packers and Movers Satna, Trusted Shifting Company Satna, Goods Transport Services Satna.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Satna? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Satna and across Madhya Pradesh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Satna by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Satna"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-satna",
+  city: "Satna",
+  img: Satna,
+  offer: "10%",
+  address: "Shop No - 27, Satna Road, Ghanta Ghar Chowk, Satna, Madhya Pradesh 485001",
+
+  metaDetails: {
+    title: "Packers and Movers in Satna | Gati Shifting Packers",
+    desc: "Trusted packers and movers in Satna for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Satna – Easy & Secure Shifting Services",
+
+    paragraph: [
+      "Looking for reliable packers and movers in Satna? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, careful handling, and timely delivery for all types of moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Satna",
+
+    services: [
+      {
+        title: "Home Shifting Services Satna",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Satna",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Satna",
+        desc: "Durable packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Satna",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Satna",
+
+    whyChoose: [
+      "Experienced team",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "Do you provide full relocation services?", a: "Yes, complete services available." },
+      { q: "Can you shift household goods safely?", a: "Yes, secure handling ensured." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // { slug: "packers-and-movers-in-Kohima", city: "Kohima", img: Kohima, offer: "16%", address: "Shop No - 17, Naga Bazar Junction, Kohima, Nagaland 797001, India." },
+  {
+  slug: "packers-and-movers-in-kohima",
+  city: "Kohima",
+  img: Kohima,
+  offer: "10%",
+  address: "Shop No - 17, Naga Bazar Junction, Kohima, Nagaland 797001, India.",
+
+  metaDetails: {
+    title: "Packers and Movers in Kohima | Gati Shifting Packers",
+    desc: "Professional packers and movers in Kohima for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Kohima – Safe & Efficient Relocation",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Kohima? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transport, and timely delivery for all types of moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Kohima",
+
+    services: [
+      {
+        title: "Home Shifting Services Kohima",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Kohima",
+        desc: "Safe office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Kohima",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Kohima",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Kohima",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What services do you offer?", a: "Home, office, vehicle transport, and packing services." },
+      { q: "Do you provide home shifting?", a: "Yes, complete services available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // { slug: "packers-and-movers-in-Amritsar", city: "Amritsar", img: Amritsar, offer: "16%", address: "P14, Near Gurudwara Gurprakash, Street No. 8, Amritsar, Punjab" },
+  {
+  slug: "packers-and-movers-in-amritsar",
+  city: "Amritsar",
+  img: Amritsar,
+  offer: "10%",
+  address: "P14, Near Gurudwara Gurprakash, Street No. 8, Amritsar, Punjab",
+
+  metaDetails: {
+    title: "Packers and Movers in Amritsar | Gati Shifting Packers",
+    desc: "Trusted packers and movers in Amritsar for home shifting, office relocation, and vehicle transport services at affordable prices."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Amritsar – Safe & Hassle-Free Relocation",
+
+    paragraph: [
+      "Looking for dependable packers and movers in Amritsar? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transportation, and timely delivery for both local and long-distance moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Amritsar",
+
+    services: [
+      {
+        title: "Home Shifting Services Amritsar",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Amritsar",
+        desc: "Safe office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Amritsar",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Amritsar",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Amritsar",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "Do you provide full relocation services?", a: "Yes, complete services available." },
+      { q: "Can you shift office goods safely?", a: "Yes, secure handling ensured." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // { slug: "packers-and-movers-in-Jalandhar", city: "Jalandhar", img: Jalandhar, offer: "16%", address: "Shop No - 104, near BMC Chowk, Jalandhar, Punjab" },
+  {
+  slug: "packers-and-movers-in-jalandhar",
+  city: "Jalandhar",
+  img: Jalandhar,
+  offer: "10%",
+  address: "Shop No - 104, near BMC Chowk, Jalandhar, Punjab",
+
+  metaDetails: {
+    title: "Packers and Movers in Jalandhar | Gati Shifting Packers",
+    desc: "Reliable packers and movers in Jalandhar for home shifting, office relocation, and vehicle transport services at affordable prices."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Jalandhar – Smooth & Secure Shifting",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Jalandhar? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transport, and timely delivery for local and long-distance moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Jalandhar",
+
+    services: [
+      {
+        title: "Home Shifting Services Jalandhar",
+        desc: "Complete home relocation services with safe packing and transport.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Jalandhar",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Jalandhar",
+        desc: "High-quality packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Jalandhar",
+        desc: "Reliable car and bike transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Jalandhar",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What services do you provide?", a: "Home, office, vehicle transport, and packing services." },
+      { q: "Do you provide home shifting?", a: "Yes, complete services available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // { slug: "packers-and-movers-in-Patiala", city: "Patiala", img: Patiala, offer: "16%", address: "Plot No - 13, Standard Medical Store, near Civil Hospital, Patiala" },
+  {
+  slug: "packers-and-movers-in-patiala",
+  city: "Patiala",
+  img: Patiala,
+  offer: "10%",
+  address: "Plot No - 13, Standard Medical Store, near Civil Hospital, Patiala",
+
+  metaDetails: {
+    title: "Packers and Movers in Patiala | Gati Shifting Packers",
+    desc: "Affordable packers and movers in Patiala for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Patiala – Safe & Efficient Relocation",
+
+    paragraph: [
+      "Looking for reliable packers and movers in Patiala? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure handling, and timely delivery for both local and long-distance moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Patiala",
+
+    services: [
+      {
+        title: "Home Shifting Services Patiala",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Patiala",
+        desc: "Safe and efficient office relocation.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Patiala",
+        desc: "Durable packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Patiala",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Patiala",
+
+    whyChoose: [
+      "Experienced team",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "Do you provide full relocation services?", a: "Yes, complete services available." },
+      { q: "Can you shift office equipment safely?", a: "Yes, secure handling ensured." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
 
 
 
 
-  { slug: "packers-and-movers-in-Bathinda", city: "Bathinda", img: Bathinda, offer: "16%", address: "Shop No - 12, Hopnext Wellness, SCO No.14, 2nd Floor, Bibi Wala Road, Bathinda, Punjab." },
+  // { slug: "packers-and-movers-in-Bathinda", city: "Bathinda", img: Bathinda, offer: "16%", address: "Shop No - 12, Hopnext Wellness, SCO No.14, 2nd Floor, Bibi Wala Road, Bathinda, Punjab." },
+  {
+  slug: "packers-and-movers-in-bathinda",
+  city: "Bathinda",
+  img: Bathinda,
+  offer: "10%",
+  address: "Shop No - 12, Hopnext Wellness, SCO No.14, 2nd Floor, Bibi Wala Road, Bathinda, Punjab.",
+
+  metaDetails: {
+    title: "Packers and Movers in Bathinda | Gati Shifting Packers",
+    desc: "Trusted packers and movers in Bathinda for home shifting, office relocation, and vehicle transport services at affordable prices."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Bathinda – Safe & Smooth Relocation",
+
+    paragraph: [
+      "Looking for dependable packers and movers in Bathinda? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, careful handling, and timely delivery for local and long-distance moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Bathinda",
+
+    services: [
+      {
+        title: "Home Shifting Services Bathinda",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Bathinda",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Bathinda",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Bathinda",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Bathinda",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What services do you provide?", a: "Home, office, vehicle transport, and packing services." },
+      { q: "Do you provide home shifting?", a: "Yes, complete services available." },
+      { q: "Do you transport vehicles?", a: "Yes, vehicle transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
   { slug: "packers-and-movers-in-Jodhpur", city: "Jodhpur", img: Jodhpur, offer: "16%", address: "Shop No - 504 - near Mahatma Gandhi Hospital, Jodhpur, Rajasthan" },
   { slug: "packers-and-movers-in-Kota", city: "Kota", img: Kota, offer: "16%", address: "Plot No 07, Near Government Hospital, Kota, Rajasthan" },
   { slug: "packers-and-movers-in-Ajmer", city: "Ajmer", img: Ajmer, offer: "16%", address: "Shop No 133, Near Ana Sagar Rd, Ajmer, Rajasthan" },
