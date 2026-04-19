@@ -113,6 +113,11 @@ import internationalPng from "../assets/HomePage/international.webp"
 import warehousePng from "../assets/HomePage/warehouseicon.webp"
 import bikePng from "../assets/HomePage/bike.webp"
 
+import petSlider from "../assets/HomePage/slide2.webp";
+import bike from "../assets/HomePage/slide3.webp";
+import house from "../assets/HomePage/slide4.webp";
+import car from "../assets/HomePage/slide1.webp";
+import slide5 from "../assets/HomePage/slide5.webp";
 
 
 interface props {
@@ -196,6 +201,37 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
 
 
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+    interface ImageItem {
+        img: string;
+        heading: string;
+        text: string;
+    }
+    const imagesForC: ImageItem[] = [
+        { img: car, heading: "Trusted Movers & Packers", text: "As a trusted movers and packers company, we ensure protective wrapping, proper anchoring, and smooth doorstep pickup and delivery through our dedicated team." },
+        { img: house, heading: "Expert Team", text: "Our movers and packers team works with precision, ensuring protective wrapping, proper anchoring, and smooth doorstep pickup and delivery." },
+        { img: bike, heading: "House Shifting", text: "Smooth and reliable house shifting with professional packing, loading, transport, and setup at your new home." },
+        { img: petSlider, heading: "Bike Transport", text: "Bike relocation with protective wrapping, proper anchoring, and doorstep pickup and delivery." },
+        { img: slide5, heading: "24/7 Available", text: "We provide reliable movers and packers services with 24/7 availability for your convenience." },
+    ];
+
+
+    const stats = [
+    { number: '38+', label: 'Years of Trust', highlight: true },
+    { number: '1264+', label: 'Service Locations', highlight: false },
+    { number: '182', label: 'Worldwide Coverage', highlight: false },
+    { number: '140+', label: 'Branches PAN India', highlight: false },
+    { number: '1.6 Lakh', label: 'Moves Annually', highlight: false },
+    { number: '5000+', label: 'Trained Manpower', highlight: false },
+    { number: '3000+', label: 'Trucking Cube (Container)', highlight: false },
+    { number: '1800+', label: 'GPS Enabled Vehicles', highlight: false },
+    { number: 'Innovative', label: 'Technology', highlight: false },
+    { number: '6 Million', label: 'sq. ft. Warehouse Space', highlight: false },
+    { number: 'Online', label: 'Consignment Tracking', highlight: false },
+    { number: 'Free', label: 'Pre-Move Survey', highlight: false },
+    { number: '30,000+', label: 'Home Storage Lockers', highlight: false },
+  ]
     return (
         <>
 
@@ -330,6 +366,25 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
 
 
+            <section className="stats">
+                <div className="container">
+                    <div className="stats__wrapper">
+                        <div className="stats__sidebar">
+                            <span className="stats__label-text">Why Gati?</span>
+                        </div>
+                        <div className="stats__content">
+                            <div className="stats__grid">
+                                {stats.map((stat, index) => (
+                                    <div key={index} className={`stats__item ${stat.highlight ? 'stats__item--highlight' : ''}`}>
+                                        <span className="stats__number">{stat.number}</span>
+                                        <span className="stats__label">{stat.label}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section id="counter-section">
                 <div className="container">
@@ -359,6 +414,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                     </div>
                 </div>
             </section>
+
 
             <section id="company-description">
 
@@ -564,6 +620,20 @@ const Home: React.FC<props> = ({ successCondition }) => {
             </div> */}
 
             {/* <GetInTouch></GetInTouch> */}
+            <div className="image-box-official">
+                {imagesForC.map((data, index) => (
+                    <div
+                        key={index}
+                        className={`image-item ${activeIndex === index ? "active" : ""}`}
+                        onMouseEnter={() => setActiveIndex(index)}
+                        onMouseLeave={() => setActiveIndex(null)}
+                    >
+                        <h2>{data.heading}</h2>
+                        <p>{data.text}</p>
+                        <img src={data.img} alt={`img-${index}`} />
+                    </div>
+                ))}
+            </div>
             <section id="google-review-sec">
                 <div className="container">
 

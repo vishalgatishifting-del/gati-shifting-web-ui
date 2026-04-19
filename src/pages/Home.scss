@@ -201,7 +201,7 @@
             @include font-poppins-sans(400);
             transition: .2s;
 
-            img{
+            img {
                 width: 100%;
             }
         }
@@ -526,7 +526,7 @@
                 font-size: 23px;
                 display: flex;
                 align-items: center;
-                justify-content: center ;
+                justify-content: center;
             }
 
             // img {
@@ -560,8 +560,8 @@
     #counter-section {
         .container {
             .card {
-                h1{
-                font-size: 20px;
+                h1 {
+                    font-size: 20px;
                 }
             }
         }
@@ -577,13 +577,14 @@
         }
     }
 }
+
 @media screen and (max-width: 416px) {
     #counter-section {
         .container {
             .card {
-                h1{
+                h1 {
                     font-size: 18px;
-                    padding: 7px 15px ;
+                    padding: 7px 15px;
                 }
             }
         }
@@ -726,17 +727,19 @@
 }
 
 @media screen and (max-width: 944px) {
-    #company-description{
-        .card-container{
+    #company-description {
+        .card-container {
             gap: 30px;
             margin: 50px 0;
-            .card{
+
+            .card {
                 max-width: 150px;
                 position: relative;
-                a{
+
+                a {
                     width: 100%;
 
-                    h3{
+                    h3 {
                         font-size: 15px;
                     }
                 }
@@ -744,20 +747,24 @@
         }
     }
 }
+
 @media screen and (max-width: 432px) {
-    #company-description{
-        .heading{
+    #company-description {
+        .heading {
             font-size: 20px;
         }
-        .card-container{
+
+        .card-container {
             gap: 30px;
-            .card{
+
+            .card {
                 max-width: 120px;
                 position: relative;
-                a{
+
+                a {
                     width: 100%;
 
-                    h3{
+                    h3 {
                         font-size: 14px;
                         margin-top: 5px;
                     }
@@ -802,23 +809,23 @@
 
 #steps-section {
 
-  padding: 100px 20px;
+    padding: 100px 20px;
 
-  background:
-    radial-gradient(circle at 10% 20%, #23acf1 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, #135070 0%, transparent 40%),
-    linear-gradient(135deg, #0a0f1c, #020617);
+    background:
+        radial-gradient(circle at 10% 20%, #23acf1 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, #135070 0%, transparent 40%),
+        linear-gradient(135deg, #0a0f1c, #020617);
 
-  color: white;
-  margin-bottom: 50px;
+    color: white;
+    margin-bottom: 50px;
 
 }
 
 
 #steps-section .container {
 
-  max-width: 1100px;
-  margin: auto;
+    max-width: 1100px;
+    margin: auto;
 
 }
 
@@ -827,24 +834,24 @@
 
 #steps-section .header {
 
-  text-align: center;
-  margin-bottom: 60px;
+    text-align: center;
+    margin-bottom: 60px;
 
 }
 
 
 #steps-section h2 {
 
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
 
 }
 
 
 #steps-section .header p {
 
-  color: #94a3b8;
+    color: #94a3b8;
 
 }
 
@@ -853,11 +860,11 @@
 
 #steps-section .steps {
 
-  display: grid;
+    display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
-  gap: 30px;
+    gap: 30px;
 
 }
 
@@ -866,31 +873,31 @@
 
 #steps-section .card {
 
-  position: relative;
+    position: relative;
 
-  padding: 40px;
+    padding: 40px;
 
-  border-radius: 20px;
+    border-radius: 20px;
 
-  background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
 
-  backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
 
-  border: 1px solid rgba(255,255,255,0.08);
+    border: 1px solid rgba(255, 255, 255, 0.08);
 
-  transition: 0.3s;
+    transition: 0.3s;
 
 }
 
 
 #steps-section .card:hover {
 
-  transform: translateY(-8px);
+    transform: translateY(-8px);
 
-  background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
 
-  box-shadow:
-    0 20px 40px rgba(0,0,0,0.4);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -899,16 +906,16 @@
 
 .step-number {
 
-  position: absolute;
+    position: absolute;
 
-  top: 20px;
-  right: 20px;
+    top: 20px;
+    right: 20px;
 
-  font-size: 40px;
+    font-size: 40px;
 
-  font-weight: bold;
+    font-weight: bold;
 
-  color: rgba(255,255,255,0.08);
+    color: rgba(255, 255, 255, 0.08);
 
 }
 
@@ -917,30 +924,28 @@
 
 #steps-section .icon {
 
-  width: 60px;
-  height: 60px;
+    width: 60px;
+    height: 60px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  border-radius: 14px;
+    border-radius: 14px;
 
-  background:
-    linear-gradient(
-      135deg,
-      #23acf1,
-      #1b8ed1
-    );
+    background:
+        linear-gradient(135deg,
+            #23acf1,
+            #1b8ed1);
 
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 
 }
 
 
 #steps-section .icon svg {
 
-  font-size: 30px;
+    font-size: 30px;
 
 }
 
@@ -949,20 +954,20 @@
 
 #steps-section h3 {
 
-  font-size: 20px;
+    font-size: 20px;
 
-  font-weight: 600;
+    font-weight: 600;
 
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 
 }
 
 
 #steps-section p {
 
-  color: #cbd5e1;
+    color: #cbd5e1;
 
-  line-height: 1.6;
+    line-height: 1.6;
 
 }
 
@@ -971,17 +976,17 @@
 
 @media(max-width: 800px) {
 
-  #steps-section .steps {
+    #steps-section .steps {
 
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
 
-  }
+    }
 
-  #steps-section h2 {
+    #steps-section h2 {
 
-    font-size: 26px;
+        font-size: 26px;
 
-  }
+    }
 
 }
 
@@ -1758,6 +1763,221 @@
             h3 {
                 font-size: 15px;
             }
+        }
+    }
+}
+
+.image-box-official {
+    @include font-poppins-sans(400);
+    display: flex;
+    width: 80%;
+    height: 300px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 20px;
+    background: #000;
+
+    .image-item {
+        position: relative;
+        flex: 1;
+        overflow: hidden;
+        transition: flex 0.4s ease;
+        padding: 20px;
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            object-fit: cover;
+            opacity: 0.6;
+            transition: transform 0.4s ease;
+        }
+
+        h2 {
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            left: 50%;
+            width: 300px;
+            transform: translate(-50%, -50%) rotate(-90deg);
+            text-align: center;
+            color: #fff;
+            transition: transform 0.5s ease, opacity 0.3s ease;
+            width: 300px;
+        }
+
+        p {
+            position: absolute;
+            z-index: 2;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 50px);
+            opacity: 0;
+            color: #fff;
+            font-size: 14px;
+            transition: transform 0.5s ease, opacity 0.3s ease;
+        }
+
+        &:hover {
+            flex: 3;
+
+            img {
+                transform: scale(1.5);
+            }
+
+            h2 {
+                transform: translate(-50%, -60px) rotate(0deg);
+            }
+
+            p {
+                transform: translate(-50%, 0);
+                opacity: 1;
+            }
+        }
+    }
+
+    .image-item:not(:hover) {
+        flex: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-box-official {
+        flex-direction: column; // yahi missing tha
+        // height: auto;'
+        height: 540px;
+
+        .image-item {
+            width: 100%;
+            height: 250px;
+
+            h2 {
+                transform: translate(-50%, -50%) rotate(0deg); // mobile me rotate hata do
+            }
+
+            p {
+                // top: 70%;
+            }
+        }
+    }
+}
+
+
+
+.stats {
+    padding: 0;
+    background: #0a1628;
+
+    &__wrapper {
+        display: flex;
+
+        @media (max-width: $breakpoint-md) {
+            flex-direction: column;
+        }
+    }
+
+    &__sidebar {
+        width: 120px;
+        flex-shrink: 0;
+        background: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+
+        @media (max-width: $breakpoint-md) {
+            width: 100%;
+            padding: 15px;
+        }
+    }
+
+    &__label-text {
+        @include font-poppins-sans(400);;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        letter-spacing: 2px;
+
+        @media (max-width: $breakpoint-md) {
+            writing-mode: horizontal-tb;
+            transform: none;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        padding: 25px 30px;
+
+        @media (max-width: $breakpoint-md) {
+            padding: 20px 15px;
+        }
+    }
+
+    &__grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 20px;
+        text-align: center;
+        border-right: 1px solid rgba(#fff, 0.1);
+        border-bottom: 1px solid rgba(#fff, 0.1);
+        min-width: 140px;
+        flex: 1;
+
+        @media (max-width: $breakpoint-lg) {
+            min-width: 120px;
+            padding: 12px 15px;
+        }
+
+        @media (max-width: $breakpoint-sm) {
+            min-width: calc(50% - 1px);
+            flex: none;
+        }
+
+        &--highlight {
+            background: rgba($primary-color, 0.15);
+        }
+
+        &:hover {
+            background: rgba(#fff, 0.05);
+        }
+    }
+
+    &__number {
+        
+        font-size: 22px;
+        font-weight: 800;
+        color: yellow;
+        line-height: 1.2;
+
+        @media (max-width: $breakpoint-md) {
+            font-size: 18px;
+        }
+    }
+
+    &__label {
+        font-size: 11px;
+        color: rgba(#fff, 0.75);
+        font-weight: 500;
+        margin-top: 4px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+
+        @media (max-width: $breakpoint-md) {
+            font-size: 10px;
         }
     }
 }

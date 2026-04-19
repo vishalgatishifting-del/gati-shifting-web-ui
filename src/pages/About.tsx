@@ -103,11 +103,6 @@ import ContactForm from "../components/ContactForm";
 
 import { Helmet } from "react-helmet-async";
 
-import petSlider from "../assets/HomePage/slide2.webp";
-import bike from "../assets/HomePage/slide3.webp";
-import house from "../assets/HomePage/slide4.webp";
-import car from "../assets/HomePage/slide1.webp";
-import slide5 from "../assets/HomePage/slide5.webp";
 
 
 import {
@@ -120,7 +115,7 @@ import {
     Paper
 } from "@mui/material";
 import BrandList from "../components/BrandsList";
-import { useState } from "react";
+// import { useState } from "react";
 // import { useState } from "react";
 
 interface AboutUsProps {
@@ -242,20 +237,6 @@ const About: React.FC<AboutUsProps> = ({ setOpen, successCondition }) => {
         "best packers and movers",
         "cheap packers and movers",
         "packers and movers in delhi"]
-    const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
-    interface ImageItem {
-        img: string;
-        heading: string;
-        text: string;
-    }
-    const imagesForC: ImageItem[] = [
-        { img: car, heading: "Trusted Movers & Packers", text: "As a trusted movers and packers company, we ensure protective wrapping, proper anchoring, and smooth doorstep pickup and delivery through our dedicated team." },
-        { img: house, heading: "Expert Team", text: "Our movers and packers team works with precision, ensuring protective wrapping, proper anchoring, and smooth doorstep pickup and delivery." },
-        { img: bike, heading: "House Shifting", text: "Smooth and reliable house shifting with professional packing, loading, transport, and setup at your new home." },
-        { img: petSlider, heading: "Bike Transport", text: "Bike relocation with protective wrapping, proper anchoring, and doorstep pickup and delivery." },
-        { img: slide5, heading: "24/7 Available", text: "We provide reliable movers and packers services with 24/7 availability for your convenience." },
-    ];
 
     return (
         <>
@@ -380,20 +361,7 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                 </div>
             </section>
 
-            <div className="image-box-official">
-                {imagesForC.map((data, index) => (
-                    <div
-                        key={index}
-                        className={`image-item ${activeIndex === index ? "active" : ""}`}
-                        onMouseEnter={() => setActiveIndex(index)}
-                        onMouseLeave={() => setActiveIndex(null)}
-                    >
-                        <h2>{data.heading}</h2>
-                        <p>{data.text}</p>
-                        <img src={data.img} alt={`img-${index}`} />
-                    </div>
-                ))}
-            </div>
+         
 
             <section id="table-section">
                 <h1>Service Comparison</h1>
