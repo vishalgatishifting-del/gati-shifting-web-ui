@@ -29083,25 +29083,865 @@ export const pagesData = [
     ]
   }
 },
-  { slug: "packers-and-movers-in-Jodhpur", city: "Jodhpur", img: Jodhpur, offer: "16%", address: "Shop No - 504 - near Mahatma Gandhi Hospital, Jodhpur, Rajasthan" },
-  { slug: "packers-and-movers-in-Kota", city: "Kota", img: Kota, offer: "16%", address: "Plot No 07, Near Government Hospital, Kota, Rajasthan" },
-  { slug: "packers-and-movers-in-Ajmer", city: "Ajmer", img: Ajmer, offer: "16%", address: "Shop No 133, Near Ana Sagar Rd, Ajmer, Rajasthan" },
-  { slug: "packers-and-movers-in-Udaipur", city: "Udaipur", img: Udaipur, offer: "16%", address: "Shop No 107, Near City Palace Rd, Udaipur, Rajasthan" },
-  { slug: "packers-and-movers-in-Agartala", city: "Agartala", img: Agartala, offer: "16%", address: "Shop No 9, Malancha Nagar, near Sonali Guest House, Kunjaban, Agartala, Tripura 799006" },
+  // { slug: "packers-and-movers-in-Jodhpur", city: "Jodhpur", img: Jodhpur, offer: "16%", address: "Shop No - 504 - near Mahatma Gandhi Hospital, Jodhpur, Rajasthan" },
+  {
+  slug: "packers-and-movers-in-jodhpur",
+  city: "Jodhpur",
+  img: Jodhpur,
+  offer: "10%",
+  address: "Shop No - 504 - near Mahatma Gandhi Hospital, Jodhpur, Rajasthan",
+
+  metaDetails: {
+    title: "Packers and Movers in Jodhpur | Gati Shifting Packers",
+    desc: "Reliable packers and movers in Jodhpur for home shifting, office relocation, and vehicle transport services at affordable prices."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Jodhpur – Safe & Professional Relocation",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Jodhpur? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transportation, and timely delivery for both local and intercity moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Jodhpur",
+
+    services: [
+      {
+        title: "Home Shifting Services Jodhpur",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Jodhpur",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Jodhpur",
+        desc: "High-quality packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Jodhpur",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Jodhpur",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "Do you provide complete relocation services?", a: "Yes, full services available." },
+      { q: "Can you shift office equipment safely?", a: "Yes, secure handling ensured." },
+      { q: "Is vehicle transport available?", a: "Yes, car and bike transport available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // { slug: "packers-and-movers-in-Kota", city: "Kota", img: Kota, offer: "16%", address: "Plot No 07, Near Government Hospital, Kota, Rajasthan" },
+  {
+  slug: "packers-and-movers-in-kota",
+  city: "Kota",
+  img: Kota,
+  offer: "10%",
+  address: "Plot No 07, Near Government Hospital, Kota, Rajasthan",
+
+  metaDetails: {
+    title: "Packers and Movers in Kota | Gati Shifting Packers",
+    desc: "Trusted packers and movers in Kota for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Kota – Reliable & Easy Shifting",
+
+    paragraph: [
+      "Looking for reliable packers and movers in Kota? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure handling, and timely delivery for all types of moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Kota",
+
+    services: [
+      {
+        title: "Home Shifting Services Kota",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Kota",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Kota",
+        desc: "Durable packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Kota",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Kota",
+
+    whyChoose: [
+      "Experienced team",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What services do you provide?", a: "Home, office, vehicle transport, and packing services." },
+      { q: "Do you provide home shifting?", a: "Yes, complete services available." },
+      { q: "Is vehicle transport available?", a: "Yes, available." },
+      { q: "Do you offer intercity relocation?", a: "Yes, long-distance moves available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // { slug: "packers-and-movers-in-Ajmer", city: "Ajmer", img: Ajmer, offer: "16%", address: "Shop No 133, Near Ana Sagar Rd, Ajmer, Rajasthan" },
+  {
+  slug: "packers-and-movers-in-ajmer",
+  city: "Ajmer",
+  img: Ajmer,
+  offer: "10%",
+  address: "Shop No 133, Near Ana Sagar Rd, Ajmer, Rajasthan",
+
+  metaDetails: {
+    title: "Packers and Movers in Ajmer | Gati Shifting Packers",
+    desc: "Reliable packers and movers in Ajmer for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Ajmer – Secure & Hassle-Free Shifting",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Ajmer? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transportation, and timely delivery for all moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Ajmer",
+
+    services: [
+      {
+        title: "Home Shifting Services Ajmer",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Ajmer",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Ajmer",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Ajmer",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Ajmer",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "Do you provide full relocation services?", a: "Yes, complete services available." },
+      { q: "Can you shift office goods safely?", a: "Yes, secure handling ensured." },
+      { q: "Is vehicle transport available?", a: "Yes, available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // { slug: "packers-and-movers-in-Udaipur", city: "Udaipur", img: Udaipur, offer: "16%", address: "Shop No 107, Near City Palace Rd, Udaipur, Rajasthan" },
+  {
+  slug: "packers-and-movers-in-udaipur",
+  city: "Udaipur",
+  img: Udaipur,
+  offer: "10%",
+  address: "Shop No 107, Near City Palace Rd, Udaipur, Rajasthan",
+
+  metaDetails: {
+    title: "Packers and Movers in Udaipur | Gati Shifting Packers",
+    desc: "Trusted packers and movers in Udaipur for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Udaipur – Easy & Secure Relocation",
+
+    paragraph: [
+      "Looking for reliable packers and movers in Udaipur? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure handling, and timely delivery for both local and intercity moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Udaipur",
+
+    services: [
+      {
+        title: "Home Shifting Services Udaipur",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Udaipur",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Udaipur",
+        desc: "Durable packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Udaipur",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Udaipur",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What services do you provide?", a: "Home, office, vehicle transport, and packing services." },
+      { q: "Do you provide home shifting?", a: "Yes, complete services available." },
+      { q: "Is vehicle transport available?", a: "Yes, available." },
+      { q: "Do you offer intercity relocation?", a: "Yes, long-distance moves available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // { slug: "packers-and-movers-in-Agartala", city: "Agartala", img: Agartala, offer: "16%", address: "Shop No 9, Malancha Nagar, near Sonali Guest House, Kunjaban, Agartala, Tripura 799006" },
+  {
+  slug: "packers-and-movers-in-agartala",
+  city: "Agartala",
+  img: Agartala,
+  offer: "10%",
+  address: "Shop No 9, Malancha Nagar, near Sonali Guest House, Kunjaban, Agartala, Tripura 799006",
+
+  metaDetails: {
+    title: "Packers and Movers in Agartala | Gati Shifting Packers",
+    desc: "Reliable packers and movers in Agartala for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Agartala – Reliable & Safe Shifting",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Agartala? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure handling, and timely delivery for all types of moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Agartala",
+
+    services: [
+      {
+        title: "Home Shifting Services Agartala",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Agartala",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Agartala",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Agartala",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Agartala",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "Do you provide full relocation services?", a: "Yes, complete services available." },
+      { q: "Can you shift office equipment?", a: "Yes, safe handling ensured." },
+      { q: "Is vehicle transport available?", a: "Yes, available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
 
 
 
-  { slug: "packers-and-movers-in-port-blair", city: "Port Blair", img: portbiller, offer: "16%", address: "Shop No - 109, Airport Authority Colony, Delanipur, Sri Vijaya Puram, Andaman and Nicobar Islands 744102" },
+  // { slug: "packers-and-movers-in-port-blair", city: "Port Blair", img: portbiller, offer: "16%", address: "Shop No - 109, Airport Authority Colony, Delanipur, Sri Vijaya Puram, Andaman and Nicobar Islands 744102" },
+  {
+  slug: "packers-and-movers-in-port-blair",
+  city: "Port Blair",
+  img: portbiller,
+  offer: "10%",
+  address: "Shop No - 109, Airport Authority Colony, Delanipur, Sri Vijaya Puram, Andaman and Nicobar Islands 744102",
+
+  metaDetails: {
+    title: "Packers and Movers in Port Blair | Gati Shifting Packers",
+    desc: "Trusted packers and movers in Port Blair for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Port Blair – Safe & Smooth Relocation",
+
+    paragraph: [
+      "Looking for reliable packers and movers in Port Blair? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transportation, and timely delivery for both local and intercity moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Port Blair",
+
+    services: [
+      {
+        title: "Home Shifting Services Port Blair",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Port Blair",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Port Blair",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Port Blair",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Port Blair",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "Do you provide full relocation services?", a: "Yes, complete services available." },
+      { q: "Can you shift household goods safely?", a: "Yes, secure handling ensured." },
+      { q: "Is vehicle transport available?", a: "Yes, available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
   // { slug: "packers-and-movers-in-Shillong", city: "Shillong", img: Udaipur, offer: "16%", address: "4th Furlong, opp. Tarachand Hardware, MC Road, Police Bazar, Shillong, Meghalaya 793001" },
-  { slug: "packers-and-movers-in-Katni", city: "Katni", img: Katni, offer: "16%", address: "Shop No - 10,  Jabalpur Rd, Jharra Tikuriya, Katni, Madhya Pradesh" },
-  { slug: "packers-and-movers-in-Rewa", city: "Rewa", img: Rewa, offer: "16%", address: "Shop No - 111, Ravindra Nagar, Rewa, Madhya Pradesh 486005" },
-  { slug: "packers-and-movers-in-Korba", city: "Korba", img: Korba, offer: "16%", address: "Sec - 44, Banki Mongra, Chhattisgarh 495447" },
+  // { slug: "packers-and-movers-in-Katni", city: "Katni", img: Katni, offer: "16%", address: "Shop No - 10,  Jabalpur Rd, Jharra Tikuriya, Katni, Madhya Pradesh" },
+  {
+  slug: "packers-and-movers-in-katni",
+  city: "Katni",
+  img: Katni,
+  offer: "10%",
+  address: "Shop No - 10,  Jabalpur Rd, Jharra Tikuriya, Katni, Madhya Pradesh",
+
+  metaDetails: {
+    title: "Packers and Movers in Katni | Gati Shifting Packers",
+    desc: "Reliable packers and movers in Katni for home shifting, office relocation, and vehicle transport services at affordable prices."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Katni – Secure & Efficient Relocation",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Katni? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure transportation, and timely delivery for both local and intercity moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Katni",
+
+    services: [
+      {
+        title: "Home Shifting Services Katni",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Katni",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Katni",
+        desc: "High-quality packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Katni",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Katni",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What services do you provide?", a: "Home, office, vehicle transport, and packing services." },
+      { q: "Do you provide home shifting?", a: "Yes, complete services available." },
+      { q: "Is vehicle transport available?", a: "Yes, available." },
+      { q: "Do you offer intercity relocation?", a: "Yes, long-distance moves available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // { slug: "packers-and-movers-in-Rewa", city: "Rewa", img: Rewa, offer: "16%", address: "Shop No - 111, Ravindra Nagar, Rewa, Madhya Pradesh 486005" },
+  {
+  slug: "packers-and-movers-in-rewa",
+  city: "Rewa",
+  img: Rewa,
+  offer: "10%",
+  address: "Shop No - 111, Ravindra Nagar, Rewa, Madhya Pradesh 486005",
+
+  metaDetails: {
+    title: "Packers and Movers in Rewa | Gati Shifting Packers",
+    desc: "Trusted packers and movers in Rewa for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Rewa – Reliable & Stress-Free Shifting",
+
+    paragraph: [
+      "Looking for reliable packers and movers in Rewa? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure handling, and timely delivery for all types of moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Rewa",
+
+    services: [
+      {
+        title: "Home Shifting Services Rewa",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Rewa",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Rewa",
+        desc: "Durable packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Rewa",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Rewa",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "Do you provide complete relocation services?", a: "Yes, full services available." },
+      { q: "Can you shift office equipment safely?", a: "Yes, secure handling ensured." },
+      { q: "Is vehicle transport available?", a: "Yes, available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // { slug: "packers-and-movers-in-Korba", city: "Korba", img: Korba, offer: "16%", address: "Sec - 44, Banki Mongra, Chhattisgarh 495447" },
+  {
+  slug: "packers-and-movers-in-korba",
+  city: "Korba",
+  img: Korba,
+  offer: "10%",
+  address: "Sec - 44, Banki Mongra, Chhattisgarh 495447",
+
+  metaDetails: {
+    title: "Packers and Movers in Korba | Gati Shifting Packers",
+    desc: "Reliable packers and movers in Korba for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Korba – Reliable & Easy Relocation",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Korba? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure handling, and timely delivery for all types of moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Korba",
+
+    services: [
+      {
+        title: "Home Shifting Services Korba",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Korba",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Korba",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Korba",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Korba",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What services do you provide?", a: "Home, office, vehicle transport, and packing services." },
+      { q: "Do you provide home shifting?", a: "Yes, complete services available." },
+      { q: "Is vehicle transport available?", a: "Yes, available." },
+      { q: "Do you offer intercity relocation?", a: "Yes, long-distance moves available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
   // { slug: "packers-and-movers-in-Durg", city: "Durg", img: Udaipur, offer: "16%", address: "Shop Np - 109, Dhamdha Road, near by pass road, Durg 491001" },
-  { slug: "packers-and-movers-in-Chhattisgarh", city: "Chhattisgarh", img: Chhattisgarh, offer: "16%", address: "Plot No - 105 Budhwari Bazaar, Sakti, Chhattisgarh 495689" },
-  { slug: "packers-and-movers-in-Raigarh", city: "Raigarh", img: Raigarh, offer: "16%", address: "Sec - 922, Muralipali, Chhattisgarh 496005" },
+  // { slug: "packers-and-movers-in-Chhattisgarh", city: "Chhattisgarh", img: Chhattisgarh, offer: "16%", address: "Plot No - 105 Budhwari Bazaar, Sakti, Chhattisgarh 495689" },
+  {
+  slug: "packers-and-movers-in-chhattisgarh",
+  city: "Chhattisgarh",
+  img: Chhattisgarh,
+  offer: "10%",
+  address: "Plot No - 105 Budhwari Bazaar, Sakti, Chhattisgarh 495689",
+
+  metaDetails: {
+    title: "Packers and Movers in Chhattisgarh | Gati Shifting Packers",
+    desc: "Reliable packers and movers in Chhattisgarh for home shifting, office relocation, and vehicle transport services at affordable prices."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Chhattisgarh – Reliable Moving Services",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Chhattisgarh? Gati Shifting Packers provides complete relocation services across the state.",
+      "We ensure safe packing, secure transportation, and timely delivery for both local and long-distance moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Chhattisgarh",
+
+    services: [
+      {
+        title: "Home Shifting Services Chhattisgarh",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Chhattisgarh",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Chhattisgarh",
+        desc: "High-quality packing ensures safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Chhattisgarh",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Chhattisgarh",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "What services do you provide?", a: "Home, office, vehicle transport, and packing services." },
+      { q: "Do you provide home shifting?", a: "Yes, complete services available." },
+      { q: "Is vehicle transport available?", a: "Yes, available." },
+      { q: "Do you offer intercity relocation?", a: "Yes, long-distance moves available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
+  // { slug: "packers-and-movers-in-Raigarh", city: "Raigarh", img: Raigarh, offer: "16%", address: "Sec - 922, Muralipali, Chhattisgarh 496005" },
+  {
+  slug: "packers-and-movers-in-raigarh",
+  city: "Raigarh",
+  img: Raigarh,
+  offer: "10%",
+  address: "Sec - 922, Muralipali, Chhattisgarh 496005",
+
+  metaDetails: {
+    title: "Packers and Movers in Raigarh | Gati Shifting Packers",
+    desc: "Trusted packers and movers in Raigarh for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Raigarh – Safe & Reliable Shifting",
+
+    paragraph: [
+      "Looking for reliable packers and movers in Raigarh? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure handling, and timely delivery for all types of moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Raigarh",
+
+    services: [
+      {
+        title: "Home Shifting Services Raigarh",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Raigarh",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Raigarh",
+        desc: "Durable packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Raigarh",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Raigarh",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "Do you provide full relocation services?", a: "Yes, complete services available." },
+      { q: "Can you shift household goods safely?", a: "Yes, secure handling ensured." },
+      { q: "Is vehicle transport available?", a: "Yes, available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
   // { slug: "packers-and-movers-in-Visakhapatnam", city: "Visakhapatnam", img: Udaipur, offer: "16%", address: "Shop No - 313 Jail Rd, Singh Hotel Junction, Nehru Nagar, Ram Nagar, Visakhapatnam, Andhra Pradesh 530020" },
   // { slug: "packers-and-movers-in-Udupi", city: "Udupi", img: Udaipur, offer: "16%", address: "Shop - 915, Ground Floor, Grass Land Commercial, Bus Stand, near Service, Thenkpete, Maruthi Veethika, Udupi, Karnataka 576101" },
-  { slug: "packers-and-movers-in-Manipal", city: "Manipal", img: Manipal, offer: "16%", address: "Plot - 114, Manipal, Karnataka 576104" },
+  // { slug: "packers-and-movers-in-Manipal", city: "Manipal", img: Manipal, offer: "16%", address: "Plot - 114, Manipal, Karnataka 576104" },
+  {
+  slug: "packers-and-movers-in-manipal",
+  city: "Manipal",
+  img: Manipal,
+  offer: "10%",
+  address: "Plot - 114, Manipal, Karnataka 576104",
+
+  metaDetails: {
+    title: "Packers and Movers in Manipal | Gati Shifting Packers",
+    desc: "Reliable packers and movers in Manipal for home shifting, office relocation, and vehicle transport services."
+  },
+
+  pageData: {
+    mainHeading: "Packers and Movers in Manipal – Safe & Reliable Shifting",
+
+    paragraph: [
+      "Looking for trusted packers and movers in Manipal? Gati Shifting Packers provides complete relocation services.",
+      "We ensure safe packing, secure handling, and timely delivery for both local and intercity moves."
+    ],
+
+    servicesHeading: "Complete Relocation Services in Manipal",
+
+    services: [
+      {
+        title: "Home Shifting Services Manipal",
+        desc: "Complete home relocation services.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Home shifting"
+      },
+      {
+        title: "Office Relocation Services Manipal",
+        desc: "Efficient office relocation services.",
+        link: "https://gatishiftingpackers.com/office-relocation",
+        linkText: "Office Relocation"
+      },
+      {
+        title: "Packing and Unpacking Services Manipal",
+        desc: "Durable packing materials ensure safety.",
+        link: "https://gatishiftingpackers.com/home-shifting",
+        linkText: "Packing Services"
+      },
+      {
+        title: "Vehicle Transport Services Manipal",
+        desc: "Reliable vehicle transport services.",
+        link: "https://gatishiftingpackers.com/car-bike-transport",
+        linkText: "Vehicle Transport"
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Manipal",
+
+    whyChoose: [
+      "Experienced professionals",
+      "Safe packing and handling",
+      "On-time delivery",
+      "Affordable pricing",
+      "Trusted movers"
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      { q: "Do you provide complete relocation services?", a: "Yes, full services available." },
+      { q: "Can you shift household goods safely?", a: "Yes, secure handling ensured." },
+      { q: "Is vehicle transport available?", a: "Yes, available." },
+      { q: "Do you handle long-distance moves?", a: "Yes, intercity relocation available." },
+      { q: "How to book?", a: "Contact us online or via phone." }
+    ]
+  }
+},
 
   {
     slug: "packers-and-movers-in-jaisalmer",
