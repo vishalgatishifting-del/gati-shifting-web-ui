@@ -44,13 +44,13 @@ const ReviewVideo = () => {
 
       <div className="video-grid">
 
-        <div className="yt-card" data-id="-l-_tRAUn2w">
-          <img src="https://img.youtube.com/vi/-l-_tRAUn2w/hqdefault.jpg" loading="lazy"  />
+        <div className="yt-card" data-id="YnYJ5izaQAU">
+          <img src="https://img.youtube.com/vi/YnYJ5izaQAU/hqdefault.jpg" loading="lazy"  />
           <div className="play-btn">▶</div>
         </div>
 
-        <div className="yt-card" data-id="KafXJZeP0mE">
-          <img src="https://img.youtube.com/vi/KafXJZeP0mE/hqdefault.jpg" loading="lazy"  />
+        <div className="yt-card" data-id="6Xpc17JD92w">
+          <img src="https://img.youtube.com/vi/6Xpc17JD92w/hqdefault.jpg" loading="lazy"  />
           <div className="play-btn">▶</div>
         </div>
 
