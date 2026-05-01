@@ -10,6 +10,7 @@ interface OrderForm {
     currentLocation: string;
     expectedDelivery: string;
     note: string;
+    provider: string;
 }
 const CreateWindow = ({ createState, searchOrder }: any) => {
 
@@ -22,7 +23,8 @@ const CreateWindow = ({ createState, searchOrder }: any) => {
         status: "Order Placed",
         currentLocation: "",
         expectedDelivery: "",
-        note: ""
+        note: "",
+        provider: "Gati Shifting Packers"
     });
 
     const handleChange = (e: any) => {
@@ -130,6 +132,17 @@ const CreateWindow = ({ createState, searchOrder }: any) => {
                             placeholder="Note"
                         />
 
+                        <select
+                            name="provider"
+                            value={formData.provider}
+                            onChange={handleChange}
+                        >
+
+                            <option value="Gati Shifting Packers">Gati Shifting Packers</option>
+                            <option value="Safexpress">Safexpress</option>
+                            <option value="Aggarwal Packers and Movers">Aggarwal Packers and Movers</option>
+
+                        </select>
                     </form>
                     <div className="btn-group">
 

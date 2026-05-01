@@ -27,6 +27,22 @@ const LeadsList = () => {
         fetchLead();
     }, []);
 
+    const updateStatus = async (id: string, status: string) => {
+        try {
+            await privateAPI.put(`/api/leads/status/${id}`, { status });
+
+            // UI update instantly
+            setLeads(prev =>
+                prev.map(lead =>
+                    lead._id === id ? { ...lead, status } : lead
+                )
+            );
+
+        } catch (err) {
+            console.error(err);
+        }
+    };
+
     return (
         <>
             <div className="orders-page">
@@ -135,6 +151,17 @@ const LeadsList = () => {
 
                                         </div> */}
 
+                                    </td>
+                                    <td>
+                                        <select
+                                            value={order.status || "new"}
+                                            onChange={(e) => updateStatus(order._id, e.target.value)}
+                                        >
+                                            <option value="new">New</option>
+                                            <option value="car_followup">Car Follow Up</option>
+                                            <option value="bike_followup">Bike Follow Up</option>
+                                            <option value="closed">Closed</option>
+                                        </select>
                                     </td>
 
                                 </tr>
