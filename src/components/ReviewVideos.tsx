@@ -54,8 +54,8 @@ const ReviewVideo = () => {
           <div className="play-btn">▶</div>
         </div>
 
-        <div className="yt-card" data-id="crpkuDgv_oA">
-          <img src="https://img.youtube.com/vi/crpkuDgv_oA/hqdefault.jpg" loading="lazy"  />
+        <div className="yt-card" data-id="6bK7VyZSmf4">
+          <img src="https://img.youtube.com/vi/6bK7VyZSmf4/hqdefault.jpg" loading="lazy"  />
           <div className="play-btn">▶</div>
         </div>
 

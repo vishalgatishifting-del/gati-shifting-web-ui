@@ -65,7 +65,7 @@ interface PageProps {
   pageData?: PageDataProps;
   address?: string;
 }
-
+// let check: Partial<Service> = {}
 const CityPage: React.FC<PageProps> = ({
   city,
   img,
@@ -280,7 +280,6 @@ const CityPage: React.FC<PageProps> = ({
                   <h1>{pageData?.mainHeading}</h1>
 
                   <div className="city-name">{city}</div>
-
                   <span className="address">
                     <LocationOnIcon />
                     {address}

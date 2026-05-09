@@ -14,15 +14,12 @@ const ProtectedRoute = ({ children }: any) => {
             try {
 
                 await privateAPI.get("/api/auth/me");
-
                 setAuthenticated(true);
-
             }
             catch {
 
                 // try refresh token
                 try {
-
                     await privateAPI.post("/api/auth/refresh");
 
                     // retry auth check
