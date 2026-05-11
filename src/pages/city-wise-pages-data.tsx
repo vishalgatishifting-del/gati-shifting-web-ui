@@ -1591,7 +1591,9 @@ export const pagesData = [
       services: [
         {
           title: "Household Shifting and Home Relocation Service Guwahati",
-          desc: "We provide safe and stress-free household shifting Guwahati using premium packing materials to ensure damage-free transportation of goods."
+          desc: "We provide safe and stress-free household shifting Guwahati using premium packing materials to ensure damage-free transportation of goods.",
+          link: "https://gatishiftingpackers.com/home-shifting",
+          linkText: "Household Shifting"
         },
         {
           title: "Office Relocation Guwahati",
