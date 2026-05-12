@@ -188,7 +188,7 @@ const TrackOrder: React.FC = () => {
               ref={inputRef}
               className="tp-search__input"
               type="text"
-              placeholder="Enter Tracking ID  e.g. GTI1234567"
+              placeholder="Enter Tracking ID  e.g. GTI1234"
               value={trackingId}
               onChange={(e) => setTrackingId(e.target.value.toUpperCase())}
               onFocus={() => setFocused(true)}

@@ -875,3 +875,9 @@ $tp-font: 'Poppins', sans-serif;
   .tp-search__btn span { display: none; }
   .tp-stats { gap: 16px; }
 }
+
+@media screen and (max-width: 353px) {
+  .tp-search__input{
+    width: 100%;
+  }
+}
