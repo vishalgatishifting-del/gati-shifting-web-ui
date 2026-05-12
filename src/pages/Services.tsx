@@ -15,11 +15,11 @@ import "./Services.scss"
 import { Helmet } from "react-helmet-async";
 import "./Services.scss"
 
-import { useState } from "react";
-import petSlider from "../assets/expandable_slider/pet.webp";
-import bike from "../assets/expandable_slider/bike.webp";
-import house from "../assets/expandable_slider/house.webp";
-import car from "../assets/expandable_slider/car.webp";
+// import { useState } from "react";
+// import petSlider from "../assets/expandable_slider/pet.webp";
+// import bike from "../assets/expandable_slider/bike.webp";
+// import house from "../assets/expandable_slider/house.webp";
+// import car from "../assets/expandable_slider/car.webp";
 
 
 import AV_icon_png from "../assets/servicesPageImg/ac.webp"
@@ -65,20 +65,20 @@ const Services = ({ successCondition }: props) => {
         { shiftingType: "Few Items Only", packingMaterial: "Rs. 600 - 1000", movingCharges: "Rs. 2000 - 2800" },
     ];
 
-    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+    // const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-    interface ImageItem {
-        img: string;
-        heading: string;
-        text: string;
-    }
+    // interface ImageItem {
+    //     img: string;
+    //     heading: string;
+    //     text: string;
+    // }
 
-    const imagesForC: ImageItem[] = [
-        { img: house, heading: "House Shifting", text: "Smooth and reliable house shifting with professional packing, loading, transport, and setup at your new home." },
-        { img: car, heading: "Car Transport", text: "Car shifting through open or enclosed carriers with tracking, insurance, and timely delivery." },
-        { img: bike, heading: "Bike Transport", text: "Bike relocation with protective wrapping, proper anchoring, and doorstep pickup and delivery." },
-        { img: petSlider, heading: "Pet Relocation", text: "Stress-free pet transportation with temperature-controlled spaces and necessary travel documentation." },
-    ];
+    // const imagesForC: ImageItem[] = [
+    //     { img: house, heading: "House Shifting", text: "Smooth and reliable house shifting with professional packing, loading, transport, and setup at your new home." },
+    //     { img: car, heading: "Car Transport", text: "Car shifting through open or enclosed carriers with tracking, insurance, and timely delivery." },
+    //     { img: bike, heading: "Bike Transport", text: "Bike relocation with protective wrapping, proper anchoring, and doorstep pickup and delivery." },
+    //     { img: petSlider, heading: "Pet Relocation", text: "Stress-free pet transportation with temperature-controlled spaces and necessary travel documentation." },
+    // ];
 
 
     const services: Services[] = [
@@ -133,7 +133,7 @@ const Services = ({ successCondition }: props) => {
                     </div>
                 ))}
             </section>
-            <div className="image-box">
+            {/* <div className="image-box">
                 {imagesForC.map((data, index) => (
                     <div
                         key={index}
@@ -146,7 +146,7 @@ const Services = ({ successCondition }: props) => {
                         <img src={data.img} alt={`img-${index}`} loading="lazy"  />
                     </div>
                 ))}
-            </div>
+            </div> */}
             <section id="table-section-services">
                 <h1>Estimated Charges of Packing and Moving Services in India</h1>
                 <p>Gati Shifting Packers offers reliable packing and moving services across India. Our team ensures the safe handling and transportation of your belongings. Get a clear price estimate tailored to your needs.</p>

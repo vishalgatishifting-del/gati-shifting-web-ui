@@ -19,7 +19,7 @@ import { useState, useEffect } from "react";
 import ContactForm from './ContactForm';
 
 // import Logo from "../assets/logo2.webp";
-import Logo from "../assets/Themes/NewYear/transparentIco.webp";
+import Logo from "../assets/logo/transparentIco.png";
 // import Logo from "../assets/Themes/Holi/holiLogo.png";
 // import Logo from "../assets/diwaliTheme/christmasLogo.png";
 

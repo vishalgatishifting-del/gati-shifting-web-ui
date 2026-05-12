@@ -29,7 +29,7 @@ const CitySchema = ({ cityMeta }: any) => {
 
         name: cityMeta?.city,
 
-        item: `https://gatishiftingpackers.com/packers-and-movers-in-ghaziabad-${cityMeta?.slug}`
+        item: `https://gatishiftingpackers.com/packers-and-movers-in-${cityMeta?.slug}`
       }
     ]
   };
@@ -78,8 +78,7 @@ const CitySchema = ({ cityMeta }: any) => {
       "@type": "Rating",
 
       ratingValue: "5",
-
-      bestRating: "4.8"
+      bestRating: "5"
     },
 
     author: {
@@ -94,7 +93,7 @@ const CitySchema = ({ cityMeta }: any) => {
     itemReviewed: {
       "@type": "MovingCompany",
       name: "Gati Shifting Packers",
-      url: `https://gatishiftingpackers.com/city/${cityMeta?.slug}`
+      url: `https://gatishiftingpackers.com/packers-and-movers-in-${cityMeta?.slug}`
 
     }
   };
