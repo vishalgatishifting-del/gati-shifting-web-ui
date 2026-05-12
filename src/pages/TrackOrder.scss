@@ -1,22 +1,44 @@
 @import "../style/variables";
 
-// ─── Design Tokens ────────────────────────────────────────────────
-$tp-bg:          #f4f6fb;
+// ─── Design Tokens — Vibrant & Modern Palette ─────────────────────
+$tp-bg:          #f0f2ff;
 $tp-surface:     #ffffff;
-$tp-surface-2:   #f8fafc;
-$tp-border:      rgba(0, 0, 0, 0.08);
-// $tp-amber:       #e07b00;
-$tp-amber: #23acf1;
+$tp-surface-2:   #f5f6ff;
+$tp-border:      rgba(99, 102, 241, 0.12);
 
-$tp-amber-dim:   rgba(224, 123, 0, 0.1);
-$tp-amber-glow:  rgba(224, 123, 0, 0.25);
-$tp-blue:        #2563eb;
-$tp-blue-dim:    rgba(37, 99, 235, 0.08);
-$tp-green:       #16a34a;
-$tp-green-dim:   rgba(22, 163, 74, 0.08);
-$tp-text-1:      #0f172a;
-$tp-text-2:      #475569;
-$tp-text-3:      #94a3b8;
+// Primary — Electric Violet → Fuchsia gradient
+$tp-primary-a:   #7c3aed;   // violet
+$tp-primary-b:   #db2777;   // fuchsia
+$tp-primary-mid: #a855f7;   // mid purple (for solo use)
+
+// Accent — Cyan punch
+$tp-cyan:        #06b6d4;
+$tp-cyan-dim:    rgba(6, 182, 212, 0.10);
+$tp-cyan-glow:   rgba(6, 182, 212, 0.30);
+
+// Status colours
+$tp-blue:        #3b82f6;
+$tp-blue-dim:    rgba(59, 130, 246, 0.10);
+$tp-green:       #10b981;
+$tp-green-dim:   rgba(16, 185, 129, 0.10);
+$tp-orange:      #f97316;
+$tp-orange-dim:  rgba(249, 115, 22, 0.10);
+
+// Gradient helpers
+$tp-grad-primary: linear-gradient(135deg, $tp-primary-a, $tp-primary-b);
+$tp-grad-hero:    linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #4c1d95 70%, #831843 100%);
+$tp-grad-accent:  linear-gradient(135deg, $tp-cyan, $tp-primary-mid);
+$tp-grad-track:   linear-gradient(180deg, $tp-cyan, $tp-green);
+
+// Text
+$tp-text-1:      #0f0a23;
+$tp-text-2:      #4b5280;
+$tp-text-3:      #9ca3af;
+$tp-text-inv:    #ffffff;
+
+// Dim / glow for primary
+$tp-primary-dim:  rgba(124, 58, 237, 0.10);
+$tp-primary-glow: rgba(124, 58, 237, 0.30);
 
 $tp-font: 'Poppins', sans-serif;
 
@@ -56,13 +78,24 @@ $tp-font: 'Poppins', sans-serif;
   to   { background-position: 40px 40px; }
 }
 
+@keyframes tp-shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
 // ─── Root ─────────────────────────────────────────────────────────
 .tp-root {
   font-family: $tp-font;
   background: $tp-bg;
   min-height: 100vh;
   color: $tp-text-1;
-  padding-top: 108px;
+  padding-top: 96px;
+}
+
+@media screen and (max-width: 1100px) {
+  .tp-root{
+    padding-top: 83.2px;
+  }
 }
 
 // ─── Hero ─────────────────────────────────────────────────────────
@@ -74,8 +107,8 @@ $tp-font: 'Poppins', sans-serif;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 40px;
-  background: linear-gradient(135deg, #ffffff 0%, #eef3ff 100%);
-  border-bottom: 1px solid $tp-border;
+  background: $tp-grad-hero;   // ← dark gradient hero instead of washed white
+  border-bottom: 1px solid rgba(255,255,255,0.06);
 
   &__bg {
     position: absolute;
@@ -86,26 +119,36 @@ $tp-font: 'Poppins', sans-serif;
   &__blob {
     position: absolute;
     border-radius: 50%;
-    filter: blur(80px);
+    filter: blur(90px);
     animation: tp-blob-drift 12s ease-in-out infinite;
 
     &--1 {
-      width: 500px;
-      height: 500px;
-      background: radial-gradient(circle, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
-      top: -100px;
-      left: -100px;
+      width: 520px;
+      height: 520px;
+      background: radial-gradient(circle, rgba(124, 58, 237, 0.45) 0%, transparent 70%);
+      top: -120px;
+      left: -80px;
       animation-duration: 14s;
     }
 
     &--2 {
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, rgba(224, 123, 0, 0.07) 0%, transparent 70%);
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.30) 0%, transparent 70%);
       bottom: -80px;
-      right: 10%;
+      right: 8%;
       animation-duration: 18s;
       animation-delay: -6s;
+    }
+
+    &--3 {
+      width: 280px;
+      height: 280px;
+      background: radial-gradient(circle, rgba(219, 39, 119, 0.25) 0%, transparent 70%);
+      top: 30%;
+      left: 45%;
+      animation-duration: 10s;
+      animation-delay: -3s;
     }
   }
 
@@ -113,8 +156,8 @@ $tp-font: 'Poppins', sans-serif;
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(rgba(0,0,0,0.025) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0,0,0,0.025) 1px, transparent 1px);
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
     background-size: 40px 40px;
     animation: tp-grid-scroll 8s linear infinite;
   }
@@ -129,9 +172,9 @@ $tp-font: 'Poppins', sans-serif;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: $tp-amber-dim;
-    border: 1px solid rgba(224, 123, 0, 0.25);
-    color: $tp-amber;
+    background: rgba(6, 182, 212, 0.15);
+    border: 1px solid rgba(6, 182, 212, 0.35);
+    color: $tp-cyan;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 0.05em;
@@ -142,7 +185,7 @@ $tp-font: 'Poppins', sans-serif;
     &-dot {
       width: 7px;
       height: 7px;
-      background: $tp-amber;
+      background: $tp-cyan;
       border-radius: 50%;
       animation: tp-pulse 2s ease-in-out infinite;
     }
@@ -154,18 +197,20 @@ $tp-font: 'Poppins', sans-serif;
     line-height: 1.15;
     margin: 0 0 16px;
     letter-spacing: -0.02em;
-    color: $tp-text-1;
+    color: $tp-text-inv;          // ← white on dark hero
 
     &-accent {
-      background: linear-gradient(135deg, #46c1ff, #23acf1);
+      background: linear-gradient(135deg, #a5f3fc, #67e8f9, #c4b5fd);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+      background-size: 200% auto;
+      animation: tp-shimmer 4s linear infinite;
     }
   }
 
   &__sub {
-    color: $tp-text-2;
+    color: rgba(255,255,255,0.65);
     font-size: 17px;
     line-height: 1.6;
     margin: 0 0 36px;
@@ -183,7 +228,7 @@ $tp-font: 'Poppins', sans-serif;
   &__img {
     width: 100%;
     max-width: 420px;
-    filter: drop-shadow(0 20px 50px rgba(37, 99, 235, 0.15));
+    filter: drop-shadow(0 20px 60px rgba(124, 58, 237, 0.4));
   }
 }
 
@@ -203,12 +248,12 @@ $tp-font: 'Poppins', sans-serif;
   &__num {
     font-size: 22px;
     font-weight: 700;
-    color: $tp-text-1;
+    color: $tp-text-inv;
   }
 
   &__label {
     font-size: 12px;
-    color: $tp-text-3;
+    color: rgba(255,255,255,0.45);
     text-transform: uppercase;
     letter-spacing: 0.08em;
   }
@@ -216,7 +261,7 @@ $tp-font: 'Poppins', sans-serif;
   &__divider {
     width: 1px;
     height: 36px;
-    background: $tp-border;
+    background: rgba(255,255,255,0.15);
   }
 }
 
@@ -224,25 +269,26 @@ $tp-font: 'Poppins', sans-serif;
 .tp-search {
   display: flex;
   align-items: center;
-  background: $tp-surface;
-  border: 1.5px solid $tp-border;
+  background: rgba(255,255,255,0.08);
+  border: 1.5px solid rgba(255,255,255,0.18);
   border-radius: 14px;
   padding: 6px 6px 6px 16px;
   gap: 10px;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
   max-width: 520px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  backdrop-filter: blur(12px);
 
   &--focused {
-    border-color: rgba(224, 123, 0, 0.45);
-    box-shadow: 0 0 0 4px $tp-amber-dim;
+    background: rgba(255,255,255,0.12);
+    border-color: rgba(6, 182, 212, 0.60);
+    box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.15);
   }
 
   &__icon {
     width: 20px;
     height: 20px;
     flex-shrink: 0;
-    color: $tp-text-3;
+    color: rgba(255,255,255,0.45);
     display: flex;
 
     svg { width: 100%; height: 100%; }
@@ -255,11 +301,11 @@ $tp-font: 'Poppins', sans-serif;
     outline: none;
     font-family: $tp-font;
     font-size: 15px;
-    color: $tp-text-1;
+    color: $tp-text-inv;
     letter-spacing: 0.05em;
 
     &::placeholder {
-      color: $tp-text-3;
+      color: rgba(255,255,255,0.35);
       font-weight: 400;
       letter-spacing: 0.02em;
     }
@@ -269,7 +315,7 @@ $tp-font: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
     gap: 8px;
-    background: linear-gradient(135deg, #46c1ff, #23acf1);
+    background: $tp-grad-accent;
     border: none;
     border-radius: 10px;
     color: #fff;
@@ -286,13 +332,13 @@ $tp-font: 'Poppins', sans-serif;
     &:hover:not(:disabled) {
       opacity: 0.9;
       transform: translateY(-1px);
-      box-shadow: 0 6px 20px $tp-amber-glow;
+      box-shadow: 0 8px 24px rgba(6, 182, 212, 0.40);
     }
 
     &:active:not(:disabled) { transform: translateY(0); }
 
     &:disabled {
-      opacity: 0.6;
+      opacity: 0.5;
       cursor: not-allowed;
     }
   }
@@ -314,9 +360,9 @@ $tp-font: 'Poppins', sans-serif;
   align-items: center;
   gap: 10px;
   margin-top: 16px;
-  background: rgba(239, 68, 68, 0.06);
-  border: 1px solid rgba(239, 68, 68, 0.2);
-  color: #dc2626;
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  color: #f87171;
   border-radius: 10px;
   padding: 12px 16px;
   font-size: 14px;
@@ -343,7 +389,19 @@ $tp-font: 'Poppins', sans-serif;
   padding: 24px 32px;
   margin-bottom: 24px;
   gap: 20px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 24px rgba(124, 58, 237, 0.08);
+  position: relative;
+  overflow: hidden;
+
+  // subtle gradient top-edge accent
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: $tp-grad-primary;
+    border-radius: 16px 16px 0 0;
+  }
 
   &__left {
     display: flex;
@@ -390,11 +448,11 @@ $tp-font: 'Poppins', sans-serif;
       animation: tp-pulse 2.5s ease-in-out infinite;
     }
 
-    &--order-placed     { background: $tp-blue-dim; color: $tp-blue; }
-    &--packed           { background: rgba(109, 40, 217, 0.08); color: #7c3aed; }
-    &--in-transit       { background: $tp-amber-dim; color: $tp-amber; }
-    &--out-for-delivery { background: rgba(234, 88, 12, 0.08); color: #ea580c; }
-    &--delivered        { background: $tp-green-dim; color: $tp-green; }
+    &--order-placed     { background: $tp-blue-dim;   color: $tp-blue; }
+    &--packed           { background: $tp-primary-dim; color: $tp-primary-a; }
+    &--in-transit       { background: $tp-cyan-dim;    color: $tp-cyan; }
+    &--out-for-delivery { background: $tp-orange-dim;  color: $tp-orange; }
+    &--delivered        { background: $tp-green-dim;   color: $tp-green; }
   }
 
   &__right { display: flex; align-items: center; }
@@ -403,12 +461,12 @@ $tp-font: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
     gap: 12px;
-    background: $tp-surface-2;
-    border: 1px solid $tp-border;
+    background: $tp-primary-dim;
+    border: 1px solid rgba(124, 58, 237, 0.18);
     border-radius: 12px;
     padding: 14px 20px;
 
-    svg { width: 22px; height: 22px; color: $tp-amber; flex-shrink: 0; }
+    svg { width: 22px; height: 22px; color: $tp-primary-mid; flex-shrink: 0; }
 
     &-label {
       display: block;
@@ -423,7 +481,10 @@ $tp-font: 'Poppins', sans-serif;
       display: block;
       font-size: 16px;
       font-weight: 700;
-      color: $tp-amber;
+      background: $tp-grad-primary;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
   }
 }
@@ -440,7 +501,7 @@ $tp-font: 'Poppins', sans-serif;
   gap: 10px;
   margin: 0 0 28px;
 
-  svg { width: 18px; height: 18px; color: $tp-amber; flex-shrink: 0; }
+  svg { width: 18px; height: 18px; color: $tp-primary-mid; flex-shrink: 0; }
 }
 
 // ─── Grid ─────────────────────────────────────────────────────────
@@ -457,7 +518,7 @@ $tp-font: 'Poppins', sans-serif;
   border: 1px solid $tp-border;
   border-radius: 16px;
   padding: 28px 24px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 24px rgba(124, 58, 237, 0.06);
 }
 
 .tp-timeline {
@@ -466,7 +527,7 @@ $tp-font: 'Poppins', sans-serif;
 
   &__track {
     width: 2px;
-    background: #e2e8f0;
+    background: rgba(99, 102, 241, 0.12);
     border-radius: 99px;
     flex-shrink: 0;
     position: relative;
@@ -477,7 +538,7 @@ $tp-font: 'Poppins', sans-serif;
     position: absolute;
     top: 0; left: 0;
     width: 100%;
-    background: linear-gradient(180deg, $tp-amber, $tp-green);
+    background: $tp-grad-track;
     border-radius: 99px;
     transition: height 1.2s cubic-bezier(0.22, 1, 0.36, 1);
   }
@@ -499,19 +560,27 @@ $tp-font: 'Poppins', sans-serif;
 
     &--done {
       opacity: 1;
-      .tp-timeline__dot { background: $tp-green-dim; border-color: $tp-green; }
+      .tp-timeline__dot {
+        background: $tp-green-dim;
+        border-color: $tp-green;
+      }
       .tp-timeline__icon { color: $tp-green; }
     }
 
     &--active {
       opacity: 1;
       .tp-timeline__dot {
-        background: $tp-amber-dim;
-        border-color: $tp-amber;
-        box-shadow: 0 0 14px #23acf1;
+        background: $tp-primary-dim;
+        border-color: $tp-primary-mid;
+        box-shadow: 0 0 18px rgba(124, 58, 237, 0.35);
       }
-      .tp-timeline__icon { color: $tp-amber; }
-      .tp-timeline__label { color: $tp-amber; }
+      .tp-timeline__icon { color: $tp-primary-mid; }
+      .tp-timeline__label {
+        background: $tp-grad-primary;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
     }
   }
 
@@ -519,7 +588,7 @@ $tp-font: 'Poppins', sans-serif;
     width: 40px;
     height: 40px;
     border-radius: 12px;
-    border: 1.5px solid #e2e8f0;
+    border: 1.5px solid rgba(99, 102, 241, 0.15);
     background: $tp-surface-2;
     display: flex;
     align-items: center;
@@ -542,7 +611,7 @@ $tp-font: 'Poppins', sans-serif;
     position: absolute;
     inset: -4px;
     border-radius: 14px;
-    border: 1.5px solid $tp-amber;
+    border: 1.5px solid $tp-primary-mid;
     animation: tp-pulse 2.5s ease-in-out infinite;
   }
 
@@ -570,9 +639,9 @@ $tp-font: 'Poppins', sans-serif;
     font-size: 11px;
     font-weight: 600;
     letter-spacing: 0.06em;
-    background: $tp-amber-dim;
-    color: $tp-amber;
-    border: 1px solid rgba(224, 123, 0, 0.25);
+    background: $tp-primary-dim;
+    color: $tp-primary-mid;
+    border: 1px solid rgba(124, 58, 237, 0.25);
     border-radius: 100px;
     padding: 3px 10px;
     white-space: nowrap;
@@ -592,7 +661,7 @@ $tp-font: 'Poppins', sans-serif;
   border: 1px solid $tp-border;
   border-radius: 16px;
   padding: 28px 24px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 24px rgba(124, 58, 237, 0.06);
 }
 
 .tp-journey {
@@ -612,8 +681,14 @@ $tp-font: 'Poppins', sans-serif;
     border-radius: 50%;
     flex-shrink: 0;
 
-    &--from { background: $tp-blue; box-shadow: 0 0 10px rgba(37, 99, 235, 0.35); }
-    &--to   { background: $tp-green; box-shadow: 0 0 10px rgba(22, 163, 74, 0.35); }
+    &--from {
+      background: $tp-blue;
+      box-shadow: 0 0 12px rgba(59, 130, 246, 0.45);
+    }
+    &--to {
+      background: $tp-green;
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.45);
+    }
   }
 
   &__pt-label {
@@ -635,7 +710,7 @@ $tp-font: 'Poppins', sans-serif;
   &__line {
     flex: 1;
     height: 2px;
-    background: linear-gradient(90deg, $tp-blue, $tp-amber, $tp-green);
+    background: linear-gradient(90deg, $tp-blue, $tp-cyan, $tp-primary-mid, $tp-green);
     position: relative;
     margin: 0 16px;
 
@@ -646,7 +721,7 @@ $tp-font: 'Poppins', sans-serif;
       transform: translateY(-50%);
       width: 6px; height: 6px;
       border-radius: 50%;
-      background: $tp-amber;
+      background: $tp-primary-mid;
     }
 
     &::before { left: 0; }
@@ -659,7 +734,7 @@ $tp-font: 'Poppins', sans-serif;
     transform: translateY(-50%);
     animation: tp-truck-move 4s ease-in-out infinite alternate;
 
-    svg { width: 22px; height: 22px; color: $tp-amber; display: block; }
+    svg { width: 22px; height: 22px; color: $tp-cyan; display: block; }
   }
 }
 
@@ -669,7 +744,7 @@ $tp-font: 'Poppins', sans-serif;
   border: 1px solid $tp-border;
   border-radius: 16px;
   padding: 28px 24px;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 24px rgba(124, 58, 237, 0.06);
 }
 
 .tp-info-list { display: flex; flex-direction: column; }
@@ -686,14 +761,14 @@ $tp-font: 'Poppins', sans-serif;
   &__icon {
     width: 38px; height: 38px;
     border-radius: 10px;
-    background: $tp-surface-2;
-    border: 1px solid $tp-border;
+    background: $tp-primary-dim;
+    border: 1px solid rgba(124, 58, 237, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
 
-    svg { width: 17px; height: 17px; color: $tp-amber; }
+    svg { width: 17px; height: 17px; color: $tp-primary-mid; }
   }
 
   &__content { display: flex; flex-direction: column; gap: 3px; }
@@ -710,7 +785,13 @@ $tp-font: 'Poppins', sans-serif;
     font-weight: 500;
     color: $tp-text-1;
 
-    &--accent { color: $tp-amber; font-weight: 600; }
+    &--accent {
+      background: $tp-grad-primary;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 600;
+    }
   }
 }
 
@@ -719,21 +800,21 @@ $tp-font: 'Poppins', sans-serif;
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  background: rgba(224, 123, 0, 0.04);
-  border: 1px solid rgba(224, 123, 0, 0.18);
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.05), rgba(6, 182, 212, 0.05));
+  border: 1px solid rgba(124, 58, 237, 0.18);
   border-radius: 14px;
   padding: 18px 20px;
 
   &__icon {
     width: 38px; height: 38px;
     border-radius: 10px;
-    background: $tp-amber-dim;
+    background: $tp-primary-dim;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
 
-    svg { width: 17px; height: 17px; color: $tp-amber; }
+    svg { width: 17px; height: 17px; color: $tp-primary-mid; }
   }
 
   &__label {
@@ -741,7 +822,10 @@ $tp-font: 'Poppins', sans-serif;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: $tp-amber;
+    background: $tp-grad-primary;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 6px;
     font-weight: 600;
   }
