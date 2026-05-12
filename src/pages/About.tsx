@@ -255,13 +255,13 @@ With trained staff, quality packing, and timely delivery, we ensure a smooth and
                 <meta property="og:description" content="Gati Shifting Packers offers reliable relocation services in Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Kolkata, Pune, Ahmedabad, Surat and more." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://gatishiftingpackers.com/about" />
-                <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
+                <meta property="og:image" content="https://gatishiftingpackers.com/newMetaImg.jpg" />
 
                 {/* Twitter Card */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="About Gati Shifting Packers – Trusted Packers and Movers in India" />
                 <meta name="twitter:description" content="Gati Shifting Packers offers reliable relocation services in Delhi, Mumbai, Bangalore, Hyderabad, Chennai, Kolkata, Pune, Ahmedabad, Surat and more." />
-                <meta name="twitter:image" content="https://gatishiftingpackers.com/metaImg.png" />
+                <meta name="twitter:image" content="https://gatishiftingpackers.com/newMetaImg.jpg" />
                 <meta name="robots" content="index, folllow" />
                 <meta httpEquiv="content-language" content="en" />
                 <link rel="canonical" href="https://gatishiftingpackers.com/about" />
