@@ -30053,6 +30053,114 @@ export const pagesData = [
         }
       ]
     }
-  }
+  },
+ {
+    slug: "packers-and-movers-in-ranchi",
+    city: "Ranchi",
+    img: Chhattisgarh,
+    offer: "10%",
+    address: "Shop Number - 32 - Harmu Road, Ranchi 834001, Jharkhand, India",
 
+    metaDetails: {
+      title: "Reliable Packers and Movers in Ranchi | Gati Shifting Packers",
+      desc: "Looking for trusted packers and movers in Ranchi? Gati Shifting Packers offers professional home shifting, office relocation, and vehicle transport services at affordable prices."
+    },
+
+    pageData: {
+      mainHeading: "Packers and Movers in Ranchi – Hassle-Free Relocation",
+
+      paragraph: [
+        "If you are looking for packers and movers in Ranchi, Gati Shifting Packers delivers organized and secure relocation solutions.",
+        "We ensure careful packing, safe transport, and timely delivery, offering both local and intercity moving services in Ranchi."
+      ],
+
+      servicesHeading: "Complete Relocation Services in Ranchi",
+
+      services: [
+        {
+          title: "Packing and Unpacking Services Ranchi",
+          desc: "Our packing and unpacking services in Ranchi use durable materials and professional techniques to protect your belongings.",
+          link: "https://gatishiftingpackers.com/home-shifting",
+          linkText: "Home shifting"
+        },
+        {
+          title: "House Shifting Services Ranchi",
+          desc: "Our house shifting services in Ranchi include packing, loading, transportation, unloading, and unpacking for a stress-free move.",
+          link: "https://gatishiftingpackers.com/home-shifting",
+          linkText: "Home shifting"
+        },
+        {
+          title: "Office Shifting Services Ranchi",
+          desc: "Our office relocation services in Ranchi ensure safe movement of furniture, electronics, and documents with minimal disruption.",
+          link: "https://gatishiftingpackers.com/office-relocation",
+          linkText: "Office Relocation"
+        },
+        {
+          title: "Car and Bike Transport Service in Ranchi",
+          desc: "We provide secure and timely car and bike transport services in Ranchi across India.",
+          link: "https://gatishiftingpackers.com/car-bike-transport",
+          linkText: "Car Bike Transport"
+        },
+        {
+          title: "Local Movers Ranchi",
+          desc: "Our local movers in Ranchi ensure quick and efficient intra-city relocation services.",
+          link: "https://gatishiftingpackers.com/home-shifting",
+          linkText: "Home shifting"
+        },
+        {
+          title: "Intercity Packers and Movers from Ranchi",
+          desc: "Our intercity relocation services from Ranchi ensure safe and timely delivery anywhere in India.",
+          link: "https://gatishiftingpackers.com/intercity-moving",
+          linkText: "Intercity Moving"
+        }
+      ],
+
+      whyChooseHeading: "Why Choose Gati Shifting Packers in Ranchi",
+
+      whyChoose: [
+        "Skilled and experienced moving team",
+        "Safe and organized packing",
+        "Timely pickup and delivery",
+        "Transparent and cost-effective pricing",
+        "Trusted packers and movers Ranchi"
+      ],
+
+      routeHeading: "Intercity Packers and Movers from Ranchi",
+
+      routeDesc: "Explore nearby service pages: https://gatishiftingpackers.com/packers-and-movers-in-jaipur https://gatishiftingpackers.com/packers-and-movers-in-jodhpur https://gatishiftingpackers.com/packers-and-movers-in-bikaner",
+
+      nearbyCitiesHeading: "Explore nearby service pages:",
+
+      nearbyCities: [
+        { link: "https://gatishiftingpackers.com/packers-and-movers-in-jaipur", linkText: "Packers and Movers in Jaipur", text: "" },
+        { link: "https://gatishiftingpackers.com/packers-and-movers-in-jodhpur", linkText: "Packers and Movers in Jodhpur", text: "" },
+        { link: "https://gatishiftingpackers.com/packers-and-movers-in-bikaner", linkText: "Packers and Movers in Bikaner", text: "" }
+      ],
+
+      faqHeading: "Frequently Asked Questions",
+
+      faqs: [
+        {
+          q: "Do you provide complete home relocation services in Ranchi?",
+          a: "Yes, we manage the entire relocation process including packing, transportation, and unpacking."
+        },
+        {
+          q: "Are your office relocation services available in Ranchi?",
+          a: "Yes, we provide safe and efficient office shifting services."
+        },
+        {
+          q: "Can you transport cars and bikes?",
+          a: "Yes, we provide secure vehicle transport services across India."
+        },
+        {
+          q: "Do you offer local moving solutions?",
+          a: "Yes, we provide quick and hassle-free intra-city relocation services."
+        },
+        {
+          q: "How can I schedule your services?",
+          a: "You can book online or contact our team directly."
+        }
+      ]
+    }
+  }
 ];
