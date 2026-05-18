@@ -7,9 +7,9 @@ $tp-surface-2:   #f5f6ff;
 $tp-border:      rgba(99, 102, 241, 0.12);
 
 // Primary — Electric Violet → Fuchsia gradient
-$tp-primary-a:   #7c3aed;   // violet
-$tp-primary-b:   #db2777;   // fuchsia
-$tp-primary-mid: #a855f7;   // mid purple (for solo use)
+$tp-primary-a:   #7c3aed;
+$tp-primary-b:   #db2777;
+$tp-primary-mid: #a855f7;
 
 // Accent — Cyan punch
 $tp-cyan:        #06b6d4;
@@ -29,6 +29,7 @@ $tp-grad-primary: linear-gradient(135deg, $tp-primary-a, $tp-primary-b);
 $tp-grad-hero:    linear-gradient(135deg, #1e1b4b 0%, #312e81 40%, #4c1d95 70%, #831843 100%);
 $tp-grad-accent:  linear-gradient(135deg, $tp-cyan, $tp-primary-mid);
 $tp-grad-track:   linear-gradient(180deg, $tp-cyan, $tp-green);
+$tp-grad-card:    linear-gradient(135deg, #1e1b4b, #312e81 40%, #4c1d95, #831843);
 
 // Text
 $tp-text-1:      #ffffff;
@@ -86,14 +87,13 @@ $tp-font: 'Poppins', sans-serif;
 // ─── Root ─────────────────────────────────────────────────────────
 .tp-root {
   font-family: $tp-font;
-  // background: $tp-bg;
   min-height: 100vh;
   color: $tp-text-1;
   padding-top: 96px;
 }
 
 @media screen and (max-width: 1100px) {
-  .tp-root{
+  .tp-root {
     padding-top: 83.2px;
   }
 }
@@ -107,7 +107,7 @@ $tp-font: 'Poppins', sans-serif;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 40px;
-  background: $tp-grad-hero;   // ← dark gradient hero instead of washed white
+  background: $tp-grad-hero;
   border-bottom: 1px solid rgba(255,255,255,0.06);
 
   &__bg {
@@ -197,7 +197,7 @@ $tp-font: 'Poppins', sans-serif;
     line-height: 1.15;
     margin: 0 0 16px;
     letter-spacing: -0.02em;
-    color: $tp-text-inv;          // ← white on dark hero
+    color: $tp-text-inv;
 
     &-accent {
       background: linear-gradient(135deg, #a5f3fc, #67e8f9, #c4b5fd);
@@ -303,7 +303,7 @@ $tp-font: 'Poppins', sans-serif;
     font-size: 15px;
     color: $tp-text-inv;
     letter-spacing: 0.05em;
-     min-width: 0;
+    min-width: 0;
 
     &::placeholder {
       color: rgba(255,255,255,0.35);
@@ -397,7 +397,6 @@ $tp-font: 'Poppins', sans-serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // background: $tp-surface;
   border: 1px solid $tp-border;
   border-radius: 16px;
   padding: 24px 32px;
@@ -406,9 +405,8 @@ $tp-font: 'Poppins', sans-serif;
   box-shadow: 0 4px 24px rgba(124, 58, 237, 0.08);
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #1e1b4b, #312e81 40%, #4c1d95, #831843);
+  background: $tp-grad-card;
 
-  // subtle gradient top-edge accent
   &::before {
     content: '';
     position: absolute;
@@ -441,7 +439,6 @@ $tp-font: 'Poppins', sans-serif;
       font-size: 20px;
       font-weight: 700;
       letter-spacing: 0.06em;
-      // color: $tp-text-1;
       color: #fff;
     }
   }
@@ -509,7 +506,7 @@ $tp-font: 'Poppins', sans-serif;
 .tp-card-title {
   font-size: 13px;
   font-weight: 600;
-  color: $tp-text-2;
+  color: $tp-text-3;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   display: flex;
@@ -530,13 +527,11 @@ $tp-font: 'Poppins', sans-serif;
 
 // ─── Timeline Card ────────────────────────────────────────────────
 .tp-timeline-card {
-  // background: $tp-surface;
   border: 1px solid $tp-border;
   border-radius: 16px;
   padding: 28px 24px;
   box-shadow: 0 4px 24px rgba(124, 58, 237, 0.06);
-  
-  background: linear-gradient(135deg, #1e1b4b, #312e81 40%, #4c1d95, #831843);
+  background: $tp-grad-card;
 }
 
 .tp-timeline {
@@ -676,13 +671,11 @@ $tp-font: 'Poppins', sans-serif;
 
 // ─── Journey Card ─────────────────────────────────────────────────
 .tp-journey-card {
-  background: $tp-surface;
   border: 1px solid $tp-border;
   border-radius: 16px;
   padding: 28px 24px;
   box-shadow: 0 4px 24px rgba(124, 58, 237, 0.06);
-  
-  background: linear-gradient(135deg, #1e1b4b, #312e81 40%, #4c1d95, #831843);
+  background: $tp-grad-card;
 }
 
 .tp-journey {
@@ -725,7 +718,6 @@ $tp-font: 'Poppins', sans-serif;
     display: block;
     font-size: 16px;
     font-weight: 600;
-    // color: $tp-text-1;
     color: #fff;
   }
 
@@ -762,13 +754,11 @@ $tp-font: 'Poppins', sans-serif;
 
 // ─── Info Card ────────────────────────────────────────────────────
 .tp-info-card {
-  background: $tp-surface;
   border: 1px solid $tp-border;
   border-radius: 16px;
   padding: 28px 24px;
   box-shadow: 0 4px 24px rgba(124, 58, 237, 0.06);
-  
-  background: linear-gradient(135deg, #1e1b4b, #312e81 40%, #4c1d95, #831843);
+  background: $tp-grad-card;
 }
 
 .tp-info-list { display: flex; flex-direction: column; }
@@ -862,6 +852,22 @@ $tp-font: 'Poppins', sans-serif;
   }
 }
 
+// ─── Map Card ─────────────────────────────────────────────────────
+.tp-map-card {
+  border: 1px solid $tp-border;
+  border-radius: 16px;
+  padding: 28px 24px;
+  box-shadow: 0 4px 24px rgba(124, 58, 237, 0.06);
+  background: $tp-grad-card;
+  overflow: hidden;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
 // ─── Responsive ───────────────────────────────────────────────────
 @media (max-width: 1024px) {
   .tp-grid { grid-template-columns: 1fr; }
@@ -891,7 +897,7 @@ $tp-font: 'Poppins', sans-serif;
 }
 
 @media screen and (max-width: 353px) {
-  .tp-search__input{
+  .tp-search__input {
     width: 100%;
   }
 }

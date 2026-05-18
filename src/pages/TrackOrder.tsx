@@ -2,6 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import "./TrackOrder.scss";
 import trackingImg from "../assets/TrackPage/trackingImg.png";
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Popup,
+} from "react-leaflet";
+
+import "leaflet/dist/leaflet.css";
 
 interface Order {
   trackingId: string;
@@ -12,6 +20,7 @@ interface Order {
   createdAt: string;
   expectedDelivery: string;
   note: string;
+  pincode?: string;
 }
 
 const STEPS = [
@@ -74,6 +83,7 @@ const STEPS = [
 ];
 
 const TrackOrder: React.FC = () => {
+
   const { id } = useParams<{ id?: string }>();
   const [trackingId, setTrackingId] = useState<string>("");
   const [order, setOrder] = useState<Order | null>(null);
@@ -81,6 +91,8 @@ const TrackOrder: React.FC = () => {
   const [error, setError] = useState<string>("");
   const [focused, setFocused] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const [position, setPosition] = useState<[number, number]>([22.7196, 75.8577]);
 
   const handleTrack = async (customId?: string) => {
     const finalTrackingId = (customId || trackingId).trim().toUpperCase();
@@ -93,10 +105,12 @@ const TrackOrder: React.FC = () => {
       setError("");
       setOrder(null);
       const res = await fetch(
-        `https://api.gatishiftingpackers.com/api/orders/track/${finalTrackingId}`
+        // `https://api.gatishiftingpackers.com/api/orders/track/${finalTrackingId}`
+        `http://localhost:5000/api/orders/track/${finalTrackingId}`
       );
       if (!res.ok) throw new Error("Tracking ID not found. Please check and try again.");
       const data: Order = await res.json();
+      console.log(data)
       setOrder(data);
     } catch (err: any) {
       setError(err.message || "Something went wrong");
@@ -112,6 +126,29 @@ const TrackOrder: React.FC = () => {
       handleTrack(upperId);
     }
   }, [id]);
+
+  useEffect(() => {
+    const getCoordinates = async () => {
+      if (!order?.toLocation) return;
+      try {
+        const fullAddress = order.toLocation;
+        const res = await fetch(
+          `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(
+            fullAddress
+          )}&format=json&limit=1`
+        );
+        const data = await res.json();
+        if (data && data.length > 0) {
+          const lat = parseFloat(data[0].lat);
+          const lon = parseFloat(data[0].lon);
+          setPosition([lat, lon]);
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getCoordinates();
+  }, [order]);
 
   const getStepStatus = (stepKey: string) => {
     if (!order) return "pending";
@@ -259,7 +296,12 @@ const TrackOrder: React.FC = () => {
                 <span className="tp-status-card__id-label">Tracking ID</span>
                 <span className="tp-status-card__id-value">{order.trackingId}</span>
               </div>
-              <div className={`tp-status-card__badge tp-status-card__badge--${order.status.replace(/\s+/g, "-").toLowerCase()}`}>
+              <div
+                className={`tp-status-card__badge tp-status-card__badge--${(order.status || "")
+                    .replace(/\s+/g, "-")
+                    .toLowerCase()
+                  }`}
+              >
                 <span className="tp-status-card__badge-pulse" />
                 {order.status}
               </div>
@@ -323,7 +365,7 @@ const TrackOrder: React.FC = () => {
               </div>
             </div>
 
-            {/* Details */}
+            {/* Details Column */}
             <div className="tp-details-col">
               {/* Journey Card */}
               <div className="tp-journey-card">
@@ -432,7 +474,39 @@ const TrackOrder: React.FC = () => {
                   </div>
                 </div>
               )}
+
+              {/* Map Card — details column ke andar */}
+              {position && (
+                <div className="tp-map-card">
+                  <h3 className="tp-card-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Destination Map
+                  </h3>
+                  <MapContainer
+                    key={`${position[0]}-${position[1]}`}
+                    center={position}
+                    zoom={13}
+                    style={{
+                      height: "260px",
+                      width: "100%",
+                      borderRadius: "12px",
+                    }}
+                  >
+                    <TileLayer
+                      attribution="&copy; OpenStreetMap contributors"
+                      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+                    <Marker position={position}>
+                      <Popup>{order?.toLocation}</Popup>
+                    </Marker>
+                  </MapContainer>
+                </div>
+              )}
             </div>
+            {/* End Details Column */}
           </div>
         </section>
       )}
