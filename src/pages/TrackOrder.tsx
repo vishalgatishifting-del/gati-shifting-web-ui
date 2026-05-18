@@ -105,8 +105,8 @@ const TrackOrder: React.FC = () => {
       setError("");
       setOrder(null);
       const res = await fetch(
-        // `https://api.gatishiftingpackers.com/api/orders/track/${finalTrackingId}`
-        `http://localhost:5000/api/orders/track/${finalTrackingId}`
+        `https://api.gatishiftingpackers.com/api/orders/track/${finalTrackingId}`
+        // `http://localhost:5000/api/orders/track/${finalTrackingId}`
       );
       if (!res.ok) throw new Error("Tracking ID not found. Please check and try again.");
       const data: Order = await res.json();
