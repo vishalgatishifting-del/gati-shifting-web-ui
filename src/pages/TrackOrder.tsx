@@ -2,14 +2,14 @@ import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import "./TrackOrder.scss";
 import trackingImg from "../assets/TrackPage/trackingImg.png";
-import {
-  MapContainer,
-  TileLayer,
-  Marker,
-  Popup,
-} from "react-leaflet";
+// import {
+//   MapContainer,
+//   TileLayer,
+//   Marker,
+//   Popup,
+// } from "react-leaflet";
 
-import "leaflet/dist/leaflet.css";
+// import "leaflet/dist/leaflet.css";
 
 interface Order {
   trackingId: string;
@@ -92,7 +92,7 @@ const TrackOrder: React.FC = () => {
   const [focused, setFocused] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const [position, setPosition] = useState<[number, number]>([22.7196, 75.8577]);
+  // const [position, setPosition] = useState<[number, number]>([22.7196, 75.8577]);
 
   const handleTrack = async (customId?: string) => {
     const finalTrackingId = (customId || trackingId).trim().toUpperCase();
@@ -127,28 +127,28 @@ const TrackOrder: React.FC = () => {
     }
   }, [id]);
 
-  useEffect(() => {
-    const getCoordinates = async () => {
-      if (!order?.toLocation) return;
-      try {
-        const fullAddress = order.toLocation;
-        const res = await fetch(
-          `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(
-            fullAddress
-          )}&format=json&limit=1`
-        );
-        const data = await res.json();
-        if (data && data.length > 0) {
-          const lat = parseFloat(data[0].lat);
-          const lon = parseFloat(data[0].lon);
-          setPosition([lat, lon]);
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getCoordinates();
-  }, [order]);
+  // useEffect(() => {
+  //   const getCoordinates = async () => {
+  //     if (!order?.toLocation) return;
+  //     try {
+  //       const fullAddress = order.toLocation;
+  //       const res = await fetch(
+  //         `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(
+  //           fullAddress
+  //         )}&format=json&limit=1`
+  //       );
+  //       const data = await res.json();
+  //       if (data && data.length > 0) {
+  //         const lat = parseFloat(data[0].lat);
+  //         const lon = parseFloat(data[0].lon);
+  //         setPosition([lat, lon]);
+  //       }
+  //     } catch (error) {
+  //       console.log(error);
+  //     }
+  //   };
+  //   getCoordinates();
+  // }, [order]);
 
   const getStepStatus = (stepKey: string) => {
     if (!order) return "pending";
@@ -476,7 +476,7 @@ const TrackOrder: React.FC = () => {
               )}
 
               {/* Map Card — details column ke andar */}
-              {position && (
+              {/* {position && (
                 <div className="tp-map-card">
                   <h3 className="tp-card-title">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -504,7 +504,7 @@ const TrackOrder: React.FC = () => {
                     </Marker>
                   </MapContainer>
                 </div>
-              )}
+              )} */}
             </div>
             {/* End Details Column */}
           </div>

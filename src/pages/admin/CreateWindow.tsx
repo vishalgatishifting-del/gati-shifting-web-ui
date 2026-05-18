@@ -13,8 +13,8 @@ interface OrderForm {
     note: string;
     provider: string;
 
-    courierPartner: string;
-    courierTrackingId: string;
+    // courierPartner: string;
+    // courierTrackingId: string;
 }
 
 const CreateWindow = ({
@@ -35,8 +35,8 @@ const CreateWindow = ({
             note: "",
             provider: "Gati Shifting Packers",
 
-            courierPartner: "manual",
-            courierTrackingId: "",
+            // courierPartner: "manual",
+            // courierTrackingId: "",
         });
 
     const handleChange = (e: any) => {
@@ -179,7 +179,7 @@ const CreateWindow = ({
                         />
 
                         {/* Courier Partner */}
-                        <select
+                        {/* <select
                             name="courierPartner"
                             value={formData.courierPartner}
                             onChange={handleChange}
@@ -215,7 +215,6 @@ const CreateWindow = ({
 
                         </select>
 
-                        {/* Tracking ID */}
                         {
                             formData.courierPartner !==
                             "manual" && (
@@ -228,7 +227,7 @@ const CreateWindow = ({
                                     placeholder="Tracking ID"
                                 />
                             )
-                        }
+                        } */}
 
                         {/* Provider */}
                         <select
