@@ -38,16 +38,16 @@ const OfficeLocation = () => {
     return (
         <section id="office-location-section">
             <div className="buttons">
-                <Link to="https://gatishiftingpackers.com/city/delhi">Delhi</Link>
-                <Link to="https://gatishiftingpackers.com/city/Mumbai">Mumbai</Link>
-                <Link to="https://gatishiftingpackers.com/city/Kolkata">Kolkata</Link>
-                <Link to="https://gatishiftingpackers.com/city/Chennai">Chennai</Link>
-                <Link to="https://gatishiftingpackers.com/city/Bengaluru">Bengaluru</Link>
-                <Link to="https://gatishiftingpackers.com/city/Hyderabad">Hyderabad</Link>
-                <Link to="https://gatishiftingpackers.com/city/Pune">Pune</Link>
-                <Link to="https://gatishiftingpackers.com/city/Goa">Goa</Link>
-                <Link to="https://gatishiftingpackers.com/city/Guwhati">Guwhati</Link>
-                <Link to="https://gatishiftingpackers.com/city/Imphal">Imphal</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-delhi">Delhi</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Mumbai">Mumbai</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Kolkata">Kolkata</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Chennai">Chennai</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Bengaluru">Bengaluru</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Hyderabad">Hyderabad</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Pune">Pune</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Goa">Goa</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Guwhati">Guwhati</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Imphal">Imphal</Link>
             </div>
             <div className="container">
                 {/* <motion.div
