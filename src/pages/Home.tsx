@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import "./Home.scss"
 import Slider from "react-slick";
@@ -40,34 +40,7 @@ import ISOcertificate from "../assets/homePagePng/award_certificate.webp"
 import gatiCertificate from "../assets/homePagePng/gatishifting_certificate.webp"
 
 
-// Feature Slider Images
-import feature1Img from "../assets/homePagePng/feature1.webp"
-import feature2Img from "../assets/homePagePng/feature2.webp"
-import feature3Img from "../assets/homePagePng/feature3.webp"
-import feature4Img from "../assets/homePagePng/feature4.webp"
-import feature5Img from "../assets/homePagePng/feature5.webp"
-import feature6Img from "../assets/homePagePng/feature6.webp"
-import feature7Img from "../assets/homePagePng/feature7.webp"
-import feature8Img from "../assets/homePagePng/feature8.webp"
-import feature9Img from "../assets/homePagePng/feature9.webp"
-import feature10Img from "../assets/homePagePng/feature10.webp"
-import feature11Img from "../assets/homePagePng/feature11.webp"
-import feature12Img from "../assets/homePagePng/feature12.webp"
-import feature13Img from "../assets/homePagePng/feature13.webp"
-import feature14Img from "../assets/homePagePng/feature14.webp"
-import feature15Img from "../assets/homePagePng/feature15.webp"
-import feature16Img from "../assets/homePagePng/feature16.webp"
-import feature17Img from "../assets/homePagePng/feature17.webp"
-import feature18Img from "../assets/homePagePng/feature18.webp"
-import feature19Img from "../assets/homePagePng/feature19.webp"
-import feature20Img from "../assets/homePagePng/feature20.webp"
-import feature21Img from "../assets/homePagePng/feature21.webp"
-import feature22Img from "../assets/homePagePng/feature22.webp"
-import feature23Img from "../assets/homePagePng/feature23.webp"
-import feature24Img from "../assets/homePagePng/feature24.webp"
-import feature25Img from "../assets/homePagePng/feature25.webp"
-import feature26Img from "../assets/homePagePng/feature26.webp"
-import feature27Img from "../assets/homePagePng/feature27.webp"
+
 
 
 // Steps Section Icons
@@ -118,51 +91,24 @@ import bike from "../assets/HomePage/slide3.webp";
 import house from "../assets/HomePage/slide4.webp";
 import car from "../assets/HomePage/slide1.webp";
 import slide5 from "../assets/HomePage/slide5.webp";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 interface props {
     successCondition: React.Dispatch<React.SetStateAction<boolean>>;
 }
 const Home: React.FC<props> = ({ successCondition }) => {
 
-    useEffect(() => {
-        import("slick-carousel/slick/slick.css");
-        import("slick-carousel/slick/slick-theme.css");
-    }, []);
+    // useEffect(() => {
+    //     import("slick-carousel/slick/slick.css");
+    //     import("slick-carousel/slick/slick-theme.css");
+    // }, []);
 
 
     const images = [gatiSlider2, gatislider8, gatiSlider7, gatislider6, gatislider5, gatiSlider3];
 
 
-    const sliderImages = [
-        feature1Img,
-        feature2Img,
-        feature3Img,
-        feature4Img,
-        feature5Img,
-        feature6Img,
-        feature7Img,
-        feature8Img,
-        feature9Img,
-        feature10Img,
-        feature11Img,
-        feature12Img,
-        feature13Img,
-        feature14Img,
-        feature15Img,
-        feature16Img,
-        feature17Img,
-        feature18Img,
-        feature19Img,
-        feature20Img,
-        feature21Img,
-        feature22Img,
-        feature23Img,
-        feature24Img,
-        feature25Img,
-        feature26Img,
-        feature27Img,
-    ]
+   
 
     const settings = {
         dots: true,
@@ -193,11 +139,11 @@ const Home: React.FC<props> = ({ successCondition }) => {
         "cheap packers and movers",
         "packers and movers in delhi"]
 
-    const [showSlider, setShowSlider] = useState(false);
+    const [showSlider, ] = useState(true);
 
-    useEffect(() => {
-        setTimeout(() => setShowSlider(true), 1500);
-    }, []);
+    // useEffect(() => {
+    //     setTimeout(() => setShowSlider(true), 1500);
+    // }, []);
 
 
 
@@ -521,7 +467,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                 </div>
             </section>
 
-            <ProductImageSlider images={sliderImages}></ProductImageSlider>
+            <ProductImageSlider></ProductImageSlider>
 
 
             <ReviewVideo></ReviewVideo>
@@ -630,7 +576,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                     >
                         <h2>{data.heading}</h2>
                         <p>{data.text}</p>
-                        <img src={data.img} alt={`img-${index}`} />
+                        <img src={data.img} alt={`img-${index}`} loading="lazy" />
                     </div>
                 ))}
             </div>

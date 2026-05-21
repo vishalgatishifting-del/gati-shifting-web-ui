@@ -783,7 +783,11 @@
     height: 400px;
     background: $primary-color;
     border-radius: 50%;
-    filter: blur(15rem);
+    // filter: blur(15rem);
+    // ✅ Reduce karo
+filter: blur(5rem);
+// Ya will-change add karo
+will-change: filter;
 }
 
 #company-description::after {
@@ -795,7 +799,11 @@
     height: 400px;
     background: #ff8800;
     border-radius: 50%;
-    filter: blur(15rem);
+    // filter: blur(15rem);
+    // ✅ Reduce karo
+filter: blur(5rem);
+// Ya will-change add karo
+will-change: filter;
 }
 
 @media screen and (max-width:580px) {
