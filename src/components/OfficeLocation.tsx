@@ -39,14 +39,14 @@ const OfficeLocation = () => {
         <section id="office-location-section">
             <div className="buttons">
                 <Link to="https://gatishiftingpackers.com/packers-and-movers-in-delhi">Delhi</Link>
-                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Mumbai">Mumbai</Link>
-                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Kolkata">Kolkata</Link>
-                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Chennai">Chennai</Link>
-                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Bengaluru">Bengaluru</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-mumbai-bombay">Mumbai</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-kolkata-calcutta">Kolkata</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-chennai-madras">Chennai</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Bengaluru-bangalore">Bengaluru</Link>
                 <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Hyderabad">Hyderabad</Link>
                 <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Pune">Pune</Link>
                 <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Goa">Goa</Link>
-                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Guwhati">Guwhati</Link>
+                <Link to="https://gatishiftingpackers.com/packers-and-movers-in-guwahati">Guwhati</Link>
                 <Link to="https://gatishiftingpackers.com/packers-and-movers-in-Imphal">Imphal</Link>
             </div>
             <div className="container">
