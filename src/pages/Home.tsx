@@ -65,9 +65,6 @@ import Counter from "../components/Counter";
 import { Link } from "react-router-dom";
 
 
-import isoBadge from "../assets/HomePage/isoicon.webp"
-import googleRatingBadge from "../assets/HomePage/5star.webp"
-import trustedBadge from "../assets/HomePage/trusted.webp"
 
 
 import truckImg from "../assets/HomePage/truck.webp"
@@ -93,7 +90,7 @@ import car from "../assets/HomePage/slide1.webp";
 import slide5 from "../assets/HomePage/slide5.webp";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import BadgeSection from "../components/Badges";
 interface props {
     successCondition: React.Dispatch<React.SetStateAction<boolean>>;
 }
@@ -287,8 +284,8 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
 
 
-
-            <section id="badge-section">
+            <BadgeSection />
+            {/* <section id="badge-section">
                 <div className="container">
                     <div className="card">
                         <img src={isoBadge} alt="Badge" loading="lazy" />
@@ -308,7 +305,7 @@ const Home: React.FC<props> = ({ successCondition }) => {
                         <p>Since 2007, we are at your service expanding all over the country to be one of the best Packers and Movers company.</p>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
 

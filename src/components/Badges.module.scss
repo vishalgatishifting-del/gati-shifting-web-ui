@@ -1,0 +1,165 @@
+// ─── Tokens ───────────────────────────────────────────────────────────────────
+$color-iso-bg:       #e1f5ee;
+$color-iso-icon:     #0f6e56;
+$color-iso-accent:   #1d9e75;
+$color-iso-pill-text:#0f6e56;
+
+$color-rating-bg:    #faeeda;
+$color-rating-icon:  #854f0b;
+$color-rating-accent:#ba7517;
+$color-rating-text:  #854f0b;
+
+$color-trust-bg:     #e6f1fb;
+$color-trust-icon:   #185fa5;
+$color-trust-accent: #378add;
+$color-trust-text:   #185fa5;
+
+$color-text-primary:   #1a1a1a;
+$color-text-muted:     #6b7280;
+$color-border:         rgba(0, 0, 0, 0.08);
+$color-card-bg:        #ffffff;
+
+$font-size-base:   14px;
+$font-size-sm:     12px;
+$font-size-title:  16px;
+$radius-card:      14px;
+$radius-pill:      999px;
+
+// ─── Section ──────────────────────────────────────────────────────────────────
+.badgeSection {
+  padding: 48px 16px 64px;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// ─── Card ─────────────────────────────────────────────────────────────────────
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: $color-card-bg;
+  border: 1px solid $color-border;
+  border-radius: $radius-card;
+  padding: 2rem 1.5rem 1.75rem;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: $radius-card $radius-card 0 0;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  }
+
+  // Accent bar colors per variant
+  &.iso::before    { background: $color-iso-accent; }
+  &.rating::before { background: $color-rating-accent; }
+  &.trust::before  { background: $color-trust-accent; }
+}
+
+// ─── Image wrapper ────────────────────────────────────────────────────────────
+.imgWrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+
+  img {
+    width: 68px;
+    height: 68px;
+    object-fit: contain;
+  }
+
+  &__iso    { background: $color-iso-bg; }
+  &__rating { background: $color-rating-bg; }
+  &__trust  { background: $color-trust-bg; }
+}
+
+// ─── Title ────────────────────────────────────────────────────────────────────
+.cardTitle {
+  font-size: $font-size-title;
+  font-weight: 600;
+  color: $color-text-primary;
+  margin: 0 0 8px;
+}
+
+// ─── Pill badge ───────────────────────────────────────────────────────────────
+.pill {
+  display: inline-block;
+  font-size: $font-size-sm;
+  font-weight: 500;
+  padding: 3px 12px;
+  border-radius: $radius-pill;
+  margin-bottom: 12px;
+  letter-spacing: 0.02em;
+
+  &__iso    { background: $color-iso-bg;     color: $color-iso-pill-text; }
+  &__rating { background: $color-rating-bg;  color: $color-rating-text; }
+  &__trust  { background: $color-trust-bg;   color: $color-trust-text; }
+}
+
+// ─── Description ──────────────────────────────────────────────────────────────
+.cardDesc {
+  font-size: $font-size-base;
+  color: $color-text-muted;
+  line-height: 1.65;
+  margin: 0;
+}
+
+// ─── Responsive ───────────────────────────────────────────────────────────────
+@media screen and (max-width: 1240px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 789px) {
+  .container {
+    gap: 16px;
+  }
+
+  .imgWrap {
+    width: 64px;
+    height: 64px;
+
+    img {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  .cardDesc {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card {
+    padding: 1.5rem 1.25rem;
+  }
+}

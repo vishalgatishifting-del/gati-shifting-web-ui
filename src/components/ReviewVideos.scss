@@ -5,7 +5,7 @@
 }
 
 #customer-review .header {
-  margin-bottom: 40px;
+  // margin-bottom: 40px;
   padding: 0 20px;
 }
 
@@ -60,7 +60,7 @@
   cursor: pointer;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  // box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex-shrink: 0;
   width: 320px;
@@ -69,7 +69,7 @@
 
   &:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
+    // box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22);
     z-index: 5;
   }
 
