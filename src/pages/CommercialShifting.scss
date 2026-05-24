@@ -1,78 +1,680 @@
 @import "../style/variables";
 
-.bg-attached-sec {
-    position: relative;
-    margin-top: 111px;
-    width: 100vw;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    background: url("../assets/CommercialShifting/bg.jpg");
-    background-position: bottom;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 30px;
-    @include font-poppins-sans(400);
+$primary-color-light:  #F48C06;
+$cs-charcoal:      #1A1A2E;
+$cs-charcoal-mid:  #16213E;
+$cs-gray-dark:     #2D2D2D;
+$cs-gray-mid:      #6B6B6B;
+$cs-gray-light:    #F4F4F4;
+$cs-white:         #FFFFFF;
+$cs-border:        #E0E0E0;
 
-    h1 {
-        position: absolute;
-        bottom:0%;
-        color: #fff;
-        z-index: 10;
-        font-size: 80px;
-        text-align: center;
-        // text-shadow: 0 0 60px #b35800;
-    }
+$cs-font-display:  'poppins';
+$cs-font-body:     'poppins';
+
+// ─────────────────────────────────────────────
+// Google Fonts Import
+// ─────────────────────────────────────────────
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+// ─────────────────────────────────────────────
+// Mixins
+// ─────────────────────────────────────────────
+@mixin section-padding {
+  padding: 96px 0;
 }
 
-.bg-attached-sec::after {
-    content: '';
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@mixin orange-tag {
+  display: inline-block;
+  font-family: $cs-font-body;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $primary-color;
+  border: 1px solid rgba($primary-color, 0.35);
+  border-radius: 4px;
+  padding: 4px 12px;
+  margin-bottom: 18px;
+}
+
+// ─────────────────────────────────────────────
+// Hero
+// ─────────────────────────────────────────────
+.cs-hero {
+  position: relative;
+  margin-top: 111px;
+  width: 100%;
+  height: 620px;
+  display: flex;
+  align-items: flex-end;
+  background: url("../assets/CommercialShifting/bg.jpg") center bottom / cover no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  &__overlay {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba($cs-charcoal, 0.92) 0%,
+      rgba($cs-charcoal, 0.45) 60%,
+      rgba($cs-charcoal, 0.15) 100%
+    );
+    z-index: 1;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    padding: 0 64px 64px;
+  }
+
+  &__eyebrow {
+    @include orange-tag;
+  }
+
+  &__title {
+    font-family: $cs-font-display;
+    font-size: clamp(48px, 7vw, 96px);
+    font-weight: 800;
+    color: $cs-white;
+    line-height: 1;
+    margin: 0 0 14px;
+    letter-spacing: -1px;
+  }
+
+  &__subtitle {
+    font-family: $cs-font-body;
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 300;
+    color: rgba($cs-white, 0.72);
+    margin: 0;
+    letter-spacing: 0.3px;
+  }
+}
+
+// ─────────────────────────────────────────────
+// Intro
+// ─────────────────────────────────────────────
+.cs-intro {
+  @include section-padding;
+  background-color: $cs-white;
+
+  &__container {
+    @include container;
+    max-width: 860px;
+  }
+
+  &__badge {
+    @include orange-tag;
+  }
+
+  &__heading {
+    font-family: $cs-font-display;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 700;
+    color: $cs-charcoal;
+    line-height: 1.2;
+    margin-bottom: 28px;
+
+    span {
+        color: $primary-color;
+    //   color: $primary-color;
+    }
+  }
+
+  &__body {
+    font-family: $cs-font-body;
+    font-size: 16px;
+    line-height: 1.85;
+    color: $cs-gray-mid;
+    margin-bottom: 16px;
+
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+// ─────────────────────────────────────────────
+// 6-Step Booking Process
+// ─────────────────────────────────────────────
+.cs-steps {
+  @include section-padding;
+  background-color: $cs-charcoal;
+
+  &__container {
+    @include container;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__label {
+    @include orange-tag;
+  }
+
+  &__title {
+    font-family: $cs-font-display;
+    font-size: clamp(26px, 4vw, 44px);
+    font-weight: 700;
+    color: $cs-white;
+    margin: 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+}
+
+.cs-step-card {
+  position: relative;
+  background: rgba($cs-white, 0.04);
+  border: 1px solid rgba($cs-white, 0.1);
+  border-radius: 16px;
+  padding: 32px 28px;
+  transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    background: rgba($primary-color, 0.08);
+    border-color: rgba($primary-color, 0.4);
+    transform: translateY(-4px);
+  }
+
+  &__number {
+    font-family: $cs-font-display;
+    font-size: 56px;
+    font-weight: 800;
+    color: rgba($cs-white, 0.06);
+    line-height: 1;
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    user-select: none;
+  }
+
+  &__icon {
+    font-size: 28px;
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  &__title {
+    font-family: $cs-font-display;
+    font-size: 18px;
+    font-weight: 600;
+    color: $cs-white;
+    margin-bottom: 14px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      font-family: $cs-font-body;
+      font-size: 13.5px;
+      color: rgba($cs-white, 0.6);
+      line-height: 1.6;
+      padding-left: 14px;
+      position: relative;
+      margin-bottom: 6px;
+
+      &::before {
+        content: "–";
+        position: absolute;
+        left: 0;
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__action {
+    margin-top: 20px;
+  }
+}
+
+// ─────────────────────────────────────────────
+// Items We Shift
+// ─────────────────────────────────────────────
+.cs-items {
+  @include section-padding;
+  background-color: $cs-gray-light;
+
+  &__container {
+    @include container;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 52px;
+  }
+
+  &__label {
+    @include orange-tag;
+  }
+
+  &__title {
+    font-family: $cs-font-display;
+    font-size: clamp(26px, 4vw, 42px);
+    font-weight: 700;
+    color: $cs-charcoal;
+    margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    font-family: $cs-font-body;
+    font-size: 16px;
+    color: $cs-gray-mid;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
+}
+
+.cs-item-card {
+  background: $cs-white;
+  border-radius: 14px;
+  padding: 28px 20px;
+  text-align: center;
+  border: 1px solid $cs-border;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 12px 40px rgba($cs-charcoal, 0.1);
+    transform: translateY(-4px);
+    border-color: $primary-color;
+  }
+
+  &__icon {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    font-family: $cs-font-display;
+    font-size: 14px;
+    font-weight: 600;
+    color: $cs-charcoal;
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+
+  &__desc {
+    font-family: $cs-font-body;
+    font-size: 12.5px;
+    color: $cs-gray-mid;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+// ─────────────────────────────────────────────
+// Pricing
+// ─────────────────────────────────────────────
+.cs-pricing {
+  @include section-padding;
+  background-color: $cs-white;
+
+  &__container {
+    @include container;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 72px;
+    align-items: center;
+  }
+
+  &__label {
+    @include orange-tag;
+  }
+
+  &__title {
+    font-family: $cs-font-display;
+    font-size: clamp(24px, 3.5vw, 38px);
+    font-weight: 700;
+    color: $cs-charcoal;
+    margin-bottom: 20px;
+    line-height: 1.25;
+  }
+
+  &__body {
+    font-family: $cs-font-body;
+    font-size: 15.5px;
+    line-height: 1.85;
+    color: $cs-gray-mid;
+    margin-bottom: 28px;
+  }
+
+  &__highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      font-family: $cs-font-body;
+      font-size: 15px;
+      font-weight: 500;
+      color: $cs-charcoal;
+    }
+  }
+
+  &__image-wrap {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 24px 80px rgba($cs-charcoal, 0.15);
+  }
+
+  &__image {
     width: 100%;
-    height: 100%;
-    background: #00000044;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+
+    &:hover {
+      transform: scale(1.04);
+    }
+  }
 }
 
+// ─────────────────────────────────────────────
+// Why Choose
+// ─────────────────────────────────────────────
+.cs-why {
+  @include section-padding;
+  background-color: $cs-charcoal-mid;
 
-@media screen and (max-width: 1285px) {
-    .bg-attached-sec {
-        h1{
-            font-size: 40px;
-        }
-    }
+  &__container {
+    @include container;
+  }
+
+  &__header {
+    text-align: center;
+    margin-bottom: 56px;
+  }
+
+  &__label {
+    @include orange-tag;
+  }
+
+  &__title {
+    font-family: $cs-font-display;
+    font-size: clamp(24px, 4vw, 42px);
+    font-weight: 700;
+    color: $cs-white;
+    margin: 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+  }
 }
-@media screen and (max-width: 1101px) {
-    .bg-attached-sec {
-        margin-top: 67px;
-    }
+
+.cs-why-card {
+  background: rgba($cs-white, 0.04);
+  border: 1px solid rgba($cs-white, 0.08);
+  border-radius: 14px;
+  padding: 28px 20px;
+  text-align: center;
+  transition: background 0.3s ease, border-color 0.3s ease;
+
+  &:hover {
+    background: rgba($primary-color, 0.1);
+    border-color: rgba($primary-color, 0.35);
+  }
+
+  &__icon {
+    font-size: 30px;
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  &__title {
+    font-family: $cs-font-display;
+    font-size: 15px;
+    font-weight: 600;
+    color: $cs-white;
+    margin-bottom: 8px;
+  }
+
+  &__desc {
+    font-family: $cs-font-body;
+    font-size: 13px;
+    color: rgba($cs-white, 0.55);
+    line-height: 1.65;
+    margin: 0;
+  }
 }
-@media screen and (max-width: 1000px) {
-    .bg-attached-sec {
-        h1{
-            font-size: 50px;
-            // top: 0;
-        }
-    }
+
+// ─────────────────────────────────────────────
+// Cost Factors
+// ─────────────────────────────────────────────
+.cs-factors {
+  @include section-padding;
+//   background-color: $cs-gray-light;
+
+  &__container {
+    @include container;
+    max-width: 900px;
+  }
+
+  &__header {
+    margin-bottom: 48px;
+  }
+
+  &__label {
+    @include orange-tag;
+  }
+
+  &__title {
+    font-family: $cs-font-display;
+    font-size: clamp(24px, 3.5vw, 38px);
+    font-weight: 700;
+    color: $cs-charcoal;
+    margin: 0;
+    line-height: 1.25;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
 }
-@media screen and (max-width: 695px) {
-    .bg-attached-sec {
-        h1{
-            font-size: 40px;
-        }
-    }
+
+.cs-factor-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 28px 0;
+  border-bottom: 1px solid $cs-border;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__number {
+    font-family: $cs-font-display;
+    font-size: 40px;
+    font-weight: 800;
+    color: $primary-color;
+    line-height: 1;
+    min-width: 64px;
+    opacity: 0.85;
+  }
+
+  &__content {
+    flex: 1;
+    padding-top: 6px;
+  }
+
+  &__title {
+    font-family: $cs-font-display;
+    font-size: 18px;
+    font-weight: 600;
+    color: $cs-charcoal;
+    margin-bottom: 6px;
+  }
+
+  &__desc {
+    font-family: $cs-font-body;
+    font-size: 15px;
+    color: $cs-gray-mid;
+    line-height: 1.7;
+    margin: 0;
+  }
 }
-@media screen and (max-width: 471px) {
-    .bg-attached-sec {
-        h1{
-            font-size:25px;
-        }
+
+// ─────────────────────────────────────────────
+// Keywords
+// ─────────────────────────────────────────────
+.cs-keywords {
+  padding: 60px 0;
+  background-color: $cs-white;
+  border-top: 1px solid $cs-border;
+
+  &__container {
+    @include container;
+  }
+
+  &__heading {
+    font-family: $cs-font-display;
+    font-size: 20px;
+    font-weight: 600;
+    color: $cs-charcoal;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  &__tag {
+    font-family: $cs-font-body;
+    font-size: 13px;
+    color: $cs-gray-mid;
+    background-color: $cs-gray-light;
+    border: 1px solid $cs-border;
+    border-radius: 6px;
+    padding: 6px 14px;
+    cursor: default;
+    transition: color 0.2s, border-color 0.2s;
+
+    &:hover {
+      color: $primary-color;
+      border-color: rgba($primary-color, 0.4);
     }
+  }
 }
-@media screen and (max-width: 382px) {
-    .bg-attached-sec {
-        margin-top:61px;
-        
+
+// ─────────────────────────────────────────────
+// Responsive
+// ─────────────────────────────────────────────
+@media (max-width: 1100px) {
+  .cs-hero {
+    margin-top: 67px;
+  }
+
+  .cs-steps__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cs-items__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cs-why__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .cs-pricing__container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .cs-pricing__image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-hero {
+    height: 480px;
+
+    &__content {
+      padding: 0 24px 48px;
     }
+  }
+
+  .cs-items__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cs-why__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .cs-hero {
+    margin-top: 61px;
+    height: 400px;
+    background-attachment: scroll;
+  }
+
+  .cs-steps__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cs-items__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cs-why__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cs-factor-item {
+    gap: 16px;
+
+    &__number {
+      font-size: 30px;
+      min-width: 48px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .cs-items__grid,
+  .cs-why__grid {
+    grid-template-columns: 1fr;
+  }
 }

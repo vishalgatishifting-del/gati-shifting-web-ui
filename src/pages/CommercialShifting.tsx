@@ -4,203 +4,301 @@ import FAQList from "../components/FAQList";
 import GetInTouch from "../components/GetInTouch";
 import ReviewVideo from "../components/ReviewVideos";
 import TrustUsSection from "../components/TrustUsSection";
-import commercialShiftingImg from "../assets/CommercialShifting/commercialShiftingPriceImg.jpg"
+import commercialShiftingImg from "../assets/CommercialShifting/commercialShiftingPriceImg.jpg";
 import { Helmet } from "react-helmet-async";
 import ReviewDialog from "../components/ReviewDialog";
-import "./CommercialShifting.scss"
+import "./CommercialShifting.scss";
+
+const BOOKING_STEPS = [
+  {
+    number: "01",
+    icon: "📋",
+    title: "Share Details & Get Quote",
+    points: [
+      "Provide moving requirements — items, location, and distance.",
+      "Get a fair, customized quote from our verified professionals.",
+    ],
+  },
+  {
+    number: "02",
+    icon: "📅",
+    title: "Confirm Booking",
+    points: [
+      "Choose your preferred pickup date and time.",
+      "Secure your booking by paying a small advance (adjusted later).",
+    ],
+  },
+  {
+    number: "03",
+    icon: "🔧",
+    title: "Safe Packing & Pickup",
+    points: [
+      "Trained team arrives with top-quality packing materials.",
+      "Dismantling, labeling, and secure loading under expert supervision.",
+    ],
+  },
+  {
+    number: "04",
+    icon: "📄",
+    title: "Invoice & Payment",
+    points: [
+      "Receive a detailed invoice based on your provided list.",
+      "Pay the remaining amount after deducting your advance payment.",
+    ],
+  },
+  {
+    number: "05",
+    icon: "🚛",
+    title: "Transportation & Tracking",
+    points: [
+      "Your goods are dispatched safely to the destination.",
+      "Track your shipment with live updates until delivery.",
+    ],
+  },
+  {
+    number: "06",
+    icon: "🏠",
+    title: "Delivery & Feedback",
+    points: [
+      "Safe delivery and reinstallation at your new location.",
+      "Share your valuable feedback to help us serve you better.",
+    ],
+  },
+];
+
+const ITEMS_WE_SHIFT = [
+  { icon: "⚙️", label: "Machinery & Equipment", desc: "Heavy machinery, production units, and industrial tools." },
+  { icon: "🪑", label: "Furniture & Fixtures", desc: "Display racks, shelves, counters, tables, and chairs." },
+  { icon: "💻", label: "Electronics & Appliances", desc: "Computers, POS systems, AC units, lighting, and other devices." },
+  { icon: "📦", label: "Inventory & Stock", desc: "Products, materials, and goods packed securely for transport." },
+  { icon: "🗂️", label: "Files & Documents", desc: "Important records and paperwork handled with confidentiality." },
+];
+
+const WHY_CHOOSE = [
+  { icon: "🛡️", title: "Safe Handling", desc: "Specialized team for heavy and delicate commercial goods." },
+  { icon: "⚡", title: "Minimal Downtime", desc: "Quick relocation with minimal impact on business operations." },
+  { icon: "🔄", title: "End-to-End Management", desc: "From dismantling to reinstallation, we handle it all." },
+  { icon: "👷", title: "Trained Staff", desc: "Experienced professionals using modern tools and equipment." },
+  { icon: "📋", title: "Insurance Protection", desc: "Comprehensive coverage for goods in transit." },
+];
+
+const COST_FACTORS = [
+  { number: "01", title: "Distance", desc: "Longer distances increase fuel, labor, and time requirements." },
+  { number: "02", title: "Quantity & Weight", desc: "More items or heavy machinery require larger vehicles and more manpower." },
+  { number: "03", title: "Type of Goods", desc: "Fragile or high-value items need special packing and careful handling." },
+  { number: "04", title: "Vehicle Type", desc: "Depending on load capacity, open trucks or closed containers are used." },
+  { number: "05", title: "Timing & Season", desc: "Shifting during weekends, month-ends, or peak seasons may cost more." },
+];
+
+const KEYWORDS = [
+  "gati packers and movers", "commercial movers", "commercial moving company",
+  "office movers", "office relocation services", "commercial moving services",
+  "business movers", "office moving company", "office furniture movers",
+  "corporate relocation services", "industrial shifting services",
+  "warehouse relocation services", "factory relocation services",
+  "retail shifting services", "business relocation services near me",
+  "commercial shifting company in delhi",
+];
 
 const CommercialShifting = () => {
+  return (
+    <>
+      <Helmet>
+        <title>Commercial Shifting Services | Gati Shifting Packers</title>
+        <meta name="description" content="Professional Commercial Shifting Services by Gati Shifting Packers. We offer secure and efficient office and business relocation solutions across India." />
+        <meta name="keywords" content="gati shifting packers commercial shifting, office relocation, business moving services, corporate shifting India, warehouse relocation, commercial movers" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Abhishek" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Commercial Shifting Services | Gati Shifting Packers" />
+        <meta property="og:description" content="Reliable and affordable Commercial Shifting Services by Gati Shifting Packers. Move your office or business setup safely anywhere in India." />
+        <meta property="og:url" content="https://gatishiftingpackers.com/commercial-shifting" />
+        <meta property="og:site_name" content="Gati Shifting Packers" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Commercial Shifting Services | Gati Shifting Packers" />
+        <meta name="twitter:description" content="Expert Commercial Shifting Services by Gati Shifting Packers. Safe, organized, and timely relocation of offices, shops, and warehouses across India." />
+        <meta httpEquiv="Content-Language" content="en" />
+        <link rel="canonical" href="https://gatishiftingpackers.com/commercial-shifting" />
+      </Helmet>
 
-    const keywords = [
-        "gati packers and movers",
-        "commercial movers",
-        "commercial moving company",
-        "office movers",
-        "office relocation services",
-        "commercial moving services",
-        "business movers",
-        "office moving company",
-        "office furniture movers",
-        "corporate relocation services",
-        "industrial shifting services",
-        "warehouse relocation services",
-        "factory relocation services",
-        "retail shifting services",
-        "business relocation services near me",
-        "commercial shifting company in delhi"
-    ];
+      {/* ── Hero Banner ── */}
+      <section className="cs-hero">
+        <div className="cs-hero__overlay" />
+        <div className="cs-hero__content">
+          <span className="cs-hero__eyebrow">Pan-India Services</span>
+          <h1 className="cs-hero__title">Commercial Shifting</h1>
+          <p className="cs-hero__subtitle">Commercial Vehicle Transport Services in India</p>
+        </div>
+      </section>
 
-    return (
-        <>
-            <Helmet>
+      {/* ── Intro ── */}
+      <section className="cs-intro">
+        <div className="cs-intro__container">
+          <div className="cs-intro__badge">Trusted Partner</div>
+          <h2 className="cs-intro__heading">
+            Gati Shifting Packers –<br />
+            <span>Trusted Commercial Vehicle Transport</span>
+          </h2>
+          <p className="cs-intro__body">
+            Gati Shifting Packers is one of the leading and most reliable names in commercial vehicle
+            transport services across India. We specialize in relocating large-scale commercial spaces,
+            including warehouses, showrooms, retail outlets, manufacturing units, and corporate
+            establishments. Our professional team ensures a seamless, secure, and timely relocation
+            that minimizes downtime and business disruption.
+          </p>
+          <p className="cs-intro__body">
+            With a strong nationwide network, Gati Shifting Packers is known for its strategic planning,
+            efficient packing, and end-to-end coordination. Whether it's machinery, furniture, or
+            sensitive equipment, we handle everything with the utmost care and precision. Our commercial
+            moving solutions include insurance coverage, vehicle tracking, and trained professionals to
+            ensure your valuable assets reach safely and on time.
+          </p>
+        </div>
+      </section>
 
-                {/* Meta Tags for commercial shifting Page */}
+      {/* ── 6-Step Booking Process ── */}
+      <section className="cs-steps">
+        <div className="cs-steps__container">
+          <div className="cs-steps__header">
+            <span className="cs-steps__label">How It Works</span>
+            <h2 className="cs-steps__title">Simple 6-Step Booking Process</h2>
+          </div>
+          <div className="cs-steps__grid">
+            {BOOKING_STEPS.map((step, idx) => (
+              <div key={idx} className="cs-step-card">
+                <div className="cs-step-card__number">{step.number}</div>
+                <div className="cs-step-card__icon">{step.icon}</div>
+                <h3 className="cs-step-card__title">{step.title}</h3>
+                <ul className="cs-step-card__list">
+                  {step.points.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+                {idx === 5 && (
+                  <div className="cs-step-card__action">
+                    <ReviewDialog />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                <title>Commercial Shifting Services | gati shifting packers</title>
+      {/* ── Items We Shift ── */}
+      <section className="cs-items">
+        <div className="cs-items__container">
+          <div className="cs-items__header">
+            <span className="cs-items__label">Our Expertise</span>
+            <h2 className="cs-items__title">Commercial Items We Shift</h2>
+            <p className="cs-items__subtitle">
+              At Gati Shifting Packers, we provide comprehensive commercial moving services covering
+              all essential items and equipment.
+            </p>
+          </div>
+          <div className="cs-items__grid">
+            {ITEMS_WE_SHIFT.map((item, idx) => (
+              <div key={idx} className="cs-item-card">
+                <span className="cs-item-card__icon">{item.icon}</span>
+                <h3 className="cs-item-card__title">{item.label}</h3>
+                <p className="cs-item-card__desc">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                <meta name="description" content="Professional Commercial Shifting Services by gati shifting packers. We offer secure and efficient office and business relocation solutions across India." />
-                <meta name="keywords" content="gati shifting packers commercial shifting, office relocation, business moving services, corporate shifting India, warehouse relocation, commercial movers,commercial shifting, commercial relocation, business shifting services, office and commercial movers, corporate relocation company, industrial shifting services, commercial packers and movers, warehouse relocation, shop shifting services, commercial goods transport, factory relocation experts, commercial shifting company in India, gati shifting packers commercial relocation, affordable commercial moving services, professional commercial movers near me, reliable business shifting company, retail store relocation, end-to-end commercial relocation solutions, heavy equipment shifting services, trusted commercial movers, safe and secure commercial transport, top-rated commercial relocation company, pan-India commercial shifting services, customized business relocation packages, commercial relocation experts India" />
-                <meta name="robots" content="index, follow" />
-                <meta name="author" content="Abhishek" />
+      {/* ── Pricing Section ── */}
+      <section className="cs-pricing">
+        <div className="cs-pricing__container">
+          <div className="cs-pricing__text">
+            <span className="cs-pricing__label">Transparent Pricing</span>
+            <h2 className="cs-pricing__title">Affordable Commercial Shifting Charges in India</h2>
+            <p className="cs-pricing__body">
+              We offer cost-effective and transparent commercial vehicle transport services designed
+              for all types of businesses — from small enterprises to large corporations. Our pricing
+              depends on your specific requirements and ensures no hidden charges. Whether you're
+              relocating locally or across cities, Gati Shifting Packers guarantees a smooth,
+              hassle-free, and budget-friendly experience.
+            </p>
+            <ul className="cs-pricing__highlights">
+              <li>✔ No Hidden Charges</li>
+              <li>✔ Custom Quotes for Every Business</li>
+              <li>✔ Local & Pan-India Coverage</li>
+            </ul>
+          </div>
+          <div className="cs-pricing__image-wrap">
+            <img
+              src={commercialShiftingImg}
+              alt="Commercial shifting pricing"
+              loading="lazy"
+              className="cs-pricing__image"
+            />
+          </div>
+        </div>
+      </section>
 
-                {/* Open Graph */}
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Commercial Shifting Services | gati shifting packers" />
-                <meta property="og:description" content="Reliable and affordable Commercial Shifting Services by gati shifting packers. Move your office or business setup safely anywhere in India." />
-                <meta property="og:url" content="https://gatishiftingpackers.com/commercial-shifting" />
-                <meta property="og:site_name" content="gati shifting packers" />
-                <meta property="og:image" content="" />
+      {/* ── Why Choose Us ── */}
+      <section className="cs-why">
+        <div className="cs-why__container">
+          <div className="cs-why__header">
+            <span className="cs-why__label">Why Us</span>
+            <h2 className="cs-why__title">Why Choose Professional Commercial Transport?</h2>
+          </div>
+          <div className="cs-why__grid">
+            {WHY_CHOOSE.map((item, idx) => (
+              <div key={idx} className="cs-why-card">
+                <span className="cs-why-card__icon">{item.icon}</span>
+                <h3 className="cs-why-card__title">{item.title}</h3>
+                <p className="cs-why-card__desc">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Commercial Shifting Services | gati shifting packers" />
-                <meta name="twitter:description" content="Expert Commercial Shifting Services by gati shifting packers. Safe, organized, and timely relocation of offices, shops, and warehouses across India." />
-                <meta name="twitter:image" content="" />
-
-                <meta http-equiv="Content-Language" content="en" />
-
-                {/* Canonical URL */}
-                <link rel="canonical" href="https://gatishiftingpackers.com/commercial-shifting" />
-
-            </Helmet>
-            <div className="bg-attached">
-                <h1>Commercial Shifting</h1>
-            </div>
-            <div className="bg-attached-sec">
-                <h1>Commercial Vehicle Transport Services in India</h1>
-            </div>
-
-            <section id="pet-relocation-sec">
-                <div className="container">
-                    <h1>gati shifting packers – Trusted commercial vehicle transport services in India</h1>
-                    <p>gati shifting packers is one of the leading and most reliable names in commercial vehicle transport services across India. We specialize in relocating large-scale commercial spaces, including warehouses, showrooms, retail outlets, manufacturing units, and corporate establishments. Our professional team ensures a seamless, secure, and timely relocation that minimizes downtime and business disruption.
-                        <br />
-                        With a strong nationwide network, gati shifting packers is known for its strategic planning, efficient packing, and end-to-end coordination. Whether it’s machinery, furniture, or sensitive equipment, we handle everything with the utmost care and precision. Our commercial moving solutions include insurance coverage, vehicle tracking, and trained professionals to ensure your valuable assets reach safely and on time.
-
-                    </p>
-                    <div className="content 6-steps">
-                        <h2>🏡 Simple 6-Step Booking Process with gati shifting packers</h2>
-
-                        <h3>Step 1: Share Your Moving Details & Get a Quote</h3>
-                        <ul>
-                            <li>📋 Provide your moving requirements — items, location, and distance.</li>
-                            <li>💬 Get a fair, customized quote from our verified professionals.</li>
-                        </ul>
-
-                        <h3>Step 2: Confirm Booking with Advance Payment</h3>
-                        <ul>
-                            <li>📅 Choose your preferred pickup date and time.</li>
-                            <li>💳 Secure your booking by paying a small advance (adjusted later).</li>
-                        </ul>
-
-                        <h3>Step 3: Safe Packing & Doorstep Pickup</h3>
-                        <ul>
-                            <li>🔧 Our trained team arrives with top-quality packing materials to pack your belongings carefully.</li>
-                            <li>✔ Dismantling, labeling, and secure loading are done under expert supervision.</li>
-                        </ul>
-
-                        <h3>Step 4: Transparent Invoice & Payment Settlement</h3>
-                        <ul>
-                            <li>📄 Receive a detailed invoice based on your provided list.</li>
-                            <li>💸 Pay the remaining amount after deducting your advance payment.</li>
-                        </ul>
-
-                        <h3>Step 5: Secure Transportation & Real-Time Updates</h3>
-                        <ul>
-                            <li>🚛 Your goods are dispatched safely to the destination.</li>
-                            <li>📱 Track your shipment with live updates until delivery.</li>
-                        </ul>
-
-
-                        <h3>Step 6: Hassle-Free Delivery & Feedback</h3>
-                        <ul>
-                            <li>🏠 After delivery and reinstallation, share your valuable feedback to help us serve you better.
-                                <br />
-                            </li>
-                            <ReviewDialog></ReviewDialog>
-                        </ul>
-                    </div>
-                    <div className="content types">
-                        <h2>Commercial Items We Shift</h2>
-                        <p style={{ marginBottom: "10px" }}>At gati shifting packers, we provide comprehensive commercial moving services covering all essential items and equipment:</p>
-                        <ul>
-                            <li>Machinery & Equipment: Heavy machinery, production units, and industrial tools.</li>
-                            <li>Furniture & Fixtures: Display racks, shelves, counters, tables, and chairs.</li>
-                            <li>Electronics & Appliances: Computers, POS systems, AC units, lighting, and other devices.</li>
-                            <li>Inventory & Stock: Products, materials, and goods packed securely for transport.</li>
-                            <li>Files & Documents: Important records and paperwork handled with confidentiality.</li>
-                        </ul>
-
-                        <h2>Affordable Commercial Shifting Charges in India</h2>
-                        <p>
-                            We offer cost-effective and transparent commercial vehicle transport services designed for all types of businesses — from small enterprises to large corporations. Our pricing depends on your specific requirements and ensures no hidden charges. Whether you’re relocating locally or across cities, gati shifting packers guarantees a smooth, hassle-free, and budget-friendly experience.
-                        </p>
-
-
-                        <img src={commercialShiftingImg} loading="lazy"  />
-                    </div>
-                    <div className="content why-choose">
-                        <h2>Why Choose Professional commercial vehicle transport services in India?</h2>
-                        <ul>
-                            <li>Safe Handling: Specialized team for heavy and delicate commercial goods.</li>
-                            <li>Minimal Downtime: Quick relocation with minimal impact on business operations.</li>
-                            <li>End-to-End Management: From dismantling to reinstallation, we handle it all.</li>
-                            <li>Trained Staff: Experienced professionals using modern tools and equipment.</li>
-                            <li>Insurance Protection: Comprehensive coverage for goods in transit.</li>
-                        </ul>
-                    </div>
-                    <div className="content factors">
-                        <h2>Factors Affecting the Cost of Commercial Shifting in India</h2>
-
-                        <ol>
-                            <li>Distance -
-                                Longer distances increase fuel, labor, and time requirements.
-
-                            </li>
-                            <li>Quantity & Weight of Goods -
-                                More items or heavy machinery require larger vehicles and more manpower.
-
-
-                            </li>
-                            <li>
-                                Type of Goods -
-                                Fragile or high-value items need special packing and careful handling, adding to cost.
-
-                            </li>
-                            <li>
-                                Vehicle Type -
-                                Depending on load capacity, open trucks or closed containers are used — larger ones cost more.
-
-
-                            </li>
-                            <li>
-                                Timing & Season -
-                                Shifting during weekends, month-ends, or peak seasons may cost more than off-peak days.
-
-                            </li>
-                        </ol>
-                    </div>
+      {/* ── Cost Factors ── */}
+      <section className="cs-factors">
+        <div className="cs-factors__container">
+          <div className="cs-factors__header">
+            <span className="cs-factors__label">Pricing Transparency</span>
+            <h2 className="cs-factors__title">Factors Affecting the Cost of Commercial Shifting</h2>
+          </div>
+          <div className="cs-factors__list">
+            {COST_FACTORS.map((factor, idx) => (
+              <div key={idx} className="cs-factor-item">
+                <span className="cs-factor-item__number">{factor.number}</span>
+                <div className="cs-factor-item__content">
+                  <h3 className="cs-factor-item__title">{factor.title}</h3>
+                  <p className="cs-factor-item__desc">{factor.desc}</p>
                 </div>
-            </section>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
+      {/* ── Shared Sections ── */}
+      <ReviewVideo />
+      <GetInTouch />
+      <AwardCertification />
+      <TrustUsSection />
+      <BrandList />
+      <FAQList />
 
-            <ReviewVideo></ReviewVideo>
-            <GetInTouch></GetInTouch>
-            <AwardCertification></AwardCertification>
-            <TrustUsSection></TrustUsSection>
-            <BrandList></BrandList>
-            <FAQList></FAQList>
-
-            <section id="keywords-section">
-                <h1>People also search for these Queries</h1>
-                <div className="container">
-                    {keywords.map((col) => {
-                        return <h5 className="keyword">{col}</h5>
-                    })}
-                </div>
-            </section>
-        </>
-    )
-}
+      {/* ── Keywords ── */}
+      <section className="cs-keywords">
+        <div className="cs-keywords__container">
+          <h2 className="cs-keywords__heading">People Also Search For</h2>
+          <div className="cs-keywords__tags">
+            {KEYWORDS.map((kw, idx) => (
+              <span key={idx} className="cs-keywords__tag">{kw}</span>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default CommercialShifting;
