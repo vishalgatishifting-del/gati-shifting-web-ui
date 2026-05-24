@@ -109,6 +109,20 @@ const AdminOrdersList = () => {
     setCurrentRecord(record);
   }
 
+  const syncUpdate = async () => {
+    try {
+
+      await privateAPI.get(
+        `/api/orders/syncUpdate`
+      );
+
+      searchOrder()
+
+    }
+    catch (err: any) {
+      console.error(err.message);
+    }
+  }
   return (
 
     <div className="orders-page">
@@ -131,6 +145,9 @@ const AdminOrdersList = () => {
             </div>
           </div>
         </div>
+        <button onClick={() => syncUpdate} className="create-btn">
+          Sync Update
+        </button>
         <button onClick={() => setCreateWindow(true)} className="create-btn">
           + Create Order
         </button>

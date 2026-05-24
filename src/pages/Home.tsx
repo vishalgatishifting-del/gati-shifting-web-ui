@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import "./Home.scss"
 import Slider from "react-slick";
-// import { motion } from "framer-motion";
-// import { useInView } from "react-intersection-observer";
-// import { Box } from "@mui/material";
 
 // Main Slider Images
 // import gatiSlider1 from "../assets/Themes/Holi/sliderImg.webp"
@@ -78,8 +75,6 @@ import domesticPng from "../assets/HomePage/domestic.webp"
 import carPng from "../assets/HomePage/car.webp"
 import flightPng from "../assets/HomePage/flight.webp"
 import internationalPng from "../assets/HomePage/international.webp"
-// import officePng from "../assets/HomePage/office.png"
-// import commercialPng from "../assets/HomePage/commercial.png"
 import warehousePng from "../assets/HomePage/warehouseicon.webp"
 import bikePng from "../assets/HomePage/bike.webp"
 
@@ -96,10 +91,6 @@ interface props {
 }
 const Home: React.FC<props> = ({ successCondition }) => {
 
-    // useEffect(() => {
-    //     import("slick-carousel/slick/slick.css");
-    //     import("slick-carousel/slick/slick-theme.css");
-    // }, []);
 
 
     const images = [gatiSlider2, gatislider8, gatiSlider7, gatislider6, gatislider5, gatiSlider3];
@@ -285,27 +276,6 @@ const Home: React.FC<props> = ({ successCondition }) => {
 
 
             <BadgeSection />
-            {/* <section id="badge-section">
-                <div className="container">
-                    <div className="card">
-                        <img src={isoBadge} alt="Badge" loading="lazy" />
-                        <h3>ISO 9001:2015</h3>
-                        <p>Certificate No: 2713SAFV2021, for Courier Services, Packers & Movers, Transportation and Storage of Goods.</p>
-                    </div>
-
-
-                    <div className="card">
-                        <img src={googleRatingBadge} alt="Badge" loading="lazy" />
-                        <h3>5 Star Ratings</h3>
-                        <p>We have been rated 5 stars by our valuable clients in multiple platforms like Google, Facebook etc.</p>
-                    </div>
-                    <div className="card">
-                        <img src={trustedBadge} alt="Badge" loading="lazy" />
-                        <h3>15+ Years of Trust</h3>
-                        <p>Since 2007, we are at your service expanding all over the country to be one of the best Packers and Movers company.</p>
-                    </div>
-                </div>
-            </section> */}
 
 
 
