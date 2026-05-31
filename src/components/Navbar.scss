@@ -1,5 +1,25 @@
 @import "../style/variables";
+:root {
+  --header-h: 96px;
 
+  @media screen and (max-width: 1100px) {
+    --header-h: 88px;
+  }
+}
+// ── Design Tokens ──────────────────────────────────────────────────────
+$top-bg:      #0d1b2a;
+$top-text:    #b8c8d8;
+$top-muted:   #6a8099;
+$navy:        #1a3a5c;
+$navy-hover:  #254f7a;
+$brand:       #1a6db5;
+$brand-light: rgba(26, 109, 181, 0.1);
+$gold:        #f5a623;
+$green-live:  #4ade80;
+$nav-h:       68px;
+$topbar-h:    36px;
+
+// ── Header Shell ───────────────────────────────────────────────────────
 header {
     position: fixed;
     width: 100%;
@@ -7,329 +27,376 @@ header {
     display: flex;
     flex-direction: column;
     background: #fff;
-    z-index: 30;
+    z-index: 100;
 
+    // FIX: Promote header to its own composite layer so browser
+    // doesn't repaint the whole page on scroll
+    will-change: transform;
+    transform: translateZ(0);
+
+    // ── Top Info Bar ──────────────────────────────────────────────
     .top-bar {
-        background: #202d3d;
-        color: #fff;
+        background: $top-bg;
+        color: $top-text;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 8px 40px;
-        font-size: 13px;
+        padding: 0 40px;
+        height: $topbar-h;
+        font-size: 12px;
         font-family: 'Poppins', sans-serif;
 
         a {
             display: flex;
             align-items: center;
-            gap: 6px;
-            color: #fff;
+            gap: 5px;
+            color: $top-text;
             text-decoration: none;
-            transition: 0.3s ease;
+            padding: 4px 10px;
+            border-radius: 4px;
+            // Only transition compositor-friendly props
+            transition: color 0.2s, background 0.2s;
+
+            svg { font-size: 14px !important; }
 
             &:hover {
-                color: #ffd700; // gold hover effect
-            }
-
-            svg {
-                font-size: 16px;
+                color: $gold;
+                background: rgba(255, 255, 255, 0.04);
             }
         }
 
         .top-left,
         .top-center {
             display: flex;
-            gap: 20px;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .whatsapp {
+            background: rgba(74, 222, 128, 0.1);
+            border: 0.5px solid rgba(74, 222, 128, 0.25);
+            border-radius: 20px;
+            color: $green-live;
+            padding: 3px 10px;
+
+            svg { color: $green-live; }
+
+            &:hover {
+                background: rgba(74, 222, 128, 0.18);
+                color: #86efac;
+            }
         }
 
         .top-right {
-            font-weight: 500;
-            letter-spacing: 0.5px;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 5px;
+            color: $top-muted;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+
+            svg {
+                font-size: 14px !important;
+                color: $green-live;
+            }
         }
     }
 
+    // ── Main Nav ──────────────────────────────────────────────────
     nav {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 10px;
-        transition: 0.5s;
+        padding: 0 16px;
+        height: 60px;
+        background: #fff;
+        // border-bottom: 0.5px solid rgba(0, 0, 0, 0.06);
 
+        // FIX: Use opacity-based shadow via pseudo-element instead of
+        // animating box-shadow (box-shadow triggers repaint on every frame)
+        // We transition opacity of the shadow layer — compositor only.
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+        }
+
+        &.scrolled::after {
+            opacity: 1;
+        }
+
+        // Logo
         .logo {
             a {
                 display: flex;
                 align-items: center;
+                transition: opacity 0.2s;
+                &:hover { opacity: 0.82; }
 
-                img {
-                    width: 100px;
-                }
+                img { width: 100px; height: auto; }
             }
         }
 
+        // Nav Links
         ul {
             display: flex;
+            align-items: center;
+            gap: 2px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
 
-            li {
-                list-style: none;
+            li a {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                padding: 7px 16px;
+                border-radius: 8px;
+                font-size: 13.5px;
+                font-weight: 500;
+                font-family: 'Poppins', sans-serif;
+                color: #4a5568;
+                transition: background 0.15s, color 0.15s;
 
-                a {
-                    text-decoration: none;
-                    @include font-poppins-sans(600);
-                    color: $text-color;
-                    display: flex;
-                    align-items: center;
-                    padding: 8px 20px;
-                    margin: 0 5px;
-                    border-radius: 20px;
-                    font-size: 14px;
-                    transition: .2s;
-
-                    .icon {
-                        font-size: 24px;
-                        margin-right: 1px;
-                    }
+                svg {
+                    font-size: 18px !important;
+                    opacity: 0.5;
                 }
 
-                a.active {
-
-                    background: $primary-color;
-                    color: #fff;
+                &:hover {
+                    background: #f0f6ff;
+                    color: $brand;
                 }
 
-                a:hover {
+                &.active {
                     background: $primary-color;
                     color: #fff;
+                    font-weight: 600;
+                }
+            }
+
+            // FIX: Direct class selector instead of :has() — much cheaper
+            li.track-item a {
+                gap: 6px;
+
+                &:hover  { background: rgba($green-live, 0.08); color: darken($green-live, 25%); }
+                &.active {
+                    background: rgba($green-live, 0.12);
+                    color: darken($green-live, 25%);
+                    // inset border instead of box-shadow to avoid repaint
+                    border-left: 3px solid $green-live;
+                    padding-left: 13px;
+                    border-radius: 0 8px 8px 0;
                 }
             }
         }
 
+        // Right-side buttons
         .get-in-touch-btns {
             display: flex;
             align-items: center;
+            gap: 6px;
 
+            a {
+                width: 38px;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 8px;
+                background: #f0f6ff;
+                border: 0.5px solid rgba($brand, 0.2);
+                color: $brand;
+                text-decoration: none;
+                transition: background 0.15s, border-color 0.15s;
 
+                svg { font-size: 18px !important; }
 
-            button {
-                margin-left: 10px;
+                &:hover {
+                    background: $brand-light;
+                    border-color: rgba($brand, 0.4);
+                }
+            }
+
+            button:not(.nav-Toggle-Btn) {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                margin-left: 4px;
                 background: $primary-color;
-                padding: 0px 20px;
+                padding: 0 20px;
                 height: 40px;
                 border: none;
                 color: #fff;
-                font-size: 15px;
-                border-radius: 50px;
+                font-size: 13.5px;
+                font-weight: 600;
+                font-family: 'Poppins', sans-serif;
+                border-radius: 8px;
                 cursor: pointer;
+                white-space: nowrap;
+                transition: background 0.15s, transform 0.1s;
+
+                svg { font-size: 16px !important; }
+
+                &:hover  { background: $navy-hover; }
+                &:active { transform: scale(0.98); }
             }
 
             .nav-Toggle-Btn {
                 display: none;
-            }
-        }
+                align-items: center;
+                justify-content: center;
+                width: 38px;
+                height: 38px;
+                border: 0.5px solid rgba(0, 0, 0, 0.12);
+                border-radius: 8px;
+                background: transparent;
+                cursor: pointer;
+                color: #374151;
+                transition: background 0.15s;
 
-    }
-
-    nav.scrolled{
-        box-shadow: 0 0 20px #00000057;
-    }
-
-    nav.holi {
-        background: url("../assets/Themes/Holi/Frame\ 1\ \(63\).png");
-    }
-
-
-}
-
-
-
-header.diwali {
-    // background: linear-gradient(360deg, #ff271e, #ff8901);
-    background: url("../assets/diwaliTheme/christmas2.png");
-    background-size: cover;
-    background-position: bottom;
-
-    .top-area {
-        background: transparent;
-
-        a {
-            color: #000;
-        }
-    }
-
-    nav {
-        .logo {
-            img {
-                width: 150px;
-            }
-        }
-
-        ul {
-            li {
-
-                a.active {
-                    background-color: #ff0000;
-                }
-
-                a:hover {
-
-                    background-color: #ff0000;
-                    backdrop-filter: blur(10px);
-                }
-            }
-        }
-
-        .get-in-touch-btns {
-            a {
-                color: $text-color;
-            }
-
-            button {
-                background-color: #ff0000;
+                &:hover { background: #f1f5f9; }
+                svg { font-size: 20px !important; }
             }
         }
     }
 }
 
-// @media screen and (max-width: 1141px) {
-//     header.diwali{
-//         nav{
-//             .logo{
-//                 img{
-//                     width: 90px;
-//                 }
-//             }
-//         }
-//     }
-// }
+// ── Track Dot Pulse ────────────────────────────────────────────────────
+// FIX: Removed filter:drop-shadow — animating filter causes GPU repaint.
+// Only animate opacity — 100% compositor, zero repaint cost.
+.track-dot {
+    font-size: 9px !important;
+    color: $green-live;
+    animation: livePulse 2s ease-in-out infinite;
 
+    @keyframes livePulse {
+        0%, 100% { opacity: 1; }
+        50%       { opacity: 0.2; }
+    }
+}
+
+// ── Responsive ─────────────────────────────────────────────────────────
 @media screen and (max-width: 1101px) {
     header {
         .top-bar {
-            padding: 5px;
-            background: #4FCE5D;
+            padding: 0 12px;
+            height: 30px;
             justify-content: center;
 
-            a {
-                justify-content: center;
-                font-size: 15px;
+            .phone  { display: none; }
+            .email  { display: none; }
+            .gstin  { display: none; }
 
-                span {
-                    .no {
-                        display: inline;
-                    }
-                }
-            }
-
-            // .top-left {
-            //     display: none;
-            // }
-
-            .phone {
-                display: none;
-            }
-
-            .email {
-                display: none;
-            }
-
-            .gstin {
-                display: none;
+            .whatsapp {
+                font-size: 13px;
+                svg { font-size: 14px !important; }
             }
         }
 
         nav {
             justify-content: space-between;
-            padding: 5px 7px;
+            padding: 0 12px;
+            height: 58px;
 
-            .logo {
-                a {
-                    img {
-                        width: 80px;
-                    }
-
-                }
-            }
+            .logo a img { width: 82px; }
 
             ul {
+                position: absolute;
                 top: 100%;
                 left: 0;
-                flex-direction: column;
-                position: absolute;
-                background: #fff;
                 width: 100%;
-                // display: none;
+                flex-direction: column;
+                align-items: stretch;
+                background: #fff;
                 max-height: 0;
                 overflow: hidden;
-                transition: .5s;
+                // FIX: max-height animation is cheaper than height:auto animation
+                transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                            padding 0.3s ease;
+                gap: 0;
+                z-index: 50;
+                box-shadow: none;
 
-                li {
-                    a {
-                        padding: 20px;
-                        border-radius: 8px;
+                li a {
+                    padding: 14px 24px;
+                    border-radius: 0;
+                    font-size: 15px;
+                    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+
+                    &.active {
+                        border-left: 3px solid $brand;
+                        border-radius: 0;
+                        padding-left: 21px;
                     }
                 }
-            }
 
-            ul.active {
-                max-height: 468px;
-                padding: 5px 0;
-                box-shadow: 0 20px 20px #00000063;
-                // overflow: visible;
+                &.active {
+                    max-height: 500px;
+                    padding: 6px 0;
+                    box-shadow: 0 20px 32px rgba(0, 0, 0, 0.12);
+                }
             }
 
             .get-in-touch-btns {
-                .nav-Toggle-Btn {
-                    display: block;
+                gap: 5px;
+
+                button:not(.nav-Toggle-Btn) {
+                    padding: 0 14px;
+                    font-size: 12.5px;
+                    height: 36px;
+                    svg { display: none; }
                 }
+
+                .nav-Toggle-Btn { display: flex; }
             }
         }
     }
 }
 
+@media screen and (max-width: 480px) {
+    header {
+        .top-bar { padding: 0 8px; }
 
-// @media screen and (max-width:500px) {
-//     .css-10d30g3-MuiPaper-root-MuiDialog-paper{
-//         width: 100%!important;
-//         margin: 10px!important;
-//     }
-// }
+        nav {
+            padding: 0 8px;
 
+            .get-in-touch-btns {
+                button:not(.nav-Toggle-Btn) {
+                    padding: 0;
+                    width: 36px;
+                    font-size: 0;
+                    gap: 0;
+                    justify-content: center;
+                    svg { display: flex; font-size: 18px !important; }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 382px) {
-    header {
-        nav {
-            padding: 5px;
+    header nav {
+        padding: 0 6px;
+        .logo a img { width: 70px; }
+
+        .get-in-touch-btns {
+            gap: 4px;
+            a                          { width: 34px; height: 34px; }
+            button:not(.nav-Toggle-Btn) { width: 34px; height: 34px; }
+            .nav-Toggle-Btn            { width: 34px; height: 34px; }
         }
-    }
-
-    header {
-        nav {
-            .logo {
-                a {
-
-                    img {
-                        width: 70px;
-                    }
-                }
-            }
-
-        }
-    }
-
-    header nav .get-in-touch-btns a {
-        display: flex;
-    }
-
-    header nav .get-in-touch-btns button {
-        font-size: 12px;
-        padding: 0 15px;
-        height: 35px;
-        margin-left: 7px;
     }
 }
 
+// ── Utility / Theme classes ─────────────────────────────────────────────
 .action-button {
     position: fixed;
     right: 0;
@@ -354,19 +421,16 @@ header.diwali {
             width: 35px;
             height: 35px;
             border-radius: 50%;
-            transition: .3s;
+            transition: transform 0.3s; // only transform, not all
         }
-    }
 
-    a:hover img {
-        transform: scale(1.2);
+        &:hover img { transform: scale(1.2); }
     }
 }
 
 .social-button {
     position: fixed;
     left: 0.9em;
-    // bottom: 3.7%;
     bottom: 1.4285714286em;
     display: flex;
     z-index: 100;
@@ -382,96 +446,64 @@ header.diwali {
         justify-content: center;
         border-radius: 50px;
         box-shadow: 0 5px 38px rgba(0, 0, 0, 0.15);
+        transition: transform 0.2s;
 
-        .icon {
-            font-size: 23px;
-        }
+        &:hover { transform: translateY(-3px); }
+        .icon { font-size: 23px; }
     }
 
-    a.social-link-insta {
-        background: #E4405F;
-    }
-
-    a.social-link-facebook {
-        background: #1877F2;
-    }
-
-    a.social-link-x {
-        background: #1DA1F2;
-    }
-
-    a.social-link-linkedin {
-        background: #0A66C2;
-    }
-
-    a.social-link-youtube {
-        background: #CD201F;
-    }
-
-    a.social-link-pinterest {
-        background: #BD081C;
-    }
-
-
+    a.social-link-insta     { background: #E4405F; }
+    a.social-link-facebook  { background: #1877F2; }
+    a.social-link-x         { background: #1DA1F2; }
+    a.social-link-linkedin  { background: #0A66C2; }
+    a.social-link-youtube   { background: #CD201F; }
+    a.social-link-pinterest { background: #BD081C; }
 }
-
-
-// @media screen and (max-width: 550px) {
-//     .social-button {
-//         left: 3%;
-//         transform: translateX(0%);
-//     }
-// }
-
 
 @media screen and (max-width: 488px) {
     .social-button {
         bottom: 1.828571em;
-
-        // left: 3%;
-        a {
-            width: 40px;
-            height: 40px;
-
-            .icon {
-                font-size: 20px;
-            }
-        }
+        a { width: 40px; height: 40px; .icon { font-size: 20px; } }
     }
 }
-
 @media screen and (max-width: 400px) {
-    .social-button {
-        a {
-            margin: 0 3px;
-            width: 35px;
-            height: 35px;
-
-            .icon {
-                font-size: 18px;
-            }
-        }
-    }
+    .social-button a { margin: 0 3px; width: 35px; height: 35px; .icon { font-size: 18px; } }
 }
-
 @media screen and (max-width: 345px) {
     .social-button {
         bottom: 2.028571em;
+        a { margin: 0 3px; width: 30px; height: 30px; .icon { font-size: 18px; } }
+    }
+}
 
-        a {
-            margin: 0 3px;
-            width: 30px;
-            height: 30px;
+// ── Festival Themes ─────────────────────────────────────────────────────
+header.diwali {
+    background: url("../assets/diwaliTheme/christmas2.png");
+    background-size: cover;
+    background-position: bottom;
 
-            .icon {
-                font-size: 18px;
-            }
+    nav {
+        .logo img { width: 150px; }
+        ul li {
+            a.active { background-color: #ff0000; }
+            a:hover  { background-color: #ff0000; }
+        }
+        .get-in-touch-btns {
+            a      { color: $text-color; }
+            button { background-color: #ff0000; }
         }
     }
 }
 
+nav.holi {
+    background: url("../assets/Themes/Holi/Frame\ 1\ \(63\).png");
+}
 
-
+.newYearTheme {
+    background: url("../assets/Themes/NewYear/navBGcrackers.png") #fff;
+    background-size: cover;
+    background-position: center;
+}
 
 .santaClouse {
     position: fixed;
@@ -489,86 +521,10 @@ header.diwali {
     z-index: 1000000;
 }
 
-#christmas-theme {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(#0e5689, #207bad, transparent);
-    z-index: -1;
-
-
-    .gifts {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url("../assets/diwaliTheme/gifts.png");
-        background-size: cover;
-        background-position: center;
-    }
-
-    .particle {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url("../assets/diwaliTheme/particles.png");
-        background-size: cover;
-
-        animation: fall 15s linear infinite;
-
-        @keyframes fall {
-            0% {
-                top: 0;
-            }
-
-            100% {
-                top: 100%;
-            }
-        }
-    }
-
-    .particle2 {
-        position: absolute;
-        top: -100%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url("../assets/diwaliTheme/particles.png");
-        background-size: cover;
-
-        animation: fall2 15s linear infinite;
-        // animation-delay: 5s;
-
-        @keyframes fall2 {
-            0% {
-                top: -100%;
-            }
-
-            100% {
-                top: 0%;
-            }
-        }
-    }
-}
-
-
 @media screen and (max-width: 660px) {
-    .santaClouse {
-        width: 100px;
-    }
-
-    .tree {
-        width: 100px;
-    }
+    .santaClouse { width: 100px; }
+    .tree        { width: 100px; }
 }
-
-
-
 
 .crackers-png {
     position: fixed;
@@ -576,37 +532,54 @@ header.diwali {
     z-index: 1000;
 }
 
-
-
-.newYearTheme {
-    background: url("../assets/Themes/NewYear/navBGcrackers.png") #fff;
-    background-size: cover;
-    background-position: center;
-}
-
-.star1,
-.star2 {
+.star1, .star2 {
     position: fixed;
     z-index: 1;
     top: -100px;
-
-    img {
-        width: 160px;
-    }
+    img { width: 160px; }
 }
 
-.star2 {
-    right: 0%;
-}
+.star2 { right: 0%; }
 
 @media screen and (max-width: 660px) {
+    .star1, .star2 { top: -30px; img { width: 100px; } }
+}
 
-    .star1,
-    .star2 {
-        top: -30px;
+#christmas-theme {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100vh;
+    background: linear-gradient(#0e5689, #207bad, transparent);
+    z-index: -1;
 
-        img {
-            width: 100px;
+    .particle {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: url("../assets/diwaliTheme/particles.png");
+        background-size: cover;
+        animation: fall 15s linear infinite;
+        // FIX: will-change tells browser to prepare composite layer for this animation
+        will-change: top;
+
+        @keyframes fall {
+            0%   { top: 0; }
+            100% { top: 100%; }
+        }
+    }
+
+    .particle2 {
+        position: absolute;
+        top: -100%; left: 0;
+        width: 100%; height: 100%;
+        background: url("../assets/diwaliTheme/particles.png");
+        background-size: cover;
+        animation: fall2 15s linear infinite;
+        will-change: top;
+
+        @keyframes fall2 {
+            0%   { top: -100%; }
+            100% { top: 0%; }
         }
     }
 }

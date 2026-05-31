@@ -1,7 +1,6 @@
 @import "../style/variables";
 
 .info-section {
-  margin-top: 100px;
   padding: 70px 20px;
   display: flex;
   gap: 50px;
@@ -139,7 +138,6 @@
 @media screen and (max-width: 900px) {
   .info-section {
     flex-direction: column;
-    margin-top: 70px;
 
     .info-left {
       text-align: center;

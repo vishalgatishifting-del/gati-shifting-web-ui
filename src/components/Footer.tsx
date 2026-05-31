@@ -1,251 +1,195 @@
-
 import { Link } from "react-router-dom";
-import "./Footer.scss"
-import logoImg from "../assets/logo/transparentIco.png"
-import { useState } from "react";
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-
-
+import { useState, memo, useCallback } from "react";
+import "./Footer.scss";
+import logoImg from "../assets/logo/transparentIco.png";
 import { cities2 } from "./citiesData";
-import { COMPANY } from "../config/Company";
+import { siteConfig } from "../config/Company";
 
+// ─── Static data (defined outside component to avoid re-creation on renders) ───
 
-//     "Itanagar", "Dibrugarh", "Silchar", "Gaya", "Muzaffarpur", "Darbhanga",
-//     "Raipur", "Bhilai", "Durg", "Bilaspur",
-//     "Rajkot", "Junagadh", "Bhavnagar", "Nadiad", "Valsad",
-//     "Hisar", "Panipat", "Rohtak", "Yamunanagar", "Karnal",
-//     "Shimla", "Solan", "Mandi",
-//     "Srinagar", "Udhampur",
-//     "Dhanbad", "Hazaribagh", "Bokaro Steel City",
-//     "Bangalore", "Mysore", "Davangere", "Belgaum",
-//     "Thiruvananthapuram", "Thrissur", "Palakkad", "Alappuzha",
-//     "Jabalpur", "Ujjain", "Sagar", "Satna",
-//     "Nagpur", "Solapur", "Amravati", "Sangli", "Akola",
-//     "Imphal", "Shillong", "Aizawl", "Kohima", "Dimapur",
-//     "Rourkela", "Balasore", "Sambalpur",
-//     "Amritsar", "Jalandhar", "Patiala", "Bathinda",
-//     "Jaipur", "Jodhpur", "Kota", "Ajmer", "Udaipur",
-//     "Gangtok",
-//     "Coimbatore", "Madurai", "Tiruchirappalli", "Salem", "Erode", "Vellore",
-//     "Warangal", "Karimnagar", "Nizamabad",
-//     "Agartala",
-//     "Varanasi", "Bareilly", "Gorakhpur", "Moradabad", "Jhansi", "Mathura",
-//     "Haridwar", "Rishikesh", "Haldwani",
-//     "Asansol", "Durgapur", "Siliguri"
+const ABOUT_LINKS = [
+  { to: "/who-we-are", label: "Who We Are" },
+  { to: "/why-gati", label: "Why Gati" },
+  { to: "/our-team", label: "Our Team" },
+  { to: "/vission-mission", label: "Vision & Mission" },
+  { to: "/video-gallery", label: "Our Videos" },
+  { to: "/photo-gallery", label: "Photo Gallery" },
+];
+
+const HELP_LINKS = [
+  { to: "/faqs", label: "FAQs" },
+  { to: "/contact-us", label: "Get a Quote" },
+  { to: "/customer-support", label: "Customer Support" },
+  { to: "/contact-us", label: "Contact Us" },
+  { to: "/moving-guide", label: "Moving Guide" },
+  { to: "/bill-claim", label: "Bill Claim" },
+];
+
+const SERVICE_LINKS = [
+  { to: "/home-shifting", label: "Home Shifting" },
+  { to: "/office-relocation", label: "Office Relocation" },
+  { to: "/car-bike-transport", label: "Car / Bike Transport" },
+  { to: "/pet-relocation", label: "Pet Relocation" },
+  { to: "/commercial-shifting", label: "Commercial Shifting" },
+  { to: "/international-moves", label: "International Moves" },
+];
+
+const STORAGE_LINKS = [
+  { to: "/storage", label: "Storage" },
+  { to: "/car-storage", label: "Car Storage" },
+  { to: "/bike-storage", label: "Bike Storage" },
+  { to: "/warehouse", label: "Warehouse" },
+  { to: "/home-storage", label: "Home Storage" },
+];
+
+const OTHER_LINKS = [
+  { to: "/review", label: "Customer Testimonials" },
+  { to: "/safety-standard", label: "Safety Standards" },
+  { to: "/terms-and-conditions", label: "Terms & Conditions" },
+  { to: "/privacy-and-policy", label: "Privacy Policy" },
+];
+
+const CITY_CHUNK = 28;
+
+// ─── Sub-components (memoized to prevent unnecessary re-renders) ───
+
+const FooterLinkGroup = memo(
+  ({ title, links }: { title: string; links: { to: string; label: string }[] }) => (
+    <div className="footer-col">
+      <h4 className="footer-col__title">{title}</h4>
+      <ul className="footer-col__list">
+        {links.map(({ to, label }) => (
+          <li key={to}>
+            <Link to={to} className="footer-col__link">
+              {label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+);
+FooterLinkGroup.displayName = "FooterLinkGroup";
+
+const CityLink = memo(({ city }: { city: string }) => (
+  <li className="city-grid__item">
+    <Link to={`/packers-and-movers-in-${city}`} className="city-grid__link">
+      {/* Inline SVG pin — zero network request, no icon library needed */}
+      <svg
+        className="city-grid__pin"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+        width="14"
+        height="14"
+      >
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+      </svg>
+      <span>Movers &amp; Packers {city}</span>
+    </Link>
+  </li>
+));
+CityLink.displayName = "CityLink";
+
+// ─── Main Footer ───
+
 const Footer = () => {
+  const [visibleCount, setVisibleCount] = useState(CITY_CHUNK);
 
-    // const cities = [
-    //     "Jaipur", "Nagaon", "Thrissur", "Vishakhapatnam", "Thiruvananthapuram", "Coimbatore", "Manipur", "Dimapur", "Shilong", "Rishikesh", "Haridwar", "Gorakhpur", "Ranipet", "Amrawati", "Jorhat", "Palakkad", "Sambalpur", "Berhampur", "Imphal", "Rourkela", "Balasore", "Puri", "Baripada", "Jharsuguda", "Angul", "Bhadrak", "Bargarh", "Jeypore", "Kendrapara", "Rayagada", "Whitefield", "Electronic-City", "Koramangala", "Indiranagar", "Marathahalli", "Yelahanka", "Jayanagar", "Rajajinagar", "HSR-Layout", "BTM-Layout", "Hebbal", "Malleshwaram", "Kalyan-Dombivli", "Banashankari", "Nagpur", "Solapur", "Sangli", "Jalgaon", "Akola", "Latur", "Dhule", "Ahmednagar", "Chandrapur", "Parbhani", "Nanded", "Wardha", "Satara", "Ratnagiri", "Palghar", "Basavanagudi", "Bengaluru", "Mysuru", "Dharwad", "Belagavi", "Belgaum", "Kalaburagi", "Gulbarga", "Ballari", "Davanagere", "Tumakuru", "Shivamogga", "Raichur", "Vijayapura", "Bidar", "Hassan", "Chitradurga", "Kolar", "Udupi", "Karwar", "Bagalkot", "Varanasi", "Thoubal", "Churachandpur", "Bishnupur", "Ukhrul", "Senapati", "Kakching", "Tamenglong", "Jiribam", "Moreh", "Shimla", "Manali", "Kullu", "Mandi", "Solan", "Dharamshala", "Kangra", "Hamirpur", "Una", "Chamba", "Palampur", "Nahan", "Kinnaur", "Keylong", "Srinagar", "Anantnag", "Baramulla", "Udhampur", "Kathua", "Sopore", "Kupwara", "Pulwama", "Rajouri", "Poonch", "Bandipora", "Ganderbal", "Kulgam", "Doda", "Kishtwar", "Samba", "Shopian", "Leh", "Kargil", "Itanagar", "Naharlagun", "Tawang", "Bomdila", "Ziro", "Pasighat", "Roing", "Tezu", "Namsai", "Yingkiong", "Along", "Daporijo", "Seppa", "Khonsa", "Changlang", "Longding", "Mizoram", "Aizawl", "Lunglei", "Champhai", "Serchhip", "Kolasib", "Mamit", "Lawngtlai", "Saiha", "Khawzawl", "Saitual", "Hnahthial", "Gangtok", "Namchi", "Gyalshing", "Mangan", "Singtam", "Rangpo", "Jorethang", "Soreng", "Chungthang", "Pakyong", "Ravangla", "Lachung", "Gaya", "Bhagalpur", "Muzaffarpur", "Darbhanga", "Purnia", "Arrah", "Hajipur", "Begusarai", "Chhapra", "Samastipur", "Lakhisarai", "Buxar", "Vijayawada", "Guntur", "Nellore", "Tirupati", "Kurnool", "Rajahmundry", "Kadapa", "Anantapur", "Eluru", "Ongole", "Srikakulam", "Vizianagaram", "Chittoor", "Proddatur", "Hindupur", "Tenali", "Nandyal", "Adoni", "Nepal", "Kollam", "Alappuzha", "Idukki", "Kozhikode", "Wayanad", "Kannur", "Kasaragod", "Pathanamthitta", "Warangal", "Nizamabad", "Khammam", "Karimnagar", "Mahbubnagar", "Adilabad", "Nagarkurnool", "Medak", "Vikarabad", "Suryapet", "Wanaparthy", "Howrah", "Durgapur", "Asansol", "Siliguri", "Darjeeling", "Kharagpur", "Haldia", "Malda", "Bardhaman", "Jalpaiguri", "Berhampore", "Cooch", "Krishnanagar", "Chandannagar", "Panaji", "Mapusa", "Bicholim", "Sanquelim", "Ponda", "Margao", "Vasco-da-Gama", "Madurai", "Tiruchirappalli", "Salem", "Tirunelveli", "Erode", "Vellore", "Thanjavur", "Thoothukudi", "Dindigul", "Kanchipuram", "Tiruppur", "Cuddalore", "Nagercoil", "Hosur", "Sivakasi", "Davangere", "Hospet", "Rajkot", "Mundra", "Gandhinagar", "Morbi", "Mehsana", "Navsari", "Bharuch", "Valsad", "Roorkee", "Haldwani", "Rudrapur", "Kashipur", "Nainital", "Almora", "Mussoorie", "Bareilly", "Aligarh", "Moradabad", "Saharanpur", "Jhansi", "Mathura", "Firozabad", "Ayodhya", "Muzaffarnagar", "Rajasthan", "Kakinada", "Dibrugarh", "Silchar", "Bhilai", "Durg", "Bilaspur", "Junagadh", "Bhavnagar", "Nadiad", "Hisar", "Panipat", "Rohtak", "Yamunanagar", "Karnal", "Dhanbad", "Hazaribagh", "Bokaro-Steel-City", "Bangalore", "Mysore", "Jabalpur", "Ujjain", "Sagar", "Satna", "Kohima", "Amritsar", "Jalandhar", "Patiala", "Bathinda", "Jodhpur", "Kota", "Ajmer", "Udaipur", "Agartala"
+  const handleShowMore = useCallback(
+    () => setVisibleCount((prev) => prev + CITY_CHUNK),
+    []
+  );
 
-    // ];
+  return (
+    <>
+      {/* ── City directory section ── */}
+      <section id="redirect-links" aria-label="Search by location">
+        <div className="redirect-links__header">
+          <h2 className="redirect-links__heading">Search By Location</h2>
+          <p className="redirect-links__sub">
+            Trusted packers &amp; movers across India
+          </p>
+        </div>
 
-    // Helper function to split array into N columns
-    // const splitIntoColumns = (arr: string[], numCols: number) => {
-    //     const cols: string[][] = Array.from({ length: numCols }, () => []);
-    //     arr.forEach((city, index) => {
-    //         cols[index % numCols].push(city);
-    //     });
-    //     return cols;
-    // };
+        <div className="city-grid__wrapper">
+          <ul className="city-grid">
+            {cities2.slice(0, visibleCount).map((item) => (
+              <CityLink key={item.city} city={item.city} />
+            ))}
+          </ul>
 
-    // const numCols = 4; // 4 columns like your previous example
-    // const columns = splitIntoColumns(cities, numCols);
+          {visibleCount < cities2.length && (
+            <button
+              className="show-more-btn"
+              onClick={handleShowMore}
+              aria-label="Show more cities"
+            >
+              Show More Cities
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
+                <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+              </svg>
+            </button>
+          )}
+        </div>
+      </section>
 
+      {/* ── Main footer ── */}
+      <footer className="footer" role="contentinfo">
+        {/* Decorative top bar */}
+        <div className="footer__accent-bar" aria-hidden="true" />
 
-    // const [show, setShow] = useState(0);
+        <div className="footer__inner">
+          {/* Brand column */}
+          <div className="footer-col footer-col--brand">
+            <img
+              src={logoImg}
+              alt="Gati Shifting Packers logo"
+              className="footer__logo"
+              loading="lazy"
+              width="140"
+              height="auto"
+            />
+            <address className="footer__address">
+              <p>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                </svg>
+                {siteConfig.officeAddress}
+                {/* Gati Shifting Packers<br />
+                Ghansoli, Navi Mumbai<br />
+                Maharashtra 400701 */}
+              </p>
+              <p>
+                <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true">
+                  <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.32.57 3.55.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.44.57 3.55a1 1 0 01-.25 1.02l-2.2 2.22z" />
+                </svg>
+                +91 {siteConfig.phone}
+              </p>
+            </address>
+          </div>
 
-    const [visibleCount, setVisibleCount] = useState(28);
-    return (
-        <>
-            <section id="redirect-links">
-                 <h2>Search By Location</h2>
-                <div className="container">
-                    <ul>
-                        {cities2.slice(0, visibleCount).map((item, i) => (
-                            <li key={i}>
-                                <Link to={`/packers-and-movers-in-${item.city}`}>
-                                    <span><LocationOnIcon></LocationOnIcon>Movers and Packers {item.city}</span>
-                                </Link>
-                            </li>
-                        ))}
+          <FooterLinkGroup title="About Gati" links={ABOUT_LINKS} />
+          <FooterLinkGroup title="Need Help?" links={HELP_LINKS} />
+          <FooterLinkGroup title="Our Services" links={SERVICE_LINKS} />
+          <FooterLinkGroup title="Secure Storage" links={STORAGE_LINKS} />
+          <FooterLinkGroup title="Other Links" links={OTHER_LINKS} />
+        </div>
 
-                    </ul>
-                    {visibleCount < cities2.length && (
-                        <button className="show-more-btn" onClick={() => setVisibleCount(prev => prev + 28)}>
-                            Show More
-                        </button>
-                    )}
-                </div>
-            </section>
-            {/* <section id="redirect-links" >
-               
-                <div className="container">
-                    <ul>
-                        <li>
-                            <Link to="/city/Agra">
-                                <img src={agra} />
-                                <span>Agra</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to="/city/ankleshwar">
-                                <img src={ankleshwar} />
-                                <span>Ankleshwar</span>
-                            </Link>
-                        </li>
-                        <li><Link to="/city/Bhiwandi"><LocationOnIcon></LocationOnIcon>Packers & Movers Bhiwandi</Link></li>
-                        <li><Link to="/city/Calicut"><LocationOnIcon></LocationOnIcon>Packers & Movers Calicut</Link></li>
-                        <li><Link to="/city/Cuttack"><LocationOnIcon></LocationOnIcon>Packers & Movers Cuttack</Link></li>
-                        <li><Link to="/city/Gandhidham"><LocationOnIcon></LocationOnIcon>Packers & Movers Gandhidham</Link></li>
-                        <li><Link to="/city/Guwahati"><LocationOnIcon></LocationOnIcon>Packers & Movers Guwahati</Link></li>
-                        <li><Link to="/city/Hyderabad"><LocationOnIcon></LocationOnIcon>Packers & Movers Hyderabad</Link></li>
-                        <li><Link to="/city/Jamshedpur"><LocationOnIcon></LocationOnIcon>Packers & Movers Jamshedpur</Link></li>
-                        <li><Link to="/city/Kolhapur"><LocationOnIcon></LocationOnIcon>Packers & Movers Kolhapur</Link></li>
-                        <li><Link to="/city/Lucknow"><LocationOnIcon></LocationOnIcon>Packers & Movers Lucknow</Link></li>
-                        <li><Link to="/city/Meerut"><LocationOnIcon></LocationOnIcon>Packers & Movers Meerut</Link></li>
-                    </ul>
-                    <ul>
-                        <li><Link to="/city/ahmedabad"><LocationOnIcon></LocationOnIcon>Packers & Movers Ahmedabad</Link></li>
-                        <li><Link to="/city/aurangabad"><LocationOnIcon></LocationOnIcon>Packers & Movers Aurangabad</Link></li>
-                        <li><Link to="/city/bhopal"><LocationOnIcon></LocationOnIcon>Packers & Movers Bhopal</Link></li>
-                        <li><Link to="/city/chandigarh"><LocationOnIcon></LocationOnIcon>Packers & Movers Chandigarh</Link></li>
-                        <li><Link to="/city/dehradun"><LocationOnIcon></LocationOnIcon>Packers & Movers Dehradun</Link></li>
-                        <li><Link to="/city/ghaziabad"><LocationOnIcon></LocationOnIcon>Packers & Movers Ghaziabad</Link></li>
-                        <li><Link to="/city/gwalior"><LocationOnIcon></LocationOnIcon>Packers & Movers Gwalior</Link></li>
-                        <li><Link to="/city/indore"><LocationOnIcon></LocationOnIcon>Packers & Movers Indore</Link></li>
-                        <li><Link to="/city/jamnagar"><LocationOnIcon></LocationOnIcon>Packers & Movers Jamnagar</Link></li>
-                        <li><Link to="/city/kolkata"><LocationOnIcon></LocationOnIcon>Packers & Movers Kolkata</Link></li>
-                        <li><Link to="/city/ludhiana"><LocationOnIcon></LocationOnIcon>Packers & Movers Ludhiana</Link></li>
-                        <li><Link to="/city/mumbai"><LocationOnIcon></LocationOnIcon>Packers & Movers Mumbai</Link></li>
-                    </ul>
-                    <ul>
-                        <li><Link to="/city/allahabad"><LocationOnIcon></LocationOnIcon>Packers & Movers Allahabad</Link></li>
-                        <li><Link to="/city/alwar"><LocationOnIcon></LocationOnIcon>Packers & Movers Alwar</Link></li>
-                        <li><Link to="/city/ambala"><LocationOnIcon></LocationOnIcon>Packers & Movers Ambala</Link></li>
-                        <li><Link to="/city/vadodara"><LocationOnIcon></LocationOnIcon>Packers & Movers Vadodara</Link></li>
-                        <li><Link to="/city/bikaner"><LocationOnIcon></LocationOnIcon>Packers & Movers Bikaner</Link></li>
-                        <li><Link to="/city/bhubaneswar"><LocationOnIcon></LocationOnIcon>Packers & Movers Bhubaneswar</Link></li>
-                        <li><Link to="/city/chennai"><LocationOnIcon></LocationOnIcon>Packers & Movers Chennai</Link></li>
-                        <li><Link to="/city/kochi"><LocationOnIcon></LocationOnIcon>Packers & Movers Kochi</Link></li>
-                        <li><Link to="/city/delhi"><LocationOnIcon></LocationOnIcon>Packers & Movers Delhi</Link></li>
-                        <li><Link to="/city/dwarka"><LocationOnIcon></LocationOnIcon>Packers & Movers Dwarka</Link></li>
-                        <li><Link to="/city/faridabad"><LocationOnIcon></LocationOnIcon>Packers & Movers Faridabad</Link></li>
-                        <li><Link to="/city/goa"><LocationOnIcon></LocationOnIcon>Packers & Movers Goa</Link></li>
-                    </ul>
-                    <ul>
-                        <li><Link to="/city/greaternoida"><LocationOnIcon></LocationOnIcon>Packers & Movers Greaternoida</Link></li>
-                        <li><Link to="/city/gurgaon"><LocationOnIcon></LocationOnIcon>Packers & Movers Gurgaon</Link></li>
-                        <li><Link to="/city/hubli"><LocationOnIcon></LocationOnIcon>Packers & Movers Hubli</Link></li>
-                        <li><Link to="/city/jammu"><LocationOnIcon></LocationOnIcon>Packers & Movers Jammu</Link></li>
-                        <li><Link to="/city/kanpur"><LocationOnIcon></LocationOnIcon>Packers & Movers Kanpur</Link></li>
-                        <li><Link to="/city/kottayam"><LocationOnIcon></LocationOnIcon>Packers & Movers Kottayam</Link></li>
-                        <li><Link to="/city/mangalore"><LocationOnIcon></LocationOnIcon>Packers & Movers Mangalore</Link></li>
-                        <li><Link to="/city/nashik"><LocationOnIcon></LocationOnIcon>Packers & Movers Nashik</Link></li>
-                        <li><Link to="/city/noida"><LocationOnIcon></LocationOnIcon>Packers & Movers Noida</Link></li>
-                        <li><Link to="/city/patna"><LocationOnIcon></LocationOnIcon>Packers & Movers Patna</Link></li>
-                        <li><Link to="/city/pune"><LocationOnIcon></LocationOnIcon>Packers & Movers Pune</Link></li>
-                        <li><Link to="/city/surat"><LocationOnIcon></LocationOnIcon>Packers & Movers Surat</Link></li>
-                    </ul>
-                </div>
-                {
-                    (show) ?
-                        <div className="container">
-                            {columns.map((col, i) => (
-                                <ul key={i}>
-                                    {col.map((city) => (
-                                        <li key={city}>
-                                            <Link to={`/city/${city.replace(/\s+/g, "")}`}>
-                                                <img src={`../assets/CityPages/${city}.webp`} />
-                                                <LocationOnIcon></LocationOnIcon> Packers & Movers {city}
-                                            </Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            ))}
-                        </div> : ""}
+        <div className="footer__bottom">
+          <p>
+            © {new Date().getFullYear()} Gati Shifting Packers in collaboration with
+            Gatisafe Express Private Limited. All Rights Reserved.
+          </p>
+          <nav className="footer__legal-links" aria-label="Legal">
+            <Link to="/terms-and-conditions">Terms</Link>
+            <span aria-hidden="true">·</span>
+            <Link to="/privacy-and-policy">Privacy</Link>
+          </nav>
+        </div>
+      </footer>
+    </>
+  );
+};
 
-
-                {show == 0 ? (<button className="show-more-btn" onClick={() => {
-                    setShow(1)
-                }}>Show More</button>) : ""}
-            </section> */}
-
-            <footer className="footer">
-                <div className="footer-top">
-                    <div className="footer-col logo-col">
-                        <img src={logoImg} alt="Gati Logo" className="footer-logo" loading="lazy"  />
-                        <p>📍 Gati Shifting Packers<br />
-                            Ghansoli, Navi Mumbai<br /> Maharashtra 400701
-                        </p>
-                        <p>📞 +91 {COMPANY.phone}</p>
-                    </div>
-
-                    <div className="footer-col">
-                        <h4>About Gati</h4>
-                        <ul>
-                            <li><Link to="/who-we-are">Who We Are</Link></li>
-                            <li><Link to="/why-gati">Why Gati</Link></li>
-                            <li><Link to="/our-team">Our Team</Link></li>
-                            <li><Link to="/vission-mission">Vision & Mission</Link></li>
-                            <li><Link to="/video-gallery">Our Videos</Link></li>
-                            <li><Link to="/photo-gallery">Photo Gallery</Link></li>
-                        </ul>
-                    </div>
-
-                    <div className="footer-col">
-                        <h4>Need Help?</h4>
-                        <ul>
-                            <li><Link to="/faqs">FAQs</Link></li>
-                            <li><Link to="/contact-us">Get a Quote</Link></li>
-                            <li><Link to="/customer-support">Customer Support</Link></li>
-                            <li><Link to="/contact-us">Contact Us</Link></li>
-                            <li><Link to="/moving-guide">Moving Guide</Link></li>
-                            <li><Link to="/bill-claim">Bill Claim</Link></li>
-                        </ul>
-                    </div>
-
-                    <div className="footer-col">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><Link to="/home-shifting">Home Shifting</Link></li>
-                            <li><Link to="/office-relocation">Office Relocation</Link></li>
-                            <li><Link to="/car-bike-transport">Car/Bike Transport</Link></li>
-                            <li><Link to="/pet-relocation">Pet Relocation</Link></li>
-                            <li><Link to="/commercial-shifting">Commercial Shifting</Link></li>
-                            <li><Link to="/international-moves">International Moves</Link></li>
-                        </ul>
-                    </div>
-                    <div className="footer-col">
-                        <h4>Secure Storage</h4>
-                        <ul>
-                            <li><Link to="/storage">Storage</Link></li>
-                            <li><Link to="/car-storage">Car Storage</Link></li>
-                            <li><Link to="/bike-storage">Bike Storage</Link></li>
-                            <li><Link to="/warehouse">Warehouse</Link></li>
-                            <li><Link to="/home-storage">Home Storage</Link></li>
-                        </ul>
-                    </div>
-                    <div className="footer-col">
-                        <h4>Other Links</h4>
-                        <ul>
-                            <li><Link to="/review">Customer Testimonials</Link></li>
-                            <li><Link to="/safety-standard">Safety Standards</Link></li>
-                            <li><Link to="/terms-and-conditions">Terms & Conditions</Link></li>
-                            <li><Link to="/privacy-and-policy">Privacy Policy</Link></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div className="footer-bottom">
-                    <p>© 2025 Gati Shifting Packers In  Collaboration with Gatisafe Express Private Limited. All Rights Reserved.</p>
-                    <div className="footer-links">
-                        <Link to="/terms-and-conditions">Terms</Link> | <Link to="/privacy-and-policy">Privacy</Link>
-                    </div>
-                </div>
-            </footer>
-
-        </>
-    )
-}
-
-export default Footer;
+export default memo(Footer);

@@ -1,0 +1,1010 @@
+// ═══════════════════════════════════════════════════════════════════
+//  CarBikeTransport.scss  ·  Premium White Theme
+//  Prefix: "cbt-"  →  zero global style conflicts
+// ═══════════════════════════════════════════════════════════════════
+@import "../style/variables";
+
+// ── Design Tokens ──────────────────────────────────────────────────
+$flame:          #E84A1A;
+$flame-hover:    #C93C10;
+$flame-pale:     #FFF3EE;
+$flame-border:   #FECFBC;
+$flame-glow:     rgba(232, 74, 26, 0.15);
+
+$ink:            #111111;
+$ink-soft:       #2A2A2A;
+$muted:          #6B6B6B;
+$muted-light:    #9A9A9A;
+
+$white:          #FFFFFF;
+$surface:        #FAFAF9;
+$surface-2:      #F4F2EF;
+$surface-3:      #EDEAE5;
+
+$border:         #E8E5E0;
+$border-mid:     #D8D4CE;
+
+$radius-xs:       4px;
+$radius-sm:       8px;
+$radius-md:      14px;
+$radius-lg:      22px;
+$radius-xl:      32px;
+$radius-pill:    100px;
+
+$ease-out:       cubic-bezier(0.16, 1, 0.3, 1);
+$ease-in-out:    cubic-bezier(0.4, 0, 0.2, 1);
+$trans-fast:     0.18s $ease-in-out;
+$trans-med:      0.28s $ease-out;
+
+$font-display:   'Poppins', sans-serif;
+$font-body:      'Poppins', sans-serif;
+
+// ── Shared helpers ─────────────────────────────────────────────────
+
+.cbt-accent {
+  color: $flame;
+  font-style: normal;
+}
+
+.cbt-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: $font-body;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: $flame;
+  background: $flame-pale;
+  border: 1px solid $flame-border;
+  border-radius: $radius-pill;
+  padding: 5px 16px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: $flame;
+    border-radius: 50%;
+  }
+}
+
+.cbt-section-heading {
+  font-family: $font-display;
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  color: $ink;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  margin: 0;
+}
+
+.cbt-section-sub {
+  font-family: $font-body;
+  font-size: 1rem;
+  color: $muted;
+  line-height: 1.75;
+  margin: 0;
+  max-width: 560px;
+}
+
+// ── Buttons ────────────────────────────────────────────────────────
+
+.cbt-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.cbt-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: $radius-sm;
+  font-family: $font-body;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background $trans-fast, transform $trans-med, box-shadow $trans-fast, border-color $trans-fast;
+
+  &__arrow {
+    display: inline-flex;
+    transition: transform $trans-med;
+  }
+
+  &--primary {
+    background: $flame;
+    color: $white;
+    border: none;
+    box-shadow: 0 2px 0 darken($flame, 12%), 0 8px 24px $flame-glow;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(#fff, 0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    &:hover {
+      background: $flame-hover;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 0 darken($flame, 18%), 0 16px 36px rgba($flame, 0.3);
+      .cbt-btn__arrow { transform: translateX(4px); }
+    }
+
+    &:active { transform: translateY(1px); box-shadow: 0 1px 0 darken($flame, 18%); }
+  }
+
+  &--outline {
+    background: $flame-pale;
+    color: $flame;
+    border: 1.5px solid $flame-border;
+
+    &:hover {
+      border-color: $flame;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px $flame-glow;
+    }
+
+    &:active { transform: translateY(0); }
+  }
+}
+
+// ── Section layout helpers ─────────────────────────────────────────
+
+@mixin cbt-section($bg: $white) {
+  background: $bg;
+  padding: clamp(72px, 9vw, 112px) clamp(20px, 5vw, 64px);
+}
+
+@mixin cbt-inner($max: 1120px) {
+  max-width: $max;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+// ═══════════════════════════════════════════════════════════════════
+//  1. HERO — White theme, road/speed-inspired
+// ═══════════════════════════════════════════════════════════════════
+
+.cbt-hero {
+  position: relative;
+  background: $white;
+  overflow: hidden;
+  border-bottom: 1px solid $border;
+  padding: clamp(80px, 10vw, 120px) clamp(20px, 5vw, 64px) 0;
+
+  // Subtle horizontal speed-line pattern
+  &__bg-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        rgba($flame, 0.018) 0px,
+        rgba($flame, 0.018) 1px,
+        transparent 1px,
+        transparent 60px
+      );
+    pointer-events: none;
+  }
+
+  // Orange left-border accent
+  &__accent-bar {
+    position: absolute;
+    top: 0; left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, $flame 0%, rgba($flame, 0) 100%);
+  }
+
+  // Giant decorative emoji / icon behind title
+  &__deco {
+    position: absolute;
+    right: clamp(40px, 8vw, 120px);
+    top: 50%;
+    transform: translateY(-55%);
+    font-size: clamp(160px, 22vw, 280px);
+    line-height: 1;
+    opacity: 0.06;
+    pointer-events: none;
+    user-select: none;
+    filter: grayscale(1);
+
+    @media (max-width: 768px) { display: none; }
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 48px;
+    align-items: center;
+    padding-bottom: clamp(64px, 8vw, 96px);
+
+    @media (max-width: 900px) { grid-template-columns: 1fr; }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    animation: cbtFadeUp 0.75s $ease-out both;
+  }
+
+  &__pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: $font-body;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $muted;
+    background: $surface-2;
+    border: 1px solid $border;
+    padding: 6px 18px;
+    border-radius: $radius-pill;
+    width: fit-content;
+
+    &-dot {
+      width: 7px; height: 7px;
+      background: #22c55e;
+      border-radius: 50%;
+      box-shadow: 0 0 0 3px rgba(#22c55e, 0.22);
+      animation: cbtPulse 2s ease-in-out infinite;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    font-family: $font-display;
+    font-size: clamp(3rem, 8vw, 6.5rem);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+    line-height: 0.95;
+    color: $ink;
+
+    &-line { display: block; }
+
+    &-accent {
+      display: block;
+      color: $flame;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 4px; left: 0;
+        width: 100%; height: 4px;
+        background: linear-gradient(90deg, $flame, rgba($flame, 0.3));
+        border-radius: $radius-pill;
+        transform-origin: left;
+        transform: scaleX(0);
+        animation: cbtUnderline 0.6s 0.7s $ease-out forwards;
+      }
+    }
+  }
+
+  &__sub {
+    font-family: $font-body;
+    font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+    color: $muted;
+    line-height: 1.75;
+    max-width: 460px;
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    animation: cbtFadeUp 0.85s 0.15s $ease-out both;
+
+    @media (max-width: 900px) { grid-template-columns: repeat(4, 1fr); }
+    @media (max-width: 600px) { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  &__ticker {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    border-top: 1px solid $border;
+    background: $surface;
+    display: flex;
+    white-space: nowrap;
+
+    &-track {
+      display: inline-flex;
+      animation: cbtScroll 28s linear infinite;
+      flex-shrink: 0;
+    }
+
+    &-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 28px;
+      font-family: $font-body;
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: $muted-light;
+    }
+
+    &-dot {
+      width: 4px; height: 4px;
+      background: $flame;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+  }
+}
+
+// ── Stat badge ─────────────────────────────────────────────────────
+
+.cbt-stat-badge {
+  background: $surface;
+  border: 1.5px solid $border;
+  border-radius: $radius-md;
+  padding: 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color $trans-fast, box-shadow $trans-med, transform $trans-med;
+
+  &:hover {
+    border-color: $flame-border;
+    box-shadow: 0 8px 24px $flame-glow;
+    transform: translateY(-2px);
+  }
+
+  &__value {
+    font-family: $font-display;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-weight: 800;
+    color: $ink;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  &__label {
+    font-family: $font-body;
+    font-size: 0.72rem;
+    font-weight: 500;
+    color: $muted;
+    letter-spacing: 0.04em;
+  }
+}
+
+// ── Keyframes ──────────────────────────────────────────────────────
+
+@keyframes cbtFadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes cbtPulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(#22c55e, 0.22); }
+  50%       { box-shadow: 0 0 0 6px rgba(#22c55e, 0.08); }
+}
+
+@keyframes cbtScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-33.333%); }
+}
+
+@keyframes cbtUnderline {
+  to { transform: scaleX(1); }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+//  2. INTRO
+// ═══════════════════════════════════════════════════════════════════
+
+.cbt-intro {
+  @include cbt-section($white);
+  border-bottom: 1px solid $border;
+
+  &__container {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 64px;
+    align-items: start;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+
+  &__label-wrap { padding-top: 6px; }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    p {
+      font-family: $font-body;
+      font-size: 1.02rem;
+      color: $muted;
+      line-height: 1.85;
+      margin: 0;
+    }
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+//  3. 6-STEP PROCESS
+// ═══════════════════════════════════════════════════════════════════
+
+.cbt-steps {
+  @include cbt-section($surface);
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+
+  &__container { @include cbt-inner(1160px); }
+
+  &__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 8px;
+
+    @media (max-width: 960px) { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 540px) { grid-template-columns: 1fr; }
+  }
+}
+
+.cbt-step-card {
+  position: relative;
+  background: $white;
+  border: 1.5px solid $border;
+  border-radius: $radius-lg;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform $trans-med, box-shadow $trans-med, border-color $trans-fast;
+  animation: cbtFadeUp 0.6s calc(var(--step-delay, 0s)) $ease-out both;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 28px; right: 28px;
+    height: 3px;
+    background: linear-gradient(90deg, $flame, rgba($flame, 0));
+    border-radius: 0 0 $radius-xs $radius-xs;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform $trans-med;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: $flame-border;
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.07), 0 0 0 1px $flame-border;
+
+    &::before { transform: scaleX(1); }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__num {
+    font-family: $font-display;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    color: $flame;
+    background: $flame-pale;
+    border: 1.5px solid $flame-border;
+    padding: 4px 12px;
+    border-radius: $radius-pill;
+  }
+
+  &__emoji { font-size: 1.8rem; line-height: 1; }
+
+  &__title {
+    font-family: $font-body;
+    font-size: 1.02rem;
+    font-weight: 700;
+    color: $ink;
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+
+    li {
+      position: relative;
+      padding-left: 18px;
+      font-family: $font-body;
+      font-size: 0.875rem;
+      color: $muted;
+      line-height: 1.6;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0; top: 8px;
+        width: 6px; height: 6px;
+        background: $flame;
+        border-radius: 50%;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__dialog { margin-top: 8px; }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+//  4. VEHICLES WE TRANSPORT
+// ═══════════════════════════════════════════════════════════════════
+
+.cbt-vehicles {
+  @include cbt-section($white);
+  border-bottom: 1px solid $border;
+
+  &__container { @include cbt-inner(1100px); }
+
+  &__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 8px;
+
+    @media (max-width: 720px) { grid-template-columns: 1fr; }
+  }
+}
+
+.cbt-vehicle-card {
+  background: $surface;
+  border: 1.5px solid $border;
+  border-radius: $radius-lg;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  cursor: default;
+  transition: transform $trans-med, border-color $trans-fast, box-shadow $trans-med;
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: $flame-border;
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.07);
+
+    .cbt-vehicle-card__icon-wrap { background: $flame; }
+  }
+
+  &__icon-wrap {
+    width: 60px; height: 60px;
+    background: $surface-2;
+    border-radius: $radius-md;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background $trans-fast;
+  }
+
+  &__icon { font-size: 2rem; }
+
+  &__label {
+    font-family: $font-body;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: $ink;
+    margin: 0;
+  }
+
+  &__desc {
+    font-family: $font-body;
+    font-size: 0.875rem;
+    color: $muted;
+    line-height: 1.65;
+    margin: 0;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+//  5. PRICING IMAGES — two-column with badge overlay
+// ═══════════════════════════════════════════════════════════════════
+
+.cbt-pricing {
+  @include cbt-section($surface);
+  border-bottom: 1px solid $border;
+
+  &__container { @include cbt-inner(1100px); }
+
+  &__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 8px;
+
+    @media (max-width: 700px) { grid-template-columns: 1fr; }
+  }
+
+  &__figure {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+
+    figcaption {
+      font-family: $font-body;
+      font-size: 0.83rem;
+      font-weight: 600;
+      color: $muted;
+      text-align: center;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  &__img-wrap {
+    position: relative;
+    border-radius: $radius-xl;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1), 0 0 0 1px $border-mid;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s $ease-out;
+
+    &:hover { transform: scale(1.03); }
+  }
+
+  &__badge {
+    position: absolute;
+    bottom: 14px; right: 14px;
+    background: $ink;
+    color: $white;
+    font-family: $font-body;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: $radius-pill;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+//  6. WHY PROFESSIONAL — light split layout
+// ═══════════════════════════════════════════════════════════════════
+
+.cbt-why {
+  @include cbt-section($surface-2);
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "WHY";
+    position: absolute;
+    bottom: -40px; right: -20px;
+    font-family: $font-display;
+    font-size: clamp(120px, 18vw, 200px);
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba($flame, 0.06);
+    pointer-events: none;
+    user-select: none;
+    line-height: 1;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 80px;
+    align-items: start;
+
+    @media (max-width: 880px) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+
+  &__left {
+    position: sticky;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: 880px) { position: static; }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+.cbt-why-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: $white;
+  border: 1.5px solid $border;
+  border-radius: $radius-md;
+  padding: 22px 24px;
+  transition: background $trans-fast, border-color $trans-fast, transform $trans-med, box-shadow $trans-med;
+  animation: cbtFadeUp 0.55s calc(var(--why-delay, 0s)) $ease-out both;
+  cursor: default;
+
+  &:hover {
+    border-color: $flame-border;
+    transform: translateX(6px);
+    box-shadow: -3px 0 0 $flame, 0 8px 24px rgba(0, 0, 0, 0.05);
+
+    .cbt-why-card__arrow { transform: translateX(4px); color: $flame; opacity: 1; }
+    .cbt-why-card__icon-wrap {
+      background: $flame;
+      border-color: $flame;
+    }
+  }
+
+  &__icon-wrap {
+    flex-shrink: 0;
+    width: 52px; height: 52px;
+    background: $flame-pale;
+    border: 1.5px solid $flame-border;
+    border-radius: $radius-md;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background $trans-fast, border-color $trans-fast;
+  }
+
+  &__icon { font-size: 1.5rem; }
+
+  &__body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__title {
+    font-family: $font-body;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: $ink;
+    margin: 0;
+  }
+
+  &__desc {
+    font-family: $font-body;
+    font-size: 0.85rem;
+    color: $muted;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  &__arrow {
+    font-size: 1.1rem;
+    color: $muted-light;
+    opacity: 0.5;
+    transition: transform $trans-med, color $trans-fast, opacity $trans-fast;
+    flex-shrink: 0;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+//  7. COST FACTORS
+// ═══════════════════════════════════════════════════════════════════
+
+.cbt-factors {
+  @include cbt-section($white);
+  border-bottom: 1px solid $border;
+
+  &__container { @include cbt-inner(960px); }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    border: 1.5px solid $border;
+    margin-top: 8px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.cbt-factor-row {
+  display: flex;
+  align-items: stretch;
+  background: $white;
+  border-bottom: 1px solid $border;
+  position: relative;
+  overflow: hidden;
+  transition: background $trans-fast;
+
+  &:last-child { border-bottom: none; }
+
+  &:hover {
+    background: $flame-pale;
+
+    .cbt-factor-row__bar { transform: scaleX(1); }
+    .cbt-factor-row__num { color: $white; background: $flame; }
+  }
+
+  &__bar {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, $flame, rgba($flame, 0.3));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform $trans-med;
+  }
+
+  &__num {
+    flex-shrink: 0;
+    width: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-display;
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: $flame;
+    background: $surface;
+    border-right: 1px solid $border;
+    letter-spacing: 0.05em;
+    transition: color $trans-fast, background $trans-fast;
+  }
+
+  &__body {
+    padding: 20px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  &__title {
+    font-family: $font-body;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: $ink;
+    margin: 0;
+  }
+
+  &__desc {
+    font-family: $font-body;
+    font-size: 0.875rem;
+    color: $muted;
+    line-height: 1.65;
+    margin: 0;
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+//  8. KEYWORDS (SEO)
+// ═══════════════════════════════════════════════════════════════════
+
+.cbt-keywords {
+  background: $surface;
+  padding: clamp(48px, 6vw, 72px) clamp(20px, 5vw, 64px);
+  border-top: 1px solid $border;
+
+  &__container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-family: $font-display;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: $muted;
+    margin: 0 0 20px;
+  }
+
+  &__cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__tag {
+    font-family: $font-body;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: $ink-soft;
+    background: $white;
+    border: 1.5px solid $border;
+    border-radius: $radius-pill;
+    padding: 6px 16px;
+    cursor: default;
+    transition: border-color $trans-fast, color $trans-fast, background $trans-fast, transform $trans-fast;
+
+    &:hover {
+      border-color: $flame;
+      color: $flame;
+      background: $flame-pale;
+      transform: translateY(-1px);
+    }
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════
+//  9. RESPONSIVE OVERRIDES
+// ═══════════════════════════════════════════════════════════════════
+
+@media (max-width: 600px) {
+  .cbt-hero__title { font-size: clamp(2.8rem, 14vw, 4rem); }
+
+  .cbt-stat-badge {
+    padding: 14px 12px;
+    &__value { font-size: 1.4rem; }
+    &__label { font-size: 0.68rem; }
+  }
+}
+
+@media (max-width: 480px) {
+  .cbt-btn { width: 100%; justify-content: center; }
+  .cbt-cta-group { flex-direction: column; }
+
+  .cbt-step-card { padding: 24px 20px; }
+  .cbt-factor-row__num { width: 48px; font-size: 0.78rem; }
+  .cbt-factor-row__body { padding: 16px; }
+
+  .cbt-why-card:hover { transform: none; box-shadow: -3px 0 0 $flame; }
+}

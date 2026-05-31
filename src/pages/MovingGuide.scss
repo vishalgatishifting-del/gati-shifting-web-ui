@@ -1,133 +1,400 @@
 @import "../style/variables";
 
-* {
+// ── Design Tokens ─────────────────────────────────────────────────────────────
+$mg-ink:        #0f1923;
+$mg-ink-muted:  #4a5568;
+$mg-surface:    #f7f8fb;
+$mg-card:       #ffffff;
+$mg-border:     #e4e7ef;
+$mg-blue:       #2563eb;
+$mg-blue-light: #eff6ff;
+$mg-green:      #16a34a;
+$mg-radius:     14px;
+$mg-radius-sm:  8px;
+$mg-shadow-sm:  0 2px 10px rgba(0, 0, 0, 0.06);
+$mg-shadow-md:  0 8px 28px rgba(0, 0, 0, 0.1);
+$mg-sidebar-w:  240px;
 
-    scroll-behavior: smooth;
+// ── Hero ──────────────────────────────────────────────────────────────────────
+.mg-hero {
+  position: relative;
+  min-height: 340px;
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  // Subtle dotted pattern overlay
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23ffffff' fill-opacity='0.04'/%3E%3C/svg%3E") repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, $mg-blue, #0ea5e9, $mg-green);
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 60%, rgba($mg-blue, 0.2), transparent 55%);
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 24px;
+    animation: mgFadeUp 0.7s ease both;
+
+    h1 {
+      font-size: clamp(32px, 6vw, 58px);
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin: 12px 0 16px;
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    p {
+      font-size: clamp(13px, 1.8vw, 17px);
+      color: rgba(#fff, 0.72);
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+  }
+
+  &__eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #7dd3fc;
+    background: rgba(#fff, 0.08);
+    border: 1px solid rgba(#fff, 0.15);
+    padding: 5px 14px;
+    border-radius: 100px;
+  }
 }
 
+@keyframes mgFadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+// ── Section wrapper ───────────────────────────────────────────────────────────
 #movingguidesec {
-    @include font-poppins-sans(400);
-    margin-top: 140px;
-    overflow: visible;
-    padding: 10px;
-
-    .container {
-        display: flex;
-        align-items: flex-start;
-        overflow: visible;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .left-area {
-        position: -webkit-sticky;
-        /* for Safari */
-        position: sticky;
-        top: 140px;
-        width: 250px;
-        background: #f2f2f2;
-        margin-right: 10px;
-        border: 1px solid #ccc;
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-        z-index: 10;
-        border-radius: 10px;
-
-        a {
-            text-decoration: none;
-            margin: 6px 0;
-            color: #000;
-            transition: color 0.2s ease;
-
-            &:hover {
-                color: #007bff;
-            }
-        }
-    }
-
-    .right-area {
-        background: #f2f2f2;
-        border: 1px solid #ccc;
-        flex: 1;
-        padding: 10px;
-        border-radius: 10px;
-        width: 900px;
-
-        .card {
-            scroll-margin-top: 160px;
-            margin-bottom: 50px;
-
-            h1 {
-                margin-bottom: 10px;
-                font-size: 27px;
-            }
-
-            ul {
-                margin-left: 40px;
-            }
-
-            a {
-                display: flex;
-                justify-self: center;
-                padding: 10px 20px;
-                background: $primary-color;
-                border-radius: 6px;
-                border: none;
-                color: #fff;
-                font-size: 17px;
-                text-decoration: none;
-                cursor: pointer;
-            }
-        }
-    }
+  background: $mg-surface;
+  padding: 60px 0;
 }
 
-
-
-@media screen and (max-width: 1101px) {
-    #movingguidesec {
-        margin-top: 80px;
-
-        .container {
-            .left-area {
-                top: 80px;
-
-            }
-            
-                .right-area {
-                    .card {
-                        h1 {
-                            font-size: 20px;
-                        }
-                        ul li{
-                            font-size: 14px;
-                        }
-                    }
-                }
-        }
-    }
+.mg-layout {
+  display: grid;
+  grid-template-columns: $mg-sidebar-w 1fr;
+  gap: 32px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+  align-items: start;
 }
 
-@media screen and (max-width: 983px) {
-    #movingguidesec {
+// ── Sidebar ───────────────────────────────────────────────────────────────────
+.mg-sidebar {
+  position: sticky;
+  top: calc(var(--navbar-h, 96px) + 20px);
+  background: $mg-card;
+  border: 1px solid $mg-border;
+  border-radius: $mg-radius;
+  padding: 20px 16px;
+  box-shadow: $mg-shadow-sm;
+  height: fit-content;
 
-        .container {
-            width: 100%;
-            .left-area {display: none;
-            }
-            
-                .right-area {
-                    .card {
-                        h1 {
-                            font-size: 20px;
-                        }
-                        ul li{
-                            font-size: 14px;
-                        }
-                    }
-                }
-        }
+  &__heading {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: $mg-ink-muted;
+    margin-bottom: 14px;
+    padding-left: 4px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+.mg-nav-link {
+  display: block;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: $mg-ink-muted;
+  text-decoration: none;
+  border-radius: $mg-radius-sm;
+  border-left: 2px solid transparent;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+
+  &:hover {
+    background: $mg-blue-light;
+    color: $mg-blue;
+  }
+
+  &--active {
+    background: $mg-blue-light;
+    color: $mg-blue;
+    font-weight: 600;
+    border-left-color: $mg-blue;
+  }
+}
+
+// ── Content area ──────────────────────────────────────────────────────────────
+.mg-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+// ── Section card ──────────────────────────────────────────────────────────────
+.mg-card {
+  background: $mg-card;
+  border: 1px solid $mg-border;
+  border-radius: $mg-radius;
+  padding: 32px;
+  box-shadow: $mg-shadow-sm;
+  scroll-margin-top: calc(var(--navbar-h, 96px) + 28px);
+  transition: box-shadow 0.2s;
+
+  &:hover { box-shadow: $mg-shadow-md; }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid $mg-border;
+
+    h2 {
+      font-size: clamp(16px, 2.2vw, 20px);
+      font-weight: 700;
+      color: $mg-ink;
+      margin: 0;
+      letter-spacing: -0.015em;
+      line-height: 1.3;
     }
+  }
+
+  &__icon {
+    font-size: 28px;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+}
+
+// ── Tip list ─────────────────────────────────────────────────────────────────
+.mg-tip-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    font-size: 14px;
+    color: $mg-ink-muted;
+    line-height: 1.7;
+    padding: 12px 16px 12px 44px;
+    background: $mg-surface;
+    border-radius: $mg-radius-sm;
+    border: 1px solid $mg-border;
+    position: relative;
+    transition: border-color 0.18s, background 0.18s;
+
+    &::before {
+      content: "✓";
+      position: absolute;
+      left: 14px;
+      top: 12px;
+      font-size: 13px;
+      font-weight: 700;
+      color: $mg-green;
+    }
+
+    &:hover {
+      background: $mg-blue-light;
+      border-color: rgba($mg-blue, 0.25);
+    }
+  }
+}
+
+// ── Checklist table ───────────────────────────────────────────────────────────
+.mg-table-wrap {
+  border: 1px solid $mg-border;
+  border-radius: $mg-radius-sm;
+  overflow: hidden;
+}
+
+.mg-table {
+  .MuiTableHead-root .MuiTableRow-root {
+    background: $mg-blue;
+
+    .MuiTableCell-root {
+      color: #fff;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 14px 20px;
+      border: none;
+    }
+  }
+
+  .MuiTableBody-root .MuiTableRow-root {
+    transition: background 0.15s;
+
+    &:nth-of-type(even) { background: $mg-surface; }
+
+    &:hover { background: $mg-blue-light; }
+
+    .MuiTableCell-root {
+      font-size: 13.5px;
+      color: $mg-ink;
+      padding: 14px 20px;
+      border-color: $mg-border;
+      vertical-align: middle;
+    }
+  }
+
+  &__day {
+    font-weight: 700 !important;
+    color: $mg-blue !important;
+    white-space: nowrap;
+    width: 160px;
+  }
+}
+
+// ── Testimonials ─────────────────────────────────────────────────────────────
+.mg-testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mg-testimonial {
+  background: $mg-surface;
+  border: 1px solid $mg-border;
+  border-left: 3px solid $mg-blue;
+  border-radius: $mg-radius-sm;
+  padding: 18px 20px;
+  margin: 0;
+
+  p {
+    font-size: 14px;
+    color: $mg-ink-muted;
+    line-height: 1.7;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+
+  footer {
+    font-size: 13px;
+    color: $mg-ink;
+    font-weight: 500;
+    font-style: normal;
+
+    span { color: $mg-ink-muted; }
+  }
+}
+
+// ── PDF download card ─────────────────────────────────────────────────────────
+.mg-pdf__desc {
+  font-size: 14px;
+  color: $mg-ink-muted;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.mg-pdf__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: $mg-blue;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: $mg-radius-sm;
+  text-decoration: none;
+  transition: background 0.18s, transform 0.15s;
+  box-shadow: 0 4px 14px rgba($mg-blue, 0.35);
+
+  svg { font-size: 18px !important; }
+
+  &:hover {
+    background: darken($mg-blue, 8%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba($mg-blue, 0.45);
+  }
+
+  &:active { transform: translateY(0); }
+}
+
+// ── Loading skeleton ──────────────────────────────────────────────────────────
+.mg-loading {
+  height: 100px;
+  background: $mg-border;
+  border-radius: $mg-radius;
+  margin: 24px auto;
+  max-width: 900px;
+  animation: mgPulse 1.4s ease-in-out infinite;
+}
+
+@keyframes mgPulse {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 0.85; }
+}
+
+// ── Responsive ────────────────────────────────────────────────────────────────
+@media (max-width: 960px) {
+  .mg-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .mg-sidebar { display: none; }
+}
+
+@media (max-width: 600px) {
+  #movingguidesec { padding: 36px 0; }
+
+  .mg-layout { padding: 0 12px; gap: 16px; }
+
+  .mg-card {
+    padding: 20px 16px;
+
+    &__header h2 { font-size: 16px; }
+  }
+
+  .mg-tip-list li {
+    font-size: 13px;
+    padding: 10px 14px 10px 38px;
+  }
+
+  .mg-table {
+    .MuiTableCell-root { padding: 10px 12px !important; font-size: 12px !important; }
+    &__day { width: 110px; }
+  }
 }

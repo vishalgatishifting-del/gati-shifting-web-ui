@@ -1,202 +1,401 @@
-import AwardCertification from "../components/AwardCertification";
-import BrandList from "../components/BrandsList";
-import FAQList from "../components/FAQList";
-import GetInTouch from "../components/GetInTouch";
-import ReviewVideo from "../components/ReviewVideos";
-import TrustUsSection from "../components/TrustUsSection";
-import HouseShiftingPriceImg from "../assets/HomeShifting/houseShiftingPrices.jpg"
+import { memo, lazy, Suspense } from "react";
+import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
-
-import "./HomeShifting.scss"
 import ReviewDialog from "../components/ReviewDialog";
+import HouseShiftingPriceImg from "../assets/HomeShifting/houseShiftingPrices.jpg";
+import "./HomeShifting.scss";
+import { siteConfig } from "../config/Company";
+
+// ── Lazy-load heavy below-fold components ─────────────────────────────────────
+const ReviewVideo        = lazy(() => import("../components/ReviewVideos"));
+const GetInTouch         = lazy(() => import("../components/GetInTouch"));
+const AwardCertification = lazy(() => import("../components/AwardCertification"));
+const TrustUsSection     = lazy(() => import("../components/TrustUsSection"));
+const BrandList          = lazy(() => import("../components/BrandsList"));
+const FAQList            = lazy(() => import("../components/FAQList"));
+
+// ── Static data ────────────────────────────────────────────────────────────────
 
 
-const HomeShifting = () => {
+const TRUST_STATS = [
+  { value: siteConfig.stats.totalYearOfExperience,    label: "Years of Trust",   icon: "🏆" },
+  { value: siteConfig.stats.totalHappyCustomers,   label: "Moves Completed",  icon: "📦" },
+  { value: siteConfig.stats.totalCitiesCovered,   label: "Cities Covered",   icon: "🌏" },
+  { value: siteConfig.stats.customerRating+" ★",   label: "Average Rating",   icon: "⭐" },
+] as const;
 
-    const keywords = [
-        "home shifting services",
-        "house shifting services",
-        "home relocation services",
-        "home shifting company near me",
-        "local home shifting services",
-        "affordable home shifting services",
-        "professional home relocation",
-        "home shifting and packing services",
-        "house shifting services in delhi",
-        "house shifting services in gurgaon",
-        "house shifting services in noida",
-        "house shifting services in ghaziabad",
-        "house shifting services in bangalore",
-        "home shifting quotes",
-        "home relocation cost India",
-        "gati packers and movers"
-    ];
+const BOOKING_STEPS = [
+  {
+    step: "01",
+    emoji: "📋",
+    title: "Share Details & Get a Quote",
+    points: [
+      "Provide moving requirements — items, location, and distance.",
+      "Get a fair, customised quote from our verified professionals.",
+    ],
+  },
+  {
+    step: "02",
+    emoji: "📅",
+    title: "Confirm Booking",
+    points: [
+      "Choose your preferred pickup date and time.",
+      "Secure your booking with a small advance (adjusted later).",
+    ],
+  },
+  {
+    step: "03",
+    emoji: "🔧",
+    title: "Safe Packing & Pickup",
+    points: [
+      "Our trained team arrives with top-quality packing materials.",
+      "Dismantling, labelling, and secure loading under expert supervision.",
+    ],
+  },
+  {
+    step: "04",
+    emoji: "📄",
+    title: "Transparent Invoice",
+    points: [
+      "Receive a detailed invoice based on your provided list.",
+      "Pay the remaining amount after deducting your advance.",
+    ],
+  },
+  {
+    step: "05",
+    emoji: "🚛",
+    title: "Secure Transport",
+    points: [
+      "Your goods are dispatched safely to the destination.",
+      "Track your shipment with live updates until delivery.",
+    ],
+  },
+  {
+    step: "06",
+    emoji: "🏠",
+    title: "Delivery & Feedback",
+    points: ["After delivery and reinstallation, share your valuable feedback."],
+    hasDialog: true,
+  },
+] ;
 
-    return (
-        <>
+const HOUSEHOLD_ITEMS = [
+  { icon: "🛋️", label: "Furniture",           desc: "Sofas, tables, beds, wardrobes, chairs" },
+  { icon: "🧊", label: "Home Appliances",      desc: "Refrigerators, washing machines, ACs, microwaves" },
+  { icon: "🛏️", label: "Bedding & Clothing",   desc: "Mattresses, quilts, personal wardrobe essentials" },
+  { icon: "💻", label: "Electronics",          desc: "TVs, computers, sound systems, gadgets" },
+  { icon: "🍽️", label: "Kitchenware & Décor",  desc: "Glassware, crockery, wall art, fragile items" },
+  { icon: "📦", label: "Miscellaneous",        desc: "Books, toys, plants, small household items" },
+] as const;
 
-            <Helmet>
+const WHY_PROFESSIONAL = [
+  { icon: "📦", title: "Safe & Secure Packing",   desc: "Expert packers use high-quality materials to prevent any damage." },
+  { icon: "⏱️", title: "Time-Efficient Process",  desc: "Quick and organised shifting saves you time and significant effort." },
+  { icon: "🤝", title: "Professional Handling",   desc: "Trained movers handle fragile and heavy items with care." },
+  { icon: "😌", title: "Stress-Free Relocation",  desc: "We manage everything — packing, transport, and unpacking." },
+  { icon: "🛡️", title: "Insurance Protection",    desc: "Comprehensive insurance coverage for all your valuables." },
+] as const;
 
-                {/* Meta Tags for Home Shifting Service Page */}
-                <title>Home Shifting Services | Gati Shifting Packers</title>
+const COST_FACTORS = [
+  { no: "01", title: "Distance",        desc: "The farther the move, the higher the cost — more fuel, time, and resources." },
+  { no: "02", title: "Number of Items", desc: "More or heavier items require bigger vehicles and additional labour." },
+  { no: "03", title: "Packing Quality", desc: "Premium materials like bubble wrap keep items safe but add marginal cost." },
+  { no: "04", title: "Type of Vehicle", desc: "Bigger or specialised vehicles cost more than compact ones." },
+  { no: "05", title: "Time of Moving",  desc: "Weekends and month-ends cost more — choose weekdays or off-season to save." },
+] as const;
 
-                <meta name="description" content="Professional Home Shifting Services by Gati Shifting Packers. Safe and reliable packing, moving, and delivery of your household items across India." />
-                <meta name="keywords" content="Gati Shifting Packers home shifting, Gati House Shifting Packers & Movers,household movers, residential relocation, packing and moving services, home shifting India, home shifting services in delhi,home shifting services in noida, home shifting services in ghaziabad,home shifting services in gurgaon, home shifting services, packers and movers, house relocation, home movers India, domestic shifting, local shifting services, household shifting, best home shifting services in India, affordable packers and movers for home relocation, trusted home shifting company near me, door to door house shifting services, reliable household goods shifting service, professional home packers and movers India, safe and secure house relocation services, top-rated home shifting service providers, budget-friendly home relocation company, expert movers for residential shifting, complete home packing and moving solutions, interstate home relocation with insurance, local home shifting within city, packers and movers for apartment relocation" />
-                <meta name="robots" content="index, follow" />
-                <meta name="author" content="Abhishek" />
+// ── Memoised sub-components ───────────────────────────────────────────────────
 
+const StatBadge = memo(({ stat }: { stat: (typeof TRUST_STATS)[number] }) => (
+  <div className="hs-stat-badge">
+    <span className="hs-stat-badge__value">{stat.value}</span>
+    <span className="hs-stat-badge__label">{stat.label}</span>
+  </div>
+));
+StatBadge.displayName = "StatBadge";
 
-                {/* Open Graph  */}
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="Home Shifting Services | Gati Shifting Packers" />
-                <meta property="og:description" content="Experience safe and hassle-free home shifting with Gati Shifting Packers. Expert packing and moving services for all your residential needs." />
-                <meta property="og:url" content="https://gatishiftingpackers.com/home-shifting" />
-                <meta property="og:site_name" content="Gati Shifting Packers" />
-                <meta property="og:image" content="" />
+const StepCard = memo(({ step, index }: { step: (typeof BOOKING_STEPS)[number]; index: number }) => (
+  <div className="hs-step-card" style={{ "--step-delay": `${index * 0.08}s` } as React.CSSProperties}>
+    <div className="hs-step-card__header">
+      <span className="hs-step-card__num">{step.step}</span>
+      <span className="hs-step-card__emoji" aria-hidden="true">{step.emoji}</span>
+    </div>
+    <h3 className="hs-step-card__title">{step.title}</h3>
+    <ul className="hs-step-card__list">
+      {step.points.map((pt) => <li key={pt}>{pt}</li>)}
+    </ul>
+    {step.hasDialog && (
+      <div className="hs-step-card__dialog">
+        <ReviewDialog />
+      </div>
+    )}
+  </div>
+));
+StepCard.displayName = "StepCard";
 
+const ItemCard = memo(({ item }: { item: (typeof HOUSEHOLD_ITEMS)[number] }) => (
+  <div className="hs-item-card" role="listitem">
+    <div className="hs-item-card__icon-wrap" aria-hidden="true">
+      <span className="hs-item-card__icon">{item.icon}</span>
+    </div>
+    <h3 className="hs-item-card__label">{item.label}</h3>
+    <p className="hs-item-card__desc">{item.desc}</p>
+  </div>
+));
+ItemCard.displayName = "ItemCard";
 
+const WhyCard = memo(({ item, index }: { item: (typeof WHY_PROFESSIONAL)[number]; index: number }) => (
+  <div className="hs-why-card" role="listitem" style={{ "--why-delay": `${index * 0.07}s` } as React.CSSProperties}>
+    <div className="hs-why-card__icon-wrap" aria-hidden="true">
+      <span className="hs-why-card__icon">{item.icon}</span>
+    </div>
+    <div className="hs-why-card__body">
+      <h3 className="hs-why-card__title">{item.title}</h3>
+      <p className="hs-why-card__desc">{item.desc}</p>
+    </div>
+    <div className="hs-why-card__arrow" aria-hidden="true">→</div>
+  </div>
+));
+WhyCard.displayName = "WhyCard";
 
-                {/* Twitter Card */}
-                <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Home Shifting Services | Gati Shifting Packers" />
-                <meta name="twitter:description" content="Reliable home shifting solutions by Gati Shifting Packers. Ensure safe and timely relocation of your household goods across India." />
-                <meta name="twitter:image" content="" />
+const FactorRow = memo(({ factor }: { factor: (typeof COST_FACTORS)[number] }) => (
+  <div className="hs-factor-row" role="listitem">
+    <span className="hs-factor-row__num">{factor.no}</span>
+    <div className="hs-factor-row__body">
+      <h3 className="hs-factor-row__title">{factor.title}</h3>
+      <p className="hs-factor-row__desc">{factor.desc}</p>
+    </div>
+    <div className="hs-factor-row__bar" aria-hidden="true" />
+  </div>
+));
+FactorRow.displayName = "FactorRow";
 
+// ── Page component ────────────────────────────────────────────────────────────
+const HomeShifting = () => (
+  <>
+    {/* ── SEO ─────────────────────────────────────────────────────────── */}
+    <Helmet>
+      <title>Home Shifting Services | Gati Shifting Packers</title>
+      <meta name="description" content="Professional Home Shifting Services by Gati Shifting Packers. Safe and reliable packing, moving, and delivery of your household items across India." />
+      <meta name="keywords" content="Gati Shifting Packers home shifting, Gati House Shifting Packers & Movers, household movers, residential relocation, packing and moving services, home shifting India, home shifting services in delhi, home shifting services in noida, home shifting services in ghaziabad, home shifting services in gurgaon, home shifting services, packers and movers, house relocation, home movers India, domestic shifting, local shifting services" />
+      <meta name="robots" content="index, follow" />
+      <meta name="author" content="Abhishek" />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content="Home Shifting Services | Gati Shifting Packers" />
+      <meta property="og:description" content="Experience safe and hassle-free home shifting with Gati Shifting Packers. Expert packing and moving services for all your residential needs." />
+      <meta property="og:url" content="https://gatishiftingpackers.com/home-shifting" />
+      <meta property="og:site_name" content="Gati Shifting Packers" />
+      <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Home Shifting Services | Gati Shifting Packers" />
+      <meta name="twitter:description" content="Reliable home shifting solutions by Gati Shifting Packers. Ensure safe and timely relocation of your household goods across India." />
+      <meta httpEquiv="Content-Language" content="en" />
+      <link rel="canonical" href="https://gatishiftingpackers.com/home-shifting" />
+    </Helmet>
 
-                <meta http-equiv="Content-Language" content="en" />
+    {/* ── Hero ─────────────────────────────────────────────────────────── */}
+    <section className="hs-hero" role="banner">
+      {/* Animated background grid */}
+      <div className="hs-hero__grid" aria-hidden="true" />
+      <div className="hs-hero__glow hs-hero__glow--1" aria-hidden="true" />
+      <div className="hs-hero__glow hs-hero__glow--2" aria-hidden="true" />
 
+      <div className="hs-hero__inner">
+        {/* Left: text content */}
+        <div className="hs-hero__content">
+          <div className="hs-hero__pill" aria-label="Service area">
+            <span className="hs-hero__pill-dot" aria-hidden="true" />
+            Pan India · Door-to-Door
+          </div>
 
-                {/* Canonical URL */}
-                <link rel="canonical" href="https://gatishiftingpackers.com/home-shifting" />
+          <h1 className="hs-hero__title">
+            <span className="hs-hero__title-line">Home</span>
+            <span className="hs-hero__title-accent">Shifting</span>
+            <span className="hs-hero__title-line">Services</span>
+          </h1>
 
-            </Helmet>
-            <div className="bg-attached">
-                <h1>Home Shifting</h1>
-            </div>
-            <section id="home-shifting-sec">
-                <div className="container">
-                    <h1>Gati Shifting Packers – Affordable House Shifting Services in India</h1>
-                    <p>Gati Shifting Packers is a trusted name in house shifting and relocation services across India, offering reliable, fast, and cost-effective moving solutions. Whether you're planning a local move or a domestic relocation, we ensure a seamless experience from start to finish. Our team specializes in door-to-door household shifting, taking care of everything — from packing and loading to safe delivery at your new home.
-                        <br></br>
-                        With a presence in major cities across India, Gati Shifting Packers has built a strong reputation for providing secure and transparent home shifting services. From furniture and appliances to fragile items, our expert team ensures every item is handled with utmost care. We also offer vehicle tracking and insurance support for added peace of mind, making us one of the most reliable packers and movers in India.
-                    </p>
-                    <div className="content 6-steps">
-                        <h2>🏡 Simple 6-Step Booking Process with Gati Shifting Packers</h2>
+          <p className="hs-hero__sub">
+            Trusted by thousands of families — safe, transparent, and affordable
+            home relocation anywhere across India.
+          </p>
 
-                        <h3>Step 1: Share Your Moving Details & Get a Quote</h3>
-                        <ul>
-                            <li>📋 Provide your moving requirements — items, location, and distance.</li>
-                            <li>💬 Get a fair, customized quote from our verified professionals.</li>
-                        </ul>
+          <div className="hs-cta-group">
+            <Link className="hs-btn hs-btn--primary" to="/contact-us">
+              Get Free Quote
+              <span className="hs-btn__arrow" aria-hidden="true">→</span>
+            </Link>
+            <a className="hs-btn hs-btn--ghost" href={`tel:${siteConfig.phone}`}>
+              📞 {siteConfig.phone}
+            </a>
+          </div>
+        </div>
 
-                        <h3>Step 2: Confirm Booking with Advance Payment</h3>
-                        <ul>
-                            <li>📅 Choose your preferred pickup date and time.</li>
-                            <li>💳 Secure your booking by paying a small advance (adjusted later).</li>
-                        </ul>
+        {/* Right: stat cards */}
+        <div className="hs-hero__stats" aria-label="Trust statistics">
+          {TRUST_STATS.map((stat) => (
+            <StatBadge key={stat.label} stat={stat} />
+          ))}
+        </div>
+      </div>
 
-                        <h3>Step 3: Safe Packing & Doorstep Pickup</h3>
-                        <ul>
-                            <li>🔧 Our trained team arrives with top-quality packing materials to pack your belongings carefully.</li>
-                            <li>✔ Dismantling, labeling, and secure loading are done under expert supervision.</li>
-                        </ul>
+      {/* Bottom ticker */}
+      <div className="hs-hero__ticker" aria-hidden="true">
+        {[...Array(3)].map((_, i) => (
+          <span key={i} className="hs-hero__ticker-track">
+            {["Verified Professionals", "GPS Tracked Vehicles", "Damage-Free Guarantee",
+              "18+ Years of Experience", "Insurance Covered", "200+ Cities Served"].map((t) => (
+              <span key={t} className="hs-hero__ticker-item">
+                <span className="hs-hero__ticker-dot" />
+                {t}
+              </span>
+            ))}
+          </span>
+        ))}
+      </div>
+    </section>
 
-                        <h3>Step 4: Transparent Invoice & Payment Settlement</h3>
-                        <ul>
-                            <li>📄 Receive a detailed invoice based on your provided list.</li>
-                            <li>💸 Pay the remaining amount after deducting your advance payment.</li>
-                        </ul>
+    {/* ── Intro ────────────────────────────────────────────────────────── */}
+    <section className="hs-intro" aria-labelledby="hs-intro-heading">
+      <div className="hs-intro__container">
+        <div className="hs-intro__label-wrap">
+          <span className="hs-label">About Our Service</span>
+        </div>
+        <div className="hs-intro__body">
+          <h2 id="hs-intro-heading" className="hs-section-heading">
+            Gati Shifting Packers –{" "}
+            <em className="hs-accent">Affordable House Shifting</em> in India
+          </h2>
+          <div className="hs-intro__text">
+            <p>
+              Gati Shifting Packers is a trusted name in house shifting and relocation
+              services across India, offering reliable, fast, and cost-effective moving
+              solutions. Whether you're planning a local move or a domestic relocation,
+              we ensure a seamless experience from start to finish.
+            </p>
+            <p>
+              With a presence in major cities across India, we have built a strong
+              reputation for secure and transparent home shifting. From furniture and
+              appliances to fragile items, every item is handled with utmost care.
+              We also offer vehicle tracking and insurance support for added peace of mind.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                        <h3>Step 5: Secure Transportation & Real-Time Updates</h3>
-                        <ul>
-                            <li>🚛 Your goods are dispatched safely to the destination.</li>
-                            <li>📱 Track your shipment with live updates until delivery.</li>
-                        </ul>
+    {/* ── 6-Step Process ───────────────────────────────────────────────── */}
+    <section className="hs-steps" aria-labelledby="hs-steps-heading">
+      <div className="hs-steps__container">
+        <span className="hs-label">How It Works</span>
+        <h2 id="hs-steps-heading" className="hs-section-heading">
+          Simple <em className="hs-accent">6-Step</em> Booking Process
+        </h2>
+        <p className="hs-section-sub">
+          From first enquiry to final delivery — we handle it all.
+        </p>
+        <div className="hs-steps__grid">
+          {BOOKING_STEPS.map((step, i) => (
+            <StepCard key={step.step} step={step} index={i} />
+          ))}
+        </div>
+      </div>
+    </section>
 
+    {/* ── Household Items ──────────────────────────────────────────────── */}
+    <section className="hs-items" aria-labelledby="hs-items-heading">
+      <div className="hs-items__container">
+        <span className="hs-label">What We Move</span>
+        <h2 id="hs-items-heading" className="hs-section-heading">
+          Household Items We Shift
+        </h2>
+        <p className="hs-section-sub">
+          Complete home relocation solutions for all types of household goods.
+        </p>
+        <div className="hs-items__grid" role="list">
+          {HOUSEHOLD_ITEMS.map((item) => (
+            <ItemCard key={item.label} item={item} />
+          ))}
+        </div>
+      </div>
+    </section>
 
-                        <h3>Step 6: Hassle-Free Delivery & Feedback</h3>
-                        <ul>
-                            <li>🏠 After delivery and reinstallation, share your valuable feedback to help us serve you better.
-                                <br />
-                            </li>
-                            <ReviewDialog></ReviewDialog>
-                        </ul>
-                    </div>
-                    <div className="content household-items">
-                        <h2>Household Items We Shift</h2>
-                        <p>Gati Shifting Packers provides complete home relocation solutions for all types of household goods:</p>
-                        <ul>
-                            <li>Furniture: Sofas, tables, beds, wardrobes, chairs, and more.</li>
-                            <li>Home Appliances: Refrigerators, washing machines, air conditioners, and microwaves.</li>
-                            <li>Bedding & Clothing: From mattresses and quilts to personal wardrobe essentials.</li>
-                            <li>Electronics & Devices: TVs, computers, sound systems, and other gadgets.</li>
-                            <li>Kitchenware & Décor: Glassware, crockery, wall art, and other delicate items.</li>
-                            <li>Miscellaneous Items: Books, toys, plants, and other small household belongings.</li>
-                        </ul>
-                    </div>
-                    <div className="content house-shifting">
-                        <h2>Affordable House Shifting Charges in India</h2>
-                        <p>At Gati Shifting Packers, we aim to deliver quality relocation at low cost. Our transparent pricing ensures you get value for every rupee spent — without any hidden charges. Whether it’s local shifting, intercity relocation, or office moving, our team provides professional support at every stage to make your move stress-free and affordable.</p>
+    {/* ── Pricing Image ────────────────────────────────────────────────── */}
+    <section className="hs-pricing" aria-labelledby="hs-pricing-heading">
+      <div className="hs-pricing__container">
+        <span className="hs-label">Pricing</span>
+        <h2 id="hs-pricing-heading" className="hs-section-heading">
+          Affordable House Shifting Charges in India
+        </h2>
+        <p className="hs-section-sub">
+          Transparent pricing — quality relocation at low cost, no hidden charges.
+        </p>
+        <div className="hs-pricing__img-wrap">
+          <img
+            src={HouseShiftingPriceImg}
+            alt="House shifting price comparison chart by Gati Shifting Packers"
+            className="hs-pricing__img"
+            loading="lazy"
+            decoding="async"
+            width={960}
+            height={540}
+          />
+          <div className="hs-pricing__badge">
+            <span>No Hidden Charges</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                        <img src={HouseShiftingPriceImg} loading="lazy"  />
+    {/* ── Why Professional ─────────────────────────────────────────────── */}
+    <section className="hs-why" aria-labelledby="hs-why-heading">
+      <div className="hs-why__container">
+        <div className="hs-why__left">
+          <span className="hs-label hs-label--light">Why Us?</span>
+          <h2 id="hs-why-heading" className="hs-section-heading hs-section-heading--light">
+            Why Choose <br /><em className="hs-accent">Professional</em><br /> House Shifting?
+          </h2>
+          <p className="hs-section-sub hs-section-sub--light">
+            Don't risk your valuables with untrusted movers. Here's why professionals make all the difference.
+          </p>
+        </div>
+        <div className="hs-why__right" role="list">
+          {WHY_PROFESSIONAL.map((item, i) => (
+            <WhyCard key={item.title} item={item} index={i} />
+          ))}
+        </div>
+      </div>
+    </section>
 
-                        <h3>Why Choose Professional House Shifting Services in India?</h3>
-                        <ol>
-                            <li>Safe & Secure Packing: Expert packers use high-quality materials to prevent damage.</li>
-                            <li>Time-Efficient Process: Quick and organized shifting saves you time and effort.
+    {/* ── Cost Factors ─────────────────────────────────────────────────── */}
+    <section className="hs-factors" aria-labelledby="hs-factors-heading">
+      <div className="hs-factors__container">
+        <span className="hs-label">Pricing Guide</span>
+        <h2 id="hs-factors-heading" className="hs-section-heading">
+          Factors Affecting the{" "}
+          <em className="hs-accent">Cost of House Shifting</em>
+        </h2>
+        <p className="hs-section-sub">
+          Here are the main factors that determine your shifting price.
+        </p>
+        <div className="hs-factors__list" role="list">
+          {COST_FACTORS.map((factor) => (
+            <FactorRow key={factor.no} factor={factor} />
+          ))}
+        </div>
+      </div>
+    </section>
 
-                            </li>
-                            <li>Professional Handling: Trained movers handle fragile and heavy items safely.</li>
-                            <li>Stress-Free Relocation: We manage everything — packing, transport, and unpacking.</li>
-                            <li>Insurance Protection: Comprehensive insurance coverage for your valuable belongings.</li>
-                        </ol>
-                    </div>
-                    <div className="content factors">
-                        <h2>Factors Affecting the Cost of House Shifting in India</h2>
-                        <p>The cost of house shifting depends on several things. Here are the main factors that affect the price:</p>
+    {/* ── Below-fold (lazy loaded) ─────────────────────────────────────── */}
+    <Suspense fallback={<div className="hs-loading" aria-hidden="true" />}>
+      <ReviewVideo />
+      <GetInTouch />
+      <AwardCertification />
+      <TrustUsSection />
+      <BrandList />
+      <FAQList />
+    </Suspense>
 
-                        <ol>
-                            <li>Distance -
-                                The farther the move, the higher the cost. Longer distances require more fuel, time, and resources, whether you’re shifting a home, office, or other goods.
-                            </li>
-                            <li>Number of Items -
-                                If you have more or heavier items to move, you’ll need a bigger vehicle and more labor, which increases the cost.
-                            </li>
-                            <li>
-                                Packing Quality -
-                                Using good packing materials like bubble wrap and boxes keeps your items safe but adds a little extra to the cost, especially for fragile items.
-                            </li>
-                            <li>
-                                Type of Vehicle -
-                                The type of truck or container used depends on how many goods you have. Bigger or special vehicles cost more than small ones.
-                            </li>
-                            <li>
-                                Time of Moving -
-                                Moving on weekends, month-end, or during busy seasons usually costs more. Choosing a weekday or off-season date can help you save money.
+  </>
+);
 
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </section>
-
-
-            <ReviewVideo></ReviewVideo>
-            <GetInTouch></GetInTouch>
-            <AwardCertification></AwardCertification>
-            <TrustUsSection></TrustUsSection>
-            <BrandList></BrandList>
-            <FAQList></FAQList>
-            <section id="keywords-section">
-                <h1>People also search for these Queries</h1>
-                <div className="container">
-                    {keywords.map((col) => {
-                        return <h5 className="keyword">{col}</h5>
-                    })}
-                </div>
-            </section>
-        </>
-    )
-}
-
-export default HomeShifting;
+export default memo(HomeShifting);

@@ -1,0 +1,318 @@
+// ── Tokens ──
+$primary: #1a6ef5;
+$accent: #ff8800;
+$text-white: #f1f5f9;
+$text-muted: #94a3b8;
+$radius: 16px;
+$transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+
+// ── Section ──
+.cd-section {
+  position: relative;
+  margin: 0px 0 50px 0;
+  padding: 60px 30px;
+  background: linear-gradient(154deg, #000 0%, #040a1a 100%);
+  overflow: hidden;
+  isolation: isolate; // stacking context — blobs stay behind content
+
+  // ── Ambient blobs (pseudo — no will-change on filter, use opacity instead) ──
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.35;
+    filter: blur(80px); // lower blur = better perf
+
+    @media (max-width: 768px) {
+      display: none; // Mobile pe decorative blur skip karo
+    }
+  }
+
+  &::before {
+    top: -200px;
+    left: -200px;
+    background: $primary;
+  }
+
+  &::after {
+    bottom: -200px;
+    right: -200px;
+    background: $accent;
+  }
+
+  @media (max-width: 580px) {
+    padding: 40px 14px;
+  }
+}
+
+// ── Everything above blobs ──
+.cd-header,
+.cd-stats,
+.cd-marquee,
+.cd-text {
+  position: relative;
+  z-index: 1;
+}
+
+// ── Header ──
+.cd-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cd-header__eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $primary;
+  margin: 0 0 10px;
+}
+
+.cd-header__title {
+  font-size: clamp(22px, 4vw, 38px);
+  font-weight: 700;
+  color: $text-white;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.cd-header__brand {
+  color: $primary;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, $primary, $accent);
+    border-radius: 2px;
+  }
+}
+
+// ── Stats ──
+.cd-stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.cd-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 18px 28px;
+  backdrop-filter: blur(6px);
+  min-width: 120px;
+  transition: background $transition, transform $transition;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.09);
+    transform: translateY(-3px);
+  }
+}
+
+.cd-stat__value {
+  font-size: 28px;
+  font-weight: 800;
+  color: $text-white;
+  line-height: 1;
+  background: linear-gradient(135deg, #fff 0%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.cd-stat__label {
+  font-size: 12px;
+  color: $text-muted;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+// ── Marquee ──
+.cd-marquee {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 52px;
+}
+
+// fade masks — CSS only, zero JS
+.cd-marquee__fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+
+  &--left {
+    left: 0;
+    background: linear-gradient(to right, #040a1a, transparent);
+  }
+
+  &--right {
+    right: 0;
+    background: linear-gradient(to left, #040a1a, transparent);
+  }
+}
+
+// track — no CSS animation; driven by Web Animations API (GPU)
+.cd-marquee__track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  will-change: transform; // hint browser to composite
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+// ── Cert Card ──
+.cd-cert-card {
+  flex-shrink: 0;
+  width: 170px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (max-width: 944px) {
+    width: 140px;
+  }
+
+  @media (max-width: 432px) {
+    width: 110px;
+  }
+}
+
+.cd-cert-card__img-wrap {
+  position: relative;
+  border-radius: $radius;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+}
+
+.cd-cert-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(26, 110, 245, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity $transition;
+
+  svg {
+    width: 28px;
+    height: 28px;
+    color: #fff;
+  }
+}
+
+.cd-cert-card:hover {
+  .cd-cert-card__img-wrap img {
+    transform: scale(1.06);
+  }
+
+  .cd-cert-card__overlay {
+    opacity: 1;
+  }
+}
+
+.cd-cert-card__title {
+  font-size: 12px;
+  font-weight: 500;
+  color: $text-muted;
+  text-align: center;
+  margin: 0;
+  transition: color $transition;
+
+  @media (max-width: 432px) {
+    font-size: 11px;
+  }
+}
+
+.cd-cert-card:hover .cd-cert-card__title {
+  color: $text-white;
+}
+
+// ── Text Block ──
+.cd-text {
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.cd-text__quote {
+  position: relative;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 3px solid $primary;
+  border-radius: 0 $radius $radius 0;
+  padding: 28px 28px 28px 36px;
+
+  p {
+    font-size: clamp(14px, 2vw, 17px);
+    color: $text-white;
+    line-height: 1.75;
+    margin: 0;
+    font-style: italic;
+  }
+
+  @media (max-width: 580px) {
+    padding: 20px 16px 20px 22px;
+  }
+}
+
+.cd-text__quote-icon {
+  position: absolute;
+  top: -14px;
+  left: 20px;
+  width: 32px;
+  height: 24px;
+  color: $primary;
+  opacity: 0.6;
+}
+
+.cd-text__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+
+  p {
+    font-size: clamp(13px, 1.8vw, 16px);
+    color: $text-muted;
+    line-height: 1.8;
+    margin: 0;
+  }
+}

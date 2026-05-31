@@ -3,6 +3,7 @@ import "./FAQ.scss";
 import car5 from "../assets/FAQPageImg/hero-section-img.png"
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import { siteConfig } from "../config/Company";
 
 
 const FAQ = () => {
@@ -61,15 +62,15 @@ const FAQ = () => {
 
                     <div className="trust-stats">
                         <div>
-                            <h4>10K+</h4>
+                            <h4>{siteConfig.stats.totalHappyCustomers}</h4>
                             <span>Happy Customers</span>
                         </div>
                         <div>
-                            <h4>100+</h4>
+                            <h4>{siteConfig.stats.totalCitiesCovered}</h4>
                             <span>Cities Covered</span>
                         </div>
                         <div>
-                            <h4>5★</h4>
+                            <h4>{siteConfig.stats.customerRating}★</h4>
                             <span>Customer Rating</span>
                         </div>
                     </div>

@@ -27349,98 +27349,1928 @@ export const pagesData = [
 },
 
 
-  {
-    slug: "packers-and-movers-in-Ayodhya", city: "Ayodhya", img: Ayodhya, offer: "23%", address: "Shop No 41, Girls Degree Collage In front of Gomti Hospital Faizabad (AYODHYA) - 224001", metaDetails: {
-      title: "Packers and Movers in Ayodhya | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Ayodhya with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Ayodhya and across Uttar Pradesh.",
-      keywords: "Local movers near me Ayodhya, Packers and Movers in Ayodhya, Gati Shifting Packers Ayodhya, Best Packers and Movers Ayodhya, Affordable Packers and Movers Ayodhya, Trusted Packers and Movers Ayodhya Uttar Pradesh, Local Packers and Movers Ayodhya, Professional Movers and Packers Ayodhya, Home Shifting Services Ayodhya, Office Relocation Ayodhya, Vehicle Transport Ayodhya, Car Transport Service Ayodhya, Bike Transport Ayodhya, Household Goods Shifting Ayodhya, Industrial Packers and Movers Ayodhya, Door-to-Door Shifting Services Ayodhya, Packing and Unpacking Services Ayodhya, Furniture Movers Ayodhya, Intercity Packers and Movers Ayodhya, Packers and Movers Ayodhya to Lucknow, Packers and Movers Ayodhya to Kanpur, Packers and Movers Ayodhya to Noida, Packers and Movers Ayodhya to Ghaziabad, Packers and Movers Ayodhya to Delhi, Reliable Relocation Company Ayodhya, Cost-Effective Packers and Movers Ayodhya, Quick Packers and Movers Ayodhya, 24x7 Packers and Movers Ayodhya, Mini Truck for Shifting Ayodhya, Tempo Service Ayodhya, Best Relocation Services Ayodhya, Safe and Secure Moving Services Ayodhya, Budget-Friendly Movers Ayodhya, Professional Relocation Company Ayodhya, Long-Distance Packers and Movers Ayodhya, Trusted Shifting Company Ayodhya, Goods Transport Services Ayodhya.",
-      ogdesc: "Looking for reliable Packers and Movers in Ayodhya? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Ayodhya and across Uttar Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Ayodhya by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Ayodhya"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Muzaffarnagar", city: "Muzaffarnagar", img: Muzaffarnagar, offer: "23%", address: "Meerut Rd, Santosh Vihar, Civil Lines South, Muzaffarnagar, Uttar Pradesh 251001", metaDetails: {
-      title: "Packers and Movers in Muzaffarnagar | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Muzaffarnagar with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Muzaffarnagar and across Uttar Pradesh.",
-      keywords: "Local movers near me Muzaffarnagar, Packers and Movers in Muzaffarnagar, Gati Shifting Packers Muzaffarnagar, Best Packers and Movers Muzaffarnagar, Affordable Packers and Movers Muzaffarnagar, Trusted Packers and Movers Muzaffarnagar Uttar Pradesh, Local Packers and Movers Muzaffarnagar, Professional Movers and Packers Muzaffarnagar, Home Shifting Services Muzaffarnagar, Office Relocation Muzaffarnagar, Vehicle Transport Muzaffarnagar, Car Transport Service Muzaffarnagar, Bike Transport Muzaffarnagar, Household Goods Shifting Muzaffarnagar, Industrial Packers and Movers Muzaffarnagar, Door-to-Door Shifting Services Muzaffarnagar, Packing and Unpacking Services Muzaffarnagar, Furniture Movers Muzaffarnagar, Intercity Packers and Movers Muzaffarnagar, Packers and Movers Muzaffarnagar to Lucknow, Packers and Movers Muzaffarnagar to Kanpur, Packers and Movers Muzaffarnagar to Noida, Packers and Movers Muzaffarnagar to Ghaziabad, Packers and Movers Muzaffarnagar to Delhi, Reliable Relocation Company Muzaffarnagar, Cost-Effective Packers and Movers Muzaffarnagar, Quick Packers and Movers Muzaffarnagar, 24x7 Packers and Movers Muzaffarnagar, Mini Truck for Shifting Muzaffarnagar, Tempo Service Muzaffarnagar, Best Relocation Services Muzaffarnagar, Safe and Secure Moving Services Muzaffarnagar, Budget-Friendly Movers Muzaffarnagar, Professional Relocation Company Muzaffarnagar, Long-Distance Packers and Movers Muzaffarnagar, Trusted Shifting Company Muzaffarnagar, Goods Transport Services Muzaffarnagar.",
-      ogdesc: "Looking for reliable Packers and Movers in Muzaffarnagar? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Muzaffarnagar and across Uttar Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Muzaffarnagar by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Muzaffarnagar"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Rajasthan", city: "Rajasthan", img: Rajasthan, offer: "23%", address: "PREM SAGAR, near SUBH VILLA SOCIETY, Bhakrota, Jaipur, Rajasthan 302026", metaDetails: {
-      title: "Packers and Movers in Rajasthan | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Rajasthan with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Rajasthan and across the state.",
-      keywords: "Local movers near me Rajasthan, Packers and Movers in Rajasthan, Gati Shifting Packers Rajasthan, Best Packers and Movers Rajasthan, Affordable Packers and Movers Rajasthan, Trusted Packers and Movers Rajasthan, Local Packers and Movers Rajasthan, Professional Movers and Packers Rajasthan, Home Shifting Services Rajasthan, Office Relocation Rajasthan, Vehicle Transport Rajasthan, Car Transport Service Rajasthan, Bike Transport Rajasthan, Household Goods Shifting Rajasthan, Industrial Packers and Movers Rajasthan, Door-to-Door Shifting Services Rajasthan, Packing and Unpacking Services Rajasthan, Furniture Movers Rajasthan, Intercity Packers and Movers Rajasthan, Packers and Movers Rajasthan to Jaipur, Packers and Movers Rajasthan to Jodhpur, Packers and Movers Rajasthan to Udaipur, Packers and Movers Rajasthan to Bikaner, Packers and Movers Rajasthan to Ajmer, Reliable Relocation Company Rajasthan, Cost-Effective Packers and Movers Rajasthan, Quick Packers and Movers Rajasthan, 24x7 Packers and Movers Rajasthan, Mini Truck for Shifting Rajasthan, Tempo Service Rajasthan, Best Relocation Services Rajasthan, Safe and Secure Moving Services Rajasthan, Budget-Friendly Movers Rajasthan, Professional Relocation Company Rajasthan, Long-Distance Packers and Movers Rajasthan, Trusted Shifting Company Rajasthan, Goods Transport Services Rajasthan.",
-      ogdesc: "Looking for reliable Packers and Movers in Rajasthan? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Rajasthan and across the state.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Rajasthan by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Rajasthan"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Kakinada", city: "Kakinada", img: Kakinada, offer: "23%", address: "Door No: Shop No 11 AUTONAGAR BESIDE ASHOK LEYLAND SARPAVARAN Village, RURAL, Mandal, Sarpavaram, Andhra Pradesh 533005", metaDetails: {
-      title: "Packers and Movers in Kakinada | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Kakinada with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Kakinada and across Andhra Pradesh.",
-      keywords: "Local movers near me Kakinada, Packers and Movers in Kakinada, Gati Shifting Packers Kakinada, Best Packers and Movers Kakinada, Affordable Packers and Movers Kakinada, Trusted Packers and Movers Kakinada Andhra Pradesh, Local Packers and Movers Kakinada, Professional Movers and Packers Kakinada, Home Shifting Services Kakinada, Office Relocation Kakinada, Vehicle Transport Kakinada, Car Transport Service Kakinada, Bike Transport Kakinada, Household Goods Shifting Kakinada, Industrial Packers and Movers Kakinada, Door-to-Door Shifting Services Kakinada, Packing and Unpacking Services Kakinada, Furniture Movers Kakinada, Intercity Packers and Movers Kakinada, Packers and Movers Kakinada to Vijayawada, Packers and Movers Kakinada to Hyderabad, Packers and Movers Kakinada to Chennai, Packers and Movers Kakinada to Bengaluru, Packers and Movers Kakinada to Delhi, Packers and Movers Kakinada to Kolkata, Reliable Relocation Company Kakinada, Cost-Effective Packers and Movers Kakinada, Quick Packers and Movers Kakinada, 24x7 Packers and Movers Kakinada, Mini Truck for Shifting Kakinada, Tempo Service Kakinada, Best Relocation Services Kakinada, Safe and Secure Moving Services Kakinada, Budget-Friendly Movers Kakinada, Professional Relocation Company Kakinada, Long-Distance Packers and Movers Kakinada, Trusted Shifting Company Kakinada, Goods Transport Services Kakinada.",
-      ogdesc: "Looking for reliable Packers and Movers in Kakinada? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Kakinada and across Andhra Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Kakinada by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Kakinada"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Dibrugarh", city: "Dibrugarh", img: Dibrugarh, offer: "23%", address: "Shop No 9 - Graham Bazar, Dibrugarh, Assam 786001", metaDetails: {
-      title: "Packers and Movers in Dibrugarh | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Dibrugarh with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Dibrugarh and across Assam.",
-      keywords: "Local movers near me Dibrugarh, Packers and Movers in Dibrugarh, Gati Shifting Packers Dibrugarh, Best Packers and Movers Dibrugarh, Affordable Packers and Movers Dibrugarh, Trusted Packers and Movers Dibrugarh Assam, Local Packers and Movers Dibrugarh, Professional Movers and Packers Dibrugarh, Home Shifting Services Dibrugarh, Office Relocation Dibrugarh, Vehicle Transport Dibrugarh, Car Transport Service Dibrugarh, Bike Transport Dibrugarh, Household Goods Shifting Dibrugarh, Industrial Packers and Movers Dibrugarh, Door-to-Door Shifting Services Dibrugarh, Packing and Unpacking Services Dibrugarh, Furniture Movers Dibrugarh, Intercity Packers and Movers Dibrugarh, Packers and Movers Dibrugarh to Guwahati, Packers and Movers Dibrugarh to Jorhat, Packers and Movers Dibrugarh to Tinsukia, Packers and Movers Dibrugarh to Tezpur, Packers and Movers Dibrugarh to Delhi, Reliable Relocation Company Dibrugarh, Cost-Effective Packers and Movers Dibrugarh, Quick Packers and Movers Dibrugarh, 24x7 Packers and Movers Dibrugarh, Mini Truck for Shifting Dibrugarh, Tempo Service Dibrugarh, Best Relocation Services Dibrugarh, Safe and Secure Moving Services Dibrugarh, Budget-Friendly Movers Dibrugarh, Professional Relocation Company Dibrugarh, Long-Distance Packers and Movers Dibrugarh, Trusted Shifting Company Dibrugarh, Goods Transport Services Dibrugarh.",
-      ogdesc: "Looking for reliable Packers and Movers in Dibrugarh? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Dibrugarh and across Assam.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Dibrugarh by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Dibrugarh"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Silchar", city: "Silchar", img: Silchar, offer: "23%", address: "Shop No - 7 Nazirpatty, Ahalee complex, Tarapur, Silchar, Assam 788001", metaDetails: {
-      title: "Packers and Movers in Silchar | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Silchar with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Silchar and across Assam.",
-      keywords: "Local movers near me Silchar, Packers and Movers in Silchar, Gati Shifting Packers Silchar, Best Packers and Movers Silchar, Affordable Packers and Movers Silchar, Trusted Packers and Movers Silchar Assam, Local Packers and Movers Silchar, Professional Movers and Packers Silchar, Home Shifting Services Silchar, Office Relocation Silchar, Vehicle Transport Silchar, Car Transport Service Silchar, Bike Transport Silchar, Household Goods Shifting Silchar, Industrial Packers and Movers Silchar, Door-to-Door Shifting Services Silchar, Packing and Unpacking Services Silchar, Furniture Movers Silchar, Intercity Packers and Movers Silchar, Packers and Movers Silchar to Guwahati, Packers and Movers Silchar to Dibrugarh, Packers and Movers Silchar to Jorhat, Packers and Movers Silchar to Tezpur, Packers and Movers Silchar to Delhi, Reliable Relocation Company Silchar, Cost-Effective Packers and Movers Silchar, Quick Packers and Movers Silchar, 24x7 Packers and Movers Silchar, Mini Truck for Shifting Silchar, Tempo Service Silchar, Best Relocation Services Silchar, Safe and Secure Moving Services Silchar, Budget-Friendly Movers Silchar, Professional Relocation Company Silchar, Long-Distance Packers and Movers Silchar, Trusted Shifting Company Silchar, Goods Transport Services Silchar.",
-      ogdesc: "Looking for reliable Packers and Movers in Silchar? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Silchar and across Assam.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Silchar by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Silchar"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Bhilai", city: "Bhilai", img: Bhilai, offer: "23%", address: "Shop No 102 - SKCON Mandir Rd, Ambicapatty, Silchar", metaDetails: {
-      title: "Packers and Movers in Bhilai | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Bhilai with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Bhilai and across Chhattisgarh.",
-      keywords: "Local movers near me Bhilai, Packers and Movers in Bhilai, Gati Shifting Packers Bhilai, Best Packers and Movers Bhilai, Affordable Packers and Movers Bhilai, Trusted Packers and Movers Bhilai Chhattisgarh, Local Packers and Movers Bhilai, Professional Movers and Packers Bhilai, Home Shifting Services Bhilai, Office Relocation Bhilai, Vehicle Transport Bhilai, Car Transport Service Bhilai, Bike Transport Bhilai, Household Goods Shifting Bhilai, Industrial Packers and Movers Bhilai, Door-to-Door Shifting Services Bhilai, Packing and Unpacking Services Bhilai, Furniture Movers Bhilai, Intercity Packers and Movers Bhilai, Packers and Movers Bhilai to Raipur, Packers and Movers Bhilai to Durg, Packers and Movers Bhilai to Bilaspur, Packers and Movers Bhilai to Raigarh, Packers and Movers Bhilai to Nagpur, Reliable Relocation Company Bhilai, Cost-Effective Packers and Movers Bhilai, Quick Packers and Movers Bhilai, 24x7 Packers and Movers Bhilai, Mini Truck for Shifting Bhilai, Tempo Service Bhilai, Best Relocation Services Bhilai, Safe and Secure Moving Services Bhilai, Budget-Friendly Movers Bhilai, Professional Relocation Company Bhilai, Long-Distance Packers and Movers Bhilai, Trusted Shifting Company Bhilai, Goods Transport Services Bhilai.",
-      ogdesc: "Looking for reliable Packers and Movers in Bhilai? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Bhilai and across Chhattisgarh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Bhilai by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Bhilai"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Durg", city: "Durg", img: Durg, offer: "23%", address: "Shop No. 9, Shikhar Apartment, Smriti Nagar, Junwani Road, Bhilai (near Ti Mall)", metaDetails: {
-      title: "Packers and Movers in Durg | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Durg with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Durg and across Chhattisgarh.",
-      keywords: "Local movers near me Durg, Packers and Movers in Durg, Gati Shifting Packers Durg, Best Packers and Movers Durg, Affordable Packers and Movers Durg, Trusted Packers and Movers Durg Chhattisgarh, Local Packers and Movers Durg, Professional Movers and Packers Durg, Home Shifting Services Durg, Office Relocation Durg, Vehicle Transport Durg, Car Transport Service Durg, Bike Transport Durg, Household Goods Shifting Durg, Industrial Packers and Movers Durg, Door-to-Door Shifting Services Durg, Packing and Unpacking Services Durg, Furniture Movers Durg, Intercity Packers and Movers Durg, Packers and Movers Durg to Raipur, Packers and Movers Durg to Bhilai, Packers and Movers Durg to Bilaspur, Packers and Movers Durg to Raigarh, Packers and Movers Durg to Nagpur, Reliable Relocation Company Durg, Cost-Effective Packers and Movers Durg, Quick Packers and Movers Durg, 24x7 Packers and Movers Durg, Mini Truck for Shifting Durg, Tempo Service Durg, Best Relocation Services Durg, Safe and Secure Moving Services Durg, Budget-Friendly Movers Durg, Professional Relocation Company Durg, Long-Distance Packers and Movers Durg, Trusted Shifting Company Durg, Goods Transport Services Durg.",
-      ogdesc: "Looking for reliable Packers and Movers in Durg? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Durg and across Chhattisgarh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Durg by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Durg"
-    }
-  },
-  {
-    slug: "packers-and-movers-in-Bilaspur", city: "Bilaspur", img: Bilaspur, offer: "23%", address: "Shop No 111 - 52, Medical Complex, Telipara, Bilaspur (GP listing)", metaDetails: {
-      title: "Packers and Movers in Bilaspur | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Bilaspur with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Bilaspur and across Chhattisgarh.",
-      keywords: "Local movers near me Bilaspur, Packers and Movers in Bilaspur, Gati Shifting Packers Bilaspur, Best Packers and Movers Bilaspur, Affordable Packers and Movers Bilaspur, Trusted Packers and Movers Bilaspur Chhattisgarh, Local Packers and Movers Bilaspur, Professional Movers and Packers Bilaspur, Home Shifting Services Bilaspur, Office Relocation Bilaspur, Vehicle Transport Bilaspur, Car Transport Service Bilaspur, Bike Transport Bilaspur, Household Goods Shifting Bilaspur, Industrial Packers and Movers Bilaspur, Door-to-Door Shifting Services Bilaspur, Packing and Unpacking Services Bilaspur, Furniture Movers Bilaspur, Intercity Packers and Movers Bilaspur, Packers and Movers Bilaspur to Raipur, Packers and Movers Bilaspur to Durg, Packers and Movers Bilaspur to Bhilai, Packers and Movers Bilaspur to Raigarh, Packers and Movers Bilaspur to Nagpur, Reliable Relocation Company Bilaspur, Cost-Effective Packers and Movers Bilaspur, Quick Packers and Movers Bilaspur, 24x7 Packers and Movers Bilaspur, Mini Truck for Shifting Bilaspur, Tempo Service Bilaspur, Best Relocation Services Bilaspur, Safe and Secure Moving Services Bilaspur, Budget-Friendly Movers Bilaspur, Professional Relocation Company Bilaspur, Long-Distance Packers and Movers Bilaspur, Trusted Shifting Company Bilaspur, Goods Transport Services Bilaspur.",
-      ogdesc: "Looking for reliable Packers and Movers in Bilaspur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Bilaspur and across Chhattisgarh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Bilaspur by Gati Shifting Packers. Book your smooth relocation today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Bilaspur"
-    }
-  },
-  { slug: "packers-and-movers-in-Junagadh", city: "Junagadh", img: Junagadh, offer: "23%", address: "Shop No 08- Navi Chavand (Chaparda), Junagadh (near Civil Hospital Gate No.2 etc.)" },
+  // {
+  //   slug: "packers-and-movers-in-Ayodhya", city: "Ayodhya", img: Ayodhya, offer: "23%", address: "Shop No 41, Girls Degree Collage In front of Gomti Hospital Faizabad (AYODHYA) - 224001", metaDetails: {
+  //     title: "Packers and Movers in Ayodhya | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Ayodhya with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Ayodhya and across Uttar Pradesh.",
+  //     keywords: "Local movers near me Ayodhya, Packers and Movers in Ayodhya, Gati Shifting Packers Ayodhya, Best Packers and Movers Ayodhya, Affordable Packers and Movers Ayodhya, Trusted Packers and Movers Ayodhya Uttar Pradesh, Local Packers and Movers Ayodhya, Professional Movers and Packers Ayodhya, Home Shifting Services Ayodhya, Office Relocation Ayodhya, Vehicle Transport Ayodhya, Car Transport Service Ayodhya, Bike Transport Ayodhya, Household Goods Shifting Ayodhya, Industrial Packers and Movers Ayodhya, Door-to-Door Shifting Services Ayodhya, Packing and Unpacking Services Ayodhya, Furniture Movers Ayodhya, Intercity Packers and Movers Ayodhya, Packers and Movers Ayodhya to Lucknow, Packers and Movers Ayodhya to Kanpur, Packers and Movers Ayodhya to Noida, Packers and Movers Ayodhya to Ghaziabad, Packers and Movers Ayodhya to Delhi, Reliable Relocation Company Ayodhya, Cost-Effective Packers and Movers Ayodhya, Quick Packers and Movers Ayodhya, 24x7 Packers and Movers Ayodhya, Mini Truck for Shifting Ayodhya, Tempo Service Ayodhya, Best Relocation Services Ayodhya, Safe and Secure Moving Services Ayodhya, Budget-Friendly Movers Ayodhya, Professional Relocation Company Ayodhya, Long-Distance Packers and Movers Ayodhya, Trusted Shifting Company Ayodhya, Goods Transport Services Ayodhya.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Ayodhya? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Ayodhya and across Uttar Pradesh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Ayodhya by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Ayodhya"
+  //   }
+  // },
+{
+  slug: "packers-and-movers-in-ayodhya",
+  city: "Ayodhya",
+  img: Ayodhya,
+  offer: "15%",
+  address:
+    "Shop No 41, Girls Degree Collage In front of Gomti Hospital Faizabad (AYODHYA) - 224001",
 
+  keywords: [
+    "packers and movers Ayodhya",
+    "best packers and movers in Ayodhya",
+    "home shifting Ayodhya",
+    "office relocation Ayodhya",
+    "car transport Ayodhya",
+    "bike transport Ayodhya",
+    "vehicle transportation Ayodhya",
+    "packing and unpacking services Ayodhya",
+  ],
+
+  metaData: {
+    title: "Top Packers Movers in Ayodhya for Safe Shift",
+
+    description:
+      "Choose expert packers and movers in Ayodhya for home, office & vehicle relocation. Secure packing, quick service & affordable moving solutions.",
+
+    keywords:
+      "packers and movers Ayodhya, home shifting Ayodhya, office relocation Ayodhya, car transport Ayodhya, bike transport Ayodhya",
+
+    ogDescription:
+      "Choose expert packers and movers in Ayodhya for home, office & vehicle relocation. Secure packing, quick service & affordable moving solutions.",
+
+    twitterDescription:
+      "Choose expert packers and movers in Ayodhya for home, office & vehicle relocation. Secure packing, quick service & affordable moving solutions.",
+  },
+
+  pageData: {
+    mainHeading:
+      "Packers and Movers in Ayodhya – Reliable Relocation Solutions",
+
+    serviceSecondHeading:
+      "Professional Packers and Movers in Ayodhya for Safe & Hassle-Free Shifting",
+
+    paragraph: [
+      "Planning a move with Gati Packers and Movers in Ayodhya? We deliver complete shifting services for homes, offices, and vehicles with a strong focus on safety and efficiency. Our trained professionals ensure careful packing and timely delivery, making us one of the best movers in Ayodhya.",
+
+      "Our Ayodhya packers and movers services are tailored to provide a smooth and stress-free relocation experience.",
+    ],
+
+    internationalHeading:
+      "🌍 International Packers and Movers in Ayodhya",
+
+    internationalParagraph: [
+      "We provide reliable international relocation services from Ayodhya with complete support for safe and smooth overseas shifting.",
+
+      "Our team handles professional packing, secure transportation, documentation, customs clearance, and timely delivery to ensure a hassle-free moving experience.",
+    ],
+
+    servicesHeading:
+      "Our Packers and Movers Services in Ayodhya",
+
+    services: [
+      {
+        title: "Home Shifting Services in Ayodhya",
+
+        desc:
+          "• Secure packing using durable materials\n• Safe loading, transport, and unloading\n• Unpacking and proper arrangement at your new home",
+
+        link: "/home-shifting",
+
+        linkText: "Home Shifting Services",
+      },
+
+      {
+        title: "Office Relocation in Ayodhya",
+
+        desc:
+          "• Careful shifting of office furniture and electronics\n• Organized handling of files and equipment\n• Fast relocation to minimize business interruption",
+
+        link: "/office-relocation",
+
+        linkText: "Office Relocation Services",
+      },
+
+      {
+        title: "Vehicle Transport Services",
+
+        desc:
+          "Our car transport services in Ayodhya, bike transport Ayodhya, and vehicle transportation Ayodhya ensure your vehicles are delivered safely and on time.",
+
+        link: "/car-bike-transport",
+
+        linkText: "Car & Bike Transport",
+      },
+
+      {
+        title: "Packing and Unpacking Services",
+
+        desc:
+          "We offer expert packing and unpacking services Ayodhya using premium materials to keep your belongings safe throughout the move.",
+
+        link: "/packing-and-unpacking",
+
+        linkText: "Packing & Unpacking Services",
+      },
+
+      {
+        title: "Affordable and Trusted Movers",
+
+        desc:
+          "• Budget-friendly relocation plans\n• Skilled and professional movers Ayodhya\n• Reliable services for local and long distance movers Ayodhya",
+      },
+    ],
+
+    whyChooseHeading:
+      "Why Choose Our Packers and Movers in Ayodhya",
+
+    whyChooseParagraph:
+      "We provide secure, affordable, and professional relocation services designed to make your move stress-free and convenient.",
+
+    whyChooseNote:
+      "Our experienced team ensures safe packing, careful transportation, and timely delivery for every relocation project.",
+
+    areasHeading: "Areas We Serve in Ayodhya",
+
+    areas: [
+      {
+        title: "Local Packers and Movers in Ayodhya",
+
+        paragraph: [
+          "We provide professional local shifting services across residential and commercial areas of Ayodhya with safe transportation and affordable pricing.",
+
+          "Our team ensures secure packing, careful handling, and timely delivery for hassle-free local home and office relocation.",
+        ],
+      },
+
+      {
+        title: "Intercity Packers and Movers from Ayodhya",
+
+        paragraph: [
+          "We handle both local and long-distance relocation services from Ayodhya to major cities across India with reliable transportation and professional moving support.",
+        ],
+      },
+    ],
+
+    processHeading: "Our Relocation Process",
+
+    processParagraph:
+      "Our relocation process is simple, organized, and designed for maximum safety and convenience.",
+
+    costHeading:
+      "Packers and Movers Charges in Ayodhya",
+
+    factorsHeading:
+      "Factors Affecting Relocation Costs in Ayodhya",
+
+    factors: [
+      {
+        heading: "Distance of Relocation",
+
+        paragraph:
+          "Long-distance moves generally cost more compared to local shifting services.",
+      },
+
+      {
+        heading: "Volume of Goods",
+
+        paragraph:
+          "The quantity and size of items affect packing, labor, and transportation charges.",
+      },
+
+      {
+        heading: "Type of Services",
+
+        paragraph:
+          "Additional services like packing, unpacking, and vehicle transportation impact the total cost.",
+      },
+
+      {
+        heading: "Packing Material Quality",
+
+        paragraph:
+          "Premium packing materials provide extra safety but may increase moving charges.",
+      },
+
+      {
+        heading: "Moving Schedule",
+
+        paragraph:
+          "Weekend or urgent shifting requests may have slightly higher pricing.",
+      },
+    ],
+
+    nearbyCitiesHeading:
+      "Nearby Cities We Serve",
+
+    nearbyCities: [
+      {
+        link: "/packers-and-movers-in-lucknow",
+
+        linkText:
+          "Packers and Movers in Lucknow",
+      },
+
+      {
+        link: "/packers-and-movers-in-varanasi",
+
+        linkText:
+          "Packers and Movers in Varanasi",
+      },
+
+      {
+        link: "/packers-and-movers-in-gorakhpur",
+
+        linkText:
+          "Packers and Movers in Gorakhpur",
+      },
+
+      {
+        link:
+          "/packers-and-movers-in-prayagraj-allahabad",
+
+        linkText:
+          "Packers and Movers in Prayagraj",
+      },
+
+      {
+        link: "/packers-and-movers-in-kanpur",
+
+        linkText:
+          "Packers and Movers in Kanpur",
+      },
+    ],
+
+    faqHeading:
+      "FAQs – Packers and Movers in Ayodhya",
+
+    faqs: [
+      {
+        q:
+          "What are the relocation charges in Ayodhya?",
+
+        a:
+          "The cost depends on distance, quantity of goods, and services required. Contact us for a free estimate.",
+      },
+
+      {
+        q:
+          "Do you provide household shifting services in Ayodhya?",
+
+        a:
+          "Yes, we offer complete household shifting services Ayodhya including packing and transportation.",
+      },
+
+      {
+        q:
+          "Is vehicle transportation available?",
+
+        a:
+          "Yes, we provide safe car transport services in Ayodhya and bike transport Ayodhya.",
+      },
+
+      {
+        q:
+          "Do you offer long-distance relocation?",
+
+        a:
+          "Yes, we handle both local and long-distance moves efficiently.",
+      },
+
+      {
+        q:
+          "How can I book your services?",
+
+        a:
+          "Call +91 9422799477 or email gatishiftingpackers@gmail.com to schedule your move.",
+      },
+    ],
+  },
+},
+  {
+  slug: "packers-and-movers-in-muzaffarnagar",
+  city: "Muzaffarnagar",
+  img: Muzaffarnagar,
+  offer: "15%",
+  address: "Muzaffarnagar, Uttar Pradesh",
+
+  keywords: [
+    "packers and movers Muzaffarnagar",
+    "home shifting Muzaffarnagar",
+    "office relocation Muzaffarnagar",
+    "car transport Muzaffarnagar",
+    "bike transport Muzaffarnagar",
+    "vehicle transportation Muzaffarnagar",
+  ],
+
+  metaData: {
+    title: "Top Packers Movers in Muzaffarnagar for Safe Moving",
+
+    description:
+      "Book trusted packers and movers in Muzaffarnagar for home, office & vehicle shifting. Affordable rates, secure packing, and timely delivery services.",
+
+    keywords:
+      "packers and movers Muzaffarnagar, home shifting Muzaffarnagar, office relocation Muzaffarnagar, vehicle transport Muzaffarnagar",
+
+    ogDescription:
+      "Book trusted packers and movers in Muzaffarnagar for home, office & vehicle shifting. Affordable rates, secure packing, and timely delivery services.",
+
+    twitterDescription:
+      "Book trusted packers and movers in Muzaffarnagar for home, office & vehicle shifting. Affordable rates, secure packing, and timely delivery services.",
+  },
+
+  pageData: {
+    mainHeading:
+      "Packers and Movers in Muzaffarnagar – Trusted Moving Experts",
+
+    serviceSecondHeading:
+      "Professional Packers and Movers in Muzaffarnagar",
+
+    paragraph: [
+      "Searching for professional Gati Packers and Movers in Muzaffarnagar? We provide reliable and efficient relocation solutions for households, offices, and vehicles. Our experienced team ensures safe handling, proper packing, and on-time delivery, making us one of the best movers in Muzaffarnagar.",
+      "Our Muzaffarnagar packers and movers services are designed to offer a smooth and hassle-free relocation experience."
+    ],
+
+    internationalHeading:
+      "🌍 International Packers and Movers in Muzaffarnagar",
+
+    internationalParagraph: [
+      "We provide secure international relocation services from Muzaffarnagar with complete packing, transportation, and customs support.",
+
+      "Our experienced team ensures smooth overseas relocation for household goods, office equipment, and vehicles.",
+    ],
+
+    servicesHeading:
+      "Complete Relocation Services in Muzaffarnagar",
+
+    services: [
+      {
+        title: "Home Shifting Services in Muzaffarnagar",
+
+        desc:
+          "• High-quality packing materials for maximum safety\n• Careful loading and secure transportation\n• Timely unloading and unpacking at destination",
+
+        link: "/home-shifting",
+
+        linkText: "Home Shifting Services",
+      },
+
+      {
+        title: "Office Relocation in Muzaffarnagar",
+
+        desc:
+          "• Safe shifting of office furniture and electronics\n• Organized packing of documents and files\n• Fast relocation to avoid business disruption",
+
+        link: "/office-relocation",
+
+        linkText: "Office Relocation Services",
+      },
+
+      {
+        title: "Vehicle Transport Services",
+
+        desc:
+          "• Car transport services in Muzaffarnagar\n• Bike transport Muzaffarnagar\n• Safe and timely vehicle delivery",
+
+        link: "/car-bike-transport",
+
+        linkText: "Vehicle Transport Services",
+      },
+
+      {
+        title: "Packing and Unpacking Services",
+
+        desc:
+          "• Use of durable and high-quality packing materials\n• Protection of goods from damage during transit\n• Organized unpacking for convenience",
+      },
+    ],
+
+    whyChooseHeading:
+      "Why Choose Gati Shifting Packers in Muzaffarnagar",
+
+    whyChooseParagraph:
+      "We provide affordable, secure, and reliable relocation solutions with experienced professionals and modern moving techniques.",
+
+    whyChooseNote:
+      "Our goal is to provide safe and stress-free relocation services for homes, offices, and vehicles.",
+
+    areasHeading:
+      "Areas We Serve in Muzaffarnagar",
+
+    areas: [
+      {
+        title:
+          "Local Packers and Movers in Muzaffarnagar",
+
+        paragraph: [
+          "We provide trusted local shifting services across residential and commercial areas of Muzaffarnagar with safe transportation and affordable pricing.",
+        ],
+      },
+
+      {
+        title:
+          "Intercity Relocation from Muzaffarnagar",
+
+        paragraph: [
+          "We offer reliable long-distance relocation services from Muzaffarnagar to major cities across India.",
+        ],
+      },
+    ],
+
+    processHeading:
+      "Our Relocation Process",
+
+    processParagraph:
+      "We follow a simple and organized moving process for safe and hassle-free shifting.",
+
+    costHeading:
+      "Packers and Movers Charges in Muzaffarnagar",
+
+    factorsHeading:
+      "Factors Affecting Moving Charges",
+
+    factors: [
+      {
+        heading: "Distance of Relocation",
+
+        paragraph:
+          "Charges vary depending on the distance between pickup and destination locations.",
+      },
+
+      {
+        heading: "Volume of Goods",
+
+        paragraph:
+          "The quantity and size of items directly affect packing and transportation costs.",
+      },
+
+      {
+        heading: "Packing Materials",
+
+        paragraph:
+          "Premium quality packing materials provide better safety and may increase charges.",
+      },
+
+      {
+        heading: "Vehicle Transportation",
+
+        paragraph:
+          "Additional vehicle shifting services affect the total relocation cost.",
+      },
+    ],
+
+    nearbyCitiesHeading:
+      "Nearby Cities We Serve",
+
+    nearbyCities: [
+      {
+        link: "/packers-and-movers-in-dehradun",
+        linkText: "Packers and Movers in Dehradun",
+      },
+
+      {
+        link: "/packers-and-movers-in-meerut",
+        linkText: "Packers and Movers in Meerut",
+      },
+
+      {
+        link: "/packers-and-movers-in-haridwar",
+        linkText: "Packers and Movers in Haridwar",
+      },
+
+      {
+        link: "/packers-and-movers-in-roorkee",
+        linkText: "Packers and Movers in Roorkee",
+      },
+
+      {
+        link: "/packers-and-movers-in-ghaziabad",
+        linkText: "Packers and Movers in Ghaziabad",
+      },
+    ],
+
+    faqHeading:
+      "FAQs – Packers and Movers in Muzaffarnagar",
+
+    faqs: [
+      {
+        q:
+          "What factors affect moving charges in Muzaffarnagar?",
+
+        a:
+          "Charges depend on distance, volume of goods, packing needs, and type of relocation service.",
+      },
+
+      {
+        q:
+          "Do you offer household shifting services Muzaffarnagar?",
+
+        a:
+          "Yes, we provide complete household shifting services including packing, loading, and transportation.",
+      },
+
+      {
+        q:
+          "Is vehicle transportation Muzaffarnagar safe?",
+
+        a:
+          "Yes, we ensure safe car transport services in Muzaffarnagar and bike transport with proper protection.",
+      },
+
+      {
+        q:
+          "Do you handle long-distance relocation?",
+
+        a:
+          "Yes, we provide both local and long distance movers Muzaffarnagar services across India.",
+      },
+
+      {
+        q:
+          "How can I book your moving service?",
+
+        a:
+          "Call +91 9422799477 or email gatishiftingpackers@gmail.com to book your relocation service.",
+      },
+    ],
+  },
+},
+  {
+  slug: "packers-and-movers-in-rajasthan",
+  city: "Rajasthan",
+  img: Rajasthan,
+  offer: "15%",
+  address: "Rajasthan, India",
+
+  keywords: [
+    "packers and movers Rajasthan",
+    "home shifting Rajasthan",
+    "office relocation Rajasthan",
+    "car transport Rajasthan",
+    "bike transport Rajasthan",
+  ],
+
+  metaData: {
+    title:
+      "Reliable Packers Movers Rajasthan | Safe Shifting Services",
+
+    description:
+      "Choose expert packers and movers in Rajasthan for home, office & vehicle relocation. Fast, secure, and affordable moving services across Rajasthan.",
+
+    keywords:
+      "packers and movers Rajasthan, home shifting Rajasthan, office relocation Rajasthan, vehicle transportation Rajasthan",
+
+    ogDescription:
+      "Choose expert packers and movers in Rajasthan for home, office & vehicle relocation. Fast, secure, and affordable moving services across Rajasthan.",
+
+    twitterDescription:
+      "Choose expert packers and movers in Rajasthan for home, office & vehicle relocation. Fast, secure, and affordable moving services across Rajasthan.",
+  },
+
+  pageData: {
+    mainHeading:
+      "Packers and Movers in Rajasthan – Professional Relocation Services",
+
+    paragraph: [
+      "Looking for dependable Gati Packers and Movers in Rajasthan? We provide complete relocation solutions for residential, commercial, and vehicle shifting across the state.",
+
+      "With a skilled team and modern techniques, we ensure safe packing, smooth transportation, and timely delivery.",
+    ],
+
+    internationalHeading:
+      "🌍 International Packers and Movers in Rajasthan",
+
+    internationalParagraph: [
+      "We offer international relocation services from Rajasthan with secure packing, documentation assistance, and safe transportation.",
+
+      "Our team ensures smooth overseas relocation for homes, offices, and vehicles with complete professional support.",
+    ],
+
+    servicesHeading:
+      "Complete Relocation Services in Rajasthan",
+
+    services: [
+      {
+        title: "Home Shifting Services in Rajasthan",
+
+        desc:
+          "• Quality packing materials for maximum protection\n• Safe handling during loading and transportation\n• Unloading, unpacking, and setup at destination",
+
+        link: "/home-shifting",
+
+        linkText: "Home Shifting Services",
+      },
+
+      {
+        title: "Office Relocation in Rajasthan",
+
+        desc:
+          "• Secure movement of office furniture and IT equipment\n• Organized packing of files and important documents\n• Timely shifting to ensure minimal downtime",
+
+        link: "/office-relocation",
+
+        linkText: "Office Relocation Services",
+      },
+
+      {
+        title: "Vehicle Transport Services",
+
+        desc:
+          "• Car transport services in Rajasthan\n• Bike transport Rajasthan\n• Safe and timely delivery across cities",
+
+        link: "/car-bike-transport",
+
+        linkText: "Vehicle Transport Services",
+      },
+
+      {
+        title: "Packing and Unpacking Services",
+
+        desc:
+          "• Use of high-grade packing materials\n• Protection against damage during transit\n• Hassle-free unpacking at your new location",
+      },
+    ],
+
+    nearbyCitiesHeading:
+      "Nearby Cities We Serve",
+
+    nearbyCities: [
+      {
+        link: "/packers-and-movers-in-jaipur",
+        linkText: "Packers and Movers in Jaipur",
+      },
+
+      {
+        link: "/packers-and-movers-in-udaipur",
+        linkText: "Packers and Movers in Udaipur",
+      },
+
+      {
+        link: "/packers-and-movers-in-jodhpur",
+        linkText: "Packers and Movers in Jodhpur",
+      },
+
+      {
+        link: "/packers-and-movers-in-kota",
+        linkText: "Packers and Movers in Kota",
+      },
+
+      {
+        link: "/packers-and-movers-in-ajmer",
+        linkText: "Packers and Movers in Ajmer",
+      },
+    ],
+
+    faqHeading:
+      "FAQs – Packers and Movers in Rajasthan",
+
+    faqs: [
+      {
+        q:
+          "Do you provide relocation services across all cities in Rajasthan?",
+
+        a:
+          "Yes, we offer services across major cities and towns in Rajasthan for both local and intercity moves.",
+      },
+
+      {
+        q:
+          "What types of shifting services do you offer?",
+
+        a:
+          "We provide home shifting, office relocation, vehicle transportation, and complete packing solutions.",
+      },
+
+      {
+        q:
+          "How safe is your packing process?",
+
+        a:
+          "We use high-quality materials and trained staff to ensure complete safety of your belongings.",
+      },
+
+      {
+        q:
+          "Can I book both local and long-distance moves?",
+
+        a:
+          "Yes, we handle both local and long distance movers Rajasthan requirements efficiently.",
+      },
+
+      {
+        q:
+          "How to contact for booking or inquiry?",
+
+        a:
+          "You can call +91 9422799477 or email gatishiftingpackers@gmail.com for quick assistance.",
+      },
+    ],
+  },
+},
+  // {
+  //   slug: "packers-and-movers-in-Kakinada", city: "Kakinada", img: Kakinada, offer: "23%", address: "Door No: Shop No 11 AUTONAGAR BESIDE ASHOK LEYLAND SARPAVARAN Village, RURAL, Mandal, Sarpavaram, Andhra Pradesh 533005", metaDetails: {
+  //     title: "Packers and Movers in Kakinada | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Kakinada with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Kakinada and across Andhra Pradesh.",
+  //     keywords: "Local movers near me Kakinada, Packers and Movers in Kakinada, Gati Shifting Packers Kakinada, Best Packers and Movers Kakinada, Affordable Packers and Movers Kakinada, Trusted Packers and Movers Kakinada Andhra Pradesh, Local Packers and Movers Kakinada, Professional Movers and Packers Kakinada, Home Shifting Services Kakinada, Office Relocation Kakinada, Vehicle Transport Kakinada, Car Transport Service Kakinada, Bike Transport Kakinada, Household Goods Shifting Kakinada, Industrial Packers and Movers Kakinada, Door-to-Door Shifting Services Kakinada, Packing and Unpacking Services Kakinada, Furniture Movers Kakinada, Intercity Packers and Movers Kakinada, Packers and Movers Kakinada to Vijayawada, Packers and Movers Kakinada to Hyderabad, Packers and Movers Kakinada to Chennai, Packers and Movers Kakinada to Bengaluru, Packers and Movers Kakinada to Delhi, Packers and Movers Kakinada to Kolkata, Reliable Relocation Company Kakinada, Cost-Effective Packers and Movers Kakinada, Quick Packers and Movers Kakinada, 24x7 Packers and Movers Kakinada, Mini Truck for Shifting Kakinada, Tempo Service Kakinada, Best Relocation Services Kakinada, Safe and Secure Moving Services Kakinada, Budget-Friendly Movers Kakinada, Professional Relocation Company Kakinada, Long-Distance Packers and Movers Kakinada, Trusted Shifting Company Kakinada, Goods Transport Services Kakinada.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Kakinada? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Kakinada and across Andhra Pradesh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Kakinada by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Kakinada"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-kakinada",
+  city: "Kakinada",
+  img: Kakinada,
+  offer: "15%",
+  address: "Door No: Shop No 11 AUTONAGAR BESIDE ASHOK LEYLAND SARPAVARAN Village, RURAL, Mandal, Sarpavaram, Andhra Pradesh 533005",
+
+  keywords: [
+    "packers and movers Kakinada",
+    "home shifting Kakinada",
+    "office relocation Kakinada",
+    "car transport Kakinada",
+    "bike transport Kakinada",
+  ],
+
+  metaData: {
+    title:
+      "Best Packers Movers Kakinada | Safe & Quick Relocation",
+
+    description:
+      "Hire professional packers and movers in Kakinada for home, office & vehicle shifting. Secure packing, fast delivery, and affordable relocation solutions.",
+
+    keywords:
+      "packers and movers Kakinada, home shifting Kakinada, office relocation Kakinada, vehicle transportation Kakinada",
+
+    ogDescription:
+      "Hire professional packers and movers in Kakinada for home, office & vehicle shifting. Secure packing, fast delivery, and affordable relocation solutions.",
+
+    twitterDescription:
+      "Hire professional packers and movers in Kakinada for home, office & vehicle shifting. Secure packing, fast delivery, and affordable relocation solutions.",
+  },
+
+  pageData: {
+    mainHeading:
+      "Packers and Movers in Kakinada – Smooth & Secure Moving Services",
+
+    paragraph: [
+      "Planning your move with Gati Packers and Movers in Kakinada? We offer complete relocation services for homes, offices, and vehicles with a strong focus on safety and efficiency.",
+
+      "Our trained team ensures proper packing, careful handling, and timely delivery, making us one of the best movers in Kakinada.",
+    ],
+
+    internationalHeading:
+      "🌍 International Packers and Movers in Kakinada",
+
+    internationalParagraph: [
+      "We provide international relocation services from Kakinada with secure packing and smooth overseas transportation support.",
+
+      "Our professionals ensure safe and timely international relocation for homes, offices, and vehicles.",
+    ],
+
+    servicesHeading:
+      "Complete Relocation Services in Kakinada",
+
+    services: [
+      {
+        title: "Home Shifting Services in Kakinada",
+
+        desc:
+          "• Use of high-quality packing materials\n• Safe loading, transportation, and unloading\n• Unpacking and arrangement at your new home",
+
+        link: "/home-shifting",
+
+        linkText: "Home Shifting Services",
+      },
+
+      {
+        title: "Office Relocation in Kakinada",
+
+        desc:
+          "• Careful handling of office equipment and furniture\n• Organized packing of files and documents\n• Quick shifting to minimize work disruption",
+
+        link: "/office-relocation",
+
+        linkText: "Office Relocation Services",
+      },
+
+      {
+        title: "Vehicle Transport Services",
+
+        desc:
+          "• Car transport services in Kakinada\n• Bike transport Kakinada\n• Safe and timely delivery of vehicles",
+
+        link: "/car-bike-transport",
+
+        linkText: "Vehicle Transport Services",
+      },
+
+      {
+        title: "Packing and Unpacking Services",
+
+        desc:
+          "• Durable packing materials for safety\n• Protection from damage during transit\n• Systematic unpacking for convenience",
+      },
+    ],
+
+    nearbyCitiesHeading:
+      "Nearby Cities We Serve",
+
+    nearbyCities: [
+      {
+        link: "/packers-and-movers-in-visakhapatnam",
+        linkText: "Packers and Movers in Visakhapatnam",
+      },
+
+      {
+        link: "/packers-and-movers-in-vijayawada",
+        linkText: "Packers and Movers in Vijayawada",
+      },
+
+      {
+        link: "/packers-and-movers-in-rajahmundry",
+        linkText: "Packers and Movers in Rajahmundry",
+      },
+
+      {
+        link: "/packers-and-movers-in-guntur",
+        linkText: "Packers and Movers in Guntur",
+      },
+
+      {
+        link: "/packers-and-movers-in-nellore",
+        linkText: "Packers and Movers in Nellore",
+      },
+    ],
+
+    faqHeading:
+      "FAQs – Packers and Movers in Kakinada",
+
+    faqs: [
+      {
+        q:
+          "How early should I book packers and movers in Kakinada?",
+
+        a:
+          "It’s recommended to book at least 3–5 days in advance to ensure availability and smooth planning.",
+      },
+
+      {
+        q:
+          "Do you provide complete household shifting services Kakinada?",
+
+        a:
+          "Yes, we offer full household shifting services including packing, loading, transport, and unpacking.",
+      },
+
+      {
+        q:
+          "Is insurance available for goods during shifting?",
+
+        a:
+          "Yes, we offer optional insurance coverage for added protection of your belongings.",
+      },
+
+      {
+        q:
+          "Do you provide vehicle transportation in Kakinada?",
+
+        a:
+          "Yes, we provide safe car transport services in Kakinada and bike transport services.",
+      },
+
+      {
+        q:
+          "How can I schedule my move?",
+
+        a:
+          "Call +91 9422799477 or email gatishiftingpackers@gmail.com to book your relocation.",
+      },
+    ],
+  },
+},
+  // {
+  //   slug: "packers-and-movers-in-Dibrugarh", city: "Dibrugarh", img: Dibrugarh, offer: "23%", address: "Shop No 9 - Graham Bazar, Dibrugarh, Assam 786001", metaDetails: {
+  //     title: "Packers and Movers in Dibrugarh | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Dibrugarh with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Dibrugarh and across Assam.",
+  //     keywords: "Local movers near me Dibrugarh, Packers and Movers in Dibrugarh, Gati Shifting Packers Dibrugarh, Best Packers and Movers Dibrugarh, Affordable Packers and Movers Dibrugarh, Trusted Packers and Movers Dibrugarh Assam, Local Packers and Movers Dibrugarh, Professional Movers and Packers Dibrugarh, Home Shifting Services Dibrugarh, Office Relocation Dibrugarh, Vehicle Transport Dibrugarh, Car Transport Service Dibrugarh, Bike Transport Dibrugarh, Household Goods Shifting Dibrugarh, Industrial Packers and Movers Dibrugarh, Door-to-Door Shifting Services Dibrugarh, Packing and Unpacking Services Dibrugarh, Furniture Movers Dibrugarh, Intercity Packers and Movers Dibrugarh, Packers and Movers Dibrugarh to Guwahati, Packers and Movers Dibrugarh to Jorhat, Packers and Movers Dibrugarh to Tinsukia, Packers and Movers Dibrugarh to Tezpur, Packers and Movers Dibrugarh to Delhi, Reliable Relocation Company Dibrugarh, Cost-Effective Packers and Movers Dibrugarh, Quick Packers and Movers Dibrugarh, 24x7 Packers and Movers Dibrugarh, Mini Truck for Shifting Dibrugarh, Tempo Service Dibrugarh, Best Relocation Services Dibrugarh, Safe and Secure Moving Services Dibrugarh, Budget-Friendly Movers Dibrugarh, Professional Relocation Company Dibrugarh, Long-Distance Packers and Movers Dibrugarh, Trusted Shifting Company Dibrugarh, Goods Transport Services Dibrugarh.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Dibrugarh? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Dibrugarh and across Assam.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Dibrugarh by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Dibrugarh"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-dibrugarh",
+  city: "Dibrugarh",
+  img: Dibrugarh,
+  offer: "15%",
+  address: "Shop No 9 - Graham Bazar, Dibrugarh, Assam 786001",
+
+  keywords: [
+    "packers and movers Dibrugarh",
+    "home shifting Dibrugarh",
+    "office relocation Dibrugarh",
+    "car transport Dibrugarh",
+    "bike transport Dibrugarh",
+  ],
+
+  metaData: {
+    title: "Best Packers Movers Dibrugarh | Safe Relocation",
+
+    description:
+      "Hire trusted packers and movers in Dibrugarh for home, office and vehicle shifting. Safe packing, timely delivery, and affordable relocation services.",
+
+    keywords:
+      "packers and movers Dibrugarh, home shifting Dibrugarh, office relocation Dibrugarh",
+
+    ogDescription:
+      "Hire trusted packers and movers in Dibrugarh for home, office and vehicle shifting. Safe packing, timely delivery, and affordable relocation services.",
+
+    twitterDescription:
+      "Hire trusted packers and movers in Dibrugarh for home, office and vehicle shifting. Safe packing, timely delivery, and affordable relocation services.",
+  },
+
+  pageData: {
+    mainHeading:
+      "Packers and Movers in Dibrugarh – Reliable & Efficient Relocation",
+
+    paragraph: [
+      "Looking for professional Gati Packers and Movers in Dibrugarh? We provide complete moving solutions for households, offices, and vehicles with a strong focus on safety and reliability.",
+
+      "Our experienced team ensures secure packing, careful transportation, and timely delivery, making us one of the best movers in Dibrugarh.",
+    ],
+
+    internationalHeading:
+      "🌍 International Packers and Movers in Dibrugarh",
+
+    internationalParagraph: [
+      "We offer secure international relocation services from Dibrugarh with professional packing and transportation support.",
+
+      "Our team ensures smooth overseas relocation with safe handling and timely delivery.",
+    ],
+
+    servicesHeading:
+      "Complete Relocation Services in Dibrugarh",
+
+    services: [
+      {
+        title: "Home Shifting Services in Dibrugarh",
+
+        desc:
+          "• Safe packing using high-quality materials\n• Careful loading and transportation\n• Unloading, unpacking, and setup assistance",
+
+        link: "/home-shifting",
+
+        linkText: "Home Shifting Services",
+      },
+
+      {
+        title: "Office Relocation in Dibrugarh",
+
+        desc:
+          "• Secure handling of office furniture and electronics\n• Organized packing of documents and files\n• Fast relocation with minimal downtime",
+
+        link: "/office-relocation",
+
+        linkText: "Office Relocation Services",
+      },
+
+      {
+        title: "Vehicle Transport Services",
+
+        desc:
+          "• Car transport services in Dibrugarh\n• Bike transport Dibrugarh\n• Safe and timely vehicle delivery",
+
+        link: "/car-bike-transport",
+
+        linkText: "Vehicle Transport Services",
+      },
+
+      {
+        title: "Packing and Unpacking Services",
+
+        desc:
+          "• Use of durable and protective packing materials\n• Reduced risk of damage during transit\n• Systematic unpacking for convenience",
+      },
+    ],
+
+    nearbyCitiesHeading:
+      "Nearby Cities We Serve",
+
+    nearbyCities: [
+      {
+        link: "/packers-and-movers-in-guwahati",
+        linkText: "Packers and Movers in Guwahati",
+      },
+
+      {
+        link: "/packers-and-movers-in-jorhat",
+        linkText: "Packers and Movers in Jorhat",
+      },
+
+      {
+        link: "/packers-and-movers-in-tinsukia",
+        linkText: "Packers and Movers in Tinsukia",
+      },
+
+      {
+        link: "/packers-and-movers-in-silchar",
+        linkText: "Packers and Movers in Silchar",
+      },
+
+      {
+        link: "/packers-and-movers-in-tezpur",
+        linkText: "Packers and Movers in Tezpur",
+      },
+    ],
+
+    faqHeading:
+      "FAQs – Packers and Movers in Dibrugarh",
+
+    faqs: [
+      {
+        q:
+          "How do you ensure safe shifting in Dibrugarh?",
+
+        a:
+          "We use quality packing materials and trained staff to handle goods safely.",
+      },
+
+      {
+        q:
+          "Do you offer complete household shifting services Dibrugarh?",
+
+        a:
+          "Yes, we provide full household relocation including packing and transport.",
+      },
+
+      {
+        q:
+          "Is vehicle transportation available?",
+
+        a:
+          "Yes, we provide car transport services in Dibrugarh and bike transport.",
+      },
+
+      {
+        q:
+          "Do you provide long-distance relocation?",
+
+        a:
+          "Yes, we handle both local and long-distance shifting services.",
+      },
+
+      {
+        q:
+          "How can I book your service?",
+
+        a:
+          "Call +91 9422799477 or email gatishiftingpackers@gmail.com.",
+      },
+    ],
+  },
+},
+  // {
+  //   slug: "packers-and-movers-in-Silchar", city: "Silchar", img: Silchar, offer: "23%", address: "Shop No - 7 Nazirpatty, Ahalee complex, Tarapur, Silchar, Assam 788001", metaDetails: {
+  //     title: "Packers and Movers in Silchar | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Silchar with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Silchar and across Assam.",
+  //     keywords: "Local movers near me Silchar, Packers and Movers in Silchar, Gati Shifting Packers Silchar, Best Packers and Movers Silchar, Affordable Packers and Movers Silchar, Trusted Packers and Movers Silchar Assam, Local Packers and Movers Silchar, Professional Movers and Packers Silchar, Home Shifting Services Silchar, Office Relocation Silchar, Vehicle Transport Silchar, Car Transport Service Silchar, Bike Transport Silchar, Household Goods Shifting Silchar, Industrial Packers and Movers Silchar, Door-to-Door Shifting Services Silchar, Packing and Unpacking Services Silchar, Furniture Movers Silchar, Intercity Packers and Movers Silchar, Packers and Movers Silchar to Guwahati, Packers and Movers Silchar to Dibrugarh, Packers and Movers Silchar to Jorhat, Packers and Movers Silchar to Tezpur, Packers and Movers Silchar to Delhi, Reliable Relocation Company Silchar, Cost-Effective Packers and Movers Silchar, Quick Packers and Movers Silchar, 24x7 Packers and Movers Silchar, Mini Truck for Shifting Silchar, Tempo Service Silchar, Best Relocation Services Silchar, Safe and Secure Moving Services Silchar, Budget-Friendly Movers Silchar, Professional Relocation Company Silchar, Long-Distance Packers and Movers Silchar, Trusted Shifting Company Silchar, Goods Transport Services Silchar.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Silchar? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Silchar and across Assam.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Silchar by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Silchar"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-silchar",
+  city: "Silchar",
+  img: Silchar,
+  offer: "15%",
+  address: "Shop No - 7 Nazirpatty, Ahalee complex, Tarapur, Silchar, Assam 788001",
+
+  keywords: [
+    "packers and movers Silchar",
+    "home shifting Silchar",
+    "office relocation Silchar",
+    "car transport Silchar",
+    "bike transport Silchar",
+  ],
+
+  metaData: {
+    title: "Top Packers Movers Silchar | Safe & Affordable Move",
+
+    description:
+      "Book reliable packers and movers in Silchar for home, office and vehicle shifting. Secure packing, fast delivery, and cost-effective relocation services.",
+
+    keywords:
+      "packers and movers Silchar, home shifting Silchar, office relocation Silchar",
+
+    ogDescription:
+      "Book reliable packers and movers in Silchar for home, office and vehicle shifting. Secure packing, fast delivery, and cost-effective relocation services.",
+
+    twitterDescription:
+      "Book reliable packers and movers in Silchar for home, office and vehicle shifting. Secure packing, fast delivery, and cost-effective relocation services.",
+  },
+
+  pageData: {
+    mainHeading:
+      "Packers and Movers in Silchar – Smooth & Secure Relocation",
+
+    paragraph: [
+      "Planning your move with Gati Packers and Movers in Silchar? We provide complete relocation solutions for households, offices, and vehicles.",
+
+      "Our trained professionals ensure safe packing, careful handling, and timely transportation, making us one of the best movers in Silchar.",
+    ],
+
+    internationalHeading:
+      "🌍 International Packers and Movers in Silchar",
+
+    internationalParagraph: [
+      "We provide secure international relocation services from Silchar with safe packing and reliable transportation.",
+
+      "Our team ensures smooth overseas shifting with complete relocation support.",
+    ],
+
+    servicesHeading:
+      "Complete Relocation Services in Silchar",
+
+    services: [
+      {
+        title: "Home Shifting Services in Silchar",
+
+        desc:
+          "• High-quality packing materials for safety\n• Careful loading and transportation\n• Unpacking and arrangement at destination",
+
+        link: "/home-shifting",
+
+        linkText: "Home Shifting Services",
+      },
+
+      {
+        title: "Office Relocation in Silchar",
+
+        desc:
+          "• Safe movement of office furniture and equipment\n• Organized packing of documents and files\n• Quick relocation to reduce downtime",
+
+        link: "/office-relocation",
+
+        linkText: "Office Relocation Services",
+      },
+
+      {
+        title: "Vehicle Transport Services",
+
+        desc:
+          "• Car transport services in Silchar\n• Bike transport Silchar\n• Door-to-door safe vehicle delivery",
+
+        link: "/car-bike-transport",
+
+        linkText: "Vehicle Transport Services",
+      },
+
+      {
+        title: "Packing and Unpacking Services",
+
+        desc:
+          "• Durable packing materials for protection\n• Reduced risk of damage during transit\n• Systematic unpacking for convenience",
+      },
+    ],
+
+    nearbyCitiesHeading:
+      "Nearby Cities We Serve",
+
+    nearbyCities: [
+      {
+        link: "/packers-and-movers-in-guwahati",
+        linkText: "Packers and Movers in Guwahati",
+      },
+
+      {
+        link: "/packers-and-movers-in-jorhat",
+        linkText: "Packers and Movers in Jorhat",
+      },
+
+      {
+        link: "/packers-and-movers-in-tinsukia",
+        linkText: "Packers and Movers in Tinsukia",
+      },
+
+      {
+        link: "/packers-and-movers-in-dibrugarh",
+        linkText: "Packers and Movers in Dibrugarh",
+      },
+
+      {
+        link: "/packers-and-movers-in-tezpur",
+        linkText: "Packers and Movers in Tezpur",
+      },
+    ],
+
+    faqHeading:
+      "FAQs – Packers and Movers in Silchar",
+
+    faqs: [
+      {
+        q:
+          "What services do you provide in Silchar?",
+
+        a:
+          "We offer home shifting, office relocation, vehicle transport, and packing services.",
+      },
+
+      {
+        q:
+          "Are your packing materials safe for fragile items?",
+
+        a:
+          "Yes, we use high-quality materials to ensure protection of delicate goods.",
+      },
+
+      {
+        q:
+          "Do you provide intercity relocation from Silchar?",
+
+        a:
+          "Yes, we handle both local and long-distance moves across India.",
+      },
+
+      {
+        q:
+          "Is vehicle transport available in Silchar?",
+
+        a:
+          "Yes, we offer car transport services in Silchar and bike transport safely.",
+      },
+
+      {
+        q:
+          "How can I book packers and movers in Silchar?",
+
+        a:
+          "Call +91 9422799477 or email gatishiftingpackers@gmail.com.",
+      },
+    ],
+  },
+},
+  // {
+  //   slug: "packers-and-movers-in-Bhilai", city: "Bhilai", img: Bhilai, offer: "23%", address: "Shop No 102 - SKCON Mandir Rd, Ambicapatty, Silchar", metaDetails: {
+  //     title: "Packers and Movers in Bhilai | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Bhilai with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Bhilai and across Chhattisgarh.",
+  //     keywords: "Local movers near me Bhilai, Packers and Movers in Bhilai, Gati Shifting Packers Bhilai, Best Packers and Movers Bhilai, Affordable Packers and Movers Bhilai, Trusted Packers and Movers Bhilai Chhattisgarh, Local Packers and Movers Bhilai, Professional Movers and Packers Bhilai, Home Shifting Services Bhilai, Office Relocation Bhilai, Vehicle Transport Bhilai, Car Transport Service Bhilai, Bike Transport Bhilai, Household Goods Shifting Bhilai, Industrial Packers and Movers Bhilai, Door-to-Door Shifting Services Bhilai, Packing and Unpacking Services Bhilai, Furniture Movers Bhilai, Intercity Packers and Movers Bhilai, Packers and Movers Bhilai to Raipur, Packers and Movers Bhilai to Durg, Packers and Movers Bhilai to Bilaspur, Packers and Movers Bhilai to Raigarh, Packers and Movers Bhilai to Nagpur, Reliable Relocation Company Bhilai, Cost-Effective Packers and Movers Bhilai, Quick Packers and Movers Bhilai, 24x7 Packers and Movers Bhilai, Mini Truck for Shifting Bhilai, Tempo Service Bhilai, Best Relocation Services Bhilai, Safe and Secure Moving Services Bhilai, Budget-Friendly Movers Bhilai, Professional Relocation Company Bhilai, Long-Distance Packers and Movers Bhilai, Trusted Shifting Company Bhilai, Goods Transport Services Bhilai.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Bhilai? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Bhilai and across Chhattisgarh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Bhilai by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Bhilai"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-bhilai",
+  city: "Bhilai",
+  img: Bhilai,
+  offer: "15%",
+  address: "Shop No 102 - SKCON Mandir Rd, Ambicapatty, Silchar",
+
+  keywords: [
+    "packers and movers Bhilai",
+    "home shifting Bhilai",
+    "office relocation Bhilai",
+    "car transport Bhilai",
+    "bike transport Bhilai",
+  ],
+
+  metaData: {
+    title: "Best Packers Movers Bhilai | Safe & Fast Shifting",
+
+    description:
+      "Hire trusted packers and movers in Bhilai for home, office and vehicle relocation. Secure packing, quick delivery, and affordable moving services.",
+
+    keywords:
+      "packers and movers Bhilai, home shifting Bhilai, office relocation Bhilai",
+
+    ogDescription:
+      "Hire trusted packers and movers in Bhilai for home, office and vehicle relocation. Secure packing, quick delivery, and affordable moving services.",
+
+    twitterDescription:
+      "Hire trusted packers and movers in Bhilai for home, office and vehicle relocation. Secure packing, quick delivery, and affordable moving services.",
+  },
+
+  pageData: {
+    mainHeading:
+      "Packers and Movers in Bhilai – Fast & Reliable Moving Solutions",
+
+    paragraph: [
+      "Looking for dependable Gati Packers and Movers in Bhilai? We provide complete relocation services for residential, commercial, and vehicle shifting needs.",
+
+      "Our expert team ensures careful packing, safe transportation, and timely delivery.",
+    ],
+
+    servicesHeading:
+      "Complete Relocation Services in Bhilai",
+
+    services: [
+      {
+        title: "Home Shifting Services in Bhilai",
+
+        desc:
+          "• Use of strong and protective packing materials\n• Safe loading and secure transportation\n• Unloading, unpacking, and rearranging items",
+
+        link: "/home-shifting",
+
+        linkText: "Home Shifting Services",
+      },
+
+      {
+        title: "Office Relocation in Bhilai",
+
+        desc:
+          "• Safe shifting of office furniture and equipment\n• Organized handling of files and documents\n• Quick relocation to minimize business downtime",
+
+        link: "/office-relocation",
+
+        linkText: "Office Relocation Services",
+      },
+
+      {
+        title: "Vehicle Transport Services",
+
+        desc:
+          "• Car transport services in Bhilai\n• Bike transport Bhilai\n• Door-to-door vehicle delivery with safety",
+
+        link: "/car-bike-transport",
+
+        linkText: "Vehicle Transport Services",
+      },
+    ],
+
+    faqHeading:
+      "FAQs – Packers and Movers in Bhilai",
+
+    faqs: [
+      {
+        q:
+          "Do you provide same-day shifting in Bhilai?",
+
+        a:
+          "Yes, for local moves we offer quick and same-day relocation services depending on availability.",
+      },
+
+      {
+        q:
+          "What type of goods can you transport?",
+
+        a:
+          "We handle household items, office goods, furniture, appliances, and vehicles safely.",
+      },
+
+      {
+        q:
+          "Do you provide packing and unpacking services Bhilai?",
+
+        a:
+          "Yes, we offer complete packing and unpacking services using quality materials.",
+      },
+
+      {
+        q:
+          "Is insurance available for relocation?",
+
+        a:
+          "Yes, we provide optional insurance coverage for added safety of your goods.",
+      },
+
+      {
+        q:
+          "How to book your services in Bhilai?",
+
+        a:
+          "Call +91 9422799477 or email gatishiftingpackers@gmail.com to schedule your move.",
+      },
+    ],
+  },
+},
+  // {
+  //   slug: "packers-and-movers-in-Durg", city: "Durg", img: Durg, offer: "23%", address: "Shop No. 9, Shikhar Apartment, Smriti Nagar, Junwani Road, Bhilai (near Ti Mall)", metaDetails: {
+  //     title: "Packers and Movers in Durg | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Durg with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Durg and across Chhattisgarh.",
+  //     keywords: "Local movers near me Durg, Packers and Movers in Durg, Gati Shifting Packers Durg, Best Packers and Movers Durg, Affordable Packers and Movers Durg, Trusted Packers and Movers Durg Chhattisgarh, Local Packers and Movers Durg, Professional Movers and Packers Durg, Home Shifting Services Durg, Office Relocation Durg, Vehicle Transport Durg, Car Transport Service Durg, Bike Transport Durg, Household Goods Shifting Durg, Industrial Packers and Movers Durg, Door-to-Door Shifting Services Durg, Packing and Unpacking Services Durg, Furniture Movers Durg, Intercity Packers and Movers Durg, Packers and Movers Durg to Raipur, Packers and Movers Durg to Bhilai, Packers and Movers Durg to Bilaspur, Packers and Movers Durg to Raigarh, Packers and Movers Durg to Nagpur, Reliable Relocation Company Durg, Cost-Effective Packers and Movers Durg, Quick Packers and Movers Durg, 24x7 Packers and Movers Durg, Mini Truck for Shifting Durg, Tempo Service Durg, Best Relocation Services Durg, Safe and Secure Moving Services Durg, Budget-Friendly Movers Durg, Professional Relocation Company Durg, Long-Distance Packers and Movers Durg, Trusted Shifting Company Durg, Goods Transport Services Durg.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Durg? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Durg and across Chhattisgarh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Durg by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Durg"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-durg",
+  city: "Durg",
+  img: Durg,
+  offer: "15%",
+  address: "Shop No. 9, Shikhar Apartment, Smriti Nagar, Junwani Road, Bhilai (near Ti Mall)",
+
+  keywords: [
+    "packers and movers Durg",
+    "home shifting Durg",
+    "office relocation Durg",
+    "car transport Durg",
+    "bike transport Durg",
+  ],
+
+  metaData: {
+    title: "Top Packers Movers Durg | Safe & Affordable Shift",
+
+    description:
+      "Choose reliable packers and movers in Durg for home, office and vehicle shifting. Safe packing, quick delivery, and budget-friendly relocation services.",
+
+    keywords:
+      "packers and movers Durg, home shifting Durg, office relocation Durg",
+
+    ogDescription:
+      "Choose reliable packers and movers in Durg for home, office and vehicle shifting. Safe packing, quick delivery, and budget-friendly relocation services.",
+
+    twitterDescription:
+      "Choose reliable packers and movers in Durg for home, office and vehicle shifting. Safe packing, quick delivery, and budget-friendly relocation services.",
+  },
+
+  pageData: {
+    mainHeading:
+      "Packers and Movers in Durg – Safe & Professional Relocation",
+
+    paragraph: [
+      "Searching for trusted Gati Packers and Movers in Durg? We provide complete relocation solutions for homes, offices, and vehicles with a focus on safety and efficiency.",
+
+      "Our skilled team ensures secure packing, smooth transportation, and on-time delivery, making us one of the best movers in Durg.",
+    ],
+
+    internationalHeading:
+      "🌍 International Packers and Movers in Durg",
+
+    internationalParagraph: [
+      "We offer secure international relocation services from Durg with safe packing and timely transportation.",
+
+      "Our experienced team ensures hassle-free overseas shifting for homes, offices, and vehicles.",
+    ],
+
+    servicesHeading:
+      "Complete Relocation Services in Durg",
+
+    services: [
+      {
+        title: "Home Shifting Services in Durg",
+
+        desc:
+          "• High-quality packing materials for protection\n• Safe loading and transportation of goods\n• Unpacking and proper arrangement at destination",
+
+        link: "/home-shifting",
+
+        linkText: "Home Shifting Services",
+      },
+
+      {
+        title: "Office Relocation in Durg",
+
+        desc:
+          "• Careful handling of office furniture and electronics\n• Organized packing of documents and files\n• Quick shifting to minimize downtime",
+
+        link: "/office-relocation",
+
+        linkText: "Office Relocation Services",
+      },
+
+      {
+        title: "Vehicle Transport Services",
+
+        desc:
+          "• Car transport services in Durg\n• Bike transport Durg\n• Secure and timely vehicle delivery",
+
+        link: "/car-bike-transport",
+
+        linkText: "Vehicle Transport Services",
+      },
+
+      {
+        title: "Packing and Unpacking Services",
+
+        desc:
+          "• Use of durable packing materials\n• Protection against damage during transit\n• Systematic unpacking for convenience",
+      },
+    ],
+
+    nearbyCitiesHeading:
+      "Nearby Cities We Serve",
+
+    nearbyCities: [
+      {
+        link: "/packers-and-movers-in-raipur",
+        linkText: "Packers and Movers in Raipur",
+      },
+
+      {
+        link: "/packers-and-movers-in-bhilai",
+        linkText: "Packers and Movers in Bhilai",
+      },
+
+      {
+        link: "/packers-and-movers-in-bilaspur",
+        linkText: "Packers and Movers in Bilaspur",
+      },
+
+      {
+        link: "/packers-and-movers-in-nagpur",
+        linkText: "Packers and Movers in Nagpur",
+      },
+
+      {
+        link: "/packers-and-movers-in-korba",
+        linkText: "Packers and Movers in Korba",
+      },
+    ],
+
+    faqHeading:
+      "FAQs – Packers and Movers in Durg",
+
+    faqs: [
+      {
+        q:
+          "How long does local shifting in Durg take?",
+
+        a:
+          "Local shifting usually takes 1 day depending on the size of the move.",
+      },
+
+      {
+        q:
+          "Do you provide household shifting services Durg?",
+
+        a:
+          "Yes, we offer complete household relocation including packing and transport.",
+      },
+
+      {
+        q:
+          "Is vehicle transportation available in Durg?",
+
+        a:
+          "Yes, we provide safe car transport services in Durg and bike transport.",
+      },
+
+      {
+        q:
+          "Do you offer intercity relocation services?",
+
+        a:
+          "Yes, we handle both local and long-distance moves across India.",
+      },
+
+      {
+        q:
+          "How can I book packers and movers in Durg?",
+
+        a:
+          "Call +91 9422799477 or email gatishiftingpackers@gmail.com.",
+      },
+    ],
+  },
+},
+  // {
+  //   slug: "packers-and-movers-in-Bilaspur", city: "Bilaspur", img: Bilaspur, offer: "23%", address: "Shop No 111 - 52, Medical Complex, Telipara, Bilaspur (GP listing)", metaDetails: {
+  //     title: "Packers and Movers in Bilaspur | Gati Shifting Packers",
+  //     desc: "Hire trusted Packers and Movers in Bilaspur with Gati Shifting Packers. We provide safe, affordable and professional home, office and vehicle relocation services in Bilaspur and across Chhattisgarh.",
+  //     keywords: "Local movers near me Bilaspur, Packers and Movers in Bilaspur, Gati Shifting Packers Bilaspur, Best Packers and Movers Bilaspur, Affordable Packers and Movers Bilaspur, Trusted Packers and Movers Bilaspur Chhattisgarh, Local Packers and Movers Bilaspur, Professional Movers and Packers Bilaspur, Home Shifting Services Bilaspur, Office Relocation Bilaspur, Vehicle Transport Bilaspur, Car Transport Service Bilaspur, Bike Transport Bilaspur, Household Goods Shifting Bilaspur, Industrial Packers and Movers Bilaspur, Door-to-Door Shifting Services Bilaspur, Packing and Unpacking Services Bilaspur, Furniture Movers Bilaspur, Intercity Packers and Movers Bilaspur, Packers and Movers Bilaspur to Raipur, Packers and Movers Bilaspur to Durg, Packers and Movers Bilaspur to Bhilai, Packers and Movers Bilaspur to Raigarh, Packers and Movers Bilaspur to Nagpur, Reliable Relocation Company Bilaspur, Cost-Effective Packers and Movers Bilaspur, Quick Packers and Movers Bilaspur, 24x7 Packers and Movers Bilaspur, Mini Truck for Shifting Bilaspur, Tempo Service Bilaspur, Best Relocation Services Bilaspur, Safe and Secure Moving Services Bilaspur, Budget-Friendly Movers Bilaspur, Professional Relocation Company Bilaspur, Long-Distance Packers and Movers Bilaspur, Trusted Shifting Company Bilaspur, Goods Transport Services Bilaspur.",
+  //     ogdesc: "Looking for reliable Packers and Movers in Bilaspur? Gati Shifting Packers offers safe, timely and affordable relocation for homes, offices and vehicles in Bilaspur and across Chhattisgarh.",
+  //     twitterdesc: "Safe, professional and affordable Packers and Movers in Bilaspur by Gati Shifting Packers. Book your smooth relocation today!",
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-Bilaspur"
+  //   }
+  // },
+  {
+  slug: "packers-and-movers-in-bilaspur",
+  city: "Bilaspur",
+  img: Bilaspur,
+  offer: "15%",
+  address: "Shop No 111 - 52, Medical Complex, Telipara, Bilaspur (GP listing)",
+
+  keywords: [
+    "packers and movers Bilaspur",
+    "home shifting Bilaspur",
+    "office relocation Bilaspur",
+    "car transport Bilaspur",
+    "bike transport Bilaspur",
+  ],
+
+  metaData: {
+    title: "Best Packers Movers Bilaspur | Safe & Reliable Move",
+
+    description:
+      "Book expert packers and movers in Bilaspur for home, office and vehicle shifting. Secure packing, timely delivery, and affordable relocation services.",
+
+    keywords:
+      "packers and movers Bilaspur, home shifting Bilaspur, office relocation Bilaspur",
+
+    ogDescription:
+      "Book expert packers and movers in Bilaspur for home, office and vehicle shifting. Secure packing, timely delivery, and affordable relocation services.",
+
+    twitterDescription:
+      "Book expert packers and movers in Bilaspur for home, office and vehicle shifting. Secure packing, timely delivery, and affordable relocation services.",
+  },
+
+  pageData: {
+    mainHeading:
+      "Packers and Movers in Bilaspur – Trusted & Efficient Shifting",
+
+    paragraph: [
+      "Looking for professional Gati Packers and Movers in Bilaspur? We provide complete relocation services for households, offices, and vehicles with a focus on safety and efficiency.",
+
+      "Our trained team ensures careful packing, smooth transportation, and on-time delivery, making us one of the best movers in Bilaspur.",
+    ],
+
+    internationalHeading:
+      "🌍 International Packers and Movers in Bilaspur",
+
+    internationalParagraph: [
+      "We provide secure international relocation services from Bilaspur with professional packing and transportation support.",
+
+      "Our experts ensure smooth overseas shifting with timely and safe delivery.",
+    ],
+
+    servicesHeading:
+      "Complete Relocation Services in Bilaspur",
+
+    services: [
+      {
+        title: "Home Shifting Services in Bilaspur",
+
+        desc:
+          "• High-quality packing materials for safety\n• Secure loading and transportation\n• Unpacking and proper arrangement at destination",
+
+        link: "/home-shifting",
+
+        linkText: "Home Shifting Services",
+      },
+
+      {
+        title: "Office Relocation in Bilaspur",
+
+        desc:
+          "• Safe handling of office furniture and electronics\n• Organized packing of documents and files\n• Quick relocation to reduce downtime",
+
+        link: "/office-relocation",
+
+        linkText: "Office Relocation Services",
+      },
+
+      {
+        title: "Vehicle Transport Services",
+
+        desc:
+          "• Car transport services in Bilaspur\n• Bike transport Bilaspur\n• Safe and timely vehicle delivery",
+
+        link: "/car-bike-transport",
+
+        linkText: "Vehicle Transport Services",
+      },
+
+      {
+        title: "Packing and Unpacking Services",
+
+        desc:
+          "• Durable packing materials for protection\n• Reduced risk of damage during transit\n• Systematic unpacking for convenience",
+      },
+    ],
+
+    nearbyCitiesHeading:
+      "Nearby Cities We Serve",
+
+    nearbyCities: [
+      {
+        link: "/packers-and-movers-in-raipur",
+        linkText: "Packers and Movers in Raipur",
+      },
+
+      {
+        link: "/packers-and-movers-in-bhilai",
+        linkText: "Packers and Movers in Bhilai",
+      },
+
+      {
+        link: "/packers-and-movers-in-durg",
+        linkText: "Packers and Movers in Durg",
+      },
+
+      {
+        link: "/packers-and-movers-in-nagpur",
+        linkText: "Packers and Movers in Nagpur",
+      },
+
+      {
+        link: "/packers-and-movers-in-korba",
+        linkText: "Packers and Movers in Korba",
+      },
+    ],
+
+    faqHeading:
+      "FAQs – Packers and Movers in Bilaspur",
+
+    faqs: [
+      {
+        q:
+          "What is the cost of shifting in Bilaspur?",
+
+        a:
+          "Charges depend on distance, quantity of goods, and services required.",
+      },
+
+      {
+        q:
+          "Do you provide complete household shifting services Bilaspur?",
+
+        a:
+          "Yes, we offer full household relocation including packing and transport.",
+      },
+
+      {
+        q:
+          "Is vehicle transport available in Bilaspur?",
+
+        a:
+          "Yes, we provide car transport services in Bilaspur and bike transport safely.",
+      },
+
+      {
+        q:
+          "Do you provide packing materials?",
+
+        a:
+          "Yes, we use high-quality packing materials for safe relocation.",
+      },
+
+      {
+        q:
+          "How can I book your service?",
+
+        a:
+          "Call +91 9422799477 or email gatishiftingpackers@gmail.com.",
+      },
+    ],
+  },
+},
+  // { slug: "packers-and-movers-in-Junagadh", city: "Junagadh", img: Junagadh, offer: "23%", address: "Shop No 08- Navi Chavand (Chaparda), Junagadh (near Civil Hospital Gate No.2 etc.)" },
+{
+  slug: "packers-and-movers-in-junagadh",
+  city: "Junagadh",
+  img: Junagadh,
+  offer: "15%",
+  address: "Shop No 08- Navi Chavand (Chaparda), Junagadh (near Civil Hospital Gate No.2 etc.)",
+
+  keywords: [
+    "packers and movers Junagadh",
+    "home shifting Junagadh",
+    "office relocation Junagadh",
+    "car transport Junagadh",
+    "bike transport Junagadh",
+  ],
+
+  metaData: {
+    title: "Top Packers Movers Junagadh | Safe & Fast Relocation",
+
+    description:
+      "Hire trusted packers and movers in Junagadh for home, office and vehicle shifting. Secure packing, quick delivery, and budget-friendly relocation services.",
+
+    keywords:
+      "packers and movers Junagadh, home shifting Junagadh, office relocation Junagadh",
+
+    ogDescription:
+      "Hire trusted packers and movers in Junagadh for home, office and vehicle shifting. Secure packing, quick delivery, and budget-friendly relocation services.",
+
+    twitterDescription:
+      "Hire trusted packers and movers in Junagadh for home, office and vehicle shifting. Secure packing, quick delivery, and budget-friendly relocation services.",
+  },
+
+  pageData: {
+    mainHeading:
+      "Packers and Movers in Junagadh – Reliable & Hassle-Free Moving",
+
+    paragraph: [
+      "Looking for professional Gati Packers and Movers in Junagadh? We offer complete relocation services for households, offices, and vehicles with a strong focus on safety and efficiency.",
+
+      "Our experienced team ensures proper packing, smooth transportation, and timely delivery, making us one of the best movers in Junagadh.",
+    ],
+
+    internationalHeading:
+      "🌍 International Packers and Movers in Junagadh",
+
+    internationalParagraph: [
+      "We provide international relocation services from Junagadh with secure packing and safe transportation support.",
+
+      "Our team ensures hassle-free overseas shifting with complete professional assistance.",
+    ],
+
+    servicesHeading:
+      "Complete Relocation Services in Junagadh",
+
+    services: [
+      {
+        title: "Home Shifting Services in Junagadh",
+
+        desc:
+          "• Use of quality packing materials for protection\n• Safe loading and transportation of goods\n• Unpacking and arrangement at your new home",
+
+        link: "/home-shifting",
+
+        linkText: "Home Shifting Services",
+      },
+
+      {
+        title: "Office Relocation in Junagadh",
+
+        desc:
+          "• Secure handling of office furniture and equipment\n• Organized packing of documents and files\n• Quick relocation to minimize downtime",
+
+        link: "/office-relocation",
+
+        linkText: "Office Relocation Services",
+      },
+
+      {
+        title: "Vehicle Transport Services",
+
+        desc:
+          "• Car transport services in Junagadh\n• Bike transport Junagadh\n• Safe and timely vehicle delivery",
+
+        link: "/car-bike-transport",
+
+        linkText: "Vehicle Transport Services",
+      },
+
+      {
+        title: "Packing and Unpacking Services",
+
+        desc:
+          "• Durable packing materials for safety\n• Protection against damage during transit\n• Systematic unpacking for convenience",
+      },
+    ],
+
+    nearbyCitiesHeading:
+      "Nearby Cities We Serve",
+
+    nearbyCities: [
+      {
+        link: "/packers-and-movers-in-rajkot",
+        linkText: "Packers and Movers in Rajkot",
+      },
+
+      {
+        link: "/packers-and-movers-in-jamnagar",
+        linkText: "Packers and Movers in Jamnagar",
+      },
+
+      {
+        link: "/packers-and-movers-in-porbandar",
+        linkText: "Packers and Movers in Porbandar",
+      },
+
+      {
+        link: "/packers-and-movers-in-ahmedabad",
+        linkText: "Packers and Movers in Ahmedabad",
+      },
+
+      {
+        link: "/packers-and-movers-in-surat",
+        linkText: "Packers and Movers in Surat",
+      },
+    ],
+
+    faqHeading:
+      "FAQs – Packers and Movers in Junagadh",
+
+    faqs: [
+      {
+        q:
+          "How do you ensure safe relocation in Junagadh?",
+
+        a:
+          "We use high-quality packing materials and trained staff to ensure safe handling.",
+      },
+
+      {
+        q:
+          "Do you provide household shifting services Junagadh?",
+
+        a:
+          "Yes, we offer complete household relocation including packing and transport.",
+      },
+
+      {
+        q:
+          "Is vehicle transport available in Junagadh?",
+
+        a:
+          "Yes, we provide car transport services in Junagadh and bike transport safely.",
+      },
+
+      {
+        q:
+          "Do you offer long-distance relocation services?",
+
+        a:
+          "Yes, we handle both local and intercity shifting efficiently.",
+      },
+
+      {
+        q:
+          "How can I book your services?",
+
+        a:
+          "Call +91 9422799477 or email gatishiftingpackers@gmail.com.",
+      },
+    ],
+  },
+},
 
 
   // {

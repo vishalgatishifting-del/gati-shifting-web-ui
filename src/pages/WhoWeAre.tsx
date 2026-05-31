@@ -1,293 +1,258 @@
+import { memo, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import AwardCertification from "../components/AwardCertification";
 import BrandList from "../components/BrandsList";
 import FAQList from "../components/FAQList";
 import GetInTouch from "../components/GetInTouch";
-import "./WhoWeAre.scss"
-import Slider from "react-slick";
-import { Box } from "@mui/material";
-import Avatar from '@mui/material/Avatar';
 import TrustUsSection from "../components/TrustUsSection";
 import ReviewVideo from "../components/ReviewVideos";
-import { Helmet } from "react-helmet-async";
+import "./WhoWeAre.scss";
+import { siteConfig } from "../config/Company";
 
+// ─── Types ────────────────────────────────────────────────────────────────────
 
-
-
-const WhoWeAre = () => {
-
-    const settings2 = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        variableWidth: true,
-        centerMode: true,
-        centerPadding: "0px",
-        autoplay: true,
-        autoplaySpeed: 2000,
-        pauseOnHover: false,
-        pauseOnFocus: false,
-        swipeToSlide: true
-    };
-
-    const keywords = [
-        "Gati Shifting Packers about us",
-        "gati packers and movers",
-        "trusted packers and movers in India",
-        "reliable packers and movers",
-        "packers and movers company profile",
-        "packers and movers with experience",
-        "leading packers and movers in India",
-        "about us moving company",
-        "trusted moving services India",
-        "professional relocation services",
-        "experienced home shifting company",
-        "about our relocation company",
-        "packing and unpacking services",
-        "best packers and movers",
-        "cheap packers and movers"
-    ];
-
-    return (
-        <>
-        <Helmet>
-            <title>Gati Shifting Packers – About India’s Reliable Relocation Experts | Trusted Movers</title>
-        </Helmet>
-            <div className="bg-attached-who-we-are">
-                <h1>Who we are?</h1>
-            </div>
-            <section id="who-we-are-section">
-                <div className="container">
-                    <div className="content">
-                        <h1>Who We Are</h1>
-                        <p>Founded in <b>2006, Gati Shifting Packers</b> has emerged as one of the most reliable and respected names in the Indian relocation and logistics industry. With our headquarters based in Mumbai and a wide network of branches across the country, we are committed to delivering top-notch shifting experiences with unmatched professionalism and care.
-
-                            Over the years, we have helped thousands of families, individuals, and businesses move safely and efficiently — whether it’s local, intercity, or interstate shifting. Our services include comprehensive packing, secure transportation, careful loading and unloading, organized unpacking, and even warehouse storage and vehicle transportation. Every move is handled with personal attention, precision, and a promise of on-time delivery.
-
-                            At the heart of Gati Shifting Packers and Movers is a team of highly skilled professionals with over a decade of hands-on experience in the logistics and moving industry. Our staff is thoroughly trained to handle fragile items, heavy furniture, electronics, office equipment, and vehicles using modern techniques and the best-quality packing materials. From bubble wrap to tamper-proof cartons and GPS-tracked transport vehicles, we ensure maximum safety at every step.
-
-                            What sets us apart is our unwavering commitment to our core values: <b>transparency, accountability, safety, timeliness, and customer satisfaction</b>. We provide upfront quotations with no hidden charges, round-the-clock customer support, and end-to-end responsibility for every move. Our clients trust us not just because we move their belongings, but because we move them with care, responsibility, and integrity.
-
-                            Our 24/7 customer care team is always ready to assist, provide real-time updates, and resolve concerns, ensuring your peace of mind throughout the shifting process. Whether you are a student moving into a hostel, a family relocating to a new city, a corporate office shifting workspace, or a car owner transporting your vehicle across states — Gati Shifting Packers and Movers is your all-in-one relocation solution.
-
-                            With over <b>18+ years of experience</b>, a growing base of loyal customers, and a passion for excellence, Gati Shifting is more than just a packers and movers company — we are your trusted relocation partner. We continue to evolve and expand, staying ahead of industry trends, investing in technology, and improving our service standards to ensure that your next move is not just a transfer of goods, but a smooth and memorable experience.
-
-                            Choose Gati Shifting Packers and Movers for a moving experience that is smooth, transparent, affordable, and backed by professionals who care. Your journey begins with us — and we ensure it begins on the right foot.</p>
-                    </div>
-                </div>
-            </section>
-
-            <ReviewVideo></ReviewVideo>
-
-
-            <GetInTouch></GetInTouch>
-            <AwardCertification></AwardCertification>
-
-            <TrustUsSection></TrustUsSection>
-
-            <BrandList></BrandList>
-            <section id="customer-review-list">
-                <h1>What Our Customers Say</h1>
-                <p className="para">Genuine feedback from people who’ve moved homes, offices & even countries with us.</p>
-
-                <div className="container">
-
-                    <Slider {...settings2}>
-                        <Box key="1" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Smooth Domestic Move</h4>
-                                    <p>"Gati made our move from Delhi to Bangalore seamless."</p>
-                                    <div className="rating">
-                                        ★★★★☆
-                                        {/* <span>4.5</span> */}
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "orange", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        A
-                                    </Avatar>
-                                    Arjun S.
-                                </div>
-                            </div>
-                        </Box>
-                        <Box key="2" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>International Relocation</h4>
-                                    <p>"Moved from Mumbai to Dubai. Excellent support."</p>
-                                    <div className="rating">
-                                        ★★★★★
-                                        {/* <span>4.5</span> */}
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "#a6a600", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        P
-                                    </Avatar>
-                                    Pooja M.
-                                </div>
-                            </div>
-                        </Box>
-                        <Box key="3" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Packing Quality</h4>
-                                    <p>"Boxes were well labeled and nothing broke."</p>
-                                    <div className="rating">
-                                        ★★★★☆
-                                        {/* <span>4.5</span> */}
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "red", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        R
-                                    </Avatar>
-                                    Ravi K.
-                                </div>
-                            </div>
-                        </Box>
-                        <Box key="4" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Fast and Reliable</h4>
-                                    <p>"They delivered from Pune to Hyderabad a day early."</p>
-                                    <div className="rating">
-                                        ★★★⯨☆
-                                        {/* <span>4.5</span> */}
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "Gray", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        S
-                                    </Avatar>
-                                    Simran T.
-                                </div>
-                            </div>
-                        </Box>
-                        <Box key="5" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Bike Transport</h4>
-                                    <p>"Bike arrived in Chennai scratch-free. Happy!"</p>
-                                    <div className="rating">
-                                        ★★★★★
-                                        {/* <span>4.5</span> */}
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "orange", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        N
-                                    </Avatar>
-                                    Neeraj B.
-                                </div>
-                            </div>
-                        </Box>
-                        <Box key="6" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Office Shift</h4>
-                                    <p>"Relocated office to Gurgaon over the weekend."</p>
-                                    <div className="rating">
-                                        ★★★★⯨
-                                        {/* <span>4.5</span> */}
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "#b80046", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        M
-                                    </Avatar>
-                                    Megha R.
-                                </div>
-                            </div>
-                        </Box>
-
-
-                        <Box key="6" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Furniture Shifting</h4>
-                                    <p>"No damage, no stress. Superb service."</p>
-                                    <div className="rating">
-                                        ★★★★★
-                                        {/* <span>4.5</span> */}
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "#ea00ff", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        K
-                                    </Avatar>
-                                    Kavita D.
-                                </div>
-                            </div>
-                        </Box>
-                        <Box key="6" sx={{ position: "relative", outline: "none" }}>
-                            <div className="card">
-                                <div className="detail">
-                                    <h4>Pet Relocation</h4>
-                                    <p>"Handled my dog with care during the move. Thankful!"</p>
-                                    <div className="rating">
-                                        ★★★★☆
-                                        {/* <span>4.5</span> */}
-                                    </div>
-                                </div>
-                                <div className="customer-name">
-                                    <Avatar
-                                        sx={{ bgcolor: "#00fff5", width: "25px", height: "25px", fontSize: "15px", marginRight: "7px" }}
-                                        alt="Remy Sharp"
-                                        src="/broken-image.jpg"
-                                    >
-                                        S
-                                    </Avatar>
-                                    Suresh P.
-                                </div>
-                            </div>
-                        </Box>
-                    </Slider>
-
-
-                </div>
-            </section>
-            <FAQList></FAQList>
-            <section id="keywords-section">
-                <h1>People also search for these Queries</h1>
-                <div className="container">
-                    {keywords.map((col) => {
-                        return <h5 className="keyword">{col}</h5>
-                    })}
-                </div>
-            </section>
-        </>
-    )
+interface Stat {
+  value: string;
+  label: string;
 }
 
-export default WhoWeAre;
+interface CoreValue {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+// ─── Constants (defined outside component to prevent re-creation on render) ──
+
+const STATS: Stat[] = [
+  { value: siteConfig.stats.totalYearOfExperience, label: "Years of Experience" },
+  { value: siteConfig.stats.totalHomesRelocated, label: "Families Moved" },
+  { value: siteConfig.stats.totalCitiesCovered, label: "Cities Covered" },
+  { value: "99%", label: "On-Time Delivery" },
+];
+
+const CORE_VALUES: CoreValue[] = [
+  {
+    icon: "🛡️",
+    title: "Transparency",
+    description:
+      "Upfront quotations with zero hidden charges — what you see is what you pay.",
+  },
+  {
+    icon: "⏱️",
+    title: "Timeliness",
+    description:
+      "GPS-tracked vehicles and strict timelines ensure your goods arrive when promised.",
+  },
+  {
+    icon: "📦",
+    title: "Safety",
+    description:
+      "Industry-best packing materials and trained handlers protect every item we touch.",
+  },
+  {
+    icon: "🤝",
+    title: "Accountability",
+    description:
+      "End-to-end ownership of your move — we don't hand off responsibility.",
+  },
+  {
+    icon: "💬",
+    title: "Customer First",
+    description:
+      "24/7 support team with real-time updates and a single point of contact.",
+  },
+  {
+    icon: "🌟",
+    title: "Excellence",
+    description:
+      "Continuously improving our standards to turn every move into a great experience.",
+  },
+];
+
+const KEYWORDS: string[] = [
+  "Gati Shifting Packers about us",
+  "gati packers and movers",
+  "trusted packers and movers in India",
+  "reliable packers and movers",
+  "packers and movers company profile",
+  "packers and movers with experience",
+  "leading packers and movers in India",
+  "about us moving company",
+  "trusted moving services India",
+  "professional relocation services",
+  "experienced home shifting company",
+  "about our relocation company",
+  "packing and unpacking services",
+  "best packers and movers",
+  "cheap packers and movers",
+];
+
+// ─── Sub-components ───────────────────────────────────────────────────────────
+
+const StatCard = memo(({ value, label }: Stat) => (
+  <div className="stat-card">
+    <span className="stat-value">{value}</span>
+    <span className="stat-label">{label}</span>
+  </div>
+));
+StatCard.displayName = "StatCard";
+
+const ValueCard = memo(({ icon, title, description }: CoreValue) => (
+  <div className="value-card">
+    <span className="value-icon" role="img" aria-label={title}>
+      {icon}
+    </span>
+    <h3 className="value-title">{title}</h3>
+    <p className="value-desc">{description}</p>
+  </div>
+));
+ValueCard.displayName = "ValueCard";
+
+// ─── Intersection Observer hook for scroll animations ────────────────────────
+
+function useRevealOnScroll(selector: string) {
+  useEffect(() => {
+    const elements = document.querySelectorAll<HTMLElement>(selector);
+    if (!elements.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            (entry.target as HTMLElement).classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    elements.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, [selector]);
+}
+
+// ─── Main Component ───────────────────────────────────────────────────────────
+
+const WhoWeAre = () => {
+  useRevealOnScroll(".reveal");
+
+  return (
+    <>
+      <Helmet>
+        <title>
+          About Us | Gati Shifting Packers – India's Trusted Relocation Experts
+        </title>
+        <meta
+          name="description"
+          content="Founded in 2008, Gati Shifting Packers is India's leading relocation company with 18+ years of experience, 50,000+ happy families, and a presence across 200+ cities."
+        />
+        <meta name="keywords" content={KEYWORDS.join(", ")} />
+      </Helmet>
+
+      {/* ── Hero ── */}
+      <section className="wwa-hero" aria-label="Who We Are hero">
+        <div className="wwa-hero__overlay" aria-hidden="true" />
+        <div className="wwa-hero__content">
+          <p className="wwa-hero__eyebrow">Est. {siteConfig.stats.since} · Mumbai, India</p>
+          <h1 className="wwa-hero__heading">Who We Are</h1>
+          <p className="wwa-hero__sub">
+            India's most trusted name in relocation — moving lives, not just
+            belongings.
+          </p>
+        </div>
+        <div className="wwa-hero__scroll-hint" aria-hidden="true">
+          <span />
+        </div>
+      </section>
+
+      {/* ── Stats Bar ── */}
+      <div className="wwa-stats" aria-label="Company statistics">
+        {STATS.map((s) => (
+          <StatCard key={s.label} {...s} />
+        ))}
+      </div>
+
+      {/* ── About Story ── */}
+      <section className="wwa-story reveal" id="about-story" aria-labelledby="story-heading">
+        <div className="wwa-story__accent" aria-hidden="true" />
+        <div className="wwa-story__body">
+          <p className="wwa-story__eyebrow">Our Story</p>
+          <h2 className="wwa-story__heading" id="story-heading">
+            Built on trust. <br />
+            <em>Driven by care.</em>
+          </h2>
+          <div className="wwa-story__text">
+            <p>
+              Founded in <strong>{siteConfig.stats.since}</strong>, Gati Shifting Packers has grown
+              into one of the most reliable names in the Indian relocation
+              industry. Headquartered in Mumbai with a wide branch network
+              nationwide, we deliver top-notch shifting experiences with
+              unmatched professionalism.
+            </p>
+            <p>
+              Over the years, we have helped thousands of families, individuals,
+              and businesses move safely — whether it's local, intercity, or
+              interstate. Our services span comprehensive packing, secure
+              transport, careful loading &amp; unloading, unpacking, warehouse
+              storage, and vehicle transportation.
+            </p>
+            <p>
+              Our team of seasoned professionals handles fragile items, heavy
+              furniture, electronics, office equipment, and vehicles using
+              modern techniques and premium packing materials — from bubble wrap
+              to tamper-proof cartons and GPS-tracked fleets.
+            </p>
+            <p>
+              With <strong>{siteConfig.stats.totalYearOfExperience} years of experience</strong> and a growing base
+              of loyal customers, Gati Shifting is more than a packers &amp;
+              movers company — we are your trusted relocation partner. Choose us
+              for a move that is smooth, transparent, affordable, and backed by
+              people who genuinely care.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Core Values ── */}
+      <section className="wwa-values reveal" id="core-values" aria-labelledby="values-heading">
+        <div className="wwa-values__header">
+          <p className="section-eyebrow">What Drives Us</p>
+          <h2 className="section-heading" id="values-heading">
+            Our Core Values
+          </h2>
+        </div>
+        <ul className="wwa-values__grid" role="list">
+          {CORE_VALUES.map((v) => (
+            <li key={v.title}>
+              <ValueCard {...v} />
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* ── Video Reviews ── */}
+      <ReviewVideo />
+
+      {/* ── Get In Touch ── */}
+      <GetInTouch />
+
+      {/* ── Awards ── */}
+      <AwardCertification />
+
+      {/* ── Trust Section ── */}
+      <TrustUsSection />
+
+      {/* ── Brand Partners ── */}
+      <BrandList />
+
+
+      {/* ── FAQ ── */}
+      <FAQList />
+
+    </>
+  );
+};
+
+export default memo(WhoWeAre);

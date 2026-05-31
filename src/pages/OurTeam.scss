@@ -1,223 +1,871 @@
-@import "../style/variables";
-.bg-attached-our-team {
+// ─────────────────────────────────────────────────────────────────────────────
+//  OurTeam.scss  — Gati Shifting Packers · Our Team Page
+//  Aesthetic: Clean White · Editorial · Bold Blue Accents · Warm & Human
+// ─────────────────────────────────────────────────────────────────────────────
+
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap");
+
+// ── Design Tokens ─────────────────────────────────────────────────────────────
+
+:root {
+  --ot-bg:            #ffffff;
+  --ot-bg-2:          #f7f8fc;
+  --ot-bg-3:          #f0f3fb;
+  --ot-surface:       #ffffff;
+  --ot-border:        rgba(0, 0, 0, 0.08);
+  --ot-accent:        #2563eb;
+  --ot-accent-2:      #0891b2;
+  --ot-accent-soft:   rgba(37, 99, 235, 0.08);
+  --ot-accent-soft-2: rgba(8, 145, 178, 0.06);
+  --ot-text-primary:  #0f172a;
+  --ot-text-muted:    #475569;
+  --ot-text-dim:      #94a3b8;
+  --ot-shadow-sm:     0 1px 4px rgba(0, 0, 0, 0.06);
+  --ot-shadow-md:     0 4px 20px rgba(0, 0, 0, 0.08);
+  --ot-shadow-lg:     0 16px 48px rgba(0, 0, 0, 0.11);
+  --ot-shadow-xl:     0 32px 80px rgba(0, 0, 0, 0.12);
+  --ot-radius:        12px;
+  --ot-radius-lg:     20px;
+  --ot-radius-xl:     28px;
+  --ot-transition:    0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --ot-font-display:  "poppins", sans-serif;
+  --ot-font-body:     "poppins", sans-serif;
+  --ot-max-width:     1240px;
+  --ot-gutter:        clamp(20px, 5vw, 60px);
+}
+
+// ── Base Utilities ────────────────────────────────────────────────────────────
+
+.ot-container {
+  width: 100%;
+  max-width: var(--ot-max-width);
+  margin: 0 auto;
+  padding: 0 var(--ot-gutter);
+}
+
+.ot-gradient-text {
+  background: linear-gradient(135deg, var(--ot-accent), var(--ot-accent-2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ot-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--ot-font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ot-accent);
+  background: var(--ot-accent-soft);
+  padding: 4px 14px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+}
+
+.ot-section-title {
+  font-family: var(--ot-font-display);
+  font-size: clamp(26px, 3.5vw, 42px);
+  font-weight: 700;
+  color: var(--ot-text-primary);
+  line-height: 1.2;
+  margin: 0 0 18px;
+  letter-spacing: -0.01em;
+}
+
+.ot-body-text {
+  font-family: var(--ot-font-body);
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--ot-text-muted);
+  max-width: 600px;
+  margin: 0 0 16px;
+}
+
+.ot-section-header {
+  text-align: center;
+  margin-bottom: 56px;
+
+  &__sub {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .ot-section-title { margin-bottom: 16px; }
+}
+
+// ── Scroll Animations ─────────────────────────────────────────────────────────
+
+.ot-anim {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 0.7s ease, transform 0.7s ease;
+
+  &--left  { transform: translateX(-32px); }
+  &--right { transform: translateX(32px); }
+  &--up    { transform: translateY(30px); }
+}
+
+.ot-anim--visible .ot-anim {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+// ── Action Buttons ────────────────────────────────────────────────────────────
+
+.ot-action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 32px;
+
+  &--dark {
+    .ot-btn--primary {
+      background: #fff;
+      color: var(--ot-accent);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      &:hover { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22); }
+    }
+    .ot-btn--outline {
+      border-color: rgba(255, 255, 255, 0.35);
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+      &:hover { background: rgba(255, 255, 255, 0.2); border-color: #fff; }
+    }
+  }
+}
+
+.ot-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 28px;
+  border-radius: 50px;
+  font-family: var(--ot-font-body);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--ot-transition);
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+
+  &--primary {
+    background: linear-gradient(135deg, var(--ot-accent), var(--ot-accent-2));
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.28);
+    &:hover { box-shadow: 0 8px 32px rgba(37, 99, 235, 0.42); transform: translateY(-2px); }
+  }
+
+  &--outline {
+    background: var(--ot-surface);
+    color: var(--ot-text-primary);
+    border: 1.5px solid var(--ot-border);
+    box-shadow: var(--ot-shadow-sm);
+    &:hover { border-color: var(--ot-accent); color: var(--ot-accent); transform: translateY(-2px); box-shadow: var(--ot-shadow-md); }
+  }
+}
+
+// ── Page Header ───────────────────────────────────────────────────────────────
+
+.ot-page-header {
+  position: relative;
+  background: url("../assets/ourTeam/outTeam.png") center / cover no-repeat;
+  padding: 130px 0 80px;
+  overflow: hidden;
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      120deg,
+      rgba(15, 23, 42, 0.88) 0%,
+      rgba(37, 99, 235, 0.55) 60%,
+      rgba(8, 145, 178, 0.35) 100%
+    );
+  }
+
+  &__content {
     position: relative;
-    margin-top: 104px;
-    width: 100%;
-    height: 400px;
-    background: url("../assets/ourTeam/outTeam.png");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    max-width: var(--ot-max-width);
+    margin: 0 auto;
+    padding: 0 var(--ot-gutter);
+    animation: otHeaderIn 0.75s ease both;
+  }
+
+  &__breadcrumb {
+    font-family: var(--ot-font-body);
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 12px;
+    letter-spacing: 0.04em;
+  }
+
+  &__title {
+    font-family: var(--ot-font-display);
+    font-size: clamp(48px, 8vw, 100px);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 16px;
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  &__subtitle {
+    font-family: var(--ot-font-body);
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0;
+    max-width: 420px;
+  }
+}
+
+@keyframes otHeaderIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+// ── Hero Section ──────────────────────────────────────────────────────────────
+
+.ot-hero {
+  background: var(--ot-bg);
+  padding: 100px 0;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  &__visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__image-wrap {
+    background: linear-gradient(135deg, var(--ot-bg-3), var(--ot-bg-2));
+    border-radius: var(--ot-radius-xl);
+    padding: 40px;
+    box-shadow: var(--ot-shadow-xl);
+    border: 1px solid var(--ot-border);
+
+    img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__floating-card {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--ot-surface);
+    border: 1px solid var(--ot-border);
+    border-radius: var(--ot-radius-lg);
+    padding: 14px 20px;
+    box-shadow: var(--ot-shadow-lg);
+    animation: otFloat 3s ease-in-out infinite;
+
+    svg {
+      color: var(--ot-accent);
+      font-size: 28px;
+      flex-shrink: 0;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      strong {
+        font-family: var(--ot-font-display);
+        font-size: 20px;
+        font-weight: 800;
+        background: linear-gradient(135deg, var(--ot-accent), var(--ot-accent-2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 1;
+      }
+
+      span {
+        font-family: var(--ot-font-body);
+        font-size: 11px;
+        color: var(--ot-text-dim);
+        margin-top: 2px;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+@keyframes otFloat {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
+}
+
+// ── Stats Section ─────────────────────────────────────────────────────────────
+
+.ot-stats {
+  background: linear-gradient(135deg, var(--ot-accent) 0%, var(--ot-accent-2) 100%);
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 40% 80% at 10% 50%, rgba(255,255,255,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 30% 60% at 90% 50%, rgba(255,255,255,0.06) 0%, transparent 60%);
+  }
+
+  &__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+}
+
+.ot-stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--ot-radius-lg);
+  padding: 28px 20px;
+  backdrop-filter: blur(10px);
+  transition: var(--ot-transition);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.18);
+    transform: translateY(-4px);
+  }
+
+  &__icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    width: 48px;
+    height: 48px;
+    border-radius: var(--ot-radius);
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    margin-bottom: 14px;
 
-    h1 {
-        font-size: 140px;
-        color: #ffffff;
-        z-index: 10;
-    }
+    svg { font-size: 22px; }
+  }
 
+  &__value {
+    display: block;
+    font-family: var(--ot-font-display);
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 1;
+    color: #fff;
+    // override gradient on blue bg
+    background: none;
+    -webkit-text-fill-color: #fff;
+    margin-bottom: 6px;
+  }
+
+  &__label {
+    font-family: var(--ot-font-body);
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
 }
 
-.bg-attached-our-team::after {
-    content: '';
+// ── What Our Team Offers ──────────────────────────────────────────────────────
+
+.ot-offers {
+  background: var(--ot-bg-2);
+  padding: 100px 0;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+.ot-offer-card {
+  background: var(--ot-surface);
+  border: 1px solid var(--ot-border);
+  border-radius: var(--ot-radius-lg);
+  padding: 32px 28px;
+  box-shadow: var(--ot-shadow-sm);
+  transition: var(--ot-transition);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #00000098;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--ot-accent), var(--ot-accent-2));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--ot-shadow-lg);
+    border-color: rgba(37, 99, 235, 0.12);
+
+    &::before { transform: scaleX(1); }
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: var(--ot-radius);
+    background: linear-gradient(135deg, var(--ot-accent-soft), var(--ot-accent-soft-2));
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    color: var(--ot-accent);
+    margin-bottom: 20px;
+
+    svg { font-size: 24px; }
+  }
+
+  &__title {
+    font-family: var(--ot-font-display);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--ot-text-primary);
+    margin: 0 0 10px;
+  }
+
+  &__desc {
+    font-family: var(--ot-font-body);
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--ot-text-muted);
+    margin: 0;
+  }
 }
 
+// ── Expertise Section ─────────────────────────────────────────────────────────
 
-@media screen and (max-width: 1100px) {
-    .bg-attached-our-team {
-        margin-top: 84px;
+.ot-expertise {
+  background: var(--ot-bg);
+  padding: 100px 0;
+  border-top: 1px solid var(--ot-border);
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+  }
+
+  &__btns { margin-top: 28px; }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--ot-bg-3), var(--ot-bg-2));
+    border-radius: var(--ot-radius-xl);
+    padding: 48px;
+    border: 1px solid var(--ot-border);
+    box-shadow: var(--ot-shadow-lg);
+
+    img {
+      width: 100%;
+      max-width: 380px;
+      height: auto;
+      display: block;
     }
+  }
 }
 
-@media screen and (max-width: 772px) {
-    .bg-attached-our-team {
-        height: 300px;
-        h1 {
-            font-size: 100px;
-        }
-    }
+// ── Departments Section ───────────────────────────────────────────────────────
+
+.ot-departments {
+  background: var(--ot-bg-3);
+  padding: 100px 0;
+  border-top: 1px solid var(--ot-border);
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
 }
 
+.ot-dept-card {
+  background: var(--ot-surface);
+  border: 1px solid var(--ot-border);
+  border-radius: var(--ot-radius-lg);
+  padding: 32px 28px;
+  box-shadow: var(--ot-shadow-sm);
+  transition: var(--ot-transition);
+  text-align: center;
 
-@media screen and (max-width: 556px) {
-    .bg-attached-our-team {
-        height: 250px;
-        h1 {
-            font-size: 60px;
-        }
-    }
-}
-#our-team-section {
-    @include font-poppins-sans(400);
-    padding: 20px;
-    margin-top: 120px;
-    margin-bottom: 50px;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--ot-shadow-lg);
+    border-color: rgba(37, 99, 235, 0.15);
+  }
 
-    .container {
-        width: 1200px;
-        margin: auto;
+  &__icon {
+    font-size: 36px;
+    display: block;
+    margin-bottom: 14px;
+    line-height: 1;
+  }
 
-        .content {
-            h1 {
-                color: #3c3c3c;
-            }
+  &__count {
+    font-family: var(--ot-font-display);
+    font-size: 28px;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--ot-accent), var(--ot-accent-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 6px;
+    line-height: 1;
+  }
 
-            h2 {
-                color: #3c3c3c;
-                margin-bottom: 20px;
-            }
+  &__name {
+    font-family: var(--ot-font-display);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ot-text-primary);
+    margin: 0 0 10px;
+  }
 
-            p {
-                color: #393939;
-            }
-
-            .logo {
-                width: 300px;
-                display: flex;
-                justify-self: center;
-                margin-bottom: 50px;
-                margin-top: 20px;
-            }
-
-            .card {
-                display: flex;
-                margin: 30px 0;
-                align-items: center;
-
-                .imgBx {
-                    img {
-                        width: 400px;
-                        margin: 0 20px;
-                    }
-                }
-            }
-
-            .card.second{
-                flex-direction: row-reverse;
-                margin-bottom: 50px;
-            }
-
-            ul {
-                margin-left: 30px;
-                li{
-                color: #393939;
-                }
-            }
-        }
-    }
+  &__desc {
+    font-family: var(--ot-font-body);
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--ot-text-muted);
+    margin: 0;
+  }
 }
 
+// ── Why Choose Section ────────────────────────────────────────────────────────
 
-@media screen and (max-width: 1229px) {
-    #our-team-section {
+.ot-why {
+  background: var(--ot-bg);
+  padding: 100px 0;
 
-        .container {
-            width: 100%;
-        }
-    }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
 }
 
-@media screen and (max-width: 1101px) {
-    #our-team-section {
-        margin-top: 63px;
+.ot-why-card {
+  background: var(--ot-surface);
+  border: 1px solid var(--ot-border);
+  border-radius: var(--ot-radius-lg);
+  padding: 32px 28px;
+  box-shadow: var(--ot-shadow-sm);
+  transition: var(--ot-transition);
 
-        .container{
-            .content{
-                .card{
-                    .imgBx{
-                        img{
-                            margin: 0 5px;
-                        }
-                    }
-                }
-            }
-        }
-    }
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--ot-shadow-lg);
+    border-color: rgba(37, 99, 235, 0.15);
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: var(--ot-radius);
+    background: linear-gradient(135deg, var(--ot-accent-soft), var(--ot-accent-soft-2));
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    color: var(--ot-accent);
+    margin-bottom: 20px;
+
+    svg { font-size: 24px; }
+  }
+
+  &__title {
+    font-family: var(--ot-font-display);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--ot-text-primary);
+    margin: 0 0 10px;
+  }
+
+  &__desc {
+    font-family: var(--ot-font-body);
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--ot-text-muted);
+    margin: 0;
+  }
 }
 
-@media screen and (max-width: 886px) {
-    #our-team-section {
-        .container{
-            .content{
-                h2{
-                    margin-bottom: 10px;
-                }
-                .card{
-                    .imgBx{
-                        img{
-                            width: 300px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 728px) {
-    #our-team-section {
-        .container{
-            .content{
-                h2{
-                    margin-bottom: 10px;
-                }
-                .card{
-                    flex-direction: column;
-                    .imgBx{
-                        img{
-                            margin: 20px 0;
-                        }
-                    }
-                }
-                .card.second{
-                    flex-direction: column;
-                }
-            }
-        }
-    }
+// ── Core Values Section ───────────────────────────────────────────────────────
+
+.ot-values {
+  background: var(--ot-bg-2);
+  padding: 100px 0;
+  border-top: 1px solid var(--ot-border);
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
 }
 
+.ot-value-card {
+  background: var(--ot-surface);
+  border: 1px solid var(--ot-border);
+  border-radius: var(--ot-radius-xl);
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: var(--ot-shadow-sm);
+  transition: var(--ot-transition);
 
-@media screen and (max-width: 552px) {
-    #our-team-section {
-        .container{
-            .content{
-                .logo{
-                    margin: 20px 0;
-                }
-                h1{
-                    font-size: 25px;
-                    margin-bottom: 10px;
-                }
-                h2{
-                    font-size: 18px;
-                }
-                p{
-                    font-size: 14px;
-                }
-                ul li{
-                    font-size: 14px;
-                }
-            }
-        }
-    }
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--ot-shadow-lg);
+    border-color: rgba(37, 99, 235, 0.15);
+  }
+
+  &__icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 16px;
+    line-height: 1;
+  }
+
+  &__title {
+    font-family: var(--ot-font-display);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ot-text-primary);
+    margin: 0 0 10px;
+  }
+
+  &__desc {
+    font-family: var(--ot-font-body);
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--ot-text-muted);
+    margin: 0;
+  }
 }
-@media screen and (max-width: 457px) {
-    #our-team-section {
-        .container{
-            .content{
-                h1{
-                    font-size: 20px;
-                }
-            }
-        }
+
+// ── Destinations Coverage ─────────────────────────────────────────────────────
+
+.ot-destinations {
+  background: var(--ot-bg);
+  padding: 100px 0;
+
+  &__cols {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 48px;
+    align-items: start;
+    margin-bottom: 32px;
+  }
+
+  &__divider {
+    width: 1px;
+    background: var(--ot-border);
+    align-self: stretch;
+    margin: 20px 0;
+  }
+
+  &__col-title {
+    font-family: var(--ot-font-display);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ot-text-primary);
+    margin: 0 0 20px;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  &__note {
+    text-align: center;
+    font-family: var(--ot-font-body);
+    font-size: 14px;
+    color: var(--ot-text-muted);
+    padding: 16px;
+    background: var(--ot-accent-soft);
+    border-radius: var(--ot-radius);
+    border: 1px solid rgba(37, 99, 235, 0.12);
+
+    a {
+      color: var(--ot-accent);
+      font-weight: 600;
+      text-decoration: none;
+      &:hover { text-decoration: underline; }
     }
+  }
+}
+
+.ot-dest-tag {
+  display: inline-block;
+  font-family: var(--ot-font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ot-text-muted);
+  background: var(--ot-bg-2);
+  border: 1px solid var(--ot-border);
+  padding: 6px 14px;
+  border-radius: 50px;
+  transition: var(--ot-transition);
+
+  &:hover {
+    background: var(--ot-accent-soft);
+    color: var(--ot-accent);
+    border-color: rgba(37, 99, 235, 0.2);
+  }
+
+  &--intl {
+    background: var(--ot-accent-soft);
+    color: var(--ot-accent);
+    border-color: rgba(37, 99, 235, 0.15);
+
+    &:hover {
+      background: var(--ot-accent);
+      color: #fff;
+      border-color: var(--ot-accent);
+    }
+  }
+}
+
+// ── Final CTA ─────────────────────────────────────────────────────────────────
+
+.ot-cta {
+  position: relative;
+  background: linear-gradient(135deg, var(--ot-accent) 0%, var(--ot-accent-2) 100%);
+  padding: 100px 0;
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 50% 80% at 10% 50%, rgba(255,255,255,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 30% 60% at 90% 50%, rgba(255,255,255,0.06) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  &__inner {
+    position: relative;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: var(--ot-font-display);
+    font-size: clamp(28px, 4.5vw, 48px);
+    font-weight: 800;
+    color: #fff;
+    margin: 12px 0 16px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+
+  &__sub {
+    font-family: var(--ot-font-body);
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.82);
+    max-width: 580px;
+    margin: 0 auto;
+    line-height: 1.75;
+  }
+
+  &__btns { justify-content: center; }
+
+  .ot-label {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+}
+
+// ── Responsive ────────────────────────────────────────────────────────────────
+
+@media (max-width: 1100px) {
+  .ot-offers__grid,
+  .ot-departments__grid,
+  .ot-why__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .ot-values__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .ot-stats__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 860px) {
+  .ot-hero__inner,
+  .ot-expertise__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .ot-hero__visual,
+  .ot-expertise__image { display: none; }
+
+  .ot-destinations__cols {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .ot-destinations__divider { display: none; }
+
+  .ot-action-buttons { justify-content: center; }
+  .ot-body-text { max-width: 100%; }
+}
+
+@media (max-width: 640px) {
+  .ot-offers__grid,
+  .ot-departments__grid,
+  .ot-why__grid,
+  .ot-values__grid { grid-template-columns: 1fr; }
+
+  .ot-stats__grid { grid-template-columns: repeat(2, 1fr); }
+
+  .ot-btn { width: 100%; justify-content: center; }
+  .ot-action-buttons { flex-direction: column; }
+
+  .ot-page-header {
+    padding: 100px 0 60px;
+    &__title { font-size: 52px; }
+  }
 }

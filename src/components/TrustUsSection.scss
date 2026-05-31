@@ -1,136 +1,194 @@
-#trust-us-section {
 
-  padding: 80px 20px;
-//   background: #f8fbff;
+@import "../style/variables";
+
+// ── Tokens ──
+$primary:     #1a6ef5;
+$whatsapp:    #25d366;
+$call:        #ff5722;
+$text-dark:   #0f172a;
+$text-mid:    #475569;
+$border:      #e2e8f0;
+$radius:      20px;
+$transition:  0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+// ── Section ──
+.tus-section {
+  padding: 90px 20px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 
-
-  .trust-header {
-
-    margin-bottom: 50px;
-
-    h2 {
-      font-size: 34px;
-      font-weight: 700;
-      color: #111;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: #666;
-      font-size: 16px;
-      max-width: 600px;
-      margin: auto;
-    }
-
+  // top separator
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, $border, transparent);
   }
 
-
-  .cards {
-
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    max-width: 1100px;
-    margin: auto;
-
-
-    .card {
-
-      background: white;
-      padding: 30px 20px;
-      border-radius: 16px;
-
-      text-decoration: none;
-      color: #111;
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      transition: all 0.3s ease;
-
-      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-
-
-      &:hover {
-
-        transform: translateY(-8px);
-        box-shadow: 0 15px 35px rgba(0,0,0,0.12);
-
-      }
-
-
-      .icon-box {
-
-        width: 70px;
-        height: 70px;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        border-radius: 16px;
-
-        margin-bottom: 15px;
-
-        background: linear-gradient(135deg, #23acf1, #1b8ed1);
-
-        .icon {
-
-          font-size: 36px;
-          color: white;
-
-        }
-
-      }
-
-
-      .whatsapp {
-        background: linear-gradient(135deg, #25D366, #128C7E);
-      }
-
-      .call {
-        background: linear-gradient(135deg, #ff6a00, #ff3c00);
-      }
-
-
-      span {
-
-        // font-weight: 600;
-        font-size: 15px;
-
-      }
-
-    }
-
-  }
-
+  @media (max-width: 580px) { padding: 60px 16px; }
 }
 
-
-@media(max-width: 1000px){
-
-  #trust-us-section .cards{
-    grid-template-columns: repeat(3, 1fr);
-  }
-
+// ── Header ──
+.tus-header {
+  margin-bottom: 52px;
 }
 
-
-@media(max-width: 600px){
-
-  #trust-us-section .cards{
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+.tus-header__eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $primary-color;
+  margin: 0 0 12px;
 }
 
+.tus-header__title {
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 800;
+  color: $text-dark;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
 
-@media(max-width: 400px){
+.tus-header__highlight {
+  color: $primary-color;
+  position: relative;
 
-  #trust-us-section .cards{
-    grid-template-columns: 1fr;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, $primary-color, #60a5fa);
+    border-radius: 2px;
+  }
+}
+
+.tus-header__desc {
+  font-size: 15px;
+  color: $text-mid;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+// ── Grid ──
+.tus-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  @media (max-width: 1000px) { grid-template-columns: repeat(3, 1fr); }
+  @media (max-width: 600px)  { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 400px)  { grid-template-columns: 1fr; }
+}
+
+// ── Card ──
+.tus-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 28px 16px 22px;
+  border-radius: $radius;
+  background: #fff;
+  border: 1px solid $border;
+  text-decoration: none;
+  color: $text-dark;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition:
+    transform    $transition,
+    box-shadow   $transition,
+    border-color $transition;
+
+  // shimmer line at top on hover
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: $radius $radius 0 0;
+    opacity: 0;
+    transition: opacity $transition;
   }
 
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+    border-color: transparent;
+
+    &::before { opacity: 1; }
+
+    .tus-card__arrow {
+      opacity: 1;
+      transform: translateX(3px);
+    }
+  }
+
+  // ── Theme variants ──
+  &--default::before  { background: linear-gradient(90deg, $primary-color, #60a5fa); }
+  &--whatsapp::before { background: linear-gradient(90deg, $whatsapp, #128c7e); }
+  &--call::before     { background: linear-gradient(90deg, $call, #ff8a50); }
+
+  &--whatsapp:hover { box-shadow: 0 16px 40px rgba(37, 211, 102, 0.15); }
+  &--call:hover     { box-shadow: 0 16px 40px rgba(255, 87, 34, 0.15); }
+}
+
+// ── Icon ──
+.tus-card__icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform $transition;
+
+  svg {
+    width: 28px;
+    height: 28px;
+    color: #fff;
+  }
+
+  &--default  { background: linear-gradient(135deg, $primary-color, #1557d0); }
+  &--whatsapp { background: linear-gradient(135deg, $whatsapp, #128c7e); }
+  &--call     { background: linear-gradient(135deg, $call, #e64a19); }
+}
+
+.tus-card:hover .tus-card__icon {
+  transform: scale(1.1) rotate(-4deg);
+}
+
+// ── Label ──
+.tus-card__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: $text-dark;
+  text-align: center;
+  line-height: 1.3;
+}
+
+// ── Arrow ──
+.tus-card__arrow {
+  width: 16px;
+  height: 16px;
+  color: $text-mid;
+  opacity: 0;
+  transform: translateX(0);
+  transition:
+    opacity   $transition,
+    transform $transition;
 }

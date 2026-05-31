@@ -51,9 +51,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <ChaportWidget></ChaportWidget>
             <PopUp visibility={visibilityCondition} condition={setVisibilityCondition}></PopUp>
             <Navbar successCondition={setVisibilityCondition} setOpen={setOpen} open={open} />
+            <main style={{ paddingTop:"var(--header-h)" }}>
             <ScrollToTop>
                 {children}
             </ScrollToTop>
+            </main>
             <Footer />
         </>
     );

@@ -1,188 +1,404 @@
 @import "../style/variables";
 
-#customer-support-sec {
-    @include font-poppins-sans(400);
-    margin-top: 140px;
-    padding: 0 20px;
+// ── Design Tokens ─────────────────────────────────────────────────────────────
+$cs-navy:        #0f1f3d;
+$cs-blue:        #2563eb;
+$cs-blue-light:  #eff6ff;
+$cs-ink:         #1a1a2e;
+$cs-muted:       #4a5568;
+$cs-surface:     #f8f9fc;
+$cs-card:        #ffffff;
+$cs-border:      #e2e8f0;
+$cs-radius:      14px;
+$cs-radius-sm:   8px;
+$cs-shadow-sm:   0 2px 10px rgba(0, 0, 0, 0.06);
+$cs-shadow-md:   0 8px 28px rgba(0, 0, 0, 0.1);
 
-    .container {
-        width: 1000px;
-        margin: 0 auto;
-
-        .content {
-            margin: 30px 0;
-            box-shadow: 0 5px 8px #00000040;
-            padding: 20px;
-            border-radius: 10px;
-
-            h1 {
-                text-align: center;
-                color: $primary-color;
-            }
-
-            h2 {
-                margin-top: 50px;
-                margin-bottom: 20px;
-            }
-
-            h3 {
-                margin-bottom: 10px;
-                margin-top: 30px;
-                display: flex;
-            }
-
-            p {
-
-                color: #303030;
-            }
-
-            .css-y2ff7i-MuiPaper-root-MuiTableContainer-root {
-                margin: 20px 0;
-            }
-
-            ul {
-                margin-left: 30px;
-
-
-                li {
-
-                    margin: 5px 0;
-                    color: #303030;
-                }
-            }
-        }
-
-        .quick-support {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-
-            .card {
-                box-shadow: 0 5px 8px #00000040;
-                padding: 20px;
-                border-radius: 10px;
-                border: 1px solid #00000039;
-                transition: .2s;
-
-                h3 {
-                    margin: 10px 0;
-                    text-align: center;
-                }
-
-                p {
-                    font-size: 14px;
-                    margin-bottom: 20px;
-                    text-align: center;
-                }
-
-                a {
-                    margin: 30px 0;
-                    display: block;
-                    text-decoration: none;
-                    text-align: center;
-                    width: 100%;
-                }
-
-                a:hover {
-                    text-decoration: underline;
-                }
-            }
-
-            .card:hover {
-                margin-top: -10px;
-                box-shadow: 0 10px 20px #00000040;
-            }
-        }
-    }
+// ── Shared layout ─────────────────────────────────────────────────────────────
+.cs-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-
-
-
-@media screen and (max-width: 1101px) {
-    #customer-support-sec {
-        margin-top: 80px;
-    }
+.cs-section {
+  background: $cs-surface;
+  padding: 72px 0;
 }
 
-@media screen and (max-width: 1040px) {
-    #customer-support-sec {
-        .container {
-            width: 100%;
-        }
-    }
+.cs-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $cs-blue;
+  background: $cs-blue-light;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 14px;
 }
 
-@media screen and (max-width: 900px) {
-    #customer-support-sec {
-        .container {
-            .content {
-                h2 {
-                    font-size: 20px;
-                }
+// ── Hero ──────────────────────────────────────────────────────────────────────
+.cs-hero {
+  position: relative;
+  min-height: 360px;
+  background: linear-gradient(135deg, $cs-navy 0%, #162d5e 60%, #1e3a7a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 
-                p {
-                    font-size: 15px;
-                }
-            }
-        }
+  // Geometric accent grid overlay
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(#fff, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(#fff, 0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  // Bottom accent strip
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, $cs-blue, #7c3aed, $cs-blue);
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 70% 50%, rgba(#4f8ef7, 0.15), transparent 60%);
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 24px;
+    animation: csFadeUp 0.7s ease both;
+
+    h1 {
+      font-size: clamp(32px, 6vw, 60px);
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin: 12px 0 16px;
+      text-shadow: 0 2px 24px rgba(0, 0, 0, 0.3);
     }
+
+    p {
+      font-size: clamp(14px, 2vw, 18px);
+      color: rgba(#fff, 0.72);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  }
+
+  &__eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #93c5fd;
+    background: rgba(#fff, 0.08);
+    border: 1px solid rgba(#fff, 0.16);
+    padding: 5px 14px;
+    border-radius: 100px;
+  }
 }
 
-@media screen and (max-width: 851px) {
-    #customer-support-sec {
-        .container {
-            .quick-support {
-                grid-template-columns: repeat(1, 1fr);
-            }
-        }
-    }
+@keyframes csFadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
+// ── Intro ─────────────────────────────────────────────────────────────────────
+.cs-intro {
+  background: $cs-card;
+  border: 1px solid $cs-border;
+  border-radius: $cs-radius;
+  padding: 40px;
+  margin-bottom: 36px;
+  box-shadow: $cs-shadow-sm;
 
-@media screen and (max-width: 534px) {
-    #customer-support-sec {
-    padding: 0 10px;
-        .container {
-            .content {
-                padding: 13px;
-                h2 {
-                    font-size: 20px;
-                }
+  h2 {
+    font-size: clamp(20px, 2.8vw, 28px);
+    font-weight: 800;
+    color: $cs-ink;
+    margin: 0 0 16px;
+    letter-spacing: -0.02em;
+  }
 
-                p {
-                    font-size: 14px;
-                }
-
-                ul{
-                    margin-left: 20px;
-                    li{
-                    font-size: 14px;
-                    }
-                }
-            }
-        }
-    }
+  > p {
+    font-size: 15px;
+    color: $cs-muted;
+    line-height: 1.8;
+    margin-bottom: 28px;
+  }
 }
 
+.cs-response-note {
+  margin-top: 16px !important;
+  font-size: 13px !important;
+  color: $cs-muted !important;
+  padding: 10px 14px;
+  background: $cs-blue-light;
+  border-radius: $cs-radius-sm;
+  border-left: 3px solid $cs-blue;
+}
 
+// ── Contact table ─────────────────────────────────────────────────────────────
+.cs-table-wrap {
+  border-radius: $cs-radius-sm;
+  overflow: hidden;
+  border: 1px solid $cs-border;
+  margin: 24px 0 16px;
+}
 
-@media screen and (max-width: 443px) {
-    #customer-support-sec {
-        .container {
-            .card.c1 {
-                margin-bottom: 20px;
+.cs-table {
+  .MuiTableHead-root .MuiTableRow-root {
+    background: $cs-blue;
 
-                .details {
-                    h2 {
-                        font-size: 17px;
-                    }
-
-                    p {
-                        font-size: 13px;
-                    }
-                }
-            }
-        }
+    .MuiTableCell-root {
+      color: #fff;
+      font-weight: 700;
+      font-size: 13px;
+      border: none;
+      padding: 14px 20px;
     }
+  }
+
+  .MuiTableBody-root .MuiTableRow-root {
+    transition: background 0.15s;
+
+    &:nth-of-type(even) { background: $cs-surface; }
+    &:hover             { background: $cs-blue-light; }
+
+    .MuiTableCell-root {
+      font-size: 13.5px;
+      color: $cs-ink;
+      padding: 14px 20px;
+      vertical-align: top;
+      border-color: $cs-border;
+    }
+  }
+}
+
+.cs-email-link {
+  display: block;
+  color: $cs-blue;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 4px;
+  transition: color 0.15s;
+
+  &:hover { color: darken($cs-blue, 12%); text-decoration: underline; }
+  &:last-child { margin-bottom: 0; }
+}
+
+// ── Quick contact cards ───────────────────────────────────────────────────────
+.cs-quick-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 56px;
+}
+
+.cs-quick-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px 24px;
+  background: $cs-card;
+  border: 1px solid $cs-border;
+  border-radius: $cs-radius;
+  text-decoration: none;
+  box-shadow: $cs-shadow-sm;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: $cs-shadow-md;
+    border-color: var(--card-color);
+
+    .cs-quick-card__icon { background: var(--card-color); svg { color: #fff; } }
+  }
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    border-radius: $cs-radius-sm;
+    background: var(--card-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    transition: background 0.22s;
+
+    svg {
+      font-size: 22px !important;
+      color: var(--card-color);
+      transition: color 0.22s;
+    }
+  }
+
+  strong {
+    font-size: 15px;
+    font-weight: 700;
+    color: $cs-ink;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 13px;
+    color: $cs-muted;
+    line-height: 1.65;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  &__cta {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--card-color);
+    word-break: break-all;
+  }
+}
+
+// ── Support stages ────────────────────────────────────────────────────────────
+.cs-stages {
+  h2 {
+    font-size: clamp(20px, 2.8vw, 28px);
+    font-weight: 800;
+    color: $cs-ink;
+    margin: 0 0 36px;
+    letter-spacing: -0.02em;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+.cs-stage-card {
+  background: $cs-card;
+  border: 1px solid $cs-border;
+  border-radius: $cs-radius;
+  padding: 28px 24px;
+  box-shadow: $cs-shadow-sm;
+  border-top: 3px solid var(--stage-color);
+  transition: transform 0.22s, box-shadow 0.22s;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $cs-shadow-md;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+
+    h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: $cs-ink;
+      margin: 0;
+    }
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: $cs-radius-sm;
+    background: var(--stage-color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    svg {
+      font-size: 20px !important;
+      color: var(--stage-color);
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      font-size: 13px;
+      color: $cs-muted;
+      line-height: 1.6;
+      padding-left: 18px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--stage-color);
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+// ── Loading skeleton ──────────────────────────────────────────────────────────
+.cs-loading {
+  height: 100px;
+  background: $cs-border;
+  border-radius: $cs-radius;
+  margin: 24px auto;
+  max-width: 900px;
+  animation: csPulse 1.4s ease-in-out infinite;
+}
+
+@keyframes csPulse {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 0.85; }
+}
+
+// ── Responsive ────────────────────────────────────────────────────────────────
+@media (max-width: 900px) {
+  .cs-stages__grid  { grid-template-columns: 1fr; }
+  .cs-quick-grid    { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 700px) {
+  .cs-section { padding: 48px 0; }
+  .cs-intro   { padding: 24px 20px; }
+
+  .cs-quick-card { flex-direction: row; flex-wrap: wrap; gap: 12px; align-items: center;
+    &__icon { margin-bottom: 0; width: 40px; height: 40px; }
+    strong  { width: calc(100% - 52px); margin-bottom: 0; }
+    p       { width: 100%; margin-bottom: 8px; }
+  }
+}
+
+@media (max-width: 480px) {
+  .cs-stage-card { padding: 20px 16px; }
+  .cs-intro h2   { font-size: 19px; }
 }

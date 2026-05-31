@@ -1,128 +1,409 @@
 @import "../style/variables";
 
-#privacypolicysec {
-    @include font-poppins-sans(400);
-    margin-top: 150px;
-    padding: 0 20px;
+// ─── Design Tokens ───────────────────────────────────────────────────────────
+$pp-blue        : #1a6fc4;
+$pp-blue-light  : #e8f4fd;
+$pp-blue-deep   : #0d3f75;
+$pp-text        : #111827;
+$pp-muted       : #6b7280;
+$pp-border      : #e5e7eb;
+$pp-surface     : #ffffff;
+$pp-surface-alt : #f8fafc;
+$pp-radius      : 16px;
+$pp-radius-sm   : 8px;
+$pp-radius-full : 50px;
 
-    .container {
-        width: 900px;
-        margin: 0 auto;
-
-        .content {
-            h1 {
-                text-align: center;
-                color: #3d4044;
-                margin-bottom: 20px;
-            }
-
-            p {
-                color: #4b5563;
-            }
-
-            .card {
-                position: relative;
-                margin: 30px 0;
-                box-shadow: 0 5px 9px rgb(0 0 0 / 13%);
-                padding: 20px;
-                padding-left: 30px;
-                border-radius: 10px;
-                overflow: hidden;
-
-                h2 {
-                    border-bottom: 1px solid #000;
-                    margin-bottom: 10px;
-                    padding-bottom: 5px;
-                    color: #4b5563;
-                }
-
-                ul {
-                    margin-bottom: 20px;
-                    margin-top: 5px;
-                    margin-left: 20px;
-                }
-
-                p,
-                li {
-                    font-size: 14px;
-                    color: #4b5563;
-                }
-            }
-
-            .card::after {
-                content: '';
-                position: absolute;
-                left: 0;
-                top: 0;
-                height: 100%;
-                width: 7px;
-                background: $primary-color;
-            }
-        }
-    }
+// ─── Page wrapper ────────────────────────────────────────────────────────────
+#privacy-policy-page {
+  @include font-poppins-sans(400);
 }
 
+// ═══════════════════════════════════════════════════════════════════════════
+// HERO
+// ═══════════════════════════════════════════════════════════════════════════
+#pp-hero {
+  position: relative;
+  padding: 160px 24px 100px;
+  text-align: center;
+  overflow: hidden;
+  background: $pp-blue-deep;
 
-@media screen and (max-width: 1101px) {
-    #privacypolicysec {
-        margin-top: 80px;
-    }
+  // ── background layers ──
+  .pp-hero__bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .pp-hero__grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .pp-hero__glow {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    height: 500px;
+    background: radial-gradient(ellipse, rgba(26,111,196,0.55) 0%, transparent 70%);
+    filter: blur(60px);
+  }
+
+  // ── content ──
+  .pp-hero__content {
+    position: relative;
+    z-index: 1;
+    max-width: 680px;
+    margin-inline: auto;
+  }
 }
-@media screen and (max-width: 933px) {
-    #privacypolicysec {
-        @include font-poppins-sans(400);
 
-        .container {
-            width: 100%;
-        }
-    }
+.pp-eyebrow {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 5px 14px;
+  border-radius: $pp-radius-full;
+  margin-bottom: 20px;
 }
-@media screen and (max-width: 665px) {
-    #privacypolicysec {
-        @include font-poppins-sans(400);
 
-        .container {
-            
-            .content{
-                h1{
-                    font-size: 25px;
-                }
-
-                .card{
-                    padding-left: 20px;
-                    h2{
-                        font-size: 20px;
-                    }
-                }
-            }
-        }
-    }
+.pp-hero__title {
+  font-size: clamp(36px, 6vw, 64px);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin: 0 0 20px;
+  letter-spacing: -0.02em;
 }
-@media screen and (max-width: 433px) {
-    #privacypolicysec {
-        padding: 0 10px;
-        .container {
-            
-            .content{
-                h1{
-                    font-size: 20px;
-                }
-                p{
-                    
-                    font-size: 14px;
-                }
 
-                .card{
-                    margin: 20px 0;
-                    h2{
-                        font-size: 17px;
-                    }
+.pp-hero__subtitle {
+  font-size: 15px;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.65);
+  margin: 0 0 32px;
+}
 
-                    p,li{
-                        font-size: 13px;
-                    }
-                }
-            }
-        }
+.pp-hero__meta {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pp-meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 6px 14px;
+  border-radius: $pp-radius-full;
+}
+
+.pp-meta-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4ade80;
+  flex-shrink: 0;
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// CONTENT LAYOUT (Sidebar TOC + Main)
+// ═══════════════════════════════════════════════════════════════════════════
+#pp-content {
+  background: $pp-surface-alt;
+  padding: 80px 24px 100px;
+}
+
+.pp-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 48px;
+  max-width: 1080px;
+  margin-inline: auto;
+  align-items: start;
+}
+
+// ── Sticky TOC ──────────────────────────────────────────────────────────────
+.pp-toc {
+  position: sticky;
+  top: 100px;
+  background: $pp-surface;
+  border: 1px solid $pp-border;
+  border-radius: $pp-radius;
+  padding: 24px;
+
+  &__label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $pp-muted;
+    margin: 0 0 16px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: $pp-radius-sm;
+    text-decoration: none;
+    transition: background 0.15s, color 0.15s;
+    color: $pp-muted;
+
+    &:hover {
+      background: $pp-blue-light;
+      color: $pp-blue;
+
+      .pp-toc__num { color: $pp-blue; }
     }
+  }
+
+  &__num {
+    font-size: 10px;
+    font-weight: 700;
+    color: #c4c9d0;
+    flex-shrink: 0;
+    width: 20px;
+    transition: color 0.15s;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.35;
+  }
+}
+
+// ── Cards ────────────────────────────────────────────────────────────────────
+.pp-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pp-card {
+  background: $pp-surface;
+  border: 1px solid $pp-border;
+  border-radius: $pp-radius;
+  padding: 36px 36px 36px 28px;
+  display: flex;
+  gap: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+
+  // left accent bar
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background: $pp-blue;
+    border-radius: 4px 0 0 4px;
+  }
+
+  &:hover {
+    box-shadow: 0 8px 32px rgba(26,111,196,0.10);
+    transform: translateX(3px);
+  }
+
+  // ── section number badge ──
+  &__number {
+    font-size: 13px;
+    font-weight: 700;
+    color: $pp-blue;
+    background: $pp-blue-light;
+    border-radius: $pp-radius-sm;
+    padding: 6px 10px;
+    height: fit-content;
+    flex-shrink: 0;
+    letter-spacing: 0.04em;
+    line-height: 1;
+  }
+
+  &__body {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__title {
+    font-size: 17px;
+    font-weight: 700;
+    color: $pp-text;
+    margin: 0 0 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    line-height: 1.3;
+  }
+
+  &__subtitle {
+    font-size: 12px;
+    font-weight: 500;
+    color: $pp-muted;
+    letter-spacing: 0.02em;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: $pp-muted;
+    margin: 0;
+    white-space: pre-line;   // renders paragraph breaks in template literals
+  }
+
+  // ── list ──
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+      color: $pp-muted;
+    }
+  }
+
+  // ── contact box ──
+  &__contact-box {
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    background: $pp-blue-light;
+    border: 1px solid darken($pp-blue-light, 6%);
+    border-radius: $pp-radius-sm;
+    padding: 12px 20px;
+  }
+
+  &__footer-note {
+    margin-top: 16px;
+    font-size: 13px;
+    color: $pp-muted;
+    font-style: italic;
+  }
+}
+
+.pp-list-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: $pp-blue;
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+
+.pp-contact-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: $pp-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.pp-contact-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: $pp-blue;
+  text-decoration: none;
+  word-break: break-all;
+
+  &:hover {
+    text-decoration: underline;
+    color: darken($pp-blue, 10%);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════════════════
+// RESPONSIVE
+// ═══════════════════════════════════════════════════════════════════════════
+
+// Hide TOC on tablet, show full width
+@media (max-width: 960px) {
+  .pp-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .pp-toc {
+    position: static;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 12px 24px;
+    align-items: start;
+
+    &__label { grid-column: 1 / -1; margin-bottom: 0; }
+
+    &__list {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #pp-hero { padding: 120px 20px 72px; }
+
+  .pp-toc__list { grid-template-columns: repeat(2, 1fr) !important; }
+
+  .pp-card {
+    padding: 24px 20px 24px 16px;
+    gap: 14px;
+
+    &__title { font-size: 15px; }
+    &__text, &__list li { font-size: 13px; }
+  }
+}
+
+@media (max-width: 480px) {
+  #pp-content { padding: 48px 16px 72px; }
+
+  .pp-toc__list { grid-template-columns: 1fr !important; }
+
+  .pp-card {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 16px;
+
+    &__number { align-self: flex-start; }
+    &__contact-box { flex-direction: column; align-items: flex-start; gap: 6px; }
+  }
 }

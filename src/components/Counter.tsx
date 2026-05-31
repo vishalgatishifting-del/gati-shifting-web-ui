@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 interface CounterProps {
     end: number;
-    duration?: number; 
+    duration?: number;
     suffix?: string;
-    delayBetweenLoops?: number; 
+    delayBetweenLoops?: number;
 }
 
 const Counter: React.FC<CounterProps> = ({
@@ -14,38 +14,40 @@ const Counter: React.FC<CounterProps> = ({
     delayBetweenLoops = 3000,
 }) => {
     const [count, setCount] = useState(0);
+    const rafRef = useRef<number>(0);
+    const timeoutRef = useRef<ReturnType<typeof setTimeout>>(null);
 
     useEffect(() => {
-        let start = 0;
-        let interval: number;
-        let timeout: number;
-
         const startCounter = () => {
-            start = 0;
-            const increment = end / (duration / 16);
+            const startTime = performance.now();
 
-            interval = setInterval(() => {
-                start += increment;
-                if (start >= end) {
+            const tick = (now: number) => {
+                const elapsed = now - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+
+                // easeOutQuart — smooth deceleration
+                const eased = 1 - Math.pow(1 - progress, 4);
+                setCount(Math.floor(eased * end));
+
+                if (progress < 1) {
+                    rafRef.current = requestAnimationFrame(tick);
+                } else {
                     setCount(end);
-                    clearInterval(interval);
-
-                    // ⏸ thoda ruk ke dubara start
-                    timeout = setTimeout(() => {
+                    timeoutRef.current = setTimeout(() => {
                         setCount(0);
                         startCounter();
                     }, delayBetweenLoops);
-                } else {
-                    setCount(Math.floor(start));
                 }
-            }, 16);
+            };
+
+            rafRef.current = requestAnimationFrame(tick);
         };
 
         startCounter();
 
         return () => {
-            clearInterval(interval);
-            clearTimeout(timeout);
+            cancelAnimationFrame(rafRef.current);
+            if (timeoutRef.current) clearTimeout(timeoutRef.current);
         };
     }, [end, duration, delayBetweenLoops]);
 

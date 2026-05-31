@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import "./TrackOrder.scss";
 import trackingImg from "../assets/TrackPage/trackingImg.png";
+import { siteConfig } from "../config/Company";
 // import {
 //   MapContainer,
 //   TileLayer,
@@ -265,7 +266,7 @@ const TrackOrder: React.FC = () => {
           {/* Stats Strip */}
           <div className="tp-stats">
             <div className="tp-stats__item">
-              <span className="tp-stats__num">50K+</span>
+              <span className="tp-stats__num">{siteConfig.stats.totalHappyCustomers}</span>
               <span className="tp-stats__label">Deliveries</span>
             </div>
             <div className="tp-stats__divider" />

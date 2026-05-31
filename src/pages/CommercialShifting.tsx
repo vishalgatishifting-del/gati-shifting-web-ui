@@ -90,15 +90,6 @@ const COST_FACTORS = [
   { number: "05", title: "Timing & Season", desc: "Shifting during weekends, month-ends, or peak seasons may cost more." },
 ];
 
-const KEYWORDS = [
-  "gati packers and movers", "commercial movers", "commercial moving company",
-  "office movers", "office relocation services", "commercial moving services",
-  "business movers", "office moving company", "office furniture movers",
-  "corporate relocation services", "industrial shifting services",
-  "warehouse relocation services", "factory relocation services",
-  "retail shifting services", "business relocation services near me",
-  "commercial shifting company in delhi",
-];
 
 const CommercialShifting = () => {
   return (
@@ -286,17 +277,6 @@ const CommercialShifting = () => {
       <BrandList />
       <FAQList />
 
-      {/* ── Keywords ── */}
-      <section className="cs-keywords">
-        <div className="cs-keywords__container">
-          <h2 className="cs-keywords__heading">People Also Search For</h2>
-          <div className="cs-keywords__tags">
-            {KEYWORDS.map((kw, idx) => (
-              <span key={idx} className="cs-keywords__tag">{kw}</span>
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 };

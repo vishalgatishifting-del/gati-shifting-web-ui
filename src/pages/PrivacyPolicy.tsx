@@ -4,84 +4,193 @@ import FAQList from "../components/FAQList";
 import GetInTouch from "../components/GetInTouch";
 import ReviewVideo from "../components/ReviewVideos";
 import TrustUsSection from "../components/TrustUsSection";
-import "./PrivacyPolicy.scss"
+import { siteConfig } from "../config/Company";
+import "./PrivacyPolicy.scss";
 
+// ─── Section Data ────────────────────────────────────────────────────────────
+const SECTIONS = [
+  {
+    id: "info-collect",
+    number: "01",
+    title: "Information We Collect",
+    body: `When you contact us directly, we may collect additional information such as your name, email address, phone number, message contents, and any other information you choose to provide.
+
+When you register for an account, we may ask for your contact information including name, company name, address, email address, and telephone number. We may also share customer details with our verified vendors through our Android application. Before granting access, we verify vendors by mobile, email, office address, and government licences like GST.`,
+  },
+  {
+    id: "info-use",
+    number: "02",
+    title: "How We Use Your Information",
+    body: "We use the information we collect for various purposes, including:",
+    list: [
+      "Providing, operating, and maintaining our website and services",
+      "Improving and personalising our website and services",
+      "Understanding and analysing how you use our website and services",
+      "Developing new products, services, features, and functionality",
+      "Communicating with you for customer service, updates, and marketing purposes",
+      "Sending you emails",
+      "Finding and preventing fraud",
+    ],
+  },
+  {
+    id: "ccpa",
+    number: "03",
+    title: "CCPA Privacy Rights",
+    subtitle: "Do Not Sell My Personal Information",
+    body: "Under the California Consumer Privacy Act (CCPA), California residents have the right to request that a business disclose the categories and specific pieces of personal information collected about them. We do not sell personal information of our users.",
+  },
+  {
+    id: "gdpr",
+    number: "04",
+    title: "GDPR Data Protection Rights",
+    body: "If you are a resident of the European Economic Area (EEA), you have certain data protection rights under the General Data Protection Regulation (GDPR). These include the right to access, rectify, erase, restrict processing, and object to processing of your personal data. If you wish to exercise any of these rights, please contact us.",
+  },
+  {
+    id: "children",
+    number: "05",
+    title: "Children's Information",
+    body: "Our website and services are not intended for children under the age of 13. We do not knowingly collect personal identifiable information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately and we will remove such information from our records.",
+  },
+  {
+    id: "retention",
+    number: "06",
+    title: "Data Retention",
+    body: "We retain personal information we collect for as long as necessary to provide our services and for other essential purposes, such as complying with our legal obligations, resolving disputes, and enforcing our agreements.",
+  },
+  {
+    id: "security",
+    number: "07",
+    title: "Security",
+    body: "We take reasonable measures to protect your personal information from unauthorised access, use, or disclosure. However, no method of transmission over the internet or electronic storage is completely secure.",
+  },
+  {
+    id: "changes",
+    number: "08",
+    title: "Changes to Privacy Policy",
+    body: "We reserve the right to modify this Privacy Policy at any time. If we make material changes, we will notify you by email or by posting a notice on our website. Your continued use of our website or services after any modifications constitutes your acceptance of those changes.",
+  },
+  {
+    id: "contact",
+    number: "09",
+    title: "Contact Us",
+    body: "If you have any questions or concerns about our Privacy Policy, please reach out to us.",
+    contact: siteConfig.email.info,
+    footer: "Thank you for choosing Gati Shifting Packers for your transportation and packing needs.",
+  },
+] as const;
+
+// ─── Component ───────────────────────────────────────────────────────────────
 const PrivacyPolicy = () => {
-    return (
-        <>
-            <section id="privacypolicysec">
-                <div className="container">
-                    <div className="content">
-                        <h1>Privacy Policy for Gati Shifting Packers</h1>
-                        <p>At Gati Shifting Packers, we respect your privacy and are committed to protecting your personal information. This Privacy Policy describes how we collect, use, and disclose information when you use our website (gatishiftingpackers.com) or avail of our goods transport and packers and movers services. By using our website or services, you agree to the terms of this Privacy Policy.</p>
+  return (
+    <>
+      <div id="privacy-policy-page">
 
-                        <div className="card">
-                            <h2>Information we collect for Gati Shifting Packers</h2>
-                            <p>When you contact us directly, we may collect additional information about you, such as your name, email address, phone number, the contents of the message, and any other information you choose to provide.
-                                <br />
-                                When you register for an account, we may ask for your contact information, including your name, company name, address, email address, and telephone number. We may also share customer details with our verified vendors through our Android application. Before giving access to our vendors, we verify them by mobile, email, office address, and government licences like GST.
-                            </p>
-                        </div>
+        {/* ── Hero ────────────────────────────────────── */}
+        <section id="pp-hero" aria-label="Privacy Policy header">
+          <div className="pp-hero__bg" aria-hidden="true">
+            <div className="pp-hero__grid" />
+            <div className="pp-hero__glow" />
+          </div>
+          <div className="pp-hero__content">
+            <span className="pp-eyebrow">Legal &amp; Privacy</span>
+            <h1 className="pp-hero__title">Privacy Policy</h1>
+            <p className="pp-hero__subtitle">
+              At Gati Shifting Packers, we respect your privacy and are committed
+              to protecting your personal information. This policy describes how
+              we collect, use, and disclose your data when you use our website or
+              avail of our packers and movers services.
+            </p>
+            <div className="pp-hero__meta">
+              <span className="pp-meta-pill">
+                <span className="pp-meta-dot" aria-hidden="true" />
+                Effective: January 2024
+              </span>
+              <span className="pp-meta-pill">
+                <span className="pp-meta-dot" aria-hidden="true" />
+                9 Sections
+              </span>
+            </div>
+          </div>
+        </section>
 
-                        <div className="card">
-                            <h2>How we use your information</h2>
-                            <p>We use the information we collect for various purposes, including:</p>
-                            <ul>
-                                <li>Providing, operating, and maintaining our website and services</li>
-                                <li>Improving and personalising our website and services</li>
-                                <li>Understanding and analysing how you use our website and services</li>
-                                <li>Developing new products, services, features, and functionality</li>
-                                <li>Communicating with you for customer service, updates, and marketing and promotional purposes</li>
-                                <li>Sending you emails</li>
-                                <li>Finding and preventing fraud</li>
-                            </ul>
-                        </div>
+        {/* ── Content Layout ──────────────────────────── */}
+        <section id="pp-content" aria-label="Privacy Policy sections">
+          <div className="pp-layout">
 
+            {/* Sticky TOC sidebar */}
+            <aside className="pp-toc" aria-label="Table of contents">
+              <p className="pp-toc__label">Contents</p>
+              <nav>
+                <ol className="pp-toc__list">
+                  {SECTIONS.map((s) => (
+                    <li key={s.id}>
+                      <a href={`#${s.id}`} className="pp-toc__link">
+                        <span className="pp-toc__num">{s.number}</span>
+                        <span className="pp-toc__text">{s.title}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            </aside>
 
-                        <div className="card">
-                            <h2>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
-                            <p>Under the California Consumer Privacy Act (CCPA), California residents have the right to request that a business that collects personal information disclose the categories and specific pieces of personal information that the business has collected about them. We do not sell personal information of our users.</p>
-                        </div>
+            {/* Main cards */}
+            <main className="pp-main">
+              {SECTIONS.map((s) => (
+                <article
+                  key={s.id}
+                  id={s.id}
+                  className="pp-card"
+                  aria-labelledby={`${s.id}-heading`}
+                >
+                  <div className="pp-card__number" aria-hidden="true">{s.number}</div>
+                  <div className="pp-card__body">
+                    <h2 id={`${s.id}-heading`} className="pp-card__title">
+                      {s.title}
+                      {"subtitle" in s && s.subtitle && (
+                        <span className="pp-card__subtitle">{s.subtitle}</span>
+                      )}
+                    </h2>
+                    <p className="pp-card__text">{s.body}</p>
+                    {"list" in s && s.list && (
+                      <ul className="pp-card__list">
+                        {s.list.map((item) => (
+                          <li key={item}>
+                            <span className="pp-list-dot" aria-hidden="true" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {"contact" in s && s.contact && (
+                      <div className="pp-card__contact-box">
+                        <span className="pp-contact-label">Email us at</span>
+                        <a href={`mailto:${s.contact}`} className="pp-contact-link">
+                          {s.contact}
+                        </a>
+                      </div>
+                    )}
+                    {"footer" in s && s.footer && (
+                      <p className="pp-card__footer-note">{s.footer}</p>
+                    )}
+                  </div>
+                </article>
+              ))}
+            </main>
 
-                        <div className="card">
-                            <h2>GDPR Data Protection Rights</h2>
-                            <p>If you are a resident of the European Economic Area (EEA), you have certain data protection rights under the General Data Protection Regulation (GDPR). These include the right to access, rectify, erase, restrict processing, and object to processing of your personal data. If you wish to exercise any of these rights, please contact us.</p>
-                        </div>
-                        <div className="card">
-                            <h2>Children's information</h2>
-                            <p>Our website and services are not intended for children under the age of 13. We do not knowingly collect personal identifiable information from children under the age of 13. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us immediately, and we will do our best to remove such information from our records.</p>
-                        </div>
-                        <div className="card">
-                            <h2>Data retention</h2>
-                            <p>We retain personal information we collect for as long as necessary to provide our services and for other essential purposes, such as complying with our legal obligations, resolving disputes, and enforcing our agreements.</p>
-                        </div>
-                        <div className="card">
-                            <h2>Security</h2>
-                            <p>We take reasonable measures to protect your personal information from unauthorised access, use, or disclosure. However, no method of transmission over the internet or electronic storage is completely secure.</p>
-                        </div>
-                        <div className="card">
-                            <h2>Changes to Privacy Policy</h2>
-                            <p>We reserve the right to modify this Privacy Policy at any time. If we make material changes to this policy, we will notify you by email or by posting a notice on our website. Your continued use of our website or services after any modifications to this policy constitutes your acceptance of those modifications.</p>
-                        </div>
-                        <div className="card">
-                            <h2>Contact us</h2>
-                            <p>If you have any questions or concerns about our Privacy Policy, please contact us at <a href="mailto:gatishiftingpackers@gmail.com">infogatishiftingpackers@gmail.com</a>.
-                            <br />
-                            Thank you for choosing Gati Shifting Packers for your transportation and packing needs.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+          </div>
+        </section>
 
-            <ReviewVideo></ReviewVideo>
-            <GetInTouch></GetInTouch>
-            <AwardCertification></AwardCertification>
-            <TrustUsSection></TrustUsSection>
-            <BrandList></BrandList>
-            <FAQList></FAQList>
-        </>
-    )
-}
+      </div>
+
+      <ReviewVideo />
+      <GetInTouch />
+      <AwardCertification />
+      <TrustUsSection />
+      <BrandList />
+      <FAQList />
+    </>
+  );
+};
 
 export default PrivacyPolicy;

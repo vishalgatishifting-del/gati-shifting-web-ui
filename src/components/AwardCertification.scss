@@ -1,155 +1,188 @@
+// ══════════════════════════════════════════════════════════════════════════════
+//  AwardCertification.scss  —  Professional redesign
+//  4-column stats/award cards with image, countup, icon, and description.
+//  Responsive: 4 → 2 → 1 column.
+// ══════════════════════════════════════════════════════════════════════════════
+
 @import "../style/variables";
 
+// ── Tokens ────────────────────────────────────────────────────────────────────
+$ac-accent:        #0F6E56;
+$ac-accent-mid:    #1D9E75;
+$ac-accent-light:  #E1F5EE;
+$ac-radius-card:   20px;
+$ac-radius-icon:   10px;
+$ac-ease:          cubic-bezier(0.4, 0, 0.2, 1);
+$ac-bp-lg:         1024px;
+$ac-bp-md:         768px;
+$ac-bp-sm:         480px;
+
+// ── Section ───────────────────────────────────────────────────────────────────
 #award-certifications {
-
-    @include font-poppins-sans(400);
-
-
-    h2 {
-        text-align: center;
-        margin: 50px 0 20px 0;
-    }
-
-    .container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        width: 100%;
-        gap: 10px;
-        padding: 10px;
-        align-items: stretch;
-
-        .card {
-            background: #f1f1f1;
-            padding: 20px;
-            border-radius: 20px;
-            height: 100%;
-
-            .details {
-                h3 {
-                    font-size: 29px;
-                    font-weight: normal;
-                    margin: 20px 0;
-                }
-
-                p {
-                    color: #4b5563;
-                }
-            }
-
-            img {
-                width: 100%;
-                height: 300px;
-                object-fit: cover;
-                border-radius: 20px;
-            }
-        }
-    }
+  @include font-poppins-sans(400);
+  padding: 72px 20px 80px;
 }
 
-
-@media screen and (max-width: 1086px) {
-
-    #award-certifications {
-        .container {
-            grid-template-columns: repeat(2, 1fr);
-
-            .card {
-                .details {
-                    h3 {
-                        margin: 10px 0;
-                    }
-                }
-            }
-        }
-    }
+// ── Header ────────────────────────────────────────────────────────────────────
+.ac-header {
+  text-align: center;
+  margin-bottom: 48px;
 }
 
-
-@media screen and (max-width: 751px) {
-
-    #award-certifications {
-        .container {
-            grid-template-columns: repeat(2, 1fr);
-
-            .card {
-                padding: 15px;
-
-                .details {
-                    p {
-                        font-size: 15px;
-                    }
-                }
-            }
-        }
-    }
+.ac-eyebrow {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $ac-accent-mid;
+  margin-bottom: 10px;
 }
 
+.ac-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.15;
 
-@media screen and (max-width: 636px) {
+  @media (max-width: $ac-bp-md) {
+    font-size: 28px;
+  }
 
-    #award-certifications {
-        .container {
-            grid-template-columns: repeat(2, 1fr);
-
-            .card {
-                padding: 15px;
-
-                .details {
-                    h3 {
-                        margin: 3px 0;
-                        font-size: 25px;
-                    }
-                }
-            }
-        }
-    }
+  @media (max-width: $ac-bp-sm) {
+    font-size: 24px;
+  }
 }
 
+// ── Grid ──────────────────────────────────────────────────────────────────────
+.ac-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  max-width: 1080px;
+  margin: 0 auto;
+  align-items: stretch;
 
-@media screen and (max-width: 613px) {
+  @media (max-width: $ac-bp-lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    #award-certifications {
-        .container {
-            .card {
-                img {
-                    height: 200px;
-                }
-            }
-        }
-    }
+  @media (max-width: $ac-bp-sm) {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
 }
 
+// ── Card ──────────────────────────────────────────────────────────────────────
+.ac-card {
+  background: #ffffff;
+  border-radius: $ac-radius-card;
+  border: 1px solid #efefec;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition:
+    border-color  0.22s $ac-ease,
+    transform     0.22s $ac-ease;
 
-
-@media screen and (max-width: 636px) {
-
-    #award-certifications {
-        .container {
-
-            .card {
-                padding: 10px;
-
-                .details {
-                    h3 {
-                        // margin: 3px 0;
-                        font-size: 20px;
-                    }
-
-                    p {
-                        font-size: 13px;
-                    }
-                }
-            }
-        }
-    }
+  &:hover {
+    border-color: rgba($ac-accent, 0.26);
+    transform: translateY(-5px);
+  }
 }
 
+// ── Card image ────────────────────────────────────────────────────────────────
+.ac-card__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-bottom: 1px solid #f0f0ec;
+  transition: transform 0.55s $ac-ease;
 
+  .ac-card:hover & {
+    transform: scale(1.04);
+  }
 
-@media screen and (max-width: 439px) {
-    #award-certifications {
-        h2 {
-            font-size: 23px;
-        }
-    }
+  @media (max-width: $ac-bp-lg) {
+    height: 180px;
+  }
+
+  @media (max-width: $ac-bp-sm) {
+    height: 200px;
+  }
+}
+
+// ── Card body ─────────────────────────────────────────────────────────────────
+.ac-card__body {
+  padding: 22px 20px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+// ── Icon ──────────────────────────────────────────────────────────────────────
+.ac-card__icon {
+  width: 38px;
+  height: 38px;
+  border-radius: $ac-radius-icon;
+  background: $ac-accent-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  transition: background 0.2s $ac-ease;
+
+  svg {
+    font-size: 18px !important;
+    color: $ac-accent;
+    display: block;
+  }
+
+  .ac-card:hover & {
+    background: darken($ac-accent-light, 5%);
+  }
+}
+
+// ── CountUp number ────────────────────────────────────────────────────────────
+.ac-card__num {
+  font-size: 42px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1;
+  letter-spacing: -0.02em;
+
+  @media (max-width: $ac-bp-lg) {
+    font-size: 36px;
+  }
+
+  @media (max-width: $ac-bp-sm) {
+    font-size: 40px;
+  }
+}
+
+// ── Stat label ────────────────────────────────────────────────────────────────
+.ac-card__label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $ac-accent;
+  margin-top: 3px;
+}
+
+// ── Divider ───────────────────────────────────────────────────────────────────
+.ac-card__divider {
+  border: none;
+  border-top: 1px solid #f0f0ec;
+  margin: 12px 0 4px;
+}
+
+// ── Description ───────────────────────────────────────────────────────────────
+.ac-card__desc {
+  font-size: 13.5px;
+  color: #6b7280;
+  line-height: 1.65;
+  margin: 0;
 }

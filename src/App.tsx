@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     const preHero = document.getElementById("pre-hero");
     if (preHero) {
-      preHero.remove();
+      document.getElementById("pre-hero")?.classList.add("hidden");
     }
   }, []);
 

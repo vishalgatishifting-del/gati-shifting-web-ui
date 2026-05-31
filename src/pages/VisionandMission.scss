@@ -1,0 +1,368 @@
+@import "../style/variables";
+
+// ── Design Tokens ─────────────────────────────────────────────────────────────
+$vm-ink:        #0f1923;   // near-black ink
+$vm-ink-muted:  #4a5568;
+$vm-surface:    #f7f6f3;   // warm off-white
+$vm-card:       #ffffff;
+$vm-border:     #e2e0db;
+$vm-gold:       #c9a84c;   // muted gold accent
+$vm-gold-light: #fdf6e3;
+$vm-teal:       #1d6a5c;   // deep teal (trust / nature)
+$vm-teal-light: #e8f3f0;
+$vm-radius:     16px;
+$vm-radius-sm:  8px;
+
+// ── Scroll-reveal animation ───────────────────────────────────────────────────
+.vm-reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+
+  &.vm-revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ── Hero ──────────────────────────────────────────────────────────────────────
+.vm-hero {
+  position: relative;
+  min-height: 420px;
+  background: url("../assets/VissionAndMission/vissionAndMission.png") center / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  // Layered overlay: dark base + directional gradient
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba($vm-ink, 0.55) 0%, rgba($vm-ink, 0.72) 100%);
+
+    // Decorative geometric accent
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, $vm-gold, $primary-color, transparent);
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 24px;
+    animation: vmFadeUp 0.8s ease both;
+
+    h1 {
+      font-size: clamp(36px, 7vw, 76px);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin: 12px 0 16px;
+      // Subtle text shadow for readability over busy backgrounds
+      text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    p {
+      font-size: clamp(14px, 2vw, 18px);
+      color: rgba(#fff, 0.75);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.6;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  &__eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $vm-gold;
+    background: rgba($vm-gold, 0.12);
+    border: 1px solid rgba($vm-gold, 0.3);
+    padding: 5px 14px;
+    border-radius: 100px;
+  }
+
+  // Animated scroll hint arrow
+  &__scroll-hint {
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    span {
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-right: 2px solid rgba(#fff, 0.5);
+      border-bottom: 2px solid rgba(#fff, 0.5);
+      transform: rotate(45deg);
+      animation: scrollBounce 1.8s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes vmFadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.5; }
+  50%       { transform: rotate(45deg) translateY(6px); opacity: 1; }
+}
+
+// ── Section wrapper ───────────────────────────────────────────────────────────
+.vm-section {
+  background: $vm-surface;
+  padding: 80px 24px;
+}
+
+// ── Shared label ─────────────────────────────────────────────────────────────
+.vm-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $vm-teal;
+  background: $vm-teal-light;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+
+// ── Block (Vision / Mission) ──────────────────────────────────────────────────
+.vm-block {
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 0 32px;
+  align-items: start;
+
+  &__badge {
+    width: 72px;
+    height: 72px;
+    border-radius: $vm-radius;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: 'Georgia', serif;
+    flex-shrink: 0;
+    position: sticky;
+    top: calc(var(--navbar-h, 96px) + 24px);
+  }
+
+  &--vision .vm-block__badge {
+    background: $vm-gold-light;
+    color: darken($vm-gold, 20%);
+    border: 1px solid rgba($vm-gold, 0.3);
+  }
+
+  &--mission .vm-block__badge {
+    background: $vm-teal-light;
+    color: darken($primary-color, 5%);
+    border: 1px solid rgba($primary-color, 0.2);
+  }
+
+  &__inner {
+    h2 {
+      font-size: clamp(22px, 3vw, 30px);
+      font-weight: 800;
+      color: $vm-ink;
+      line-height: 1.25;
+      margin: 0 0 18px;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      font-size: 15px;
+      color: $vm-ink-muted;
+      line-height: 1.8;
+      margin-bottom: 14px;
+
+      &:last-of-type { margin-bottom: 28px; }
+    }
+  }
+}
+
+// ── City tags ─────────────────────────────────────────────────────────────────
+.vm-cities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.vm-city-tag {
+  font-size: 12px;
+  font-weight: 600;
+  color: darken($primary-color, 8%);
+  background: $vm-teal-light;
+  border: 1px solid rgba($primary-color, 0.18);
+  padding: 4px 12px;
+  border-radius: 100px;
+  letter-spacing: 0.02em;
+  transition: background 0.18s, border-color 0.18s;
+
+  &:hover {
+    background: darken($vm-teal-light, 4%);
+    border-color: rgba($primary-color, 0.35);
+  }
+
+  &--more {
+    background: rgba($vm-gold, 0.1);
+    border-color: rgba($vm-gold, 0.25);
+    color: darken($vm-gold, 25%);
+  }
+}
+
+// ── Divider ───────────────────────────────────────────────────────────────────
+.vm-divider {
+  max-width: 860px;
+  margin: 56px auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &__line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, $vm-border);
+
+    &:last-child {
+      background: linear-gradient(270deg, transparent, $vm-border);
+    }
+  }
+
+  &__icon {
+    font-size: 18px;
+    color: $vm-gold;
+    opacity: 0.7;
+  }
+}
+
+// ── Mission pillars ───────────────────────────────────────────────────────────
+.vm-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.vm-pillar {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: $vm-card;
+  border: 1px solid $vm-border;
+  border-radius: $vm-radius-sm;
+  padding: 18px 20px;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s;
+
+  &:hover {
+    transform: translateX(6px);
+    box-shadow: -4px 0 0 $primary-color, 0 4px 20px rgba(0,0,0,0.07);
+    border-color: rgba($primary-color, 0.25);
+  }
+
+  &__icon {
+    font-size: 26px;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 2px;
+  }
+
+  &__body {
+    flex: 1;
+
+    strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 700;
+      color: $vm-ink;
+      margin-bottom: 5px;
+      letter-spacing: -0.01em;
+    }
+
+    p {
+      font-size: 13px;
+      color: $vm-ink-muted;
+      line-height: 1.65;
+      margin: 0;
+    }
+  }
+}
+
+// ── Loading skeleton ──────────────────────────────────────────────────────────
+.vm-loading {
+  height: 100px;
+  background: $vm-border;
+  border-radius: $vm-radius;
+  margin: 24px auto;
+  max-width: 900px;
+  animation: vmPulse 1.4s ease-in-out infinite;
+}
+
+@keyframes vmPulse {
+  0%, 100% { opacity: 0.45; }
+  50%       { opacity: 0.9; }
+}
+
+// ── Responsive ────────────────────────────────────────────────────────────────
+
+@media (max-width: 720px) {
+  .vm-hero { min-height: 320px; }
+
+  .vm-section { padding: 56px 16px; }
+
+  .vm-block {
+    grid-template-columns: 1fr;
+
+    &__badge {
+      position: static;
+      width: 52px;
+      height: 52px;
+      font-size: 20px;
+      border-radius: 10px;
+    }
+  }
+
+  .vm-divider { margin: 40px auto; }
+
+  .vm-pillar {
+    padding: 14px 16px;
+    gap: 12px;
+
+    &:hover {
+      transform: none;
+      box-shadow: -3px 0 0 $vm-teal;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .vm-cities { gap: 6px; }
+  .vm-city-tag { font-size: 11px; padding: 3px 10px; }
+
+  .vm-pillar__icon { font-size: 22px; }
+  .vm-pillar__body strong { font-size: 13px; }
+  .vm-pillar__body p { font-size: 12px; }
+}
