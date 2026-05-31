@@ -226,7 +226,7 @@ const Home: React.FC<Props> = ({ successCondition }) => {
         </div>
         <div className="form-area">
           <h3>Get a free <span>{activeBtn}</span> Quote</h3>
-          <i>We'll call you within 15 minutes</i>
+          {/* <i>We'll call you within 15 minutes</i> */}
           <ZohoForm successCondition={successCondition} />
         </div>
       </div>
