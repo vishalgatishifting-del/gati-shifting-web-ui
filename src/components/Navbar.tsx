@@ -64,10 +64,18 @@ const Navbar: React.FC<NavbarProps> = ({ open, setOpen, successCondition }) => {
   }, []); // empty deps — handler never changes
 
   // ── FIX 2: Dialog auto-open timer — stable, no re-trigger ──────────
-  useEffect(() => {
-    const timer = setTimeout(() => setOpen(true), 2000);
-    return () => clearTimeout(timer);
-  }, []); // intentionally empty — run only once on mount
+  // useEffect(() => {
+  //   const timer = setTimeout(() => setOpen(true), 2000);
+  //   return () => clearTimeout(timer);
+  // }, []); // intentionally empty — run only once on mount
+  
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setOpen(true);
+  }, 5000);
+
+  return () => clearTimeout(timer);
+}, []);
 
   // ── FIX 3: Stable callbacks — no new function every render ─────────
   const closeNav       = useCallback(() => setOpenNav(false), []);
