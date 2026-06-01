@@ -3,18 +3,20 @@ import react from "@vitejs/plugin-react";
 import { visualizer } from "rollup-plugin-visualizer";
 import viteImagemin from "vite-plugin-imagemin";
 
-export default defineConfig({
-  plugins: [
+export default defineConfig(({ mode }) => ({
+   plugins: [
     react(),
 
-    //  Bundle analyzer
-    visualizer({
-      open: true,
-      filename: "stats.html",
-      gzipSize: true,
-    }),
+    ...(mode === "analyze"
+      ? [
+          visualizer({
+            open: true,
+            filename: "stats.html",
+            gzipSize: true,
+          }),
+        ]
+      : []),
 
-    //  Image compression
     viteImagemin({
       mozjpeg: { quality: 75 },
       pngquant: { quality: [0.7, 0.9] },
@@ -39,4 +41,4 @@ export default defineConfig({
     //  Bade chunks warn karega
     chunkSizeWarningLimit: 500,
   },
-});
+})); 

@@ -22,7 +22,7 @@ const DRAG_THRESHOLD = 50;
 export default function HomeSlider() {
   const [current, setCurrent] = useState(0);
   const [loaded, setLoaded] = useState<boolean[]>(
-    images.map((_, i) => i === 0) 
+    images.map((_, i) => i === 0)
   );
 
   const trackRef = useRef<HTMLDivElement>(null);
@@ -66,7 +66,7 @@ export default function HomeSlider() {
   }, [preloadAround]);
 
   useEffect(() => {
-    
+
     preloadAround(0);
     startTimer();
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
@@ -112,18 +112,18 @@ export default function HomeSlider() {
     startTimer();
   };
 
-  const handleMouseDown  = (e: React.MouseEvent) => onDragStart(e.clientX);
-  const handleMouseMove  = (e: React.MouseEvent) => onDragMove(e.clientX);
-  const handleMouseUp    = (e: React.MouseEvent) => onDragEnd(e.clientX);
+  const handleMouseDown = (e: React.MouseEvent) => onDragStart(e.clientX);
+  const handleMouseMove = (e: React.MouseEvent) => onDragMove(e.clientX);
+  const handleMouseUp = (e: React.MouseEvent) => onDragEnd(e.clientX);
   const handleMouseLeave = (e: React.MouseEvent) => { if (isDragging.current) onDragEnd(e.clientX); };
   const handleTouchStart = (e: React.TouchEvent) => onDragStart(e.touches[0].clientX);
-  const handleTouchMove  = (e: React.TouchEvent) => onDragMove(e.touches[0].clientX);
-  const handleTouchEnd   = (e: React.TouchEvent) => onDragEnd(e.changedTouches[0].clientX);
+  const handleTouchMove = (e: React.TouchEvent) => onDragMove(e.touches[0].clientX);
+  const handleTouchEnd = (e: React.TouchEvent) => onDragEnd(e.changedTouches[0].clientX);
 
   const getSlideStyle = (i: number): React.CSSProperties => {
     const total = images.length;
     let position = i - current;
-    if (position > total / 2)  position -= total;
+    if (position > total / 2) position -= total;
     if (position < -total / 2) position += total;
     return {
       transform: `translateX(calc(${position * 100}% + ${dragOffset}px))`,
@@ -135,10 +135,12 @@ export default function HomeSlider() {
 
   return (
     <div className="hs-wrapper">
-      
+
       <img
         src={gatiSlider2}
         alt="slide-1"
+        width="1920"
+        height="720"
         fetchPriority="high"
         loading="eager"
         decoding="async"
@@ -170,7 +172,7 @@ export default function HomeSlider() {
         {images.map((img, i) => {
           const total = images.length;
           let position = i - current;
-          if (position > total / 2)  position -= total;
+          if (position > total / 2) position -= total;
           if (position < -total / 2) position += total;
           if (Math.abs(position) > 1) return null;
 
@@ -181,7 +183,7 @@ export default function HomeSlider() {
               style={getSlideStyle(i)}
               aria-hidden={i !== current}
             >
-              
+
               {i !== 0 && loaded[i] && (
                 <img
                   src={img}
