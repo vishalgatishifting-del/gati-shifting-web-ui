@@ -518,8 +518,8 @@ export const pagesData = [
         {
           title: "Packing and Unpacking Services",
           desc: "High-quality packing and unpacking services using bubble wrap, foam sheets, and durable cartons for safety.",
-          link: "https://gatishiftingpackers.com/home-shifting",
-          linkText: "Packing Services"
+          // link: "https://gatishiftingpackers.com/home-shifting",
+          // linkText: "Packing Services"
         },
         {
           title: "Storage and Warehouse Services",
