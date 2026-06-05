@@ -809,6 +809,7 @@ const CityPage: React.FC<PageProps> = ({
                   </>
                 ) : null}
 
+                <WhatWeCaterTo />
                 {/* FAQ */}
                 {pageData?.faqHeading &&
                   pageData?.faqs?.length ? (
@@ -826,7 +827,6 @@ const CityPage: React.FC<PageProps> = ({
           </div>
         </div>
       </main>
-      <WhatWeCaterTo />
       <ReviewVideo />
       <GetInTouch />
       <AwardCertification />
