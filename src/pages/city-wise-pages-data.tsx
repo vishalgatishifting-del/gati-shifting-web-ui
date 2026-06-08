@@ -284,7 +284,7 @@ import Nellore from "../assets/CityPages/Nellore.webp"
 import Tirupati from "../assets/CityPages/Tirupati.webp"
 import Kurnool from "../assets/CityPages/Kurnool.webp"
 import Rajahmundry from "../assets/CityPages/Rajahmundry (Rajamahendravaram).webp"
-import Kadapa from "../assets/CityPages/Kadapa (Cuddapah).webp"
+import Kadapa from "../assets/CityPages/Kadapa.webp"
 import Anantapur from "../assets/CityPages/Anantapur.webp"
 import Eluru from "../assets/CityPages/Eluru.webp"
 import Ongole from "../assets/CityPages/Ongole.webp"
@@ -12141,7 +12141,7 @@ export const pagesData = [
   // },
   {
     slug: "packers-and-movers-in-Ballari",
-    city: "Bellary",
+    city: "Ballari",
     img: Ballari,
     offer: "10%",
     address: "Pushpavathi Building, Industrial Area, Anantapur Road, opp. Kalyani Bar, Venkateswara Nagar, Bandimot, Ballari, Karnataka 583101",
