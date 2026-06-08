@@ -750,11 +750,14 @@ const CityPage: React.FC<PageProps> = ({
           rel="canonical"
           href={`https://gatishiftingpackers.com/packers-and-movers-in-${city
             .toLowerCase()
-            .replace(/\s+/g, "-")}`}
+            .replace(/\(.*?\)/g, "")
+            .replace(/\s+/g, "-")
+            .trim()}`}
         />
       </Helmet>
 
       <CitySchema cityMeta={allData} />
+      {console.log(allData)}
 
       <main className="cp-root">
 

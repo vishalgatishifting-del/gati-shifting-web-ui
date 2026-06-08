@@ -29,7 +29,7 @@ const CitySchema = ({ cityMeta }: any) => {
 
         name: cityMeta?.city,
 
-        item: `https://gatishiftingpackers.com/packers-and-movers-in-${cityMeta?.slug}`
+        item: `https://gatishiftingpackers.com/${cityMeta?.slug}`
       }
     ]
   };
@@ -42,7 +42,7 @@ const CitySchema = ({ cityMeta }: any) => {
 
     name: "Gati Shifting Packers",
 
-    url: `https://gatishiftingpackers.com/city/${cityMeta?.slug}`,
+    url: `https://gatishiftingpackers.com/${cityMeta?.slug}`,
 
     telephone: "+91-9422799477",
 
@@ -93,7 +93,7 @@ const CitySchema = ({ cityMeta }: any) => {
     itemReviewed: {
       "@type": "MovingCompany",
       name: "Gati Shifting Packers",
-      url: `https://gatishiftingpackers.com/packers-and-movers-in-${cityMeta?.slug}`
+      url: `https://gatishiftingpackers.com/${cityMeta?.slug}`
 
     }
   };
