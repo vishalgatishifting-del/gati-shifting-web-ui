@@ -439,7 +439,42 @@ FaqItem.displayName = "FaqItem";
 
 // ── Default Content ──
 
-const DefaultContent = memo(({ city }: { city: string }) => (
+const DefaultContent = memo(({ city }: { city: string }) => {
+  const defaultFaqData = [
+  {
+    q: `What are the charges of packers and movers in ${city}?`,
+    a: `Packers and movers charges in ${city} depend on the distance, volume of goods, packing requirements, and type of relocation. Contact us for a free quotation based on your moving needs.`,
+  },
+  {
+    q: `Do you provide household shifting services in ${city}?`,
+    a: `Yes, we provide complete household shifting services in ${city}, including packing, loading, transportation, unloading, and unpacking.`,
+  },
+  {
+    q: `Can you transport my car or bike from ${city}?`,
+    a: `Yes, we offer safe and reliable car and bike transportation services from ${city} to major cities across India using specialized carriers.`,
+  },
+  {
+    q: `Do you provide packing materials for relocation?`,
+    a: `Yes, our team uses high-quality packing materials such as bubble wrap, cartons, stretch film, and protective covers to ensure the safety of your belongings.`,
+  },
+  {
+    q: `How early should I book packers and movers in ${city}?`,
+    a: `We recommend booking your relocation service at least 3–7 days in advance to ensure vehicle availability and smooth move planning.`,
+  },
+  {
+    q: `Do you offer office relocation services in ${city}?`,
+    a: `Yes, we provide professional office and commercial relocation services in ${city} with minimal disruption to business operations.`,
+  },
+  {
+    q: `Are my goods insured during transportation?`,
+    a: `We can assist with transit insurance options to provide additional protection for valuable and fragile items during transportation.`,
+  },
+  {
+    q: `Why choose Gati Shifting Packers in ${city}?`,
+    a: `We are trusted for our experienced staff, affordable pricing, professional packing methods, timely delivery, and dedicated customer support throughout the relocation process.`,
+  },
+];
+  return (
   <>
     <p>
       Welcome to <strong>Gati Shifting Packers {city}</strong>! If you are
@@ -447,14 +482,223 @@ const DefaultContent = memo(({ city }: { city: string }) => (
       we are here to make your relocation simple, safe, and affordable.
     </p>
 
-    <h2>🌍 International Packers and Movers in {city}</h2>
+    <p>
+      Our experienced team offers professional packing, loading, unloading,
+      transportation, and unpacking services. Whether you are moving locally
+      within {city} or relocating to another city, we ensure a hassle-free
+      shifting experience.
+    </p>
+
+    <h2>International Packers and Movers in {city}</h2>
 
     <p>
       We provide seamless international relocation services for individuals,
-      families, and businesses.
+      families, and businesses. Our experts handle customs documentation,
+      overseas packing standards, and secure shipping solutions.
     </p>
+
+    <div className="cp-services-grid">
+      <div className="cp-service-block">
+        <h3>Household Shifting Services in {city}</h3>
+        <p>
+          Safe and secure home relocation with premium packing materials and
+          trained professionals.
+        </p>
+        <a href="https://gatishiftingpackers.com/home-shifting" className="cp-inline-link">Home Shifting Services</a>
+      </div>
+
+      <div className="cp-service-block">
+        <h3>Office Relocation in {city}</h3>
+        <p>
+          Fast and organized office shifting services with minimum business
+          interruption.
+        </p>
+
+        <a href="https://gatishiftingpackers.com/office-relocation" className="cp-inline-link">Office Relocation Services</a>
+      </div>
+
+      <div className="cp-service-block">
+        <h3>Car Transportation Services</h3>
+        <p>
+          Reliable car transportation services across India with proper safety
+          measures and timely delivery.
+        </p>
+
+        <a href="https://gatishiftingpackers.com/car-bike-transport" className="cp-inline-link">Car & Bike Transport Services</a>
+      </div>
+
+
+
+      <div className="cp-service-block">
+        <h3>Storage and Warehouse Services</h3>
+        <p>
+          Secure warehouse and home storage solutions for temporary and long-term storage of household and industrial goods.
+        </p>
+
+        <a href="https://gatishiftingpackers.com/warehouse" className="cp-inline-link">Warehouse Services</a>
+      </div>
+
+
+      <div className="cp-service-block">
+        <h3>Industrial and Commercial Shifting</h3>
+        <p>
+          Professional industrial and commercial relocation services for factories, warehouses, and heavy equipment.
+        </p>
+
+        <a href="https://gatishiftingpackers.com/commercial-shifting" className="cp-inline-link">Commercial Shifting Services</a>
+      </div>
+
+
+      <div className="cp-service-block">
+        <h3>Packing and Unpacking Services</h3>
+        <p>
+          Professional packing and unpacking solutions using high-quality
+          packing materials.
+        </p>
+      </div>
+    </div>
+
+    <h2>Why Choose Gati Shifting Packers {city}?</h2>
+
+    <p>
+      We are known for our transparent pricing, experienced staff, safe
+      transportation, and customer-focused relocation services.
+    </p>
+
+    <ul className="cp-why-list">
+      {WHY_CHOOSE_ITEMS.map((item, i) => (
+        <li key={i}>
+          <span className="cp-why-list__icon">
+            <IconCheck />
+          </span>
+          {item}
+        </li>
+      ))}
+    </ul>
+
+    <h2>How Gati Shifting Packers {city} Work</h2>
+
+    <p>
+      Our relocation process is simple and transparent from booking to final
+      delivery.
+    </p>
+
+    <ol className="cp-steps-list">
+      {PROCESS_STEPS.map((step, i) => (
+        <li key={i}>
+          <span className="cp-steps-list__num">
+            {String(i + 1).padStart(2, "0")}
+          </span>
+          <span>{step}</span>
+        </li>
+      ))}
+    </ol>
+
+    <h2>Packers and Movers Charges in {city}</h2>
+
+    <div className="cp-charges">
+      <img
+        src={chargesImg}
+        alt={`Packers and movers charges ${city}`}
+        loading="lazy"
+      />
+    </div>
+
+    <h2>Factors Affecting Packers and Movers Charges in {city}</h2>
+
+    <div className="cp-process-grid">
+      <div className="cp-service-block">
+        <h3>Distance</h3>
+        <p>
+          Longer distances generally increase transportation and fuel costs.
+        </p>
+      </div>
+
+      <div className="cp-service-block">
+        <h3>Volume of Goods</h3>
+        <p>
+          The number of items being shifted affects manpower and vehicle
+          requirements.
+        </p>
+      </div>
+
+      <div className="cp-service-block">
+        <h3>Packing Requirements</h3>
+        <p>
+          Fragile and premium items may require additional packing materials.
+        </p>
+      </div>
+    </div>
+      <h2>Cities We Also Serve</h2>
+    <ul className="cp-nearby-list">
+        <li key="">
+          <a href="https://gatishiftingpackers.com/packers-and-movers-in-surat" className="cp-nearby-list__chip">
+            <span className="cp-nearby-list__pin">
+              <IconPin />
+            </span>
+            <span>
+              <div className="cp-nearby-list__label">Packers and Movers in Surat</div>
+            </span>
+          </a>
+        </li>
+
+        
+        <li key="">
+          <a href="https://gatishiftingpackers.com/packers-and-movers-in-vadodara" className="cp-nearby-list__chip">
+            <span className="cp-nearby-list__pin">
+              <IconPin />
+            </span>
+            <span>
+              <div className="cp-nearby-list__label">Packers and Movers in Vadodara</div>
+            </span>
+          </a>
+        </li>
+
+        
+        <li key="">
+          <a href="https://gatishiftingpackers.com/packers-and-movers-in-ahmedabad" className="cp-nearby-list__chip">
+            <span className="cp-nearby-list__pin">
+              <IconPin />
+            </span>
+            <span>
+              <div className="cp-nearby-list__label">Packers and Movers in Ahmedabad</div>
+            </span>
+          </a>
+        </li>
+        
+        <li key="">
+          <a href="https://gatishiftingpackers.com/packers-and-movers-in-mumbai" className="cp-nearby-list__chip">
+            <span className="cp-nearby-list__pin">
+              <IconPin />
+            </span>
+            <span>
+              <div className="cp-nearby-list__label">Packers and Movers in Mumbai</div>
+            </span>
+          </a>
+        </li>
+
+        
+        <li key="">
+          <a href="https://gatishiftingpackers.com/packers-and-movers-in-pune" className="cp-nearby-list__chip">
+            <span className="cp-nearby-list__pin">
+              <IconPin />
+            </span>
+            <span>
+              <div className="cp-nearby-list__label">Packers and Movers in Pune</div>
+            </span>
+          </a>
+        </li>
+    </ul>
+
+    <WhatWeCaterTo />
+     <FAQList
+        faqData={defaultFaqData}
+      />
   </>
-));
+  )
+});
+
+DefaultContent.displayName = "DefaultContent";
 
 DefaultContent.displayName = "DefaultContent";
 
