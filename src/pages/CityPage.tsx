@@ -3,7 +3,7 @@ import BrandList from "../components/BrandsList";
 import GetInTouch from "../components/GetInTouch";
 import ReviewVideo from "../components/ReviewVideos";
 import TrustUsSection from "../components/TrustUsSection";
-import chargesImg from "../assets/CityPages/packers-movers-charges.webp";
+import chargesImg from "../assets/packers-movers-charges.webp";
 import "./CityPage.scss";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
