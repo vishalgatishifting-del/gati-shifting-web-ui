@@ -4,15 +4,16 @@ import "./HomeSlider.scss";
 import gatiSlider2 from "../assets/sliderImg/gatislider2.webp";
 import gatiSlider3 from "../assets/sliderImg/gatislider3.webp";
 import gatislider5 from "../assets/sliderImg/gatislider5.webp";
-import gatislider6 from "../assets/sliderImg/gatislider6.webp";
+// import gatislider6 from "../assets/sliderImg/gatislider6.webp";
 import gatiSlider7 from "../assets/sliderImg/gatiSlider7.webp";
 import gatislider8 from "../assets/sliderImg/gatiSlider8.webp";
+import gatislider9 from "../assets/sliderImg/gatiSlider9.webp"
 
 const images = [
+  gatislider9,
   gatiSlider2,
   gatislider8,
   gatiSlider7,
-  gatislider6,
   gatislider5,
   gatiSlider3,
 ];
@@ -137,7 +138,7 @@ export default function HomeSlider() {
     <div className="hs-wrapper">
 
       <img
-        src={gatiSlider2}
+        src={gatislider9}
         alt="slide-1"
         width="1920"
         height="720"
