@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import "./HomeSlider.scss";
 
+import mainSlider from "../assets/sliderImg/mainSlider.webp";
 import gatiSlider2 from "../assets/sliderImg/gatislider2.webp";
 import gatiSlider3 from "../assets/sliderImg/gatislider3.webp";
 import gatislider5 from "../assets/sliderImg/gatislider5.webp";
@@ -10,6 +11,7 @@ import gatislider8 from "../assets/sliderImg/gatiSlider8.webp";
 import gatislider9 from "../assets/sliderImg/gatiSlider9.webp"
 
 const images = [
+  mainSlider,
   gatislider9,
   gatiSlider2,
   gatislider8,
@@ -138,7 +140,7 @@ export default function HomeSlider() {
     <div className="hs-wrapper">
 
       <img
-        src={gatislider9}
+        src={mainSlider}
         alt="slide-1"
         width="1920"
         height="720"
@@ -202,7 +204,7 @@ export default function HomeSlider() {
         })}
       </div>
 
-      {/* Arrows */}
+      {/* Arrows
       <button className="hs-arrow hs-arrow--prev"
         onClick={() => { goTo(current - 1); startTimer(); }}
         aria-label="Previous slide">
@@ -216,7 +218,7 @@ export default function HomeSlider() {
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
           <polyline points="9 18 15 12 9 6" />
         </svg>
-      </button>
+      </button> */}
 
       {/* Dots */}
       <div className="hs-dots" role="tablist">
