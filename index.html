@@ -76,7 +76,7 @@
   <link rel="dns-prefetch" href="//bat.bing.com">
 
   <!-- <link rel="preload" as="image" href="/metaImg2.png"> -->
-  <link rel="preload" as="image" href="/gatislider9.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="/mainSlider.webp" fetchpriority="high">
 
   <!-- Meta Pixel Code -->
   <script>
@@ -131,36 +131,36 @@
     gtag("config", "AW-17573064597");
 
 
-    function loadBing() {
-      (function (w, d, t, r, u) {
-        var f, n, i;
-        w[u] = w[u] || [];
-        f = function () {
-          var o = { ti: "97223534", enableAutoSpaTracking: true };
-          o.q = w[u];
-          w[u] = new UET(o);
-          w[u].push("pageLoad");
-        };
-        n = d.createElement(t);
-        n.src = r;
-        n.async = 1;
-        n.onload = n.onreadystatechange = function () {
-          var s = this.readyState;
-          if (!s || s === "loaded" || s === "complete") {
-            f();
-            n.onload = n.onreadystatechange = null;
-          }
-        };
-        i = d.getElementsByTagName(t)[0];
-        i.parentNode.insertBefore(n, i);
-      })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
-    }
+    // function loadBing() {
+    //   (function (w, d, t, r, u) {
+    //     var f, n, i;
+    //     w[u] = w[u] || [];
+    //     f = function () {
+    //       var o = { ti: "97223534", enableAutoSpaTracking: true };
+    //       o.q = w[u];
+    //       w[u] = new UET(o);
+    //       w[u].push("pageLoad");
+    //     };
+    //     n = d.createElement(t);
+    //     n.src = r;
+    //     n.async = 1;
+    //     n.onload = n.onreadystatechange = function () {
+    //       var s = this.readyState;
+    //       if (!s || s === "loaded" || s === "complete") {
+    //         f();
+    //         n.onload = n.onreadystatechange = null;
+    //       }
+    //     };
+    //     i = d.getElementsByTagName(t)[0];
+    //     i.parentNode.insertBefore(n, i);
+    //   })(window, document, "script", "//bat.bing.com/bat.js", "uetq");
+    // }
 
-    if ("requestIdleCallback" in window) {
-      requestIdleCallback(loadBing);
-    } else {
-      setTimeout(loadBing, 2000);
-    }
+    // if ("requestIdleCallback" in window) {
+    //   requestIdleCallback(loadBing);
+    // } else {
+    //   setTimeout(loadBing, 2000);
+    // }
   </script>
 
 

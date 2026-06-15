@@ -146,7 +146,7 @@ const AppRoutes = () => {
                         {
                             pagesData.map((page) => (
                                 <Route path={`/${page.slug.toLowerCase()}`} element={<Layout>
-                                    <CityPage city={page.city} img={page.img} metaData={page.metaDetails} offer={page.offer} pageData={page.pageData} address={page.address} allData={page}></CityPage>
+                                    <CityPage slug={page.slug} city={page.city} img={page.img} metaData={page.metaDetails} offer={page.offer} pageData={page.pageData} address={page.address} allData={page}></CityPage>
                                 </Layout>}>
 
                                 </Route>

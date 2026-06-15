@@ -88,6 +88,7 @@ interface PageDataProps {
 }
 
 interface PageProps {
+  slug: string;
   city: string;
   img?: string;
   metaData?: MetaDataProps;
@@ -705,6 +706,7 @@ DefaultContent.displayName = "DefaultContent";
 // ── Main Component ──
 
 const CityPage: React.FC<PageProps> = ({
+  slug,
   city,
   img,
   metaData,
@@ -748,16 +750,12 @@ const CityPage: React.FC<PageProps> = ({
 
         <link
           rel="canonical"
-          href={`https://gatishiftingpackers.com/packers-and-movers-in-${city
-            .toLowerCase()
-            .replace(/\(.*?\)/g, "")
-            .replace(/\s+/g, "-")
-            .trim()}`}
+          href={`https://gatishiftingpackers.com/${slug}`}
         />
       </Helmet>
-
+      
       <CitySchema cityMeta={allData} />
-      {console.log(allData)}
+    
 
       <main className="cp-root">
 
