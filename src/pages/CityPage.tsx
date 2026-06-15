@@ -753,9 +753,9 @@ const CityPage: React.FC<PageProps> = ({
           href={`https://gatishiftingpackers.com/${slug}`}
         />
       </Helmet>
-      
+
       <CitySchema cityMeta={allData} />
-    
+
 
       <main className="cp-root">
 
@@ -862,9 +862,21 @@ const CityPage: React.FC<PageProps> = ({
                         <div key={i} className="cp-service-block">
                           {s?.title && <h3>{s.title}</h3>}
                           {s?.desc && <p style={{ whiteSpace: "pre-line" }}>{s.desc}</p>}
-                          {s?.link && s?.linkText && s.title != "Packing and Unpacking Services" && s.title != `Local Movers ${city}` && s.title != `Intercity Packers and Movers from ${city}` && (
-                            <a href={s.link} className="cp-inline-link">{s.linkText}</a>
-                          )}
+                          {s?.link && s?.linkText && s.title != "Packing and Unpacking Services" && s.title != `Intercity Packers and Movers from ${city
+                            .replace(/\s*\(.*?\)/g, "") 
+                            .replace(/-/g, " ")         
+                            .trim()}` 
+                            && s.title != `Packing and Unpacking Services ${city
+                            .replace(/\s*\(.*?\)/g, "") 
+                            .replace(/-/g, " ")        
+                            .trim()}` && 
+                            s.title != `Local Movers ${city
+                            .replace(/\s*\(.*?\)/g, "") // (Cochin) hata dega
+                            .replace(/-/g, " ")         
+                            .trim()}`
+                             && (
+                              <a href={s.link} className="cp-inline-link">{s.linkText}</a>
+                            )}
                         </div>
                       ))}
                     </div>
