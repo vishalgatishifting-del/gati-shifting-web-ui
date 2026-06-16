@@ -354,7 +354,9 @@ const CUSTOM_CITIES = new Set([
   "Bhilai",
   "Durg",
   "Bilaspur",
-  "Junagadh"
+  "Junagadh",
+  "Meerut",
+   "Mumbai (Bombay)"
 ]);
 
 // ── STATIC WHY CHOOSE DATA ──

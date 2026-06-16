@@ -3,14 +3,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./About.scss";
-import about_company_photo from "../assets/about_company_photo.png";
+import about_company_photo from "../assets/AboutPage/about_company_photo.webp";
 
 import houseShiftingImg from "../assets/AboutPage/household.webp";
-import storageImg from "../assets/storage_img.jpg";
+import storageImg from "../assets/AboutPage/storage_img.webp";
 import internationalImg from "../assets/AboutPage/international.webp";
 import carImg from "../assets/AboutPage/Car.webp";
 import bikeImg from "../assets/AboutPage/Bike.webp";
-import petImg from "../assets/pet_img.jpg";
+import petImg from "../assets/AboutPage/pet_img.webp";
 import officeImg from "../assets/AboutPage/office.webp";
 import commercialImg from "../assets/AboutPage/commercial.webp";
 import CheckIcon from "@mui/icons-material/Check";

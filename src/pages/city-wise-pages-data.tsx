@@ -686,7 +686,7 @@ export const pagesData = [
           text: ""
         },
         {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-vadodara",
+          link: "https://gatishiftingpackers.com/packers-and-movers-in-vadodara-baroda",
           linkText: "Packers and Movers in Vadodara",
           text: ""
         },
@@ -1124,7 +1124,7 @@ export const pagesData = [
           text: ""
         },
         {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-kolkata",
+          link: "https://gatishiftingpackers.com/packers-and-movers-in-kolkata-calcutta",
           linkText: "Packers and Movers in Kolkata",
           text: ""
         },
@@ -1524,7 +1524,7 @@ export const pagesData = [
   //         text: " - local and long-distance moves"
   //       },
   //       {
-  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-kolkata",
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-kolkata-calcutta",
   //         linkText: "Packers and Movers in Kolkata",
   //         text: " - home, office, and vehicle relocation"
   //       },
@@ -1626,7 +1626,7 @@ export const pagesData = [
           text: ""
         },
         {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-kolkata",
+          link: "https://gatishiftingpackers.com/packers-and-movers-in-kolkata-calcutta",
           linkText: "Packers and Movers in Kolkata",
           text: ""
         },
@@ -2680,16 +2680,533 @@ export const pagesData = [
       ]
     }
   },
-  {
-    slug: "packers-and-movers-in-meerut", city: "Meerut", img: MeerutImg, offer: "10%", address: "Shop - 192/3, near Shri Durga Mata Mandir, Sector 3, Shastri Nagar, Meerut, Uttar Pradesh 250002", metaDetails: {
-      title: "Packers and Movers in Meerut | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Meerut with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Meerut and across Uttar Pradesh.",
-      keywords: "Local movers near me Meerut, Packers and Movers in Meerut, Gati Shifting Packers Meerut, Best Packers and Movers Meerut, Affordable Packers and Movers Meerut, Trusted Packers and Movers Meerut Uttar Pradesh, Local Packers and Movers Meerut, Professional Movers and Packers Meerut, Home Shifting Services Meerut, Office Relocation Meerut, Vehicle Transport Meerut, Car Transport Service Meerut, Bike Transport Meerut, Household Goods Shifting Meerut, Industrial Packers and Movers Meerut, Door-to-Door Shifting Services Meerut, Packing and Unpacking Services Meerut, Furniture Movers Meerut, Intercity Packers and Movers Meerut, Packers and Movers Meerut to Delhi, Packers and Movers Meerut to Mumbai, Packers and Movers Meerut to Bengaluru, Packers and Movers Meerut to Kolkata, Reliable Relocation Company Meerut, Cost-Effective Packers and Movers Meerut, Quick Packers and Movers Meerut, 24x7 Packers and Movers Meerut, Mini Truck for Shifting Meerut, Tempo Service Meerut, Best Relocation Services Meerut, Safe and Secure Moving Services Meerut, Budget-Friendly Movers Meerut, Professional Relocation Company Meerut, Long-Distance Packers and Movers Meerut, Trusted Shifting Company Meerut, Goods Transport Services Meerut, Moving Experts Meerut, Packers Movers with Insurance Meerut, Verified Packers and Movers Meerut, Logistics and Transport Services Meerut, Gati Shifting Movers Meerut, Local Movers Meerut, Home Shifting Services in Meerut, Office Shifting Services in Meerut, Factory Relocation Services Meerut, Vehicle Shifting Meerut, Household Shifting Meerut, Movers and Packers near me Meerut, Relocation Company in Meerut, Moving Company Meerut, IBA Approved Packers and Movers Meerut, Packers and Movers Meerut Price, Packers and Movers Meerut Charges, Packers and Movers Meerut Cost, Reliable Packers and Movers Meerut, Door to Door Packers and Movers Meerut, Packers and Movers for Local Shifting in Meerut, Packers and Movers for Long Distance in Meerut, Loading and Unloading Services Meerut, Warehouse Shifting Meerut, Logistics Services Meerut, Transport Services Meerut, Relocation Company Meerut Uttar Pradesh, Household Relocation Services Meerut, Home Packers Meerut, Professional Packers and Movers Meerut, Intercity Movers Meerut, Shifting Services Meerut, Goods Transport Meerut, Safe Relocation Services Meerut, Local Household Movers Meerut, Best Shifting Company Meerut, Trusted Relocation Services Meerut, Gati Shifting Packers and Movers Uttar Pradesh, Gati Shifting Relocation Services Meerut, Gati Shifting Logistics Meerut, Gati Shifting Packers for Home Shifting Meerut, Gati Shifting Packers Office Movers Meerut, Gati Shifting Packers Affordable Moving Meerut.",
-      ogdesc: "Looking for reliable Packers and Movers in Meerut? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles in Meerut and Uttar Pradesh.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Meerut by Gati Shifting Packers. Make your relocation smooth and stress-free today!",
-      canonical: "https://gatishiftingpackers.com/packers-and-movers-in-meerut"
-    }
+
+// {
+//   slug: "packers-and-movers-in-meerut",
+//   city: "Meerut",
+//   img: MeerutImg,
+//   offer: "10%",
+//   address: "Shop - 192/3, near Shri Durga Mata Mandir, Sector 3, Shastri Nagar, Meerut, Uttar Pradesh 250002",
+
+//   keywords: [
+//     "packers and movers Meerut",
+//     "best packers and movers in Meerut",
+//     "home shifting Meerut",
+//     "office relocation Meerut",
+//     "car transport Meerut",
+//     "bike transport Meerut",
+//     "household shifting Meerut",
+//     "local movers Meerut",
+//     "intercity packers movers Meerut",
+//     "affordable packers movers Meerut",
+//     "trusted relocation services Meerut",
+//     "door to door shifting Meerut",
+//     "packing and unpacking Meerut",
+//     "vehicle transport Meerut"
+//   ],
+
+//   metaDetails: {
+//     title: "Best Packers and Movers in Meerut | Safe & Affordable Relocation",
+//     description: "Looking for reliable packers and movers in Meerut? Get safe home shifting, office relocation, car & bike transport, packing and moving services at affordable prices.",
+//     keywords: "packers and movers Meerut, home shifting Meerut, office relocation Meerut, vehicle transport Meerut, local movers Meerut",
+//     ogDescription: "Professional packers and movers in Meerut offering secure packing, home relocation, office shifting, and vehicle transport services.",
+//     twitterDescription: "Hire trusted packers and movers in Meerut for hassle-free home shifting, office relocation, and vehicle transportation.",
+//     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-meerut"
+//   },
+
+//   pageData: {
+//     mainHeading: "Packers and Movers in Meerut – Safe, Fast & Affordable Relocation Services",
+
+//     serviceSecondHeading:
+//       "Trusted Packers and Movers in Meerut for Home, Office & Vehicle Shifting",
+
+//     paragraph: [
+//       "Relocating in a rapidly growing city like Meerut requires proper planning and professional support. Gati Shifting Packers provides reliable packing, loading, transportation, unloading, and unpacking services to ensure a smooth moving experience.",
+//       "Whether you are shifting your home, office, vehicle, or commercial goods, our experienced team handles every item carefully using quality packing materials and modern transportation methods. We make relocation stress-free, secure, and budget-friendly."
+//     ],
+
+//     internationalHeading: "🌍 International Relocation Services from Meerut",
+
+//     internationalParagraph: [
+//       "We also assist customers planning overseas relocation from Meerut with professional packing, documentation support, customs guidance, and international logistics solutions.",
+//       "Our global moving network ensures safe and timely delivery of your belongings to international destinations with complete relocation support."
+//     ],
+
+//     servicesHeading: "Our Packers & Movers Services in Meerut",
+
+//     services: [
+//       {
+//         link: "/home-shifting",
+//         linkText: "🏠 Home Shifting Services"
+//       },
+//       {
+//         link: "/office-relocation",
+//         linkText: "🏢 Office Relocation"
+//       },
+//       {
+//         link: "/home-shifting",
+//         linkText: "🚚 Domestic Relocation"
+//       },
+//       {
+//         link: "/international-moving",
+//         linkText: "✈️ International Moving"
+//       },
+//       {
+//         link: "/car-bike-transport",
+//         linkText: "🚗 Car & Bike Transport"
+//       },
+//       {
+//         link: "/packing-and-unpacking",
+//         linkText: "📦 Packing & Unpacking"
+//       },
+//       {
+//         link: "/warehouse-storage",
+//         linkText: "🏬 Warehouse & Storage"
+//       },
+//       {
+//         link: "/home-shifting",
+//         linkText: "🏭 Corporate Relocation"
+//       }
+//     ],
+
+//     whyChooseHeading: "Why Choose Gati Shifting Packers in Meerut",
+
+//     whyChooseParagraph:
+//       "Professional relocation services help save time, reduce risk, and ensure safe transportation of your belongings.",
+
+//     whyChoose: [
+//       {
+//         title: "Experienced Moving Team",
+//         paragraph:
+//           "Our trained professionals manage every stage of relocation with precision and care."
+//       },
+//       {
+//         title: "High-Quality Packing Materials",
+//         paragraph:
+//           "We use premium packing supplies to protect fragile and valuable goods."
+//       },
+//       {
+//         title: "Timely Pickup & Delivery",
+//         paragraph:
+//           "Efficient planning ensures your belongings reach the destination on schedule."
+//       },
+//       {
+//         title: "Safe Vehicle Transportation",
+//         paragraph:
+//           "Dedicated car and bike carriers ensure secure transportation across India."
+//       },
+//       {
+//         title: "Affordable Pricing",
+//         paragraph:
+//           "Transparent pricing structure with no hidden charges."
+//       },
+//       {
+//         title: "Insurance Support",
+//         paragraph:
+//           "Transit insurance options provide additional safety and peace of mind."
+//       }
+//     ],
+
+//     whyChooseNote:
+//       "Hiring professional movers minimizes risks of damage, delays, and unexpected expenses during relocation.",
+
+//     areasHeading: "Areas We Serve in Meerut",
+
+//     areas: [
+//       {
+//         title: "Local Packers and Movers in Meerut",
+//         paragraph: [
+//           "We provide relocation services across Shastri Nagar, Jagriti Vihar, Ganga Nagar, Pallavpuram, Modipuram, Partapur, Kanker Khera, Saket, Medical College Road, Civil Lines, and nearby locations.",
+//           "Our local moving services include packing, transportation, unloading, and setup support for homes and offices."
+//         ]
+//       },
+//       {
+//         title: "Intercity Packers and Movers from Meerut",
+//         paragraph: [
+//           "We offer long-distance relocation services from Meerut to Delhi, Noida, Ghaziabad, Gurgaon, Mumbai, Pune, Bangalore, Hyderabad, Chennai, Kolkata, Jaipur, and other major Indian cities."
+//         ]
+//       }
+//     ],
+
+//     processHeading: "Our Relocation Process",
+
+//     processParagraph:
+//       "We follow a systematic relocation process to ensure safe and organized moving.",
+
+//     process: [
+//       {
+//         title: "Request a Quote",
+//         paragraph:
+//           "Share your moving requirements and receive a customized estimate."
+//       },
+//       {
+//         title: "Pre-Move Survey",
+//         paragraph:
+//           "Our experts assess the volume of goods and relocation requirements."
+//       },
+//       {
+//         title: "Professional Packing",
+//         paragraph:
+//           "Goods are packed securely using industry-standard materials."
+//       },
+//       {
+//         title: "Safe Loading",
+//         paragraph:
+//           "Trained staff carefully load items using proper equipment."
+//       },
+//       {
+//         title: "Transportation",
+//         paragraph:
+//           "Goods are transported safely through dedicated vehicles."
+//       },
+//       {
+//         title: "Unloading & Setup",
+//         paragraph:
+//           "Items are unloaded and arranged according to your instructions."
+//       }
+//     ],
+
+//     costHeading: "Packers & Movers Charges in Meerut",
+
+//     factorsHeading: "Factors Affecting Moving Costs in Meerut",
+
+//     factors: [
+//       {
+//         heading: "Distance of Relocation",
+//         paragraph:
+//           "Longer distances generally increase transportation costs."
+//       },
+//       {
+//         heading: "Volume of Goods",
+//         paragraph:
+//           "More goods require additional packing material and transport space."
+//       },
+//       {
+//         heading: "Type of Services",
+//         paragraph:
+//           "Packing, unpacking, storage, and vehicle transport affect pricing."
+//       },
+//       {
+//         heading: "Floor Level",
+//         paragraph:
+//           "Higher floors without elevator access may increase labor costs."
+//       },
+//       {
+//         heading: "Season & Moving Date",
+//         paragraph:
+//           "Weekend and month-end bookings may have higher demand."
+//       }
+//     ],
+
+//     nearbyCitiesHeading: "Nearby Service Locations",
+
+//     nearbyCities: [
+//       {
+//         link: "/city/ghaziabad",
+//         linkText: "Packers and Movers in Ghaziabad",
+//         text: ""
+//       },
+//       {
+//         link: "/city/noida",
+//         linkText: "Packers and Movers in Noida",
+//         text: ""
+//       },
+//       {
+//         link: "/city/delhi",
+//         linkText: "Packers and Movers in Delhi",
+//         text: ""
+//       },
+//       {
+//         link: "/city/aligarh",
+//         linkText: "Packers and Movers in Aligarh",
+//         text: ""
+//       },
+//       {
+//         link: "/city/moradabad",
+//         linkText: "Packers and Movers in Moradabad",
+//         text: ""
+//       }
+//     ],
+
+//     faqHeading: "Frequently Asked Questions",
+
+//     faqs: [
+//       {
+//         q: "How much do packers and movers charge in Meerut?",
+//         a: "Charges depend on distance, volume of goods, packing requirements, and additional services required."
+//       },
+//       {
+//         q: "Do you provide home shifting services in Meerut?",
+//         a: "Yes, we offer complete home relocation including packing, loading, transportation, unloading, and unpacking."
+//       },
+//       {
+//         q: "Can you transport cars and bikes from Meerut?",
+//         a: "Yes, we provide secure car and bike transportation services across India."
+//       },
+//       {
+//         q: "Do you offer office relocation services?",
+//         a: "Yes, we handle office furniture, equipment, electronics, and documents professionally."
+//       },
+//       {
+//         q: "How early should I book movers in Meerut?",
+//         a: "Booking at least 3–7 days in advance helps ensure availability and smooth planning."
+//       }
+//     ]
+//   }
+// },
+{
+  slug: "packers-and-movers-in-meerut",
+  city: "Meerut",
+  img: MeerutImg,
+  offer: "10%",
+  address: "Shop - 192/3, near Shri Durga Mata Mandir, Sector 3, Shastri Nagar, Meerut, Uttar Pradesh 250002",
+
+  keywords: [
+    "packers and movers Meerut",
+    "best packers and movers in Meerut",
+    "home shifting Meerut",
+    "office relocation Meerut",
+    "car transport Meerut",
+    "bike transport Meerut",
+    "packing and unpacking services Meerut",
+    "warehouse services Meerut",
+    "household shifting Meerut",
+    "commercial shifting Meerut",
+    "local movers Meerut",
+    "intercity packers movers Meerut"
+  ],
+
+  metaDetails: {
+    title: "Packers and Movers in Meerut | Gati Shifting Packers",
+    description: "Hire trusted Packers and Movers in Meerut with Gati Shifting Packers. We provide secure home shifting, office relocation, car & bike transport, storage and packing services at affordable prices.",
+    keywords: "packers and movers Meerut, home shifting Meerut, office relocation Meerut, car transport Meerut, bike transport Meerut",
+    ogDescription: "Looking for reliable Packers and Movers in Meerut? Gati Shifting Packers offers affordable and professional relocation services for homes, offices and vehicles.",
+    twitterDescription: "Professional Packers and Movers in Meerut for home shifting, office relocation, storage, packing and vehicle transport services.",
+    canonical: "https://gatishiftingpackers.com/packers-and-movers-in-meerut"
   },
+
+  pageData: {
+
+    mainHeading: "Packers and Movers in Meerut – Safe & Professional Relocation Services",
+
+    serviceSecondHeading: "Trusted Packers and Movers in Meerut for Home, Office & Vehicle Relocation",
+
+    paragraph: [
+      "Looking for reliable packers and movers in Meerut? Gati Shifting Packers provides complete relocation solutions for households, offices, vehicles, and commercial establishments. Our experienced team ensures safe packing, secure transportation, and timely delivery for every move.",
+      "Whether you are relocating within Meerut or moving to another city, we offer customized shifting solutions designed to make your relocation smooth, affordable, and stress-free."
+    ],
+
+    internationalHeading: "🌍 International Packers and Movers in Meerut",
+
+    internationalParagraph: [
+      "We provide reliable international relocation services from Meerut including professional packing, freight management, customs support, documentation assistance, and safe delivery to international destinations.",
+      "Whether you are relocating abroad for education, employment, or business purposes, our experienced international moving team ensures a hassle-free relocation experience with complete support."
+    ],
+
+    servicesHeading: "Our Packers & Movers Services in Meerut",
+
+    services: [
+      {
+        title: "Household Shifting Services in Meerut",
+        desc: "Safe and secure home relocation with premium packing materials and trained professionals for hassle-free household shifting.",
+        link: "/home-shifting",
+        linkText: "Home Shifting Services"
+      },
+
+      {
+        title: "Office Relocation Services in Meerut",
+        desc: "Fast and organized office shifting services with minimum business interruption and secure movement of office assets.",
+        link: "/office-relocation",
+        linkText: "Office Relocation Services"
+      },
+
+      {
+        title: "Car Transportation Services in Meerut",
+        desc: "Reliable car transportation services across India with proper safety measures and timely delivery.",
+        link: "/car-bike-transport",
+        linkText: "Car & Bike Transport Services"
+      },
+
+      {
+        title: "Storage and Warehouse Services in Meerut",
+        desc: "Secure warehouse and home storage solutions for temporary and long-term storage of household and industrial goods.",
+        link: "/storage",
+        linkText: "Warehouse Services"
+      },
+
+      {
+        title: "Industrial and Commercial Shifting in Meerut",
+        desc: "Professional industrial and commercial relocation services for factories, warehouses, and heavy equipment.",
+        link: "/commercial-shifting",
+        linkText: "Commercial Shifting Services"
+      },
+
+      {
+        title: "Packing and Unpacking Services in Meerut",
+        desc: "Professional packing and unpacking solutions using high-quality packing materials for complete protection.",
+       
+      }
+    ],
+
+    whyChooseHeading: "Why Choose Gati Shifting Packers in Meerut",
+
+    whyChooseParagraph: "We are committed to providing secure, affordable, and timely relocation services backed by experienced professionals and quality service standards.",
+
+    whyChoose: [
+      {
+        title: "Experienced Moving Professionals",
+        paragraph: "Our trained team handles household, office, and industrial relocation with complete care."
+      },
+      {
+        title: "Premium Packing Materials",
+        paragraph: "We use quality packing materials to ensure maximum safety during transportation."
+      },
+      {
+        title: "Affordable Pricing",
+        paragraph: "Transparent quotations with no hidden charges."
+      },
+      {
+        title: "Safe Vehicle Transportation",
+        paragraph: "Dedicated vehicle carriers for secure car and bike shifting."
+      },
+      {
+        title: "Timely Delivery",
+        paragraph: "Efficient logistics network ensures on-time delivery."
+      },
+      {
+        title: "Storage Facilities",
+        paragraph: "Safe warehouse and storage facilities available for short and long durations."
+      }
+    ],
+
+    areasHeading: "Areas We Serve in Meerut",
+
+    areas: [
+      {
+        title: "Local Packers and Movers in Meerut",
+        paragraph: [
+          "We provide relocation services across Shastri Nagar, Jagriti Vihar, Ganga Nagar, Pallavpuram, Modipuram, Kanker Khera, Partapur, Saket, Civil Lines, Medical College Road and nearby areas.",
+          "Our local shifting services include packing, transportation, unloading, and complete relocation support for residential and commercial customers."
+        ]
+      },
+
+      {
+        title: "Intercity Packers and Movers from Meerut",
+        paragraph: [
+          "We offer long-distance relocation services from Meerut to Delhi, Noida, Ghaziabad, Gurgaon, Mumbai, Pune, Bangalore, Hyderabad, Chennai, Kolkata, Ahmedabad, Jaipur, and other major cities across India."
+        ]
+      }
+    ],
+
+    processHeading: "Step-by-Step Moving Process",
+
+    processParagraph: "Our systematic relocation process ensures safe and organized shifting from start to finish.",
+
+    process: [
+      {
+        title: "Request a Quote",
+        paragraph: "Share your moving requirements and receive a customized estimate."
+      },
+      {
+        title: "Pre-Move Survey",
+        paragraph: "Assessment of goods and relocation requirements before shifting."
+      },
+      {
+        title: "Packing",
+        paragraph: "Professional packing using premium-quality packing materials."
+      },
+      {
+        title: "Loading",
+        paragraph: "Safe loading using proper handling techniques and equipment."
+      },
+      {
+        title: "Transportation",
+        paragraph: "Secure transportation through dedicated vehicles."
+      },
+      {
+        title: "Unloading & Setup",
+        paragraph: "Safe unloading and placement of goods at the destination."
+      }
+    ],
+
+    costHeading: "Packers & Movers Charges in Meerut",
+
+    factorsHeading: "Factors Affecting Relocation Costs in Meerut",
+
+    factors: [
+      {
+        heading: "Distance of Relocation",
+        paragraph: "Longer distances increase transportation and logistics costs."
+      },
+      {
+        heading: "Volume of Goods",
+        paragraph: "More items require additional packing materials and transportation space."
+      },
+      {
+        heading: "Packing Requirements",
+        paragraph: "Fragile and valuable items may require specialized packing."
+      },
+      {
+        heading: "Floor Level & Accessibility",
+        paragraph: "Higher floors without lift access can increase labor charges."
+      },
+      {
+        heading: "Additional Services",
+        paragraph: "Storage, insurance, unpacking, and vehicle transport can affect pricing."
+      }
+    ],
+
+    nearbyCitiesHeading: "Our Nearby Service Locations",
+
+    nearbyCities: [
+      {
+        link: "/packers-and-movers-in-ghaziabad",
+        linkText: "Packers and Movers in Ghaziabad"
+      },
+      {
+        link: "/packers-and-movers-in-noida",
+        linkText: "Packers and Movers in Noida"
+      },
+      {
+        link: "/packers-and-movers-in-delhi",
+        linkText: "Packers and Movers in Delhi"
+      },
+      {
+        link: "/packers-and-movers-in-aligarh",
+        linkText: "Packers and Movers in Aligarh"
+      },
+      {
+        link: "/packers-and-movers-in-moradabad",
+        linkText: "Packers and Movers in Moradabad"
+      }
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      {
+        q: "Do you provide complete home shifting services in Meerut?",
+        a: "Yes, we provide packing, loading, transportation, unloading, and unpacking services for household relocation."
+      },
+      {
+        q: "Can you transport cars and bikes from Meerut?",
+        a: "Yes, we offer secure car and bike transportation services across India."
+      },
+      {
+        q: "Do you offer office relocation services?",
+        a: "Yes, we handle office furniture, electronics, workstations, and important documents professionally."
+      },
+      {
+        q: "Do you provide warehouse and storage facilities?",
+        a: "Yes, we offer secure short-term and long-term warehouse storage solutions."
+      },
+      {
+        q: "How can I book Gati Shifting Packers in Meerut?",
+        a: "You can contact our team through our website or customer support number for a free quotation and booking."
+      }
+    ]
+  }
+},
   // {
   //   slug: "packers-and-movers-in-ahmedabad",
   //   city: "Ahmedabad",
@@ -2769,7 +3286,7 @@ export const pagesData = [
   //         text: ""
   //       },
   //       {
-  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-vadodara",
+  //         link: "https://gatishiftingpackers.com/packers-and-movers-in-vadodara-baroda",
   //         linkText: "Packers and Movers in Vadodara",
   //         text: ""
   //       },
@@ -2883,7 +3400,7 @@ export const pagesData = [
           text: ""
         },
         {
-          link: "https://gatishiftingpackers.com/packers-and-movers-in-vadodara",
+          link: "https://gatishiftingpackers.com/packers-and-movers-in-vadodara-baroda",
           linkText: "Packers and Movers in Vadodara",
           text: ""
         },
@@ -5382,15 +5899,261 @@ export const pagesData = [
       ]
     }
   },
-  {
-    slug: "packers-and-movers-in-mumbai-bombay", city: "Mumbai (Bombay)", img: Mumbai, offer: "15%", address: "Shop No - 331, Ghansoli, Navi Mumbai,Maharashtra - 400701", metaDetails: {
-      title: "Packers and Movers in Mumbai | Gati Shifting Packers",
-      desc: "Hire trusted Packers and Movers in Mumbai with Gati Shifting Packers. We provide secure, affordable and professional home, office and vehicle relocation services in Mumbai and across Maharashtra.",
-      keywords: "Local movers near me Mumbai, Packers and Movers in Mumbai, Gati Shifting Packers Mumbai, Best Packers and Movers Mumbai, Affordable Packers and Movers Mumbai, Trusted Packers and Movers Mumbai Maharashtra, Local Packers and Movers Mumbai, Professional Movers and Packers Mumbai, Home Shifting Services Mumbai, Office Relocation Mumbai, Vehicle Transport Mumbai, Car Transport Service Mumbai, Bike Transport Mumbai, Household Goods Shifting Mumbai, Industrial Packers and Movers Mumbai, Door-to-Door Shifting Services Mumbai, Packing and Unpacking Services Mumbai, Furniture Movers Mumbai, Intercity Packers and Movers Mumbai, Packers and Movers Mumbai to Delhi, Packers and Movers Mumbai to Bengaluru, Packers and Movers Mumbai to Kolkata, Reliable Relocation Company Mumbai, Cost-Effective Packers and Movers Mumbai, Quick Packers and Movers Mumbai, 24x7 Packers and Movers Mumbai, Mini Truck for Shifting Mumbai, Tempo Service Mumbai, Best Relocation Services Mumbai, Safe and Secure Moving Services Mumbai, Budget-Friendly Movers Mumbai, Professional Relocation Company Mumbai, Long-Distance Packers and Movers Mumbai, Trusted Shifting Company Mumbai, Goods Transport Services Mumbai, Moving Experts Mumbai, Packers Movers with Insurance Mumbai, Verified Packers and Movers Mumbai, Logistics and Transport Services Mumbai, Gati Shifting Movers Mumbai, Local Movers Mumbai, Home Shifting Services in Mumbai, Office Shifting Services in Mumbai, Factory Relocation Services Mumbai, Vehicle Shifting Mumbai, Household Shifting Mumbai, Movers and Packers near me Mumbai, Relocation Company in Mumbai, Moving Company Mumbai, IBA Approved Packers and Movers Mumbai, Packers and Movers Mumbai Price, Packers and Movers Mumbai Charges, Packers and Movers Mumbai Cost, Reliable Packers and Movers Mumbai, Door to Door Packers and Movers Mumbai, Packers and Movers for Local Shifting in Mumbai, Packers and Movers for Long Distance in Mumbai, Loading and Unloading Services Mumbai, Warehouse Shifting Mumbai, Logistics Services Mumbai, Transport Services Mumbai, Relocation Company Mumbai Maharashtra, Household Relocation Services Mumbai, Home Packers Mumbai, Professional Packers and Movers Mumbai, Intercity Movers Mumbai, Shifting Services Mumbai, Goods Transport Mumbai, Safe Relocation Services Mumbai, Local Household Movers Mumbai, Best Shifting Company Mumbai, Trusted Relocation Services Mumbai, Gati Shifting Packers and Movers Maharashtra, Gati Shifting Relocation Services Mumbai, Gati Shifting Logistics Mumbai, Gati Shifting Packers for Home Shifting Mumbai, Gati Shifting Packers Office Movers Mumbai, Gati Shifting Packers Affordable Moving Mumbai.",
-      ogdesc: "Looking for reliable Packers and Movers in Mumbai? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles in Mumbai and Maharashtra.",
-      twitterdesc: "Safe, professional and affordable Packers and Movers in Mumbai by Gati Shifting Packers. Make your relocation smooth and stress-free today!"
-    }
+
+{
+  slug: "packers-and-movers-in-mumbai-bombay",
+  city: "Mumbai (Bombay)",
+  img: Mumbai,
+  offer: "15%",
+  address: "Shop No - 331, Ghansoli, Navi Mumbai, Maharashtra - 400701",
+
+  keywords: [
+    "packers and movers Mumbai",
+    "packers and movers in Mumbai",
+    "home shifting Mumbai",
+    "office relocation Mumbai",
+    "car transport Mumbai",
+    "bike transport Mumbai",
+    "Navi Mumbai movers",
+    "house shifting Mumbai",
+    "corporate relocation Mumbai",
+    "warehouse services Mumbai",
+    "local movers Mumbai",
+    "intercity packers movers Mumbai"
+  ],
+
+  metaDetails: {
+    title: "Packers and Movers in Mumbai | Gati Shifting Packers",
+    desc: "Looking for trusted packers and movers in Mumbai? Gati Shifting Packers provides secure home shifting, office relocation, vehicle transport, storage and packing services across Mumbai and Navi Mumbai.",
+    keywords: "packers and movers Mumbai, home shifting Mumbai, office relocation Mumbai, vehicle transport Mumbai, movers in Navi Mumbai",
+    ogdesc: "Professional packers and movers in Mumbai offering safe home relocation, office shifting, car transport and storage services.",
+    twitterdesc: "Affordable and reliable packers and movers in Mumbai with complete relocation solutions for homes, offices and vehicles."
   },
+
+  pageData: {
+
+    mainHeading:
+      "Packers and Movers in Mumbai – Reliable Relocation Solutions for Homes & Businesses",
+
+    serviceSecondHeading:
+      "Professional Packers and Movers in Mumbai for Local, Intercity & Corporate Relocation",
+
+    paragraph: [
+      "Mumbai is one of India's busiest metropolitan cities where relocation requires proper planning, experienced manpower, and efficient logistics. Gati Shifting Packers provides professional moving solutions designed for Mumbai’s fast-paced lifestyle, helping families, working professionals, and businesses relocate without stress.",
+      
+      "Whether you are shifting from South Mumbai to Navi Mumbai, relocating an office in Andheri, moving an apartment in Powai, or transporting vehicles across India, our trained team ensures secure packing, careful handling, and timely delivery. Our relocation services are tailored to meet the unique moving challenges of Mumbai’s residential societies, commercial hubs, and high-rise buildings."
+    ],
+
+    internationalHeading: "🌍 International Relocation Services from Mumbai",
+
+    internationalParagraph: [
+      "As India's financial capital and an international business center, Mumbai witnesses a large number of overseas relocations every year. We offer international moving solutions including export packing, freight forwarding, customs assistance, documentation support, and overseas delivery.",
+      
+      "Our global logistics network helps individuals, families, and corporate employees relocate internationally with complete peace of mind and professional support."
+    ],
+
+    servicesHeading: "Our Relocation Services in Mumbai",
+
+    services: [
+      {
+        title: "Home Shifting Services in Mumbai",
+        desc: "Professional household relocation services for apartments, villas, and residential societies with safe packing and organized transportation.",
+        link: "/home-shifting",
+        linkText: "Home Shifting Services"
+      },
+
+      {
+        title: "Office Relocation Services in Mumbai",
+        desc: "Specialized office moving services for startups, IT companies, corporate offices, and commercial establishments with minimum downtime.",
+        link: "/office-relocation",
+        linkText: "Office Relocation Services"
+      },
+
+      {
+        title: "Car & Bike Transportation Services in Mumbai",
+        desc: "Safe vehicle transport solutions using specialized carriers for secure car and bike relocation across India.",
+        link: "/car-bike-transport",
+        linkText: "Car & Bike Transport Services"
+      },
+
+      {
+        title: "Warehouse & Storage Services in Mumbai",
+        desc: "Modern warehouse facilities for short-term and long-term storage of household goods, office assets, and commercial inventory.",
+        link: "/storage",
+        linkText: "Warehouse Services"
+      },
+
+      {
+        title: "Corporate Relocation Services in Mumbai",
+        desc: "End-to-end corporate relocation solutions for employee transfers, business expansions, and office transitions.",
+        link: "/office-relocation",
+        linkText: "Corporate Relocation"
+      },
+
+      {
+        title: "Packing and Unpacking Services in Mumbai",
+        desc: "High-quality packing solutions using premium materials to ensure maximum safety during transportation.",
+       
+      }
+    ],
+
+    whyChooseHeading: "Why Mumbai Residents Choose Gati Shifting Packers",
+
+    whyChooseParagraph:
+      "Our relocation services are designed specifically for Mumbai's residential complexes, commercial districts, and high-density urban environment.",
+
+    whyChoose: [
+      {
+        title: "Mumbai Logistics Expertise",
+        paragraph: "Experience handling relocations across Mumbai, Navi Mumbai, Thane, and surrounding regions."
+      },
+      {
+        title: "High-Rise Relocation Specialists",
+        paragraph: "Efficient shifting solutions for apartments and gated communities."
+      },
+      {
+        title: "Corporate Moving Experience",
+        paragraph: "Trusted by professionals, startups, and growing businesses."
+      },
+      {
+        title: "Premium Packing Standards",
+        paragraph: "Strong packing materials and secure handling procedures."
+      },
+      {
+        title: "Transparent Pricing",
+        paragraph: "No hidden costs and clear quotations."
+      },
+      {
+        title: "Dedicated Customer Support",
+        paragraph: "Continuous assistance before, during, and after relocation."
+      }
+    ],
+
+    areasHeading: "Areas We Serve in Mumbai",
+
+    areas: [
+      {
+        title: "Local Packers and Movers in Mumbai",
+        paragraph: [
+          "We provide relocation services across Andheri, Bandra, Powai, Goregaon, Malad, Borivali, Dadar, Kurla, Chembur, Lower Parel, Colaba, Navi Mumbai, Thane, Vashi, Nerul, Ghansoli, and surrounding locations.",
+          "Our local relocation team ensures quick, secure, and professionally managed shifting services throughout Mumbai Metropolitan Region."
+        ]
+      },
+
+      {
+        title: "Intercity Packers and Movers from Mumbai",
+        paragraph: [
+          "We offer long-distance relocation services from Mumbai to Delhi, Pune, Bangalore, Hyderabad, Chennai, Kolkata, Ahmedabad, Jaipur, Lucknow, Noida, Gurgaon, and all major cities across India."
+        ]
+      }
+    ],
+
+    processHeading: "Our Relocation Process",
+
+    processParagraph:
+      "We follow a structured moving process to ensure smooth and hassle-free relocation.",
+
+    process: [
+      {
+        title: "Free Survey & Quotation",
+        paragraph: "Assessment of moving requirements and customized pricing."
+      },
+      {
+        title: "Professional Packing",
+        paragraph: "Secure packing using industry-standard materials."
+      },
+      {
+        title: "Safe Loading",
+        paragraph: "Careful loading by trained relocation professionals."
+      },
+      {
+        title: "Transportation",
+        paragraph: "Timely transportation through dedicated logistics support."
+      },
+      {
+        title: "Delivery & Unloading",
+        paragraph: "Safe unloading and placement at destination."
+      }
+    ],
+
+    costHeading: "Packers & Movers Charges in Mumbai",
+
+    factorsHeading: "Factors Affecting Moving Costs in Mumbai",
+
+    factors: [
+      {
+        heading: "Moving Distance",
+        paragraph: "Local and intercity relocations have different transportation costs."
+      },
+      {
+        heading: "Type of Property",
+        paragraph: "Apartment, villa, office, or commercial space affects pricing."
+      },
+      {
+        heading: "Volume of Goods",
+        paragraph: "Larger moves require more manpower and transport capacity."
+      },
+      {
+        heading: "Building Accessibility",
+        paragraph: "Floor level, lift availability, and parking access influence labor requirements."
+      },
+      {
+        heading: "Additional Services",
+        paragraph: "Storage, insurance, unpacking, and vehicle transport impact overall cost."
+      }
+    ],
+
+    nearbyCitiesHeading: "Our Nearby Service Locations",
+
+    nearbyCities: [
+      {
+        link: "/packers-and-movers-in-vadodara-baroda",
+        linkText: "Packers and Movers in Vadodara"
+      },
+      {
+        link: "/packers-and-movers-in-aurangabad",
+        linkText: "Packers and Movers in Aurangabad"
+      },
+      {
+        link: "/packers-and-movers-in-pune",
+        linkText: "Packers and Movers in Pune"
+      },
+      {
+        link: "/packers-and-movers-in-surat",
+        linkText: "Packers and Movers in Surat"
+      },
+      {
+        link: "/packers-and-movers-in-nashik",
+        linkText: "Packers and Movers in Nashik"
+      }
+    ],
+
+    faqHeading: "Frequently Asked Questions",
+
+    faqs: [
+      {
+        q: "Do you provide home shifting services across Mumbai?",
+        a: "Yes, we provide local and intercity home relocation services throughout Mumbai and Navi Mumbai."
+      },
+      {
+        q: "Can you handle office relocation projects?",
+        a: "Yes, we specialize in corporate and office relocation with minimal business disruption."
+      },
+      {
+        q: "Do you provide vehicle transport services?",
+        a: "Yes, we offer safe car and bike transportation services across India."
+      },
+      {
+        q: "Do you offer storage facilities?",
+        a: "Yes, we provide secure warehouse and storage services for household and commercial goods."
+      },
+      {
+        q: "How can I get a quotation?",
+        a: "You can contact our team for a free survey and customized moving estimate."
+      }
+    ]
+  }
+},
   // {
   //   slug: "packers-and-movers-in-Prayagraj-allahabad", city: "Prayagraj (Allahabad)", img: Allahabad, offer: "15%", address: "Shop - 122, Mundera Rd, T.P Nagar, Transport Nagar, Prayagraj, Uttar Pradesh 211001", metaDetails: {
   //     title: "Packers and Movers in Prayagraj | Gati Shifting Packers",
@@ -5826,7 +6589,7 @@ export const pagesData = [
   //     keywords: "Local movers near me Vadodara, Packers and Movers in Vadodara, Gati Shifting Packers Vadodara, Best Packers and Movers Vadodara, Affordable Packers and Movers Vadodara, Trusted Packers and Movers Vadodara Gujarat, Local Packers and Movers Vadodara, Professional Movers and Packers Vadodara, Home Shifting Services Vadodara, Office Relocation Vadodara, Vehicle Transport Vadodara, Car Transport Service Vadodara, Bike Transport Vadodara, Household Goods Shifting Vadodara, Industrial Packers and Movers Vadodara, Door-to-Door Shifting Services Vadodara, Packing and Unpacking Services Vadodara, Furniture Movers Vadodara, Intercity Packers and Movers Vadodara, Packers and Movers Vadodara to Delhi, Packers and Movers Vadodara to Mumbai, Packers and Movers Vadodara to Bengaluru, Packers and Movers Vadodara to Kolkata, Reliable Relocation Company Vadodara, Cost-Effective Packers and Movers Vadodara, Quick Packers and Movers Vadodara, 24x7 Packers and Movers Vadodara, Mini Truck for Shifting Vadodara, Tempo Service Vadodara, Best Relocation Services Vadodara, Safe and Secure Moving Services Vadodara, Budget-Friendly Movers Vadodara, Professional Relocation Company Vadodara, Long-Distance Packers and Movers Vadodara, Trusted Shifting Company Vadodara, Goods Transport Services Vadodara, Moving Experts Vadodara, Packers Movers with Insurance Vadodara, Verified Packers and Movers Vadodara, Logistics and Transport Services Vadodara, Gati Shifting Movers Vadodara, Local Movers Vadodara, Home Shifting Services in Vadodara, Office Shifting Services in Vadodara, Factory Relocation Services Vadodara, Vehicle Shifting Vadodara, Household Shifting Vadodara, Movers and Packers near me Vadodara, Relocation Company in Vadodara, Moving Company Vadodara, IBA Approved Packers and Movers Vadodara, Packers and Movers Vadodara Price, Packers and Movers Vadodara Charges, Packers and Movers Vadodara Cost, Reliable Packers and Movers Vadodara, Door to Door Packers and Movers Vadodara, Packers and Movers for Local Shifting in Vadodara, Packers and Movers for Long Distance in Vadodara, Loading and Unloading Services Vadodara, Warehouse Shifting Vadodara, Logistics Services Vadodara, Transport Services Vadodara, Relocation Company Vadodara Gujarat, Household Relocation Services Vadodara, Home Packers Vadodara, Professional Packers and Movers Vadodara, Intercity Movers Vadodara, Shifting Services Vadodara, Goods Transport Vadodara, Safe Relocation Services Vadodara, Local Household Movers Vadodara, Best Shifting Company Vadodara, Trusted Relocation Services Vadodara, Gati Shifting Packers and Movers Gujarat, Gati Shifting Relocation Services Vadodara, Gati Shifting Logistics Vadodara, Gati Shifting Packers for Home Shifting Vadodara, Gati Shifting Packers Office Movers Vadodara, Gati Shifting Packers Affordable Moving Vadodara.",
   //     ogdesc: "Looking for reliable Packers and Movers in Vadodara? Gati Shifting Packers offers secure, timely and affordable relocation for homes, offices and vehicles in Vadodara and Gujarat.",
   //     twitterdesc: "Safe, professional and affordable Packers and Movers in Vadodara by Gati Shifting Packers. Make your relocation smooth and stress-free today!",
-  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-vadodara"
+  //     canonical: "https://gatishiftingpackers.com/packers-and-movers-in-vadodara-baroda"
   //   }
   // },
   {
@@ -13133,15 +13896,15 @@ export const pagesData = [
 
       routeHeading: "Intercity Packers and Movers from Chitradurga",
 
-      routeDesc: "Explore nearby service locations: https://gatishiftingpackers.com/packers-and-movers-in-bangalore https://gatishiftingpackers.com/packers-and-movers-in-tumkur https://gatishiftingpackers.com/packers-and-movers-in-bellary https://gatishiftingpackers.com/packers-and-movers-in-hubli",
+      routeDesc: "Explore nearby service locations:",
 
       nearbyCitiesHeading: "Explore nearby service locations:",
 
       nearbyCities: [
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-bangalore", linkText: "Packers and Movers in Bangalore", text: "" },
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-tumkur", linkText: "Packers and Movers in Tumkur", text: "" },
-        { link: "https://gatishiftingpackers.com/packers-and-movers-in-bellary", linkText: "Packers and Movers in Bellary", text: "" },
-        { link: "https://gatishiftingpackers.com/packers-and-movers-in-hubli", linkText: "Packers and Movers in Hubli", text: "" }
+        { link: "https://gatishiftingpackers.com/packers-and-movers-in-delhi", linkText: "Packers and Movers in Delhi", text: "" },
+        { link: "https://gatishiftingpackers.com/packers-and-movers-in-aligarh", linkText: "Packers and Movers in Aligarh", text: "" }
       ],
 
       faqHeading: "Frequently Asked Questions",
@@ -13508,14 +14271,14 @@ export const pagesData = [
 
       routeHeading: "Intercity Packers and Movers from Karwar",
 
-      routeDesc: "Explore nearby service pages: https://gatishiftingpackers.com/packers-and-movers-in-goa https://gatishiftingpackers.com/packers-and-movers-in-mangalore https://gatishiftingpackers.com/packers-and-movers-in-hubli https://gatishiftingpackers.com/packers-and-movers-in-pune",
+      routeDesc: "Explore nearby service pages: ",
 
       nearbyCitiesHeading: "Explore nearby service pages:",
 
       nearbyCities: [
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-goa", linkText: "Packers and Movers in Goa", text: "" },
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-mangalore", linkText: "Packers and Movers in Mangalore", text: "" },
-        { link: "https://gatishiftingpackers.com/packers-and-movers-in-hubli", linkText: "Packers and Movers in Hubli", text: "" },
+        { link: "https://gatishiftingpackers.com/packers-and-movers-in-delhi", linkText: "Packers and Movers in Delhi", text: "" },
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-pune", linkText: "Packers and Movers in Pune", text: "" }
       ],
 
@@ -13633,12 +14396,12 @@ export const pagesData = [
 
       routeHeading: "Intercity Packers and Movers from Bagalkot",
 
-      routeDesc: "Explore nearby service pages: https://gatishiftingpackers.com/packers-and-movers-in-hubli https://gatishiftingpackers.com/packers-and-movers-in-bijapur https://gatishiftingpackers.com/packers-and-movers-in-belgaum https://gatishiftingpackers.com/packers-and-movers-in-pune",
+      routeDesc: "Explore nearby service pages: ",
 
       nearbyCitiesHeading: "Explore nearby service pages:",
 
       nearbyCities: [
-        { link: "https://gatishiftingpackers.com/packers-and-movers-in-hubli", linkText: "Packers and Movers in Hubli", text: "" },
+        { link: "https://gatishiftingpackers.com/packers-and-movers-in-delhi", linkText: "Packers and Movers in Delhi", text: "" },
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-bijapur", linkText: "Packers and Movers in Bijapur", text: "" },
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-belgaum", linkText: "Packers and Movers in Belgaum", text: "" },
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-pune", linkText: "Packers and Movers in Pune", text: "" }
@@ -13884,7 +14647,7 @@ export const pagesData = [
 
       routeHeading: "Intercity Packers and Movers from Thoubal",
 
-      routeDesc: "Explore nearby service pages: https://gatishiftingpackers.com/packers-and-movers-in-imphal https://gatishiftingpackers.com/packers-and-movers-in-guwahati https://gatishiftingpackers.com/packers-and-movers-in-silchar https://gatishiftingpackers.com/packers-and-movers-in-kolkata",
+      routeDesc: "Explore nearby service pages: https://gatishiftingpackers.com/packers-and-movers-in-imphal https://gatishiftingpackers.com/packers-and-movers-in-guwahati https://gatishiftingpackers.com/packers-and-movers-in-silchar https://gatishiftingpackers.com/packers-and-movers-in-kolkata-calcutta",
 
       nearbyCitiesHeading: "Explore nearby service pages:",
 
@@ -13892,7 +14655,7 @@ export const pagesData = [
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-imphal", linkText: "Packers and Movers in Imphal", text: "" },
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-guwahati", linkText: "Packers and Movers in Guwahati", text: "" },
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-silchar", linkText: "Packers and Movers in Silchar", text: "" },
-        { link: "https://gatishiftingpackers.com/packers-and-movers-in-kolkata", linkText: "Packers and Movers in Kolkata", text: "" }
+        { link: "https://gatishiftingpackers.com/packers-and-movers-in-kolkata-calcutta", linkText: "Packers and Movers in Kolkata", text: "" }
       ],
 
       faqHeading: "Frequently Asked Questions",
@@ -14009,7 +14772,7 @@ export const pagesData = [
 
       routeHeading: "Intercity Packers and Movers from Churachandpur",
 
-      routeDesc: "Explore nearby service pages: https://gatishiftingpackers.com/packers-and-movers-in-imphal https://gatishiftingpackers.com/packers-and-movers-in-aizawl https://gatishiftingpackers.com/packers-and-movers-in-guwahati https://gatishiftingpackers.com/packers-and-movers-in-kolkata",
+      routeDesc: "Explore nearby service pages: https://gatishiftingpackers.com/packers-and-movers-in-imphal https://gatishiftingpackers.com/packers-and-movers-in-aizawl https://gatishiftingpackers.com/packers-and-movers-in-guwahati https://gatishiftingpackers.com/packers-and-movers-in-kolkata-calcutta",
 
       nearbyCitiesHeading: "Explore nearby service pages:",
 
@@ -14017,7 +14780,7 @@ export const pagesData = [
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-imphal", linkText: "Packers and Movers in Imphal", text: "" },
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-aizawl", linkText: "Packers and Movers in Aizawl", text: "" },
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-guwahati", linkText: "Packers and Movers in Guwahati", text: "" },
-        { link: "https://gatishiftingpackers.com/packers-and-movers-in-kolkata", linkText: "Packers and Movers in Kolkata", text: "" }
+        { link: "https://gatishiftingpackers.com/packers-and-movers-in-kolkata-calcutta", linkText: "Packers and Movers in Kolkata", text: "" }
       ],
 
       faqHeading: "Frequently Asked Questions",
@@ -14258,7 +15021,7 @@ export const pagesData = [
 
       routeHeading: "Intercity Packers and Movers from Ukhrul",
 
-      routeDesc: "Explore nearby service locations: https://gatishiftingpackers.com/packers-and-movers-in-imphal https://gatishiftingpackers.com/packers-and-movers-in-senapati https://gatishiftingpackers.com/packers-and-movers-in-guwahati https://gatishiftingpackers.com/packers-and-movers-in-kolkata",
+      routeDesc: "Explore nearby service locations: https://gatishiftingpackers.com/packers-and-movers-in-imphal https://gatishiftingpackers.com/packers-and-movers-in-senapati https://gatishiftingpackers.com/packers-and-movers-in-guwahati https://gatishiftingpackers.com/packers-and-movers-in-kolkata-calcutta",
 
       nearbyCitiesHeading: "Explore nearby service pages:",
 
@@ -14266,7 +15029,7 @@ export const pagesData = [
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-imphal", linkText: "Packers and Movers in Imphal", text: "" },
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-senapati", linkText: "Packers and Movers in Senapati", text: "" },
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-guwahati", linkText: "Packers and Movers in Guwahati", text: "" },
-        { link: "https://gatishiftingpackers.com/packers-and-movers-in-kolkata", linkText: "Packers and Movers in Kolkata", text: "" }
+        { link: "https://gatishiftingpackers.com/packers-and-movers-in-kolkata-calcutta", linkText: "Packers and Movers in Kolkata", text: "" }
       ],
 
       faqHeading: "Frequently Asked Questions",
@@ -19711,14 +20474,14 @@ export const pagesData = [
 
       routeHeading: "Intercity Packers and Movers from Gangtok",
 
-      routeDesc: "Explore nearby service pages: https://gatishiftingpackers.com/packers-and-movers-in-sikkim https://gatishiftingpackers.com/packers-and-movers-in-gangtok-east https://gatishiftingpackers.com/packers-and-movers-in-gangtok-west",
+      routeDesc: "Explore nearby service pages:",
 
       nearbyCitiesHeading: "Explore nearby service pages:",
 
       nearbyCities: [
         { link: "https://gatishiftingpackers.com/packers-and-movers-in-sikkim", linkText: "Packers and Movers in Sikkim", text: "" },
-        { link: "https://gatishiftingpackers.com/packers-and-movers-in-gangtok-east", linkText: "Packers and Movers in Gangtok East", text: "" },
-        { link: "https://gatishiftingpackers.com/packers-and-movers-in-gangtok-west", linkText: "Packers and Movers in Gangtok West", text: "" }
+        { link: "https://gatishiftingpackers.com/packers-and-movers-in-delhi", linkText: "Packers and Movers in Delhi", text: "" },
+        { link: "https://gatishiftingpackers.com/packers-and-movers-in-aligarh", linkText: "Packers and Movers in Aligarh", text: "" }
       ],
 
       faqHeading: "Frequently Asked Questions",
