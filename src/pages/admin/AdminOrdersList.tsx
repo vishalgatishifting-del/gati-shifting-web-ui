@@ -46,7 +46,7 @@ const AdminOrdersList = () => {
       setResponsePage(res.data.page)
       setTotalPages(res.data.totalPages)
       setTotalOrders(res.data.total)
-
+      console.log(res.data.orders[0]._id)
 
     }
     catch (err: any) {
@@ -183,7 +183,7 @@ const AdminOrdersList = () => {
 
             {orders.map(order => (
 
-              <tr key={order.trackingId}>
+              <tr className={`provider ${order.provider}`} key={order.trackingId}>
 
                 <td className="tracking">
                   {order.trackingId}
