@@ -23,6 +23,9 @@ import LeadsList from "./LeadsList"
 import ItemsRequest from "./ItemsRequest";
 import PartnersManagement from "./PartnersManagement";
 import homePng from "../../assets/AdminPage/home.png"
+import Employee from "./Employees/EmployeeList";
+import UsersManagement from "./Users";
+
 
 
 const getIntensity = (
@@ -69,7 +72,17 @@ const AdminDashboard: React.FC = () => {
     const days = Array.from({ length: 31 }, (_, i) => i + 1);
 
 
+    const user = JSON.parse(
+        localStorage.getItem("adminUser") || "{}"
+    );
 
+    const hasPermission = (
+        permission: string
+    ) => {
+        return user?.permissions?.includes(
+            permission
+        );
+    };
 
     const maxLeads =
         Math.max(...Object.values(calendarData), 1);
@@ -228,38 +241,68 @@ const AdminDashboard: React.FC = () => {
                         <img className="menu-img" src={homePng} />
                     </div>
 
-                    <div
-                        className={`menu-item ${activePage === "orders" ? "active" : ""}`}
-                        onClick={() => setActivePage("orders")}
-                    >
-                        📦
-                    </div>
-                    <div
-                        className={`menu-item ${activePage === "leads" ? "active" : ""}`}
-                        onClick={() => setActivePage("leads")}
-                    >
-                        📃
-                    </div>
+                    {hasPermission("orders") && (
+                        <div
+                            className={`menu-item ${activePage === "orders" ? "active" : ""}`}
+                            onClick={() => setActivePage("orders")}
+                        >
+                            📦
+                        </div>
+                    )}
 
-                    <div
-                        className={`menu-item ${activePage === "items" ? "active" : ""}`}
-                        onClick={() => setActivePage("items")}
-                    >
-                        📋
-                    </div>
-                    <div
-                        className={`menu-item ${activePage === "partners" ? "active" : ""}`}
-                        onClick={() => setActivePage("partners")}
-                    >
-                        👥
-                    </div>
+                    {hasPermission("leads") && (
+                        <div
+                            className={`menu-item ${activePage === "leads" ? "active" : ""}`}
+                            onClick={() => setActivePage("leads")}
+                        >
+                            📃
+                        </div>
+                    )}
 
-                    <div
-                        className={`menu-item ${activePage === "reports" ? "active" : ""}`}
-                        onClick={() => setActivePage("reports")}
-                    >
-                        📊
-                    </div>
+                    {hasPermission("items") && (
+                        <div
+                            className={`menu-item ${activePage === "items" ? "active" : ""}`}
+                            onClick={() => setActivePage("items")}
+                        >
+                            📋
+                        </div>
+                    )}
+
+                    {hasPermission("partners") && (
+                        <div
+                            className={`menu-item ${activePage === "partners" ? "active" : ""}`}
+                            onClick={() => setActivePage("partners")}
+                        >
+                            👥
+                        </div>
+                    )}
+
+                    {hasPermission("reports") && (
+                        <div
+                            className={`menu-item ${activePage === "reports" ? "active" : ""}`}
+                            onClick={() => setActivePage("reports")}
+                        >
+                            📊
+                        </div>
+                    )}
+
+                    {hasPermission("employees") && (
+                        <div
+                            className={`menu-item ${activePage === "employees" ? "active" : ""}`}
+                            onClick={() => setActivePage("employees")}
+                        >
+                            👨‍💼
+                        </div>
+                    )}
+
+                    {hasPermission("users") && (
+                        <div
+                            className={`menu-item ${activePage === "UsersManagement" ? "active" : ""}`}
+                            onClick={() => setActivePage("UsersManagement")}
+                        >
+                            🔐
+                        </div>
+                    )}
 
                 </div>
 
@@ -463,6 +506,12 @@ const AdminDashboard: React.FC = () => {
                 )}
                 {activePage === "partners" && (
                     <PartnersManagement />
+                )}
+                {activePage === "employees" && (
+                    <Employee />
+                )}
+                {activePage === "UsersManagement" && (
+                    <UsersManagement />
                 )}
 
             </div>

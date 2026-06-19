@@ -60,7 +60,7 @@ const AdminLogin: React.FC<Props> = () => {
 
     try {
 
-      await privateAPI.post(
+      const res = await privateAPI.post(
         "/api/auth/verify-otp",
         {
           email,
@@ -70,7 +70,10 @@ const AdminLogin: React.FC<Props> = () => {
       );
 
       // alert(res.data.message);
-
+      localStorage.setItem(
+        "adminUser",
+        JSON.stringify(res.data.user)
+      );
       setShowOtpPopup(false);
 
       navigate("/admin-dashboard");

@@ -43,6 +43,7 @@ import TrackOrder from "../pages/TrackOrder.tsx"
 // import AdminDashboard from "../pages/admin/AdminDashboard.tsx"
 // import AdminLogin from "../pages/admin/AdminLogin.tsx"
 import ProtectedRoute from "../pages/admin/ProtectedRoute.tsx"
+import AddEmployee from "../pages/admin/Employees/AddEmployee.tsx";
 // import ItemSelection from "../pages/ItemSelection.tsx"
 
 // const Home = React.lazy(() => import("../pages/Home"));
@@ -83,7 +84,6 @@ const NotFound = React.lazy(() => import("../pages/NotFound"));
 const AdminDashboard = React.lazy(() => import("../pages/admin/AdminDashboard.tsx"));
 const AdminLogin = React.lazy(() => import("../pages/admin/AdminLogin.tsx"));
 const ItemSelection = React.lazy(() => import("../pages/ItemSelection.tsx"));
-
 
 
 
@@ -140,6 +140,12 @@ const AppRoutes = () => {
 
                         <Route path="/track-order/:id" element={<Layout><TrackOrder></TrackOrder></Layout>}></Route>
                         <Route path="/track-order" element={<Layout><TrackOrder /></Layout>} />
+
+
+                        <Route
+                            path="/employees/add"
+                            element={<ProtectedRoute><AddEmployee /></ProtectedRoute>}
+                        />
                         <Route path="/item-selection" element={<ItemSelection successCondition={setVisibilityCondition} setOpen={setOpen} open={open} />} />
 
 
