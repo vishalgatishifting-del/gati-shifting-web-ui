@@ -1,36 +1,85 @@
+
 #customer-review-list {
   .review-slider-container {
-    margin-bottom: 20px;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 30px;
   }
-}
-#customer-review-list{
-    .review-slider-container{
-        margin-bottom: 20px;
-    }
-}
 
-#get-in-touch-form{
-  margin-top: 30px;
-}
-
-#customer-review-list {
-  .slick-slider,
-  .slick-list {
+  .slick-slider {
     width: 100%;
+  }
+
+  .slick-list {
     overflow: hidden;
   }
 
   .slick-track {
-    display: flex;
+    display: flex !important;
+  }
+
+  .slick-slide {
+    padding: 10px;
+    box-sizing: border-box;
+    height: auto;
+  }
+
+  .slick-slide > div {
+    height: 100%;
   }
 
   .card {
-    margin: 10px;
+    min-height: 240px;
+    background: rgba(255, 255, 255, 0.15);
     color: #fff;
-    background: #ffffff30;
     padding: 20px;
     border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .detail {
+    h4 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    p {
+      line-height: 1.7;
+      word-break: break-word;
+    }
+  }
+
+  .customer-name {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+}
+
+#get-in-touch-form {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  #customer-review-list {
+    .slick-slide {
+      padding: 0 15px;
+    }
+
+    .card {
+      width: 100%;
+      min-height: auto;
+    }
+
+    .detail h4 {
+      font-size: 18px;
+    }
+
+    .detail p {
+      font-size: 15px;
+    }
   }
 }

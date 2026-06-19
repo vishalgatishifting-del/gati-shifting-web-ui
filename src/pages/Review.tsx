@@ -9,33 +9,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const settings2 = {
-  dots: false,
+  dots: true,
   infinite: true,
-  speed: 500,
-  slidesToShow: 3,
+  slidesToShow: 1,
   slidesToScroll: 1,
-  centerMode: false,
-  autoplay: true,
-  autoplaySpeed: 3000,
-  pauseOnHover: true,
-  pauseOnFocus: false,
-  swipeToSlide: true,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-  ],
 };
-
 
 interface props{
   successCondition: React.Dispatch<React.SetStateAction<boolean>>;
