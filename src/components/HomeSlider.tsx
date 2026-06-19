@@ -2,20 +2,20 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import "./HomeSlider.scss";
 
 import mainSlider from "../assets/sliderImg/mainSlider.webp";
-import gatiSlider2 from "../assets/sliderImg/gatislider2.webp";
+import gatiSlider2 from "../assets/sliderImg/gatiSlider10.webp";
 import gatiSlider3 from "../assets/sliderImg/gatislider3.webp";
 import gatislider5 from "../assets/sliderImg/gatislider5.webp";
 // import gatislider6 from "../assets/sliderImg/gatislider6.webp";
-import gatiSlider7 from "../assets/sliderImg/gatiSlider7.webp";
+import gatiSlider7 from "../assets/sliderImg/gatiSlider11.webp";
 import gatislider8 from "../assets/sliderImg/gatiSlider8.webp";
 import gatislider9 from "../assets/sliderImg/gatiSlider9.webp"
 
 const images = [
   mainSlider,
-  gatislider9,
   gatiSlider2,
-  gatislider8,
   gatiSlider7,
+  gatislider9,
+  gatislider8,
   gatislider5,
   gatiSlider3,
 ];
