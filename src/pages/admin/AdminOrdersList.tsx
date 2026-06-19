@@ -123,6 +123,55 @@ const AdminOrdersList = () => {
       console.error(err.message);
     }
   }
+
+  const shareableLink = (order: any) => {
+    if (order.provider == "Gati Shifting Packers") {
+
+      return `https://wa.me/${order.phone}?text=${encodeURIComponent(
+        `Dear ${order.customerName},
+
+Your order has been successfully booked.
+
+You can track your order status using the link below:
+https://gatishiftingpackers.com/track-order/${order.trackingId}
+
+Thank you for choosing Gati Shifting Packers.`
+      )}`;
+    } else if (order.provider == "Safexpress") {
+      return `https://wa.me/${order.phone}?text=${encodeURIComponent(
+        `Dear ${order.customerName},
+
+Your order has been successfully booked.
+
+You can track your order status using the link below:
+https://safeshiftingpackers.com/track-order/${order.trackingId}
+
+Thank you for choosing Safe Shifting Packers.`
+      )}`;
+    } else if (order.provider == "Aggarwal Packers and Movers") {
+      return `https://wa.me/${order.phone}?text=${encodeURIComponent(
+        `Dear ${order.customerName},
+
+Your order has been successfully booked.
+
+You can track your order status using the link below:
+https://aggrawalpackers.com/track-order/${order.trackingId}
+
+Thank you for choosing Agarwal Packers and Movers.`
+      )}`;
+    } else {
+      return `https://wa.me/${order.phone}?text=${encodeURIComponent(
+        `Dear ${order.customerName},
+
+Your order has been successfully booked.
+
+You can track your order status using the link below:
+https://gatishiftingpackers.com/track-order/${order.trackingId}
+
+Thank you for choosing Gati Shifting Packers.`
+      )}`;
+    }
+  };
   return (
 
     <div className="orders-page">
@@ -231,16 +280,7 @@ const AdminOrdersList = () => {
 
                   <div className="actions">
 
-                    <a href={`https://wa.me/${order.phone}?text=${encodeURIComponent(
-                      `Dear ${order.customerName},
-
-Your order has been successfully booked.
-
-You can track your order status using the link below:
-https://gatishiftingpackers.com/track-order/${order.trackingId}
-
-Thank you for choosing Gati Shifting Packers.`
-                    )}`}
+                    <a href={shareableLink(order)}
                       className="update-btn"
                       style={{
                         background: "#25D366",

@@ -90,7 +90,6 @@ const AdminDashboard: React.FC = () => {
                     );
 
                 setUser(res.data);
-                console.log(res.data.data)
 
             }
             catch {
@@ -112,9 +111,7 @@ const AdminDashboard: React.FC = () => {
 
     }, []);
 
-    const hasPermission = (
-        permission: string
-    ) => {
+    const hasPermission = (  permission: string ) => {
 
         return user?.permissions?.includes(
             permission
