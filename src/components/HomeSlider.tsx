@@ -4,7 +4,7 @@ import "./HomeSlider.scss";
 import mainSlider from "../assets/sliderImg/mainSlider.webp";
 import gatiSlider2 from "../assets/sliderImg/gatiSlider10.webp";
 import gatiSlider3 from "../assets/sliderImg/gatiSlider13.webp";
-import gatislider5 from "../assets/sliderImg/gatislider12.webp";
+import gatislider5 from "../assets/sliderImg/gatiSlider12.webp";
 // import gatislider6 from "../assets/sliderImg/gatislider6.webp";
 import gatiSlider7 from "../assets/sliderImg/gatiSlider11.webp";
 import gatislider8 from "../assets/sliderImg/gatiSlider8.webp";
