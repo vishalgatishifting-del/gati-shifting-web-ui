@@ -112,7 +112,7 @@ const validate = (data: FormData): Errors => {
   return errs;
 };
 
-// ── Component ──────────────────────────────────────────────────────────────────
+
 const ZohoForm: React.FC<Props> = ({ successCondition }) => {
   const empty: FormData = { Name: '', Email: '', Phone: '', From: '', To: '', Goods: '' };
 

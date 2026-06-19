@@ -72,16 +72,54 @@ const AdminDashboard: React.FC = () => {
     const days = Array.from({ length: 31 }, (_, i) => i + 1);
 
 
-    const user = JSON.parse(
-        localStorage.getItem("adminUser") || "{}"
-    );
+    const [user, setUser] =
+        useState<any>(null);
+
+    // const [userLoading, setUserLoading] =
+    //     useState(true);
+
+    useEffect(() => {
+
+        const getUser = async () => {
+
+            try {
+
+                const res =
+                    await privateAPI.get(
+                        "/api/auth/me"
+                    );
+
+                setUser(res.data);
+                console.log(res.data.data)
+
+            }
+            catch {
+
+                navigate(
+                    "/admin-login"
+                );
+
+            }
+            finally {
+
+                // setUserLoading(false);
+
+            }
+
+        };
+
+        getUser();
+
+    }, []);
 
     const hasPermission = (
         permission: string
     ) => {
+
         return user?.permissions?.includes(
             permission
         );
+
     };
 
     const maxLeads =

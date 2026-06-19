@@ -1,13 +1,10 @@
-import axios from "axios";
-
-const API =
-  "https://api.gatishiftingpackers.com";
+import privateAPI from "../api/privateAxios";
 
 export const checkIn = (
   employeeId: string
 ) => {
-  return axios.post(
-    `${API}/attendance/check-in`,
+  return privateAPI.post(
+    "/api/attendance/check-in",
     {
       employeeId,
     }
@@ -17,8 +14,8 @@ export const checkIn = (
 export const checkOut = (
   employeeId: string
 ) => {
-  return axios.post(
-    `${API}/attendance/check-out`,
+  return privateAPI.post(
+    "/api/attendance/check-out",
     {
       employeeId,
     }

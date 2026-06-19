@@ -1,9 +1,36 @@
+#customer-review-list {
+  .review-slider-container {
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
 #customer-review-list{
-    .container{
+    .review-slider-container{
         margin-bottom: 20px;
     }
 }
 
 #get-in-touch-form{
   margin-top: 30px;
+}
+
+#customer-review-list {
+  .slick-slider,
+  .slick-list {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  .card {
+    margin: 10px;
+    color: #fff;
+    background: #ffffff30;
+    padding: 20px;
+    border-radius: 20px;
+  }
 }

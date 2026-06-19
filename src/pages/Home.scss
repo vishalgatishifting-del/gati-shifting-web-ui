@@ -339,7 +339,6 @@ $palettes: (
     background-size: 40px 40px;
     pointer-events: none;
   }
-}
 
 .cs-inner {
   max-width: 1160px;
@@ -368,7 +367,7 @@ $palettes: (
     margin: 0 12px;
   }
 }
-
+  
 // ── Grid ──────────────────────────────────────────────────────────────────────
 .container {
   display: grid;
@@ -590,6 +589,9 @@ $palettes: (
         }
     }
 }
+}
+
+
 
 
 

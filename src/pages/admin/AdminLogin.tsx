@@ -69,7 +69,6 @@ const AdminLogin: React.FC<Props> = () => {
         }
       );
 
-      // alert(res.data.message);
       localStorage.setItem(
         "adminUser",
         JSON.stringify(res.data.user)

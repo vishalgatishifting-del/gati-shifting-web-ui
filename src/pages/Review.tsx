@@ -5,22 +5,35 @@ import "./Review.scss";
 import ContactForm from "../components/ContactForm";
 import ReviewForm from "../components/ReviewForm";
 import { Helmet } from "react-helmet-async";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const settings2 = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    variableWidth: true,
-    centerMode: true,
-    centerPadding: "0px",
-    autoplay: true,
-    autoplaySpeed: 2000,
-    pauseOnHover: false,
-    pauseOnFocus: false,
-    swipeToSlide: true
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  centerMode: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
+  pauseOnHover: true,
+  pauseOnFocus: false,
+  swipeToSlide: true,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 };
 
 
@@ -54,7 +67,7 @@ const Review = ({successCondition} : props) => {
                 <h1>What Our Customers Say</h1>
                 <p className="para">Genuine feedback from people who’ve moved homes, offices & even countries with us.</p>
 
-                <div className="container">
+                <div className="review-slider-container">
 
                     <Slider {...settings2}>
                         <Box key="1" sx={{ position: "relative", outline: "none" }}>
@@ -240,7 +253,7 @@ const Review = ({successCondition} : props) => {
 
                 </div>
 
-                <div className="container">
+                <div className="review-slider-container">
 
                     <Slider {...settings2}>
                         <Box key="1" sx={{ position: "relative", outline: "none" }}>
