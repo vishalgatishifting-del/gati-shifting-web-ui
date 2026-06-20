@@ -304,7 +304,7 @@ const Storage = () => {
           property="og:description"
           content="Explore reliable and secure storage and warehousing solutions by Safe Shifting Packers including household goods, vehicles, and office equipment storage with flexible terms."
         />
-        <meta property="og:url" content="https://safeshiftingpackers.com/storage" />
+        <meta property="og:url" content="https://gatishiftingpackers.com/storage" />
         <meta property="og:site_name" content="Safe Shifting Packers" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Storage & Warehousing Services | Safe Shifting Packers" />
@@ -312,7 +312,7 @@ const Storage = () => {
           name="twitter:description"
           content="Flexible and secure storage services for goods, vehicles, and equipment by Safe Shifting Packers."
         />
-        <link rel="canonical" href="https://safeshiftingpackers.com/storage" />
+        <link rel="canonical" href="https://gatishiftingpackers.com/storage" />
         <link
           rel="preload"
           as="image"
