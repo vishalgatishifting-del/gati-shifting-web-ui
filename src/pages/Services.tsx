@@ -75,6 +75,8 @@ const Services = ({ successCondition }: Props) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Our Services | Gati Shifting Packers" />
         <meta name="twitter:description" content="Reliable relocation services by Gati Shifting Packers. Get clear pricing for household, office, and vehicle shifting across India." />
+        
+                <link rel="canonical" href="https://gatishiftingpackers.com/services" />
       </Helmet>
 
       <div className="services-page">

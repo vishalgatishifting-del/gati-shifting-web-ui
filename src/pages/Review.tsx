@@ -40,6 +40,7 @@ const Review = ({successCondition} : props) => {
                 <meta name="twitter:description" content="Genuine customer feedback on Gati Shifting Packers services including domestic, international, office, bike and pet moves." />
                 <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
                 <meta httpEquiv="content-language" content="en" />
+                <link rel="canonical" href="https://gatishiftingpackers.com/review" />
             </Helmet>
             <section id="customer-review-list">
                 <h1>What Our Customers Say</h1>

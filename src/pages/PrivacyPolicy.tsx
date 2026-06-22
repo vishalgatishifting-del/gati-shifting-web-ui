@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import AwardCertification from "../components/AwardCertification";
 import BrandList from "../components/BrandsList";
 import FAQList from "../components/FAQList";
@@ -6,6 +7,7 @@ import ReviewVideo from "../components/ReviewVideos";
 import TrustUsSection from "../components/TrustUsSection";
 import { siteConfig } from "../config/Company";
 import "./PrivacyPolicy.scss";
+
 
 // ─── Section Data ────────────────────────────────────────────────────────────
 const SECTIONS = [
@@ -83,6 +85,28 @@ When you register for an account, we may ask for your contact information includ
 const PrivacyPolicy = () => {
   return (
     <>
+      <Helmet>
+        <title>Privacy and Policy | Gati Shifting Packers</title>
+        <meta name="description" content="Find answers to common questions about packing, moving, pricing, and delivery. Gati Shifting Packers provides clear guidance on services, processes, and timelines." />
+        <meta name="keywords" content="Gati FAQ, Packers and Movers FAQ, relocation questions, moving tips, Gati Shifting Packers customer support" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="FAQ | Gati Shifting Packers & Movers" />
+        <meta property="og:description" content="Get answers to common questions about Gati Shifting Packers. From local to pan-India moves, understand our services, packing quality, and cost transparency." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://gatishiftingpackers.com/" />
+        <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="FAQ | Gati Shifting Packers" />
+        <meta name="twitter:description" content="Find answers to FAQs about Gati Shifting Packers, including services, pricing, and relocation tips." />
+
+        <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
+
+        <link rel="canonical" href="https://gatishiftingpackers.com/privacy-and-policy" />
+      </Helmet>
       <div id="privacy-policy-page">
 
         {/* ── Hero ────────────────────────────────────── */}

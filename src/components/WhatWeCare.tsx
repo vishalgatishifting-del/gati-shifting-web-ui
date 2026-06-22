@@ -177,7 +177,7 @@ const tabsData: TabData[] = [
         description: "We are the fore-runners in packing and moving, offering matchless household relocation services with zero-damage commitment.",
         highlights: ["On-time Delivery", "Comprehensive Support", "Wide Coverage", "Risk Coverage"],
         image: householdShifting,
-        link: "#",
+        link: "/home-shifting",
       },
       {
         id: "international", label: "International Moving", icon: <IcoInternational />,
@@ -185,7 +185,7 @@ const tabsData: TabData[] = [
         description: "Being the most trusted international removal & storage company, rendering expertise in overseas moving for 38+ years across 182 countries.",
         highlights: ["State-of-the-art Facilities", "Responsive Solutions", "Reasonable Prices", "182 Countries"],
         image: internatioanl,
-        link: "#",
+        link: "/international-moves",
       },
       {
         id: "warehousing", label: "Warehousing Services", icon: <IcoWarehouse />,
@@ -193,7 +193,7 @@ const tabsData: TabData[] = [
         description: "State-of-the-art warehousing ensures your goods are stored safely and efficiently with customized solutions and inventory management.",
         highlights: ["Secure Facilities", "Inventory Management", "Pick & Pack Services", "Flexible Storage"],
         image: warehouse,
-        link: "#",
+        link: "/warehouse",
       },
       {
         id: "car", label: "Car Carrier Service", icon: <IcoCar />,
@@ -201,7 +201,7 @@ const tabsData: TabData[] = [
         description: "One of the most reputed brands offering reliable and secure car transportation services to every destination across India.",
         highlights: ["High-end Enclosed Carriers", "Skilled Drivers", "Compatible Rates", "Prompt Delivery"],
         image: car,
-        link: "#",
+        link: "/car-storage",
       },
       {
         id: "office", label: "Office / Corporate", icon: <IcoOffice />,
@@ -209,7 +209,7 @@ const tabsData: TabData[] = [
         description: "Leading movers offering corporate moving solutions, adhering to international quality standards with complete claim settlement.",
         highlights: ["Timely Delivery", "Risk Coverage", "Customer Support", "Instant Claim Settlement"],
         image: office,
-        link: "#",
+        link: "/office-relocation",
       },
       {
         id: "fineart", label: "Fine Arts & Sculptures", icon: <IcoFineArt />,
@@ -217,7 +217,7 @@ const tabsData: TabData[] = [
         description: "Proficiency in relocating your sculptures and fine art works in a hassle-free manner with professional crating and door-to-door service.",
         highlights: ["Professional Art Packing", "Smooth Installation", "Door to Door", "On-time Delivery"],
         image: arts,
-        link: "#",
+        // link: "#",
       },
       {
         id: "storage", label: "Self-Storage", icon: <IcoSelfStorage />,
@@ -225,7 +225,7 @@ const tabsData: TabData[] = [
         description: "Flexible, secure, and convenient self-storage solutions for both personal and business needs with 24/7 monitoring.",
         highlights: ["Uptime Accessibility", "Secure & Organized", "Flexible Plans", "24/7 Monitoring"],
         image: selfStorage,
-        link: "#",
+        link: "/storage",
       },
       {
         id: "parcel", label: "Parcel Delivery", icon: <IcoParcel />,
@@ -233,7 +233,7 @@ const tabsData: TabData[] = [
         description: "Fast, reliable, and efficient parcel delivery across India with end-to-end tracking for small packages to large consignments.",
         highlights: ["Timely Delivery", "End-to-End Tracking", "Secure Packaging", "Nationwide Coverage"],
         image: parcel,
-        link: "#",
+        // link: "/storage",
       },
       {
         id: "bulk", label: "Bulk Carrier", icon: <IcoBulk />,
@@ -241,7 +241,7 @@ const tabsData: TabData[] = [
         description: "Cost-effective bulk transportation for industries requiring large-scale movement of goods — raw materials to finished products.",
         highlights: ["Efficient Transport", "Fleet-Managed", "Nationwide Reach", "On-Time Delivery"],
         image: bulkCarrier,
-        link: "#",
+        // link: "#",
       },
     ],
   },
@@ -257,7 +257,7 @@ const tabsData: TabData[] = [
         description: "Pioneers in third-party logistics and supply chain management solutions to maintain the profitability and efficiency of your business.",
         highlights: ["Integrated Solutions", "Digital Innovations", "National Presence", "Cost-Effective"],
         image: supplyChain,
-        link: "#",
+        // link: "#",
       },
       {
         id: "3pl", label: "3PL Logistics", icon: <Ico3PL />,
@@ -265,7 +265,7 @@ const tabsData: TabData[] = [
         description: "Comprehensive 3PL services streamlining your supply chain with warehousing, order fulfillment, and inventory management.",
         highlights: ["End-to-End Management", "Global Reach", "Scalable Solutions", "Cost-Effective"],
         image: pllogistics,
-        link: "#",
+        // link: "#",
       },
       {
         id: "exim", label: "Exim Cargo", icon: <IcoExim />,
@@ -273,7 +273,7 @@ const tabsData: TabData[] = [
         description: "Comprehensive and high-tech export-import solutions using innovative technology — maximizing visibility and reducing cost.",
         highlights: ["Operational Efficiency", "Data Visibility", "Custom Process Upgrades", "Cost Reduction"],
         image: cargo,
-        link: "#",
+        // link: "#",
       },
       {
         id: "odc", label: "ODC Transportation", icon: <IcoODC />,
@@ -281,7 +281,7 @@ const tabsData: TabData[] = [
         description: "Huge fleet of GPS-enabled vehicles providing progressive relocation services at budget-friendly prices with single-window service.",
         highlights: ["Single-Window Service", "Various Trailer Sizes", "Damage-Free Transport", "Route Survey"],
         image: odc,
-        link: "#",
+        // link: "#",
       },
       {
         id: "transport", label: "Transport & Logistics", icon: <IcoTransport />,
@@ -289,7 +289,7 @@ const tabsData: TabData[] = [
         description: "One-stop solution for your business's day-to-day logistics and transportation requirements — integrated, safe, and sustainable.",
         highlights: ["Integrated Techniques", "Safe & Secured", "Value-Added Benefits", "Sustainable"],
         image: truck,
-        link: "#",
+        // link: "#",
       },
       {
         id: "infra", label: "Infrastructure", icon: <IcoInfra />,
@@ -297,7 +297,7 @@ const tabsData: TabData[] = [
         description: "Top-of-the-line infrastructure and roofing solutions that are advanced, seamless, and integrated — voluminous and corrosion resistant.",
         highlights: ["Voluminous", "Self-Supported", "Corrosion Resistant", "User Friendly"],
         image: infrastructure,
-        link: "#",
+        // link: "#",
       },
     ],
   },
@@ -374,11 +374,11 @@ const WhatWeCaterTo = () => {
                   </li>
                 ))}
               </ul>
-              {/* {currentService.link && (
+              {currentService.link && (
                 <a href={currentService.link} className="cater-link">
                   View More →
                 </a>
-              )} */}
+              )}
             </div>
           </div>
 

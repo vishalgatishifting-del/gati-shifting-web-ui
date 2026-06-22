@@ -1,4 +1,4 @@
-
+@import "../style/variables";
 // ── Variables ──────────────────────────────────────────────────────────────────
 :root {
   --clr-bg: #f8fafc;
@@ -29,7 +29,7 @@
 // ── Section ───────────────────────────────────────────────────────────────────
 #faq-section {
   font-family: 'poppins', sans-serif;
-  background: var(--clr-bg);
+  // background: var(--clr-bg);
   min-height: 100vh;
   padding: 100px 20px;
   position: relative;
@@ -68,20 +68,25 @@
 
 // ── Badge ─────────────────────────────────────────────────────────────────────
 .faq-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: linear-gradient(135deg, #e8eeff, #ede9fe);
-  border: 1px solid #c7d4ff;
-  color: var(--clr-accent);
-  font-family: 'poppins', sans-serif;
+  text-align: center;
+  font-size: 0.72rem;
   font-weight: 700;
-  font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 6px 16px;
-  border-radius: 100px;
-  margin-bottom: 24px;
+  color: $primary-color;
+  margin-bottom: 25px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background: $primary-color;
+    vertical-align: middle;
+    margin: 0 12px;
+  }
 }
 
 // ── Subtitle ──────────────────────────────────────────────────────────────────

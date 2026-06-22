@@ -149,6 +149,8 @@ const WhoWeAre = () => {
           content="Founded in 2008, Gati Shifting Packers is India's leading relocation company with 18+ years of experience, 50,000+ happy families, and a presence across 200+ cities."
         />
         <meta name="keywords" content={KEYWORDS.join(", ")} />
+        
+        <link rel="canonical" href="https://gatishiftingpackers.com/who-we-are" />
       </Helmet>
 
       {/* ── Hero ── */}

@@ -28,6 +28,8 @@ const FAQ = () => {
                 <meta name="twitter:description" content="Find answers to FAQs about Gati Shifting Packers, including services, pricing, and relocation tips." />
 
                 <meta property="og:image" content="https://gatishiftingpackers.com/metaImg.png" />
+                
+        <link rel="canonical" href="https://gatishiftingpackers.com/faqs" />
             </Helmet>
             <section className="info-section">
                 <div className="info-left">

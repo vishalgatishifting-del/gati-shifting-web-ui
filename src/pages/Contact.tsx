@@ -105,6 +105,8 @@ const Contact = ({ successCondition }: Props) => {
           content="Contact Gati Shifting Packers for relocation support, free cost estimates, and customer service across India."
         />
         <meta name="twitter:image" content="https://gatishiftingpackers.com/metaImg.png" />
+        
+                <link rel="canonical" href="https://gatishiftingpackers.com/contact-us" />
       </Helmet>
 
       <div id="contact-page">

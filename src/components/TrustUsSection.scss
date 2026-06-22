@@ -38,12 +38,25 @@ $transition:  0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tus-header__eyebrow {
-  font-size: 11px;
+  text-align: center;
+  font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: $primary-color;
-  margin: 0 0 12px;
+  margin-bottom: 25px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background: $primary-color;
+    vertical-align: middle;
+    margin: 0 12px;
+  }
 }
 
 .tus-header__title {

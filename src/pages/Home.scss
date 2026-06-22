@@ -324,7 +324,7 @@ $palettes: (
 #counter-section {
   @include font-poppins-sans(400);
   padding: 70px 16px 90px;
-  background: #f8f9fb;
+//   background: #f8f9fb;
   position: relative;
   overflow: hidden;
 
@@ -672,12 +672,25 @@ $transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ss-header__eyebrow {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: #1a6ef5;
-    margin: 0 0 12px;
+    text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $primary-color;
+  margin-bottom: 25px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background: $primary-color;
+    vertical-align: middle;
+    margin: 0 12px;
+  }
 }
 
 .ss-header__title {
@@ -900,12 +913,25 @@ $transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 
 // ── Left Text ──
 .gr-text__eyebrow {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: $primary-color;
-    margin: 0 0 12px;
+    // text-align: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $primary-color;
+  margin-bottom: 15px;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background: $primary-color;
+    vertical-align: middle;
+    margin: 0 12px;
+  }
 }
 
 .gr-text__title {
