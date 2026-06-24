@@ -113,7 +113,7 @@ $radius-full   : 50px;
     position: relative;
     border-radius: $radius-lg;
     overflow: hidden;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 4;
 
     img {
       width: 100%;
@@ -608,8 +608,8 @@ $radius-full   : 50px;
 // Mobile large
 @media (max-width: 640px) {
   #company-info {
-    @include section-spacing;
-    padding-top: 72px;
+    // @include section-spacing;
+    // padding-top: 72px;
 
     .about__features { grid-template-columns: 1fr; }
     .about__heading  { font-size: 26px; }
