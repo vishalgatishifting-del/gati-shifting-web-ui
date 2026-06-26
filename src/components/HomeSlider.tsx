@@ -221,7 +221,7 @@ export default function HomeSlider() {
       </button> */}
 
       {/* Dots */}
-      <div className="hs-dots" role="tablist">
+      {/* <div className="hs-dots" role="tablist">
         {images.map((_, i) => (
           <button key={i} role="tab"
             aria-selected={i === current}
@@ -230,7 +230,7 @@ export default function HomeSlider() {
             aria-label={`Slide ${i + 1}`}
           />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

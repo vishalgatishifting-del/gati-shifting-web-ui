@@ -47,7 +47,8 @@ export const siteConfig = {
     since: "2008",
 
     totalPetRelocated: "6000+",
-    totalGPSVehichle:"1800+"
+    totalGPSVehichle:"1800+",
+    totalActivePartners: "450+"
   },
 
 };
