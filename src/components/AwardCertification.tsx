@@ -31,7 +31,7 @@ const STAT_CARDS: StatCard[] = [
     imgAlt: "Gati has completed over 10,000 successful relocations across India",
     icon: <LocalShippingIcon />,
     countEnd: parseInt(siteConfig.stats.totalHappyCustomers.replace(/,/g, "")),
-    countSuffix: "L+",
+    countSuffix: "K+",
     label: "Moves",
     description: "We've completed over 10,000 successful relocations nationwide.",
   },

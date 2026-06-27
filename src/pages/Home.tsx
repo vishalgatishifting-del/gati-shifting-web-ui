@@ -38,6 +38,7 @@ import { siteConfig } from "../config/Company";
 
 import ExpandableImagePanel from "../components/ExpandableImageSlider";
 import WhatWeCaterTo from "../components/WhatWeCare";
+import HouseholdShiftSection from "../components/HouseholdShiftSection";
 const ReviewVideo = lazy(() => import("../components/ReviewVideos"));
 const OfficeLocation = lazy(() => import("../components/OfficeLocation"));
 const TrustUsSection = lazy(() => import("../components/TrustUsSection"));
@@ -248,7 +249,7 @@ const Home: React.FC<Props> = ({ successCondition }) => {
                 idx: 0,
               },
               {
-                end: 600,
+                end: 430,
                 suffix: "+",
                 label: "Cities Covered",
                 sub: "Pan-India network",
@@ -293,7 +294,7 @@ const Home: React.FC<Props> = ({ successCondition }) => {
           </div>
         </div>
       </section>
-
+            <HouseholdShiftSection />
             <WhatWeCaterTo />
       {/* CompanyDescription */}
       <div ref={companyDesc.sentinelRef}>

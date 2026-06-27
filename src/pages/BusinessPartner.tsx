@@ -822,7 +822,7 @@ const BusinessPartner: React.FC = () => {
                 {loading ? (
                   <CircularProgress size={22} sx={{ color: "#fff" }} />
                 ) : (
-                  "Submit Application 🚀"
+                  "Submit Application"
                 )}
               </Button>
             )}

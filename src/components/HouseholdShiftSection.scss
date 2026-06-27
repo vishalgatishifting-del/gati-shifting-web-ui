@@ -1,0 +1,252 @@
+// ─────────────────────────────────────────────
+//  Household Shift Section
+// ─────────────────────────────────────────────
+
+#hss-section {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 40px 24px;
+  padding: 64px 56px;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0c2d5e 100%);
+}
+
+// ── Orbs ──────────────────────────────────
+.hss-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+
+  &--top {
+    top: -100px;
+    right: 200px;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.13) 0%, transparent 65%);
+  }
+
+  &--bottom {
+    bottom: -80px;
+    left: 100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, transparent 65%);
+  }
+}
+
+// ── Inner ─────────────────────────────────
+.hss-inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+// ── Top row ───────────────────────────────
+.hss-top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hss-copy {
+  max-width: 460px;
+}
+
+.hss-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #7dd3fc;
+  margin: 0 0 18px;
+
+  svg {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+  }
+}
+
+.hss-heading {
+  font-size: clamp(28px, 3.8vw, 44px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.8px;
+  color: #f8fafc;
+  margin: 0 0 18px;
+
+  em {
+    font-style: normal;
+    color: #38bdf8;
+  }
+}
+
+.hss-desc {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(248, 250, 252, 0.55);
+  max-width: 360px;
+  margin: 0;
+}
+
+// Stat block
+.hss-stat {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.hss-stat-num {
+  display: block;
+  font-size: 60px;
+  font-weight: 700;
+  color: #38bdf8;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.hss-stat-plus {
+  font-size: 36px;
+  color: rgba(56, 189, 248, 0.5);
+}
+
+.hss-stat-label {
+  display: block;
+  font-size: 13px;
+  color: rgba(248, 250, 252, 0.4);
+  margin-top: 8px;
+  letter-spacing: 0.04em;
+}
+
+// ── Divider ───────────────────────────────
+.hss-divider {
+  height: 0.5px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+// ── Bottom row ────────────────────────────
+.hss-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+// Pills
+.hss-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex: 1;
+}
+
+.hss-pill {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 11px 18px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 0.5px solid rgba(255, 255, 255, 0.11);
+  border-radius: 100px;
+  transition: background 0.15s, border-color 0.15s;
+  cursor: default;
+
+  svg {
+    width: 16px;
+    height: 16px;
+    color: #7dd3fc;
+    flex-shrink: 0;
+  }
+
+  span {
+    font-size: 13px;
+    color: rgba(248, 250, 252, 0.7);
+    white-space: nowrap;
+  }
+
+  &:hover {
+    background: rgba(56, 189, 248, 0.12);
+    border-color: rgba(56, 189, 248, 0.35);
+  }
+}
+
+// CTA button
+.hss-cta {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  background: #38bdf8;
+  color: #0c1a2e;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.15s, transform 0.12s;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    background: #7dd3fc;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// ── Responsive ────────────────────────────
+@media (max-width: 900px) {
+  #hss-section {
+    padding: 52px 40px;
+    margin: 32px 16px;
+  }
+
+  .hss-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .hss-stat {
+    text-align: left;
+  }
+
+  .hss-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .hss-cta {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #hss-section {
+    padding: 40px 24px;
+    margin: 20px 12px;
+    border-radius: 16px;
+  }
+
+  .hss-heading {
+    font-size: 30px;
+  }
+
+  .hss-stat-num {
+    font-size: 48px;
+  }
+}
