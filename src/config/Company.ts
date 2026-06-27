@@ -35,7 +35,7 @@ export const siteConfig = {
     totalHomesRelocated: "1,32,858+",
     totalAvaiableCities: "600+",
     totalCitiesCovered: "430+",
-    totalVerifiedProfessionals: "3,548+",
+    totalVerifiedProfessionals: "3,500+",
     satisfiedCustomers: "99%",
 
     totalYearOfExperience: "18+",

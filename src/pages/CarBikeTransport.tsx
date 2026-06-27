@@ -249,7 +249,7 @@ const CarBikeTransport = () => (
         {[...Array(3)].map((_, i) => (
           <span key={i} className="cbt-hero__ticker-track">
             {["Verified Professionals", "GPS Tracked Vehicles", "Zero-Damage Guarantee",
-              `${siteConfig.stats.totalYearOfExperience} Years of Experience`, "Insurance Covered", `${siteConfig.stats.totalCountryServed} Cities Served`].map((t) => (
+              `${siteConfig.stats.totalYearOfExperience} Years of Experience`, "Insurance Covered", `${siteConfig.stats.totalCitiesCovered} Cities Served`].map((t) => (
               <span key={t} className="cbt-hero__ticker-item">
                 <span className="cbt-hero__ticker-dot" />
                 {t}

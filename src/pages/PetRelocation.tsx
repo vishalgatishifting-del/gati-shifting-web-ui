@@ -272,8 +272,8 @@ const PetRelocation = () => (
               src={petrelocationImg}
               alt="Pet being safely transported by Gati Shifting Packers"
               loading="lazy"
-              width={580}
-              height={400}
+              // width={580}
+              // height={400}
             />
           </div>
         </div>

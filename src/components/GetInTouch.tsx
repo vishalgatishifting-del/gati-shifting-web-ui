@@ -49,7 +49,7 @@ const CONTACT_ITEMS: ContactItem[] = [
   {
     icon: <LocationOnIcon />,
     label: "Coverage",
-    value: "Pan India — 500+ cities",
+    value: `Pan India — ${siteConfig.stats.totalAvaiableCities} cities`,
   },
 ];
 

@@ -17,6 +17,7 @@ import odc from "../assets/WhatWeCater/odc.webp"
 import bulkCarrier from "../assets/WhatWeCater/bulkCarrier.webp"
 import arts from "../assets/WhatWeCater/arts.webp"
 import selfStorage from "../assets/WhatWeCater/selfStorage.jpeg"
+import { siteConfig } from "../config/Company";
 
 interface ServiceItem {
   id: string;
@@ -182,7 +183,7 @@ const tabsData: TabData[] = [
       {
         id: "international", label: "International Moving", icon: <IcoInternational />,
         title: "International Moving",
-        description: "Being the most trusted international removal & storage company, rendering expertise in overseas moving for 38+ years across 182 countries.",
+        description: `Being the most trusted international removal & storage company, rendering expertise in overseas moving for ${siteConfig.stats.totalYearOfExperience} years across ${siteConfig.stats.totalCountryServed} countries.`,
         highlights: ["State-of-the-art Facilities", "Responsive Solutions", "Reasonable Prices", "182 Countries"],
         image: internatioanl,
         link: "/international-moves",
